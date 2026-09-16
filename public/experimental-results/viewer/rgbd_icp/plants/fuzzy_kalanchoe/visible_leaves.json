@@ -1,0 +1,29 @@
+[
+  {
+    "segment_id": 1,
+    "length_m": 0.07007234543561935,
+    "width_m": 0.0448889434337616,
+    "projected_area_m2": 0.0006913990613467104,
+    "pixel_count": 612,
+    "plausible": true,
+    "selected_for_comparison": true
+  },
+  {
+    "segment_id": 2,
+    "length_m": 0.040665190666913986,
+    "width_m": 0.03543061763048172,
+    "projected_area_m2": 0.00028352552984790103,
+    "pixel_count": 470,
+    "plausible": true,
+    "selected_for_comparison": true
+  },
+  {
+    "segment_id": 3,
+    "length_m": 0.0902668684720993,
+    "width_m": 0.08480320125818253,
+    "projected_area_m2": 0.003506681249076094,
+    "pixel_count": 5577,
+    "plausible": false,
+    "selected_for_comparison": false
+  }
+]

@@ -10,6 +10,8 @@ const navLinks = [
   { href: "#pipeline", label: "Pipeline" },
   { href: "#visualisation", label: "Visualisation" },
   { href: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/results/coleus-109/`, label: "Coleus 109" },
+  { href: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/results/experimental/`, label: "Experimental" },
+  { href: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/results/manual-validation/`, label: "Validation" },
   { href: "#tech", label: "Technology" },
   { href: "#organisation", label: "Organisation" },
   { href: "#team", label: "Team" },
@@ -56,7 +58,7 @@ export default function Navbar() {
           </a>
 
           {/* Desktop links */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden xl:flex items-center gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -76,7 +78,7 @@ export default function Navbar() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden p-2 text-green-300 hover:bg-green-900/20 rounded-lg transition"
+            className="xl:hidden p-2 text-green-300 hover:bg-green-900/20 rounded-lg transition"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={menuOpen}
@@ -94,7 +96,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.25 }}
-            className="fixed top-16 left-0 right-0 z-40 bg-[#0a1510]/95 backdrop-blur-xl border-b border-green-900/40 px-6 py-4 flex flex-col gap-2 md:hidden"
+            className="fixed top-16 left-0 right-0 z-40 bg-[#0a1510]/95 backdrop-blur-xl border-b border-green-900/40 px-6 py-4 flex flex-col gap-2 xl:hidden"
           >
             {navLinks.map((link) => (
               <a

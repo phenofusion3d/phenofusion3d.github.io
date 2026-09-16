@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paired Plant Hyperspectral Showcase · 28 August 2026</title><style>
+    :root { --ink:#10221b; --muted:#52655c; --paper:#f4f0e7; --card:#fffdf8; --green:#0d4734; --mint:#b9ecd8; --cyan:#76d9d2; --gold:#f3c969; --rust:#c76343; --line:#d8ded7; --shadow:0 14px 45px rgba(18,45,34,.10); scroll-behavior:smooth; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--paper); font:16px/1.62 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    a { color:#126247; } img { display:block; width:100%; height:auto; }
+    .hero { color:white; background:radial-gradient(circle at 85% 18%,rgba(118,217,210,.3),transparent 28%),linear-gradient(135deg,#082d25,#0d523b 62%,#17644a); padding:72px max(5vw,24px) 62px; }
+    .hero-inner,.wrap { width:min(1180px,100%); margin:auto; }
+    .kicker,.eyebrow { margin:0 0 8px; text-transform:uppercase; letter-spacing:.13em; font-weight:800; font-size:.76rem; }
+    .hero h1 { max-width:850px; margin:0; font-size:clamp(2.4rem,6vw,5.4rem); line-height:1; letter-spacing:-.045em; }
+    .hero .lead { max-width:820px; font-size:clamp(1.05rem,2vw,1.35rem); color:#dff8ed; }
+    .badge { display:inline-block; margin-top:12px; padding:8px 12px; border:1px solid #86cdb5; border-radius:999px; color:#e4fff6; background:#ffffff12; font-size:.88rem; }
+    nav { position:sticky; top:0; z-index:10; overflow:auto; white-space:nowrap; padding:10px max(5vw,24px); background:#fffdf8ee; backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+    nav div { width:min(1180px,100%); margin:auto; } nav a { display:inline-block; padding:7px 12px; text-decoration:none; font-weight:700; }
+    main { padding:32px max(5vw,24px) 80px; } section[id] { scroll-margin-top:72px; }
+    h2 { margin:72px 0 14px; font-size:clamp(1.8rem,4vw,3.15rem); line-height:1.1; letter-spacing:-.035em; }
+    h3 { font-size:1.45rem; line-height:1.2; } h4 { margin:0 0 8px; font-size:1.35rem; }
+    .intro { display:grid; grid-template-columns:1.4fr .8fr; gap:20px; margin-top:10px; }
+    .panel,.metric,.core,.index-card,.trait-card { background:var(--card); border:1px solid #e1e4de; border-radius:20px; box-shadow:var(--shadow); }
+    .panel { padding:24px; } .panel h3 { margin-top:0; }
+    .glossary { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+    .term { padding:14px; border-radius:14px; background:#edf4ef; } .term strong { display:block; color:var(--green); }
+    .metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:24px 0; }
+    .metric { padding:20px; border-top:5px solid var(--cyan); }
+    .metric b { display:block; font-size:1.65rem; line-height:1.15; color:var(--green); } .metric small { display:block; margin-top:8px; color:var(--muted); }
+    .pipeline { display:grid; grid-template-columns:repeat(7,1fr); gap:10px; align-items:stretch; margin:24px 0; }
+    .step { position:relative; min-height:135px; padding:16px 12px; border-radius:16px; color:white; background:var(--green); }
+    .step:nth-child(even) { background:#185c53; } .step strong { display:block; margin-bottom:8px; }
+    .step:not(:last-child)::after { content:"→"; position:absolute; right:-14px; top:48px; z-index:2; color:var(--gold); font-size:1.6rem; font-weight:900; }
+    .core { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr); overflow:hidden; margin:22px 0; }
+    .core-copy { padding:28px; } .core-copy h3 { margin-top:0; }
+    .core img { height:100%; object-fit:contain; background:white; }
+    .callout { padding:14px 16px; border-left:5px solid var(--gold); border-radius:0 12px 12px 0; background:#fff5d9; }
+    .index-guide { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:18px 0 32px; }
+    .index-guide div { padding:18px; border-radius:16px; background:#e9f3ed; }
+    .index-group { margin-top:44px; } .index-group>h3 { padding-bottom:10px; border-bottom:3px solid var(--mint); }
+    .index-card { display:grid; grid-template-columns:minmax(300px,.72fr) minmax(0,1.28fr); overflow:hidden; margin:16px 0; border-left:7px solid var(--cyan); }
+    .index-card.chlorophyll { border-left-color:#74bd78; } .index-card.pigment { border-left-color:var(--gold); } .index-card.water { border-left-color:#6c9cdf; }
+    .index-copy { padding:24px; } .value { display:inline-block; margin-left:8px; padding:4px 8px; border-radius:999px; background:#dff2e7; font-size:.85rem; vertical-align:middle; }
+    .formula,.range { color:var(--muted); font-size:.9rem; } .figure-link { align-self:stretch; background:white; } .figure-link img { height:100%; object-fit:contain; }
+    .claims { display:grid; grid-template-columns:1fr 1fr; gap:18px; } .claims .panel:first-child { border-top:6px solid #4eaa70; } .claims .panel:last-child { border-top:6px solid var(--rust); }
+    .downloads { display:flex; flex-wrap:wrap; gap:10px; } .downloads a { padding:10px 13px; border-radius:10px; background:white; border:1px solid var(--line); text-decoration:none; font-weight:700; }
+    .fusion-figures { display:grid; align-content:start; gap:10px; padding:12px; background:#eef3ef; } .fusion-figures img { border-radius:12px; }
+    .subheading { margin-top:38px; }
+    .trait-card { display:grid; grid-template-columns:minmax(300px,.82fr) minmax(0,1.18fr); overflow:hidden; margin:18px 0; }
+    .trait-copy { padding:26px; } .trait-copy h3 { margin-top:0; }
+    .trait-list { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:18px 0; }
+    .trait-list div { padding:12px; border-radius:12px; background:#edf4ef; } .trait-list dt { color:var(--muted); font-size:.8rem; font-weight:800; text-transform:uppercase; letter-spacing:.05em; } .trait-list dd { margin:2px 0 0; color:var(--green); font-size:1.13rem; font-weight:850; }
+    .trait-images { display:grid; grid-template-columns:1fr 1fr; gap:3px; padding:3px; background:#dfe9e2; } .trait-images img { width:100%; height:100%; min-height:280px; object-fit:contain; background:#111; }
+    .viewer-shell { padding:14px; overflow:hidden; background:#0a2a22; color:#eefcf5; }
+    .viewer-toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:10px; padding:4px 2px 14px; }
+    .viewer-toolbar label { display:flex; align-items:center; gap:7px; font-weight:700; }
+    .viewer-toolbar button,.viewer-toolbar select { min-height:38px; padding:8px 11px; border:1px solid #78aa98; border-radius:9px; color:#eefcf5; background:#133c32; font:inherit; font-weight:750; cursor:pointer; }
+    .viewer-toolbar button:hover,.viewer-toolbar button:focus-visible,.viewer-toolbar button.active { color:#09261f; background:var(--mint); outline:none; }
+    #viewer-zoom-in,#viewer-zoom-out { min-width:42px; font-size:1.25rem; line-height:1; }
+    .viewer-plants { display:flex; flex-wrap:wrap; gap:6px; margin-right:auto; }
+    #fusion-viewer-canvas { display:block; width:100%; height:min(66vh,610px); min-height:390px; border:1px solid #477868; border-radius:14px; background:#071d18; cursor:grab; touch-action:none; }
+    #fusion-viewer-canvas:active { cursor:grabbing; } #fusion-viewer-canvas:focus-visible { outline:3px solid var(--gold); outline-offset:3px; }
+    .viewer-footer { display:grid; grid-template-columns:1fr auto; gap:6px 18px; align-items:center; padding:13px 4px 2px; color:#d5e9e1; font-size:.9rem; }
+    .viewer-footer p { grid-column:1 / -1; margin:0; } .viewer-footer a { color:#b9ecd8; font-weight:800; }
+    .legend-grey,.legend-gradient { display:inline-block; width:30px; height:10px; margin:0 5px 0 12px; border-radius:999px; vertical-align:middle; }
+    .legend-grey { background:#aaa; } .legend-gradient { width:70px; background:linear-gradient(90deg,#08041f,#7a1a6c,#ef5a2f,#fcffa4); }
+    .spectral-inspector { display:grid; grid-template-columns:minmax(280px,.72fr) minmax(0,1.28fr); gap:18px; margin-top:18px; padding:24px; }
+    .inspector-copy h3 { margin:0 0 8px; } .inspector-copy>p { margin-top:5px; }
+    #inspector-details { margin-top:16px; padding-top:12px; border-top:1px solid var(--line); } #inspector-details p { margin:5px 0; font-size:.92rem; }
+    .inspector-indices { display:grid; grid-template-columns:repeat(5,1fr); gap:7px; margin-top:14px; }
+    .inspector-indices div { padding:10px 7px; border-radius:10px; text-align:center; background:#edf4ef; } .inspector-indices span { display:block; color:var(--muted); font-size:.74rem; font-weight:800; } .inspector-indices b { display:block; color:var(--green); font-size:1rem; }
+    .spectrum-wrap { min-width:0; } #viewer-spectrum-canvas { display:block; width:100%; height:310px; border:1px solid var(--line); border-radius:12px; background:#fbfdf9; touch-action:none; }
+    #spectrum-readout { min-height:1.5em; margin:7px 2px 0; color:var(--muted); font-size:.88rem; }
+    .viewer-meaning { margin-top:18px; }
+    footer { padding:28px max(5vw,24px); color:#d9eee5; background:#082d25; } footer p { width:min(1180px,100%); margin:auto; }
+    @media (max-width:900px) { .intro,.core,.index-card,.trait-card,.claims,.spectral-inspector { grid-template-columns:1fr; } .metrics { grid-template-columns:repeat(2,1fr); } .pipeline { grid-template-columns:1fr 1fr; } .step:not(:last-child)::after { display:none; } .trait-images img { min-height:220px; } }
+    @media (max-width:560px) { .metrics,.glossary,.index-guide,.pipeline,.trait-list,.trait-images,.viewer-footer { grid-template-columns:1fr; } .hero { padding-top:48px; } main { padding-inline:18px; } #fusion-viewer-canvas { min-height:350px; } .inspector-indices { grid-template-columns:repeat(2,1fr); } #viewer-spectrum-canvas { height:260px; } }
+    @media print { nav,.viewer-toolbar { display:none; } body { background:white; font-size:11pt; } .hero { padding:28px; } main { padding:10px 24px; } .panel,.metric,.core,.index-card,.trait-card { box-shadow:none; break-inside:avoid; } h2 { margin-top:32px; } a { color:inherit; text-decoration:none; } #fusion-viewer-canvas { height:420px; } }
+    .bundle-omitted{color:#68736c;font-weight:600;border-bottom:1px dotted #87928b;cursor:help}</style></head>
+<body>
+<header class="hero"><div class="hero-inner"><p class="kicker">FX10 VNIR + FX17 SWIR + RGB-D ICP · 28 August 2026</p><h1>Hyperspectral and RGB-D fusion for three-dimensional plant analysis</h1><p class="lead">Results from hyperspectral calibration, RGB-D reconstruction, geometric trait validation, cross-modal fusion and global placement in the legacy ICP scene.</p><span class="badge">Measured prototype · exploratory indices, not a biological diagnosis</span></div></header>
+<nav aria-label="Report sections"><div><a href="#overview">Overview</a><a href="#pipeline">Hyperspectral pipeline</a><a href="#core-results">Spectral results</a><a href="#indices">Indices</a><a href="#rgbd-results">RGB-D / ICP</a><a href="#fusion-results">Fusion</a><a href="#interactive-3d">3D viewer</a><a href="#global-placement">Global placement</a><a href="#claims">Boundaries</a></div></nav>
+<main class="wrap">
+<section id="overview"><h2>Study scope and data products</h2><div class="intro"><div class="panel"><h3>Paired spectral acquisition</h3><p>An ordinary RGB camera records red, green and blue. A hyperspectral camera records a narrow reflectance measurement at hundreds of wavelengths for every image location. FX10 covers visible and near-infrared light; FX17 extends into short-wave infrared. Together they describe pigment, leaf structure and water-related spectral behaviour that normal colour photography cannot show.</p><p><strong>This dataset contains three separate potted plants in one scan.</strong> The analysis compares their spatial patterns, but it does not contain labels such as healthy, diseased, watered or dry.</p></div><div class="panel"><h3>Data terminology</h3><div class="glossary"><div class="term"><strong>Pixel</strong>One image location.</div><div class="term"><strong>Band</strong>An image at one wavelength.</div><div class="term"><strong>Spectrum</strong>All wavelength values for one pixel.</div><div class="term"><strong>Cube</strong>Rows × columns × bands.</div></div></div></div>
+<div class="metrics"><div class="metric"><span>Merged wavelength range</span><b>398–1720 nm</b><small>Visible through SWIR after fusion.</small></div><div class="metric"><span>FX10 pixels retained as plant</span><b>15.4%</b><small>The remainder was classified as background; no spectral bands were discarded.</small></div><div class="metric"><span>Overlap disagreement</span><b>0.0055 → 0.0019</b><small>Lower is better; cross-camera spectral agreement improved.</small></div><div class="metric"><span>Registration quality</span><b>190 inliers · 0.63px</b><small>Many consistent matches and sub-pixel average alignment error.</small></div></div>
+<div class="callout"><strong>Spatial sampling:</strong> all 224 spectral bands from each camera were retained, while every fourth spatial row and column was sampled to control computational cost. The merged plant cube contains 427 wavelength bands.</div></section>
+
+<section id="pipeline"><h2>How the raw scan became these results</h2><p>The sequence matters: an index is only meaningful after the sensor values are calibrated, plant pixels are isolated, and the two cameras are brought onto comparable spectral and spatial coordinates.</p><div class="pipeline" aria-label="Hyperspectral processing pipeline"><div class="step"><strong>1 · Raw scans</strong>FX10 and FX17 record sensor intensity.</div><div class="step"><strong>2 · Calibrate</strong>White and dark panels convert intensity to reflectance.</div><div class="step"><strong>3 · Mask</strong>NDVI and NWACI separate plants from the scene.</div><div class="step"><strong>4 · Cross-calibrate</strong>Shared wavelengths correct FX17 scale and offset.</div><div class="step"><strong>5 · Register</strong>SIFT and RANSAC align the two camera views.</div><div class="step"><strong>6 · Merge</strong>Aligned spectra form one 398–1720 nm cube.</div><div class="step"><strong>7 · Analyse</strong>Fourteen indices map relative plant properties.</div></div></section>
+
+<section id="core-results"><h2>Core hyperspectral results</h2>
+<article class="core"><div class="core-copy"><p class="eyebrow">Figure 1</p><h3>Raw intensity versus calibrated reflectance</h3><p><strong>Raw</strong> panels show sensor brightness, which depends on lighting and camera response. <strong>Calibrated</strong> panels estimate the fraction of incoming light reflected at each wavelength by subtracting the dark reference and scaling to the white reference.</p><p>FX10 can be displayed in roughly natural colour because it includes visible wavelengths. FX17 is shown in false colour because 1050–1600 nm is invisible to human eyes; the colours reveal contrast, not the plant's real appearance.</p></div><a href="figures/01_raw_and_calibrated_previews.webp"><img src="figures/01_raw_and_calibrated_previews.webp" alt="FX10 and FX17 raw and calibrated image comparisons"></a></article>
+<article class="core"><div class="core-copy"><p class="eyebrow">Figure 2</p><h3>Plant isolation and background removal</h3><p>The software calculated NDVI for FX10 and NWACI for FX17, automatically selected thresholds, then cleaned small holes and isolated noise. White mask pixels mean “use this plant pixel”; black means “exclude this background pixel”.</p><p>FX10 retained <strong>15.4%</strong> of its scene at threshold <strong>0.300</strong>. FX17 retained <strong>18.2%</strong> at threshold <strong>0.241</strong>. Different percentages are expected because camera framing and wavelengths differ.</p></div><a href="figures/02_background_removal.webp"><img src="figures/02_background_removal.webp" alt="Original projections, vegetation index maps, masks and masked plant outputs"></a></article>
+<article class="core"><div class="core-copy"><p class="eyebrow">Figure 3</p><h3>The mean spectral fingerprint</h3><p>The horizontal axis is wavelength in nanometres. The vertical axis is mean reflectance of the retained plant pixels. The visible pigment region, the sharp red-edge rise near 700 nm, the NIR plateau and strong SWIR water-absorption features are all plant-like spectral structure.</p><p>FX10 and FX17 overlap around 936–1004 nm. A linear gain of <strong>1.277</strong> and offset of <strong>-0.188</strong> reduced overlap RMSE from <strong>0.0055</strong> to <strong>0.0019</strong>. This means their average curves agree better; it does not prove every individual pixel is perfectly calibrated.</p></div><a href="figures/03_mean_spectra.webp"><img src="figures/03_mean_spectra.webp" alt="Mean FX10 and FX17 spectra before and after overlap correction"></a></article>
+<article class="core"><div class="core-copy"><p class="eyebrow">Figure 4</p><h3>Spatial registration: making the cameras look at the same place</h3><p><strong>SIFT keypoints</strong> are distinctive visual landmarks. <strong>Matches</strong> pair similar landmarks between cameras. <strong>RANSAC inliers</strong> are the pairs that agree on one geometric transformation after outliers are rejected.</p><p>The workflow found 408 FX10 and 461 FX17 keypoints, 194 good matches and <strong>190 inliers</strong>. The average reprojection error was <strong>0.63 pixels</strong>. Mutual information rose from 1.290 to 1.294; the small increase is supporting evidence, while the match count, error and overlay provide the clearer alignment evidence.</p><p>The yellow overlay should closely follow the plant shapes. Registration is essential before attaching spectra from the two sensors to the same leaf location.</p></div><a href="figures/04_registration.webp"><img src="figures/04_registration.webp" alt="FX10 and FX17 projections before alignment and their registered overlay"></a></article>
+<article class="core"><div class="core-copy"><p class="eyebrow">Figure 5</p><h3>Regional NDVI across three vertical scan regions</h3><p>The image was divided into top, middle and bottom thirds for regional statistics. In this scene those thirds mostly correspond to <strong>three different plants</strong>; therefore, “upper”, “middle” and “lower” describe image position rather than canopy height within one plant.</p><p>Mean NDVI was <strong>0.665</strong>, <strong>0.590</strong> and <strong>0.648</strong>. The middle scan region was lower, but the absence of treatment or health labels prevents causal interpretation.</p></div><a href="figures/05_canopy_segments.webp"><img src="figures/05_canopy_segments.webp" alt="Three vertical regions of the scanned scene used for regional statistics"></a></article>
+</section>
+
+<section id="indices"><h2>Spectral index results</h2><p>Each figure contains the plant view, a numerical heatmap and the heatmap overlaid on the plant. In the inferno colour scale, dark purple is lower and yellow is higher <em>within that index</em>. Blank or black background is masked or invalid. Higher values are not universally associated with better plant condition; biological interpretation depends on the index and requires reference data.</p><div class="index-guide"><div><strong>Median</strong><br>The middle plant-pixel value; half are below and half above.</div><div><strong>10th–90th percentile</strong><br>The central spread, less distorted by extreme pixels.</div><div><strong>Formula</strong><br><em>R</em> means reflectance at the named wavelength in nanometres.</div></div><section class="index-group"><h3>Greenness and vegetation</h3>
+            <article class="index-card greenness">
+              <div class="index-copy">
+                <p class="eyebrow">Normalized Difference Vegetation Index</p>
+                <h4>NDVI <span class="value">median 0.647</span></h4>
+                <p><strong>What it shows:</strong> Greenness and vegetation contrast.</p>
+                <p><strong>How to read this result:</strong> Higher values usually mean a stronger vegetation response. The median is not a health percentage.</p>
+                <p class="formula"><strong>Formula:</strong> (R800 − R680) / (R800 + R680)</p>
+                <p class="range">Plant-pixel spread (10th–90th percentile): 0.387 to 0.806 · valid pixels: 14,094</p>
+              </div>
+              <a class="figure-link" href="indices/NDVI.webp" title="Open the full-resolution NDVI figure">
+                <img src="indices/NDVI.webp" alt="NDVI result with plant image, colour heatmap and plant overlay" loading="lazy">
+              </a>
+            </article>
+            <article class="index-card greenness">
+              <div class="index-copy">
+                <p class="eyebrow">Simple Ratio</p>
+                <h4>SR <span class="value">median 4.687</span></h4>
+                <p><strong>What it shows:</strong> Near-infrared divided by red reflectance.</p>
+                <p><strong>How to read this result:</strong> A median of 4.69 means NIR reflectance was about 4.69 times red reflectance in the analysed plant pixels.</p>
+                <p class="formula"><strong>Formula:</strong> R800 / R680</p>
+                <p class="range">Plant-pixel spread (10th–90th percentile): 2.261 to 9.335 · valid pixels: 13,961</p>
+              </div>
+              <a class="figure-link" href="indices/SR.webp" title="Open the full-resolution SR figure">
+                <img src="indices/SR.webp" alt="SR result with plant image, colour heatmap and plant overlay" loading="lazy">
+              </a>
+            </article></section><section class="index-group"><h3>Red edge and chlorophyll proxies</h3>
+            <article class="index-card chlorophyll">
+              <div class="index-copy">
+                <p class="eyebrow">Normalized Difference Red Edge</p>
+                <h4>NDRE <span class="value">median 0.088</span></h4>
+                <p><strong>What it shows:</strong> Red-edge and chlorophyll-sensitive contrast.</p>
+                <p><strong>How to read this result:</strong> Useful for relative within-scene comparison; it is not a chlorophyll concentration.</p>
+                <p class="formula"><strong>Formula:</strong> (R790 − R720) / (R790 + R720)</p>
+                <p class="range">Plant-pixel spread (10th–90th percentile): 0.017 to 0.210 · valid pixels: 14,094</p>
+              </div>
+              <a class="figure-link" href="indices/NDRE.webp" title="Open the full-resolution NDRE figure">
+                <img src="indices/NDRE.webp" alt="NDRE result with plant image, colour heatmap and plant overlay" loading="lazy">
+              </a>
+            </article>
+            <article class="index-card chlorophyll">
+              <div class="index-copy">
+                <p class="eyebrow">Red Edge NDVI</p>
+                <h4>RENDVI <span class="value">median 0.241</span></h4>
+                <p><strong>What it shows:</strong> Spatial variation around the red edge.</p>
+                <p><strong>How to read this result:</strong> Use the map to locate relative differences, not to diagnose stress by itself.</p>
+                <p class="formula"><strong>Formula:</strong> (R750 − R705) / (R750 + R705)</p>
+                <p class="range">Plant-pixel spread (10th–90th percentile): 0.125 to 0.407 · valid pixels: 14,094</p>
+              </div>
+              <a class="figure-link" href="indices/RENDVI.webp" title="Open the full-resolution RENDVI figure">
+                <img src="indices/RENDVI.webp" alt="RENDVI result with plant image, colour heatmap and plant overlay" loading="lazy">
+              </a>
+            </article>
+            <article class="index-card chlorophyll">
+              <div class="index-copy">
+                <p class="eyebrow">Canopy Chlorophyll Content Index</p>
+                <h4>CCCI <span class="value">median 0.137</span></h4>
+                <p><strong>What it shows:</strong> Relative canopy chlorophyll proxy.</p>
+                <p><strong>How to read this result:</strong> Crop-specific calibration and reference measurements are required before treating this as chlorophyll content.</p>
+                <p class="formula"><strong>Formula:</strong> NDRE / NDVI</p>
+                <p class="range">Plant-pixel spread (10th–90th percentile): 0.028 to 0.382 · valid pixels: 14,090</p>
+              </div>
+              <a class="figure-link" href="indices/CCCI.webp" title="Open the full-resolution CCCI figure">
+                <img src="indices/CCCI.webp" alt="CCCI result with plant image, colour heatmap and plant overlay" loading="lazy">
+              </a>
+            </article></section><section class="index-group"><h3>Pigment, senescence and photochemistry</h3>
+            <article class="index-card pigment">
+              <div class="index-copy">
+                <p class="eyebrow">Normalized Pigment Chlorophyll Index</p>
+                <h4>NPCI <span class="value">median -0.403</span></h4>
+                <p><strong>What it shows:</strong> Relative pigment balance.</p>
+                <p><strong>How to read this result:</strong> Negative is not automatically bad. Species, illumination, calibration and pigment balance all affect the sign.</p>
+                <p class="formula"><strong>Formula:</strong> (R680 − R430) / (R680 + R430)</p>
+                <p class="range">Plant-pixel spread (10th–90th percentile): -0.668 to -0.003 · valid pixels: 14,094</p>
+              </div>
+              <a class="figure-link" href="indices/NPCI.webp" title="Open the full-resolution NPCI figure">
+                <img src="indices/NPCI.webp" alt="NPCI result with plant image, colour heatmap and plant overlay" loading="lazy">
+              </a>
+            </article>
+            <article class="index-card pigment">
+              <div class="index-copy">
+                <p class="eyebrow">Plant Senescence Reflectance Index</p>
+                <h4>PSRI <span class="value">median -0.058</span></h4>
+                <p><strong>What it shows:</strong> Possible senescence-related pigment change.</p>
+                <p><strong>How to read this result:</strong> Higher values can be associated with senescence, but interpretation needs a healthy baseline and ground truth.</p>
+                <p class="formula"><strong>Formula:</strong> (R678 − R500) / R750</p>
+                <p class="range">Plant-pixel spread (10th–90th percentile): -0.200 to 0.101 · valid pixels: 14,090</p>
+              </div>
+              <a class="figure-link" href="indices/PSRI.webp" title="Open the full-resolution PSRI figure">
+                <img src="indices/PSRI.webp" alt="PSRI result with plant image, colour heatmap and plant overlay" loading="lazy">
+              </a>
+            </article>
+            <article class="index-card pigment">
+              <div class="index-copy">
+                <p class="eyebrow">Photochemical Reflectance Index</p>
+                <h4>PRI <span class="value">median 0.022</span></h4>
+                <p><strong>What it shows:</strong> Short-term photosynthetic and xanthophyll-cycle proxy.</p>
+                <p><strong>How to read this result:</strong> This index is especially sensitive to illumination, view angle and measurement time.</p>
+                <p class="formula"><strong>Formula:</strong> (R531 − R570) / (R531 + R570)</p>
+                <p class="range">Plant-pixel spread (10th–90th percentile): -0.024 to 0.115 · valid pixels: 14,094</p>
+              </div>
+              <a class="figure-link" href="indices/PRI.webp" title="Open the full-resolution PRI figure">
+                <img src="indices/PRI.webp" alt="PRI result with plant image, colour heatmap and plant overlay" loading="lazy">
+              </a>
+            </article>
+            <article class="index-card pigment">
+              <div class="index-copy">
+                <p class="eyebrow">Structure-Insensitive Pigment Index</p>
+                <h4>SIPI <span class="value">median 0.553</span></h4>
+                <p><strong>What it shows:</strong> Carotenoid-to-chlorophyll-related variation.</p>
+                <p><strong>How to read this result:</strong> Treat it as a relative pigment proxy, not a direct biochemical measurement.</p>
+                <p class="formula"><strong>Formula:</strong> (R800 − R445) / (R800 + R680)</p>
+                <p class="range">Plant-pixel spread (10th–90th percentile): 0.125 to 0.679 · valid pixels: 14,094</p>
+              </div>
+              <a class="figure-link" href="indices/SIPI.webp" title="Open the full-resolution SIPI figure">
+                <img src="indices/SIPI.webp" alt="SIPI result with plant image, colour heatmap and plant overlay" loading="lazy">
+              </a>
+            </article>
+            <article class="index-card pigment">
+              <div class="index-copy">
+                <p class="eyebrow">Normalized Phaeophytinization Index</p>
+                <h4>NPQI <span class="value">median 0.059</span></h4>
+                <p><strong>What it shows:</strong> Possible chlorophyll degradation.</p>
+                <p><strong>How to read this result:</strong> Small differences need comparison with labelled healthy and stressed samples.</p>
+                <p class="formula"><strong>Formula:</strong> (R415 − R430) / (R415 + R430)</p>
+                <p class="range">Plant-pixel spread (10th–90th percentile): -0.083 to 0.174 · valid pixels: 14,094</p>
+              </div>
+              <a class="figure-link" href="indices/NPQI.webp" title="Open the full-resolution NPQI figure">
+                <img src="indices/NPQI.webp" alt="NPQI result with plant image, colour heatmap and plant overlay" loading="lazy">
+              </a>
+            </article>
+            <article class="index-card pigment">
+              <div class="index-copy">
+                <p class="eyebrow">Carotenoid Reflectance Index 2</p>
+                <h4>CRI2 <span class="value">median 1.646</span></h4>
+                <p><strong>What it shows:</strong> Carotenoid-sensitive reflectance contrast.</p>
+                <p><strong>How to read this result:</strong> Its scale differs from normalized indices, so the number cannot be compared directly with NDVI or NDRE.</p>
+                <p class="formula"><strong>Formula:</strong> 1/R510 − 1/R700</p>
+                <p class="range">Plant-pixel spread (10th–90th percentile): 0.105 to 5.060 · valid pixels: 14,053</p>
+              </div>
+              <a class="figure-link" href="indices/CRI2.webp" title="Open the full-resolution CRI2 figure">
+                <img src="indices/CRI2.webp" alt="CRI2 result with plant image, colour heatmap and plant overlay" loading="lazy">
+              </a>
+            </article></section><section class="index-group"><h3>Water and nitrogen proxies</h3>
+            <article class="index-card water">
+              <div class="index-copy">
+                <p class="eyebrow">Normalized Difference Water Index</p>
+                <h4>NDWI <span class="value">median 0.040</span></h4>
+                <p><strong>What it shows:</strong> Water-related spectral contrast.</p>
+                <p><strong>How to read this result:</strong> Higher often indicates a stronger water-related signal, but this is not water percentage.</p>
+                <p class="formula"><strong>Formula:</strong> (R860 − R1240) / (R860 + R1240)</p>
+                <p class="range">Plant-pixel spread (10th–90th percentile): -0.121 to 0.324 · valid pixels: 14,094</p>
+              </div>
+              <a class="figure-link" href="indices/NDWI.webp" title="Open the full-resolution NDWI figure">
+                <img src="indices/NDWI.webp" alt="NDWI result with plant image, colour heatmap and plant overlay" loading="lazy">
+              </a>
+            </article>
+            <article class="index-card water">
+              <div class="index-copy">
+                <p class="eyebrow">Moisture Stress Index</p>
+                <h4>MSI <span class="value">median 0.620</span></h4>
+                <p><strong>What it shows:</strong> Moisture-stress-sensitive ratio.</p>
+                <p><strong>How to read this result:</strong> Higher often means more moisture stress; 0.62 does not mean 62 percent stress.</p>
+                <p class="formula"><strong>Formula:</strong> R1600 / R820</p>
+                <p class="range">Plant-pixel spread (10th–90th percentile): 0.120 to 1.000 · valid pixels: 14,094</p>
+              </div>
+              <a class="figure-link" href="indices/MSI.webp" title="Open the full-resolution MSI figure">
+                <img src="indices/MSI.webp" alt="MSI result with plant image, colour heatmap and plant overlay" loading="lazy">
+              </a>
+            </article>
+            <article class="index-card water">
+              <div class="index-copy">
+                <p class="eyebrow">Normalized Difference Nitrogen Index</p>
+                <h4>NDNI <span class="value">median 0.504</span></h4>
+                <p><strong>What it shows:</strong> Nitrogen-related SWIR absorption proxy.</p>
+                <p><strong>How to read this result:</strong> This is not nitrogen concentration. Laboratory nitrogen measurements are needed for calibration.</p>
+                <p class="formula"><strong>Formula:</strong> log(1/R1510) − log(1/R1680), normalized</p>
+                <p class="range">Plant-pixel spread (10th–90th percentile): 0.307 to 1.000 · valid pixels: 12,034</p>
+              </div>
+              <a class="figure-link" href="indices/NDNI.webp" title="Open the full-resolution NDNI figure">
+                <img src="indices/NDNI.webp" alt="NDNI result with plant image, colour heatmap and plant overlay" loading="lazy">
+              </a>
+            </article></section></section>
+
+<section id="claims"><h2>Supported findings and scientific limitations</h2><div class="claims"><div class="panel"><h3>Evidence supported by this stage</h3><ul><li>Both cameras produced usable, plant-like spectra across their stated ranges.</li><li>The background masks isolate the three plant regions cleanly enough for exploratory analysis.</li><li>FX10 and FX17 average spectra agree substantially better after overlap correction.</li><li>The two camera views were aligned with 190 consistent feature matches and about 0.63-pixel average error.</li><li>A registered 427-band plant cube spanning approximately 398–1720 nm was produced.</li><li>The fourteen maps reveal spatial variation that can guide later sampling and modelling.</li></ul></div><div class="panel"><h3>Scientific limitations</h3><ul><li>The indices cannot diagnose disease, drought, nutrient deficiency or plant health without labelled ground truth.</li><li>Index values are not percentages or laboratory concentrations.</li><li>The three scan regions cannot be ranked biologically without labels and controlled treatments.</li><li>The hyperspectral-only stage did not contain 3D geometry; the later RGB-D fusion sections add measured depth and global placement.</li><li>Cross-camera and cross-modal registration are validated approximations, not proof of perfect correspondence everywhere.</li><li>Biological conclusions require reference targets, repeat scans and laboratory or treatment measurements.</li></ul></div></div></section>
+
+<section id="downloads"><h2>Evidence and reusable outputs</h2><p>The linked files contain the exact summary values and processed ENVI products associated with the reported figures.</p><div class="downloads"><a href="quality_metrics.json">Quality metrics (JSON)</a><a href="tables/index_summary.csv">Index summary (CSV)</a><a href="tables/mean_spectra.csv">Mean spectra (CSV)</a><a href="tables/segment_summary.csv">Region summary (CSV)</a><span class="bundle-omitted" title="Available in the full local results folder">Plant-only merged cube header · local scientific file</span><span class="bundle-omitted" title="Available in the full local results folder">Merged cube header · local scientific file</span></div></section>
+
+
+<section id="rgbd-results"><h2>The RGB-D / ICP results this fusion builds upon</h2><p class="eyebrow">Pure geometry and trait calculation · same plant run</p>
+<div class="panel"><h3>Independent RGB-D results</h3><p>This stage used RGB colour plus depth only. It reconstructed the scene with sequential ICP, isolated each plant and calculated geometric traits. It did <strong>not</strong> use hyperspectral values. The later fusion stage attaches the 427-band spectra to this measured geometry.</p></div>
+<div class="metrics"><div class="metric"><span>Captured pairs</span><b>945</b><small>945 RGB frames and their 945 aligned depth frames.</small></div><div class="metric"><span>ICP frames used</span><b>95</b><small>Every tenth frame; 95 succeeded and 0 failed.</small></div><div class="metric"><span>Full merged scene</span><b>44,430,791</b><small>Points in the legacy ICP reconstruction.</small></div><div class="metric"><span>Voxel setting</span><b>10 mm</b><small>ICP/reconstruction spatial sampling parameter.</small></div></div>
+<article class="core"><div class="core-copy"><h3>What the 44-million-point image shows</h3><p>The left panel is a top projection and the right panel is a side projection of a uniformly sampled preview of the full reconstruction. The board, pots, plants, gantry surroundings and accumulated reconstruction noise are visible. The coloured plant structures around the middle-lower part of the scene are the geometry later used for fusion.</p><p><strong>Important:</strong> 44 million points describes density, not accuracy. Registration validation and manual trait comparisons are the useful accuracy evidence.</p><div class="downloads"><span class="bundle-omitted" title="Available in the full local results folder">Sampled scene PLY (300,000 points) · local scientific file</span><a href="rgbd_icp/reconstruction_summary.json">Reconstruction summary</a><span class="bundle-omitted" title="Available in the full local results folder">Full local 44M-point PLY (about 1.2 GB) · local scientific file</span></div></div><a href="rgbd_icp/scene_top_side_preview.webp"><img src="rgbd_icp/scene_top_side_preview.webp" alt="Top and side projections of the legacy 44-million-point ICP reconstruction" loading="lazy"></a></article>
+<h3 class="subheading">Per-plant geometry and automatically calculated traits</h3>
+
+            <article class="trait-card"><div class="trait-copy"><p class="eyebrow">RGB-D frame 330</p><h3>Coleus</h3>
+            <dl class="trait-list"><div><dt>Plant height</dt><dd>216.9 mm</dd></div><div><dt>Canopy span</dt><dd>359.4 × 309.0 mm</dd></div><div><dt>Projected canopy area</dt><dd>456.7 cm²</dd></div><div><dt>Cleaned 3D points</dt><dd>62,829</dd></div><div><dt>Visible segments</dt><dd>16</dd></div></dl>
+            <p class="range">Height is the configured soil/support depth minus the top one-percent plant depth. Canopy area is the 2D footprint of the cleaned point cloud. “Visible segments” are image segments and are not guaranteed biological leaf counts.</p>
+            <div class="downloads"><span class="bundle-omitted" title="Available in the full local results folder">Cleaned RGB-D PLY · local scientific file</span><a href="rgbd_icp/plants/coleus/traits.json">Trait JSON</a></div></div>
+            <div class="trait-images"><a href="rgbd_icp/plants/coleus/plant_overlay.webp"><img src="rgbd_icp/plants/coleus/plant_overlay.webp" alt="Coleus RGB-D plant measurement overlay" loading="lazy"></a><a href="rgbd_icp/plants/coleus/leaf_segments.webp"><img src="rgbd_icp/plants/coleus/leaf_segments.webp" alt="Coleus visible leaf segmentation" loading="lazy"></a></div></article>
+            <article class="trait-card"><div class="trait-copy"><p class="eyebrow">RGB-D frame 540</p><h3>Fuzzy kalanchoe</h3>
+            <dl class="trait-list"><div><dt>Plant height</dt><dd>217.0 mm</dd></div><div><dt>Canopy span</dt><dd>205.3 × 151.0 mm</dd></div><div><dt>Projected canopy area</dt><dd>140.0 cm²</dd></div><div><dt>Cleaned 3D points</dt><dd>20,585</dd></div><div><dt>Visible segments</dt><dd>3</dd></div></dl>
+            <p class="range">Height is the configured soil/support depth minus the top one-percent plant depth. Canopy area is the 2D footprint of the cleaned point cloud. “Visible segments” are image segments and are not guaranteed biological leaf counts.</p>
+            <div class="downloads"><span class="bundle-omitted" title="Available in the full local results folder">Cleaned RGB-D PLY · local scientific file</span><a href="rgbd_icp/plants/fuzzy_kalanchoe/traits.json">Trait JSON</a></div></div>
+            <div class="trait-images"><a href="rgbd_icp/plants/fuzzy_kalanchoe/plant_overlay.webp"><img src="rgbd_icp/plants/fuzzy_kalanchoe/plant_overlay.webp" alt="Fuzzy kalanchoe RGB-D plant measurement overlay" loading="lazy"></a><a href="rgbd_icp/plants/fuzzy_kalanchoe/leaf_segments.webp"><img src="rgbd_icp/plants/fuzzy_kalanchoe/leaf_segments.webp" alt="Fuzzy kalanchoe visible leaf segmentation" loading="lazy"></a></div></article>
+            <article class="trait-card"><div class="trait-copy"><p class="eyebrow">RGB-D frame 750</p><h3>Succulent / jade</h3>
+            <dl class="trait-list"><div><dt>Plant height</dt><dd>228.9 mm</dd></div><div><dt>Canopy span</dt><dd>219.9 × 150.7 mm</dd></div><div><dt>Projected canopy area</dt><dd>183.6 cm²</dd></div><div><dt>Cleaned 3D points</dt><dd>23,562</dd></div><div><dt>Visible segments</dt><dd>7</dd></div></dl>
+            <p class="range">Height is the configured soil/support depth minus the top one-percent plant depth. Canopy area is the 2D footprint of the cleaned point cloud. “Visible segments” are image segments and are not guaranteed biological leaf counts.</p>
+            <div class="downloads"><span class="bundle-omitted" title="Available in the full local results folder">Cleaned RGB-D PLY · local scientific file</span><a href="rgbd_icp/plants/succulent_jade/traits.json">Trait JSON</a></div></div>
+            <div class="trait-images"><a href="rgbd_icp/plants/succulent_jade/plant_overlay.webp"><img src="rgbd_icp/plants/succulent_jade/plant_overlay.webp" alt="Succulent / jade RGB-D plant measurement overlay" loading="lazy"></a><a href="rgbd_icp/plants/succulent_jade/leaf_segments.webp"><img src="rgbd_icp/plants/succulent_jade/leaf_segments.webp" alt="Succulent / jade visible leaf segmentation" loading="lazy"></a></div></article>
+<div class="metrics"><div class="metric"><span>Plant-height MAPE</span><b>3.31%</b><small>Mean absolute percentage error across the three plants.</small></div><div class="metric"><span>Matched leaf-length MAPE</span><b>4.25%</b><small>Guided, manually matched leaf landmarks.</small></div><div class="metric"><span>Matched leaf-width MAPE</span><b>5.45%</b><small>Guided, manually matched leaf landmarks.</small></div><div class="metric"><span>Validation status</span><b>3 plants</b><small>All heights and nine annotated leaves reviewed.</small></div></div>
+<div class="claims"><div class="panel"><h3>Validation interpretation</h3><p>MAPE means the average absolute error expressed as a percentage of the manual measurement. Lower is better. The three reported aggregate values show close agreement for plant height and the specifically matched leaf dimensions in this validation set.</p><p>The underlying report retains every plant and leaf comparison, so the aggregate value does not obscure item-level differences.</p></div><div class="panel"><h3>Validation limitations</h3><p>The leaf result is a <strong>guided comparison</strong>: a human identified corresponding leaves and landmarks. Automatic cross-view leaf identity is still future work. The canopy-area and segment outputs are useful geometric descriptions, but they are not biological ground truth.</p></div></div>
+<div class="downloads"><a href="rgbd_icp/validation/validation_report.html">Open full RGB-D validation report</a><a href="rgbd_icp/validation/plant_height_comparison.csv">Plant-height comparisons</a><a href="rgbd_icp/validation/matched_leaf_comparison.csv">Matched leaf comparisons</a><a href="rgbd_icp/software_traits.csv">All software traits (CSV)</a></div></section>
+
+<section id="fusion-roadmap"><h2>Cross-modal fusion status</h2><p class="eyebrow">Feasibility finding and completed prototype · recorded 31 August 2026</p><div class="panel"><h3>Feasibility demonstrated with the captured data</h3><p>The matching RGB-D run contains <strong>945 RGB frames and 945 depth frames</strong>, calibrated colour and depth intrinsics, an existing ICP reconstruction from 95 sampled frames, a <strong>44,430,791-point</strong> merged cloud, and cleaned point clouds for all three plants. The hyperspectral and RGB-D images visibly contain the same three plants, board grid and black-and-white fiducial markers.</p><p>The RGB-D folder identifies the run as 12:08:00. Both hyperspectral headers record 02:13:42 UTC, equivalent to approximately 12:13:42 Sydney time: about five minutes and forty-two seconds later. Because the subjects are stationary plants and the scene layout matches, sequential rather than simultaneous capture is acceptable for a prototype, although small leaf movement remains a registration error source.</p></div>
+<div class="claims"><div class="panel"><h3>Inputs already available</h3><ul><li>Calibrated FX10 and FX17 data and a merged 427-band cube.</li><li>RGB images, aligned depth images and camera intrinsics.</li><li>ICP-based scene reconstruction and individual plant point clouds.</li><li>Strong cross-modal anchors: the board, grid and fiducial markers.</li><li>Reference frames: Coleus 330, fuzzy kalanchoe 540 and succulent/jade 750.</li></ul></div><div class="panel"><h3>Implemented in this prototype</h3><ul><li>FX10-to-RGB-D registration for all three selected frames.</li><li>Depth backprojection from matched pixels into metric XYZ.</li><li>Full 427-band attachment plus five index-coloured 3D exports.</li><li>Depth coverage, reprojection and specimen-surface validation.</li><li>Direct recovery of the three transforms needed for global ICP placement.</li></ul></div></div>
+<div class="panel" style="margin-top:18px"><h3>Role and scope of ICP</h3><p>ICP aligns successive RGB-D point clouds to one another. It creates the 3D geometry but cannot directly align a two-dimensional hyperspectral cube to that geometry. Cross-modal fusion therefore needs a separate image-registration step. After an FX10 pixel is matched to an RGB-D pixel, its depth gives camera-space XYZ; the saved ICP pose then places that spectral point in the common reconstruction coordinate system.</p></div>
+<div class="panel" style="margin-top:18px"><h3>Implemented fusion workflow</h3><ol><li><strong>Coleus proof of concept:</strong> registered the upper hyperspectral component to RGB-D frame 330 and exported a depth-derived NDVI surface.</li><li><strong>Complete spectral attachment:</strong> associated the full 427-band spectrum and five indices with each valid 3D point.</li><li><strong>Other plants:</strong> repeated the validated workflow for fuzzy kalanchoe frame 540 and succulent/jade frame 750.</li><li><strong>Global scene placement:</strong> recovered the three required transforms directly against the legacy scene and exported global models.</li><li><strong>Research outputs:</strong> generated registration overlays, numerical validation, downloadable PLYs and an interactive viewer.</li></ol><p class="callout"><strong>Coverage limitation:</strong> the hyperspectral cameras primarily measured the upper visible surfaces. Occluded sides and leaf undersides remain grey/unmeasured. Any value propagated to those points would be an inference, not a measurement.</p></div></section>
+
+<section id="fusion-results"><h2>Fusion milestones: measured results</h2><p class="eyebrow">Pipeline run recorded 31 August 2026</p>
+<div class="metrics"><div class="metric"><span>Plants fused</span><b>3</b><small>Coleus, fuzzy kalanchoe and succulent/jade.</small></div><div class="metric"><span>Measured spectral XYZ points</span><b>10,485</b><small>After depth and cleaned-surface validation.</small></div><div class="metric"><span>Spectrum per retained point</span><b>427 bands</b><small>Approximately 398–1720 nm.</small></div><div class="metric"><span>Current coordinate status</span><b>Global ICP scene</b><small>Recovered scene transforms validated on held-out surface points.</small></div></div>
+<div class="panel"><h3>What was corrected during implementation</h3><p>The first extension used equal top/middle/bottom row thirds. Visual validation showed that those ranges overlap the plant silhouettes, mixing Coleus pixels into the fuzzy plant and fuzzy pixels into the jade plant. The production run now selects the actual connected plant components from the NDVI mask. Degenerate local homographies are rejected by inlier, reprojection-error and mapped-area checks; mapped pixels are deduplicated, separated from the background depth layer and finally required to lie within 20 mm of the corresponding cleaned 3D plant cloud.</p></div>
+
+            <article class="core"><div class="core-copy"><p class="eyebrow">RGB-D frame 330</p><h3>Coleus</h3>
+            <p><strong>Registration:</strong> 16 plant-local inliers · 4.03 px RMSE. The plant-local model was selected because it passed feature-count, error and geometric-spread checks.</p>
+            <p><strong>Measured fused output:</strong> 5,560 XYZ points, each carrying 427 reflectance bands. This retains 78.1% of the isolated hyperspectral component after unique-depth, foreground-layer and specimen-surface checks.</p>
+            <p><strong>3D surface check:</strong> 99.9% of the depth-layer points lay within 20 mm of the cleaned plant cloud. Pre-filter nearest-surface distance: median 0.00 mm, 90th percentile 0.00 mm.</p>
+            <p><strong>Exploratory NDVI median on retained points:</strong> 0.732.</p>
+            <div class="downloads"><span class="bundle-omitted" title="Available in the full local results folder">NDVI + grey specimen PLY · local scientific file</span><span class="bundle-omitted" title="Available in the full local results folder">427-band point data · local scientific file</span><a href="fusion/coleus/fusion_metrics.json">Metrics</a></div></div>
+            <div class="fusion-figures"><a href="fusion/coleus/registration_and_depth_overlay.webp"><img src="fusion/coleus/registration_and_depth_overlay.webp" alt="Coleus hyperspectral to RGB-D registration and measured depth overlay" loading="lazy"></a><a href="fusion/coleus/ndvi_3d_preview.webp"><img src="fusion/coleus/ndvi_3d_preview.webp" alt="Coleus NDVI measured surface over the grey cleaned specimen point cloud" loading="lazy"></a></div></article>
+            <article class="core"><div class="core-copy"><p class="eyebrow">RGB-D frame 540</p><h3>Fuzzy kalanchoe</h3>
+            <p><strong>Registration:</strong> 8 plant-local inliers · 1.82 px RMSE. The plant-local model was selected because it passed feature-count, error and geometric-spread checks.</p>
+            <p><strong>Measured fused output:</strong> 2,539 XYZ points, each carrying 427 reflectance bands. This retains 78.5% of the isolated hyperspectral component after unique-depth, foreground-layer and specimen-surface checks.</p>
+            <p><strong>3D surface check:</strong> 100.0% of the depth-layer points lay within 20 mm of the cleaned plant cloud. Pre-filter nearest-surface distance: median 0.00 mm, 90th percentile 0.00 mm.</p>
+            <p><strong>Exploratory NDVI median on retained points:</strong> 0.582.</p>
+            <div class="downloads"><span class="bundle-omitted" title="Available in the full local results folder">NDVI + grey specimen PLY · local scientific file</span><span class="bundle-omitted" title="Available in the full local results folder">427-band point data · local scientific file</span><a href="fusion/fuzzy_kalanchoe/fusion_metrics.json">Metrics</a></div></div>
+            <div class="fusion-figures"><a href="fusion/fuzzy_kalanchoe/registration_and_depth_overlay.webp"><img src="fusion/fuzzy_kalanchoe/registration_and_depth_overlay.webp" alt="Fuzzy kalanchoe hyperspectral to RGB-D registration and measured depth overlay" loading="lazy"></a><a href="fusion/fuzzy_kalanchoe/ndvi_3d_preview.webp"><img src="fusion/fuzzy_kalanchoe/ndvi_3d_preview.webp" alt="Fuzzy kalanchoe NDVI measured surface over the grey cleaned specimen point cloud" loading="lazy"></a></div></article>
+            <article class="core"><div class="core-copy"><p class="eyebrow">RGB-D frame 750</p><h3>Succulent / jade</h3>
+            <p><strong>Registration:</strong> 20 board inliers · ECC plant refinement. Lower-confidence registration: the plant-local homography was rejected as geometrically unstable, so the planar board model plus plant-masked ECC was retained.</p>
+            <p><strong>Measured fused output:</strong> 2,386 XYZ points, each carrying 427 reflectance bands. This retains 67.4% of the isolated hyperspectral component after unique-depth, foreground-layer and specimen-surface checks.</p>
+            <p><strong>3D surface check:</strong> 90.9% of the depth-layer points lay within 20 mm of the cleaned plant cloud. Pre-filter nearest-surface distance: median 0.00 mm, 90th percentile 18.09 mm.</p>
+            <p><strong>Exploratory NDVI median on retained points:</strong> 0.699.</p>
+            <div class="downloads"><span class="bundle-omitted" title="Available in the full local results folder">NDVI + grey specimen PLY · local scientific file</span><span class="bundle-omitted" title="Available in the full local results folder">427-band point data · local scientific file</span><a href="fusion/succulent_jade/fusion_metrics.json">Metrics</a></div></div>
+            <div class="fusion-figures"><a href="fusion/succulent_jade/registration_and_depth_overlay.webp"><img src="fusion/succulent_jade/registration_and_depth_overlay.webp" alt="Succulent / jade hyperspectral to RGB-D registration and measured depth overlay" loading="lazy"></a><a href="fusion/succulent_jade/ndvi_3d_preview.webp"><img src="fusion/succulent_jade/ndvi_3d_preview.webp" alt="Succulent / jade NDVI measured surface over the grey cleaned specimen point cloud" loading="lazy"></a></div></article>
+<div class="claims"><div class="panel"><h3>Milestones now complete</h3><ul><li>Hyperspectral-to-RGB-D registration for all three plants.</li><li>Depth backprojection into metric XYZ coordinates using the saved colour intrinsics and 10,000-unit-per-metre scale.</li><li>Complete 427-band spectral attachment for every retained point.</li><li>NDVI, NDRE, NDWI, MSI and NDNI PLY exports.</li><li>Combined models with measured spectral points coloured and unmeasured specimen geometry grey.</li><li>Numerical registration, depth-coverage and cleaned-surface validation files.</li></ul></div><div class="panel"><h3>Global-scene milestone complete</h3><p>The three selected camera-frame surfaces have now been transformed into the common legacy ICP scene coordinate system using direct cleaned-surface registration. The dedicated global-placement section records the transforms, held-out distance validation and inspectable global PLY files.</p><p>The complete historical 95-frame trajectory remains unavailable; only the three transforms required for this fusion were recovered.</p></div></div>
+<div class="downloads"><a href="fusion/fusion_summary.csv">Fusion summary (CSV)</a><a href="fusion/fusion_summary.json">Complete fusion provenance (JSON)</a></div></section>
+
+<section id="interactive-3d"><h2>Inspect every measured 3D spectral point</h2><p>The viewer now supports up to <strong>40× zoom</strong>. Drag to rotate, hold <strong>Shift while dragging</strong> to pan, use the mouse wheel or +/− buttons to zoom, and double-click a point to select and focus it. Switch between five index colourings without losing the underlying spectrum.</p>
+<div class="viewer-shell panel"><div class="viewer-toolbar" aria-label="3D viewer controls"><div class="viewer-plants" role="group" aria-label="Choose a model"><button type="button" class="active" data-viewer-plant="coleus" aria-pressed="true">Coleus</button><button type="button" data-viewer-plant="fuzzy_kalanchoe" aria-pressed="false">Fuzzy kalanchoe</button><button type="button" data-viewer-plant="succulent_jade" aria-pressed="false">Succulent / jade</button><button type="button" data-viewer-plant="global_scene" aria-pressed="false">Global ICP scene</button></div><label>Colour by <select id="viewer-index"><option>NDVI</option><option>NDRE</option><option>NDWI</option><option>MSI</option><option>NDNI</option></select></label><label>Point size <input id="viewer-point-size" type="range" min="1" max="6" step="0.25" value="2"></label><button type="button" id="viewer-zoom-out" aria-label="Zoom out">−</button><button type="button" id="viewer-zoom-in" aria-label="Zoom in">+</button><button type="button" id="viewer-focus" title="Centre the selected point and zoom closely">Focus selected</button><label class="check"><input id="viewer-auto-rotate" type="checkbox" checked> Auto-rotate</label><button type="button" id="viewer-reset">Reset view</button></div>
+<canvas id="fusion-viewer-canvas" tabindex="0" aria-label="Interactive 3D point-cloud viewer. Drag or use arrow keys to rotate; shift-drag to pan; wheel or plus and minus keys to zoom; click a point to inspect it."></canvas>
+<div class="viewer-footer"><div><span class="legend-grey"></span> RGB-D geometry without a spectral measurement <span class="legend-gradient"></span> measured spectral point, low → high within the selected index</div><p id="viewer-status" aria-live="polite">Loading model…</p><span class="bundle-omitted" title="Available in the full local results folder">Download full model PLY · local scientific file</span></div></div>
+<div class="spectral-inspector panel"><div class="inspector-copy"><p class="eyebrow">Per-point spectral inspector</p><h3 id="inspector-title">Select a measured spectral point</h3><p id="inspector-message">Click a coloured point in the model. Grey points are RGB-D geometry without a directly measured hyperspectral spectrum.</p><div id="inspector-details" hidden><p data-field="coordinate"></p><p data-field="hsi"></p><p data-field="rgbd"></p><div id="inspector-indices" class="inspector-indices"></div></div></div><div class="spectrum-wrap"><canvas id="viewer-spectrum-canvas" aria-label="Reflectance spectrum of the selected measured point"></canvas><p id="spectrum-readout">No spectrum selected.</p></div></div>
+<div class="claims viewer-meaning"><div class="panel"><h3>Fusion coverage</h3><p>The prototype fusion is complete for all retained measured points: 10,485 XYZ points each carry the full 427-band calibrated spectrum, five displayed indices, their source hyperspectral pixel and their corresponding RGB-D pixel. Those points are also placed in the common ICP scene.</p></div><div class="panel"><h3>Coverage limitation</h3><p>This is not complete surface coverage of every leaf. The hyperspectral cameras mainly observed upper-visible surfaces, so sides, undersides and occluded areas remain grey and have no invented spectrum. Registration is measured and validated, but remains an approximation affected by parallax and the five-minute capture gap.</p></div></div>
+<p class="callout"><strong>Display and precision note:</strong> all measured spectral points are selectable. Grey scene/specimen geometry is deterministically sampled for responsiveness. Spectra in the local viewer are stored at 16-bit display precision; the downloadable NPZ files retain the original float32 arrays.</p></section>
+
+<section id="global-placement"><h2>Global placement inside the legacy ICP scene</h2><p class="eyebrow">Missing-pose workaround completed · 31 August 2026</p>
+<div class="panel"><h3>Direct recovery of missing global poses</h3><p>The legacy run omitted its cumulative pose files, but frames 330, 540 and 750 were included in the every-tenth-frame ICP sequence. Each cleaned plant cloud therefore has a matching surface already embedded in the merged scene. A rigid camera-to-global transform was recovered by registering each cleaned plant cloud directly to the saved 300,000-point scene sample, then applying that transform to every fused spectral model.</p><p>This provides the placement required for the three plants. It does <strong>not</strong> recreate the missing complete trajectory of all 95 cameras.</p></div>
+<div class="metrics">
+            <div class="metric"><span>Coleus · frame 330</span><b>4.82 mm</b><small>Held-out median nearest-scene distance; p90 13.61 mm · 97.2% within 20 mm.</small></div>
+            <div class="metric"><span>Fuzzy kalanchoe · frame 540</span><b>4.95 mm</b><small>Held-out median nearest-scene distance; p90 10.85 mm · 99.8% within 20 mm.</small></div>
+            <div class="metric"><span>Succulent / jade · frame 750</span><b>3.55 mm</b><small>Held-out median nearest-scene distance; p90 7.82 mm · 99.7% within 20 mm.</small></div></div>
+<article class="core"><div class="core-copy"><h3>Independent check on points not used to fit the transform</h3><p>Alternate voxel-sampled source points were held out of the pose fit. Their nearest distance to the global scene was then measured. Across the plants, median distances were 3.55–4.95 mm and 97.2–99.8% of held-out points landed within 20 mm of the scene surface.</p><p>The pink, yellow and mint points in the figure are the measured hyperspectral surfaces after transformation. Their locations coincide with the three corresponding plants in both top and side projections.</p><div class="downloads"><a href="global_placement/global_placement_summary.json">Transforms and validation (JSON)</a><span class="bundle-omitted" title="Available in the full local results folder">Global NDVI scene PLY · local scientific file</span><span class="bundle-omitted" title="Available in the full local results folder">Global NDRE scene PLY · local scientific file</span><span class="bundle-omitted" title="Available in the full local results folder">Global NDWI scene PLY · local scientific file</span></div></div><a href="global_placement/global_placement_preview.webp"><img src="global_placement/global_placement_preview.webp" alt="Top and side projections showing three hyperspectral plant surfaces placed in the legacy global ICP scene" loading="lazy"></a></article>
+<div class="claims"><div class="panel"><h3>Claim now supported</h3><p>The 10,485 measured hyperspectral XYZ points have been transformed from their selected RGB-D camera frames into one common coordinate system aligned to the existing ICP scene. The interactive viewer and global PLY exports expose that placement.</p></div><div class="panel"><h3>Engineering fix for future runs</h3><p>Modify the reconstructor so it writes the cumulative 4×4 matrix after every accepted frame, together with frame index, fitness and RMSE. Then global placement is a direct matrix application, and this recovery step is unnecessary.</p></div></div>
+</section>
+<script src="fusion/viewer_models_core.js"></script><script src="fusion/viewer_spectra_coleus.js"></script><script src="fusion/viewer_spectra_fuzzy_kalanchoe.js"></script><script src="fusion/viewer_spectra_succulent_jade.js"></script><script src="fusion/viewer.js"></script>
+</main><footer><p><strong>Reproducible local report.</strong> Generated from the 28 August 2026 paired FX10/FX17 and RGB-D acquisitions. Source data were opened read-only. Methods include reflectance calibration, plant masking, cross-camera and cross-modal registration, depth backprojection, spectral attachment, RGB-D trait calculation and direct recovery of the three required legacy-scene transforms.</p></footer>
+</body></html>

@@ -1,0 +1,23 @@
+{
+  "ply": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_20260828120800_best_lighting\\merge_simple_full_step10\\merge_pcd_cam0.ply",
+  "point_count": 44430791,
+  "header_bytes": 211,
+  "bounds_min_m": [
+    -1.489786808715793,
+    -1.0335406920172163,
+    0.07950996362091586
+  ],
+  "bounds_max_m": [
+    3.2854421992855425,
+    1.0291637534403557,
+    1.9455470513897821
+  ],
+  "extent_m": [
+    4.775229008001336,
+    2.0627044454575723,
+    1.8660370877688663
+  ],
+  "preview_stride": 148,
+  "preview_point_count": 300000,
+  "preview_ply": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_20260828120800_best_lighting\\merge_simple_full_step10\\diagnostics\\scene_preview_sampled.ply"
+}

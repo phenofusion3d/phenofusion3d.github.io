@@ -1,0 +1,19 @@
+{
+  "dataset": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_20260828120800_best_lighting",
+  "rgb_dir": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_20260828120800_best_lighting\\rgb",
+  "depth_dir": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_20260828120800_best_lighting\\depth",
+  "output_ply": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_20260828120800_best_lighting\\merge_simple_full_step10\\merge_pcd_cam0.ply",
+  "frames_used": 95,
+  "succeeded": 95,
+  "failed": 0,
+  "points": 44430791,
+  "step_size": 10,
+  "depth_scale_units_per_m": 10000.0,
+  "depth_unit_m": 0.0001,
+  "depth_min_mm": 500,
+  "depth_trunc_m": 2.0,
+  "voxel_size_m": 0.01,
+  "use_tsdf": false,
+  "pipeline": "stakeholder_icp",
+  "live_ply_enabled": false
+}

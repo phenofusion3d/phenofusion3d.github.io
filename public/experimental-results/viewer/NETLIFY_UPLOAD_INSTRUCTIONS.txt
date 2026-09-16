@@ -1,0 +1,3 @@
+Upload this whole folder, not index.html by itself.
+Open https://app.netlify.com/drop and drag the 20260828_netlify_bundle folder onto the page.
+The deployed URL will end in netlify.app.

@@ -1,0 +1,4 @@
+manual_plant_id,specimen_label,source_image,manual_height_m,software_height_m,signed_error_m,absolute_error_m,absolute_percent_error
+1,succulent_jade,manual_plant_1_succulent.png,0.24,0.22889999999999994,-0.011100000000000054,0.011100000000000054,4.625000000000023
+2,coleus,manual_plant_2_coleus.png,0.206,0.21689999999999998,0.010899999999999993,0.010899999999999993,5.291262135922327
+3,fuzzy_kalanchoe,manual_plant_3_fuzzy.png,0.217,0.21699999999999997,-2.7755575615628914e-17,2.7755575615628914e-17,1.2790587841303648e-14

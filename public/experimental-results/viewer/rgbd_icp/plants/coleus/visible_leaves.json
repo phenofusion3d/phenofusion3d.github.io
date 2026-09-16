@@ -1,0 +1,146 @@
+[
+  {
+    "segment_id": 1,
+    "length_m": 0.09783927351236343,
+    "width_m": 0.04618902876973152,
+    "projected_area_m2": 0.0011161248979254757,
+    "pixel_count": 1038,
+    "plausible": true,
+    "selected_for_comparison": false
+  },
+  {
+    "segment_id": 2,
+    "length_m": 0.19941288232803345,
+    "width_m": 0.09360842406749725,
+    "projected_area_m2": 0.002400078815826662,
+    "pixel_count": 3179,
+    "plausible": false,
+    "selected_for_comparison": false
+  },
+  {
+    "segment_id": 3,
+    "length_m": 0.16866378486156464,
+    "width_m": 0.10608913749456406,
+    "projected_area_m2": 0.005568038609163689,
+    "pixel_count": 6133,
+    "plausible": false,
+    "selected_for_comparison": false
+  },
+  {
+    "segment_id": 4,
+    "length_m": 0.09676189720630646,
+    "width_m": 0.09376700222492218,
+    "projected_area_m2": 0.002573708253442465,
+    "pixel_count": 3006,
+    "plausible": true,
+    "selected_for_comparison": true
+  },
+  {
+    "segment_id": 5,
+    "length_m": 0.04246664047241211,
+    "width_m": 0.025800883769989014,
+    "projected_area_m2": 0.0007002751020799905,
+    "pixel_count": 673,
+    "plausible": true,
+    "selected_for_comparison": false
+  },
+  {
+    "segment_id": 6,
+    "length_m": 0.0234047994017601,
+    "width_m": 0.016623210161924362,
+    "projected_area_m2": 0.00032139554013944254,
+    "pixel_count": 409,
+    "plausible": false,
+    "selected_for_comparison": false
+  },
+  {
+    "segment_id": 7,
+    "length_m": 0.02039674110710621,
+    "width_m": 0.02020139805972576,
+    "projected_area_m2": 0.0003139157470451942,
+    "pixel_count": 501,
+    "plausible": false,
+    "selected_for_comparison": false
+  },
+  {
+    "segment_id": 8,
+    "length_m": 0.13603466749191284,
+    "width_m": 0.08259578794240952,
+    "projected_area_m2": 0.0031689228494861483,
+    "pixel_count": 4932,
+    "plausible": true,
+    "selected_for_comparison": true
+  },
+  {
+    "segment_id": 9,
+    "length_m": 0.03032715804874897,
+    "width_m": 0.01019138190895319,
+    "projected_area_m2": 0.0002812372569244826,
+    "pixel_count": 427,
+    "plausible": false,
+    "selected_for_comparison": false
+  },
+  {
+    "segment_id": 10,
+    "length_m": 0.2372448593378067,
+    "width_m": 0.1245051696896553,
+    "projected_area_m2": 0.00605180643932928,
+    "pixel_count": 9059,
+    "plausible": false,
+    "selected_for_comparison": false
+  },
+  {
+    "segment_id": 11,
+    "length_m": 0.08243897557258606,
+    "width_m": 0.04381318762898445,
+    "projected_area_m2": 0.001683761472126016,
+    "pixel_count": 2424,
+    "plausible": true,
+    "selected_for_comparison": false
+  },
+  {
+    "segment_id": 12,
+    "length_m": 0.11474720388650894,
+    "width_m": 0.0467471107840538,
+    "projected_area_m2": 0.001273296534917361,
+    "pixel_count": 1974,
+    "plausible": true,
+    "selected_for_comparison": false
+  },
+  {
+    "segment_id": 13,
+    "length_m": 0.030407343059778214,
+    "width_m": 0.028973985463380814,
+    "projected_area_m2": 0.0005179911128364734,
+    "pixel_count": 464,
+    "plausible": false,
+    "selected_for_comparison": false
+  },
+  {
+    "segment_id": 14,
+    "length_m": 0.20020312070846558,
+    "width_m": 0.12724308669567108,
+    "projected_area_m2": 0.009848562306829857,
+    "pixel_count": 14971,
+    "plausible": false,
+    "selected_for_comparison": false
+  },
+  {
+    "segment_id": 15,
+    "length_m": 0.051969293504953384,
+    "width_m": 0.04034095257520676,
+    "projected_area_m2": 0.0010867298257607521,
+    "pixel_count": 1521,
+    "plausible": true,
+    "selected_for_comparison": false
+  },
+  {
+    "segment_id": 16,
+    "length_m": 0.08172474056482315,
+    "width_m": 0.06311092525720596,
+    "projected_area_m2": 0.0030439070805552606,
+    "pixel_count": 4844,
+    "plausible": true,
+    "selected_for_comparison": true
+  }
+]

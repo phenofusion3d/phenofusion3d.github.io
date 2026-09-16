@@ -1,0 +1,127 @@
+{
+  "plant": "fuzzy_kalanchoe",
+  "label": "Fuzzy kalanchoe",
+  "rgbd_frame": 540,
+  "coordinate_frame": "RGB-D camera frame 540; not yet transformed by the global ICP pose",
+  "registration": {
+    "method": "mutual SIFT matches plus RANSAC board homography and plant-masked ECC refinement",
+    "keypoints_hsi": 6247,
+    "keypoints_rgb": 8000,
+    "candidate_matches": 36,
+    "inliers": 11,
+    "inlier_ratio": 0.3055555555555556,
+    "reprojection_rmse_px": 2.4408299922943115,
+    "reprojection_median_px": 1.1771882772445679,
+    "plant_refinement": "plant-local SIFT/RANSAC homography",
+    "plant_candidate_matches": 69,
+    "plant_inliers": 8,
+    "plant_reprojection_rmse_px": 1.8240530490875244,
+    "selected_model": "plant-local SIFT/RANSAC homography",
+    "ecc_correlation": null,
+    "ecc_residual_affine": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "homography_hsi_to_rgb": [
+      [
+        0.5021556724009761,
+        -16.420907582930706,
+        3296.6102073657353
+      ],
+      [
+        4.144956608196099,
+        -7.610987565065209,
+        845.796421954721
+      ],
+      [
+        0.00011759748155111671,
+        -0.01569248336805485,
+        2.412323503124937
+      ]
+    ]
+  },
+  "coverage": {
+    "hyperspectral_plant_pixels_in_region": 3236,
+    "mapped_samples_before_unique_pixel_filter": 3236,
+    "unique_rgbd_depth_pixels": 3229,
+    "points_with_valid_depth": 2539,
+    "valid_depth_fraction": 0.784610630407911,
+    "depth_layer_center_m": 0.5156674385070801,
+    "depth_layer_center_method": "nearer k-means depth layer",
+    "depth_layer_filter_radius_m": 0.06,
+    "points_before_specimen_surface_filter": 2539,
+    "points_within_20mm_of_specimen_surface": 2539,
+    "specimen_surface_retention_fraction": 1.0
+  },
+  "geometry": {
+    "depth_scale_units_per_m": 10000.0,
+    "bounds_min_m": [
+      -0.0065265828743577,
+      -0.03409714624285698,
+      0.4830000102519989
+    ],
+    "bounds_max_m": [
+      0.08126485347747803,
+      0.09397143125534058,
+      0.5741000175476074
+    ],
+    "extent_m": [
+      0.08779143542051315,
+      0.12806858122348785,
+      0.09110000729560852
+    ],
+    "median_depth_m": 0.5139999985694885
+  },
+  "specimen_surface_validation": {
+    "specimen_pointcloud": "/mnt/c/Personal/My_DEGREE's/Master_of_Computing_(Advanced)/Australian_National_University/Technical Team Project - COMP8715/PhenoFusion3D/data/main/test_plant_20260828120800_best_lighting/validation/software_traits/plant_3/specimen_pointcloud.ply",
+    "specimen_points": 20585,
+    "nearest_surface_distance_median_mm_before_filter": 0.0,
+    "nearest_surface_distance_p90_mm_before_filter": 0.0,
+    "acceptance_distance_mm": 20.0
+  },
+  "spectral": {
+    "bands": 427,
+    "wavelength_min_nm": 397.6600036621094,
+    "wavelength_max_nm": 1720.22998046875,
+    "index_display_ranges": {
+      "NDVI": {
+        "p02": 0.3407705509662628,
+        "p98": 0.776875169277191,
+        "median": 0.5823397040367126
+      },
+      "NDRE": {
+        "p02": 0.0,
+        "p98": 0.2740156805515289,
+        "median": 0.16052071750164032
+      },
+      "NDWI": {
+        "p02": -0.28298771142959595,
+        "p98": 0.5392045331001282,
+        "median": 0.16206225752830505
+      },
+      "MSI": {
+        "p02": 0.03956238552927971,
+        "p98": 1.2758626461029035,
+        "median": 0.32000666856765747
+      },
+      "NDNI": {
+        "p02": 0.19676702260971068,
+        "p98": 0.575897686481476,
+        "median": 0.3411296308040619
+      }
+    }
+  },
+  "limitations": [
+    "Only hyperspectrally measured upper-visible pixels are exported.",
+    "A planar homography approximates cross-modal alignment; elevated leaves can exhibit parallax.",
+    "Points remain in the selected RGB-D camera frame until a saved ICP pose is available."
+  ]
+}

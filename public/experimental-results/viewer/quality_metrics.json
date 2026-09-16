@@ -1,0 +1,79 @@
+{
+  "source": {
+    "data_directory": "/mnt/c/Personal/My_DEGREE's/Master_of_Computing_(Advanced)/Australian_National_University/Technical Team Project - COMP8715/3d_hyperspec_ai/data/20260828",
+    "fx10_shape": [
+      2127,
+      1024,
+      224
+    ],
+    "fx17_shape": [
+      2126,
+      640,
+      224
+    ],
+    "spatial_stride": 4
+  },
+  "calibration": {
+    "method": "median white/dark ROI spectra, reflectance clipped to 0\u20131",
+    "fx10_valid_bands": 224,
+    "fx17_valid_bands": 224
+  },
+  "background_removal": {
+    "fx10_index": "NDVI",
+    "fx10_threshold": 0.2998514324426651,
+    "fx10_threshold_methods": {
+      "otsu": 0.32421720027923584,
+      "percentile_93": 0.6802991628646851,
+      "gmm": 0.06906877874254103,
+      "spatial_otsu": 0.27548566460609436
+    },
+    "fx10_plant_fraction": 0.15443110098176718,
+    "fx17_index": "NWACI",
+    "fx17_threshold": 0.2407672256231308,
+    "fx17_threshold_methods": {
+      "otsu": 0.24573355913162231,
+      "percentile_93": 0.5427860617637634,
+      "gmm": 0.16357491127363555,
+      "spatial_otsu": 0.23580089211463928
+    },
+    "fx17_plant_fraction": 0.18164281474642222
+  },
+  "cross_calibration": {
+    "gain": 1.2770562593006403,
+    "offset": -0.1877369207126406,
+    "overlap_rmse_before": 0.005546127019178943,
+    "overlap_rmse_after": 0.0018762207190833084
+  },
+  "registration": {
+    "inliers": 190,
+    "good_matches": 194,
+    "keypoints_fx10": 408,
+    "keypoints_fx17": 461,
+    "method": "SIFT + RANSAC + mutual information",
+    "mi_initial": 1.2901410349469358,
+    "mi_final": 1.294335080857234,
+    "mean_reprojection_error": 0.6339315877352049
+  },
+  "registration_matrix": [
+    [
+      1.0119684934616089,
+      -0.0008481398690491915,
+      -1.6147300004959106
+    ],
+    [
+      0.0028043710626661777,
+      1.0385061502456665,
+      5.7428998947143555
+    ]
+  ],
+  "merged_cube": {
+    "shape": [
+      496,
+      184,
+      427
+    ],
+    "wavelength_min_nm": 397.66,
+    "wavelength_max_nm": 1720.23
+  },
+  "scientific_caveat": "Showcase outputs retain every spectral band but use spatial stride sampling. Index values are exploratory proxies and require biological ground-truth validation."
+}

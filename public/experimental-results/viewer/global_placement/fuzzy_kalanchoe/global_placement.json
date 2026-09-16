@@ -1,0 +1,71 @@
+{
+  "plant": "fuzzy_kalanchoe",
+  "label": "Fuzzy kalanchoe",
+  "rgbd_frame": 540,
+  "method": "direct cleaned-plant to sampled-global-scene robust rigid ICP",
+  "global_x_seed_m": 0.97,
+  "source_specimen_points": 20585,
+  "source_voxel_sample_points": 2417,
+  "target_scene_points": 41036,
+  "fit_points": 1209,
+  "transform_camera_to_global": [
+    [
+      0.9773816206276698,
+      0.05943605442505512,
+      -0.2029594124292152,
+      1.0277963363758558
+    ],
+    [
+      -0.05278084658510216,
+      0.997880857132624,
+      0.03805229562094275,
+      -0.0378261152837613
+    ],
+    [
+      0.2047909907515252,
+      -0.026479244752172854,
+      0.9784474946078442,
+      0.13462039386160102
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "translation_m": [
+    1.0277963363758558,
+    -0.0378261152837613,
+    0.13462039386160102
+  ],
+  "rotation_magnitude_deg": 12.351155105021007,
+  "iterations": 45,
+  "final_fit_iteration": {
+    "iteration": 45,
+    "correspondences": 925,
+    "median_distance_mm": 4.120566726716611,
+    "p90_distance_mm": 6.797771117441089,
+    "delta_translation_mm": 0.47188534132360316,
+    "delta_rotation_deg": 0.023842790699077254
+  },
+  "held_out_validation": {
+    "held_out_points": 1208,
+    "nearest_scene_distance_median_mm": 4.952318568257152,
+    "nearest_scene_distance_p90_mm": 10.849867136624539,
+    "within_20mm_fraction": 0.9975165562913907,
+    "within_30mm_fraction": 1.0
+  },
+  "exported_models": [
+    "global_placement/fuzzy_kalanchoe/fuzzy_kalanchoe_ndvi_global.ply",
+    "global_placement/fuzzy_kalanchoe/fuzzy_kalanchoe_ndre_global.ply",
+    "global_placement/fuzzy_kalanchoe/fuzzy_kalanchoe_ndwi_global.ply",
+    "global_placement/fuzzy_kalanchoe/fuzzy_kalanchoe_msi_global.ply",
+    "global_placement/fuzzy_kalanchoe/fuzzy_kalanchoe_ndni_global.ply"
+  ],
+  "limitations": [
+    "This recovers the selected plant-frame transform directly against the saved scene; it does not reconstruct the missing complete 95-frame pose trajectory.",
+    "The 300,000-point diagnostic scene sample is used as the registration target rather than the 1.2 GB full PLY.",
+    "Future reconstructions should save every accepted cumulative pose during ICP."
+  ]
+}

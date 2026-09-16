@@ -1,0 +1,71 @@
+{
+  "plant": "succulent_jade",
+  "label": "Succulent / jade",
+  "rgbd_frame": 750,
+  "method": "direct cleaned-plant to sampled-global-scene robust rigid ICP",
+  "global_x_seed_m": 1.18,
+  "source_specimen_points": 23562,
+  "source_voxel_sample_points": 3502,
+  "target_scene_points": 33728,
+  "fit_points": 1751,
+  "transform_camera_to_global": [
+    [
+      0.9998855011013931,
+      -0.006306064609905703,
+      -0.013755661974628072,
+      1.3018018183321731
+    ],
+    [
+      0.006366814589001289,
+      0.9999701521109162,
+      0.00437704914991215,
+      -0.016077709656551784
+    ],
+    [
+      0.013727649442417124,
+      -0.004464127731952746,
+      0.9998958061740166,
+      -0.014473190496495142
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "translation_m": [
+    1.3018018183321731,
+    -0.016077709656551784,
+    -0.014473190496495142
+  ],
+  "rotation_magnitude_deg": 0.903287110655657,
+  "iterations": 45,
+  "final_fit_iteration": {
+    "iteration": 45,
+    "correspondences": 1319,
+    "median_distance_mm": 3.10961620900263,
+    "p90_distance_mm": 4.775584674338337,
+    "delta_translation_mm": 0.7624914461087473,
+    "delta_rotation_deg": 0.04465684604226779
+  },
+  "held_out_validation": {
+    "held_out_points": 1751,
+    "nearest_scene_distance_median_mm": 3.5544922606868066,
+    "nearest_scene_distance_p90_mm": 7.821646236250019,
+    "within_20mm_fraction": 0.9971444888635066,
+    "within_30mm_fraction": 1.0
+  },
+  "exported_models": [
+    "global_placement/succulent_jade/succulent_jade_ndvi_global.ply",
+    "global_placement/succulent_jade/succulent_jade_ndre_global.ply",
+    "global_placement/succulent_jade/succulent_jade_ndwi_global.ply",
+    "global_placement/succulent_jade/succulent_jade_msi_global.ply",
+    "global_placement/succulent_jade/succulent_jade_ndni_global.ply"
+  ],
+  "limitations": [
+    "This recovers the selected plant-frame transform directly against the saved scene; it does not reconstruct the missing complete 95-frame pose trajectory.",
+    "The 300,000-point diagnostic scene sample is used as the registration target rather than the 1.2 GB full PLY.",
+    "Future reconstructions should save every accepted cumulative pose during ICP."
+  ]
+}

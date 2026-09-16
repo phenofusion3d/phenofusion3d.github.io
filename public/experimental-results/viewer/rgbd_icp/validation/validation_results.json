@@ -1,0 +1,1074 @@
+{
+  "dataset": "test_plant_20260828120800_best_lighting",
+  "manual_unit_interpretation": "numeric annotations confirmed as millimetres",
+  "manual_unit_status": "confirmed_by_user_2026-08-30",
+  "height_mape_percent": 3.305420711974121,
+  "matched_leaf_length_mape_percent": 4.249409876359339,
+  "matched_leaf_width_mape_percent": 5.445497872928526,
+  "plant_height_comparisons": [
+    {
+      "manual_plant_id": 1,
+      "specimen_label": "succulent_jade",
+      "source_image": "manual_plant_1_succulent.png",
+      "manual_height_m": 0.24,
+      "software_height_m": 0.22889999999999994,
+      "signed_error_m": -0.011100000000000054,
+      "absolute_error_m": 0.011100000000000054,
+      "absolute_percent_error": 4.625000000000023
+    },
+    {
+      "manual_plant_id": 2,
+      "specimen_label": "coleus",
+      "source_image": "manual_plant_2_coleus.png",
+      "manual_height_m": 0.206,
+      "software_height_m": 0.21689999999999998,
+      "signed_error_m": 0.010899999999999993,
+      "absolute_error_m": 0.010899999999999993,
+      "absolute_percent_error": 5.291262135922327
+    },
+    {
+      "manual_plant_id": 3,
+      "specimen_label": "fuzzy_kalanchoe",
+      "source_image": "manual_plant_3_fuzzy.png",
+      "manual_height_m": 0.217,
+      "software_height_m": 0.21699999999999997,
+      "signed_error_m": -2.7755575615628914e-17,
+      "absolute_error_m": 2.7755575615628914e-17,
+      "absolute_percent_error": 1.2790587841303648e-14
+    }
+  ],
+  "matched_leaf_comparisons": [
+    {
+      "manual_plant_id": 1,
+      "specimen_label": "succulent_jade",
+      "leaf_id": 1,
+      "reference_frame_index": 750,
+      "measurement_frame_index": 750,
+      "match_description": "manual upper-rosette left broad leaf; scan lower-rosette right broad leaf after view rotation",
+      "manual_length_mm": 60.0,
+      "pointcloud_length_mm": 66.08156811918005,
+      "length_signed_error_mm": 6.081568119180048,
+      "length_absolute_percent_error": 10.13594686530008,
+      "manual_width_mm": 43.0,
+      "pointcloud_width_mm": 41.52176898179542,
+      "diagnostic_3d_chord_length_mm": 67.17328777052585,
+      "diagnostic_3d_chord_width_mm": 41.10275297498377,
+      "width_signed_error_mm": -1.478231018204582,
+      "width_absolute_percent_error": 3.4377465539641436,
+      "reference_length_pixels": [
+        [
+          470,
+          455
+        ],
+        [
+          550,
+          485
+        ]
+      ],
+      "reference_width_pixels": [
+        [
+          520,
+          442
+        ],
+        [
+          510,
+          495
+        ]
+      ],
+      "measurement_length_pixels": [
+        [
+          470,
+          455
+        ],
+        [
+          550,
+          485
+        ]
+      ],
+      "measurement_width_pixels": [
+        [
+          520,
+          442
+        ],
+        [
+          510,
+          495
+        ]
+      ],
+      "landmark_correlations": [
+        1.0,
+        0.9999992847442627,
+        0.9999992847442627,
+        1.0
+      ],
+      "landmark_mean_correlation": 0.9999996423721313,
+      "length_raw_depth": [
+        4967.0,
+        4861.5
+      ],
+      "width_raw_depth": [
+        5021.0,
+        4973.0
+      ],
+      "length_plane_raw_depth": 4994.0,
+      "width_plane_raw_depth": 4967.0,
+      "length_xyz_m": [
+        [
+          -0.12641214546953725,
+          0.07312071277869259,
+          0.4967
+        ],
+        [
+          -0.06350155784809021,
+          0.09417317237433398,
+          0.48615
+        ]
+      ],
+      "width_xyz_m": [
+        [
+          -0.08891053018941182,
+          0.06379853519004462,
+          0.5021
+        ],
+        [
+          -0.0957614167589448,
+          0.10404107058897209,
+          0.4973
+        ]
+      ],
+      "length_depth_search_radius_px": [
+        3,
+        3
+      ],
+      "width_depth_search_radius_px": [
+        3,
+        3
+      ],
+      "max_depth_search_radius_px": 3,
+      "leaf_plane_depth_search_radius_px": 3,
+      "measurement_method": "calibrated XY leaf-plane distance at robust midpoint depth; full 3D endpoint chord retained as contamination diagnostic"
+    },
+    {
+      "manual_plant_id": 1,
+      "specimen_label": "succulent_jade",
+      "leaf_id": 2,
+      "reference_frame_index": 750,
+      "measurement_frame_index": 750,
+      "match_description": "manual upper-rosette small upper leaf; scan lower-rosette small central leaf after view rotation",
+      "manual_length_mm": 42.0,
+      "pointcloud_length_mm": 40.51070746880719,
+      "length_signed_error_mm": -1.4892925311928096,
+      "length_absolute_percent_error": 3.545934598078118,
+      "manual_width_mm": 35.0,
+      "pointcloud_width_mm": 29.109105760314563,
+      "diagnostic_3d_chord_length_mm": 38.61628067646275,
+      "diagnostic_3d_chord_width_mm": 43.74828506994564,
+      "width_signed_error_mm": -5.890894239685437,
+      "width_absolute_percent_error": 16.831126399101247,
+      "reference_length_pixels": [
+        [
+          470,
+          455
+        ],
+        [
+          430,
+          490
+        ]
+      ],
+      "reference_width_pixels": [
+        [
+          430,
+          465
+        ],
+        [
+          455,
+          495
+        ]
+      ],
+      "measurement_length_pixels": [
+        [
+          470,
+          455
+        ],
+        [
+          430,
+          490
+        ]
+      ],
+      "measurement_width_pixels": [
+        [
+          430,
+          465
+        ],
+        [
+          455,
+          495
+        ]
+      ],
+      "landmark_correlations": [
+        1.0,
+        0.9999993443489075,
+        0.9999940395355225,
+        1.0
+      ],
+      "landmark_mean_correlation": 0.9999983459711075,
+      "length_raw_depth": [
+        4967.0,
+        4792.0
+      ],
+      "width_raw_depth": [
+        5035.0,
+        4743.0
+      ],
+      "length_plane_raw_depth": 4920.0,
+      "width_plane_raw_depth": 4811.0,
+      "length_xyz_m": [
+        [
+          -0.12641214546953725,
+          0.07312071277869259,
+          0.4967
+        ],
+        [
+          -0.15164061793146,
+          0.09654060412176584,
+          0.4792
+        ]
+      ],
+      "width_xyz_m": [
+        [
+          -0.1593302402514401,
+          0.08192586711455388,
+          0.5035
+        ],
+        [
+          -0.1317282980439555,
+          0.09922919722571778,
+          0.4743
+        ]
+      ],
+      "length_depth_search_radius_px": [
+        3,
+        3
+      ],
+      "width_depth_search_radius_px": [
+        3,
+        3
+      ],
+      "max_depth_search_radius_px": 3,
+      "leaf_plane_depth_search_radius_px": 3,
+      "measurement_method": "calibrated XY leaf-plane distance at robust midpoint depth; full 3D endpoint chord retained as contamination diagnostic"
+    },
+    {
+      "manual_plant_id": 1,
+      "specimen_label": "succulent_jade",
+      "leaf_id": 3,
+      "reference_frame_index": 750,
+      "measurement_frame_index": 750,
+      "match_description": "manual upper-rosette right broad leaf; scan lower-rosette left broad leaf after view rotation",
+      "manual_length_mm": 54.0,
+      "pointcloud_length_mm": 54.544427884809885,
+      "length_signed_error_mm": 0.5444278848098847,
+      "length_absolute_percent_error": 1.0081997866849717,
+      "manual_width_mm": 43.0,
+      "pointcloud_width_mm": 36.463330665688716,
+      "diagnostic_3d_chord_length_mm": 59.33768889589598,
+      "diagnostic_3d_chord_width_mm": 37.6988052371782,
+      "width_signed_error_mm": -6.536669334311284,
+      "width_absolute_percent_error": 15.20155659142159,
+      "reference_length_pixels": [
+        [
+          465,
+          455
+        ],
+        [
+          395,
+          440
+        ]
+      ],
+      "reference_width_pixels": [
+        [
+          425,
+          425
+        ],
+        [
+          410,
+          470
+        ]
+      ],
+      "measurement_length_pixels": [
+        [
+          465,
+          455
+        ],
+        [
+          395,
+          440
+        ]
+      ],
+      "measurement_width_pixels": [
+        [
+          425,
+          425
+        ],
+        [
+          410,
+          470
+        ]
+      ],
+      "landmark_correlations": [
+        1.0,
+        0.9999985694885254,
+        0.9999986886978149,
+        0.9999980330467224
+      ],
+      "landmark_mean_correlation": 0.9999988228082657,
+      "length_raw_depth": [
+        4960.0,
+        5062.0
+      ],
+      "width_raw_depth": [
+        4980.0,
+        5014.0
+      ],
+      "length_plane_raw_depth": 4920.0,
+      "width_plane_raw_depth": 4960.0,
+      "length_xyz_m": [
+        [
+          -0.13007435607880735,
+          0.0730176636565966,
+          0.496
+        ],
+        [
+          -0.18762001319051236,
+          0.06275030415727971,
+          0.5062
+        ]
+      ],
+      "width_xyz_m": [
+        [
+          -0.16144563951301338,
+          0.05015551782798156,
+          0.498
+        ],
+        [
+          -0.17419440030804326,
+          0.08546994851151098,
+          0.5014
+        ]
+      ],
+      "length_depth_search_radius_px": [
+        3,
+        3
+      ],
+      "width_depth_search_radius_px": [
+        3,
+        3
+      ],
+      "max_depth_search_radius_px": 3,
+      "leaf_plane_depth_search_radius_px": 3,
+      "measurement_method": "calibrated XY leaf-plane distance at robust midpoint depth; full 3D endpoint chord retained as contamination diagnostic"
+    },
+    {
+      "manual_plant_id": 2,
+      "specimen_label": "coleus",
+      "leaf_id": 1,
+      "reference_frame_index": 330,
+      "measurement_frame_index": 330,
+      "match_description": "manual left-facing central leaf; scan lower-right leaf after view rotation",
+      "manual_length_mm": 95.0,
+      "pointcloud_length_mm": 91.69006478449045,
+      "length_signed_error_mm": -3.3099352155095545,
+      "length_absolute_percent_error": 3.4841423321153204,
+      "manual_width_mm": 68.0,
+      "pointcloud_width_mm": 69.04666719938346,
+      "diagnostic_3d_chord_length_mm": 164.77921418556932,
+      "diagnostic_3d_chord_width_mm": 94.75758632813829,
+      "width_signed_error_mm": 1.0466671993834638,
+      "width_absolute_percent_error": 1.5392164696815642,
+      "reference_length_pixels": [
+        [
+          650,
+          420
+        ],
+        [
+          750,
+          470
+        ]
+      ],
+      "reference_width_pixels": [
+        [
+          690,
+          400
+        ],
+        [
+          700,
+          485
+        ]
+      ],
+      "measurement_length_pixels": [
+        [
+          650,
+          420
+        ],
+        [
+          750,
+          470
+        ]
+      ],
+      "measurement_width_pixels": [
+        [
+          690,
+          400
+        ],
+        [
+          700,
+          485
+        ]
+      ],
+      "landmark_correlations": [
+        1.0,
+        0.9999962449073792,
+        0.9999992251396179,
+        1.0
+      ],
+      "landmark_mean_correlation": 0.9999988675117493,
+      "length_raw_depth": [
+        5228.0,
+        6378.0
+      ],
+      "width_raw_depth": [
+        5097.0,
+        5627.0
+      ],
+      "length_plane_raw_depth": 5295.0,
+      "width_plane_raw_depth": 5205.0,
+      "length_xyz_m": [
+        [
+          0.01266850911672715,
+          0.048601597234875345,
+          0.5228
+        ],
+        [
+          0.11422066882211258,
+          0.10872104738859534,
+          0.6378
+        ]
+      ],
+      "width_xyz_m": [
+        [
+          0.04392257323305167,
+          0.03158336049378091,
+          0.5097
+        ],
+        [
+          0.05720336130284002,
+          0.10900183913408973,
+          0.5627
+        ]
+      ],
+      "length_depth_search_radius_px": [
+        3,
+        13
+      ],
+      "width_depth_search_radius_px": [
+        3,
+        3
+      ],
+      "max_depth_search_radius_px": 13,
+      "leaf_plane_depth_search_radius_px": 3,
+      "measurement_method": "calibrated XY leaf-plane distance at robust midpoint depth; full 3D endpoint chord retained as contamination diagnostic"
+    },
+    {
+      "manual_plant_id": 2,
+      "specimen_label": "coleus",
+      "leaf_id": 2,
+      "reference_frame_index": 330,
+      "measurement_frame_index": 330,
+      "match_description": "manual large upper-right leaf; scan lower-left broad leaf after view rotation",
+      "manual_length_mm": 115.0,
+      "pointcloud_length_mm": 113.9809053266055,
+      "length_signed_error_mm": -1.0190946733945054,
+      "length_absolute_percent_error": 0.8861692812126134,
+      "manual_width_mm": 96.0,
+      "pointcloud_width_mm": 100.54771380540564,
+      "diagnostic_3d_chord_length_mm": 111.6125449331398,
+      "diagnostic_3d_chord_width_mm": 105.64214708641647,
+      "width_signed_error_mm": 4.547713805405635,
+      "width_absolute_percent_error": 4.73720188063087,
+      "reference_length_pixels": [
+        [
+          650,
+          420
+        ],
+        [
+          560,
+          530
+        ]
+      ],
+      "reference_width_pixels": [
+        [
+          500,
+          470
+        ],
+        [
+          620,
+          520
+        ]
+      ],
+      "measurement_length_pixels": [
+        [
+          650,
+          420
+        ],
+        [
+          560,
+          530
+        ]
+      ],
+      "measurement_width_pixels": [
+        [
+          500,
+          470
+        ],
+        [
+          620,
+          520
+        ]
+      ],
+      "landmark_correlations": [
+        1.0,
+        1.0,
+        1.0,
+        0.9999961853027344
+      ],
+      "landmark_mean_correlation": 0.9999990463256836,
+      "length_raw_depth": [
+        5228.0,
+        5048.0
+      ],
+      "width_raw_depth": [
+        5048.0,
+        5265.0
+      ],
+      "length_plane_raw_depth": 5176.0,
+      "width_plane_raw_depth": 4994.0,
+      "length_xyz_m": [
+        [
+          0.01266850911672715,
+          0.048601597234875345,
+          0.5228
+        ],
+        [
+          -0.058120647783075234,
+          0.1329950534496039,
+          0.5048
+        ]
+      ],
+      "width_xyz_m": [
+        [
+          -0.10502263460163633,
+          0.08604952135742072,
+          0.5048
+        ],
+        [
+          -0.011700921152568747,
+          0.1305515554677642,
+          0.5265
+        ]
+      ],
+      "length_depth_search_radius_px": [
+        3,
+        3
+      ],
+      "width_depth_search_radius_px": [
+        23,
+        3
+      ],
+      "max_depth_search_radius_px": 23,
+      "leaf_plane_depth_search_radius_px": 3,
+      "measurement_method": "calibrated XY leaf-plane distance at robust midpoint depth; full 3D endpoint chord retained as contamination diagnostic"
+    },
+    {
+      "manual_plant_id": 2,
+      "specimen_label": "coleus",
+      "leaf_id": 3,
+      "reference_frame_index": 330,
+      "measurement_frame_index": 330,
+      "match_description": "manual right-facing central leaf; scan left-facing central leaf after view rotation",
+      "manual_length_mm": 104.0,
+      "pointcloud_length_mm": 96.12714666350315,
+      "length_signed_error_mm": -7.872853336496846,
+      "length_absolute_percent_error": 7.570051285093121,
+      "manual_width_mm": 84.0,
+      "pointcloud_width_mm": 84.35258077524986,
+      "diagnostic_3d_chord_length_mm": 185.65569123805102,
+      "diagnostic_3d_chord_width_mm": 126.43339273738347,
+      "width_signed_error_mm": 0.3525807752498622,
+      "width_absolute_percent_error": 0.41973901815459785,
+      "reference_length_pixels": [
+        [
+          620,
+          395
+        ],
+        [
+          500,
+          380
+        ]
+      ],
+      "reference_width_pixels": [
+        [
+          540,
+          325
+        ],
+        [
+          565,
+          425
+        ]
+      ],
+      "measurement_length_pixels": [
+        [
+          620,
+          395
+        ],
+        [
+          500,
+          380
+        ]
+      ],
+      "measurement_width_pixels": [
+        [
+          540,
+          325
+        ],
+        [
+          565,
+          425
+        ]
+      ],
+      "landmark_correlations": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "landmark_mean_correlation": 1.0,
+      "length_raw_depth": [
+        5069.0,
+        6457.0
+      ],
+      "width_raw_depth": [
+        6004.0,
+        5119.0
+      ],
+      "length_plane_raw_depth": 5133.0,
+      "width_plane_raw_depth": 5280.0,
+      "length_xyz_m": [
+        [
+          -0.011265331305293634,
+          0.027481457219031273,
+          0.5069
+        ],
+        [
+          -0.13433659897439892,
+          0.019994217180274422,
+          0.6457
+        ]
+      ],
+      "width_xyz_m": [
+        [
+          -0.08772244035442367,
+          -0.03259165925454174,
+          0.6004
+        ],
+        [
+          -0.054974641466827324,
+          0.05155544091595133,
+          0.5119
+        ]
+      ],
+      "length_depth_search_radius_px": [
+        3,
+        5
+      ],
+      "width_depth_search_radius_px": [
+        3,
+        3
+      ],
+      "max_depth_search_radius_px": 5,
+      "leaf_plane_depth_search_radius_px": 3,
+      "measurement_method": "calibrated XY leaf-plane distance at robust midpoint depth; full 3D endpoint chord retained as contamination diagnostic"
+    },
+    {
+      "manual_plant_id": 3,
+      "specimen_label": "fuzzy_kalanchoe",
+      "leaf_id": 1,
+      "reference_frame_index": 540,
+      "measurement_frame_index": 540,
+      "match_description": "manual left leaf; scan far-right lobe after registered view rotation",
+      "manual_length_mm": 35.0,
+      "pointcloud_length_mm": 36.29051207330142,
+      "length_signed_error_mm": 1.2905120733014215,
+      "length_absolute_percent_error": 3.6871773522897757,
+      "manual_width_mm": 24.0,
+      "pointcloud_width_mm": 24.406906816549704,
+      "diagnostic_3d_chord_length_mm": 41.37752889154293,
+      "diagnostic_3d_chord_width_mm": 25.228225365001155,
+      "width_signed_error_mm": 0.4069068165497036,
+      "width_absolute_percent_error": 1.6954450689570983,
+      "reference_length_pixels": [
+        [
+          750,
+          395
+        ],
+        [
+          790,
+          420
+        ]
+      ],
+      "reference_width_pixels": [
+        [
+          770,
+          390
+        ],
+        [
+          760,
+          420
+        ]
+      ],
+      "measurement_length_pixels": [
+        [
+          750,
+          395
+        ],
+        [
+          790,
+          420
+        ]
+      ],
+      "measurement_width_pixels": [
+        [
+          770,
+          390
+        ],
+        [
+          760,
+          420
+        ]
+      ],
+      "landmark_correlations": [
+        0.999997615814209,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "landmark_mean_correlation": 0.9999994039535522,
+      "length_raw_depth": [
+        4817.0,
+        4960.0
+      ],
+      "width_raw_depth": [
+        5021.0,
+        4960.0
+      ],
+      "length_plane_raw_depth": 4967.0,
+      "width_plane_raw_depth": 4980.0,
+      "length_xyz_m": [
+        [
+          0.08626543771027224,
+          0.026115245496956725,
+          0.4817
+        ],
+        [
+          0.11954926631791896,
+          0.04611016111036375,
+          0.496
+        ]
+      ],
+      "width_xyz_m": [
+        [
+          0.10546915468248066,
+          0.02333002335363319,
+          0.5021
+        ],
+        [
+          0.09650708578899037,
+          0.04611016111036375,
+          0.496
+        ]
+      ],
+      "length_depth_search_radius_px": [
+        3,
+        13
+      ],
+      "width_depth_search_radius_px": [
+        3,
+        3
+      ],
+      "max_depth_search_radius_px": 13,
+      "leaf_plane_depth_search_radius_px": 3,
+      "measurement_method": "calibrated XY leaf-plane distance at robust midpoint depth; full 3D endpoint chord retained as contamination diagnostic"
+    },
+    {
+      "manual_plant_id": 3,
+      "specimen_label": "fuzzy_kalanchoe",
+      "leaf_id": 2,
+      "reference_frame_index": 540,
+      "measurement_frame_index": 540,
+      "match_description": "manual upper central lobed leaf; scan upper-right lobe after registered view rotation",
+      "manual_length_mm": 35.0,
+      "pointcloud_length_mm": 34.245685804772485,
+      "length_signed_error_mm": -0.754314195227515,
+      "length_absolute_percent_error": 2.155183414935757,
+      "manual_width_mm": 44.0,
+      "pointcloud_width_mm": 43.69611335785165,
+      "diagnostic_3d_chord_length_mm": 41.665563705671396,
+      "diagnostic_3d_chord_width_mm": 46.90517847261028,
+      "width_signed_error_mm": -0.30388664214834904,
+      "width_absolute_percent_error": 0.690651459428066,
+      "reference_length_pixels": [
+        [
+          720,
+          390
+        ],
+        [
+          755,
+          365
+        ]
+      ],
+      "reference_width_pixels": [
+        [
+          735,
+          345
+        ],
+        [
+          765,
+          395
+        ]
+      ],
+      "measurement_length_pixels": [
+        [
+          720,
+          390
+        ],
+        [
+          755,
+          365
+        ]
+      ],
+      "measurement_width_pixels": [
+        [
+          735,
+          345
+        ],
+        [
+          765,
+          395
+        ]
+      ],
+      "landmark_correlations": [
+        1.0,
+        0.9999984502792358,
+        0.9999992251396179,
+        1.0
+      ],
+      "landmark_mean_correlation": 0.9999994188547134,
+      "length_raw_depth": [
+        5154.0,
+        4868.0
+      ],
+      "width_raw_depth": [
+        4927.0,
+        5021.0
+      ],
+      "length_plane_raw_depth": 5140.0,
+      "width_plane_raw_depth": 4836.0,
+      "length_xyz_m": [
+        [
+          0.06835718862130225,
+          0.023948006445852512,
+          0.5154
+        ],
+        [
+          0.09094790413004053,
+          0.0037559592065403036,
+          0.4868
+        ]
+      ],
+      "width_xyz_m": [
+        [
+          0.07679093927298312,
+          -0.011471936323271955,
+          0.4927
+        ],
+        [
+          0.10158156098504283,
+          0.027221226414826594,
+          0.5021
+        ]
+      ],
+      "length_depth_search_radius_px": [
+        3,
+        3
+      ],
+      "width_depth_search_radius_px": [
+        3,
+        3
+      ],
+      "max_depth_search_radius_px": 3,
+      "leaf_plane_depth_search_radius_px": 3,
+      "measurement_method": "calibrated XY leaf-plane distance at robust midpoint depth; full 3D endpoint chord retained as contamination diagnostic"
+    },
+    {
+      "manual_plant_id": 3,
+      "specimen_label": "fuzzy_kalanchoe",
+      "leaf_id": 3,
+      "reference_frame_index": 540,
+      "measurement_frame_index": 540,
+      "match_description": "manual broad foreground leaf; scan central-right foreground leaf after registered view rotation",
+      "manual_length_mm": 42.0,
+      "pointcloud_length_mm": 44.424191268040204,
+      "length_signed_error_mm": 2.424191268040204,
+      "length_absolute_percent_error": 5.771883971524295,
+      "manual_width_mm": 40.0,
+      "pointcloud_width_mm": 38.217281033992975,
+      "diagnostic_3d_chord_length_mm": 48.56772934252019,
+      "diagnostic_3d_chord_width_mm": 43.96632200913586,
+      "width_signed_error_mm": -1.7827189660070246,
+      "width_absolute_percent_error": 4.4567974150175615,
+      "reference_length_pixels": [
+        [
+          680,
+          380
+        ],
+        [
+          720,
+          420
+        ]
+      ],
+      "reference_width_pixels": [
+        [
+          700,
+          355
+        ],
+        [
+          730,
+          395
+        ]
+      ],
+      "measurement_length_pixels": [
+        [
+          680,
+          380
+        ],
+        [
+          720,
+          420
+        ]
+      ],
+      "measurement_width_pixels": [
+        [
+          700,
+          355
+        ],
+        [
+          730,
+          395
+        ]
+      ],
+      "landmark_correlations": [
+        0.9999853372573853,
+        1.0,
+        0.9999985694885254,
+        1.0
+      ],
+      "landmark_mean_correlation": 0.9999959766864777,
+      "length_raw_depth": [
+        5041.0,
+        5183.0
+      ],
+      "width_raw_depth": [
+        4933.0,
+        5104.0
+      ],
+      "length_plane_raw_depth": 5069.0,
+      "width_plane_raw_depth": 4933.0,
+      "length_xyz_m": [
+        [
+          0.035633844221523485,
+          0.015609547592653454,
+          0.5041
+        ],
+        [
+          0.06874181385801503,
+          0.04818325907964018,
+          0.5183
+        ]
+      ],
+      "width_xyz_m": [
+        [
+          0.05014824618925001,
+          -0.003839897969049388,
+          0.4933
+        ],
+        [
+          0.07559775734825712,
+          0.027671208847097183,
+          0.5104
+        ]
+      ],
+      "length_depth_search_radius_px": [
+        3,
+        3
+      ],
+      "width_depth_search_radius_px": [
+        3,
+        3
+      ],
+      "max_depth_search_radius_px": 3,
+      "leaf_plane_depth_search_radius_px": 3,
+      "measurement_method": "calibrated XY leaf-plane distance at robust midpoint depth; full 3D endpoint chord retained as contamination diagnostic"
+    }
+  ],
+  "leaf_aggregate_comparisons": [
+    {
+      "manual_plant_id": 1,
+      "specimen_label": "succulent_jade",
+      "manual_leaf_count": 3,
+      "software_leaf_count": 3,
+      "manual_length_mean_m": 0.052,
+      "software_length_mean_m": 0.06379844745000203,
+      "manual_width_mean_m": 0.04033333333333333,
+      "software_width_mean_m": 0.025331867237885792,
+      "length_absolute_percent_error": 22.689322019234677,
+      "width_absolute_percent_error": 37.19371759201869,
+      "status": "exploratory"
+    },
+    {
+      "manual_plant_id": 2,
+      "specimen_label": "coleus",
+      "manual_leaf_count": 3,
+      "software_leaf_count": 3,
+      "manual_length_mean_m": 0.10466666666666667,
+      "software_length_mean_m": 0.10484043508768082,
+      "manual_width_mean_m": 0.08266666666666667,
+      "software_width_mean_m": 0.07982457180817921,
+      "length_absolute_percent_error": 0.1660207844084187,
+      "width_absolute_percent_error": 3.4380179739767556,
+      "status": "exploratory"
+    },
+    {
+      "manual_plant_id": 3,
+      "specimen_label": "fuzzy_kalanchoe",
+      "manual_leaf_count": 3,
+      "software_leaf_count": 2,
+      "manual_length_mean_m": 0.037333333333333336,
+      "software_length_mean_m": 0.05536876805126667,
+      "manual_width_mean_m": 0.036,
+      "software_width_mean_m": 0.04015978053212166,
+      "length_absolute_percent_error": 48.309200137321426,
+      "width_absolute_percent_error": 11.55494592256017,
+      "status": "insufficient segments"
+    }
+  ],
+  "leaf_validation_status": "guided comparison complete for all nine manually annotated leaves; automatic cross-dataset leaf correspondence remains future work"
+}

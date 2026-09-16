@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ResultsNavigation from "@/components/ResultsNavigation";
 
 export const metadata: Metadata = {
   title: "Coleus 109: reconstruction recovery | PhenoFusion3D",
@@ -13,6 +14,7 @@ const prose = "space-y-4 text-base leading-8 text-green-100/75";
 
 export default function ColeusRecovery() {
   return <main className="min-h-screen bg-[#050a0a]">
+    <ResultsNavigation current="/results/coleus-109/" />
     <header className={section}>
       <Link href="/" className="text-sm text-lime-300 hover:underline">← PhenoFusion3D home</Link>
       <p className="mt-10 text-xs font-semibold uppercase tracking-widest text-lime-400">Reconstruction study · 6 September 2026 · Dataset 20260901122109</p>

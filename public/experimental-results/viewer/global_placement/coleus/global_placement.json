@@ -1,0 +1,71 @@
+{
+  "plant": "coleus",
+  "label": "Coleus",
+  "rgbd_frame": 330,
+  "method": "direct cleaned-plant to sampled-global-scene robust rigid ICP",
+  "global_x_seed_m": 0.62,
+  "source_specimen_points": 62829,
+  "source_voxel_sample_points": 8815,
+  "target_scene_points": 51474,
+  "fit_points": 4408,
+  "transform_camera_to_global": [
+    [
+      0.9974918992960333,
+      -0.06015981993999983,
+      0.03729218287497605,
+      0.5692640134141099
+    ],
+    [
+      0.05845870281176157,
+      0.9972686860959208,
+      0.04514141998308166,
+      -0.03544235435846976
+    ],
+    [
+      -0.039906025915395014,
+      -0.042848148119954556,
+      0.9982843008373584,
+      0.012671335588532957
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "translation_m": [
+    0.5692640134141099,
+    -0.03544235435846976,
+    0.012671335588532957
+  ],
+  "rotation_magnitude_deg": 4.7797005522709,
+  "iterations": 45,
+  "final_fit_iteration": {
+    "iteration": 45,
+    "correspondences": 3046,
+    "median_distance_mm": 3.6131700344110347,
+    "p90_distance_mm": 7.270144251256408,
+    "delta_translation_mm": 1.3073175556419758,
+    "delta_rotation_deg": 0.09965880585747783
+  },
+  "held_out_validation": {
+    "held_out_points": 4407,
+    "nearest_scene_distance_median_mm": 4.819789571003947,
+    "nearest_scene_distance_p90_mm": 13.610839655774972,
+    "within_20mm_fraction": 0.9720898570456092,
+    "within_30mm_fraction": 0.9968232357612888
+  },
+  "exported_models": [
+    "global_placement/coleus/coleus_ndvi_global.ply",
+    "global_placement/coleus/coleus_ndre_global.ply",
+    "global_placement/coleus/coleus_ndwi_global.ply",
+    "global_placement/coleus/coleus_msi_global.ply",
+    "global_placement/coleus/coleus_ndni_global.ply"
+  ],
+  "limitations": [
+    "This recovers the selected plant-frame transform directly against the saved scene; it does not reconstruct the missing complete 95-frame pose trajectory.",
+    "The 300,000-point diagnostic scene sample is used as the registration target rather than the 1.2 GB full PLY.",
+    "Future reconstructions should save every accepted cumulative pose during ICP."
+  ]
+}
