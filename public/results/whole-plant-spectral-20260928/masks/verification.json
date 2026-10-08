@@ -1,0 +1,378 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "sensor": "fx10",
+      "native_rotated_label_map_exact": true,
+      "old_patches_all_in_expected_scan_window": true,
+      "patch_records": [
+        {
+          "patch_id": 1,
+          "region": "R1",
+          "pixels": 967,
+          "candidate_pixels": 960,
+          "uncertain_pixels": 7
+        },
+        {
+          "patch_id": 2,
+          "region": "R1",
+          "pixels": 406,
+          "candidate_pixels": 387,
+          "uncertain_pixels": 18
+        },
+        {
+          "patch_id": 3,
+          "region": "R2",
+          "pixels": 3819,
+          "candidate_pixels": 3819,
+          "uncertain_pixels": 0
+        },
+        {
+          "patch_id": 4,
+          "region": "R2",
+          "pixels": 1740,
+          "candidate_pixels": 1740,
+          "uncertain_pixels": 0
+        },
+        {
+          "patch_id": 5,
+          "region": "R3",
+          "pixels": 2484,
+          "candidate_pixels": 2484,
+          "uncertain_pixels": 0
+        },
+        {
+          "patch_id": 6,
+          "region": "R3",
+          "pixels": 2699,
+          "candidate_pixels": 2637,
+          "uncertain_pixels": 58
+        },
+        {
+          "patch_id": 7,
+          "region": "R3",
+          "pixels": 2489,
+          "candidate_pixels": 2466,
+          "uncertain_pixels": 21
+        },
+        {
+          "patch_id": 8,
+          "region": "R4",
+          "pixels": 1502,
+          "candidate_pixels": 1502,
+          "uncertain_pixels": 0
+        },
+        {
+          "patch_id": 9,
+          "region": "R4",
+          "pixels": 1673,
+          "candidate_pixels": 1673,
+          "uncertain_pixels": 0
+        },
+        {
+          "patch_id": 10,
+          "region": "R5",
+          "pixels": 7005,
+          "candidate_pixels": 7005,
+          "uncertain_pixels": 0
+        },
+        {
+          "patch_id": 11,
+          "region": "R5",
+          "pixels": 4373,
+          "candidate_pixels": 4366,
+          "uncertain_pixels": 7
+        },
+        {
+          "patch_id": 12,
+          "region": "R5",
+          "pixels": 2768,
+          "candidate_pixels": 2768,
+          "uncertain_pixels": 0
+        }
+      ],
+      "independent_allband_flag_checks": 300,
+      "independent_region_band_means": [
+        {
+          "region": "R1",
+          "band": 0,
+          "count": 3293,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R1",
+          "band": 112,
+          "count": 3293,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R1",
+          "band": 223,
+          "count": 3293,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R2",
+          "band": 0,
+          "count": 59102,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R2",
+          "band": 112,
+          "count": 59102,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R2",
+          "band": 223,
+          "count": 59102,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R3",
+          "band": 0,
+          "count": 95392,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R3",
+          "band": 112,
+          "count": 95392,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R3",
+          "band": 223,
+          "count": 95392,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R4",
+          "band": 0,
+          "count": 55576,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R4",
+          "band": 112,
+          "count": 55576,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R4",
+          "band": 223,
+          "count": 55576,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R5",
+          "band": 0,
+          "count": 158496,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R5",
+          "band": 112,
+          "count": 158496,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R5",
+          "band": 223,
+          "count": 158496,
+          "mean_exact_float64_match": true
+        }
+      ],
+      "candidate_pixels_total": 371859,
+      "uncertain_pixels_total": 102719
+    },
+    {
+      "sensor": "fx17",
+      "native_rotated_label_map_exact": true,
+      "old_patches_all_in_expected_scan_window": true,
+      "patch_records": [
+        {
+          "patch_id": 1,
+          "region": "R1",
+          "pixels": 315,
+          "candidate_pixels": 315,
+          "uncertain_pixels": 0
+        },
+        {
+          "patch_id": 2,
+          "region": "R1",
+          "pixels": 203,
+          "candidate_pixels": 180,
+          "uncertain_pixels": 17
+        },
+        {
+          "patch_id": 3,
+          "region": "R2",
+          "pixels": 2144,
+          "candidate_pixels": 2144,
+          "uncertain_pixels": 0
+        },
+        {
+          "patch_id": 4,
+          "region": "R2",
+          "pixels": 1066,
+          "candidate_pixels": 1046,
+          "uncertain_pixels": 20
+        },
+        {
+          "patch_id": 5,
+          "region": "R3",
+          "pixels": 1354,
+          "candidate_pixels": 1336,
+          "uncertain_pixels": 12
+        },
+        {
+          "patch_id": 6,
+          "region": "R3",
+          "pixels": 1724,
+          "candidate_pixels": 1694,
+          "uncertain_pixels": 30
+        },
+        {
+          "patch_id": 7,
+          "region": "R3",
+          "pixels": 2210,
+          "candidate_pixels": 2199,
+          "uncertain_pixels": 10
+        },
+        {
+          "patch_id": 8,
+          "region": "R4",
+          "pixels": 1011,
+          "candidate_pixels": 1011,
+          "uncertain_pixels": 0
+        },
+        {
+          "patch_id": 9,
+          "region": "R4",
+          "pixels": 1085,
+          "candidate_pixels": 1077,
+          "uncertain_pixels": 8
+        },
+        {
+          "patch_id": 10,
+          "region": "R5",
+          "pixels": 5289,
+          "candidate_pixels": 5289,
+          "uncertain_pixels": 0
+        },
+        {
+          "patch_id": 11,
+          "region": "R5",
+          "pixels": 2555,
+          "candidate_pixels": 2490,
+          "uncertain_pixels": 63
+        },
+        {
+          "patch_id": 12,
+          "region": "R5",
+          "pixels": 2469,
+          "candidate_pixels": 2438,
+          "uncertain_pixels": 29
+        }
+      ],
+      "independent_allband_flag_checks": 300,
+      "independent_region_band_means": [
+        {
+          "region": "R1",
+          "band": 0,
+          "count": 2417,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R1",
+          "band": 112,
+          "count": 2417,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R1",
+          "band": 223,
+          "count": 2417,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R2",
+          "band": 0,
+          "count": 27627,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R2",
+          "band": 112,
+          "count": 27627,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R2",
+          "band": 223,
+          "count": 27627,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R3",
+          "band": 0,
+          "count": 53435,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R3",
+          "band": 112,
+          "count": 53435,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R3",
+          "band": 223,
+          "count": 53435,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R4",
+          "band": 0,
+          "count": 26727,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R4",
+          "band": 112,
+          "count": 26727,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R4",
+          "band": 223,
+          "count": 26727,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R5",
+          "band": 0,
+          "count": 92481,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R5",
+          "band": 112,
+          "count": 92481,
+          "mean_exact_float64_match": true
+        },
+        {
+          "region": "R5",
+          "band": 223,
+          "count": 92481,
+          "mean_exact_float64_match": true
+        }
+      ],
+      "candidate_pixels_total": 202687,
+      "uncertain_pixels_total": 170506
+    }
+  ],
+  "scope": "Storage, coordinate, arithmetic and legacy-patch coverage checks. Not segmentation ground truth or physical validation."
+}

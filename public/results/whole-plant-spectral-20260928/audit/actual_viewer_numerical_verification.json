@@ -1,0 +1,23 @@
+{
+  "viewer_sha256": "ceed09e89c03c2074b8469b0e6660d58b25eb907d85dba9cedf6cdc43de0234b",
+  "scope": "Executed actual getSpectrum, calculate and indexValues bodies from viewer.js. Compared 84 source pixels across boundaries, reference line/column intervals, plant/background and deterministic random samples against direct BIL reads and existing float32 extraction/index policy.",
+  "tolerance": "Raw DN/flags exact; normalized Q absolute1e-6 plus relative2e-7. Derived indices absolute1e-6 plus relative2e-6 because denominator cancellation amplifies float32 versus float64 differences. This does not certify calibration or tissue identity.",
+  "results": [
+    {
+      "sensor": "fx10",
+      "pixels_checked": 42,
+      "values_checked": 9408,
+      "maximum_Q_absolute_difference_vs_existing_float32_extractor": 1.1295634871899551e-7,
+      "maximum_index_absolute_difference_vs_existing_float32_extractor": 0.000001479146367833195
+    },
+    {
+      "sensor": "fx17",
+      "pixels_checked": 42,
+      "values_checked": 9408,
+      "maximum_Q_absolute_difference_vs_existing_float32_extractor": 5.9504356553219395e-8,
+      "maximum_index_absolute_difference_vs_existing_float32_extractor": 0
+    }
+  ],
+  "errors": [],
+  "pass": true
+}

@@ -1,0 +1,16 @@
+{
+  "manifest_linked_images_checked": 40,
+  "presentation_static_images_checked": 6,
+  "regions": 5,
+  "rgb_views": 9,
+  "P5_fx10_exact_candidate_pixels": 2338,
+  "P5_fx17_exact_candidate_pixels": 862,
+  "browser_desktop_render": "passed; presentation loaded, full source figures visible, R5 button swapped both spectral and RGB context and full link correctly",
+  "presentation_sections": 8,
+  "source_raw_example_confirmed": {
+    "fx10_line": 352,
+    "column": 786,
+    "band0_DN": 4880
+  },
+  "new_fusion_assignments": 0
+}

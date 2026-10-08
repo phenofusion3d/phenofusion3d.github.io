@@ -1,0 +1,80 @@
+{
+  "created_at": "2026-10-08T00:48:20.504Z",
+  "viewer_sha256": "ceed09e89c03c2074b8469b0e6660d58b25eb907d85dba9cedf6cdc43de0234b",
+  "scope": "Actual viewer selection/readout/plot code with lightweight DOM and canvas stubs; real lossless rows and independent BIL numerical fixtures. Optional RGB boundary is injected to exercise delay and failure. This is not a visual browser or scientific calibration test.",
+  "results": [
+    {
+      "name": "fx10: actual selection reads all 224 bands for every fixture",
+      "pass": true,
+      "pixels": 42,
+      "values": 9408
+    },
+    {
+      "name": "fx10: selecting a new pixel clears the previous curve immediately",
+      "pass": true,
+      "delayed_scan_line": 1800
+    },
+    {
+      "name": "fx10: latest selection wins when an earlier row completes late",
+      "pass": true,
+      "older_line": 950,
+      "newer_line": 1800
+    },
+    {
+      "name": "fx10: delayed optional RGB does not delay a measured spectrum",
+      "pass": true,
+      "rgb_remained_pending_until_after_spectrum": true
+    },
+    {
+      "name": "fx10: optional RGB failure does not block a measured spectrum",
+      "pass": true,
+      "rgb_failure_injected": true
+    },
+    {
+      "name": "fx10: raw DN remains available outside provisional Q support",
+      "pass": true,
+      "line": 1700,
+      "column": 179,
+      "raw_bands": 224,
+      "finite_Q_bands": 0
+    },
+    {
+      "name": "fx17: actual selection reads all 224 bands for every fixture",
+      "pass": true,
+      "pixels": 42,
+      "values": 9408
+    },
+    {
+      "name": "fx17: selecting a new pixel clears the previous curve immediately",
+      "pass": true,
+      "delayed_scan_line": 1800
+    },
+    {
+      "name": "fx17: latest selection wins when an earlier row completes late",
+      "pass": true,
+      "older_line": 950,
+      "newer_line": 1800
+    },
+    {
+      "name": "fx17: delayed optional RGB does not delay a measured spectrum",
+      "pass": true,
+      "rgb_remained_pending_until_after_spectrum": true
+    },
+    {
+      "name": "fx17: optional RGB failure does not block a measured spectrum",
+      "pass": true,
+      "rgb_failure_injected": true
+    },
+    {
+      "name": "fx17: raw DN remains available outside provisional Q support",
+      "pass": true,
+      "line": 1700,
+      "column": 89,
+      "raw_bands": 224,
+      "finite_Q_bands": 0
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "pass": true
+}

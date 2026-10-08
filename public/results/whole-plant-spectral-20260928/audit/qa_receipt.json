@@ -1,0 +1,34 @@
+{
+  "scope": "Independent compression, lossless codec, numerical and source-code audit of the new whole-scan viewer; parent performs interactive browser checks.",
+  "result": "Numerical and layout checks pass. Reported exporter and asynchronous selection defects were fixed by the parent and their fixes re-read.",
+  "evidence": {
+    "compression_estimates": "compression_report.json",
+    "preview_estimates": "preview_alternatives.json",
+    "inherited_quality_policy": "reuse_policy.json",
+    "independent_browser_codec": "browser_codec_verification.json",
+    "actual_viewer_functions": "actual_viewer_numerical_verification.json",
+    "production_export_layout": "export_layout_verification.json"
+  },
+  "verified": [
+    "All 4,254 exported native rows exist with their manifested sizes; all 448 previews have complete native spatial dimensions.",
+    "3,539,328 native recorded pixels, each with 224 bands, are represented in the row layout.",
+    "Actual browser getSpectrum decoded 18,816 tested DN values exactly against independent native BIL reads; all tested quality flags and index availability decisions match.",
+    "Normalized Q agrees with existing float32 extraction to maximum absolute difference 1.13e-7. Derived indices differ by at most 1.48e-6 because browser float64 arithmetic and float32 ratio cancellation differ.",
+    "Full exact rows plus band JPEG previews occupy 710.036 MiB, before references, RGB context, masks and metadata.",
+    "JPEG previews are display-only and never used to recover spectral values. Rotated display coordinates map x to native scan line and y to columns-1-native column.",
+    "Reference support, low-signal exclusion for descriptors, white/dark source-line exclusion and missing visible/red indices on FX17 are preserved.",
+    "Fixed region selection now reads an actual pixel in that region. Sensor changes clear numerical arrays, disable affected controls and reject stale continuations."
+  ],
+  "fixed_findings": [
+    "Reference coverage array already has [224,columns] dimensions; extra axis caused invalid broadcasting.",
+    "Initial exporter claimed global completion after the first camera; source now sets completion only after both cameras finish.",
+    "Region dropdown previously relabelled an unchanged selected pixel with another region.",
+    "Camera switching previously left earlier sensor numerical arrays available under new metadata while loading."
+  ],
+  "limits": [
+    "This does not establish calibrated reflectance, plant physiological health, same-tissue RGB correspondence or new physical 3D fusion.",
+    "Raw DN is bit-exact; normalized floating-point values are numerically equivalent within the stated tolerance, not bit-identical to float32 historical arrays.",
+    "The source-code async review complements the parent's browser interaction checks; it is not a substitute for those checks.",
+    "The completed export receipt was written before the new export_complete field was introduced, but independently contains both sensors and a final completion timestamp."
+  ]
+}

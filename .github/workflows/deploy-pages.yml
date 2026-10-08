@@ -41,6 +41,9 @@ jobs:
         # phenofusion3d.github.io is a user/org pages site — served at root, no base path needed
         run: pnpm run build
 
+      - name: Verify published data, links and size
+        run: python3 scripts/check-spectral-publication.py
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

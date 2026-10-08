@@ -1,0 +1,85 @@
+{
+  "checks": [
+    {
+      "sensor": "fx10",
+      "region": "1",
+      "clicked": "FX10 · R1 · line 364, column 511",
+      "value": "690.93 nm: 8,192 DN · 224 bands loaded",
+      "nextPixel": "FX10 · R1 · line 365, column 511",
+      "nextValue": "690.93 nm: 8,176 DN · 224 bands loaded"
+    },
+    {
+      "sensor": "fx10",
+      "region": "2",
+      "clicked": "FX10 · R2 · line 714, column 512",
+      "value": "690.93 nm: 31,728 DN · 224 bands loaded",
+      "nextPixel": "FX10 · R2 · line 715, column 512",
+      "nextValue": "690.93 nm: 31,280 DN · 224 bands loaded"
+    },
+    {
+      "sensor": "fx10",
+      "region": "3",
+      "clicked": "FX10 · R3 · line 1054, column 512",
+      "value": "690.93 nm: 13,584 DN · 224 bands loaded",
+      "nextPixel": "FX10 · R3 · line 1055, column 512",
+      "nextValue": "690.93 nm: 11,136 DN · 224 bands loaded"
+    },
+    {
+      "sensor": "fx10",
+      "region": "4",
+      "clicked": "FX10 · R4 · line 1389, column 511",
+      "value": "690.93 nm: 25,488 DN · 224 bands loaded",
+      "nextPixel": "FX10 · R4 · line 1390, column 511",
+      "nextValue": "690.93 nm: 26,112 DN · 224 bands loaded"
+    },
+    {
+      "sensor": "fx10",
+      "region": "5",
+      "clicked": "FX10 · R5 · line 1799, column 511",
+      "value": "690.93 nm: 18,592 DN · 224 bands loaded",
+      "nextPixel": "FX10 · R5 · line 1800, column 511",
+      "nextValue": "690.93 nm: 18,992 DN · 224 bands loaded"
+    },
+    {
+      "sensor": "fx17",
+      "region": "1",
+      "clicked": "FX17 · R1 · line 264, column 319",
+      "value": "1319.14 nm: 29,344 DN · 224 bands loaded",
+      "nextPixel": "FX17 · R1 · line 265, column 319",
+      "nextValue": "1319.14 nm: 31,040 DN · 224 bands loaded"
+    },
+    {
+      "sensor": "fx17",
+      "region": "2",
+      "clicked": "FX17 · R2 · line 614, column 319",
+      "value": "1319.14 nm: 65,520 DN · 224 bands loaded",
+      "nextPixel": "FX17 · R2 · line 615, column 319",
+      "nextValue": "1319.14 nm: 65,520 DN · 224 bands loaded"
+    },
+    {
+      "sensor": "fx17",
+      "region": "3",
+      "clicked": "FX17 · R3 · line 954, column 319",
+      "value": "1319.14 nm: 18,928 DN · 224 bands loaded",
+      "nextPixel": "FX17 · R3 · line 955, column 319",
+      "nextValue": "1319.14 nm: 18,432 DN · 224 bands loaded"
+    },
+    {
+      "sensor": "fx17",
+      "region": "4",
+      "clicked": "FX17 · R4 · line 1289, column 319",
+      "value": "1319.14 nm: 53,344 DN · 224 bands loaded",
+      "nextPixel": "FX17 · R4 · line 1290, column 319",
+      "nextValue": "1319.14 nm: 55,328 DN · 224 bands loaded"
+    },
+    {
+      "sensor": "fx17",
+      "region": "5",
+      "clicked": "FX17 · R5 · line 1699, column 319",
+      "value": "1319.14 nm: 32,144 DN · 224 bands loaded",
+      "nextPixel": "FX17 · R5 · line 1700, column 319",
+      "nextValue": "1319.14 nm: 24,576 DN · 224 bands loaded"
+    }
+  ],
+  "scope": "Actual canvas centre clicks and one-pixel arrow moves in every scan region of both cameras; DOM readouts recorded. Same DN at saturated neighbouring pixels is valid."
+}

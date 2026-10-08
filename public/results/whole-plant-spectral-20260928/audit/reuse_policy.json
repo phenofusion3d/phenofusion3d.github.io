@@ -1,0 +1,66 @@
+{
+  "scope": "Whole native camera-space spectra; not 3D fusion, automatic plant identity or calibrated reflectance.",
+  "source_format": "ENVI data type12, byte order0, header offset0, BIL uint16 little endian [2127,224,columns]. FX10columns1024; FX17columns640.",
+  "reference_paths": {
+    "fx10": "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx10/reference_profiles.npz",
+    "fx17": "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx17/reference_profiles.npz"
+  },
+  "normalization": {
+    "Q": "(DN-D)/(W-D)",
+    "Q0": "DN/W",
+    "W_D_meaning": "Existing per-band, per-detector-column median profiles over the recorded reviewed ROIs.",
+    "reference_support": "Only intersecting reviewed white and dark detector columns. No extrapolation.",
+    "fx10_white_ROI_line_column_half_open": [20,140,180,850],
+    "fx17_white_ROI_line_column_half_open": [8,45,90,520],
+    "dark_ROI_lines_half_open": [2080,2127],
+    "dark_detector_columns": "Entire recorded sensor width",
+    "reference_status": "White board identity confirmed, spectral reflectance unknown. Exposure fixed by user report. Tail dark is assumed; shutter closure unconfirmed. Q and Q0 are sensitivity scenarios, not reflectance.",
+    "Q_and_Q0_same_eligibility": "(band_flags &31)==0, even though Q0 does not subtract D.",
+    "invalid_normalized_values": "NaN/null explicitly; never zero-fill or replace with raw DN.",
+    "finite_values": "Keep finite negative and above-one Q/Q0; display scaling must not silently alter exported values.",
+    "float_precision": "Existing arrays use float32. JavaScript arithmetic may differ at final low bits unless Math.fround is used for float32 numerator, denominator and result. Raw uint16 DN must remain exact."
+  },
+  "band_quality_flags": {
+    "1": "outside_reviewed_reference_support",
+    "2": "sample_suspected_clipping: DN>=65520; configured exploratory ceiling, not proven ADC bit depth",
+    "4": "reference_suspected_clipping: any white/dark reference source value>=65520 at this band,column",
+    "8": "weak_white_minus_dark: W-D<=max(64,5*sqrt(white_MAD_sigma^2+dark_MAD_sigma^2)) or nonfinite",
+    "16": "raw_zero",
+    "32": "low_signal_above_dark_advisory: DN-D<=max(32,3*dark_MAD_sigma); advisory for Q but excludes required index bands"
+  },
+  "indices": {
+    "max_nearest_band_error_nm": 3,
+    "require_distinct_actual_bands": true,
+    "fx10_supported": ["NDVI_800_680","NDRE_790_720","GNDVI_800_550","PRI_531_570","PSRI_678_500_750","SIPI_800_445_680"],
+    "fx17_supported_from_existing_policy": [],
+    "fx17_reason": "Recorded935.61-1720.23nm cannot supply the visible/red bands required by these descriptors. No crosscamera band mixing/substitution.",
+    "invalid_required_band_bit": 1,
+    "low_signal_required_band_bit": 2,
+    "weak_or_wrong_sign_denominator_bit": 4,
+    "reference_scan_line_bit": 8,
+    "nonfinite_index_bit": 16,
+    "reference_scan_line_exclusion": "Exclude every source line inside configured white or dark line interval, regardless of detector column.",
+    "normalized_denominator_floor": 0.01,
+    "denominator_sign": "NDVI/NDRE/GNDVI/PRI sums and PSRIQ750 must exceed0.01. SIPI absolute(Q800-Q680) must exceed0.01.",
+    "output_policy": "Any nonzero index flag means NaN/null. Descriptors apply to a pixel signal; clicking background does not make it plant physiology."
+  },
+  "display": {
+    "band_preview": "8bit contrast-windowed JPEG visualization only; JPEG introduces display intensity approximation. Click spectrum must use lossless row data, never reverse-map display gray to raw DN.",
+    "complete_native_pixel_access": "All2127recorded lines and all detector columns can return raw224-band DN, including background, reference and clipped/zero observations.",
+    "normalization_support_gaps_visible": true
+  },
+  "source_identity": {
+    "existing_extraction_identity_check": "size,mtime_ns,inode before/after; explicitly weaker than full content SHA256",
+    "audit_hashes": "Fresh header SHA256 and representative exact native row fingerprints; not a full-cube hash.",
+    "recommended_full_export_hash": "Increment SHA256 with each original BIL row bytes before transpose/delta while exporting in line order; this gives exact source full-content hash without a second I/O pass."
+  },
+  "recommended_row_encoding": {
+    "version": "u16le-column-delta-byteshuffle-gzip-v1",
+    "input_shape": "[columns,224] uint16 little endian",
+    "delta": "For each band, preserve column0; for column c>0 store (DN[c,b]-DN[c-1,b]) modulo65536.",
+    "shuffle": "Flatten column-major pixel records in C order (column*224+band). Emit all low bytes then all high bytes.",
+    "compression": "gzip level6,mtime0 deterministic header",
+    "decode": "Decompress; for i=0..columns*224-1 let delta=bytes[i]|(bytes[N+i]<<8). DN[i]=(delta+(i>=224?DN[i-224]:0))&65535.",
+    "roundtrip_scope": "All sampled rows verified bit-exact. Production export should verify every row roundtrip or randomized full rows plus full source hash."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "sensor": "fx10",
+  "scan_line": 352,
+  "detector_column": 786,
+  "band0_wavelength_nm": 397.66,
+  "band0_raw_DN": 4880,
+  "band_count": 224,
+  "source": "003-specim-fx10.bil"
+}

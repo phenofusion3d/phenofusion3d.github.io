@@ -1,0 +1,25 @@
+{
+  "viewer_sha256": "412b8452c3a38b7da27d6a9e2eb71a0ba697f8812d6cfcb21a5787952e4c440a",
+  "scope": "Executed actual getSpectrum, calculate and indexValues bodies from viewer.js. Compared 84 source pixels across boundaries, reference line/column intervals, plant/background and deterministic random samples against direct BIL reads and existing float32 extraction/index policy.",
+  "tolerance": "Raw DN/flags exact; normalized Q and indices absolute1e-6 plus relative2e-7 to allow browser float64 vs existing float32 calculation.",
+  "results": [
+    {
+      "sensor": "fx10",
+      "pixels_checked": 42,
+      "values_checked": 9408,
+      "maximum_Q_absolute_difference_vs_existing_float32_extractor": 1.1295634871899551e-7,
+      "maximum_index_absolute_difference_vs_existing_float32_extractor": 0.000001479146367833195
+    },
+    {
+      "sensor": "fx17",
+      "pixels_checked": 42,
+      "values_checked": 9408,
+      "maximum_Q_absolute_difference_vs_existing_float32_extractor": 5.9504356553219395e-8,
+      "maximum_index_absolute_difference_vs_existing_float32_extractor": 0
+    }
+  ],
+  "errors": [
+    "fx10 1523,289 SIPI_800_445_680: 1.5765240678762262 != 1.5765225887298584"
+  ],
+  "pass": false
+}

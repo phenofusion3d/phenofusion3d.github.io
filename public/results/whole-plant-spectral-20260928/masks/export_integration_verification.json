@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "scope": "Independent source-coordinate, compression, display quantization, mask alignment and reference-array audit. Does not establish reflectance calibration or biological identity.",
+  "sensors": [
+    {
+      "sensor": "fx10",
+      "header_shape_and_hash_valid": true,
+      "independent_lossless_complete_line_decodes": [
+        0,
+        79,
+        180,
+        352,
+        550,
+        850,
+        950,
+        1550,
+        1868,
+        2126
+      ],
+      "decoded_values_compared": 2293760,
+      "band_preview_source_coordinate_checks": 900,
+      "band_preview_errors": [
+        {
+          "band": 0,
+          "jpeg_mean_absolute_intensity_difference": 2.882180282528209,
+          "jpeg_max_absolute_intensity_difference": 19
+        },
+        {
+          "band": 112,
+          "jpeg_mean_absolute_intensity_difference": 0.6242566738657734,
+          "jpeg_max_absolute_intensity_difference": 12
+        },
+        {
+          "band": 223,
+          "jpeg_mean_absolute_intensity_difference": 0.8249519753467325,
+          "jpeg_max_absolute_intensity_difference": 10
+        }
+      ],
+      "band_preview_sample_max_difference": 9,
+      "band_preview_note": "JPEG pixel intensities are approximate display values; source DN must come from lossless rows.",
+      "rotated_composite_dimensions_correct": true,
+      "composite_jpeg_mean_absolute_channel_difference": 1.6566407168253408,
+      "mask_source_coordinate_checks": 300,
+      "reference_arrays_and_flags_exact": true
+    },
+    {
+      "sensor": "fx17",
+      "header_shape_and_hash_valid": true,
+      "independent_lossless_complete_line_decodes": [
+        0,
+        79,
+        180,
+        352,
+        550,
+        850,
+        950,
+        1550,
+        1868,
+        2126
+      ],
+      "decoded_values_compared": 1433600,
+      "band_preview_source_coordinate_checks": 900,
+      "band_preview_errors": [
+        {
+          "band": 0,
+          "jpeg_mean_absolute_intensity_difference": 0.9237239950634697,
+          "jpeg_max_absolute_intensity_difference": 8
+        },
+        {
+          "band": 112,
+          "jpeg_mean_absolute_intensity_difference": 0.6235572402444758,
+          "jpeg_max_absolute_intensity_difference": 10
+        },
+        {
+          "band": 223,
+          "jpeg_mean_absolute_intensity_difference": 1.218122649271274,
+          "jpeg_max_absolute_intensity_difference": 11
+        }
+      ],
+      "band_preview_sample_max_difference": 7,
+      "band_preview_note": "JPEG pixel intensities are approximate display values; source DN must come from lossless rows.",
+      "rotated_composite_dimensions_correct": true,
+      "composite_jpeg_mean_absolute_channel_difference": 0.838926353627958,
+      "mask_source_coordinate_checks": 300,
+      "reference_arrays_and_flags_exact": true
+    }
+  ]
+}

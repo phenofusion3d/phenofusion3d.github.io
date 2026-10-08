@@ -1,0 +1,23 @@
+{
+  "scope": "Independent browser-compatible DecompressionStream and JS uint16 modulo/cumulative decoder checked against raw source-row SHA256; complete production export has separate per-row roundtrip checks.",
+  "results": [
+    {
+      "sensor": "fx10",
+      "line": 1600,
+      "pixel_count": 1024,
+      "bands": 224,
+      "decoded_bytes": 458752,
+      "source_pixel_major_sha256": "58320d70f62422de808652c4c1fac23a88d7dc9c83fe66cda28f7d77af5eff2d",
+      "exact": true
+    },
+    {
+      "sensor": "fx17",
+      "line": 1600,
+      "pixel_count": 640,
+      "bands": 224,
+      "decoded_bytes": 286720,
+      "source_pixel_major_sha256": "884163fef3cba5456acff4bfd57cdbe21dc6c03854a58ad45172628a4a38ec42",
+      "exact": true
+    }
+  ]
+}

@@ -1,0 +1,4747 @@
+{
+  "schema_version": 1,
+  "title": "Whole recorded plant scenes \u00b7 FX10 and FX17",
+  "date": "2026-10-08",
+  "sources_unchanged": true,
+  "scope": "Every recorded pixel in both run003 spectral cubes, including background and references. Camera-visible scene coverage is not all physical leaf surfaces.",
+  "coordinate_convention": "Display x = native scan line; display y = columns - 1 - native detector column. Zero-based indices.",
+  "row_encoding": "gzip(column_delta_uint16_mod65536_byte_planes); uncompressed low bytes then high bytes of [column,band]; first column absolute; subsequent columns differences from preceding column.",
+  "ref_encoding": "gzip float32 little endian [column,band,4] = W,D,dark_sigma,base_flags",
+  "calibrated_reflectance": false,
+  "sensors": {
+    "fx10": {
+      "lines": 2127,
+      "bands": 224,
+      "columns": 1024,
+      "pixel_count": 2178048,
+      "wavelength_nm": [
+        397.66,
+        400.28,
+        402.9,
+        405.52,
+        408.13,
+        410.75,
+        413.37,
+        416.0,
+        418.62,
+        421.24,
+        423.86,
+        426.49,
+        429.12,
+        431.74,
+        434.37,
+        437.0,
+        439.63,
+        442.26,
+        444.89,
+        447.52,
+        450.16,
+        452.79,
+        455.43,
+        458.06,
+        460.7,
+        463.34,
+        465.98,
+        468.62,
+        471.26,
+        473.9,
+        476.54,
+        479.18,
+        481.83,
+        484.47,
+        487.12,
+        489.77,
+        492.42,
+        495.07,
+        497.72,
+        500.37,
+        503.02,
+        505.67,
+        508.32,
+        510.98,
+        513.63,
+        516.29,
+        518.95,
+        521.61,
+        524.27,
+        526.93,
+        529.59,
+        532.25,
+        534.91,
+        537.57,
+        540.24,
+        542.91,
+        545.57,
+        548.24,
+        550.91,
+        553.58,
+        556.25,
+        558.92,
+        561.59,
+        564.26,
+        566.94,
+        569.61,
+        572.29,
+        574.96,
+        577.64,
+        580.32,
+        583.0,
+        585.68,
+        588.36,
+        591.04,
+        593.73,
+        596.41,
+        599.1,
+        601.78,
+        604.47,
+        607.16,
+        609.85,
+        612.53,
+        615.23,
+        617.92,
+        620.61,
+        623.3,
+        626.0,
+        628.69,
+        631.39,
+        634.08,
+        636.78,
+        639.48,
+        642.18,
+        644.88,
+        647.58,
+        650.29,
+        652.99,
+        655.69,
+        658.4,
+        661.1,
+        663.81,
+        666.52,
+        669.23,
+        671.94,
+        674.65,
+        677.36,
+        680.07,
+        682.79,
+        685.5,
+        688.22,
+        690.93,
+        693.65,
+        696.37,
+        699.09,
+        701.81,
+        704.53,
+        707.25,
+        709.97,
+        712.7,
+        715.42,
+        718.15,
+        720.87,
+        723.6,
+        726.33,
+        729.06,
+        731.79,
+        734.52,
+        737.25,
+        739.98,
+        742.72,
+        745.45,
+        748.19,
+        750.93,
+        753.66,
+        756.4,
+        759.14,
+        761.88,
+        764.62,
+        767.36,
+        770.11,
+        772.85,
+        775.6,
+        778.34,
+        781.09,
+        783.84,
+        786.58,
+        789.33,
+        792.08,
+        794.84,
+        797.59,
+        800.34,
+        803.1,
+        805.85,
+        808.61,
+        811.36,
+        814.12,
+        816.88,
+        819.64,
+        822.4,
+        825.16,
+        827.92,
+        830.69,
+        833.45,
+        836.22,
+        838.98,
+        841.75,
+        844.52,
+        847.29,
+        850.06,
+        852.83,
+        855.6,
+        858.37,
+        861.14,
+        863.92,
+        866.69,
+        869.47,
+        872.25,
+        875.03,
+        877.8,
+        880.58,
+        883.37,
+        886.15,
+        888.93,
+        891.71,
+        894.5,
+        897.28,
+        900.07,
+        902.86,
+        905.64,
+        908.43,
+        911.22,
+        914.02,
+        916.81,
+        919.6,
+        922.39,
+        925.19,
+        927.98,
+        930.78,
+        933.58,
+        936.38,
+        939.18,
+        941.98,
+        944.78,
+        947.58,
+        950.38,
+        953.19,
+        955.99,
+        958.8,
+        961.6,
+        964.41,
+        967.22,
+        970.03,
+        972.84,
+        975.65,
+        978.46,
+        981.27,
+        984.09,
+        986.9,
+        989.72,
+        992.54,
+        995.35,
+        998.17,
+        1000.99,
+        1003.81
+      ],
+      "source_header": "data/main/test_plant_10-7/20260928/003-specim-fx10.hdr",
+      "source_data": "data/main/test_plant_10-7/20260928/003-specim-fx10.bil",
+      "source_sha256": "1f26e73c6a69fc8a7768e5e33e55035ef5e0f464448940cf45f153f15661f830",
+      "header_sha256": "6aaf169bc24b22abfd7cf8aed1d22517f5a956a99cb58698ec50d258b2dd048a",
+      "source_bytes": 975765504,
+      "composite": "data/fx10/composite.jpg",
+      "composite_channels_target_nm": [
+        660,
+        550,
+        470
+      ],
+      "band_previews": [
+        {
+          "band": 0,
+          "wavelength_nm": 397.66,
+          "display_low_DN": 4272.0,
+          "display_high_DN": 5552.0,
+          "file": "data/fx10/bands/000.jpg",
+          "bytes": 956613,
+          "display_is_lossy": true
+        },
+        {
+          "band": 1,
+          "wavelength_nm": 400.28,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 5552.0,
+          "file": "data/fx10/bands/001.jpg",
+          "bytes": 818756,
+          "display_is_lossy": true
+        },
+        {
+          "band": 2,
+          "wavelength_nm": 402.9,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 5616.0,
+          "file": "data/fx10/bands/002.jpg",
+          "bytes": 810098,
+          "display_is_lossy": true
+        },
+        {
+          "band": 3,
+          "wavelength_nm": 405.52,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 5648.0,
+          "file": "data/fx10/bands/003.jpg",
+          "bytes": 803384,
+          "display_is_lossy": true
+        },
+        {
+          "band": 4,
+          "wavelength_nm": 408.13,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 5696.0,
+          "file": "data/fx10/bands/004.jpg",
+          "bytes": 787301,
+          "display_is_lossy": true
+        },
+        {
+          "band": 5,
+          "wavelength_nm": 410.75,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 5744.0,
+          "file": "data/fx10/bands/005.jpg",
+          "bytes": 772231,
+          "display_is_lossy": true
+        },
+        {
+          "band": 6,
+          "wavelength_nm": 413.37,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 5808.0,
+          "file": "data/fx10/bands/006.jpg",
+          "bytes": 754139,
+          "display_is_lossy": true
+        },
+        {
+          "band": 7,
+          "wavelength_nm": 416.0,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 5840.0,
+          "file": "data/fx10/bands/007.jpg",
+          "bytes": 737659,
+          "display_is_lossy": true
+        },
+        {
+          "band": 8,
+          "wavelength_nm": 418.62,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 5888.0,
+          "file": "data/fx10/bands/008.jpg",
+          "bytes": 724581,
+          "display_is_lossy": true
+        },
+        {
+          "band": 9,
+          "wavelength_nm": 421.24,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 5936.0,
+          "file": "data/fx10/bands/009.jpg",
+          "bytes": 721149,
+          "display_is_lossy": true
+        },
+        {
+          "band": 10,
+          "wavelength_nm": 423.86,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 5984.0,
+          "file": "data/fx10/bands/010.jpg",
+          "bytes": 710914,
+          "display_is_lossy": true
+        },
+        {
+          "band": 11,
+          "wavelength_nm": 426.49,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 6048.0,
+          "file": "data/fx10/bands/011.jpg",
+          "bytes": 696762,
+          "display_is_lossy": true
+        },
+        {
+          "band": 12,
+          "wavelength_nm": 429.12,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 6144.0,
+          "file": "data/fx10/bands/012.jpg",
+          "bytes": 672560,
+          "display_is_lossy": true
+        },
+        {
+          "band": 13,
+          "wavelength_nm": 431.74,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 6208.0,
+          "file": "data/fx10/bands/013.jpg",
+          "bytes": 664717,
+          "display_is_lossy": true
+        },
+        {
+          "band": 14,
+          "wavelength_nm": 434.37,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 6336.0,
+          "file": "data/fx10/bands/014.jpg",
+          "bytes": 642052,
+          "display_is_lossy": true
+        },
+        {
+          "band": 15,
+          "wavelength_nm": 437.0,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 6496.0,
+          "file": "data/fx10/bands/015.jpg",
+          "bytes": 623800,
+          "display_is_lossy": true
+        },
+        {
+          "band": 16,
+          "wavelength_nm": 439.63,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 6608.0,
+          "file": "data/fx10/bands/016.jpg",
+          "bytes": 616274,
+          "display_is_lossy": true
+        },
+        {
+          "band": 17,
+          "wavelength_nm": 442.26,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 6784.0,
+          "file": "data/fx10/bands/017.jpg",
+          "bytes": 588042,
+          "display_is_lossy": true
+        },
+        {
+          "band": 18,
+          "wavelength_nm": 444.89,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 6976.0,
+          "file": "data/fx10/bands/018.jpg",
+          "bytes": 571554,
+          "display_is_lossy": true
+        },
+        {
+          "band": 19,
+          "wavelength_nm": 447.52,
+          "display_low_DN": 4320.0,
+          "display_high_DN": 7120.0,
+          "file": "data/fx10/bands/019.jpg",
+          "bytes": 565385,
+          "display_is_lossy": true
+        },
+        {
+          "band": 20,
+          "wavelength_nm": 450.16,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 7280.0,
+          "file": "data/fx10/bands/020.jpg",
+          "bytes": 554753,
+          "display_is_lossy": true
+        },
+        {
+          "band": 21,
+          "wavelength_nm": 452.79,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 7344.0,
+          "file": "data/fx10/bands/021.jpg",
+          "bytes": 543986,
+          "display_is_lossy": true
+        },
+        {
+          "band": 22,
+          "wavelength_nm": 455.43,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 7456.0,
+          "file": "data/fx10/bands/022.jpg",
+          "bytes": 536447,
+          "display_is_lossy": true
+        },
+        {
+          "band": 23,
+          "wavelength_nm": 458.06,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 7568.0,
+          "file": "data/fx10/bands/023.jpg",
+          "bytes": 529493,
+          "display_is_lossy": true
+        },
+        {
+          "band": 24,
+          "wavelength_nm": 460.7,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 7552.0,
+          "file": "data/fx10/bands/024.jpg",
+          "bytes": 529070,
+          "display_is_lossy": true
+        },
+        {
+          "band": 25,
+          "wavelength_nm": 463.34,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 7632.0,
+          "file": "data/fx10/bands/025.jpg",
+          "bytes": 521224,
+          "display_is_lossy": true
+        },
+        {
+          "band": 26,
+          "wavelength_nm": 465.98,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 7856.0,
+          "file": "data/fx10/bands/026.jpg",
+          "bytes": 503427,
+          "display_is_lossy": true
+        },
+        {
+          "band": 27,
+          "wavelength_nm": 468.62,
+          "display_low_DN": 4320.0,
+          "display_high_DN": 7920.0,
+          "file": "data/fx10/bands/027.jpg",
+          "bytes": 500747,
+          "display_is_lossy": true
+        },
+        {
+          "band": 28,
+          "wavelength_nm": 471.26,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 7968.0,
+          "file": "data/fx10/bands/028.jpg",
+          "bytes": 493777,
+          "display_is_lossy": true
+        },
+        {
+          "band": 29,
+          "wavelength_nm": 473.9,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 8288.0,
+          "file": "data/fx10/bands/029.jpg",
+          "bytes": 469827,
+          "display_is_lossy": true
+        },
+        {
+          "band": 30,
+          "wavelength_nm": 476.54,
+          "display_low_DN": 4320.0,
+          "display_high_DN": 8528.0,
+          "file": "data/fx10/bands/030.jpg",
+          "bytes": 452427,
+          "display_is_lossy": true
+        },
+        {
+          "band": 31,
+          "wavelength_nm": 479.18,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 8640.0,
+          "file": "data/fx10/bands/031.jpg",
+          "bytes": 448194,
+          "display_is_lossy": true
+        },
+        {
+          "band": 32,
+          "wavelength_nm": 481.83,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 8992.0,
+          "file": "data/fx10/bands/032.jpg",
+          "bytes": 427777,
+          "display_is_lossy": true
+        },
+        {
+          "band": 33,
+          "wavelength_nm": 484.47,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 9424.0,
+          "file": "data/fx10/bands/033.jpg",
+          "bytes": 411221,
+          "display_is_lossy": true
+        },
+        {
+          "band": 34,
+          "wavelength_nm": 487.12,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 9648.0,
+          "file": "data/fx10/bands/034.jpg",
+          "bytes": 405492,
+          "display_is_lossy": true
+        },
+        {
+          "band": 35,
+          "wavelength_nm": 489.77,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 9904.0,
+          "file": "data/fx10/bands/035.jpg",
+          "bytes": 394303,
+          "display_is_lossy": true
+        },
+        {
+          "band": 36,
+          "wavelength_nm": 492.42,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 10384.0,
+          "file": "data/fx10/bands/036.jpg",
+          "bytes": 377240,
+          "display_is_lossy": true
+        },
+        {
+          "band": 37,
+          "wavelength_nm": 495.07,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 10704.0,
+          "file": "data/fx10/bands/037.jpg",
+          "bytes": 374300,
+          "display_is_lossy": true
+        },
+        {
+          "band": 38,
+          "wavelength_nm": 497.72,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 10960.0,
+          "file": "data/fx10/bands/038.jpg",
+          "bytes": 367369,
+          "display_is_lossy": true
+        },
+        {
+          "band": 39,
+          "wavelength_nm": 500.37,
+          "display_low_DN": 4320.0,
+          "display_high_DN": 11328.0,
+          "file": "data/fx10/bands/039.jpg",
+          "bytes": 357755,
+          "display_is_lossy": true
+        },
+        {
+          "band": 40,
+          "wavelength_nm": 503.02,
+          "display_low_DN": 4320.0,
+          "display_high_DN": 11536.0,
+          "file": "data/fx10/bands/040.jpg",
+          "bytes": 357494,
+          "display_is_lossy": true
+        },
+        {
+          "band": 41,
+          "wavelength_nm": 505.67,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 11536.0,
+          "file": "data/fx10/bands/041.jpg",
+          "bytes": 354893,
+          "display_is_lossy": true
+        },
+        {
+          "band": 42,
+          "wavelength_nm": 508.32,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 11824.0,
+          "file": "data/fx10/bands/042.jpg",
+          "bytes": 354266,
+          "display_is_lossy": true
+        },
+        {
+          "band": 43,
+          "wavelength_nm": 510.98,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 12240.0,
+          "file": "data/fx10/bands/043.jpg",
+          "bytes": 345608,
+          "display_is_lossy": true
+        },
+        {
+          "band": 44,
+          "wavelength_nm": 513.63,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 12288.0,
+          "file": "data/fx10/bands/044.jpg",
+          "bytes": 346788,
+          "display_is_lossy": true
+        },
+        {
+          "band": 45,
+          "wavelength_nm": 516.29,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 12256.0,
+          "file": "data/fx10/bands/045.jpg",
+          "bytes": 349149,
+          "display_is_lossy": true
+        },
+        {
+          "band": 46,
+          "wavelength_nm": 518.95,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 12704.0,
+          "file": "data/fx10/bands/046.jpg",
+          "bytes": 341247,
+          "display_is_lossy": true
+        },
+        {
+          "band": 47,
+          "wavelength_nm": 521.61,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 13280.0,
+          "file": "data/fx10/bands/047.jpg",
+          "bytes": 335564,
+          "display_is_lossy": true
+        },
+        {
+          "band": 48,
+          "wavelength_nm": 524.27,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 13376.0,
+          "file": "data/fx10/bands/048.jpg",
+          "bytes": 340343,
+          "display_is_lossy": true
+        },
+        {
+          "band": 49,
+          "wavelength_nm": 526.93,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 13408.0,
+          "file": "data/fx10/bands/049.jpg",
+          "bytes": 343345,
+          "display_is_lossy": true
+        },
+        {
+          "band": 50,
+          "wavelength_nm": 529.59,
+          "display_low_DN": 4320.0,
+          "display_high_DN": 14192.0,
+          "file": "data/fx10/bands/050.jpg",
+          "bytes": 333754,
+          "display_is_lossy": true
+        },
+        {
+          "band": 51,
+          "wavelength_nm": 532.25,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 15376.0,
+          "file": "data/fx10/bands/051.jpg",
+          "bytes": 323909,
+          "display_is_lossy": true
+        },
+        {
+          "band": 52,
+          "wavelength_nm": 534.91,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 16032.0,
+          "file": "data/fx10/bands/052.jpg",
+          "bytes": 320771,
+          "display_is_lossy": true
+        },
+        {
+          "band": 53,
+          "wavelength_nm": 537.57,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 16208.0,
+          "file": "data/fx10/bands/053.jpg",
+          "bytes": 322501,
+          "display_is_lossy": true
+        },
+        {
+          "band": 54,
+          "wavelength_nm": 540.24,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 16752.0,
+          "file": "data/fx10/bands/054.jpg",
+          "bytes": 322721,
+          "display_is_lossy": true
+        },
+        {
+          "band": 55,
+          "wavelength_nm": 542.91,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 17776.0,
+          "file": "data/fx10/bands/055.jpg",
+          "bytes": 314656,
+          "display_is_lossy": true
+        },
+        {
+          "band": 56,
+          "wavelength_nm": 545.57,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 18544.0,
+          "file": "data/fx10/bands/056.jpg",
+          "bytes": 312391,
+          "display_is_lossy": true
+        },
+        {
+          "band": 57,
+          "wavelength_nm": 548.24,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 18800.0,
+          "file": "data/fx10/bands/057.jpg",
+          "bytes": 311800,
+          "display_is_lossy": true
+        },
+        {
+          "band": 58,
+          "wavelength_nm": 550.91,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 19248.0,
+          "file": "data/fx10/bands/058.jpg",
+          "bytes": 309683,
+          "display_is_lossy": true
+        },
+        {
+          "band": 59,
+          "wavelength_nm": 553.58,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 20208.0,
+          "file": "data/fx10/bands/059.jpg",
+          "bytes": 304423,
+          "display_is_lossy": true
+        },
+        {
+          "band": 60,
+          "wavelength_nm": 556.25,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 21008.0,
+          "file": "data/fx10/bands/060.jpg",
+          "bytes": 303941,
+          "display_is_lossy": true
+        },
+        {
+          "band": 61,
+          "wavelength_nm": 558.92,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 21312.0,
+          "file": "data/fx10/bands/061.jpg",
+          "bytes": 304793,
+          "display_is_lossy": true
+        },
+        {
+          "band": 62,
+          "wavelength_nm": 561.59,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 21568.0,
+          "file": "data/fx10/bands/062.jpg",
+          "bytes": 301828,
+          "display_is_lossy": true
+        },
+        {
+          "band": 63,
+          "wavelength_nm": 564.26,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 22128.0,
+          "file": "data/fx10/bands/063.jpg",
+          "bytes": 302496,
+          "display_is_lossy": true
+        },
+        {
+          "band": 64,
+          "wavelength_nm": 566.94,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 22592.0,
+          "file": "data/fx10/bands/064.jpg",
+          "bytes": 300421,
+          "display_is_lossy": true
+        },
+        {
+          "band": 65,
+          "wavelength_nm": 569.61,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 22544.0,
+          "file": "data/fx10/bands/065.jpg",
+          "bytes": 302081,
+          "display_is_lossy": true
+        },
+        {
+          "band": 66,
+          "wavelength_nm": 572.29,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 22528.0,
+          "file": "data/fx10/bands/066.jpg",
+          "bytes": 302251,
+          "display_is_lossy": true
+        },
+        {
+          "band": 67,
+          "wavelength_nm": 574.96,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 23168.0,
+          "file": "data/fx10/bands/067.jpg",
+          "bytes": 298359,
+          "display_is_lossy": true
+        },
+        {
+          "band": 68,
+          "wavelength_nm": 577.64,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 24112.0,
+          "file": "data/fx10/bands/068.jpg",
+          "bytes": 294218,
+          "display_is_lossy": true
+        },
+        {
+          "band": 69,
+          "wavelength_nm": 580.32,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 24384.0,
+          "file": "data/fx10/bands/069.jpg",
+          "bytes": 296522,
+          "display_is_lossy": true
+        },
+        {
+          "band": 70,
+          "wavelength_nm": 583.0,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 23824.0,
+          "file": "data/fx10/bands/070.jpg",
+          "bytes": 297911,
+          "display_is_lossy": true
+        },
+        {
+          "band": 71,
+          "wavelength_nm": 585.68,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 23376.0,
+          "file": "data/fx10/bands/071.jpg",
+          "bytes": 302898,
+          "display_is_lossy": true
+        },
+        {
+          "band": 72,
+          "wavelength_nm": 588.36,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 24144.0,
+          "file": "data/fx10/bands/072.jpg",
+          "bytes": 295277,
+          "display_is_lossy": true
+        },
+        {
+          "band": 73,
+          "wavelength_nm": 591.04,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 25632.0,
+          "file": "data/fx10/bands/073.jpg",
+          "bytes": 291555,
+          "display_is_lossy": true
+        },
+        {
+          "band": 74,
+          "wavelength_nm": 593.73,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 26656.0,
+          "file": "data/fx10/bands/074.jpg",
+          "bytes": 290773,
+          "display_is_lossy": true
+        },
+        {
+          "band": 75,
+          "wavelength_nm": 596.41,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 26672.0,
+          "file": "data/fx10/bands/075.jpg",
+          "bytes": 292572,
+          "display_is_lossy": true
+        },
+        {
+          "band": 76,
+          "wavelength_nm": 599.1,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 26432.0,
+          "file": "data/fx10/bands/076.jpg",
+          "bytes": 291498,
+          "display_is_lossy": true
+        },
+        {
+          "band": 77,
+          "wavelength_nm": 601.78,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 27192.47999999672,
+          "file": "data/fx10/bands/077.jpg",
+          "bytes": 289358,
+          "display_is_lossy": true
+        },
+        {
+          "band": 78,
+          "wavelength_nm": 604.47,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 28928.0,
+          "file": "data/fx10/bands/078.jpg",
+          "bytes": 285996,
+          "display_is_lossy": true
+        },
+        {
+          "band": 79,
+          "wavelength_nm": 607.16,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 30608.0,
+          "file": "data/fx10/bands/079.jpg",
+          "bytes": 283055,
+          "display_is_lossy": true
+        },
+        {
+          "band": 80,
+          "wavelength_nm": 609.85,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 31328.0,
+          "file": "data/fx10/bands/080.jpg",
+          "bytes": 282582,
+          "display_is_lossy": true
+        },
+        {
+          "band": 81,
+          "wavelength_nm": 612.53,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 31152.0,
+          "file": "data/fx10/bands/081.jpg",
+          "bytes": 285076,
+          "display_is_lossy": true
+        },
+        {
+          "band": 82,
+          "wavelength_nm": 615.23,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 31088.0,
+          "file": "data/fx10/bands/082.jpg",
+          "bytes": 285798,
+          "display_is_lossy": true
+        },
+        {
+          "band": 83,
+          "wavelength_nm": 617.92,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 32192.0,
+          "file": "data/fx10/bands/083.jpg",
+          "bytes": 283055,
+          "display_is_lossy": true
+        },
+        {
+          "band": 84,
+          "wavelength_nm": 620.61,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 33984.0,
+          "file": "data/fx10/bands/084.jpg",
+          "bytes": 279555,
+          "display_is_lossy": true
+        },
+        {
+          "band": 85,
+          "wavelength_nm": 623.3,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 35504.0,
+          "file": "data/fx10/bands/085.jpg",
+          "bytes": 276750,
+          "display_is_lossy": true
+        },
+        {
+          "band": 86,
+          "wavelength_nm": 626.0,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 36096.0,
+          "file": "data/fx10/bands/086.jpg",
+          "bytes": 279572,
+          "display_is_lossy": true
+        },
+        {
+          "band": 87,
+          "wavelength_nm": 628.69,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 36224.0,
+          "file": "data/fx10/bands/087.jpg",
+          "bytes": 277740,
+          "display_is_lossy": true
+        },
+        {
+          "band": 88,
+          "wavelength_nm": 631.39,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 36656.0,
+          "file": "data/fx10/bands/088.jpg",
+          "bytes": 277834,
+          "display_is_lossy": true
+        },
+        {
+          "band": 89,
+          "wavelength_nm": 634.08,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 37504.0,
+          "file": "data/fx10/bands/089.jpg",
+          "bytes": 276713,
+          "display_is_lossy": true
+        },
+        {
+          "band": 90,
+          "wavelength_nm": 636.78,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 38304.0,
+          "file": "data/fx10/bands/090.jpg",
+          "bytes": 276522,
+          "display_is_lossy": true
+        },
+        {
+          "band": 91,
+          "wavelength_nm": 639.48,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 38704.0,
+          "file": "data/fx10/bands/091.jpg",
+          "bytes": 276818,
+          "display_is_lossy": true
+        },
+        {
+          "band": 92,
+          "wavelength_nm": 642.18,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 38960.0,
+          "file": "data/fx10/bands/092.jpg",
+          "bytes": 276338,
+          "display_is_lossy": true
+        },
+        {
+          "band": 93,
+          "wavelength_nm": 644.88,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 39664.0,
+          "file": "data/fx10/bands/093.jpg",
+          "bytes": 273518,
+          "display_is_lossy": true
+        },
+        {
+          "band": 94,
+          "wavelength_nm": 647.58,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 40912.0,
+          "file": "data/fx10/bands/094.jpg",
+          "bytes": 271012,
+          "display_is_lossy": true
+        },
+        {
+          "band": 95,
+          "wavelength_nm": 650.29,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 42176.0,
+          "file": "data/fx10/bands/095.jpg",
+          "bytes": 271304,
+          "display_is_lossy": true
+        },
+        {
+          "band": 96,
+          "wavelength_nm": 652.99,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 42624.0,
+          "file": "data/fx10/bands/096.jpg",
+          "bytes": 271933,
+          "display_is_lossy": true
+        },
+        {
+          "band": 97,
+          "wavelength_nm": 655.69,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 41904.0,
+          "file": "data/fx10/bands/097.jpg",
+          "bytes": 274394,
+          "display_is_lossy": true
+        },
+        {
+          "band": 98,
+          "wavelength_nm": 658.4,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 40832.0,
+          "file": "data/fx10/bands/098.jpg",
+          "bytes": 277155,
+          "display_is_lossy": true
+        },
+        {
+          "band": 99,
+          "wavelength_nm": 661.1,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 40528.0,
+          "file": "data/fx10/bands/099.jpg",
+          "bytes": 276334,
+          "display_is_lossy": true
+        },
+        {
+          "band": 100,
+          "wavelength_nm": 663.81,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 41648.0,
+          "file": "data/fx10/bands/100.jpg",
+          "bytes": 272734,
+          "display_is_lossy": true
+        },
+        {
+          "band": 101,
+          "wavelength_nm": 666.52,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 43456.0,
+          "file": "data/fx10/bands/101.jpg",
+          "bytes": 270817,
+          "display_is_lossy": true
+        },
+        {
+          "band": 102,
+          "wavelength_nm": 669.23,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 44928.0,
+          "file": "data/fx10/bands/102.jpg",
+          "bytes": 269994,
+          "display_is_lossy": true
+        },
+        {
+          "band": 103,
+          "wavelength_nm": 671.94,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 45360.0,
+          "file": "data/fx10/bands/103.jpg",
+          "bytes": 271255,
+          "display_is_lossy": true
+        },
+        {
+          "band": 104,
+          "wavelength_nm": 674.65,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 44816.0,
+          "file": "data/fx10/bands/104.jpg",
+          "bytes": 273086,
+          "display_is_lossy": true
+        },
+        {
+          "band": 105,
+          "wavelength_nm": 677.36,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 44400.0,
+          "file": "data/fx10/bands/105.jpg",
+          "bytes": 274699,
+          "display_is_lossy": true
+        },
+        {
+          "band": 106,
+          "wavelength_nm": 680.07,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 45200.0,
+          "file": "data/fx10/bands/106.jpg",
+          "bytes": 274602,
+          "display_is_lossy": true
+        },
+        {
+          "band": 107,
+          "wavelength_nm": 682.79,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 47248.0,
+          "file": "data/fx10/bands/107.jpg",
+          "bytes": 271584,
+          "display_is_lossy": true
+        },
+        {
+          "band": 108,
+          "wavelength_nm": 685.5,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 49648.0,
+          "file": "data/fx10/bands/108.jpg",
+          "bytes": 271054,
+          "display_is_lossy": true
+        },
+        {
+          "band": 109,
+          "wavelength_nm": 688.22,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 51344.0,
+          "file": "data/fx10/bands/109.jpg",
+          "bytes": 271800,
+          "display_is_lossy": true
+        },
+        {
+          "band": 110,
+          "wavelength_nm": 690.93,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 51872.0,
+          "file": "data/fx10/bands/110.jpg",
+          "bytes": 275992,
+          "display_is_lossy": true
+        },
+        {
+          "band": 111,
+          "wavelength_nm": 693.65,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 51312.0,
+          "file": "data/fx10/bands/111.jpg",
+          "bytes": 276853,
+          "display_is_lossy": true
+        },
+        {
+          "band": 112,
+          "wavelength_nm": 696.37,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 50096.0,
+          "file": "data/fx10/bands/112.jpg",
+          "bytes": 278034,
+          "display_is_lossy": true
+        },
+        {
+          "band": 113,
+          "wavelength_nm": 699.09,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 49824.0,
+          "file": "data/fx10/bands/113.jpg",
+          "bytes": 279234,
+          "display_is_lossy": true
+        },
+        {
+          "band": 114,
+          "wavelength_nm": 701.81,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 51184.0,
+          "file": "data/fx10/bands/114.jpg",
+          "bytes": 280217,
+          "display_is_lossy": true
+        },
+        {
+          "band": 115,
+          "wavelength_nm": 704.53,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 53680.0,
+          "file": "data/fx10/bands/115.jpg",
+          "bytes": 280254,
+          "display_is_lossy": true
+        },
+        {
+          "band": 116,
+          "wavelength_nm": 707.25,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 57104.0,
+          "file": "data/fx10/bands/116.jpg",
+          "bytes": 276711,
+          "display_is_lossy": true
+        },
+        {
+          "band": 117,
+          "wavelength_nm": 709.97,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 60288.0,
+          "file": "data/fx10/bands/117.jpg",
+          "bytes": 275151,
+          "display_is_lossy": true
+        },
+        {
+          "band": 118,
+          "wavelength_nm": 712.7,
+          "display_low_DN": 4272.0,
+          "display_high_DN": 62800.0,
+          "file": "data/fx10/bands/118.jpg",
+          "bytes": 275768,
+          "display_is_lossy": true
+        },
+        {
+          "band": 119,
+          "wavelength_nm": 715.42,
+          "display_low_DN": 4272.0,
+          "display_high_DN": 64608.0,
+          "file": "data/fx10/bands/119.jpg",
+          "bytes": 271512,
+          "display_is_lossy": true
+        },
+        {
+          "band": 120,
+          "wavelength_nm": 718.15,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/120.jpg",
+          "bytes": 272491,
+          "display_is_lossy": true
+        },
+        {
+          "band": 121,
+          "wavelength_nm": 720.87,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/121.jpg",
+          "bytes": 274225,
+          "display_is_lossy": true
+        },
+        {
+          "band": 122,
+          "wavelength_nm": 723.6,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/122.jpg",
+          "bytes": 275602,
+          "display_is_lossy": true
+        },
+        {
+          "band": 123,
+          "wavelength_nm": 726.33,
+          "display_low_DN": 4272.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/123.jpg",
+          "bytes": 276732,
+          "display_is_lossy": true
+        },
+        {
+          "band": 124,
+          "wavelength_nm": 729.06,
+          "display_low_DN": 4272.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/124.jpg",
+          "bytes": 279244,
+          "display_is_lossy": true
+        },
+        {
+          "band": 125,
+          "wavelength_nm": 731.79,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/125.jpg",
+          "bytes": 278902,
+          "display_is_lossy": true
+        },
+        {
+          "band": 126,
+          "wavelength_nm": 734.52,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/126.jpg",
+          "bytes": 276967,
+          "display_is_lossy": true
+        },
+        {
+          "band": 127,
+          "wavelength_nm": 737.25,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/127.jpg",
+          "bytes": 276974,
+          "display_is_lossy": true
+        },
+        {
+          "band": 128,
+          "wavelength_nm": 739.98,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/128.jpg",
+          "bytes": 275596,
+          "display_is_lossy": true
+        },
+        {
+          "band": 129,
+          "wavelength_nm": 742.72,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/129.jpg",
+          "bytes": 275579,
+          "display_is_lossy": true
+        },
+        {
+          "band": 130,
+          "wavelength_nm": 745.45,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/130.jpg",
+          "bytes": 273318,
+          "display_is_lossy": true
+        },
+        {
+          "band": 131,
+          "wavelength_nm": 748.19,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/131.jpg",
+          "bytes": 272388,
+          "display_is_lossy": true
+        },
+        {
+          "band": 132,
+          "wavelength_nm": 750.93,
+          "display_low_DN": 4272.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/132.jpg",
+          "bytes": 271720,
+          "display_is_lossy": true
+        },
+        {
+          "band": 133,
+          "wavelength_nm": 753.66,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/133.jpg",
+          "bytes": 268752,
+          "display_is_lossy": true
+        },
+        {
+          "band": 134,
+          "wavelength_nm": 756.4,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/134.jpg",
+          "bytes": 268126,
+          "display_is_lossy": true
+        },
+        {
+          "band": 135,
+          "wavelength_nm": 759.14,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/135.jpg",
+          "bytes": 267967,
+          "display_is_lossy": true
+        },
+        {
+          "band": 136,
+          "wavelength_nm": 761.88,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/136.jpg",
+          "bytes": 266238,
+          "display_is_lossy": true
+        },
+        {
+          "band": 137,
+          "wavelength_nm": 764.62,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/137.jpg",
+          "bytes": 264771,
+          "display_is_lossy": true
+        },
+        {
+          "band": 138,
+          "wavelength_nm": 767.36,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/138.jpg",
+          "bytes": 263140,
+          "display_is_lossy": true
+        },
+        {
+          "band": 139,
+          "wavelength_nm": 770.11,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/139.jpg",
+          "bytes": 261086,
+          "display_is_lossy": true
+        },
+        {
+          "band": 140,
+          "wavelength_nm": 772.85,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/140.jpg",
+          "bytes": 261802,
+          "display_is_lossy": true
+        },
+        {
+          "band": 141,
+          "wavelength_nm": 775.6,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/141.jpg",
+          "bytes": 261324,
+          "display_is_lossy": true
+        },
+        {
+          "band": 142,
+          "wavelength_nm": 778.34,
+          "display_low_DN": 4272.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/142.jpg",
+          "bytes": 259650,
+          "display_is_lossy": true
+        },
+        {
+          "band": 143,
+          "wavelength_nm": 781.09,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/143.jpg",
+          "bytes": 258842,
+          "display_is_lossy": true
+        },
+        {
+          "band": 144,
+          "wavelength_nm": 783.84,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/144.jpg",
+          "bytes": 259067,
+          "display_is_lossy": true
+        },
+        {
+          "band": 145,
+          "wavelength_nm": 786.58,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/145.jpg",
+          "bytes": 257641,
+          "display_is_lossy": true
+        },
+        {
+          "band": 146,
+          "wavelength_nm": 789.33,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/146.jpg",
+          "bytes": 257726,
+          "display_is_lossy": true
+        },
+        {
+          "band": 147,
+          "wavelength_nm": 792.08,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/147.jpg",
+          "bytes": 257052,
+          "display_is_lossy": true
+        },
+        {
+          "band": 148,
+          "wavelength_nm": 794.84,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/148.jpg",
+          "bytes": 257313,
+          "display_is_lossy": true
+        },
+        {
+          "band": 149,
+          "wavelength_nm": 797.59,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/149.jpg",
+          "bytes": 256206,
+          "display_is_lossy": true
+        },
+        {
+          "band": 150,
+          "wavelength_nm": 800.34,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/150.jpg",
+          "bytes": 256231,
+          "display_is_lossy": true
+        },
+        {
+          "band": 151,
+          "wavelength_nm": 803.1,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/151.jpg",
+          "bytes": 255091,
+          "display_is_lossy": true
+        },
+        {
+          "band": 152,
+          "wavelength_nm": 805.85,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/152.jpg",
+          "bytes": 254093,
+          "display_is_lossy": true
+        },
+        {
+          "band": 153,
+          "wavelength_nm": 808.61,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/153.jpg",
+          "bytes": 252621,
+          "display_is_lossy": true
+        },
+        {
+          "band": 154,
+          "wavelength_nm": 811.36,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/154.jpg",
+          "bytes": 250470,
+          "display_is_lossy": true
+        },
+        {
+          "band": 155,
+          "wavelength_nm": 814.12,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/155.jpg",
+          "bytes": 251735,
+          "display_is_lossy": true
+        },
+        {
+          "band": 156,
+          "wavelength_nm": 816.88,
+          "display_low_DN": 4272.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/156.jpg",
+          "bytes": 252228,
+          "display_is_lossy": true
+        },
+        {
+          "band": 157,
+          "wavelength_nm": 819.64,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/157.jpg",
+          "bytes": 252465,
+          "display_is_lossy": true
+        },
+        {
+          "band": 158,
+          "wavelength_nm": 822.4,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/158.jpg",
+          "bytes": 251476,
+          "display_is_lossy": true
+        },
+        {
+          "band": 159,
+          "wavelength_nm": 825.16,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/159.jpg",
+          "bytes": 252494,
+          "display_is_lossy": true
+        },
+        {
+          "band": 160,
+          "wavelength_nm": 827.92,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/160.jpg",
+          "bytes": 252315,
+          "display_is_lossy": true
+        },
+        {
+          "band": 161,
+          "wavelength_nm": 830.69,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/161.jpg",
+          "bytes": 251457,
+          "display_is_lossy": true
+        },
+        {
+          "band": 162,
+          "wavelength_nm": 833.45,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/162.jpg",
+          "bytes": 252240,
+          "display_is_lossy": true
+        },
+        {
+          "band": 163,
+          "wavelength_nm": 836.22,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/163.jpg",
+          "bytes": 249237,
+          "display_is_lossy": true
+        },
+        {
+          "band": 164,
+          "wavelength_nm": 838.98,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/164.jpg",
+          "bytes": 248771,
+          "display_is_lossy": true
+        },
+        {
+          "band": 165,
+          "wavelength_nm": 841.75,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/165.jpg",
+          "bytes": 248877,
+          "display_is_lossy": true
+        },
+        {
+          "band": 166,
+          "wavelength_nm": 844.52,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/166.jpg",
+          "bytes": 247662,
+          "display_is_lossy": true
+        },
+        {
+          "band": 167,
+          "wavelength_nm": 847.29,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/167.jpg",
+          "bytes": 248513,
+          "display_is_lossy": true
+        },
+        {
+          "band": 168,
+          "wavelength_nm": 850.06,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/168.jpg",
+          "bytes": 248073,
+          "display_is_lossy": true
+        },
+        {
+          "band": 169,
+          "wavelength_nm": 852.83,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/169.jpg",
+          "bytes": 249021,
+          "display_is_lossy": true
+        },
+        {
+          "band": 170,
+          "wavelength_nm": 855.6,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/170.jpg",
+          "bytes": 249934,
+          "display_is_lossy": true
+        },
+        {
+          "band": 171,
+          "wavelength_nm": 858.37,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/171.jpg",
+          "bytes": 250501,
+          "display_is_lossy": true
+        },
+        {
+          "band": 172,
+          "wavelength_nm": 861.14,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/172.jpg",
+          "bytes": 249304,
+          "display_is_lossy": true
+        },
+        {
+          "band": 173,
+          "wavelength_nm": 863.92,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/173.jpg",
+          "bytes": 248865,
+          "display_is_lossy": true
+        },
+        {
+          "band": 174,
+          "wavelength_nm": 866.69,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/174.jpg",
+          "bytes": 248281,
+          "display_is_lossy": true
+        },
+        {
+          "band": 175,
+          "wavelength_nm": 869.47,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/175.jpg",
+          "bytes": 247021,
+          "display_is_lossy": true
+        },
+        {
+          "band": 176,
+          "wavelength_nm": 872.25,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/176.jpg",
+          "bytes": 244773,
+          "display_is_lossy": true
+        },
+        {
+          "band": 177,
+          "wavelength_nm": 875.03,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/177.jpg",
+          "bytes": 243286,
+          "display_is_lossy": true
+        },
+        {
+          "band": 178,
+          "wavelength_nm": 877.8,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/178.jpg",
+          "bytes": 243967,
+          "display_is_lossy": true
+        },
+        {
+          "band": 179,
+          "wavelength_nm": 880.58,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/179.jpg",
+          "bytes": 241597,
+          "display_is_lossy": true
+        },
+        {
+          "band": 180,
+          "wavelength_nm": 883.37,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/180.jpg",
+          "bytes": 241218,
+          "display_is_lossy": true
+        },
+        {
+          "band": 181,
+          "wavelength_nm": 886.15,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/181.jpg",
+          "bytes": 240555,
+          "display_is_lossy": true
+        },
+        {
+          "band": 182,
+          "wavelength_nm": 888.93,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/182.jpg",
+          "bytes": 239960,
+          "display_is_lossy": true
+        },
+        {
+          "band": 183,
+          "wavelength_nm": 891.71,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/183.jpg",
+          "bytes": 239545,
+          "display_is_lossy": true
+        },
+        {
+          "band": 184,
+          "wavelength_nm": 894.5,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/184.jpg",
+          "bytes": 238443,
+          "display_is_lossy": true
+        },
+        {
+          "band": 185,
+          "wavelength_nm": 897.28,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/185.jpg",
+          "bytes": 238814,
+          "display_is_lossy": true
+        },
+        {
+          "band": 186,
+          "wavelength_nm": 900.07,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/186.jpg",
+          "bytes": 236561,
+          "display_is_lossy": true
+        },
+        {
+          "band": 187,
+          "wavelength_nm": 902.86,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/187.jpg",
+          "bytes": 235563,
+          "display_is_lossy": true
+        },
+        {
+          "band": 188,
+          "wavelength_nm": 905.64,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/188.jpg",
+          "bytes": 231930,
+          "display_is_lossy": true
+        },
+        {
+          "band": 189,
+          "wavelength_nm": 908.43,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/189.jpg",
+          "bytes": 228912,
+          "display_is_lossy": true
+        },
+        {
+          "band": 190,
+          "wavelength_nm": 911.22,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/190.jpg",
+          "bytes": 226966,
+          "display_is_lossy": true
+        },
+        {
+          "band": 191,
+          "wavelength_nm": 914.02,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx10/bands/191.jpg",
+          "bytes": 224717,
+          "display_is_lossy": true
+        },
+        {
+          "band": 192,
+          "wavelength_nm": 916.81,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 65328.0,
+          "file": "data/fx10/bands/192.jpg",
+          "bytes": 220858,
+          "display_is_lossy": true
+        },
+        {
+          "band": 193,
+          "wavelength_nm": 919.6,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 64368.0,
+          "file": "data/fx10/bands/193.jpg",
+          "bytes": 221976,
+          "display_is_lossy": true
+        },
+        {
+          "band": 194,
+          "wavelength_nm": 922.39,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 63648.0,
+          "file": "data/fx10/bands/194.jpg",
+          "bytes": 223192,
+          "display_is_lossy": true
+        },
+        {
+          "band": 195,
+          "wavelength_nm": 925.19,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 63280.0,
+          "file": "data/fx10/bands/195.jpg",
+          "bytes": 220599,
+          "display_is_lossy": true
+        },
+        {
+          "band": 196,
+          "wavelength_nm": 927.98,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 63088.0,
+          "file": "data/fx10/bands/196.jpg",
+          "bytes": 220536,
+          "display_is_lossy": true
+        },
+        {
+          "band": 197,
+          "wavelength_nm": 930.78,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 62832.0,
+          "file": "data/fx10/bands/197.jpg",
+          "bytes": 221518,
+          "display_is_lossy": true
+        },
+        {
+          "band": 198,
+          "wavelength_nm": 933.58,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 62384.0,
+          "file": "data/fx10/bands/198.jpg",
+          "bytes": 220475,
+          "display_is_lossy": true
+        },
+        {
+          "band": 199,
+          "wavelength_nm": 936.38,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 61568.0,
+          "file": "data/fx10/bands/199.jpg",
+          "bytes": 220944,
+          "display_is_lossy": true
+        },
+        {
+          "band": 200,
+          "wavelength_nm": 939.18,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 60384.0,
+          "file": "data/fx10/bands/200.jpg",
+          "bytes": 220792,
+          "display_is_lossy": true
+        },
+        {
+          "band": 201,
+          "wavelength_nm": 941.98,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 58592.0,
+          "file": "data/fx10/bands/201.jpg",
+          "bytes": 223549,
+          "display_is_lossy": true
+        },
+        {
+          "band": 202,
+          "wavelength_nm": 944.78,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 56288.0,
+          "file": "data/fx10/bands/202.jpg",
+          "bytes": 222585,
+          "display_is_lossy": true
+        },
+        {
+          "band": 203,
+          "wavelength_nm": 947.58,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 53664.0,
+          "file": "data/fx10/bands/203.jpg",
+          "bytes": 224540,
+          "display_is_lossy": true
+        },
+        {
+          "band": 204,
+          "wavelength_nm": 950.38,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 50800.0,
+          "file": "data/fx10/bands/204.jpg",
+          "bytes": 223384,
+          "display_is_lossy": true
+        },
+        {
+          "band": 205,
+          "wavelength_nm": 953.19,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 48032.0,
+          "file": "data/fx10/bands/205.jpg",
+          "bytes": 226053,
+          "display_is_lossy": true
+        },
+        {
+          "band": 206,
+          "wavelength_nm": 955.99,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 45536.0,
+          "file": "data/fx10/bands/206.jpg",
+          "bytes": 228174,
+          "display_is_lossy": true
+        },
+        {
+          "band": 207,
+          "wavelength_nm": 958.8,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 43424.0,
+          "file": "data/fx10/bands/207.jpg",
+          "bytes": 228553,
+          "display_is_lossy": true
+        },
+        {
+          "band": 208,
+          "wavelength_nm": 961.6,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 41808.0,
+          "file": "data/fx10/bands/208.jpg",
+          "bytes": 229807,
+          "display_is_lossy": true
+        },
+        {
+          "band": 209,
+          "wavelength_nm": 964.41,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 40528.0,
+          "file": "data/fx10/bands/209.jpg",
+          "bytes": 232894,
+          "display_is_lossy": true
+        },
+        {
+          "band": 210,
+          "wavelength_nm": 967.22,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 39584.0,
+          "file": "data/fx10/bands/210.jpg",
+          "bytes": 231407,
+          "display_is_lossy": true
+        },
+        {
+          "band": 211,
+          "wavelength_nm": 970.03,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 38800.0,
+          "file": "data/fx10/bands/211.jpg",
+          "bytes": 232874,
+          "display_is_lossy": true
+        },
+        {
+          "band": 212,
+          "wavelength_nm": 972.84,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 38112.0,
+          "file": "data/fx10/bands/212.jpg",
+          "bytes": 232768,
+          "display_is_lossy": true
+        },
+        {
+          "band": 213,
+          "wavelength_nm": 975.65,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 37376.0,
+          "file": "data/fx10/bands/213.jpg",
+          "bytes": 231212,
+          "display_is_lossy": true
+        },
+        {
+          "band": 214,
+          "wavelength_nm": 978.46,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 36528.0,
+          "file": "data/fx10/bands/214.jpg",
+          "bytes": 231428,
+          "display_is_lossy": true
+        },
+        {
+          "band": 215,
+          "wavelength_nm": 981.27,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 35536.0,
+          "file": "data/fx10/bands/215.jpg",
+          "bytes": 232652,
+          "display_is_lossy": true
+        },
+        {
+          "band": 216,
+          "wavelength_nm": 984.09,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 34320.0,
+          "file": "data/fx10/bands/216.jpg",
+          "bytes": 233768,
+          "display_is_lossy": true
+        },
+        {
+          "band": 217,
+          "wavelength_nm": 986.9,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 32960.0,
+          "file": "data/fx10/bands/217.jpg",
+          "bytes": 239037,
+          "display_is_lossy": true
+        },
+        {
+          "band": 218,
+          "wavelength_nm": 989.72,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 31536.0,
+          "file": "data/fx10/bands/218.jpg",
+          "bytes": 238868,
+          "display_is_lossy": true
+        },
+        {
+          "band": 219,
+          "wavelength_nm": 992.54,
+          "display_low_DN": 4304.0,
+          "display_high_DN": 30064.0,
+          "file": "data/fx10/bands/219.jpg",
+          "bytes": 237881,
+          "display_is_lossy": true
+        },
+        {
+          "band": 220,
+          "wavelength_nm": 995.35,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 28656.0,
+          "file": "data/fx10/bands/220.jpg",
+          "bytes": 241204,
+          "display_is_lossy": true
+        },
+        {
+          "band": 221,
+          "wavelength_nm": 998.17,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 27344.0,
+          "file": "data/fx10/bands/221.jpg",
+          "bytes": 242747,
+          "display_is_lossy": true
+        },
+        {
+          "band": 222,
+          "wavelength_nm": 1000.99,
+          "display_low_DN": 4288.0,
+          "display_high_DN": 26304.0,
+          "file": "data/fx10/bands/222.jpg",
+          "bytes": 249606,
+          "display_is_lossy": true
+        },
+        {
+          "band": 223,
+          "wavelength_nm": 1003.81,
+          "display_low_DN": 4272.0,
+          "display_high_DN": 26176.0,
+          "file": "data/fx10/bands/223.jpg",
+          "bytes": 271015,
+          "display_is_lossy": true
+        }
+      ],
+      "references": "data/fx10/references.bin.gz",
+      "row_template": "data/fx10/rows/{line}.bin.gz",
+      "normalization": {
+        "white_roi": [
+          20,
+          140,
+          180,
+          850
+        ],
+        "dark_roi": [
+          2080,
+          2127,
+          0,
+          1024
+        ],
+        "white_identity": "User-confirmed white board at scan start; spectral reflectance unknown",
+        "settings_assumption": "User confirmed fixed exposure; gain and source export packing not independently established",
+        "dark_status": "assumed_tail",
+        "dark_provenance": "Abrupt final low-signal tail; shutter closure unconfirmed. This is an explicit assumed offset, not certified dark calibration."
+      },
+      "suspected_clipping_DN": 65520,
+      "index_specs": {
+        "NDVI_800_680": {
+          "bands": [
+            800,
+            680
+          ],
+          "formula": "(Q800-Q680)/(Q800+Q680)",
+          "operation": "nd",
+          "band_indices": [
+            150,
+            106
+          ],
+          "actual_wavelength_nm": [
+            800.34,
+            680.07
+          ]
+        },
+        "NDRE_790_720": {
+          "bands": [
+            790,
+            720
+          ],
+          "formula": "(Q790-Q720)/(Q790+Q720)",
+          "operation": "nd",
+          "band_indices": [
+            146,
+            121
+          ],
+          "actual_wavelength_nm": [
+            789.33,
+            720.87
+          ]
+        },
+        "GNDVI_800_550": {
+          "bands": [
+            800,
+            550
+          ],
+          "formula": "(Q800-Q550)/(Q800+Q550)",
+          "operation": "nd",
+          "band_indices": [
+            150,
+            58
+          ],
+          "actual_wavelength_nm": [
+            800.34,
+            550.91
+          ]
+        },
+        "PRI_531_570": {
+          "bands": [
+            531,
+            570
+          ],
+          "formula": "(Q531-Q570)/(Q531+Q570)",
+          "operation": "nd",
+          "band_indices": [
+            51,
+            65
+          ],
+          "actual_wavelength_nm": [
+            532.25,
+            569.61
+          ]
+        },
+        "PSRI_678_500_750": {
+          "bands": [
+            678,
+            500,
+            750
+          ],
+          "formula": "(Q678-Q500)/Q750",
+          "operation": "psri",
+          "band_indices": [
+            105,
+            39,
+            132
+          ],
+          "actual_wavelength_nm": [
+            677.36,
+            500.37,
+            750.93
+          ]
+        },
+        "SIPI_800_445_680": {
+          "bands": [
+            800,
+            445,
+            680
+          ],
+          "formula": "(Q800-Q445)/(Q800-Q680)",
+          "operation": "sipi",
+          "band_indices": [
+            150,
+            18,
+            106
+          ],
+          "actual_wavelength_nm": [
+            800.34,
+            444.89,
+            680.07
+          ]
+        }
+      },
+      "regions": [
+        [
+          180,
+          550
+        ],
+        [
+          550,
+          880
+        ],
+        [
+          880,
+          1230
+        ],
+        [
+          1230,
+          1550
+        ],
+        [
+          1550,
+          2050
+        ]
+      ],
+      "default_pixel": [
+        950,
+        480
+      ],
+      "lossless_row_bytes": 401870705,
+      "preview_bytes": 72770383
+    },
+    "fx17": {
+      "lines": 2127,
+      "bands": 224,
+      "columns": 640,
+      "pixel_count": 1361280,
+      "wavelength_nm": [
+        935.61,
+        939.06,
+        942.52,
+        945.98,
+        949.43,
+        952.89,
+        956.35,
+        959.81,
+        963.27,
+        966.73,
+        970.19,
+        973.65,
+        977.11,
+        980.58,
+        984.04,
+        987.51,
+        990.97,
+        994.43,
+        997.9,
+        1001.37,
+        1004.83,
+        1008.3,
+        1011.77,
+        1015.24,
+        1018.71,
+        1022.18,
+        1025.65,
+        1029.12,
+        1032.59,
+        1036.06,
+        1039.53,
+        1043.0,
+        1046.48,
+        1049.95,
+        1053.43,
+        1056.9,
+        1060.38,
+        1063.85,
+        1067.33,
+        1070.81,
+        1074.29,
+        1077.76,
+        1081.24,
+        1084.72,
+        1088.2,
+        1091.68,
+        1095.17,
+        1098.65,
+        1102.13,
+        1105.61,
+        1109.1,
+        1112.58,
+        1116.07,
+        1119.55,
+        1123.04,
+        1126.52,
+        1130.01,
+        1133.5,
+        1136.99,
+        1140.47,
+        1143.96,
+        1147.45,
+        1150.94,
+        1154.43,
+        1157.93,
+        1161.42,
+        1164.91,
+        1168.4,
+        1171.9,
+        1175.39,
+        1178.89,
+        1182.38,
+        1185.88,
+        1189.37,
+        1192.87,
+        1196.37,
+        1199.87,
+        1203.37,
+        1206.87,
+        1210.37,
+        1213.87,
+        1217.37,
+        1220.87,
+        1224.37,
+        1227.87,
+        1231.38,
+        1234.88,
+        1238.39,
+        1241.89,
+        1245.4,
+        1248.9,
+        1252.41,
+        1255.92,
+        1259.42,
+        1262.93,
+        1266.44,
+        1269.95,
+        1273.46,
+        1276.97,
+        1280.48,
+        1283.99,
+        1287.51,
+        1291.02,
+        1294.53,
+        1298.05,
+        1301.56,
+        1305.08,
+        1308.59,
+        1312.11,
+        1315.62,
+        1319.14,
+        1322.66,
+        1326.18,
+        1329.7,
+        1333.22,
+        1336.74,
+        1340.26,
+        1343.78,
+        1347.3,
+        1350.82,
+        1354.35,
+        1357.87,
+        1361.39,
+        1364.92,
+        1368.44,
+        1371.97,
+        1375.5,
+        1379.02,
+        1382.55,
+        1386.08,
+        1389.61,
+        1393.14,
+        1396.67,
+        1400.2,
+        1403.73,
+        1407.26,
+        1410.79,
+        1414.32,
+        1417.86,
+        1421.39,
+        1424.92,
+        1428.46,
+        1431.99,
+        1435.53,
+        1439.07,
+        1442.6,
+        1446.14,
+        1449.68,
+        1453.22,
+        1456.76,
+        1460.3,
+        1463.84,
+        1467.38,
+        1470.92,
+        1474.46,
+        1478.01,
+        1481.55,
+        1485.09,
+        1488.64,
+        1492.18,
+        1495.73,
+        1499.27,
+        1502.82,
+        1506.37,
+        1509.91,
+        1513.46,
+        1517.01,
+        1520.56,
+        1524.11,
+        1527.66,
+        1531.21,
+        1534.76,
+        1538.32,
+        1541.87,
+        1545.42,
+        1548.98,
+        1552.53,
+        1556.09,
+        1559.64,
+        1563.2,
+        1566.75,
+        1570.31,
+        1573.87,
+        1577.43,
+        1580.99,
+        1584.55,
+        1588.11,
+        1591.67,
+        1595.23,
+        1598.79,
+        1602.35,
+        1605.92,
+        1609.48,
+        1613.04,
+        1616.61,
+        1620.17,
+        1623.74,
+        1627.31,
+        1630.87,
+        1634.44,
+        1638.01,
+        1641.58,
+        1645.15,
+        1648.71,
+        1652.29,
+        1655.86,
+        1659.43,
+        1663.0,
+        1666.57,
+        1670.14,
+        1673.72,
+        1677.29,
+        1680.87,
+        1684.44,
+        1688.02,
+        1691.59,
+        1695.17,
+        1698.75,
+        1702.33,
+        1705.91,
+        1709.49,
+        1713.07,
+        1716.65,
+        1720.23
+      ],
+      "source_header": "data/main/test_plant_10-7/20260928/003-specim-fx17.hdr",
+      "source_data": "data/main/test_plant_10-7/20260928/003-specim-fx17.bil",
+      "source_sha256": "f950edbeb6fc16a12d25f665c970082ea94bc74f6ea18f8e8cfcca12de033db4",
+      "header_sha256": "762de08de4f6f2892aa0caf4dd69da81a4a283e4a83783a210d75664b3c64d4f",
+      "source_bytes": 609853440,
+      "composite": "data/fx17/composite.jpg",
+      "composite_channels_target_nm": [
+        1600,
+        1300,
+        1050
+      ],
+      "band_previews": [
+        {
+          "band": 0,
+          "wavelength_nm": 935.61,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 6256.0,
+          "file": "data/fx17/bands/000.jpg",
+          "bytes": 199548,
+          "display_is_lossy": true
+        },
+        {
+          "band": 1,
+          "wavelength_nm": 939.06,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 7328.0,
+          "file": "data/fx17/bands/001.jpg",
+          "bytes": 177671,
+          "display_is_lossy": true
+        },
+        {
+          "band": 2,
+          "wavelength_nm": 942.52,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 10336.0,
+          "file": "data/fx17/bands/002.jpg",
+          "bytes": 170718,
+          "display_is_lossy": true
+        },
+        {
+          "band": 3,
+          "wavelength_nm": 945.98,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 14368.0,
+          "file": "data/fx17/bands/003.jpg",
+          "bytes": 168592,
+          "display_is_lossy": true
+        },
+        {
+          "band": 4,
+          "wavelength_nm": 949.43,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 19056.0,
+          "file": "data/fx17/bands/004.jpg",
+          "bytes": 166797,
+          "display_is_lossy": true
+        },
+        {
+          "band": 5,
+          "wavelength_nm": 952.89,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 23872.0,
+          "file": "data/fx17/bands/005.jpg",
+          "bytes": 167204,
+          "display_is_lossy": true
+        },
+        {
+          "band": 6,
+          "wavelength_nm": 956.35,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 28432.0,
+          "file": "data/fx17/bands/006.jpg",
+          "bytes": 167420,
+          "display_is_lossy": true
+        },
+        {
+          "band": 7,
+          "wavelength_nm": 959.81,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 32432.0,
+          "file": "data/fx17/bands/007.jpg",
+          "bytes": 167149,
+          "display_is_lossy": true
+        },
+        {
+          "band": 8,
+          "wavelength_nm": 963.27,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 35808.0,
+          "file": "data/fx17/bands/008.jpg",
+          "bytes": 167003,
+          "display_is_lossy": true
+        },
+        {
+          "band": 9,
+          "wavelength_nm": 966.73,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 38512.0,
+          "file": "data/fx17/bands/009.jpg",
+          "bytes": 167545,
+          "display_is_lossy": true
+        },
+        {
+          "band": 10,
+          "wavelength_nm": 970.19,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 40736.0,
+          "file": "data/fx17/bands/010.jpg",
+          "bytes": 168009,
+          "display_is_lossy": true
+        },
+        {
+          "band": 11,
+          "wavelength_nm": 973.65,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 42515.359999999404,
+          "file": "data/fx17/bands/011.jpg",
+          "bytes": 168198,
+          "display_is_lossy": true
+        },
+        {
+          "band": 12,
+          "wavelength_nm": 977.11,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 44064.0,
+          "file": "data/fx17/bands/012.jpg",
+          "bytes": 168324,
+          "display_is_lossy": true
+        },
+        {
+          "band": 13,
+          "wavelength_nm": 980.58,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 45440.0,
+          "file": "data/fx17/bands/013.jpg",
+          "bytes": 167969,
+          "display_is_lossy": true
+        },
+        {
+          "band": 14,
+          "wavelength_nm": 984.04,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 46576.0,
+          "file": "data/fx17/bands/014.jpg",
+          "bytes": 168819,
+          "display_is_lossy": true
+        },
+        {
+          "band": 15,
+          "wavelength_nm": 987.51,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 47808.0,
+          "file": "data/fx17/bands/015.jpg",
+          "bytes": 168205,
+          "display_is_lossy": true
+        },
+        {
+          "band": 16,
+          "wavelength_nm": 990.97,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 48816.0,
+          "file": "data/fx17/bands/016.jpg",
+          "bytes": 168120,
+          "display_is_lossy": true
+        },
+        {
+          "band": 17,
+          "wavelength_nm": 994.43,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 50016.0,
+          "file": "data/fx17/bands/017.jpg",
+          "bytes": 168178,
+          "display_is_lossy": true
+        },
+        {
+          "band": 18,
+          "wavelength_nm": 997.9,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 51024.0,
+          "file": "data/fx17/bands/018.jpg",
+          "bytes": 167944,
+          "display_is_lossy": true
+        },
+        {
+          "band": 19,
+          "wavelength_nm": 1001.37,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 52048.0,
+          "file": "data/fx17/bands/019.jpg",
+          "bytes": 168070,
+          "display_is_lossy": true
+        },
+        {
+          "band": 20,
+          "wavelength_nm": 1004.83,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 53091.359999999404,
+          "file": "data/fx17/bands/020.jpg",
+          "bytes": 167720,
+          "display_is_lossy": true
+        },
+        {
+          "band": 21,
+          "wavelength_nm": 1008.3,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 54096.0,
+          "file": "data/fx17/bands/021.jpg",
+          "bytes": 167788,
+          "display_is_lossy": true
+        },
+        {
+          "band": 22,
+          "wavelength_nm": 1011.77,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 55200.0,
+          "file": "data/fx17/bands/022.jpg",
+          "bytes": 167393,
+          "display_is_lossy": true
+        },
+        {
+          "band": 23,
+          "wavelength_nm": 1015.24,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 56256.0,
+          "file": "data/fx17/bands/023.jpg",
+          "bytes": 167506,
+          "display_is_lossy": true
+        },
+        {
+          "band": 24,
+          "wavelength_nm": 1018.71,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 57120.0,
+          "file": "data/fx17/bands/024.jpg",
+          "bytes": 167781,
+          "display_is_lossy": true
+        },
+        {
+          "band": 25,
+          "wavelength_nm": 1022.18,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 58339.359999999404,
+          "file": "data/fx17/bands/025.jpg",
+          "bytes": 166993,
+          "display_is_lossy": true
+        },
+        {
+          "band": 26,
+          "wavelength_nm": 1025.65,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 59168.0,
+          "file": "data/fx17/bands/026.jpg",
+          "bytes": 166874,
+          "display_is_lossy": true
+        },
+        {
+          "band": 27,
+          "wavelength_nm": 1029.12,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 60355.359999999404,
+          "file": "data/fx17/bands/027.jpg",
+          "bytes": 166835,
+          "display_is_lossy": true
+        },
+        {
+          "band": 28,
+          "wavelength_nm": 1032.59,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 61376.0,
+          "file": "data/fx17/bands/028.jpg",
+          "bytes": 166727,
+          "display_is_lossy": true
+        },
+        {
+          "band": 29,
+          "wavelength_nm": 1036.06,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 62352.0,
+          "file": "data/fx17/bands/029.jpg",
+          "bytes": 166770,
+          "display_is_lossy": true
+        },
+        {
+          "band": 30,
+          "wavelength_nm": 1039.53,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 63392.0,
+          "file": "data/fx17/bands/030.jpg",
+          "bytes": 166667,
+          "display_is_lossy": true
+        },
+        {
+          "band": 31,
+          "wavelength_nm": 1043.0,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 64336.0,
+          "file": "data/fx17/bands/031.jpg",
+          "bytes": 166455,
+          "display_is_lossy": true
+        },
+        {
+          "band": 32,
+          "wavelength_nm": 1046.48,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65216.0,
+          "file": "data/fx17/bands/032.jpg",
+          "bytes": 166229,
+          "display_is_lossy": true
+        },
+        {
+          "band": 33,
+          "wavelength_nm": 1049.95,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65504.0,
+          "file": "data/fx17/bands/033.jpg",
+          "bytes": 167660,
+          "display_is_lossy": true
+        },
+        {
+          "band": 34,
+          "wavelength_nm": 1053.43,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/034.jpg",
+          "bytes": 168230,
+          "display_is_lossy": true
+        },
+        {
+          "band": 35,
+          "wavelength_nm": 1056.9,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/035.jpg",
+          "bytes": 169154,
+          "display_is_lossy": true
+        },
+        {
+          "band": 36,
+          "wavelength_nm": 1060.38,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/036.jpg",
+          "bytes": 169877,
+          "display_is_lossy": true
+        },
+        {
+          "band": 37,
+          "wavelength_nm": 1063.85,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/037.jpg",
+          "bytes": 171200,
+          "display_is_lossy": true
+        },
+        {
+          "band": 38,
+          "wavelength_nm": 1067.33,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/038.jpg",
+          "bytes": 172063,
+          "display_is_lossy": true
+        },
+        {
+          "band": 39,
+          "wavelength_nm": 1070.81,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/039.jpg",
+          "bytes": 173225,
+          "display_is_lossy": true
+        },
+        {
+          "band": 40,
+          "wavelength_nm": 1074.29,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/040.jpg",
+          "bytes": 173537,
+          "display_is_lossy": true
+        },
+        {
+          "band": 41,
+          "wavelength_nm": 1077.76,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/041.jpg",
+          "bytes": 174424,
+          "display_is_lossy": true
+        },
+        {
+          "band": 42,
+          "wavelength_nm": 1081.24,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/042.jpg",
+          "bytes": 175499,
+          "display_is_lossy": true
+        },
+        {
+          "band": 43,
+          "wavelength_nm": 1084.72,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/043.jpg",
+          "bytes": 176460,
+          "display_is_lossy": true
+        },
+        {
+          "band": 44,
+          "wavelength_nm": 1088.2,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/044.jpg",
+          "bytes": 177245,
+          "display_is_lossy": true
+        },
+        {
+          "band": 45,
+          "wavelength_nm": 1091.68,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/045.jpg",
+          "bytes": 178059,
+          "display_is_lossy": true
+        },
+        {
+          "band": 46,
+          "wavelength_nm": 1095.17,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/046.jpg",
+          "bytes": 178522,
+          "display_is_lossy": true
+        },
+        {
+          "band": 47,
+          "wavelength_nm": 1098.65,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/047.jpg",
+          "bytes": 179397,
+          "display_is_lossy": true
+        },
+        {
+          "band": 48,
+          "wavelength_nm": 1102.13,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/048.jpg",
+          "bytes": 179928,
+          "display_is_lossy": true
+        },
+        {
+          "band": 49,
+          "wavelength_nm": 1105.61,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/049.jpg",
+          "bytes": 180422,
+          "display_is_lossy": true
+        },
+        {
+          "band": 50,
+          "wavelength_nm": 1109.1,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/050.jpg",
+          "bytes": 181322,
+          "display_is_lossy": true
+        },
+        {
+          "band": 51,
+          "wavelength_nm": 1112.58,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/051.jpg",
+          "bytes": 181789,
+          "display_is_lossy": true
+        },
+        {
+          "band": 52,
+          "wavelength_nm": 1116.07,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/052.jpg",
+          "bytes": 181943,
+          "display_is_lossy": true
+        },
+        {
+          "band": 53,
+          "wavelength_nm": 1119.55,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/053.jpg",
+          "bytes": 182560,
+          "display_is_lossy": true
+        },
+        {
+          "band": 54,
+          "wavelength_nm": 1123.04,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/054.jpg",
+          "bytes": 183001,
+          "display_is_lossy": true
+        },
+        {
+          "band": 55,
+          "wavelength_nm": 1126.52,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/055.jpg",
+          "bytes": 183666,
+          "display_is_lossy": true
+        },
+        {
+          "band": 56,
+          "wavelength_nm": 1130.01,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/056.jpg",
+          "bytes": 184430,
+          "display_is_lossy": true
+        },
+        {
+          "band": 57,
+          "wavelength_nm": 1133.5,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/057.jpg",
+          "bytes": 184564,
+          "display_is_lossy": true
+        },
+        {
+          "band": 58,
+          "wavelength_nm": 1136.99,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/058.jpg",
+          "bytes": 184834,
+          "display_is_lossy": true
+        },
+        {
+          "band": 59,
+          "wavelength_nm": 1140.47,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/059.jpg",
+          "bytes": 185472,
+          "display_is_lossy": true
+        },
+        {
+          "band": 60,
+          "wavelength_nm": 1143.96,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/060.jpg",
+          "bytes": 185641,
+          "display_is_lossy": true
+        },
+        {
+          "band": 61,
+          "wavelength_nm": 1147.45,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/061.jpg",
+          "bytes": 185920,
+          "display_is_lossy": true
+        },
+        {
+          "band": 62,
+          "wavelength_nm": 1150.94,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/062.jpg",
+          "bytes": 186242,
+          "display_is_lossy": true
+        },
+        {
+          "band": 63,
+          "wavelength_nm": 1154.43,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/063.jpg",
+          "bytes": 186511,
+          "display_is_lossy": true
+        },
+        {
+          "band": 64,
+          "wavelength_nm": 1157.93,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/064.jpg",
+          "bytes": 187072,
+          "display_is_lossy": true
+        },
+        {
+          "band": 65,
+          "wavelength_nm": 1161.42,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/065.jpg",
+          "bytes": 187303,
+          "display_is_lossy": true
+        },
+        {
+          "band": 66,
+          "wavelength_nm": 1164.91,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/066.jpg",
+          "bytes": 187735,
+          "display_is_lossy": true
+        },
+        {
+          "band": 67,
+          "wavelength_nm": 1168.4,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/067.jpg",
+          "bytes": 188208,
+          "display_is_lossy": true
+        },
+        {
+          "band": 68,
+          "wavelength_nm": 1171.9,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/068.jpg",
+          "bytes": 188721,
+          "display_is_lossy": true
+        },
+        {
+          "band": 69,
+          "wavelength_nm": 1175.39,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/069.jpg",
+          "bytes": 189129,
+          "display_is_lossy": true
+        },
+        {
+          "band": 70,
+          "wavelength_nm": 1178.89,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/070.jpg",
+          "bytes": 189666,
+          "display_is_lossy": true
+        },
+        {
+          "band": 71,
+          "wavelength_nm": 1182.38,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/071.jpg",
+          "bytes": 190066,
+          "display_is_lossy": true
+        },
+        {
+          "band": 72,
+          "wavelength_nm": 1185.88,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/072.jpg",
+          "bytes": 190641,
+          "display_is_lossy": true
+        },
+        {
+          "band": 73,
+          "wavelength_nm": 1189.37,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/073.jpg",
+          "bytes": 190716,
+          "display_is_lossy": true
+        },
+        {
+          "band": 74,
+          "wavelength_nm": 1192.87,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/074.jpg",
+          "bytes": 191176,
+          "display_is_lossy": true
+        },
+        {
+          "band": 75,
+          "wavelength_nm": 1196.37,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/075.jpg",
+          "bytes": 191739,
+          "display_is_lossy": true
+        },
+        {
+          "band": 76,
+          "wavelength_nm": 1199.87,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/076.jpg",
+          "bytes": 192101,
+          "display_is_lossy": true
+        },
+        {
+          "band": 77,
+          "wavelength_nm": 1203.37,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/077.jpg",
+          "bytes": 192716,
+          "display_is_lossy": true
+        },
+        {
+          "band": 78,
+          "wavelength_nm": 1206.87,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/078.jpg",
+          "bytes": 193102,
+          "display_is_lossy": true
+        },
+        {
+          "band": 79,
+          "wavelength_nm": 1210.37,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/079.jpg",
+          "bytes": 193509,
+          "display_is_lossy": true
+        },
+        {
+          "band": 80,
+          "wavelength_nm": 1213.87,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/080.jpg",
+          "bytes": 193834,
+          "display_is_lossy": true
+        },
+        {
+          "band": 81,
+          "wavelength_nm": 1217.37,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/081.jpg",
+          "bytes": 194233,
+          "display_is_lossy": true
+        },
+        {
+          "band": 82,
+          "wavelength_nm": 1220.87,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/082.jpg",
+          "bytes": 194963,
+          "display_is_lossy": true
+        },
+        {
+          "band": 83,
+          "wavelength_nm": 1224.37,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/083.jpg",
+          "bytes": 195087,
+          "display_is_lossy": true
+        },
+        {
+          "band": 84,
+          "wavelength_nm": 1227.87,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/084.jpg",
+          "bytes": 195724,
+          "display_is_lossy": true
+        },
+        {
+          "band": 85,
+          "wavelength_nm": 1231.38,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/085.jpg",
+          "bytes": 196214,
+          "display_is_lossy": true
+        },
+        {
+          "band": 86,
+          "wavelength_nm": 1234.88,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/086.jpg",
+          "bytes": 196658,
+          "display_is_lossy": true
+        },
+        {
+          "band": 87,
+          "wavelength_nm": 1238.39,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/087.jpg",
+          "bytes": 197034,
+          "display_is_lossy": true
+        },
+        {
+          "band": 88,
+          "wavelength_nm": 1241.89,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/088.jpg",
+          "bytes": 197060,
+          "display_is_lossy": true
+        },
+        {
+          "band": 89,
+          "wavelength_nm": 1245.4,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/089.jpg",
+          "bytes": 197508,
+          "display_is_lossy": true
+        },
+        {
+          "band": 90,
+          "wavelength_nm": 1248.9,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/090.jpg",
+          "bytes": 198047,
+          "display_is_lossy": true
+        },
+        {
+          "band": 91,
+          "wavelength_nm": 1252.41,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/091.jpg",
+          "bytes": 198263,
+          "display_is_lossy": true
+        },
+        {
+          "band": 92,
+          "wavelength_nm": 1255.92,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/092.jpg",
+          "bytes": 198388,
+          "display_is_lossy": true
+        },
+        {
+          "band": 93,
+          "wavelength_nm": 1259.42,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/093.jpg",
+          "bytes": 198639,
+          "display_is_lossy": true
+        },
+        {
+          "band": 94,
+          "wavelength_nm": 1262.93,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/094.jpg",
+          "bytes": 198869,
+          "display_is_lossy": true
+        },
+        {
+          "band": 95,
+          "wavelength_nm": 1266.44,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/095.jpg",
+          "bytes": 199127,
+          "display_is_lossy": true
+        },
+        {
+          "band": 96,
+          "wavelength_nm": 1269.95,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/096.jpg",
+          "bytes": 199219,
+          "display_is_lossy": true
+        },
+        {
+          "band": 97,
+          "wavelength_nm": 1273.46,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/097.jpg",
+          "bytes": 199704,
+          "display_is_lossy": true
+        },
+        {
+          "band": 98,
+          "wavelength_nm": 1276.97,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/098.jpg",
+          "bytes": 199684,
+          "display_is_lossy": true
+        },
+        {
+          "band": 99,
+          "wavelength_nm": 1280.48,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/099.jpg",
+          "bytes": 200249,
+          "display_is_lossy": true
+        },
+        {
+          "band": 100,
+          "wavelength_nm": 1283.99,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/100.jpg",
+          "bytes": 200510,
+          "display_is_lossy": true
+        },
+        {
+          "band": 101,
+          "wavelength_nm": 1287.51,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/101.jpg",
+          "bytes": 200678,
+          "display_is_lossy": true
+        },
+        {
+          "band": 102,
+          "wavelength_nm": 1291.02,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/102.jpg",
+          "bytes": 200960,
+          "display_is_lossy": true
+        },
+        {
+          "band": 103,
+          "wavelength_nm": 1294.53,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/103.jpg",
+          "bytes": 201024,
+          "display_is_lossy": true
+        },
+        {
+          "band": 104,
+          "wavelength_nm": 1298.05,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/104.jpg",
+          "bytes": 201408,
+          "display_is_lossy": true
+        },
+        {
+          "band": 105,
+          "wavelength_nm": 1301.56,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/105.jpg",
+          "bytes": 201493,
+          "display_is_lossy": true
+        },
+        {
+          "band": 106,
+          "wavelength_nm": 1305.08,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/106.jpg",
+          "bytes": 201415,
+          "display_is_lossy": true
+        },
+        {
+          "band": 107,
+          "wavelength_nm": 1308.59,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/107.jpg",
+          "bytes": 201779,
+          "display_is_lossy": true
+        },
+        {
+          "band": 108,
+          "wavelength_nm": 1312.11,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/108.jpg",
+          "bytes": 201898,
+          "display_is_lossy": true
+        },
+        {
+          "band": 109,
+          "wavelength_nm": 1315.62,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/109.jpg",
+          "bytes": 201862,
+          "display_is_lossy": true
+        },
+        {
+          "band": 110,
+          "wavelength_nm": 1319.14,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/110.jpg",
+          "bytes": 201726,
+          "display_is_lossy": true
+        },
+        {
+          "band": 111,
+          "wavelength_nm": 1322.66,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/111.jpg",
+          "bytes": 201716,
+          "display_is_lossy": true
+        },
+        {
+          "band": 112,
+          "wavelength_nm": 1326.18,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/112.jpg",
+          "bytes": 201814,
+          "display_is_lossy": true
+        },
+        {
+          "band": 113,
+          "wavelength_nm": 1329.7,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/113.jpg",
+          "bytes": 201257,
+          "display_is_lossy": true
+        },
+        {
+          "band": 114,
+          "wavelength_nm": 1333.22,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/114.jpg",
+          "bytes": 201086,
+          "display_is_lossy": true
+        },
+        {
+          "band": 115,
+          "wavelength_nm": 1336.74,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/115.jpg",
+          "bytes": 200730,
+          "display_is_lossy": true
+        },
+        {
+          "band": 116,
+          "wavelength_nm": 1340.26,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/116.jpg",
+          "bytes": 200733,
+          "display_is_lossy": true
+        },
+        {
+          "band": 117,
+          "wavelength_nm": 1343.78,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/117.jpg",
+          "bytes": 200166,
+          "display_is_lossy": true
+        },
+        {
+          "band": 118,
+          "wavelength_nm": 1347.3,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/118.jpg",
+          "bytes": 198976,
+          "display_is_lossy": true
+        },
+        {
+          "band": 119,
+          "wavelength_nm": 1350.82,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/119.jpg",
+          "bytes": 197471,
+          "display_is_lossy": true
+        },
+        {
+          "band": 120,
+          "wavelength_nm": 1354.35,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/120.jpg",
+          "bytes": 195295,
+          "display_is_lossy": true
+        },
+        {
+          "band": 121,
+          "wavelength_nm": 1357.87,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/121.jpg",
+          "bytes": 193404,
+          "display_is_lossy": true
+        },
+        {
+          "band": 122,
+          "wavelength_nm": 1361.39,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/122.jpg",
+          "bytes": 191610,
+          "display_is_lossy": true
+        },
+        {
+          "band": 123,
+          "wavelength_nm": 1364.92,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/123.jpg",
+          "bytes": 190820,
+          "display_is_lossy": true
+        },
+        {
+          "band": 124,
+          "wavelength_nm": 1368.44,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/124.jpg",
+          "bytes": 191208,
+          "display_is_lossy": true
+        },
+        {
+          "band": 125,
+          "wavelength_nm": 1371.97,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 65520.0,
+          "file": "data/fx17/bands/125.jpg",
+          "bytes": 191668,
+          "display_is_lossy": true
+        },
+        {
+          "band": 126,
+          "wavelength_nm": 1375.5,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 64800.0,
+          "file": "data/fx17/bands/126.jpg",
+          "bytes": 191766,
+          "display_is_lossy": true
+        },
+        {
+          "band": 127,
+          "wavelength_nm": 1379.02,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 61635.359999999404,
+          "file": "data/fx17/bands/127.jpg",
+          "bytes": 192781,
+          "display_is_lossy": true
+        },
+        {
+          "band": 128,
+          "wavelength_nm": 1382.55,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 57328.0,
+          "file": "data/fx17/bands/128.jpg",
+          "bytes": 194911,
+          "display_is_lossy": true
+        },
+        {
+          "band": 129,
+          "wavelength_nm": 1386.08,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 53187.359999999404,
+          "file": "data/fx17/bands/129.jpg",
+          "bytes": 198140,
+          "display_is_lossy": true
+        },
+        {
+          "band": 130,
+          "wavelength_nm": 1389.61,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 48752.0,
+          "file": "data/fx17/bands/130.jpg",
+          "bytes": 201606,
+          "display_is_lossy": true
+        },
+        {
+          "band": 131,
+          "wavelength_nm": 1393.14,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 44112.0,
+          "file": "data/fx17/bands/131.jpg",
+          "bytes": 204000,
+          "display_is_lossy": true
+        },
+        {
+          "band": 132,
+          "wavelength_nm": 1396.67,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 39856.0,
+          "file": "data/fx17/bands/132.jpg",
+          "bytes": 205960,
+          "display_is_lossy": true
+        },
+        {
+          "band": 133,
+          "wavelength_nm": 1400.2,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 36672.0,
+          "file": "data/fx17/bands/133.jpg",
+          "bytes": 208080,
+          "display_is_lossy": true
+        },
+        {
+          "band": 134,
+          "wavelength_nm": 1403.73,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 34384.0,
+          "file": "data/fx17/bands/134.jpg",
+          "bytes": 210223,
+          "display_is_lossy": true
+        },
+        {
+          "band": 135,
+          "wavelength_nm": 1407.26,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 32896.0,
+          "file": "data/fx17/bands/135.jpg",
+          "bytes": 210813,
+          "display_is_lossy": true
+        },
+        {
+          "band": 136,
+          "wavelength_nm": 1410.79,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 32288.0,
+          "file": "data/fx17/bands/136.jpg",
+          "bytes": 212217,
+          "display_is_lossy": true
+        },
+        {
+          "band": 137,
+          "wavelength_nm": 1414.32,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 32160.0,
+          "file": "data/fx17/bands/137.jpg",
+          "bytes": 213038,
+          "display_is_lossy": true
+        },
+        {
+          "band": 138,
+          "wavelength_nm": 1417.86,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 32416.0,
+          "file": "data/fx17/bands/138.jpg",
+          "bytes": 212738,
+          "display_is_lossy": true
+        },
+        {
+          "band": 139,
+          "wavelength_nm": 1421.39,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 32720.0,
+          "file": "data/fx17/bands/139.jpg",
+          "bytes": 213173,
+          "display_is_lossy": true
+        },
+        {
+          "band": 140,
+          "wavelength_nm": 1424.92,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 33088.0,
+          "file": "data/fx17/bands/140.jpg",
+          "bytes": 213954,
+          "display_is_lossy": true
+        },
+        {
+          "band": 141,
+          "wavelength_nm": 1428.46,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 33472.0,
+          "file": "data/fx17/bands/141.jpg",
+          "bytes": 214147,
+          "display_is_lossy": true
+        },
+        {
+          "band": 142,
+          "wavelength_nm": 1431.99,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 33760.0,
+          "file": "data/fx17/bands/142.jpg",
+          "bytes": 213841,
+          "display_is_lossy": true
+        },
+        {
+          "band": 143,
+          "wavelength_nm": 1435.53,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 34192.0,
+          "file": "data/fx17/bands/143.jpg",
+          "bytes": 213834,
+          "display_is_lossy": true
+        },
+        {
+          "band": 144,
+          "wavelength_nm": 1439.07,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 34560.0,
+          "file": "data/fx17/bands/144.jpg",
+          "bytes": 213150,
+          "display_is_lossy": true
+        },
+        {
+          "band": 145,
+          "wavelength_nm": 1442.6,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 34832.0,
+          "file": "data/fx17/bands/145.jpg",
+          "bytes": 212724,
+          "display_is_lossy": true
+        },
+        {
+          "band": 146,
+          "wavelength_nm": 1446.14,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 35168.0,
+          "file": "data/fx17/bands/146.jpg",
+          "bytes": 212374,
+          "display_is_lossy": true
+        },
+        {
+          "band": 147,
+          "wavelength_nm": 1449.68,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 35424.0,
+          "file": "data/fx17/bands/147.jpg",
+          "bytes": 212128,
+          "display_is_lossy": true
+        },
+        {
+          "band": 148,
+          "wavelength_nm": 1453.22,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 35744.0,
+          "file": "data/fx17/bands/148.jpg",
+          "bytes": 211788,
+          "display_is_lossy": true
+        },
+        {
+          "band": 149,
+          "wavelength_nm": 1456.76,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 35952.0,
+          "file": "data/fx17/bands/149.jpg",
+          "bytes": 211929,
+          "display_is_lossy": true
+        },
+        {
+          "band": 150,
+          "wavelength_nm": 1460.3,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 36016.0,
+          "file": "data/fx17/bands/150.jpg",
+          "bytes": 211784,
+          "display_is_lossy": true
+        },
+        {
+          "band": 151,
+          "wavelength_nm": 1463.84,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 36080.0,
+          "file": "data/fx17/bands/151.jpg",
+          "bytes": 211905,
+          "display_is_lossy": true
+        },
+        {
+          "band": 152,
+          "wavelength_nm": 1467.38,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 35984.0,
+          "file": "data/fx17/bands/152.jpg",
+          "bytes": 211700,
+          "display_is_lossy": true
+        },
+        {
+          "band": 153,
+          "wavelength_nm": 1470.92,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 35968.0,
+          "file": "data/fx17/bands/153.jpg",
+          "bytes": 211839,
+          "display_is_lossy": true
+        },
+        {
+          "band": 154,
+          "wavelength_nm": 1474.46,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 36000.0,
+          "file": "data/fx17/bands/154.jpg",
+          "bytes": 211859,
+          "display_is_lossy": true
+        },
+        {
+          "band": 155,
+          "wavelength_nm": 1478.01,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 36224.0,
+          "file": "data/fx17/bands/155.jpg",
+          "bytes": 211061,
+          "display_is_lossy": true
+        },
+        {
+          "band": 156,
+          "wavelength_nm": 1481.55,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 36560.0,
+          "file": "data/fx17/bands/156.jpg",
+          "bytes": 210610,
+          "display_is_lossy": true
+        },
+        {
+          "band": 157,
+          "wavelength_nm": 1485.09,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 36800.0,
+          "file": "data/fx17/bands/157.jpg",
+          "bytes": 209443,
+          "display_is_lossy": true
+        },
+        {
+          "band": 158,
+          "wavelength_nm": 1488.64,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 37104.0,
+          "file": "data/fx17/bands/158.jpg",
+          "bytes": 208950,
+          "display_is_lossy": true
+        },
+        {
+          "band": 159,
+          "wavelength_nm": 1492.18,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 37408.0,
+          "file": "data/fx17/bands/159.jpg",
+          "bytes": 208462,
+          "display_is_lossy": true
+        },
+        {
+          "band": 160,
+          "wavelength_nm": 1495.73,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 37792.0,
+          "file": "data/fx17/bands/160.jpg",
+          "bytes": 208104,
+          "display_is_lossy": true
+        },
+        {
+          "band": 161,
+          "wavelength_nm": 1499.27,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 38064.0,
+          "file": "data/fx17/bands/161.jpg",
+          "bytes": 207594,
+          "display_is_lossy": true
+        },
+        {
+          "band": 162,
+          "wavelength_nm": 1502.82,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 38320.0,
+          "file": "data/fx17/bands/162.jpg",
+          "bytes": 207328,
+          "display_is_lossy": true
+        },
+        {
+          "band": 163,
+          "wavelength_nm": 1506.37,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 38688.0,
+          "file": "data/fx17/bands/163.jpg",
+          "bytes": 207566,
+          "display_is_lossy": true
+        },
+        {
+          "band": 164,
+          "wavelength_nm": 1509.91,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 38960.0,
+          "file": "data/fx17/bands/164.jpg",
+          "bytes": 206914,
+          "display_is_lossy": true
+        },
+        {
+          "band": 165,
+          "wavelength_nm": 1513.46,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 39411.359999999404,
+          "file": "data/fx17/bands/165.jpg",
+          "bytes": 205887,
+          "display_is_lossy": true
+        },
+        {
+          "band": 166,
+          "wavelength_nm": 1517.01,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 39712.0,
+          "file": "data/fx17/bands/166.jpg",
+          "bytes": 205433,
+          "display_is_lossy": true
+        },
+        {
+          "band": 167,
+          "wavelength_nm": 1520.56,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 40000.0,
+          "file": "data/fx17/bands/167.jpg",
+          "bytes": 205016,
+          "display_is_lossy": true
+        },
+        {
+          "band": 168,
+          "wavelength_nm": 1524.11,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 40368.0,
+          "file": "data/fx17/bands/168.jpg",
+          "bytes": 204598,
+          "display_is_lossy": true
+        },
+        {
+          "band": 169,
+          "wavelength_nm": 1527.66,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 40624.0,
+          "file": "data/fx17/bands/169.jpg",
+          "bytes": 204315,
+          "display_is_lossy": true
+        },
+        {
+          "band": 170,
+          "wavelength_nm": 1531.21,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 40960.0,
+          "file": "data/fx17/bands/170.jpg",
+          "bytes": 203377,
+          "display_is_lossy": true
+        },
+        {
+          "band": 171,
+          "wavelength_nm": 1534.76,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 41248.0,
+          "file": "data/fx17/bands/171.jpg",
+          "bytes": 202496,
+          "display_is_lossy": true
+        },
+        {
+          "band": 172,
+          "wavelength_nm": 1538.32,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 41520.0,
+          "file": "data/fx17/bands/172.jpg",
+          "bytes": 201847,
+          "display_is_lossy": true
+        },
+        {
+          "band": 173,
+          "wavelength_nm": 1541.87,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 41795.359999999404,
+          "file": "data/fx17/bands/173.jpg",
+          "bytes": 201762,
+          "display_is_lossy": true
+        },
+        {
+          "band": 174,
+          "wavelength_nm": 1545.42,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 41955.359999999404,
+          "file": "data/fx17/bands/174.jpg",
+          "bytes": 200857,
+          "display_is_lossy": true
+        },
+        {
+          "band": 175,
+          "wavelength_nm": 1548.98,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 42176.0,
+          "file": "data/fx17/bands/175.jpg",
+          "bytes": 200176,
+          "display_is_lossy": true
+        },
+        {
+          "band": 176,
+          "wavelength_nm": 1552.53,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 42336.0,
+          "file": "data/fx17/bands/176.jpg",
+          "bytes": 199170,
+          "display_is_lossy": true
+        },
+        {
+          "band": 177,
+          "wavelength_nm": 1556.09,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 42496.0,
+          "file": "data/fx17/bands/177.jpg",
+          "bytes": 198925,
+          "display_is_lossy": true
+        },
+        {
+          "band": 178,
+          "wavelength_nm": 1559.64,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 42672.0,
+          "file": "data/fx17/bands/178.jpg",
+          "bytes": 197831,
+          "display_is_lossy": true
+        },
+        {
+          "band": 179,
+          "wavelength_nm": 1563.2,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 42736.0,
+          "file": "data/fx17/bands/179.jpg",
+          "bytes": 197465,
+          "display_is_lossy": true
+        },
+        {
+          "band": 180,
+          "wavelength_nm": 1566.75,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 42928.0,
+          "file": "data/fx17/bands/180.jpg",
+          "bytes": 197057,
+          "display_is_lossy": true
+        },
+        {
+          "band": 181,
+          "wavelength_nm": 1570.31,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 43024.0,
+          "file": "data/fx17/bands/181.jpg",
+          "bytes": 196204,
+          "display_is_lossy": true
+        },
+        {
+          "band": 182,
+          "wavelength_nm": 1573.87,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 43104.0,
+          "file": "data/fx17/bands/182.jpg",
+          "bytes": 195782,
+          "display_is_lossy": true
+        },
+        {
+          "band": 183,
+          "wavelength_nm": 1577.43,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 43184.0,
+          "file": "data/fx17/bands/183.jpg",
+          "bytes": 194933,
+          "display_is_lossy": true
+        },
+        {
+          "band": 184,
+          "wavelength_nm": 1580.99,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 43216.0,
+          "file": "data/fx17/bands/184.jpg",
+          "bytes": 194419,
+          "display_is_lossy": true
+        },
+        {
+          "band": 185,
+          "wavelength_nm": 1584.55,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 43296.0,
+          "file": "data/fx17/bands/185.jpg",
+          "bytes": 193734,
+          "display_is_lossy": true
+        },
+        {
+          "band": 186,
+          "wavelength_nm": 1588.11,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 43264.0,
+          "file": "data/fx17/bands/186.jpg",
+          "bytes": 193145,
+          "display_is_lossy": true
+        },
+        {
+          "band": 187,
+          "wavelength_nm": 1591.67,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 43283.359999999404,
+          "file": "data/fx17/bands/187.jpg",
+          "bytes": 192630,
+          "display_is_lossy": true
+        },
+        {
+          "band": 188,
+          "wavelength_nm": 1595.23,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 43232.0,
+          "file": "data/fx17/bands/188.jpg",
+          "bytes": 192407,
+          "display_is_lossy": true
+        },
+        {
+          "band": 189,
+          "wavelength_nm": 1598.79,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 43120.0,
+          "file": "data/fx17/bands/189.jpg",
+          "bytes": 191970,
+          "display_is_lossy": true
+        },
+        {
+          "band": 190,
+          "wavelength_nm": 1602.35,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 42992.0,
+          "file": "data/fx17/bands/190.jpg",
+          "bytes": 191733,
+          "display_is_lossy": true
+        },
+        {
+          "band": 191,
+          "wavelength_nm": 1605.92,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 42752.0,
+          "file": "data/fx17/bands/191.jpg",
+          "bytes": 191435,
+          "display_is_lossy": true
+        },
+        {
+          "band": 192,
+          "wavelength_nm": 1609.48,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 42560.0,
+          "file": "data/fx17/bands/192.jpg",
+          "bytes": 190818,
+          "display_is_lossy": true
+        },
+        {
+          "band": 193,
+          "wavelength_nm": 1613.04,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 42272.0,
+          "file": "data/fx17/bands/193.jpg",
+          "bytes": 190715,
+          "display_is_lossy": true
+        },
+        {
+          "band": 194,
+          "wavelength_nm": 1616.61,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 41936.0,
+          "file": "data/fx17/bands/194.jpg",
+          "bytes": 190340,
+          "display_is_lossy": true
+        },
+        {
+          "band": 195,
+          "wavelength_nm": 1620.17,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 41552.0,
+          "file": "data/fx17/bands/195.jpg",
+          "bytes": 189641,
+          "display_is_lossy": true
+        },
+        {
+          "band": 196,
+          "wavelength_nm": 1623.74,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 41056.0,
+          "file": "data/fx17/bands/196.jpg",
+          "bytes": 189298,
+          "display_is_lossy": true
+        },
+        {
+          "band": 197,
+          "wavelength_nm": 1627.31,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 40640.0,
+          "file": "data/fx17/bands/197.jpg",
+          "bytes": 189152,
+          "display_is_lossy": true
+        },
+        {
+          "band": 198,
+          "wavelength_nm": 1630.87,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 40176.0,
+          "file": "data/fx17/bands/198.jpg",
+          "bytes": 188558,
+          "display_is_lossy": true
+        },
+        {
+          "band": 199,
+          "wavelength_nm": 1634.44,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 39696.0,
+          "file": "data/fx17/bands/199.jpg",
+          "bytes": 188355,
+          "display_is_lossy": true
+        },
+        {
+          "band": 200,
+          "wavelength_nm": 1638.01,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 39200.0,
+          "file": "data/fx17/bands/200.jpg",
+          "bytes": 187981,
+          "display_is_lossy": true
+        },
+        {
+          "band": 201,
+          "wavelength_nm": 1641.58,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 38656.0,
+          "file": "data/fx17/bands/201.jpg",
+          "bytes": 187622,
+          "display_is_lossy": true
+        },
+        {
+          "band": 202,
+          "wavelength_nm": 1645.15,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 38144.0,
+          "file": "data/fx17/bands/202.jpg",
+          "bytes": 187678,
+          "display_is_lossy": true
+        },
+        {
+          "band": 203,
+          "wavelength_nm": 1648.71,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 37440.0,
+          "file": "data/fx17/bands/203.jpg",
+          "bytes": 186912,
+          "display_is_lossy": true
+        },
+        {
+          "band": 204,
+          "wavelength_nm": 1652.29,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 36608.0,
+          "file": "data/fx17/bands/204.jpg",
+          "bytes": 186183,
+          "display_is_lossy": true
+        },
+        {
+          "band": 205,
+          "wavelength_nm": 1655.86,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 35664.0,
+          "file": "data/fx17/bands/205.jpg",
+          "bytes": 186200,
+          "display_is_lossy": true
+        },
+        {
+          "band": 206,
+          "wavelength_nm": 1659.43,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 34464.0,
+          "file": "data/fx17/bands/206.jpg",
+          "bytes": 185574,
+          "display_is_lossy": true
+        },
+        {
+          "band": 207,
+          "wavelength_nm": 1663.0,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 32976.0,
+          "file": "data/fx17/bands/207.jpg",
+          "bytes": 185584,
+          "display_is_lossy": true
+        },
+        {
+          "band": 208,
+          "wavelength_nm": 1666.57,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 31088.0,
+          "file": "data/fx17/bands/208.jpg",
+          "bytes": 185171,
+          "display_is_lossy": true
+        },
+        {
+          "band": 209,
+          "wavelength_nm": 1670.14,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 28784.0,
+          "file": "data/fx17/bands/209.jpg",
+          "bytes": 184953,
+          "display_is_lossy": true
+        },
+        {
+          "band": 210,
+          "wavelength_nm": 1673.72,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 25856.0,
+          "file": "data/fx17/bands/210.jpg",
+          "bytes": 185419,
+          "display_is_lossy": true
+        },
+        {
+          "band": 211,
+          "wavelength_nm": 1677.29,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 22512.0,
+          "file": "data/fx17/bands/211.jpg",
+          "bytes": 185868,
+          "display_is_lossy": true
+        },
+        {
+          "band": 212,
+          "wavelength_nm": 1680.87,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 18976.0,
+          "file": "data/fx17/bands/212.jpg",
+          "bytes": 186661,
+          "display_is_lossy": true
+        },
+        {
+          "band": 213,
+          "wavelength_nm": 1684.44,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 15600.0,
+          "file": "data/fx17/bands/213.jpg",
+          "bytes": 188108,
+          "display_is_lossy": true
+        },
+        {
+          "band": 214,
+          "wavelength_nm": 1688.02,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 12736.0,
+          "file": "data/fx17/bands/214.jpg",
+          "bytes": 189749,
+          "display_is_lossy": true
+        },
+        {
+          "band": 215,
+          "wavelength_nm": 1691.59,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 10480.0,
+          "file": "data/fx17/bands/215.jpg",
+          "bytes": 192321,
+          "display_is_lossy": true
+        },
+        {
+          "band": 216,
+          "wavelength_nm": 1695.17,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 8736.0,
+          "file": "data/fx17/bands/216.jpg",
+          "bytes": 195430,
+          "display_is_lossy": true
+        },
+        {
+          "band": 217,
+          "wavelength_nm": 1698.75,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 7440.0,
+          "file": "data/fx17/bands/217.jpg",
+          "bytes": 200837,
+          "display_is_lossy": true
+        },
+        {
+          "band": 218,
+          "wavelength_nm": 1702.33,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 6464.0,
+          "file": "data/fx17/bands/218.jpg",
+          "bytes": 205789,
+          "display_is_lossy": true
+        },
+        {
+          "band": 219,
+          "wavelength_nm": 1705.91,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 5728.0,
+          "file": "data/fx17/bands/219.jpg",
+          "bytes": 212320,
+          "display_is_lossy": true
+        },
+        {
+          "band": 220,
+          "wavelength_nm": 1709.49,
+          "display_low_DN": 1920.0,
+          "display_high_DN": 5152.0,
+          "file": "data/fx17/bands/220.jpg",
+          "bytes": 218881,
+          "display_is_lossy": true
+        },
+        {
+          "band": 221,
+          "wavelength_nm": 1713.07,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 4688.0,
+          "file": "data/fx17/bands/221.jpg",
+          "bytes": 224617,
+          "display_is_lossy": true
+        },
+        {
+          "band": 222,
+          "wavelength_nm": 1716.65,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 4320.0,
+          "file": "data/fx17/bands/222.jpg",
+          "bytes": 232194,
+          "display_is_lossy": true
+        },
+        {
+          "band": 223,
+          "wavelength_nm": 1720.23,
+          "display_low_DN": 1904.0,
+          "display_high_DN": 4016.0,
+          "file": "data/fx17/bands/223.jpg",
+          "bytes": 241275,
+          "display_is_lossy": true
+        }
+      ],
+      "references": "data/fx17/references.bin.gz",
+      "row_template": "data/fx17/rows/{line}.bin.gz",
+      "normalization": {
+        "white_roi": [
+          8,
+          45,
+          90,
+          520
+        ],
+        "dark_roi": [
+          2080,
+          2127,
+          0,
+          640
+        ],
+        "white_identity": "User-confirmed white board at scan start; spectral reflectance unknown",
+        "settings_assumption": "User confirmed fixed exposure; gain and source export packing not independently established",
+        "dark_status": "assumed_tail",
+        "dark_provenance": "Abrupt final low-signal tail; shutter closure unconfirmed. This is an explicit assumed offset, not certified dark calibration."
+      },
+      "suspected_clipping_DN": 65520,
+      "index_specs": {},
+      "regions": [
+        [
+          80,
+          450
+        ],
+        [
+          450,
+          780
+        ],
+        [
+          780,
+          1130
+        ],
+        [
+          1130,
+          1450
+        ],
+        [
+          1450,
+          1950
+        ]
+      ],
+      "default_pixel": [
+        850,
+        265
+      ],
+      "lossless_row_bytes": 226865759,
+      "preview_bytes": 43020071
+    }
+  },
+  "band_flags": {
+    "outside_reviewed_reference_support": 1,
+    "sample_suspected_clipping": 2,
+    "reference_suspected_clipping": 4,
+    "weak_white_minus_dark": 8,
+    "raw_zero": 16,
+    "low_signal_above_dark_advisory": 32
+  },
+  "warning": "Raw DN is camera signal, not reflectance or a plant-health score. Q is provisional board-relative signal with assumed dark tail. The cameras are independent; no new dense 3D mapping is claimed."
+}
