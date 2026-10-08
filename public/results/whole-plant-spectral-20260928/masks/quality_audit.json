@@ -1,0 +1,196 @@
+[
+  {
+    "sensor": "fx10",
+    "regions": [
+      {
+        "region": "R1",
+        "raw_mean_range": [
+          4852.844215001518,
+          48864.607348921956
+        ],
+        "unclipped_mean_range": [
+          4852.844215001518,
+          43498.31708991078
+        ],
+        "minimum_nonclipped_pixels_any_band": 2324,
+        "peak_band_clipping_fraction": 0.294260552687519,
+        "peak_clipping_wavelength_nm": 794.84,
+        "bands_with_over_10pct_candidate_clipping": 36,
+        "candidate_any_band_clipped_fraction": 0.29699362283631947,
+        "candidate_outside_white_reference_column_fraction": 0.13179471606437898,
+        "all_band_contributing_sets_differ": true
+      },
+      {
+        "region": "R2",
+        "raw_mean_range": [
+          5095.948834218808,
+          59047.10392203309
+        ],
+        "unclipped_mean_range": [
+          5095.948834218808,
+          53512.28436308162
+        ],
+        "minimum_nonclipped_pixels_any_band": 31294,
+        "peak_band_clipping_fraction": 0.4705086122297046,
+        "peak_clipping_wavelength_nm": 794.84,
+        "bands_with_over_10pct_candidate_clipping": 64,
+        "candidate_any_band_clipped_fraction": 0.4810158708673141,
+        "candidate_outside_white_reference_column_fraction": 0.07050522824946702,
+        "all_band_contributing_sets_differ": true
+      },
+      {
+        "region": "R3",
+        "raw_mean_range": [
+          4963.0945991278095,
+          51685.53539080845
+        ],
+        "unclipped_mean_range": [
+          4963.0945991278095,
+          46377.46672876357
+        ],
+        "minimum_nonclipped_pixels_any_band": 68663,
+        "peak_band_clipping_fraction": 0.28020169406239515,
+        "peak_clipping_wavelength_nm": 767.36,
+        "bands_with_over_10pct_candidate_clipping": 51,
+        "candidate_any_band_clipped_fraction": 0.2868479537068098,
+        "candidate_outside_white_reference_column_fraction": 0.039940456222744045,
+        "all_band_contributing_sets_differ": true
+      },
+      {
+        "region": "R4",
+        "raw_mean_range": [
+          5103.786382611199,
+          55698.58903123651
+        ],
+        "unclipped_mean_range": [
+          5103.786382611199,
+          50335.23274702813
+        ],
+        "minimum_nonclipped_pixels_any_band": 35586,
+        "peak_band_clipping_fraction": 0.3596876349503383,
+        "peak_clipping_wavelength_nm": 794.84,
+        "bands_with_over_10pct_candidate_clipping": 51,
+        "candidate_any_band_clipped_fraction": 0.36900820498056713,
+        "candidate_outside_white_reference_column_fraction": 0.11807254930185691,
+        "all_band_contributing_sets_differ": true
+      },
+      {
+        "region": "R5",
+        "raw_mean_range": [
+          5059.964365031295,
+          58504.46618211185
+        ],
+        "unclipped_mean_range": [
+          5059.964365031295,
+          54971.1405141844
+        ],
+        "minimum_nonclipped_pixels_any_band": 101658,
+        "peak_band_clipping_fraction": 0.3586084191399152,
+        "peak_clipping_wavelength_nm": 767.36,
+        "bands_with_over_10pct_candidate_clipping": 31,
+        "candidate_any_band_clipped_fraction": 0.37569402382394507,
+        "candidate_outside_white_reference_column_fraction": 0.2623599333737129,
+        "all_band_contributing_sets_differ": true
+      }
+    ],
+    "counts_consistent": true,
+    "mean_ranges_valid": true
+  },
+  {
+    "sensor": "fx17",
+    "regions": [
+      {
+        "region": "R1",
+        "raw_mean_range": [
+          2758.3152668597436,
+          32358.1431526686
+        ],
+        "unclipped_mean_range": [
+          2758.3152668597436,
+          32035.34
+        ],
+        "minimum_nonclipped_pixels_any_band": 2384,
+        "peak_band_clipping_fraction": 0.01365328920148945,
+        "peak_clipping_wavelength_nm": 1291.02,
+        "bands_with_over_10pct_candidate_clipping": 0,
+        "candidate_any_band_clipped_fraction": 0.01365328920148945,
+        "candidate_outside_white_reference_column_fraction": 0.028547786512205214,
+        "all_band_contributing_sets_differ": true
+      },
+      {
+        "region": "R2",
+        "raw_mean_range": [
+          3150.295580410468,
+          51728.92662974626
+        ],
+        "unclipped_mean_range": [
+          3150.295580410468,
+          48839.93765869889
+        ],
+        "minimum_nonclipped_pixels_any_band": 22826,
+        "peak_band_clipping_fraction": 0.17377927389872228,
+        "peak_clipping_wavelength_nm": 1280.48,
+        "bands_with_over_10pct_candidate_clipping": 22,
+        "candidate_any_band_clipped_fraction": 0.17761610019184132,
+        "candidate_outside_white_reference_column_fraction": 0.031309950410829984,
+        "all_band_contributing_sets_differ": true
+      },
+      {
+        "region": "R3",
+        "raw_mean_range": [
+          2821.572677084308,
+          39391.89430148779
+        ],
+        "unclipped_mean_range": [
+          2821.572677084308,
+          37802.006591224934
+        ],
+        "minimum_nonclipped_pixels_any_band": 50354,
+        "peak_band_clipping_fraction": 0.0576588378403668,
+        "peak_clipping_wavelength_nm": 1280.48,
+        "bands_with_over_10pct_candidate_clipping": 0,
+        "candidate_any_band_clipped_fraction": 0.05842612519883971,
+        "candidate_outside_white_reference_column_fraction": 0.007729016562178347,
+        "all_band_contributing_sets_differ": true
+      },
+      {
+        "region": "R4",
+        "raw_mean_range": [
+          3062.446814083137,
+          47187.43802147641
+        ],
+        "unclipped_mean_range": [
+          3062.446814083137,
+          45403.631645933405
+        ],
+        "minimum_nonclipped_pixels_any_band": 24357,
+        "peak_band_clipping_fraction": 0.08867437422830846,
+        "peak_clipping_wavelength_nm": 1283.99,
+        "bands_with_over_10pct_candidate_clipping": 0,
+        "candidate_any_band_clipped_fraction": 0.09032064953043739,
+        "candidate_outside_white_reference_column_fraction": 0.07670146294009803,
+        "all_band_contributing_sets_differ": true
+      },
+      {
+        "region": "R5",
+        "raw_mean_range": [
+          3057.205350288167,
+          48971.65523729198
+        ],
+        "unclipped_mean_range": [
+          3057.205350288167,
+          48740.68818524691
+        ],
+        "minimum_nonclipped_pixels_any_band": 91208,
+        "peak_band_clipping_fraction": 0.013764989565424249,
+        "peak_clipping_wavelength_nm": 1283.99,
+        "bands_with_over_10pct_candidate_clipping": 0,
+        "candidate_any_band_clipped_fraction": 0.014511088764178589,
+        "candidate_outside_white_reference_column_fraction": 0.2765108508774775,
+        "all_band_contributing_sets_differ": true
+      }
+    ],
+    "counts_consistent": true,
+    "mean_ranges_valid": true
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "browser": "Codex in-app Chromium",
+  "both_sensors_loaded": true,
+  "ten_camera_region_combinations_checked": true,
+  "region_labels_follow_actual_selected_coordinates": true,
+  "wavelength_slider_updates_exact_pixel_readout": true,
+  "known_FX10_line352_column786_band0_DN": 4880,
+  "existing_P5_RGB_candidate_at_FX10_line1600_column923_displayed": true,
+  "unsupported_Q_at_column923_shown_unavailable": true,
+  "FX17_visible_band_indices_unavailable": true,
+  "candidate_mask_toggle_checked": true,
+  "saved_sample_comparison_checked": true,
+  "downloaded_CSV_bands": 224,
+  "downloaded_CSV_all_DN_exact": true,
+  "downloaded_CSV_coordinates_wavelengths_source_hash_exact": true,
+  "static_links_checked": 16,
+  "missing_links": [],
+  "console_errors_seen": [],
+  "preview_byte_values_are_not_measurements": true,
+  "published": false,
+  "committed": false
+}

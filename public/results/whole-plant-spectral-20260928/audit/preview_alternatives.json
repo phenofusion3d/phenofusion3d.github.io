@@ -1,0 +1,138 @@
+{
+  "fx10": {
+    "samples": [
+      {
+        "source_png": "band_000_display.png",
+        "PNG": 1716428,
+        "JPEG85": 774378,
+        "WebP85": 781876,
+        "JPEG90": 954911,
+        "JPEG95": 1280667
+      },
+      {
+        "source_png": "band_037_display.png",
+        "PNG": 1163868,
+        "JPEG85": 285267,
+        "WebP85": 161214,
+        "JPEG90": 370625,
+        "JPEG95": 569326
+      },
+      {
+        "source_png": "band_074_display.png",
+        "PNG": 905866,
+        "JPEG85": 224430,
+        "WebP85": 98950,
+        "JPEG90": 285163,
+        "JPEG95": 425872
+      },
+      {
+        "source_png": "band_111_display.png",
+        "PNG": 845883,
+        "JPEG85": 218391,
+        "WebP85": 96738,
+        "JPEG90": 272207,
+        "JPEG95": 400266
+      },
+      {
+        "source_png": "band_148_display.png",
+        "PNG": 720306,
+        "JPEG85": 204652,
+        "WebP85": 88958,
+        "JPEG90": 254029,
+        "JPEG95": 369080
+      },
+      {
+        "source_png": "band_185_display.png",
+        "PNG": 717155,
+        "JPEG85": 188468,
+        "WebP85": 80150,
+        "JPEG90": 235866,
+        "JPEG95": 347323
+      },
+      {
+        "source_png": "band_223_display.png",
+        "PNG": 952334,
+        "JPEG85": 203569,
+        "WebP85": 87054,
+        "JPEG90": 267728,
+        "JPEG95": 413508
+      }
+    ],
+    "estimated_224_display_MiB": {
+      "PNG": 214.28955078125,
+      "JPEG85": 64.06112670898438,
+      "WebP85": 42.5701904296875,
+      "JPEG90": 80.58255004882812,
+      "JPEG95": 116.15118408203125
+    },
+    "visual_only": "Lossy display alternatives; exact spectra still decoded from lossless uint16 row files."
+  },
+  "fx17": {
+    "samples": [
+      {
+        "source_png": "band_000_display.png",
+        "PNG": 628406,
+        "JPEG85": 155026,
+        "WebP85": 77068,
+        "JPEG90": 199802,
+        "JPEG95": 297719
+      },
+      {
+        "source_png": "band_037_display.png",
+        "PNG": 452410,
+        "JPEG85": 139045,
+        "WebP85": 62558,
+        "JPEG90": 170935,
+        "JPEG95": 243775
+      },
+      {
+        "source_png": "band_074_display.png",
+        "PNG": 486608,
+        "JPEG85": 155205,
+        "WebP85": 74350,
+        "JPEG90": 189858,
+        "JPEG95": 269884
+      },
+      {
+        "source_png": "band_111_display.png",
+        "PNG": 513705,
+        "JPEG85": 162748,
+        "WebP85": 80628,
+        "JPEG90": 199771,
+        "JPEG95": 284336
+      },
+      {
+        "source_png": "band_148_display.png",
+        "PNG": 556145,
+        "JPEG85": 170621,
+        "WebP85": 87432,
+        "JPEG90": 210671,
+        "JPEG95": 299240
+      },
+      {
+        "source_png": "band_185_display.png",
+        "PNG": 508943,
+        "JPEG85": 156823,
+        "WebP85": 74378,
+        "JPEG90": 193167,
+        "JPEG95": 275492
+      },
+      {
+        "source_png": "band_223_display.png",
+        "PNG": 619966,
+        "JPEG85": 188014,
+        "WebP85": 120280,
+        "JPEG90": 241449,
+        "JPEG95": 356919
+      }
+    ],
+    "estimated_224_display_MiB": {
+      "PNG": 114.93478393554688,
+      "JPEG85": 34.40802001953125,
+      "WebP85": 17.59930419921875,
+      "JPEG90": 42.897125244140625,
+      "JPEG95": 61.870269775390625
+    },
+    "visual_only": "Lossy display alternatives; exact spectra still decoded from lossless uint16 row files."
+  }
+}

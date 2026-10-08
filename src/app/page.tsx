@@ -22,6 +22,11 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-6 py-8">
         <p className="text-xs font-semibold uppercase tracking-widest text-lime-400">Current research outputs</p>
         <h2 className="mt-3 text-3xl font-semibold text-white">Explore reconstruction, validation and fusion results</h2>
+        <a href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/results/whole-plant-spectral-20260928/`} className="mt-6 block rounded-xl border border-lime-300/50 bg-green-950/40 p-6 hover:bg-green-900/40">
+          <p className="text-xs font-semibold uppercase tracking-widest text-lime-300">28 September · FX10 and FX17</p>
+          <h3 className="mt-2 text-2xl font-semibold text-white">Whole-plant spectral explorer →</h3>
+          <p className="mt-3 leading-7 text-green-100/75">Explore both complete recorded scans. Click any recorded pixel for its 224-band spectrum, change wavelengths, compare samples and view tentative RGB context. Raw signals and provisional board-relative values are not validated reflectance or complete spectral-to-3D fusion.</p>
+        </a>
         <div className="mt-6 grid gap-5 lg:grid-cols-3">
           <a href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/results/experimental/`} className="group block rounded-xl border border-cyan-300/30 bg-cyan-950/20 p-6 transition hover:border-cyan-300/55 hover:bg-cyan-950/35">
             <p className="text-xs font-semibold uppercase tracking-widest text-cyan-300">Experimental results</p>

@@ -1,2 +1,5 @@
 # Preserve the original exported evidence byte-for-byte, including Windows line endings.
 public/results/coleus-109/viewer/** -text -diff whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve the audited Windows export byte-for-byte, including CRLF.
+public/results/whole-plant-spectral-20260928/** -text whitespace=cr-at-eol

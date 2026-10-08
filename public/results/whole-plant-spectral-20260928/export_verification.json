@@ -1,0 +1,23 @@
+{
+  "all_rows_lossless_roundtrip": true,
+  "every_recorded_pixel_exported": true,
+  "sensors": {
+    "fx10": {
+      "rows_checked": 2127,
+      "pixels_checked": 2178048,
+      "bands_checked": 224,
+      "source_sha256": "1f26e73c6a69fc8a7768e5e33e55035ef5e0f464448940cf45f153f15661f830",
+      "source_size_and_mtime_unchanged": true
+    },
+    "fx17": {
+      "rows_checked": 2127,
+      "pixels_checked": 1361280,
+      "bands_checked": 224,
+      "source_sha256": "f950edbeb6fc16a12d25f665c970082ea94bc74f6ea18f8e8cfcca12de033db4",
+      "source_size_and_mtime_unchanged": true
+    }
+  },
+  "total_pixels": 3539328,
+  "finished_utc": "2026-10-07T23:09:49Z",
+  "export_complete": true
+}

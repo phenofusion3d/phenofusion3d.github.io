@@ -1,0 +1,445 @@
+{
+  "title": "Optional candidate tissue highlights for full spectral scans",
+  "sensors": [
+    {
+      "sensor": "fx10",
+      "source_shape_line_band_column": [
+        2127,
+        224,
+        1024
+      ],
+      "source_header": "data\\main\\test_plant_10-7\\20260928\\003-specim-fx10.hdr",
+      "source_header_sha256": "6aaf169bc24b22abfd7cf8aed1d22517f5a956a99cb58698ec50d258b2dd048a",
+      "source_bil_bytes": 975765504,
+      "axis_order": [
+        "native_scan_line",
+        "native_detector_column"
+      ],
+      "labels": {
+        "0": "unselected/background candidate, not guaranteed background",
+        "1-5": "optional tissue candidates in scan windows R1-R5",
+        "255": "uncertain tissue appearance"
+      },
+      "method": "Deterministic random forest classifying selected spectral DN shape/brightness and existing three-band display from historical tissue interiors versus explicit background examples",
+      "thresholds": {
+        "candidate_vote_gte": 0.75,
+        "uncertain_vote_gte": 0.3
+      },
+      "probability_warning": "Tree-vote score is an uncalibrated appearance score, not a probability of correct biological segmentation.",
+      "bands_used": [
+        {
+          "band_zero_based": 20,
+          "wavelength_nm": 450.16
+        },
+        {
+          "band_zero_based": 39,
+          "wavelength_nm": 500.37
+        },
+        {
+          "band_zero_based": 58,
+          "wavelength_nm": 550.91
+        },
+        {
+          "band_zero_based": 76,
+          "wavelength_nm": 599.1
+        },
+        {
+          "band_zero_based": 95,
+          "wavelength_nm": 650.29
+        },
+        {
+          "band_zero_based": 106,
+          "wavelength_nm": 680.07
+        },
+        {
+          "band_zero_based": 121,
+          "wavelength_nm": 720.87
+        },
+        {
+          "band_zero_based": 132,
+          "wavelength_nm": 750.93
+        },
+        {
+          "band_zero_based": 150,
+          "wavelength_nm": 800.34
+        },
+        {
+          "band_zero_based": 168,
+          "wavelength_nm": 850.06
+        },
+        {
+          "band_zero_based": 186,
+          "wavelength_nm": 900.07
+        },
+        {
+          "band_zero_based": 211,
+          "wavelength_nm": 970.03
+        }
+      ],
+      "training_tissue": "Twelve previously reviewed tissue-interior polygons, up to1200pixels each. Training is not independent validation.",
+      "training_background_rectangles_column0_column1_line0_line1": [
+        [
+          20,
+          70,
+          200,
+          2050
+        ],
+        [
+          200,
+          260,
+          520,
+          595
+        ],
+        [
+          200,
+          260,
+          850,
+          920
+        ],
+        [
+          200,
+          260,
+          1190,
+          1240
+        ],
+        [
+          200,
+          260,
+          1500,
+          1550
+        ],
+        [
+          200,
+          800,
+          2020,
+          2045
+        ],
+        [
+          480,
+          600,
+          310,
+          335
+        ],
+        [
+          540,
+          625,
+          440,
+          460
+        ],
+        [
+          540,
+          650,
+          605,
+          625
+        ],
+        [
+          600,
+          680,
+          660,
+          678
+        ]
+      ],
+      "seed": 20261008,
+      "regions": [
+        {
+          "region": "R1",
+          "line_start": 180,
+          "line_stop_exclusive": 550,
+          "columns": 1024,
+          "window_pixels": 378880,
+          "candidate_pixels": 3293,
+          "uncertain_pixels": 6940,
+          "remainder_pixels": 368647,
+          "old_patch_pixels": 1373,
+          "old_patch_candidate_pixels": 1347,
+          "candidate_outside_reference_columns": 434,
+          "candidate_any_band_suspected_clipping": 978,
+          "candidate_any_band_zero": 0
+        },
+        {
+          "region": "R2",
+          "line_start": 550,
+          "line_stop_exclusive": 880,
+          "columns": 1024,
+          "window_pixels": 337920,
+          "candidate_pixels": 59102,
+          "uncertain_pixels": 25509,
+          "remainder_pixels": 253309,
+          "old_patch_pixels": 5559,
+          "old_patch_candidate_pixels": 5559,
+          "candidate_outside_reference_columns": 4167,
+          "candidate_any_band_suspected_clipping": 28429,
+          "candidate_any_band_zero": 0
+        },
+        {
+          "region": "R3",
+          "line_start": 880,
+          "line_stop_exclusive": 1230,
+          "columns": 1024,
+          "window_pixels": 358400,
+          "candidate_pixels": 95392,
+          "uncertain_pixels": 24436,
+          "remainder_pixels": 238572,
+          "old_patch_pixels": 7672,
+          "old_patch_candidate_pixels": 7587,
+          "candidate_outside_reference_columns": 3810,
+          "candidate_any_band_suspected_clipping": 27363,
+          "candidate_any_band_zero": 0
+        },
+        {
+          "region": "R4",
+          "line_start": 1230,
+          "line_stop_exclusive": 1550,
+          "columns": 1024,
+          "window_pixels": 327680,
+          "candidate_pixels": 55576,
+          "uncertain_pixels": 30919,
+          "remainder_pixels": 241185,
+          "old_patch_pixels": 3175,
+          "old_patch_candidate_pixels": 3175,
+          "candidate_outside_reference_columns": 6562,
+          "candidate_any_band_suspected_clipping": 20508,
+          "candidate_any_band_zero": 0
+        },
+        {
+          "region": "R5",
+          "line_start": 1550,
+          "line_stop_exclusive": 2050,
+          "columns": 1024,
+          "window_pixels": 512000,
+          "candidate_pixels": 158496,
+          "uncertain_pixels": 14915,
+          "remainder_pixels": 338589,
+          "old_patch_pixels": 14146,
+          "old_patch_candidate_pixels": 14139,
+          "candidate_outside_reference_columns": 41583,
+          "candidate_any_band_suspected_clipping": 59546,
+          "candidate_any_band_zero": 0
+        }
+      ],
+      "limits": [
+        "Optional highlight only: all source pixels remain available without this mask.",
+        "No independent ground-truth segmentation; no precision/recall or complete-leaf claim.",
+        "Appearance training favours represented green/coloured leaf tissue; dry stems, ears, flowers, unusual leaves, deep shadows or mixed edge pixels may be missed.",
+        "Background, pots, labels and other objects may be included incorrectly; uncertainty remains even above threshold.",
+        "R1-R5 are broad scan-order browsing windows; leaning foliage may cross boundaries.",
+        "Counts are image pixels, not physical area or coverage of an entire biological plant.",
+        "Any summary computed using this mask is conditional on spectral appearance selection, not an unbiased whole-plant mean or index.",
+        "Clipping and reference availability are independent flags and do not silently erase image pixels.",
+        "No hole filling or extrapolation; no 3D correspondence or FX10/FX17 pixel equivalence inferred."
+      ]
+    },
+    {
+      "sensor": "fx17",
+      "source_shape_line_band_column": [
+        2127,
+        224,
+        640
+      ],
+      "source_header": "data\\main\\test_plant_10-7\\20260928\\003-specim-fx17.hdr",
+      "source_header_sha256": "762de08de4f6f2892aa0caf4dd69da81a4a283e4a83783a210d75664b3c64d4f",
+      "source_bil_bytes": 609853440,
+      "axis_order": [
+        "native_scan_line",
+        "native_detector_column"
+      ],
+      "labels": {
+        "0": "unselected/background candidate, not guaranteed background",
+        "1-5": "optional tissue candidates in scan windows R1-R5",
+        "255": "uncertain tissue appearance"
+      },
+      "method": "Deterministic random forest classifying selected spectral DN shape/brightness and existing three-band display from historical tissue interiors versus explicit background examples",
+      "thresholds": {
+        "candidate_vote_gte": 0.75,
+        "uncertain_vote_gte": 0.3
+      },
+      "probability_warning": "Tree-vote score is an uncalibrated appearance score, not a probability of correct biological segmentation.",
+      "bands_used": [
+        {
+          "band_zero_based": 10,
+          "wavelength_nm": 970.19
+        },
+        {
+          "band_zero_based": 33,
+          "wavelength_nm": 1049.95
+        },
+        {
+          "band_zero_based": 47,
+          "wavelength_nm": 1098.65
+        },
+        {
+          "band_zero_based": 76,
+          "wavelength_nm": 1199.87
+        },
+        {
+          "band_zero_based": 105,
+          "wavelength_nm": 1301.56
+        },
+        {
+          "band_zero_based": 147,
+          "wavelength_nm": 1449.68
+        },
+        {
+          "band_zero_based": 175,
+          "wavelength_nm": 1548.98
+        },
+        {
+          "band_zero_based": 203,
+          "wavelength_nm": 1648.71
+        }
+      ],
+      "training_tissue": "Twelve previously reviewed tissue-interior polygons, up to1200pixels each. Training is not independent validation.",
+      "training_background_rectangles_column0_column1_line0_line1": [
+        [
+          20,
+          45,
+          100,
+          1940
+        ],
+        [
+          100,
+          145,
+          400,
+          475
+        ],
+        [
+          100,
+          145,
+          750,
+          810
+        ],
+        [
+          100,
+          145,
+          1090,
+          1140
+        ],
+        [
+          100,
+          145,
+          1400,
+          1460
+        ],
+        [
+          150,
+          500,
+          1930,
+          1945
+        ],
+        [
+          285,
+          345,
+          190,
+          215
+        ],
+        [
+          280,
+          340,
+          330,
+          348
+        ],
+        [
+          295,
+          365,
+          505,
+          525
+        ],
+        [
+          390,
+          430,
+          540,
+          558
+        ]
+      ],
+      "seed": 20261008,
+      "regions": [
+        {
+          "region": "R1",
+          "line_start": 80,
+          "line_stop_exclusive": 450,
+          "columns": 640,
+          "window_pixels": 236800,
+          "candidate_pixels": 2417,
+          "uncertain_pixels": 39436,
+          "remainder_pixels": 194947,
+          "old_patch_pixels": 518,
+          "old_patch_candidate_pixels": 495,
+          "candidate_outside_reference_columns": 69,
+          "candidate_any_band_suspected_clipping": 33,
+          "candidate_any_band_zero": 0
+        },
+        {
+          "region": "R2",
+          "line_start": 450,
+          "line_stop_exclusive": 780,
+          "columns": 640,
+          "window_pixels": 211200,
+          "candidate_pixels": 27627,
+          "uncertain_pixels": 41254,
+          "remainder_pixels": 142319,
+          "old_patch_pixels": 3210,
+          "old_patch_candidate_pixels": 3190,
+          "candidate_outside_reference_columns": 865,
+          "candidate_any_band_suspected_clipping": 4907,
+          "candidate_any_band_zero": 0
+        },
+        {
+          "region": "R3",
+          "line_start": 780,
+          "line_stop_exclusive": 1130,
+          "columns": 640,
+          "window_pixels": 224000,
+          "candidate_pixels": 53435,
+          "uncertain_pixels": 30135,
+          "remainder_pixels": 140430,
+          "old_patch_pixels": 5288,
+          "old_patch_candidate_pixels": 5229,
+          "candidate_outside_reference_columns": 413,
+          "candidate_any_band_suspected_clipping": 3122,
+          "candidate_any_band_zero": 0
+        },
+        {
+          "region": "R4",
+          "line_start": 1130,
+          "line_stop_exclusive": 1450,
+          "columns": 640,
+          "window_pixels": 204800,
+          "candidate_pixels": 26727,
+          "uncertain_pixels": 32470,
+          "remainder_pixels": 145603,
+          "old_patch_pixels": 2096,
+          "old_patch_candidate_pixels": 2088,
+          "candidate_outside_reference_columns": 2050,
+          "candidate_any_band_suspected_clipping": 2414,
+          "candidate_any_band_zero": 0
+        },
+        {
+          "region": "R5",
+          "line_start": 1450,
+          "line_stop_exclusive": 1950,
+          "columns": 640,
+          "window_pixels": 320000,
+          "candidate_pixels": 92481,
+          "uncertain_pixels": 27211,
+          "remainder_pixels": 200308,
+          "old_patch_pixels": 10313,
+          "old_patch_candidate_pixels": 10217,
+          "candidate_outside_reference_columns": 25572,
+          "candidate_any_band_suspected_clipping": 1342,
+          "candidate_any_band_zero": 0
+        }
+      ],
+      "limits": [
+        "Optional highlight only: all source pixels remain available without this mask.",
+        "No independent ground-truth segmentation; no precision/recall or complete-leaf claim.",
+        "Appearance training favours represented green/coloured leaf tissue; dry stems, ears, flowers, unusual leaves, deep shadows or mixed edge pixels may be missed.",
+        "Background, pots, labels and other objects may be included incorrectly; uncertainty remains even above threshold.",
+        "R1-R5 are broad scan-order browsing windows; leaning foliage may cross boundaries.",
+        "Counts are image pixels, not physical area or coverage of an entire biological plant.",
+        "Any summary computed using this mask is conditional on spectral appearance selection, not an unbiased whole-plant mean or index.",
+        "Clipping and reference availability are independent flags and do not silently erase image pixels.",
+        "No hole filling or extrapolation; no 3D correspondence or FX10/FX17 pixel equivalence inferred."
+      ]
+    }
+  ]
+}

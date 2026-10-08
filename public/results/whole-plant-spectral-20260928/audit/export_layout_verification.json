@@ -1,0 +1,33 @@
+{
+  "scope": "Independent file-count, row-size inventory and full-native preview dimensions; numerical row checks are in the separate export and browser receipts.",
+  "sensors": {
+    "fx10": {
+      "native_pixel_count": 2178048,
+      "rows": 2127,
+      "band_previews": 224,
+      "all_previews_native_dimensions": [
+        2127,
+        1024
+      ],
+      "lossless_rows_MiB": 383.25376987457275,
+      "display_JPEG_MiB": 69.399245262146,
+      "source_sha256": "1f26e73c6a69fc8a7768e5e33e55035ef5e0f464448940cf45f153f15661f830"
+    },
+    "fx17": {
+      "native_pixel_count": 1361280,
+      "rows": 2127,
+      "band_previews": 224,
+      "all_previews_native_dimensions": [
+        2127,
+        640
+      ],
+      "lossless_rows_MiB": 216.35604763031006,
+      "display_JPEG_MiB": 41.02713680267334,
+      "source_sha256": "f950edbeb6fc16a12d25f665c970082ea94bc74f6ea18f8e8cfcca12de033db4"
+    }
+  },
+  "errors": [],
+  "total_native_pixels": 3539328,
+  "exact_rows_plus_display_MiB": 710.0361995697021,
+  "pass": true
+}
