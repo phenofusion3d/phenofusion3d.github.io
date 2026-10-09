@@ -1,0 +1,2615 @@
+[
+  {
+    "id": "P1.O03.length_candidate",
+    "manual_dimension_id": "P1.O03.length",
+    "plant": 1,
+    "frame": 459309,
+    "points": [
+      [
+        240,
+        401
+      ],
+      [
+        149,
+        379
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      143152,
+      302754
+    ],
+    "scope": "Upper narrow blade; length excludes fine dry tip so partial only; width is visible green-blade section.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "basal margin candidate",
+        "source_pixel_xy": [
+          240,
+          401
+        ],
+        "candidate_count": 48,
+        "fused_point_index": 49071,
+        "camera_id": 0,
+        "original_point_index": 300697,
+        "xyz_m": [
+          0.2774192464232363,
+          0.00977430933561335,
+          0.3112345867392672
+        ],
+        "reprojection_pixel_xy": [
+          240.17194962037968,
+          400.9103055486601
+        ],
+        "source_click_distance_px": 0.193937532597168,
+        "candidate_key": "P1_O03_length_candidate_0"
+      },
+      {
+        "role": "terminal margin candidate",
+        "source_pixel_xy": [
+          149,
+          379
+        ],
+        "candidate_count": 0,
+        "projected_candidates_before_two_view_depth_check": 14,
+        "rejection": "No candidate consistent with stereo depth in at least two of three inspected views."
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": null,
+    "status": "No current source-supported endpoint within 4px disk."
+  },
+  {
+    "id": "P1.O03.width_candidate",
+    "manual_dimension_id": "P1.O03.width",
+    "plant": 1,
+    "frame": 459309,
+    "points": [
+      [
+        193,
+        386
+      ],
+      [
+        191,
+        394
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      143152,
+      302754
+    ],
+    "scope": "Upper narrow blade; length excludes fine dry tip so partial only; width is visible green-blade section.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "first opposite margin candidate",
+        "source_pixel_xy": [
+          193,
+          386
+        ],
+        "candidate_count": 41,
+        "fused_point_index": 790312,
+        "camera_id": 0,
+        "original_point_index": 4203723,
+        "xyz_m": [
+          0.2741950987306271,
+          0.0008791476358044391,
+          0.2824260960658804
+        ],
+        "reprojection_pixel_xy": [
+          193.4115151296387,
+          384.93370164225445
+        ],
+        "source_click_distance_px": 1.1429509568010425,
+        "candidate_key": "P1_O03_width_candidate_0"
+      },
+      {
+        "role": "second opposite margin candidate",
+        "source_pixel_xy": [
+          191,
+          394
+        ],
+        "candidate_count": 6,
+        "fused_point_index": 790420,
+        "camera_id": 0,
+        "original_point_index": 4203831,
+        "xyz_m": [
+          0.27522397339753374,
+          0.0036010613341733388,
+          0.28057697094597184
+        ],
+        "reprojection_pixel_xy": [
+          192.828551130527,
+          391.25257631858204
+        ],
+        "source_click_distance_px": 3.300293338806071,
+        "candidate_key": "P1_O03_width_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 0.34477037243138364,
+    "four_pixel_disk_sensitivity_cm": [
+      0.12104881874215319,
+      0.7576365920104313
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 459309,
+        "pixel_xy": [
+          [
+            193.4115151296387,
+            384.93370164225445
+          ],
+          [
+            192.828551130527,
+            391.25257631858204
+          ]
+        ]
+      },
+      {
+        "frame": 143152,
+        "pixel_xy": [
+          [
+            931.4361366139918,
+            369.03090534348905
+          ],
+          [
+            935.6876201422675,
+            375.2943701014808
+          ]
+        ]
+      },
+      {
+        "frame": 302754,
+        "pixel_xy": [
+          [
+            557.1827674312847,
+            377.83504014899677
+          ],
+          [
+            559.0381919797269,
+            384.20826123479026
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P1.O04.length_candidate",
+    "manual_dimension_id": "P1.O04.length",
+    "plant": 1,
+    "frame": 459309,
+    "points": [
+      [
+        232,
+        412
+      ],
+      [
+        157,
+        469
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      143152,
+      302754
+    ],
+    "scope": "Ear body excluding awns; not a leaf.",
+    "organ_kind": "ear",
+    "endpoints": [
+      {
+        "role": "basal margin candidate",
+        "source_pixel_xy": [
+          232,
+          412
+        ],
+        "candidate_count": 8,
+        "fused_point_index": 791019,
+        "camera_id": 0,
+        "original_point_index": 4206364,
+        "xyz_m": [
+          0.2715041776715948,
+          0.013889808003240023,
+          0.31329233607308044
+        ],
+        "reprojection_pixel_xy": [
+          230.9017247021821,
+          408.99209374067965
+        ],
+        "source_click_distance_px": 3.2021412671297864,
+        "candidate_key": "P1_O04_length_candidate_0"
+      },
+      {
+        "role": "terminal margin candidate",
+        "source_pixel_xy": [
+          157,
+          469
+        ],
+        "candidate_count": 0
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": null,
+    "status": "No current source-supported endpoint within 4px disk."
+  },
+  {
+    "id": "P1.O04.width_candidate",
+    "manual_dimension_id": "P1.O04.width",
+    "plant": 1,
+    "frame": 459309,
+    "points": [
+      [
+        201,
+        430
+      ],
+      [
+        211,
+        440
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      143152,
+      302754
+    ],
+    "scope": "Ear body excluding awns; not a leaf.",
+    "organ_kind": "ear",
+    "endpoints": [
+      {
+        "role": "first opposite margin candidate",
+        "source_pixel_xy": [
+          201,
+          430
+        ],
+        "candidate_count": 19,
+        "fused_point_index": 749730,
+        "camera_id": 0,
+        "original_point_index": 3975537,
+        "xyz_m": [
+          0.27110847472990707,
+          0.022040712193413435,
+          0.2916859680680405
+        ],
+        "reprojection_pixel_xy": [
+          200.57216901506172,
+          430.26451249234117
+        ],
+        "source_click_distance_px": 0.5029972269086554,
+        "candidate_key": "P1_O04_width_candidate_0"
+      },
+      {
+        "role": "second opposite margin candidate",
+        "source_pixel_xy": [
+          211,
+          440
+        ],
+        "candidate_count": 0
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": null,
+    "status": "No current source-supported endpoint within 4px disk."
+  },
+  {
+    "id": "P3.O01.length_candidate",
+    "manual_dimension_id": "P3.O01.length",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        639,
+        471
+      ],
+      [
+        717,
+        499
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lateral lobed blade; selected basal junction and terminal margin, plus opposite lateral lobes.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "basal margin candidate",
+        "source_pixel_xy": [
+          639,
+          471
+        ],
+        "candidate_count": 23,
+        "fused_point_index": 1179894,
+        "camera_id": 0,
+        "original_point_index": 5696376,
+        "xyz_m": [
+          0.8493360375314546,
+          0.04269829867662673,
+          0.3556391993806696
+        ],
+        "reprojection_pixel_xy": [
+          639.4086054517481,
+          471.00913805978234
+        ],
+        "source_click_distance_px": 0.40870762084268847,
+        "candidate_key": "P3_O01_length_candidate_0"
+      },
+      {
+        "role": "terminal margin candidate",
+        "source_pixel_xy": [
+          717,
+          499
+        ],
+        "candidate_count": 36,
+        "fused_point_index": 1316108,
+        "camera_id": 0,
+        "original_point_index": 6163804,
+        "xyz_m": [
+          0.910039642878948,
+          0.08878880058808199,
+          0.4984897761162807
+        ],
+        "reprojection_pixel_xy": [
+          716.8925019117721,
+          499.16255856101986
+        ],
+        "source_click_distance_px": 0.19488746684561079,
+        "candidate_key": "P3_O01_length_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 16.19121655167727,
+    "four_pixel_disk_sensitivity_cm": [
+      15.379895384005552,
+      16.4091920929315
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            639.4086054517481,
+            471.00913805978234
+          ],
+          [
+            716.8925019117721,
+            499.16255856101986
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            1022.5112741167326,
+            461.77198693868695
+          ],
+          [
+            989.3613313339956,
+            492.0665397492238
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            208.87191201324123,
+            478.9408380895928
+          ],
+          [
+            407.3864454973395,
+            505.3176441063648
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3.O01.width_candidate",
+    "manual_dimension_id": "P3.O01.width",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        686,
+        451
+      ],
+      [
+        682,
+        507
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lateral lobed blade; selected basal junction and terminal margin, plus opposite lateral lobes.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "first opposite margin candidate",
+        "source_pixel_xy": [
+          686,
+          451
+        ],
+        "candidate_count": 2,
+        "fused_point_index": 1108783,
+        "camera_id": 0,
+        "original_point_index": 5433712,
+        "xyz_m": [
+          0.8843177762062813,
+          0.05239045903319696,
+          0.48614328011340074
+        ],
+        "reprojection_pixel_xy": [
+          684.846521682636,
+          454.4416849110481
+        ],
+        "source_click_distance_px": 3.6298357064150055,
+        "candidate_key": "P3_O01_width_candidate_0"
+      },
+      {
+        "role": "second opposite margin candidate",
+        "source_pixel_xy": [
+          682,
+          507
+        ],
+        "candidate_count": 19,
+        "fused_point_index": 575328,
+        "camera_id": 0,
+        "original_point_index": 3034267,
+        "xyz_m": [
+          0.8832889015393746,
+          0.09139799963386046,
+          0.49128765344793407
+        ],
+        "reprojection_pixel_xy": [
+          682.9176460502287,
+          504.63482717275593
+        ],
+        "source_click_distance_px": 2.536950290453863,
+        "candidate_key": "P3_O01_width_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 3.9358752315052756,
+    "four_pixel_disk_sensitivity_cm": [
+      3.767484221610795,
+      4.217815971476773
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            684.846521682636,
+            454.4416849110481
+          ],
+          [
+            682.9176460502287,
+            504.63482717275593
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            964.9682748950311,
+            447.661525171506
+          ],
+          [
+            960.0720844615709,
+            497.4830839662096
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            367.8638533484743,
+            460.7052494786847
+          ],
+          [
+            369.49248541386714,
+            510.57838742708225
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3.O02.length_candidate",
+    "manual_dimension_id": "P3.O02.length",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        651,
+        416
+      ],
+      [
+        698,
+        324
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lobed blade with basal hole; basal margin and terminal lobe, plus opposite lateral margins.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "basal margin candidate",
+        "source_pixel_xy": [
+          651,
+          416
+        ],
+        "candidate_count": 23,
+        "fused_point_index": 1309202,
+        "camera_id": 0,
+        "original_point_index": 6150271,
+        "xyz_m": [
+          0.8596247842005212,
+          0.028294053339933376,
+          0.5576926913218218
+        ],
+        "reprojection_pixel_xy": [
+          649.83927819306,
+          414.5879171738724
+        ],
+        "source_click_distance_px": 1.827909467383601,
+        "candidate_key": "P3_O02_length_candidate_0"
+      },
+      {
+        "role": "terminal margin candidate",
+        "source_pixel_xy": [
+          698,
+          324
+        ],
+        "candidate_count": 30,
+        "fused_point_index": 1252860,
+        "camera_id": 0,
+        "original_point_index": 5959325,
+        "xyz_m": [
+          0.9028375202106013,
+          -0.05130492756475731,
+          0.5684532534659341
+        ],
+        "reprojection_pixel_xy": [
+          698.744894968894,
+          323.07494743896945
+        ],
+        "source_click_distance_px": 1.1876829355314995,
+        "candidate_key": "P3_O02_length_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 9.12092539833513,
+    "four_pixel_disk_sensitivity_cm": [
+      8.630309715539951,
+      9.377936839069578
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            649.83927819306,
+            414.5879171738724
+          ],
+          [
+            698.744894968894,
+            323.07494743896945
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            895.0439449637831,
+            409.05266248558905
+          ],
+          [
+            938.2537421747854,
+            318.48861250862205
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            373.72338443339135,
+            420.25125595502277
+          ],
+          [
+            427.07550871798435,
+            329.12536022535414
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3.O02.width_candidate",
+    "manual_dimension_id": "P3.O02.width",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        636,
+        364
+      ],
+      [
+        723,
+        365
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lobed blade with basal hole; basal margin and terminal lobe, plus opposite lateral margins.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "first opposite margin candidate",
+        "source_pixel_xy": [
+          636,
+          364
+        ],
+        "candidate_count": 40,
+        "fused_point_index": 238009,
+        "camera_id": 0,
+        "original_point_index": 1498216,
+        "xyz_m": [
+          0.8472782881976413,
+          -0.01516818843433654,
+          0.5489046347947074
+        ],
+        "reprojection_pixel_xy": [
+          635.5226063659263,
+          364.2331984525647
+        ],
+        "source_click_distance_px": 0.531306126571716,
+        "candidate_key": "P3_O02_width_candidate_0"
+      },
+      {
+        "role": "second opposite margin candidate",
+        "source_pixel_xy": [
+          723,
+          365
+        ],
+        "candidate_count": 98,
+        "fused_point_index": 323091,
+        "camera_id": 0,
+        "original_point_index": 1996453,
+        "xyz_m": [
+          0.9275305122163613,
+          -0.014200480093677626,
+          0.5952039948055076
+        ],
+        "reprojection_pixel_xy": [
+          722.7145977492106,
+          365.09245859918053
+        ],
+        "source_click_distance_px": 0.30000506215408324,
+        "candidate_key": "P3_O02_width_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 9.265520307458768,
+    "four_pixel_disk_sensitivity_cm": [
+      8.27662930500362,
+      9.364213342637083
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            635.5226063659263,
+            364.2331984525647
+          ],
+          [
+            722.7145977492106,
+            365.09245859918053
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            884.8885922323898,
+            359.0289900177321
+          ],
+          [
+            951.094292720283,
+            360.30884443686904
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            355.3540936239825,
+            370.3226765018096
+          ],
+          [
+            462.82358268496625,
+            370.7396375918063
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3.O03.length_candidate",
+    "manual_dimension_id": "P3.O03.length",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        594,
+        424
+      ],
+      [
+        590,
+        326
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Oval terminal blade including small basal lobes; base convention tentative; width is visible opposing side margins.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "basal margin candidate",
+        "source_pixel_xy": [
+          594,
+          424
+        ],
+        "candidate_count": 151,
+        "fused_point_index": 1221511,
+        "camera_id": 0,
+        "original_point_index": 5799835,
+        "xyz_m": [
+          0.8164120481904412,
+          0.029322928006840044,
+          0.4832533766793679
+        ],
+        "reprojection_pixel_xy": [
+          594.2204964846067,
+          424.12699211786963
+        ],
+        "source_click_distance_px": 0.2544517591310938,
+        "candidate_key": "P3_O03_length_candidate_0"
+      },
+      {
+        "role": "terminal margin candidate",
+        "source_pixel_xy": [
+          590,
+          326
+        ],
+        "candidate_count": 73,
+        "fused_point_index": 944608,
+        "camera_id": 0,
+        "original_point_index": 4949838,
+        "xyz_m": [
+          0.8149696207270227,
+          -0.04269829867662673,
+          0.45630591477310734
+        ],
+        "reprojection_pixel_xy": [
+          589.7748229163919,
+          325.7844029666501
+        ],
+        "source_click_distance_px": 0.311747974767309,
+        "candidate_key": "P3_O03_length_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 7.691100957059331,
+    "four_pixel_disk_sensitivity_cm": [
+      6.9003374178647645,
+      8.652943037308903
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            594.2204964846067,
+            424.12699211786963
+          ],
+          [
+            589.7748229163919,
+            325.7844029666501
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            877.9358204034024,
+            417.80515002887194
+          ],
+          [
+            890.0954695770747,
+            319.8849959153212
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            277.5218422926226,
+            430.36175610206186
+          ],
+          [
+            254.85076744370463,
+            333.50214654733804
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3.O03.width_candidate",
+    "manual_dimension_id": "P3.O03.width",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        563,
+        372
+      ],
+      [
+        633,
+        375
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Oval terminal blade including small basal lobes; base convention tentative; width is visible opposing side margins.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "first opposite margin candidate",
+        "source_pixel_xy": [
+          563,
+          372
+        ],
+        "candidate_count": 90,
+        "fused_point_index": 1020036,
+        "camera_id": 0,
+        "original_point_index": 5158967,
+        "xyz_m": [
+          0.7948056801854011,
+          -0.009774309335613348,
+          0.46799335585945157
+        ],
+        "reprojection_pixel_xy": [
+          563.0376846940885,
+          372.1485094895626
+        ],
+        "source_click_distance_px": 0.15321620233740582,
+        "candidate_key": "P3_O03_width_candidate_0"
+      },
+      {
+        "role": "second opposite margin candidate",
+        "source_pixel_xy": [
+          633,
+          375
+        ],
+        "candidate_count": 26,
+        "fused_point_index": 1257128,
+        "camera_id": 0,
+        "original_point_index": 5970438,
+        "xyz_m": [
+          0.8441989765324214,
+          -0.0077165600018000114,
+          0.4583636641069207
+        ],
+        "reprojection_pixel_xy": [
+          631.2244291540867,
+          375.2995479715119
+        ],
+        "source_click_distance_px": 1.8006612163575357,
+        "candidate_key": "P3_O03_width_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 5.036529578582992,
+    "four_pixel_disk_sensitivity_cm": [
+      4.553862986287698,
+      14.964917225214574
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            563.0376846940885,
+            372.1485094895626
+          ],
+          [
+            631.2244291540867,
+            375.2995479715119
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            856.4337176863477,
+            366.01577934738526
+          ],
+          [
+            929.4790327807333,
+            369.03336013906625
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            237.03828258754044,
+            379.1484465750794
+          ],
+          [
+            296.5022017938347,
+            382.41655491473483
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3.O04.length_candidate",
+    "manual_dimension_id": "P3.O04.length",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        550,
+        388
+      ],
+      [
+        506,
+        318
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lobed blade; basal lobe boundary and terminal lamina candidate; opposite lateral lobes.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "basal margin candidate",
+        "source_pixel_xy": [
+          550,
+          388
+        ],
+        "candidate_count": 77,
+        "fused_point_index": 593225,
+        "camera_id": 0,
+        "original_point_index": 3135038,
+        "xyz_m": [
+          0.7701126881796411,
+          0.006687685334893344,
+          0.5865290950976225
+        ],
+        "reprojection_pixel_xy": [
+          550.4665677124583,
+          388.10420876119946
+        ],
+        "source_click_distance_px": 0.47806369473041627,
+        "candidate_key": "P3_O04_length_candidate_0"
+      },
+      {
+        "role": "terminal margin candidate",
+        "source_pixel_xy": [
+          506,
+          318
+        ],
+        "candidate_count": 230,
+        "fused_point_index": 426718,
+        "camera_id": 0,
+        "original_point_index": 2422495,
+        "xyz_m": [
+          0.7145534561666811,
+          -0.062146959076456613,
+          0.6600230988206276
+        ],
+        "reprojection_pixel_xy": [
+          505.79693842629047,
+          317.8783168431697
+        ],
+        "source_click_distance_px": 0.23672936736613986,
+        "candidate_key": "P3_O04_length_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 11.500610903923318,
+    "four_pixel_disk_sensitivity_cm": [
+      10.166677580605636,
+      12.45773698723483
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            550.4665677124583,
+            388.10420876119946
+          ],
+          [
+            505.79693842629047,
+            317.8783168431697
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            784.8987855392911,
+            383.1003910312405
+          ],
+          [
+            713.9942336053099,
+            313.40186625127575
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            290.093850072595,
+            393.5872235446219
+          ],
+          [
+            275.30079466406477,
+            323.4281074781397
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3.O04.width_candidate",
+    "manual_dimension_id": "P3.O04.width",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        492,
+        365
+      ],
+      [
+        563,
+        346
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lobed blade; basal lobe boundary and terminal lamina candidate; opposite lateral lobes.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "first opposite margin candidate",
+        "source_pixel_xy": [
+          492,
+          365
+        ],
+        "candidate_count": 119,
+        "fused_point_index": 1034031,
+        "camera_id": 0,
+        "original_point_index": 5226412,
+        "xyz_m": [
+          0.7102040622713723,
+          -0.013889808003240021,
+          0.6198969868112675
+        ],
+        "reprojection_pixel_xy": [
+          492.86370804041576,
+          365.22330228630153
+        ],
+        "source_click_distance_px": 0.8921073310685891,
+        "candidate_key": "P3_O04_width_candidate_0"
+      },
+      {
+        "role": "second opposite margin candidate",
+        "source_pixel_xy": [
+          563,
+          346
+        ],
+        "candidate_count": 159,
+        "fused_point_index": 1092160,
+        "camera_id": 0,
+        "original_point_index": 5386636,
+        "xyz_m": [
+          0.7783436855148944,
+          -0.03240955200756005,
+          0.6145619158979404
+        ],
+        "reprojection_pixel_xy": [
+          562.9947947073734,
+          345.804352917985
+        ],
+        "source_click_distance_px": 0.19571631452771718,
+        "candidate_key": "P3_O04_width_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 7.081279655122308,
+    "four_pixel_disk_sensitivity_cm": [
+      6.3305343600431305,
+      7.608741679423971
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            492.86370804041576,
+            365.22330228630153
+          ],
+          [
+            562.9947947073734,
+            345.804352917985
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            714.6280948595156,
+            360.5051775021667
+          ],
+          [
+            786.6508244694235,
+            341.1326086221044
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            247.7644072378564,
+            370.6439308918468
+          ],
+          [
+            314.1446337464689,
+            351.4414291048036
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3.O05.length_candidate",
+    "manual_dimension_id": "P3.O05.length",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        540,
+        485
+      ],
+      [
+        431,
+        479
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lobed blade; basal lamina margin revised from visibly crossing-stem candidate, not adjusted to reference; visible terminal and side lobes.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "basal margin candidate",
+        "source_pixel_xy": [
+          540,
+          485
+        ],
+        "candidate_count": 33,
+        "fused_point_index": 1073354,
+        "camera_id": 0,
+        "original_point_index": 5334955,
+        "xyz_m": [
+          0.7861454808851271,
+          0.06018916801404009,
+          0.4100065547623073
+        ],
+        "reprojection_pixel_xy": [
+          539.2926189865649,
+          483.79014827937715
+        ],
+        "source_click_distance_px": 1.401473897032177,
+        "candidate_key": "P3_O05_length_candidate_0"
+      },
+      {
+        "role": "terminal margin candidate",
+        "source_pixel_xy": [
+          431,
+          479
+        ],
+        "candidate_count": 114,
+        "fused_point_index": 744985,
+        "camera_id": 0,
+        "original_point_index": 3894967,
+        "xyz_m": [
+          0.6780432987419363,
+          0.07973778668526678,
+          0.531413765457294
+        ],
+        "reprojection_pixel_xy": [
+          430.7738203622649,
+          479.050601516534
+        ],
+        "source_click_distance_px": 0.2317708825575609,
+        "candidate_key": "P3_O05_length_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 16.373130758901777,
+    "four_pixel_disk_sensitivity_cm": [
+      15.450869985814577,
+      17.789531103177826
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            539.2926189865649,
+            483.79014827937715
+          ],
+          [
+            430.7738203622649,
+            479.050601516534
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            873.8817829880674,
+            476.1840977536024
+          ],
+          [
+            688.8100477121985,
+            473.99768540914295
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            167.83728145796186,
+            490.4415656773901
+          ],
+          [
+            145.7276164726306,
+            484.3192223403512
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3.O05.width_candidate",
+    "manual_dimension_id": "P3.O05.width",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        510,
+        431
+      ],
+      [
+        516,
+        521
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lobed blade; basal lamina margin revised from visibly crossing-stem candidate, not adjusted to reference; visible terminal and side lobes.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "first opposite margin candidate",
+        "source_pixel_xy": [
+          510,
+          431
+        ],
+        "candidate_count": 0
+      },
+      {
+        "role": "second opposite margin candidate",
+        "source_pixel_xy": [
+          516,
+          521
+        ],
+        "candidate_count": 7,
+        "fused_point_index": 1169337,
+        "camera_id": 0,
+        "original_point_index": 5650460,
+        "xyz_m": [
+          0.7474774455076943,
+          0.1116329013593735,
+          0.5280213045419023
+        ],
+        "reprojection_pixel_xy": [
+          513.7236135951692,
+          518.9703172172888
+        ],
+        "source_click_distance_px": 3.0498438095306994,
+        "candidate_key": "P3_O05_width_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": null,
+    "status": "No current source-supported endpoint within 4px disk."
+  },
+  {
+    "id": "P5.O01.length_candidate",
+    "manual_dimension_id": "P5.O01.length",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        523,
+        334
+      ],
+      [
+        548,
+        202
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Green damaged lobed blade; lowest basal-lamina lobe extent to terminal margin; widest opposing basal lobes.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "basal margin candidate",
+        "source_pixel_xy": [
+          523,
+          334
+        ],
+        "candidate_count": 23,
+        "fused_point_index": 1584692,
+        "camera_id": 0,
+        "original_point_index": 6987732,
+        "xyz_m": [
+          1.3911573626423,
+          -0.057102544013320086,
+          0.5663955041321208
+        ],
+        "reprojection_pixel_xy": [
+          524.9188288013175,
+          332.82872350463447
+        ],
+        "source_click_distance_px": 2.2480641888881845,
+        "candidate_key": "P5_O01_length_candidate_0"
+      },
+      {
+        "role": "terminal margin candidate",
+        "source_pixel_xy": [
+          548,
+          202
+        ],
+        "candidate_count": 2,
+        "fused_point_index": 771882,
+        "camera_id": 0,
+        "original_point_index": 4093658,
+        "xyz_m": [
+          1.417993284316748,
+          -0.15793226137017358,
+          0.5139228961198807
+        ],
+        "reprojection_pixel_xy": [
+          547.7662583111191,
+          203.28337067854
+        ],
+        "source_click_distance_px": 1.3044828383911697,
+        "candidate_key": "P5_O01_length_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 11.679115200213703,
+    "four_pixel_disk_sensitivity_cm": [
+      11.399234926474783,
+      11.764271861386101
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            524.9188288013175,
+            332.82872350463447
+          ],
+          [
+            547.7662583111191,
+            203.28337067854
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            1009.9105573457384,
+            322.3419360538772
+          ],
+          [
+            1080.3686357690206,
+            193.252082752202
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            297.9424932983752,
+            338.73681709569126
+          ],
+          [
+            297.7731844677609,
+            210.73815815001305
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P5.O01.width_candidate",
+    "manual_dimension_id": "P5.O01.width",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        473,
+        290
+      ],
+      [
+        574,
+        304
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Green damaged lobed blade; lowest basal-lamina lobe extent to terminal margin; widest opposing basal lobes.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "first opposite margin candidate",
+        "source_pixel_xy": [
+          473,
+          290
+        ],
+        "candidate_count": 115,
+        "fused_point_index": 591837,
+        "camera_id": 0,
+        "original_point_index": 3128493,
+        "xyz_m": [
+          1.3483402509811886,
+          -0.09311315735505346,
+          0.5554493295810522
+        ],
+        "reprojection_pixel_xy": [
+          473.28530754792814,
+          290.46633036273147
+        ],
+        "source_click_distance_px": 0.5466849221535492,
+        "candidate_key": "P5_O01_width_candidate_0"
+      },
+      {
+        "role": "second opposite margin candidate",
+        "source_pixel_xy": [
+          574,
+          304
+        ],
+        "candidate_count": 46,
+        "fused_point_index": 1648528,
+        "camera_id": 0,
+        "original_point_index": 7176814,
+        "xyz_m": [
+          1.4388812216689755,
+          -0.07840314943254664,
+          0.5221538934551341
+        ],
+        "reprojection_pixel_xy": [
+          574.6710988107411,
+          303.8467983612274
+        ],
+        "source_click_distance_px": 0.6883635346971452,
+        "candidate_key": "P5_O01_width_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 9.758400367366564,
+    "four_pixel_disk_sensitivity_cm": [
+      9.003869057133485,
+      11.10645941168916
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            473.28530754792814,
+            290.46633036273147
+          ],
+          [
+            574.6710988107411,
+            303.8467983612274
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            968.211769386694,
+            279.9036372775291
+          ],
+          [
+            1099.2568591455174,
+            293.1195689733854
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            243.0708945173193,
+            296.89739560381145
+          ],
+          [
+            327.51869497638955,
+            310.4086920878645
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P5.O02.length_candidate",
+    "manual_dimension_id": "P5.O02.length",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        532,
+        416
+      ],
+      [
+        547,
+        378
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Small central green blade; basal lamina to terminal tip; side-margin chord. Ruler mapping conditional.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "basal margin candidate",
+        "source_pixel_xy": [
+          532,
+          416
+        ],
+        "candidate_count": 30,
+        "fused_point_index": 1682129,
+        "camera_id": 0,
+        "original_point_index": 7320571,
+        "xyz_m": [
+          1.3918066248980827,
+          0.019034181337773362,
+          0.6168103628105475
+        ],
+        "reprojection_pixel_xy": [
+          534.5764596197338,
+          415.1713585034005
+        ],
+        "source_click_distance_px": 2.7064350910386588,
+        "candidate_key": "P5_O02_length_candidate_0"
+      },
+      {
+        "role": "terminal margin candidate",
+        "source_pixel_xy": [
+          547,
+          378
+        ],
+        "candidate_count": 2,
+        "fused_point_index": 1586550,
+        "camera_id": 0,
+        "original_point_index": 6993915,
+        "xyz_m": [
+          1.4080149816617755,
+          -0.013889808003240021,
+          0.5875090771116421
+        ],
+        "reprojection_pixel_xy": [
+          547.3692196279488,
+          381.5262115272684
+        ],
+        "source_click_distance_px": 3.5454888053275857,
+        "candidate_key": "P5_O02_length_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 4.696025177440155,
+    "four_pixel_disk_sensitivity_cm": [
+      4.261090378463003,
+      5.008689122225971
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            534.5764596197338,
+            415.1713585034005
+          ],
+          [
+            547.3692196279488,
+            381.5262115272684
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            980.3677476807818,
+            404.67897564511213
+          ],
+          [
+            1014.8591637124196,
+            370.88825037669125
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            325.68879305176034,
+            419.98042296585834
+          ],
+          [
+            327.90129691969616,
+            386.8236982667631
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P5.O02.width_candidate",
+    "manual_dimension_id": "P5.O02.width",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        533,
+        404
+      ],
+      [
+        590,
+        411
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Small central green blade; basal lamina to terminal tip; side-margin chord. Ruler mapping conditional.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "first opposite margin candidate",
+        "source_pixel_xy": [
+          533,
+          404
+        ],
+        "candidate_count": 52,
+        "fused_point_index": 1649599,
+        "camera_id": 0,
+        "original_point_index": 7195261,
+        "xyz_m": [
+          1.3907540310660962,
+          0.0077165600018000114,
+          0.6126948641429208
+        ],
+        "reprojection_pixel_xy": [
+          532.7883394019,
+          403.56583696710567
+        ],
+        "source_click_distance_px": 0.4830090557329805,
+        "candidate_key": "P5_O02_width_candidate_0"
+      },
+      {
+        "role": "second opposite margin candidate",
+        "source_pixel_xy": [
+          590,
+          411
+        ],
+        "candidate_count": 113,
+        "fused_point_index": 1631511,
+        "camera_id": 0,
+        "original_point_index": 7123723,
+        "xyz_m": [
+          1.447112219004229,
+          0.01213741271386781,
+          0.5807997494688142
+        ],
+        "reprojection_pixel_xy": [
+          589.9274650651344,
+          410.8363989528691
+        ],
+        "source_click_distance_px": 0.1789598262132844,
+        "candidate_key": "P5_O02_width_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 6.490830167587274,
+    "four_pixel_disk_sensitivity_cm": [
+      5.546943010983704,
+      7.437049798125563
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            532.7883394019,
+            403.56583696710567
+          ],
+          [
+            589.9274650651344,
+            410.8363989528691
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            981.572004062003,
+            393.1172191313374
+          ],
+          [
+            1061.8926109058261,
+            399.7054636252954
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            322.55489640839846,
+            408.49124266327715
+          ],
+          [
+            367.01384890712444,
+            415.99994852973725
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P5.O03.length_candidate",
+    "manual_dimension_id": "P5.O03.length",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        603,
+        420
+      ],
+      [
+        708,
+        433
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Rust-brown damaged blade; lamina base to distal curled terminal margin; side lobes. Curl differs from held ruler pose.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "basal margin candidate",
+        "source_pixel_xy": [
+          603,
+          420
+        ],
+        "candidate_count": 166,
+        "fused_point_index": 1633411,
+        "camera_id": 0,
+        "original_point_index": 7127164,
+        "xyz_m": [
+          1.458429840340202,
+          0.02103228471697874,
+          0.5869729974702542
+        ],
+        "reprojection_pixel_xy": [
+          602.9123675154285,
+          420.1680782595114
+        ],
+        "source_click_distance_px": 0.1895514538919441,
+        "candidate_key": "P5_O03_length_candidate_0"
+      },
+      {
+        "role": "terminal margin candidate",
+        "source_pixel_xy": [
+          708,
+          433
+        ],
+        "candidate_count": 124,
+        "fused_point_index": 1692937,
+        "camera_id": 0,
+        "original_point_index": 7353727,
+        "xyz_m": [
+          1.5492552595950893,
+          0.028294053339933376,
+          0.5509623841285208
+        ],
+        "reprojection_pixel_xy": [
+          707.7807457015924,
+          432.5429068463945
+        ],
+        "source_click_distance_px": 0.506958182144476,
+        "candidate_key": "P5_O03_length_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 9.797323277103388,
+    "four_pixel_disk_sensitivity_cm": [
+      8.780198474804921,
+      10.46117890389455
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            602.9123675154285,
+            420.1680782595114
+          ],
+          [
+            707.7807457015924,
+            432.5429068463945
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            1069.6716705822023,
+            409.00577681910534
+          ],
+          [
+            1203.395413514785,
+            420.6565132493114
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            382.0732408390048,
+            425.24528785860207
+          ],
+          [
+            471.0607882481331,
+            438.1346761750158
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P5.O03.width_candidate",
+    "manual_dimension_id": "P5.O03.width",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        659,
+        363
+      ],
+      [
+        639,
+        496
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Rust-brown damaged blade; lamina base to distal curled terminal margin; side lobes. Curl differs from held ruler pose.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "first opposite margin candidate",
+        "source_pixel_xy": [
+          659,
+          363
+        ],
+        "candidate_count": 18,
+        "fused_point_index": 751635,
+        "camera_id": 0,
+        "original_point_index": 3987177,
+        "xyz_m": [
+          1.5078158243517223,
+          -0.029322928006840044,
+          0.5540021823101083
+        ],
+        "reprojection_pixel_xy": [
+          658.8623225043392,
+          364.67596235251864
+        ],
+        "source_click_distance_px": 1.6816078317703083,
+        "candidate_key": "P5_O03_width_candidate_0"
+      },
+      {
+        "role": "second opposite margin candidate",
+        "source_pixel_xy": [
+          639,
+          496
+        ],
+        "candidate_count": 43,
+        "fused_point_index": 1686591,
+        "camera_id": 0,
+        "original_point_index": 7326351,
+        "xyz_m": [
+          1.4913538296812154,
+          0.08488216001980013,
+          0.5627604697681702
+        ],
+        "reprojection_pixel_xy": [
+          639.4473204635825,
+          496.1492016884366
+        ],
+        "source_click_distance_px": 0.47154717788574807,
+        "candidate_key": "P5_O03_width_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 11.571735824370721,
+    "four_pixel_disk_sensitivity_cm": [
+      11.02187252611406,
+      11.729386192543291
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            658.8623225043392,
+            364.67596235251864
+          ],
+          [
+            639.4473204635825,
+            496.1492016884366
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            1152.0575037872686,
+            353.7760585850622
+          ],
+          [
+            1125.6348986788612,
+            483.62918062627784
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            424.0033090533797,
+            370.38805416780474
+          ],
+          [
+            408.68625668964285,
+            501.1492705266258
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P5.O04.length_candidate",
+    "manual_dimension_id": "P5.O04.length",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        529,
+        449
+      ],
+      [
+        548,
+        583
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Green broad blade; lowest basal side-lobe origin candidate to distal margin; terminal-lamina side margins, possibly different ruler section.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "basal margin candidate",
+        "source_pixel_xy": [
+          529,
+          449
+        ],
+        "candidate_count": 54,
+        "fused_point_index": 1127592,
+        "camera_id": 0,
+        "original_point_index": 5502349,
+        "xyz_m": [
+          1.3868349254354948,
+          0.05195817067878675,
+          0.6281279841465208
+        ],
+        "reprojection_pixel_xy": [
+          531.3053772051809,
+          448.1178881878267
+        ],
+        "source_click_distance_px": 2.4683770593941574,
+        "candidate_key": "P5_O04_length_candidate_0"
+      },
+      {
+        "role": "terminal margin candidate",
+        "source_pixel_xy": [
+          548,
+          583
+        ],
+        "candidate_count": 11,
+        "fused_point_index": 1662246,
+        "camera_id": 0,
+        "original_point_index": 7235351,
+        "xyz_m": [
+          1.4213903523315623,
+          0.13221039469750687,
+          0.4815708633416926
+        ],
+        "reprojection_pixel_xy": [
+          546.1366201810503,
+          581.6373767038898
+        ],
+        "source_click_distance_px": 2.308446793142824,
+        "candidate_key": "P5_O04_length_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 17.06267465742734,
+    "four_pixel_disk_sensitivity_cm": [
+      15.572615299560658,
+      17.448504758421617
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            531.3053772051809,
+            448.1178881878267
+          ],
+          [
+            546.1366201810503,
+            581.6373767038898
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            969.1648332073232,
+            437.5460395209051
+          ],
+          [
+            1115.7979326609134,
+            567.174394827703
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            326.208374678573,
+            452.61462992818383
+          ],
+          [
+            278.71614973896203,
+            586.637590003479
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P5.O04.width_candidate",
+    "manual_dimension_id": "P5.O04.width",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        493,
+        514
+      ],
+      [
+        596,
+        509
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Green broad blade; lowest basal side-lobe origin candidate to distal margin; terminal-lamina side margins, possibly different ruler section.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "first opposite margin candidate",
+        "source_pixel_xy": [
+          493,
+          514
+        ],
+        "candidate_count": 29,
+        "fused_point_index": 396977,
+        "camera_id": 0,
+        "original_point_index": 2311174,
+        "xyz_m": [
+          1.3720043683200422,
+          0.09105540802124013,
+          0.524179519524829
+        ],
+        "reprojection_pixel_xy": [
+          492.5099683547627,
+          513.0761524562473
+        ],
+        "source_click_distance_px": 1.0457654122373021,
+        "candidate_key": "P5_O04_width_candidate_0"
+      },
+      {
+        "role": "second opposite margin candidate",
+        "source_pixel_xy": [
+          596,
+          509
+        ],
+        "candidate_count": 8,
+        "fused_point_index": 725412,
+        "camera_id": 0,
+        "original_point_index": 3828115,
+        "xyz_m": [
+          1.455343216339482,
+          0.08179553601908011,
+          0.49862019946076946
+        ],
+        "reprojection_pixel_xy": [
+          593.1077804984769,
+          509.2583056272869
+        ],
+        "source_click_distance_px": 2.903731296466403,
+        "candidate_key": "P5_O04_width_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 8.766063917654657,
+    "four_pixel_disk_sensitivity_cm": [
+      8.393958917462301,
+      8.997227288906181
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            492.5099683547627,
+            513.0761524562473
+          ],
+          [
+            593.1077804984769,
+            509.2583056272869
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            1016.7638146953823,
+            500.2825728900326
+          ],
+          [
+            1142.7558542845395,
+            495.39273106191877
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            247.7462035851819,
+            517.8952608672026
+          ],
+          [
+            333.8081508624331,
+            514.4913927621832
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P5.O05.length_candidate",
+    "manual_dimension_id": "P5.O05.length",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        476,
+        407
+      ],
+      [
+        343,
+        437
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Left-facing green lobed blade; basal lamina to distal tip; opposite side lobes.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "basal margin candidate",
+        "source_pixel_xy": [
+          476,
+          407
+        ],
+        "candidate_count": 10,
+        "fused_point_index": 1711285,
+        "camera_id": 0,
+        "original_point_index": 7799774,
+        "xyz_m": [
+          1.350398000315002,
+          0.006473260834730255,
+          0.5499335094616141
+        ],
+        "reprojection_pixel_xy": [
+          473.7807638397876,
+          406.6700473523282
+        ],
+        "source_click_distance_px": 2.2436305142558406,
+        "candidate_key": "P5_O05_length_candidate_0"
+      },
+      {
+        "role": "terminal margin candidate",
+        "source_pixel_xy": [
+          343,
+          437
+        ],
+        "candidate_count": 24,
+        "fused_point_index": 1566755,
+        "camera_id": 0,
+        "original_point_index": 6955016,
+        "xyz_m": [
+          1.2814633976322554,
+          0.021091930671586698,
+          0.4530923178722978
+        ],
+        "reprojection_pixel_xy": [
+          342.4027578729099,
+          436.4966562573849
+        ],
+        "source_click_distance_px": 0.7810589488642136,
+        "candidate_key": "P5_O05_length_candidate_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 11.97660275005639,
+    "four_pixel_disk_sensitivity_cm": [
+      11.176026550935477,
+      11.977380288682319
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            473.7807638397876,
+            406.6700473523282
+          ],
+          [
+            342.4027578729099,
+            436.4966562573849
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            974.2182964709738,
+            395.23646020580395
+          ],
+          [
+            949.4819938973844,
+            423.14873798819906
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            241.00448048168215,
+            412.07210450241274
+          ],
+          [
+            60.49202698140027,
+            443.13346008186346
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P5.O05.width_candidate",
+    "manual_dimension_id": "P5.O05.width",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        430,
+        344
+      ],
+      [
+        448,
+        451
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Left-facing green lobed blade; basal lamina to distal tip; opposite side lobes.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "first opposite margin candidate",
+        "source_pixel_xy": [
+          430,
+          344
+        ],
+        "candidate_count": 9,
+        "fused_point_index": 1558592,
+        "camera_id": 0,
+        "original_point_index": 6937051,
+        "xyz_m": [
+          1.316445136307082,
+          -0.0437271733435334,
+          0.5378498064091075
+        ],
+        "reprojection_pixel_xy": [
+          429.8066782791476,
+          347.35710411139775
+        ],
+        "source_click_distance_px": 3.3626658029778964,
+        "candidate_key": "P5_O05_width_candidate_0"
+      },
+      {
+        "role": "second opposite margin candidate",
+        "source_pixel_xy": [
+          448,
+          451
+        ],
+        "candidate_count": 0,
+        "projected_candidates_before_two_view_depth_check": 26,
+        "rejection": "No candidate consistent with stereo depth in at least two of three inspected views."
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": null,
+    "status": "No current source-supported endpoint within 4px disk."
+  }
+]

@@ -42,7 +42,9 @@ jobs:
         run: pnpm run build
 
       - name: Verify published data, links and size
-        run: python3 scripts/check-spectral-publication.py
+        run: |
+          python3 scripts/check-spectral-publication.py
+          python3 scripts/check-dashboard.py --out
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

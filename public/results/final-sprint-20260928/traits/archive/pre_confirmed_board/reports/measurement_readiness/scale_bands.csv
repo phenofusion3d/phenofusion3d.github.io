@@ -1,0 +1,10 @@
+﻿chord_id,hypothetical_plus_minus_percent,baseline_conditional_cm,lower_scenario_cm,upper_scenario_cm,half_range_cm,interpretation
+P1.O03.observed_blade_extent,1,5.642877354066358,5.586448580525694,5.699306127607022,0.05642877354066358,"Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+P1.O03.observed_blade_extent,2,5.642877354066358,5.530019806985031,5.755734901147685,0.11285754708132716,"Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+P1.O03.observed_blade_extent,5,5.642877354066358,5.360733486363039,5.9250212217696765,0.2821438677033179,"Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+P3.O03.blade_chord,1,7.475255446013435,7.4005028915533,7.55000800047357,0.07475255446013435,"Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+P3.O03.blade_chord,2,7.475255446013435,7.325750337093166,7.624760554933704,0.1495051089202687,"Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+P3.O03.blade_chord,5,7.475255446013435,7.101492673712762,7.849018218314107,0.37376277230067173,"Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+P5.O04.terminal_lamina_chord,1,12.148629537473008,12.027143242098278,12.270115832847738,0.12148629537473007,"Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+P5.O04.terminal_lamina_chord,2,12.148629537473008,11.905656946723548,12.391602128222468,0.24297259074946015,"Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+P5.O04.terminal_lamina_chord,5,12.148629537473008,11.541198060599356,12.75606101434666,0.6074314768736504,"Uniform-scale scenario only; not a confidence interval, not an estimated scale error."

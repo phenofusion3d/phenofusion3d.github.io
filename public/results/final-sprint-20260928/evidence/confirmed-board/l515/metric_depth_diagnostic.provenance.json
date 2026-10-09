@@ -1,0 +1,17 @@
+{
+  "source_hashes": {
+    "generated\\research_l515_20261007\\calibration\\landmark_depth_check\\landmark_samples.npz": "7d506e4b079f16d59654e90f122d242ea6eda0b1754c2ff989bc656943d52713",
+    "generated\\research_confirmed_board_20261007\\l515\\metric_calibration.json": "6796eb61645738a90fde69eb13e5dc867c33a7e264f0c114121e541ade397c9c",
+    "generated\\research_confirmed_board_20261007\\l515\\metric_landmark_depth_diagnostics.json": "df1bd12401d123a4c3a88660e719afc54da08657592e1ae42d76547c6a8020f5",
+    "generated\\research_confirmed_board_20261007\\l515\\plot_metric_depth_diagnostic.py": "ad9a941ffd533f355995796fe9eaf3b201f51386a5a72a2680cbbdac76cc4c63"
+  },
+  "landmark_count": 3733,
+  "same_frozen_landmark_ids": true,
+  "residual_gate_or_trimming": false,
+  "point_interpolation": false,
+  "plots": {
+    "metric_depth_diagnostic.png": "59c7624ec59174e264a169d5ced2dbf5dac7779e840f1ae7bd16062263a537f6",
+    "metric_depth_diagnostic.pdf": "c6b0049539a775faea6fa087a42410041bbd1a780b1fae1d1df8d445786fbf46",
+    "metric_depth_diagnostic.svg": "35488b28ca50d8b63b987d3b773f8b8b8ea3d0668a37f63ba6b82cbf73edf5b9"
+  }
+}

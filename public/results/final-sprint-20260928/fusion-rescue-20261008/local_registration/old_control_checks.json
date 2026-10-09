@@ -1,0 +1,195 @@
+{
+  "status": "POST_FREEZE_EVALUATION",
+  "policy": "Old controls previously available but excluded from fitting; parameters and candidate files frozen before errors computed. These are not newly independent physical ground truth; blind new checks are evaluated by separate auditor.",
+  "rows": [
+    {
+      "candidate": "primary_mind_rgb",
+      "frozen_sha256": "852803748df27a7fb8b7c0600da15ac02ee34a4e85588418cae57b3e340dbf5f",
+      "old_checks": [
+        {
+          "id": "green_lower_0",
+          "predicted_native_rgb": [
+            1039.513427734375,
+            512.6715087890625
+          ],
+          "previous_observed_native_rgb": [
+            1045.8220138549805,
+            512.3255348205566
+          ],
+          "error_native_rgb_px": 6.318065908803077
+        },
+        {
+          "id": "green_lower_4",
+          "predicted_native_rgb": [
+            1064.894775390625,
+            513.270751953125
+          ],
+          "previous_observed_native_rgb": [
+            1072.1388320922852,
+            510.5
+          ],
+          "error_native_rgb_px": 7.755863838581323
+        }
+      ],
+      "passes_prior_3px_screen": false
+    },
+    {
+      "candidate": "sensitivity_stiff",
+      "frozen_sha256": "e23c2492b0124d0e1c193d9e439c33a10448c9c33675ebb12a571ebfcbc56dee",
+      "old_checks": [
+        {
+          "id": "green_lower_0",
+          "predicted_native_rgb": [
+            1039.3775634765625,
+            512.66259765625
+          ],
+          "previous_observed_native_rgb": [
+            1045.8220138549805,
+            512.3255348205566
+          ],
+          "error_native_rgb_px": 6.453259024330044
+        },
+        {
+          "id": "green_lower_4",
+          "predicted_native_rgb": [
+            1064.7955322265625,
+            513.2508544921875
+          ],
+          "previous_observed_native_rgb": [
+            1072.1388320922852,
+            510.5
+          ],
+          "error_native_rgb_px": 7.84163588513969
+        }
+      ],
+      "passes_prior_3px_screen": false
+    },
+    {
+      "candidate": "sensitivity_gray",
+      "frozen_sha256": "bdb2b6fb01b13128a6054bfd3512e39b380899194aca40d009da61f884ce8eab",
+      "old_checks": [
+        {
+          "id": "green_lower_0",
+          "predicted_native_rgb": [
+            1039.483154296875,
+            512.72021484375
+          ],
+          "previous_observed_native_rgb": [
+            1045.8220138549805,
+            512.3255348205566
+          ],
+          "error_native_rgb_px": 6.351134766173126
+        },
+        {
+          "id": "green_lower_4",
+          "predicted_native_rgb": [
+            1064.8485107421875,
+            513.3334350585938
+          ],
+          "previous_observed_native_rgb": [
+            1072.1388320922852,
+            510.5
+          ],
+          "error_native_rgb_px": 7.8215816571175605
+        }
+      ],
+      "passes_prior_3px_screen": false
+    },
+    {
+      "candidate": "pyramid_mind_rgb",
+      "frozen_sha256": "bf7c154297f696890b974b5a1aa9905fbabcd7127bd70f4a98354f97306a191a",
+      "old_checks": [
+        {
+          "id": "green_lower_0",
+          "predicted_native_rgb": [
+            1051.4100341796875,
+            511.5830383300781
+          ],
+          "previous_observed_native_rgb": [
+            1045.8220138549805,
+            512.3255348205566
+          ],
+          "error_native_rgb_px": 5.637133330666553
+        },
+        {
+          "id": "green_lower_4",
+          "predicted_native_rgb": [
+            1079.483154296875,
+            510.4283447265625
+          ],
+          "previous_observed_native_rgb": [
+            1072.1388320922852,
+            510.5
+          ],
+          "error_native_rgb_px": 7.34467175053064
+        }
+      ],
+      "passes_prior_3px_screen": false
+    },
+    {
+      "candidate": "mutual_information_affine",
+      "frozen_sha256": "c6286ca2c531eba1cd20d255a00b910f152e2089579d4274c23d758aca042b08",
+      "old_checks": [
+        {
+          "id": "green_lower_0",
+          "predicted_native_rgb": [
+            1059.404541015625,
+            509.88983154296875
+          ],
+          "previous_observed_native_rgb": [
+            1045.8220138549805,
+            512.3255348205566
+          ],
+          "error_native_rgb_px": 13.799191806989958
+        },
+        {
+          "id": "green_lower_4",
+          "predicted_native_rgb": [
+            1088.034423828125,
+            508.3811340332031
+          ],
+          "previous_observed_native_rgb": [
+            1072.1388320922852,
+            510.5
+          ],
+          "error_native_rgb_px": 16.036191244112487
+        }
+      ],
+      "passes_prior_3px_screen": false
+    },
+    {
+      "candidate": "pyramid_mind_foreground",
+      "frozen_sha256": "29f75f69c731295bb832a3b0bdb076f773d5986092b6442442cdf9fa9739ce81",
+      "old_checks": [
+        {
+          "id": "green_lower_0",
+          "predicted_native_rgb": [
+            1035.8160400390625,
+            509.8042297363281
+          ],
+          "previous_observed_native_rgb": [
+            1045.8220138549805,
+            512.3255348205566
+          ],
+          "error_native_rgb_px": 10.318744658755374
+        },
+        {
+          "id": "green_lower_4",
+          "predicted_native_rgb": [
+            1060.0396728515625,
+            508.0589599609375
+          ],
+          "previous_observed_native_rgb": [
+            1072.1388320922852,
+            510.5
+          ],
+          "error_native_rgb_px": 12.342946601386181
+        }
+      ],
+      "passes_prior_3px_screen": false
+    }
+  ],
+  "accepted_dense_3d_assignments": 0,
+  "geometry_modified": false,
+  "not_a_selection_rule": "Report every run; do not choose the lowest heldout error as a new validated model."
+}

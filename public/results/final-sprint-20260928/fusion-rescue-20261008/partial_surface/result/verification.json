@@ -1,0 +1,8 @@
+{
+  "source_hashes_stable": true,
+  "exact_native_spectra_reread": true,
+  "unchanged_geometry_exact_identity": true,
+  "unique_source_pixel_and_vertex_per_sensor": true,
+  "invalid_normalization_preserved": true,
+  "spatial_accuracy_certified": false
+}

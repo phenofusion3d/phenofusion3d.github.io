@@ -1,0 +1,163 @@
+{
+  "requested_size": [
+    850,
+    760
+  ],
+  "actual_size": [
+    850,
+    760
+  ],
+  "font": {
+    "family": "Segoe UI",
+    "point_size": 9,
+    "note": "Explicit Windows font loaded only for offscreen QA; app source unchanged."
+  },
+  "tab": "Research workspace",
+  "controls": [
+    {
+      "text": "Browse\u2026",
+      "x": 748,
+      "y": 152,
+      "width": 80,
+      "height": 27,
+      "visible": true,
+      "inside_dialog": true
+    },
+    {
+      "text": "Browse\u2026",
+      "x": 748,
+      "y": 185,
+      "width": 80,
+      "height": 27,
+      "visible": true,
+      "inside_dialog": true
+    },
+    {
+      "text": "Browse\u2026",
+      "x": 748,
+      "y": 218,
+      "width": 80,
+      "height": 27,
+      "visible": true,
+      "inside_dialog": true
+    },
+    {
+      "text": "Create workspace setup template",
+      "x": 22,
+      "y": 251,
+      "width": 806,
+      "height": 27,
+      "visible": true,
+      "inside_dialog": true
+    },
+    {
+      "text": "Build / check research workspace",
+      "x": 22,
+      "y": 284,
+      "width": 806,
+      "height": 27,
+      "visible": true,
+      "inside_dialog": true
+    },
+    {
+      "text": "Browse\u2026",
+      "x": 748,
+      "y": 317,
+      "width": 80,
+      "height": 27,
+      "visible": true,
+      "inside_dialog": true
+    },
+    {
+      "text": "Open saved workspace report in software",
+      "x": 22,
+      "y": 350,
+      "width": 806,
+      "height": 27,
+      "visible": true,
+      "inside_dialog": true
+    },
+    {
+      "text": "Browse\u2026",
+      "x": 748,
+      "y": 425,
+      "width": 80,
+      "height": 27,
+      "visible": true,
+      "inside_dialog": true
+    },
+    {
+      "text": "Extract measured spectra from reviewed regions",
+      "x": 22,
+      "y": 458,
+      "width": 806,
+      "height": 27,
+      "visible": true,
+      "inside_dialog": true
+    },
+    {
+      "text": "Build an offline report from saved research evidence. Source masks remain dataset-specific reviewed candidates. Metric units are conditional until verified; incomplete plant geometry does not establish physical plant height. Missing calibration evidence remains a recorded gap.",
+      "x": 22,
+      "y": 93,
+      "width": 806,
+      "height": 53,
+      "visible": true,
+      "inside_dialog": true
+    },
+    {
+      "text": "Workspace setup JSON",
+      "x": 22,
+      "y": 152,
+      "width": 136,
+      "height": 27,
+      "visible": true,
+      "inside_dialog": true
+    },
+    {
+      "text": "Reviewed landmark JSON (optional)",
+      "x": 22,
+      "y": 185,
+      "width": 209,
+      "height": 27,
+      "visible": true,
+      "inside_dialog": true
+    },
+    {
+      "text": "New results parent folder",
+      "x": 22,
+      "y": 218,
+      "width": 149,
+      "height": 27,
+      "visible": true,
+      "inside_dialog": true
+    },
+    {
+      "text": "Saved workspace report (index.html)",
+      "x": 22,
+      "y": 317,
+      "width": 213,
+      "height": 27,
+      "visible": true,
+      "inside_dialog": true
+    },
+    {
+      "text": "Measured spectra: use an explicit ENVI/reference/region setup. Tissue regions require review; unknown references stay provisional. This step does not map spectra onto 3D leaves.",
+      "x": 22,
+      "y": 383,
+      "width": 806,
+      "height": 36,
+      "visible": true,
+      "inside_dialog": true
+    },
+    {
+      "text": "Spectral extraction setup JSON",
+      "x": 22,
+      "y": 425,
+      "width": 180,
+      "height": 27,
+      "visible": true,
+      "inside_dialog": true
+    }
+  ],
+  "all_controls_visible": true
+}

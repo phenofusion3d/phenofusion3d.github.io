@@ -1,0 +1,154 @@
+{
+  "fx10": {
+    "red_pair": {
+      "observed_separation_px": 53.57799758911142,
+      "plane_predicted_separation_px": 44.688830087052565,
+      "difference_px": 8.889167502058854,
+      "height_difference_m": -0.00024053383038169507,
+      "required_height_coefficient_if_other_coefficients_fixed_px_per_m": -36955.99695042037,
+      "required_scan_plane_tilt_degrees": 87.99153626924732
+    },
+    "models": [
+      {
+        "id": "joint_translating_rational",
+        "plane_rms": 0.6326235867212372,
+        "exposed_elevated_fit_rms": 6.392011608718648,
+        "leave_one_exposed_errors": [
+          10.10348630858806,
+          14.47251582968941,
+          129.94494372119576
+        ],
+        "whole_sheet_rms": [
+          0.5276570739288243,
+          0.9177034387308757,
+          0.7338121780680712
+        ]
+      },
+      {
+        "id": "weak_optical_prior",
+        "plane_rms": 0.6325194176164511,
+        "exposed_elevated_fit_rms": 6.398025319074503,
+        "leave_one_exposed_errors": [
+          10.104401387364812,
+          14.49813958957464,
+          58.62515161999127
+        ],
+        "whole_sheet_rms": [
+          0.5220501414730603,
+          0.9195725120191243,
+          0.7361938056833921
+        ]
+      },
+      {
+        "id": "moderate_optical_prior",
+        "plane_rms": 0.6333027997998818,
+        "exposed_elevated_fit_rms": 6.411927252157379,
+        "leave_one_exposed_errors": [
+          10.112128558851126,
+          14.551637625357747,
+          43.48091819426079
+        ],
+        "whole_sheet_rms": [
+          0.5152603604589786,
+          0.9241697545893202,
+          0.7417859196312585
+        ]
+      },
+      {
+        "id": "near_nadir_optical_prior",
+        "plane_rms": 0.6402189497280926,
+        "exposed_elevated_fit_rms": 6.447221736747024,
+        "leave_one_exposed_errors": [
+          10.15581970647119,
+          14.656150490364551,
+          35.84188755773002
+        ],
+        "whole_sheet_rms": [
+          0.5160444667544739,
+          0.9352605404255885,
+          0.7546226502971065
+        ]
+      }
+    ],
+    "scan_red_pair_delta": [
+      -0.009087450409980213,
+      -0.003745534235911785
+    ]
+  },
+  "fx17": {
+    "red_pair": {
+      "observed_separation_px": 52.76188659667969,
+      "plane_predicted_separation_px": 44.773048695700254,
+      "difference_px": 7.9888379009794335,
+      "height_difference_m": -0.00024053383038169507,
+      "required_height_coefficient_if_other_coefficients_fixed_px_per_m": -33212.94924835402,
+      "required_scan_plane_tilt_degrees": 87.7657094599046
+    },
+    "models": [
+      {
+        "id": "joint_translating_rational",
+        "plane_rms": 0.33748652331048035,
+        "exposed_elevated_fit_rms": 5.669951481149262,
+        "leave_one_exposed_errors": [
+          7.233847671101156,
+          12.26349038354775,
+          89.44329629787006
+        ],
+        "whole_sheet_rms": [
+          0.5063916424524307,
+          0.4714779938999931,
+          0.5735123374746287
+        ]
+      },
+      {
+        "id": "weak_optical_prior",
+        "plane_rms": 0.33791126205656685,
+        "exposed_elevated_fit_rms": 5.665629366527925,
+        "leave_one_exposed_errors": [
+          7.2354552313384515,
+          12.240071377399357,
+          9.030166374864832
+        ],
+        "whole_sheet_rms": [
+          0.5090428564563163,
+          0.4708712515018725,
+          0.5702794901507922
+        ]
+      },
+      {
+        "id": "moderate_optical_prior",
+        "plane_rms": 0.3404574905715125,
+        "exposed_elevated_fit_rms": 5.660399762162695,
+        "leave_one_exposed_errors": [
+          7.25703847963868,
+          12.176513476247466,
+          13.597736182735124
+        ],
+        "whole_sheet_rms": [
+          0.5151528079042691,
+          0.47189639270297107,
+          0.5667490910969596
+        ]
+      },
+      {
+        "id": "near_nadir_optical_prior",
+        "plane_rms": 0.35271565724390475,
+        "exposed_elevated_fit_rms": 5.6621845938424515,
+        "leave_one_exposed_errors": [
+          7.374000083868725,
+          11.969871896473451,
+          20.635044545921964
+        ],
+        "whole_sheet_rms": [
+          0.5284859692957292,
+          0.47931797069778886,
+          0.5671601573878718
+        ]
+      }
+    ],
+    "scan_red_pair_delta": [
+      -0.01060289638436282,
+      -0.002828388053573938
+    ]
+  }
+}

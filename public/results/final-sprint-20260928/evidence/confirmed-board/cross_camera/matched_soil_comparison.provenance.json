@@ -1,0 +1,9 @@
+{
+  "source_sha256": "aa35186cf7c83b4a8c13516764d1c03eaadd00d68dbae4b7c5f8ae91951a8f6d",
+  "all_original_cohort_preserved": true,
+  "plots": {
+    "matched_soil_comparison.png": "23c38c0abff8759d7155f55cf9dad4260132e6fc48b54347d5b7a9f12185dff7",
+    "matched_soil_comparison.pdf": "5f325e51dfa656e527d56fc11e723c3c3d8944144054b3da75b5ec6e57fc6210",
+    "matched_soil_comparison.svg": "ff570e55671f8bbe0574f6c093b8a2d96b31ed61203ed14a6029199c32b1c36c"
+  }
+}

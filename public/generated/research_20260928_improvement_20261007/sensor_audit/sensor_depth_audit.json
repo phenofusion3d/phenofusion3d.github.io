@@ -1,0 +1,819 @@
+{
+  "status": "diagnostic_sensor_only_candidate_not_accepted_fusion",
+  "disclaimer": "Conditional depth scale 0.0001 m/count; assumed depth-to-colour alignment. Internal repeatability, not absolute accuracy or confirmed stems.",
+  "source_frames": [
+    58790,
+    170514,
+    328592,
+    433466,
+    696431,
+    799028,
+    952549,
+    1055904
+  ],
+  "exact_accepted_icp_pose_count": 32,
+  "input_hashes": {
+    "generated/research_20260928_processing_20261007/scene_rgb_v1/profile.json": "a47ffd49ecc2268887b3e55643f495a62e2dba006fd0fb6d1661c5dae07697b6",
+    "generated/research_20260928_processing_20261007/scene_supported_replay_v2/result/icp_diagnostics.json": "a92bfaf90a37d368854652b4442c6ca8e65a35af08de7d654bad77774f2c0a0e",
+    "generated/research_20260928_processing_20261007/calibration_transfer.json": "bd325cb89f1285d0aabb87cea82eb27601cc67759cbf50dc47ace8ffb2072a65",
+    "generated/research_20260928_processing_20261007/input_review/specimen_seed_review.json": "f75086152f54b9a074e49338d42ed201bd381f877bd166c901e803f4123d67d1",
+    "generated/research_20260928_processing_20261007/scene_rgb_v1/bundle/poses.json": "0fe0988eb8eb27460018747328aa7747e32828573397e7aba5ef790d48b84949",
+    "generated/research_20260928_improvement_20261007/sensor_audit/audit_sensor_support.py": "5c3ad70eaf1db14920805b9c3151bc01b1f9b5721411f856efdb78a469872c9e",
+    "processing/rgb_recovery/helpers.py": "63fc60d66844fe98569377e022961cbfaa259951a6eb14506c64536ea1469751",
+    "capture/realsense_capture.py": "899891601a569c1d921a5c9aed56e3d0fcaf9ce33e2baef8893390419e14eae2",
+    "generated/research_20260928_processing_20261007/scene_supported_replay_v2/result/plant_rgb_icp.ply": "712988be2bcb8f0b94dad77d3819dc3dc18b7058822da4eb9339cb5097e8abdd",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_58790.png": "c61f7aadbee8976f327d0948082fb57dc68157890fc958841f8aae33c5115da9",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_58790.png": "55de87684a518283d4e33a8f7016e99afaa478c5f32e974f048c9ed5ea4659d9",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_115793.png": "fad1f8766c15c7ac1df044f205057ac6282e0ece581c5ab50ab05d9f446be0cb",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_115793.png": "351347e5386e100429fe8c41df2986ae4cf02b3d171f62b59e434786cb934f3d",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_0.png": "1f8a90e2d537cb5f9c0554e372819bfdafd9113c444b3f7c171c29b27a1b4ac8",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_0.png": "046d2ccc3543e23df85e35e7c7d2b803efc9f44d4da8170e68bb03d4fa9a7f43",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_170514.png": "c93f35db6f8114ce61d84b78c18fc2e0f522ecf31f76e192b7932d24571136cf",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_170514.png": "3afa9f5c4e8067a8346cef202b69cbad5b99636e58c63a10079cf6aad8a12e7c",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_222952.png": "a0f66a009e2375982a88f9908144fe34d3d770404295486de68e808e338e67b4",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_222952.png": "86acdbb6cd75304aaba2186b9ad92ec43a9c917b41b0d7f37c51e7ec326240b0",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_275384.png": "15e8d6aff396e62b2b5c1d7606d1ca94e6f45afd0ae21aafc5023efd2db16cc8",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_275384.png": "64ac3a65d833307ac61bdbae656c5166615f905357589c672d724fe0ff283c39",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_328592.png": "382e98728cbf8f0eaa34eecad165f1a36be2b04296113be474de88f4567dd123",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_328592.png": "9d484a1dfccab558f10af4665370019cbb8dac27829102237606c8bef45ca82a",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_381031.png": "ab1ee755037398d5bd186ee5a2b25a2f15504dd210490c82099de282b2cdf354",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_381031.png": "8baf00edeb2e769119a0d9ff33dfc7bbcf4e34afe5c8a5cf9fbb69eb6093f015",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_433466.png": "77bd9706f31b341591b621c2681de9865f21fc96b5efeee66338c5d7151a1cb9",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_433466.png": "ab1f1c825ddb817e6c2f73bd67a257a13d9bb2408d5c063fdf8e42fd34a200b1",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_487431.png": "e5e01c7284b0ff2c4ff2f7e4cef59a957c550989eedd0a0cc1b171cecba54564",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_487431.png": "6835cf7728d8a78aae9ef4588081f9c45539aa6211136a6685f128d03b39754d",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_539871.png": "48091f5c455b7fc651a9028813a96361e7a98dc78a1f892789ccd7da531064c7",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_539871.png": "578573b8c67e233d2e4370c5f74d3af03543c677c02286e2a64680895530b2db",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_591548.png": "b8be2c2cac19ee33fd8cb238a01704f59f5dfb25c9d7eee33776ae22b652ee93",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_591548.png": "80d4d221ace879cbe5d6adb26a6d44675ca3a0cfe5c7bb313cadae2644781df9",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_696431.png": "97d9a0d4c8d6b24bf586239d9b83615c96d6b75c871ee1754545884f0620946d",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_696431.png": "7603e76bb6c28560acae1d560ed96c8e2fc2303c0050de0fb7f18dfc4dc56e34",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_747348.png": "6dbc8207af29236ba67ce02f6dcc1ac7728e40cc6cc03b1d062bbd0175bde06c",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_747348.png": "02e9a8c56802ec14c2913fc2b0b09d8ee0e5ba44958416529ca96348c6747871",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_643232.png": "de88426e1104440bd7ac52c70abec3334f7a921a0c895b0f26c60d1c51e11346",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_643232.png": "8f419f1758c991d6d4df0b63444f22e859be9c2a3c091642218dc7f46b130b0a",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_799028.png": "ca03571d38d83039b6fb0ad95b319b31426f8a68a57b497fda46735489561c68",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_799028.png": "d834049e95a55b41b6b75fd3953e3947a718e86a9a6523ae068075a26e80ea35",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_851470.png": "4c226d5b2fcfe382118329648f5999cb56a078279aaaa25c083109d3b1d7c651",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_851470.png": "0e8ab4daaaff25d7d79c524ffdd3ed5645999f97a8a22673b0ff6c4f348dab99",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_902387.png": "39d9e8831703b7aded621458483fd31b977664fd68bf96ed6606ced7cdbcf99e",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_902387.png": "541e76470cbedfd7f1fc8ce83e985978e908bf26aabf1f6fc4c32cf8acf247ec",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_952549.png": "c988284c22afc0a56a2db85c262b422eee3b00f1682ea2beebe0e1ecc66b4474",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_952549.png": "466ad524f3a02ab4399724bb1b5b9342e071f0ed0b956cb40282e7e833ae708f",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_1003470.png": "76da08b943df68c8a1e6a99e0cf5c5cb9b67122670e58218a60052e77c4cfc88",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_1003470.png": "c39d20ad5ea13ea879b4176d850572d41e5ae434db28b4165eece4d73f9fbc84",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_1055904.png": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_1055904.png": "263881bdb706021eb82599c86aae1937b7532043082ba926bdc49ab5351e0f63",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_1107591.png": "2f2db9d872d3d9d26d361e2b1ec2cdf31a65a5aec661b65c3b0f1de624d34116",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_1107591.png": "89b290274586e7035f5ea939fd2d328521b8aebbd8699577ea766882dbadacd8",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_1160788.png": "dac0e6dd6db53316695feeb1d6c19bce41d463ecb3bf8d221721d5d63b89b535",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_1160788.png": "eb947336bbf7f8cd6b4ff0c583d07fbb30f4212dc6e84bac362c2b6d9d711cf5",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_1215512.png": "9800d93a2e51a7ae7a2ef11bcd184545c7cfae563a5d8f9db52ff25a772bb3b0",
+    "data/main/test_plant_10-7/test_plant_20260928162354/depth_1215512.png": "0af01b8910de7085cb1fd64b7fb2803a0bab3c64628449b4825e8430095f7e7b"
+  },
+  "source_depth_scale_m_per_count": 0.0001,
+  "raw_scale_fitted": false,
+  "manual_dimensions_used": false,
+  "depth_image_handling": "Assume supplied raw depth already aligns to native colour grid; undistort both using saved colour K/dist, nearest neighbour for depth. Verified exact equality to cached sensor maps. Capture code supports align-to-colour but recording-specific confirmation is absent.",
+  "pose_handling": "Exact saved accepted RGB-derived ICP camera-to-reference transforms; not ground-truth externally measured poses. No interpolation or refit.",
+  "review_selection": "P1-P4 loose station bands by midpoint between previously reviewed soil seeds; x [0,1.22], abs(y)<=.4, at least .02 m above nearest displaced soil-patch height and upright z<=-.1. Not specimen segmentation, stem bases or trait heights.",
+  "acceptance": "At least 3 distinct raw-depth views including source, zero free-space conflicts among compared valid views, >=.06 m supported camera-position span. Nearest projected pixel, no neighbourhood match search.",
+  "adaptive_gate_m": "max(.003,.01*z_predicted_m**2): 3 mm near/within most ideal range, 10 mm at 1 m. Heuristic repeatability gate, not manufacturer accuracy. Also report twice-tolerance support counts without relaxing final acceptance.",
+  "free_space_conflict": "Another sensor view sees farther than predicted point + gate; a closer measurement is classed as occlusion, not contradiction. Zero/out-of-range samples are missing, not support.",
+  "colour_diagnostic": "At least 2 geometrically agreeing other views with L1 normalized RGB chromaticity distance <=.22. This heuristic cannot establish leaf identity or remove all colour bleeding.",
+  "voxel_representation": "Choose strongest original measured observation per 1.5-mm voxel; never average, interpolate, scale-fit, close holes or build triangles.",
+  "R_reference_to_upright": [
+    [
+      0.9997320091584629,
+      -0.022989551247924105,
+      0.002718528536188047
+    ],
+    [
+      -0.023027275267776585,
+      -0.9996256969203645,
+      0.014771954854300693
+    ],
+    [
+      0.0023779103694299077,
+      -0.014830596410614249,
+      -0.9998871931134934
+    ]
+  ],
+  "point_count": 62774,
+  "colour_supported_point_count": 62510,
+  "novel_colour_supported_gt6mm_previous_rgb": 9803,
+  "range_results": {
+    "ideal_range_source_depth_le_0p5m": {
+      "strict_voxel_representatives": 39580,
+      "strict_colour_supported": 39356,
+      "colour_supported_beyond6mm_previous_rgb": 6198,
+      "nearest_previous_rgb_m": {
+        "n": 39580,
+        "median": 0.0022967273261012638,
+        "p90": 0.00863436190782161,
+        "p99": 0.04244546485162547
+      },
+      "strict_colour_supported_nearest_previous_rgb_m": {
+        "n": 39356,
+        "median": 0.0022938335853531066,
+        "p90": 0.008586863943190703,
+        "p99": 0.04219961581214168
+      }
+    },
+    "outside_ideal_source_depth_gt_0p5m": {
+      "strict_voxel_representatives": 23194,
+      "strict_colour_supported": 23154,
+      "colour_supported_beyond6mm_previous_rgb": 3605,
+      "nearest_previous_rgb_m": {
+        "n": 23194,
+        "median": 0.0021934425149033616,
+        "p90": 0.007790618067530394,
+        "p99": 0.017985419111964263
+      },
+      "strict_colour_supported_nearest_previous_rgb_m": {
+        "n": 23154,
+        "median": 0.0021932768658090634,
+        "p90": 0.007781240932121575,
+        "p99": 0.017979651558721093
+      }
+    }
+  },
+  "baseline_rgb_cloud": "generated\\research_20260928_processing_20261007\\scene_supported_replay_v2\\result\\plant_rgb_icp.ply",
+  "baseline_crop_point_count": 805816,
+  "baseline_nearest_limit": "A >6-mm separation is a discrepancy candidate, not proof of true newly observed geometry. Baseline RGB geometry can itself be incomplete or wrong.",
+  "frames": [
+    {
+      "frame": 58790,
+      "neighbour_frame_ids": [
+        115793,
+        0,
+        170514,
+        222952,
+        275384
+      ],
+      "candidate_pixels_in_review_region": 31568,
+      "same_as_cached_undistorted_sensor": true,
+      "full_image_sensor_zero_fraction": 0.20277994791666668,
+      "full_image_valid_0p15_to_1m_fraction": 0.49256944444444445,
+      "strict_candidate_count": 3061,
+      "strict_with_two_colour_agreements": 3055,
+      "three_view_support_before_free_space_gate": 5918,
+      "three_view_support_double_tolerance_before_free_space_gate": 13042,
+      "free_space_conflicts_per_candidate": {
+        "n": 31568,
+        "median": 1.0,
+        "p90": 4.0,
+        "p99": 5.0
+      },
+      "missing_comparisons_per_candidate": {
+        "n": 31568,
+        "median": 1.0,
+        "p90": 2.0,
+        "p99": 4.0
+      },
+      "source_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 18124,
+        "median": 0.002750188112258911,
+        "p90": 0.01575625538825989,
+        "p99": 0.03440859436988831
+      },
+      "absolute_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 18124,
+        "median": 0.008110299706459045,
+        "p90": 0.06443805098533635,
+        "p99": 0.34164381444454195
+      },
+      "alignment_search_nominal": {
+        "dx": 0,
+        "dy": 0,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.4547334219465367,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.009713947772979736
+      },
+      "alignment_search_best": {
+        "dx": 0,
+        "dy": 0,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.4547334219465367,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.009713947772979736
+      },
+      "alignment_search_limit": "Exploratory RGB-stereo comparison; cannot distinguish alignment error from sensor noise, occlusion, motion or stereo error. No shift applied.",
+      "range_groups": {
+        "within_ideal_range_observed_0p15_to_0p5m": {
+          "candidates": 15414,
+          "strict": 1650,
+          "strict_colour": 1649,
+          "strict_not_in_source_stereo_mask": 1471,
+          "strict_disagrees_or_missing_source_stereo": 1018,
+          "candidate_support_count": {
+            "n": 15414,
+            "median": 1.0,
+            "p90": 3.0,
+            "p99": 5.0
+          }
+        },
+        "outside_ideal_0p5_to_1m": {
+          "candidates": 16154,
+          "strict": 1411,
+          "strict_colour": 1406,
+          "strict_not_in_source_stereo_mask": 42,
+          "strict_disagrees_or_missing_source_stereo": 765,
+          "candidate_support_count": {
+            "n": 16154,
+            "median": 1.0,
+            "p90": 4.0,
+            "p99": 5.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 170514,
+      "neighbour_frame_ids": [
+        222952,
+        115793,
+        275384,
+        58790,
+        328592,
+        0
+      ],
+      "candidate_pixels_in_review_region": 59141,
+      "same_as_cached_undistorted_sensor": true,
+      "full_image_sensor_zero_fraction": 0.24008138020833333,
+      "full_image_valid_0p15_to_1m_fraction": 0.4464203559027778,
+      "strict_candidate_count": 8003,
+      "strict_with_two_colour_agreements": 7917,
+      "three_view_support_before_free_space_gate": 16219,
+      "three_view_support_double_tolerance_before_free_space_gate": 31040,
+      "free_space_conflicts_per_candidate": {
+        "n": 59141,
+        "median": 1.0,
+        "p90": 3.0,
+        "p99": 5.0
+      },
+      "missing_comparisons_per_candidate": {
+        "n": 59141,
+        "median": 0.0,
+        "p90": 2.0,
+        "p99": 5.0
+      },
+      "source_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 15861,
+        "median": -0.00018358230590820312,
+        "p90": 0.017802834510803223,
+        "p99": 0.04852582216262816
+      },
+      "absolute_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 15861,
+        "median": 0.0112265944480896,
+        "p90": 0.09284943342208862,
+        "p99": 0.5285100817680358
+      },
+      "alignment_search_nominal": {
+        "dx": 0,
+        "dy": 0,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.5441114394259181,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.0069051384925842285
+      },
+      "alignment_search_best": {
+        "dx": 0,
+        "dy": 0,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.5441114394259181,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.0069051384925842285
+      },
+      "alignment_search_limit": "Exploratory RGB-stereo comparison; cannot distinguish alignment error from sensor noise, occlusion, motion or stereo error. No shift applied.",
+      "range_groups": {
+        "within_ideal_range_observed_0p15_to_0p5m": {
+          "candidates": 27792,
+          "strict": 5757,
+          "strict_colour": 5675,
+          "strict_not_in_source_stereo_mask": 5705,
+          "strict_disagrees_or_missing_source_stereo": 5596,
+          "candidate_support_count": {
+            "n": 27792,
+            "median": 2.0,
+            "p90": 4.0,
+            "p99": 5.0
+          }
+        },
+        "outside_ideal_0p5_to_1m": {
+          "candidates": 31349,
+          "strict": 2246,
+          "strict_colour": 2242,
+          "strict_not_in_source_stereo_mask": 1222,
+          "strict_disagrees_or_missing_source_stereo": 1575,
+          "candidate_support_count": {
+            "n": 31349,
+            "median": 1.0,
+            "p90": 3.0,
+            "p99": 6.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 328592,
+      "neighbour_frame_ids": [
+        381031,
+        275384,
+        433466,
+        222952,
+        170514,
+        487431
+      ],
+      "candidate_pixels_in_review_region": 104141,
+      "same_as_cached_undistorted_sensor": true,
+      "full_image_sensor_zero_fraction": 0.24243489583333333,
+      "full_image_valid_0p15_to_1m_fraction": 0.4305143229166667,
+      "strict_candidate_count": 19383,
+      "strict_with_two_colour_agreements": 19135,
+      "three_view_support_before_free_space_gate": 39433,
+      "three_view_support_double_tolerance_before_free_space_gate": 62881,
+      "free_space_conflicts_per_candidate": {
+        "n": 104141,
+        "median": 1.0,
+        "p90": 3.0,
+        "p99": 5.0
+      },
+      "missing_comparisons_per_candidate": {
+        "n": 104141,
+        "median": 0.0,
+        "p90": 2.0,
+        "p99": 5.0
+      },
+      "source_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 39759,
+        "median": -0.0012234151363372803,
+        "p90": 0.011966603994369513,
+        "p99": 0.08253829956054624
+      },
+      "absolute_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 39759,
+        "median": 0.0054801106452941895,
+        "p90": 0.03329864740371705,
+        "p99": 0.485276493430137
+      },
+      "alignment_search_nominal": {
+        "dx": 0,
+        "dy": 0,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.6331547431452884,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.005105242133140564
+      },
+      "alignment_search_best": {
+        "dx": 0,
+        "dy": 0,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.6331547431452884,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.005105242133140564
+      },
+      "alignment_search_limit": "Exploratory RGB-stereo comparison; cannot distinguish alignment error from sensor noise, occlusion, motion or stereo error. No shift applied.",
+      "range_groups": {
+        "within_ideal_range_observed_0p15_to_0p5m": {
+          "candidates": 73260,
+          "strict": 16985,
+          "strict_colour": 16749,
+          "strict_not_in_source_stereo_mask": 13570,
+          "strict_disagrees_or_missing_source_stereo": 12463,
+          "candidate_support_count": {
+            "n": 73260,
+            "median": 2.0,
+            "p90": 4.0,
+            "p99": 6.0
+          }
+        },
+        "outside_ideal_0p5_to_1m": {
+          "candidates": 30881,
+          "strict": 2398,
+          "strict_colour": 2386,
+          "strict_not_in_source_stereo_mask": 1007,
+          "strict_disagrees_or_missing_source_stereo": 1660,
+          "candidate_support_count": {
+            "n": 30881,
+            "median": 2.0,
+            "p90": 4.0,
+            "p99": 6.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 433466,
+      "neighbour_frame_ids": [
+        381031,
+        487431,
+        328592,
+        539871,
+        275384,
+        591548
+      ],
+      "candidate_pixels_in_review_region": 123788,
+      "same_as_cached_undistorted_sensor": true,
+      "full_image_sensor_zero_fraction": 0.25506727430555554,
+      "full_image_valid_0p15_to_1m_fraction": 0.42253363715277775,
+      "strict_candidate_count": 35456,
+      "strict_with_two_colour_agreements": 35352,
+      "three_view_support_before_free_space_gate": 60630,
+      "three_view_support_double_tolerance_before_free_space_gate": 83872,
+      "free_space_conflicts_per_candidate": {
+        "n": 123788,
+        "median": 1.0,
+        "p90": 3.0,
+        "p99": 5.0
+      },
+      "missing_comparisons_per_candidate": {
+        "n": 123788,
+        "median": 0.0,
+        "p90": 2.0,
+        "p99": 5.0
+      },
+      "source_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 64920,
+        "median": -0.0004131421446800232,
+        "p90": 0.007803578674793243,
+        "p99": 0.07582387313246716
+      },
+      "absolute_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 64920,
+        "median": 0.00294533371925354,
+        "p90": 0.019692571461200712,
+        "p99": 0.3320708665251724
+      },
+      "alignment_search_nominal": {
+        "dx": 0,
+        "dy": 0,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.7102247878946908,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.0036430656909942627
+      },
+      "alignment_search_best": {
+        "dx": 2,
+        "dy": 0,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.7139858304906849,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.0035045742988586426
+      },
+      "alignment_search_limit": "Exploratory RGB-stereo comparison; cannot distinguish alignment error from sensor noise, occlusion, motion or stereo error. No shift applied.",
+      "range_groups": {
+        "within_ideal_range_observed_0p15_to_0p5m": {
+          "candidates": 82005,
+          "strict": 30226,
+          "strict_colour": 30151,
+          "strict_not_in_source_stereo_mask": 14793,
+          "strict_disagrees_or_missing_source_stereo": 11326,
+          "candidate_support_count": {
+            "n": 82005,
+            "median": 3.0,
+            "p90": 5.0,
+            "p99": 6.0
+          }
+        },
+        "outside_ideal_0p5_to_1m": {
+          "candidates": 41783,
+          "strict": 5230,
+          "strict_colour": 5201,
+          "strict_not_in_source_stereo_mask": 2667,
+          "strict_disagrees_or_missing_source_stereo": 3208,
+          "candidate_support_count": {
+            "n": 41783,
+            "median": 2.0,
+            "p90": 4.0,
+            "p99": 6.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 696431,
+      "neighbour_frame_ids": [
+        747348,
+        643232,
+        799028,
+        591548,
+        851470,
+        539871
+      ],
+      "candidate_pixels_in_review_region": 179299,
+      "same_as_cached_undistorted_sensor": true,
+      "full_image_sensor_zero_fraction": 0.23687934027777777,
+      "full_image_valid_0p15_to_1m_fraction": 0.45918511284722224,
+      "strict_candidate_count": 58570,
+      "strict_with_two_colour_agreements": 58492,
+      "three_view_support_before_free_space_gate": 102272,
+      "three_view_support_double_tolerance_before_free_space_gate": 130823,
+      "free_space_conflicts_per_candidate": {
+        "n": 179299,
+        "median": 1.0,
+        "p90": 3.0,
+        "p99": 5.0
+      },
+      "missing_comparisons_per_candidate": {
+        "n": 179299,
+        "median": 0.0,
+        "p90": 2.0,
+        "p99": 4.0
+      },
+      "source_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 109804,
+        "median": -0.0019604265689849854,
+        "p90": 0.005913691222667693,
+        "p99": 0.06564968168735505
+      },
+      "absolute_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 109804,
+        "median": 0.003545328974723816,
+        "p90": 0.015223479270935055,
+        "p99": 0.38766112565994265
+      },
+      "alignment_search_nominal": {
+        "dx": 0,
+        "dy": 0,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.8026802218114603,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.003657728433609009
+      },
+      "alignment_search_best": {
+        "dx": 0,
+        "dy": 2,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.8078294164246105,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.0036995410919189453
+      },
+      "alignment_search_limit": "Exploratory RGB-stereo comparison; cannot distinguish alignment error from sensor noise, occlusion, motion or stereo error. No shift applied.",
+      "range_groups": {
+        "within_ideal_range_observed_0p15_to_0p5m": {
+          "candidates": 123386,
+          "strict": 48181,
+          "strict_colour": 48106,
+          "strict_not_in_source_stereo_mask": 23700,
+          "strict_disagrees_or_missing_source_stereo": 18092,
+          "candidate_support_count": {
+            "n": 123386,
+            "median": 3.0,
+            "p90": 5.0,
+            "p99": 7.0
+          }
+        },
+        "outside_ideal_0p5_to_1m": {
+          "candidates": 55913,
+          "strict": 10389,
+          "strict_colour": 10386,
+          "strict_not_in_source_stereo_mask": 2124,
+          "strict_disagrees_or_missing_source_stereo": 3178,
+          "candidate_support_count": {
+            "n": 55913,
+            "median": 2.0,
+            "p90": 5.0,
+            "p99": 6.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 799028,
+      "neighbour_frame_ids": [
+        747348,
+        851470,
+        696431,
+        902387,
+        952549,
+        643232
+      ],
+      "candidate_pixels_in_review_region": 181181,
+      "same_as_cached_undistorted_sensor": true,
+      "full_image_sensor_zero_fraction": 0.24783745659722223,
+      "full_image_valid_0p15_to_1m_fraction": 0.4598752170138889,
+      "strict_candidate_count": 49758,
+      "strict_with_two_colour_agreements": 49540,
+      "three_view_support_before_free_space_gate": 87076,
+      "three_view_support_double_tolerance_before_free_space_gate": 120964,
+      "free_space_conflicts_per_candidate": {
+        "n": 181181,
+        "median": 1.0,
+        "p90": 3.0,
+        "p99": 5.0
+      },
+      "missing_comparisons_per_candidate": {
+        "n": 181181,
+        "median": 0.0,
+        "p90": 2.0,
+        "p99": 5.0
+      },
+      "source_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 88928,
+        "median": -0.0024604499340057373,
+        "p90": 0.004810893535614015,
+        "p99": 0.05523570746183375
+      },
+      "absolute_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 88928,
+        "median": 0.003944098949432373,
+        "p90": 0.015260809659957894,
+        "p99": 0.1750755819678298
+      },
+      "alignment_search_nominal": {
+        "dx": 0,
+        "dy": 0,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.7171199286669638,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.004566937685012817
+      },
+      "alignment_search_best": {
+        "dx": 0,
+        "dy": 2,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.7203150542428295,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.004689514636993408
+      },
+      "alignment_search_limit": "Exploratory RGB-stereo comparison; cannot distinguish alignment error from sensor noise, occlusion, motion or stereo error. No shift applied.",
+      "range_groups": {
+        "within_ideal_range_observed_0p15_to_0p5m": {
+          "candidates": 129299,
+          "strict": 41181,
+          "strict_colour": 40968,
+          "strict_not_in_source_stereo_mask": 23833,
+          "strict_disagrees_or_missing_source_stereo": 21258,
+          "candidate_support_count": {
+            "n": 129299,
+            "median": 2.0,
+            "p90": 6.0,
+            "p99": 7.0
+          }
+        },
+        "outside_ideal_0p5_to_1m": {
+          "candidates": 51882,
+          "strict": 8577,
+          "strict_colour": 8572,
+          "strict_not_in_source_stereo_mask": 1436,
+          "strict_disagrees_or_missing_source_stereo": 2498,
+          "candidate_support_count": {
+            "n": 51882,
+            "median": 2.0,
+            "p90": 5.0,
+            "p99": 6.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 952549,
+      "neighbour_frame_ids": [
+        902387,
+        1003470,
+        851470,
+        1055904,
+        799028,
+        1107591
+      ],
+      "candidate_pixels_in_review_region": 140733,
+      "same_as_cached_undistorted_sensor": true,
+      "full_image_sensor_zero_fraction": 0.28037543402777776,
+      "full_image_valid_0p15_to_1m_fraction": 0.4462489149305556,
+      "strict_candidate_count": 41200,
+      "strict_with_two_colour_agreements": 40711,
+      "three_view_support_before_free_space_gate": 79314,
+      "three_view_support_double_tolerance_before_free_space_gate": 104782,
+      "free_space_conflicts_per_candidate": {
+        "n": 140733,
+        "median": 1.0,
+        "p90": 3.0,
+        "p99": 5.0
+      },
+      "missing_comparisons_per_candidate": {
+        "n": 140733,
+        "median": 1.0,
+        "p90": 3.0,
+        "p99": 5.0
+      },
+      "source_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 86752,
+        "median": -0.002589315176010132,
+        "p90": 0.00355968326330185,
+        "p99": 0.0941120922565463
+      },
+      "absolute_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 86752,
+        "median": 0.0036938264966011047,
+        "p90": 0.014992135763168369,
+        "p99": 0.4306888872385029
+      },
+      "alignment_search_nominal": {
+        "dx": 0,
+        "dy": 0,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.7351247600767754,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.003760397434234619
+      },
+      "alignment_search_best": {
+        "dx": 0,
+        "dy": 0,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.7351247600767754,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.003760397434234619
+      },
+      "alignment_search_limit": "Exploratory RGB-stereo comparison; cannot distinguish alignment error from sensor noise, occlusion, motion or stereo error. No shift applied.",
+      "range_groups": {
+        "within_ideal_range_observed_0p15_to_0p5m": {
+          "candidates": 103439,
+          "strict": 35183,
+          "strict_colour": 34694,
+          "strict_not_in_source_stereo_mask": 17792,
+          "strict_disagrees_or_missing_source_stereo": 14113,
+          "candidate_support_count": {
+            "n": 103439,
+            "median": 3.0,
+            "p90": 5.0,
+            "p99": 7.0
+          }
+        },
+        "outside_ideal_0p5_to_1m": {
+          "candidates": 37294,
+          "strict": 6017,
+          "strict_colour": 6017,
+          "strict_not_in_source_stereo_mask": 949,
+          "strict_disagrees_or_missing_source_stereo": 2001,
+          "candidate_support_count": {
+            "n": 37294,
+            "median": 2.0,
+            "p90": 4.0,
+            "p99": 6.0
+          }
+        }
+      }
+    },
+    {
+      "frame": 1055904,
+      "neighbour_frame_ids": [
+        1107591,
+        1003470,
+        952549,
+        1160788,
+        902387,
+        1215512
+      ],
+      "candidate_pixels_in_review_region": 106895,
+      "same_as_cached_undistorted_sensor": true,
+      "full_image_sensor_zero_fraction": 0.28933919270833336,
+      "full_image_valid_0p15_to_1m_fraction": 0.41661024305555555,
+      "strict_candidate_count": 30454,
+      "strict_with_two_colour_agreements": 30393,
+      "three_view_support_before_free_space_gate": 53401,
+      "three_view_support_double_tolerance_before_free_space_gate": 72338,
+      "free_space_conflicts_per_candidate": {
+        "n": 106895,
+        "median": 1.0,
+        "p90": 3.0,
+        "p99": 5.0
+      },
+      "missing_comparisons_per_candidate": {
+        "n": 106895,
+        "median": 1.0,
+        "p90": 3.0,
+        "p99": 5.0
+      },
+      "source_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 63901,
+        "median": -0.003769993782043457,
+        "p90": 0.0031637251377105713,
+        "p99": 0.104300856590271
+      },
+      "absolute_sensor_minus_stereo_m_on_finite_pairs": {
+        "n": 63901,
+        "median": 0.004864335060119629,
+        "p90": 0.020480573177337646,
+        "p99": 0.474446177482605
+      },
+      "alignment_search_nominal": {
+        "dx": 0,
+        "dy": 0,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.7259204165117144,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.003731772303581238
+      },
+      "alignment_search_best": {
+        "dx": 2,
+        "dy": 0,
+        "within10mm_fraction_of_fixed_stereo_samples": 0.7304574191149126,
+        "median_absolute_difference_m_where_sensor_nonzero": 0.0036153793334960938
+      },
+      "alignment_search_limit": "Exploratory RGB-stereo comparison; cannot distinguish alignment error from sensor noise, occlusion, motion or stereo error. No shift applied.",
+      "range_groups": {
+        "within_ideal_range_observed_0p15_to_0p5m": {
+          "candidates": 73133,
+          "strict": 25821,
+          "strict_colour": 25760,
+          "strict_not_in_source_stereo_mask": 12156,
+          "strict_disagrees_or_missing_source_stereo": 10113,
+          "candidate_support_count": {
+            "n": 73133,
+            "median": 3.0,
+            "p90": 6.0,
+            "p99": 7.0
+          }
+        },
+        "outside_ideal_0p5_to_1m": {
+          "candidates": 33762,
+          "strict": 4633,
+          "strict_colour": 4633,
+          "strict_not_in_source_stereo_mask": 1257,
+          "strict_disagrees_or_missing_source_stereo": 1931,
+          "candidate_support_count": {
+            "n": 33762,
+            "median": 2.0,
+            "p90": 4.0,
+            "p99": 6.0
+          }
+        }
+      }
+    }
+  ],
+  "application_changed": false,
+  "blended_into_rgb": false
+}

@@ -1,0 +1,102 @@
+<script src="/research-assets.js"></script><!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Research point and endpoint review</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#061621;color:#eef6f7;font:15px system-ui,sans-serif}header{padding:24px 30px 16px;border-bottom:1px solid #28404d;display:flex;justify-content:space-between;gap:20px;align-items:center}h1{font-size:25px;margin:3px 0 6px;font-weight:580}.eyebrow{color:#8fb9ba;font-size:11px;text-transform:uppercase;letter-spacing:2px}.sub{color:#9cbbc8;font-size:13px}main{display:grid;grid-template-columns:minmax(0,1fr) 285px;height:calc(100vh - 113px);min-height:620px}.stage{position:relative;min-width:0;background:radial-gradient(ellipse at 45% 25%,#12425b,#04141d 80%)}canvas{width:100%;height:100%;display:block;touch-action:none}.hint{position:absolute;left:24px;bottom:18px;color:#90aeba;font-size:12px;pointer-events:none}.badge{position:absolute;left:24px;top:20px;color:#a8cbc6;font-size:12px;pointer-events:none}aside{padding:22px;background:#0a1d29;border-left:1px solid #29404b;overflow-y:auto}.label{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:#96b3be;margin:22px 0 10px}.label:first-child{margin-top:0}button,select,a.download{border:1px solid #355464;background:#102b3c;color:#e7f3f5;border-radius:6px;padding:9px 11px;font:inherit;cursor:pointer}button:hover,a.download:hover{background:#1c4051}select{width:100%;font-size:13px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}.grid button{font-size:12px}input[type=range]{width:100%;accent-color:#69ceaf}.row{display:flex;justify-content:space-between;color:#b4cbd5;font-size:12px;margin:10px 0 3px}p{font-size:12px;line-height:1.6;color:#a8c1cd}.stat{font-size:24px;color:#e0f2ed;font-variant-numeric:tabular-nums}.source{display:block;width:100%;border-radius:5px;border:1px solid #365262;cursor:zoom-in}.download{display:block;text-align:center;text-decoration:none;font-size:12px!important;margin:8px 0}.check{display:flex;align-items:center;gap:8px;font-size:12px;color:#b6cbd3;margin-top:15px}dialog{padding:10px;background:#092333;border:1px solid #507381;max-width:95vw}dialog img{max-width:90vw;max-height:80vh}dialog::backdrop{background:#000b}#error{padding:30px;color:#ffd0c6;display:none}footer{font-size:11px;color:#8da9b5;margin-top:20px;line-height:1.5}@media(max-width:750px){header{padding:16px}h1{font-size:21px}main{display:block;height:auto;min-height:0}.stage{height:62vh;min-height:400px}aside{border-left:0;border-top:1px solid #355464}.source{max-width:350px}.grid{grid-template-columns:repeat(3,1fr)}}
+</style>
+<header><div><div class="eyebrow">PhenoFusion3D · offline reconstruction</div><h1>Point and endpoint review</h1><div class="sub">Double-click a visible point to mark an endpoint · all measurements remain candidates</div></div><button id="reset">Reset view</button></header>
+<main><section class="stage"><canvas id="view" aria-label="Interactive 3D plant point cloud"></canvas><div id="error"></div><div class="badge" id="badge"></div><div class="hint">Drag to rotate · scroll to zoom · Shift + drag to pan</div></section><aside>
+<div class="label">Result</div><select id="model"><option value="0">Plant 1 — cleaned observed tissue</option><option value="1">Plant 2 — cleaned observed tissue</option><option value="2">Plant 3 — cleaned observed tissue</option><option value="3">Plant 4 — cleaned observed tissue</option><option value="4">Plant 5 — cleaned observed tissue</option><option value="5">Original fused scene — base and organ context</option></select>
+<div class="label">Viewpoint</div><div class="grid"><button data-y="0" data-e="25">Front</button><button data-y="180" data-e="25">Back</button><button data-y="90" data-e="25">Left</button><button data-y="270" data-e="25">Right</button><button data-y="0" data-e="90">Top</button><button data-y="180" data-e="-35">Below</button></div>
+<label class="check"><input id="spin" type="checkbox">Rotate automatically</label>
+<div class="label">Display</div><label class="row" for="size"><span>Point size</span><span id="sizeval">2.0</span></label><input id="size" type="range" min="1" max="5" value="2" step=".1">
+<label class="row" for="light"><span>Brightness</span><span id="lightval">1.35×</span></label><input id="light" type="range" min=".7" max="2.2" value="1.35" step=".05">
+<div class="label">Reconstruction</div><div id="count" class="stat"></div><p id="details"></p>
+<div class="label">Mark a measurement</div><p>Use the original scene for a base missing from a cleaned cloud. Source-visible tissue and specimen identity must be reviewed. Point picks do not confirm physical scale.</p>
+<label for="target-plant">Measured specimen</label><select id="target-plant"><option>P1</option><option>P2</option><option>P3</option><option>P4</option><option>P5</option></select>
+<label for="quantity">Quantity</label><select id="quantity"><option value="observed_chord">Observed tissue distance (may be partial)</option><option value="height">Height: base → highest tip</option><option value="leaf_chord_length">Leaf: blade base → tip (straight)</option><option value="leaf_section_width">Leaf: two edges of one width section</option></select>
+<div class="grid" style="margin-top:8px"><button id="mark-first">Mark first point</button><button id="mark-second">Mark second point</button></div>
+<p id="pick-status" role="status">Choose an endpoint, then double-click a visible source point.</p>
+<button id="save-measurement">Keep endpoint pair</button><p id="pair-count">0 pairs queued</p>
+<button id="download-annotations">Download endpoint JSON</button>
+<p>Import this JSON in the Research workspace tab to calculate candidate values. Marked pairs are unreviewed by default. Straight blade chords and photographed width sections are distinct from curved midrib length and maximum leaf width.</p>
+<a class="download" id="cloud-download" href="../../../research_plant_cleanup_20261007/v1/result/P1_reference.ply" download>Open original source cloud</a><a class="download" href="index.html">Back to research report</a>
+<footer>Source point indices and hashes identify exact existing vertices; the preview may sample points for speed. No interpolated point is saved. Select missing bases only where actually present in a source cloud. Closer visual fitting and brightness affect display only.</footer>
+</aside></main>
+<script>const DATA=[];</script>
+<script src="research_cloud_0.js"></script>
+<script src="/generated/research_saved_20261007/v1/project/generated/research_followthrough_20261007/workspace_v2/result/research_cloud_1.js"></script>
+<script src="/generated/research_saved_20261007/v1/project/generated/research_followthrough_20261007/workspace_v2/result/research_cloud_2.js"></script>
+<script src="/generated/research_saved_20261007/v1/project/generated/research_followthrough_20261007/workspace_v2/result/research_cloud_3.js"></script>
+<script src="/generated/research_saved_20261007/v1/project/generated/research_followthrough_20261007/workspace_v2/result/research_cloud_4.js"></script>
+<script src="/generated/research_saved_20261007/v1/project/generated/research_followthrough_20261007/workspace_v2/result/research_cloud_5.js"></script>
+<script>
+const SUMMARY={};
+const canvas=document.getElementById('view'),gl=canvas.getContext('webgl',{antialias:true,alpha:true,preserveDrawingBuffer:true});
+if(!gl){document.getElementById('error').style.display='block';document.getElementById('error').textContent='WebGL is unavailable in this browser. The downloadable PLY remains available.';throw Error('WebGL unavailable')}
+function shader(type,source){const s=gl.createShader(type);gl.shaderSource(s,source);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(s));return s}
+const program=gl.createProgram();gl.attachShader(program,shader(gl.VERTEX_SHADER,`attribute vec3 p;attribute vec3 c;uniform vec3 right;uniform vec3 up;uniform vec3 toward;uniform vec2 scale;uniform vec2 pan;uniform float size;uniform float brightness;varying vec3 color;void main(){gl_Position=vec4(dot(p,right)*scale.x+pan.x,dot(p,up)*scale.y+pan.y,-dot(p,toward)*.7,1.);gl_PointSize=size;color=clamp(c*brightness,0.,1.);}`));
+gl.attachShader(program,shader(gl.FRAGMENT_SHADER,`precision mediump float;varying vec3 color;void main(){if(length(gl_PointCoord-.5)>.5)discard;gl_FragColor=vec4(color,1.);}`));gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(program));gl.useProgram(program);
+const loc={};for(const n of ['right','up','toward','scale','pan','size','brightness'])loc[n]=gl.getUniformLocation(program,n);
+function bytes(s){const t=atob(s),b=new Uint8Array(t.length);for(let i=0;i<t.length;i++)b[i]=t.charCodeAt(i);return b}
+const buffers=DATA.map(d=>{const p=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,p);gl.bufferData(gl.ARRAY_BUFFER,bytes(d.xyz),gl.STATIC_DRAW);const c=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,c);gl.bufferData(gl.ARRAY_BUFFER,bytes(d.rgb),gl.STATIC_DRAW);return {p,c,count:d.count}});
+const pa=gl.getAttribLocation(program,'p'),ca=gl.getAttribLocation(program,'c');gl.enableVertexAttribArray(pa);gl.enableVertexAttribArray(ca);gl.enable(gl.DEPTH_TEST);gl.clearColor(0,0,0,0);
+let yaw=0,pitch=25*Math.PI/180,zoom=1.1,pan=[0,0],current=0,last=0;
+function reset(){yaw=0;pitch=25*Math.PI/180;zoom=1.1;pan=[0,0]}
+function info(){const d=DATA[current];
+document.getElementById('count').textContent=d.original_count.toLocaleString()+' source points';
+document.getElementById('badge').textContent=d.label;
+document.getElementById('details').textContent=(d.context?'Original scene context. ':'Reviewed specimen candidate. ')+d.count.toLocaleString()+' displayed points; source index stride '+d.display_stride+'. Bases/tips may be absent. Cloud bounds do not define anatomical height.';
+document.getElementById('cloud-download').href=d.download;}
+document.getElementById('model').onchange=e=>{current=Number(e.target.value);info()};document.getElementById('reset').onclick=reset;
+for(const b of document.querySelectorAll('[data-y]'))b.onclick=()=>{yaw=Number(b.dataset.y)*Math.PI/180;pitch=Number(b.dataset.e)*Math.PI/180;pan=[0,0]};
+for(const id of ['size','light'])document.getElementById(id).oninput=e=>document.getElementById(id+'val').textContent=Number(e.target.value).toFixed(id==='size'?1:2)+(id==='light'?'×':'');
+let drag=null;canvas.onpointerdown=e=>{canvas.setPointerCapture(e.pointerId);drag=[e.clientX,e.clientY]};canvas.onpointerup=()=>drag=null;canvas.onpointercancel=()=>drag=null;canvas.onpointermove=e=>{if(!drag)return;const dx=e.clientX-drag[0],dy=e.clientY-drag[1];if(e.shiftKey){pan[0]+=dx/canvas.clientWidth*2;pan[1]-=dy/canvas.clientHeight*2}else{yaw-=dx*.007;pitch=Math.max(-Math.PI/2,Math.min(Math.PI/2,pitch+dy*.007))}drag=[e.clientX,e.clientY]};canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(.25,Math.min(8,zoom*Math.exp(-e.deltaY*.001)))},{passive:false});
+
+function draw(time){const ratio=Math.min(devicePixelRatio||1,2),w=Math.round(canvas.clientWidth*ratio),h=Math.round(canvas.clientHeight*ratio);if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;gl.viewport(0,0,w,h)}if(document.getElementById('spin').checked&&!drag)yaw+=(time-last)*.00015;last=time;
+const a=yaw,b=pitch,r=[Math.cos(a),Math.sin(a),0],u=[-Math.sin(a)*Math.sin(b),Math.cos(a)*Math.sin(b),Math.cos(b)],t=[Math.sin(a)*Math.cos(b),-Math.cos(a)*Math.cos(b),Math.sin(b)];
+gl.uniform3fv(loc.right,r);gl.uniform3fv(loc.up,u);gl.uniform3fv(loc.toward,t);const span=Math.max(DATA[0].span,.4)*1.22;gl.uniform2f(loc.scale,2*zoom/span*Math.min(h/w,1),2*zoom/span*Math.min(w/h,1));gl.uniform2fv(loc.pan,pan);gl.uniform1f(loc.size,Number(document.getElementById('size').value)*ratio);gl.uniform1f(loc.brightness,Number(document.getElementById('light').value));
+const d=buffers[current];gl.bindBuffer(gl.ARRAY_BUFFER,d.p);gl.vertexAttribPointer(pa,3,gl.FLOAT,false,0,0);gl.bindBuffer(gl.ARRAY_BUFFER,d.c);gl.vertexAttribPointer(ca,3,gl.UNSIGNED_BYTE,true,0,0);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);gl.drawArrays(gl.POINTS,0,d.count);requestAnimationFrame(draw)}info();requestAnimationFrame(draw);
+
+const cpu=DATA.map(d=>({xyz:new Float32Array(bytes(d.xyz).buffer),ids:new Uint32Array(bytes(d.source_indices).buffer)}));
+const definitions={observed_chord:'straight_distance_between_observed_points',height:'vertical_stem_base_to_highest_tip',leaf_chord_length:'straight_blade_base_to_tip_chord',leaf_section_width:'straight_width_at_identified_section'};
+let activeEndpoint=null,endpoints=[null,null],queued=[];
+const pickStatus=document.getElementById('pick-status');
+document.getElementById('mark-first').onclick=()=>{activeEndpoint=0;pickStatus.textContent='Double-click the first endpoint on visible tissue.'};
+document.getElementById('mark-second').onclick=()=>{activeEndpoint=1;pickStatus.textContent='Double-click the second endpoint on visible tissue.'};
+function clearPair(){endpoints=[null,null];activeEndpoint=null;pickStatus.textContent='Endpoint pair cleared for the new specimen or quantity.'}
+document.getElementById('target-plant').onchange=clearPair;document.getElementById('quantity').onchange=clearPair;
+canvas.addEventListener('dblclick',e=>{
+ if(activeEndpoint===null)return;
+ const rect=canvas.getBoundingClientRect(),w=rect.width,h=rect.height,mx=e.clientX-rect.left,my=e.clientY-rect.top;
+ const r=[Math.cos(yaw),Math.sin(yaw),0],u=[-Math.sin(yaw)*Math.sin(pitch),Math.cos(yaw)*Math.sin(pitch),Math.cos(pitch)],t=[Math.sin(yaw)*Math.cos(pitch),-Math.cos(yaw)*Math.cos(pitch),Math.sin(pitch)];
+ const sx=2*zoom/1.22*Math.min(h/w,1),sy=2*zoom/1.22*Math.min(w/h,1),arr=cpu[current].xyz;
+ let chosen=-1,best=64,closest=-Infinity;
+ for(let i=0;i<arr.length;i+=3){
+  const x=arr[i],y=arr[i+1],z=arr[i+2];
+  const px=((x*r[0]+y*r[1]+z*r[2])*sx+pan[0]+1)*w/2;
+  const py=(1-((x*u[0]+y*u[1]+z*u[2])*sy+pan[1]))*h/2;
+  const depth=x*t[0]+y*t[1]+z*t[2];if(Math.abs(depth*.7)>1)continue;
+  const distance=(px-mx)**2+(py-my)**2;
+  // Same approximately one-pixel screen bin: prefer the visible front point.
+  if(distance<best-1 || (distance<=best+1 && distance<=64 && depth>closest)){
+   chosen=i/3;best=distance;closest=depth;
+  }
+ }
+ if(chosen<0){pickStatus.textContent='No displayed point within 8 pixels. Zoom or change view; no point was invented.';return}
+ const d=DATA[current];endpoints[activeEndpoint]={cloud_id:d.id,source_sha256:d.sha256,point_index:Number(cpu[current].ids[chosen])};
+ pickStatus.textContent='Endpoint '+(activeEndpoint+1)+': '+d.label+', source point '+endpoints[activeEndpoint].point_index+'. Review this location before using the pair.';
+ activeEndpoint=null;
+});
+document.getElementById('save-measurement').onclick=()=>{
+ if(!endpoints[0]||!endpoints[1]){pickStatus.textContent='Mark both endpoints first.';return}
+ if(endpoints[0].cloud_id===endpoints[1].cloud_id&&endpoints[0].point_index===endpoints[1].point_index){pickStatus.textContent='Endpoints must be different source points.';return}
+ const trait=document.getElementById('quantity').value;
+ queued.push({specimen_id:document.getElementById('target-plant').value,trait,definition:definitions[trait],points:endpoints.map(p=>({...p})),landmarks_reviewed:false,organ_match_confirmed:false,reference_id:null});
+ document.getElementById('pair-count').textContent=queued.length+' endpoint pairs queued';clearPair();
+};
+document.getElementById('download-annotations').onclick=()=>{
+ const doc={schema_version:1,source:'offline_source_index_point_review',review_status:'unreviewed_endpoint_candidates',measurements:queued};
+ const blob=new Blob([JSON.stringify(doc,null,2)+'\n'],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+ a.href=url;a.download='research_endpoints.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+};
+
+</script></html>

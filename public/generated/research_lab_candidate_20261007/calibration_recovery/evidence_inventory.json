@@ -1,0 +1,1427 @@
+{
+  "summary": {
+    "status": "COMPLETED_BOUNDED_METADATA_RECOVERY_NO_GAP_CLOSURE",
+    "new_applicable_physical_calibration_found": false,
+    "new_record_recovery_leads_found": true,
+    "physical_fusion": null,
+    "metric_scale_verified": false,
+    "accepted_new_controls": 0,
+    "raw_hsi_cubes_read": false,
+    "devices_opened": false,
+    "software_modified": false,
+    "scope": "Current September28 recording tree, exact related main-repo acquisition/session/profile files, and bounded calibration/config/document/notebook-source metadata in neighbouring 3d_hyperspec_ai. No broad user filesystem search. Prior six-window landmark audit not repeated.",
+    "current_small_metadata_count": 13,
+    "inventory_records": 41
+  },
+  "directories": [
+    {
+      "path": "data/main/test_plant_10-7/20260928",
+      "file_count": 8,
+      "extensions": {
+        ".bil": 4,
+        ".hdr": 4
+      },
+      "non_image_metadata_files": [
+        "data/main/test_plant_10-7/20260928/002-specim-fx10.hdr",
+        "data/main/test_plant_10-7/20260928/002-specim-fx17.hdr",
+        "data/main/test_plant_10-7/20260928/003-specim-fx10.hdr",
+        "data/main/test_plant_10-7/20260928/003-specim-fx17.hdr"
+      ]
+    },
+    {
+      "path": "data/main/test_plant_10-7/manual_validation_5-plants_28-09",
+      "file_count": 74,
+      "extensions": {
+        ".jpeg": 66,
+        ".png": 8
+      },
+      "non_image_metadata_files": []
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928143911",
+      "file_count": 2542,
+      "extensions": {
+        ".png": 2540,
+        ".txt": 2
+      },
+      "non_image_metadata_files": [
+        "data/main/test_plant_10-7/test_plant_20260928143911/kd_intrinsics.txt",
+        "data/main/test_plant_10-7/test_plant_20260928143911/kdc_intrinsics.txt"
+      ],
+      "matched_rgb_depth_pairs": 1270,
+      "minimum_maximum_filename_tokens": [
+        -1327,
+        1638629
+      ],
+      "session_json_present": false
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928144647_L515",
+      "file_count": 2582,
+      "extensions": {
+        ".png": 2580,
+        ".txt": 2
+      },
+      "non_image_metadata_files": [
+        "data/main/test_plant_10-7/test_plant_20260928144647_L515/kd_intrinsics.txt",
+        "data/main/test_plant_10-7/test_plant_20260928144647_L515/kdc_intrinsics.txt"
+      ],
+      "matched_rgb_depth_pairs": 1290,
+      "minimum_maximum_filename_tokens": [
+        0,
+        1639496
+      ],
+      "session_json_present": false
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928162111_L515",
+      "file_count": 2558,
+      "extensions": {
+        ".png": 2556,
+        ".txt": 2
+      },
+      "non_image_metadata_files": [
+        "data/main/test_plant_10-7/test_plant_20260928162111_L515/kd_intrinsics.txt",
+        "data/main/test_plant_10-7/test_plant_20260928162111_L515/kdc_intrinsics.txt"
+      ],
+      "matched_rgb_depth_pairs": 1278,
+      "minimum_maximum_filename_tokens": [
+        0,
+        1641398
+      ],
+      "session_json_present": false
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928162354",
+      "file_count": 2416,
+      "extensions": {
+        ".png": 2414,
+        ".txt": 2
+      },
+      "non_image_metadata_files": [
+        "data/main/test_plant_10-7/test_plant_20260928162354/kd_intrinsics.txt",
+        "data/main/test_plant_10-7/test_plant_20260928162354/kdc_intrinsics.txt"
+      ],
+      "matched_rgb_depth_pairs": 1207,
+      "minimum_maximum_filename_tokens": [
+        0,
+        1639585
+      ],
+      "session_json_present": false
+    }
+  ],
+  "evidence": [
+    {
+      "path": "data/main/test_plant_10-7/20260928/002-specim-fx10.hdr",
+      "bytes": 3373,
+      "sha256": "3cb228260d0e6a9a248ae2b5f3f3efb4d0dcbbf96d365cefb1603c993fc84bad",
+      "category": "current_hsi_header",
+      "applicability": "Current run002 or003 storage/wavelength metadata; no per-line timestamps, encoder positions, lens model or extrinsics.",
+      "evidence": {
+        "acquisition time": "2026-09-28T04:36:51Z",
+        "bands": "224",
+        "byte order": "0",
+        "data type": "12",
+        "description": "{ Experiment: Pietro3; Batch: 20260928; Run: 002. }",
+        "file type": "ENVI Standard",
+        "header offset": "0",
+        "interleave": "bil",
+        "lines": "2127",
+        "samples": "1024",
+        "wavelength units": "nm",
+        "all_header_keys": [
+          "acquisition time",
+          "bands",
+          "byte order",
+          "data type",
+          "description",
+          "file type",
+          "fwhm",
+          "header offset",
+          "interleave",
+          "lines",
+          "samples",
+          "wavelength",
+          "wavelength units"
+        ],
+        "wavelength_and_fwhm_arrays_present": true
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/20260928/002-specim-fx17.hdr",
+      "bytes": 3630,
+      "sha256": "8a91fd8d677f92c2935a6d1e6dc92c0b49b8b84a29c80f93c41438c57d47ab77",
+      "category": "current_hsi_header",
+      "applicability": "Current run002 or003 storage/wavelength metadata; no per-line timestamps, encoder positions, lens model or extrinsics.",
+      "evidence": {
+        "acquisition time": "2026-09-28T04:36:51Z",
+        "bands": "224",
+        "byte order": "0",
+        "data type": "12",
+        "description": "{ Experiment: Pietro3; Batch: 20260928; Run: 002. }",
+        "file type": "ENVI Standard",
+        "header offset": "0",
+        "interleave": "bil",
+        "lines": "2127",
+        "samples": "640",
+        "wavelength units": "nm",
+        "all_header_keys": [
+          "acquisition time",
+          "bands",
+          "byte order",
+          "data type",
+          "description",
+          "file type",
+          "fwhm",
+          "header offset",
+          "interleave",
+          "lines",
+          "samples",
+          "wavelength",
+          "wavelength units"
+        ],
+        "wavelength_and_fwhm_arrays_present": true
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/20260928/003-specim-fx10.hdr",
+      "bytes": 3373,
+      "sha256": "6aaf169bc24b22abfd7cf8aed1d22517f5a956a99cb58698ec50d258b2dd048a",
+      "category": "current_hsi_header",
+      "applicability": "Current run002 or003 storage/wavelength metadata; no per-line timestamps, encoder positions, lens model or extrinsics.",
+      "evidence": {
+        "acquisition time": "2026-09-28T06:19:41Z",
+        "bands": "224",
+        "byte order": "0",
+        "data type": "12",
+        "description": "{ Experiment: Pietro3; Batch: 20260928; Run: 003. }",
+        "file type": "ENVI Standard",
+        "header offset": "0",
+        "interleave": "bil",
+        "lines": "2127",
+        "samples": "1024",
+        "wavelength units": "nm",
+        "all_header_keys": [
+          "acquisition time",
+          "bands",
+          "byte order",
+          "data type",
+          "description",
+          "file type",
+          "fwhm",
+          "header offset",
+          "interleave",
+          "lines",
+          "samples",
+          "wavelength",
+          "wavelength units"
+        ],
+        "wavelength_and_fwhm_arrays_present": true
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/20260928/003-specim-fx17.hdr",
+      "bytes": 3630,
+      "sha256": "762de08de4f6f2892aa0caf4dd69da81a4a283e4a83783a210d75664b3c64d4f",
+      "category": "current_hsi_header",
+      "applicability": "Current run002 or003 storage/wavelength metadata; no per-line timestamps, encoder positions, lens model or extrinsics.",
+      "evidence": {
+        "acquisition time": "2026-09-28T06:19:41Z",
+        "bands": "224",
+        "byte order": "0",
+        "data type": "12",
+        "description": "{ Experiment: Pietro3; Batch: 20260928; Run: 003. }",
+        "file type": "ENVI Standard",
+        "header offset": "0",
+        "interleave": "bil",
+        "lines": "2127",
+        "samples": "640",
+        "wavelength units": "nm",
+        "all_header_keys": [
+          "acquisition time",
+          "bands",
+          "byte order",
+          "data type",
+          "description",
+          "file type",
+          "fwhm",
+          "header offset",
+          "interleave",
+          "lines",
+          "samples",
+          "wavelength",
+          "wavelength units"
+        ],
+        "wavelength_and_fwhm_arrays_present": true
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/order_of_scan",
+      "bytes": 59,
+      "sha256": "6d5e45c9d3a209383f158f10fbdc0a20468ee2cafda22159db0bbb379e738346",
+      "category": "current_run_note",
+      "applicability": "Current folder note identifies calibration ordering only; does not provide synchronization or physical units.",
+      "evidence": "1. calibration, hyperspec, d405 and l515 (002-specim-fx10)\n",
+      "relevant_line_numbers": [
+        1
+      ],
+      "source_excerpt_lines": {
+        "1": "1. calibration, hyperspec, d405 and l515 (002-specim-fx10)"
+      }
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928143911/rgb_826194.png",
+      "bytes": 1157661,
+      "sha256": "1d563a052861e23ed329f8b71b2b3769cd168748ec2c447ff669de67e96b1041",
+      "category": "current_representative_png_container",
+      "applicability": "Current recording; container metadata only. Does not establish depth units.",
+      "evidence": {
+        "ihdr": {
+          "width": 1280,
+          "height": 720,
+          "bit_depth": 8,
+          "colour_type": 2
+        },
+        "chunk_counts": {
+          "IHDR": 1,
+          "IDAT": 142,
+          "IEND": 1
+        },
+        "metadata_chunk_types": [],
+        "scope": "Representative PNG container only; compressed image pixels not decoded."
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928143911/depth_826194.png",
+      "bytes": 583644,
+      "sha256": "450493de1b7c7d8123100b2291264d8a809bbf37a1586cfba53d1f8e03a0c38d",
+      "category": "current_representative_png_container",
+      "applicability": "Current recording; container metadata only. Does not establish depth units.",
+      "evidence": {
+        "ihdr": {
+          "width": 1280,
+          "height": 720,
+          "bit_depth": 16,
+          "colour_type": 0
+        },
+        "chunk_counts": {
+          "IHDR": 1,
+          "IDAT": 72,
+          "IEND": 1
+        },
+        "metadata_chunk_types": [],
+        "scope": "Representative PNG container only; compressed image pixels not decoded."
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928143911/kd_intrinsics.txt",
+      "bytes": 397,
+      "sha256": "3f7b416ce1f51f9d84275c73024d31231bd41f67890bcd78b2fd12684caf558b",
+      "category": "current_saved_intrinsics",
+      "applicability": "Directly associated with the named September28 recording. K/dist/dimensions are useful; no saved depth scale, serial or extrinsics.",
+      "evidence": {
+        "K": [
+          [
+            642.5546264648438,
+            0,
+            638.240234375
+          ],
+          [
+            0,
+            642.5546264648438,
+            364.5859069824219
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "dist": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "height": 720,
+        "width": 1280
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928143911/kdc_intrinsics.txt",
+      "bytes": 484,
+      "sha256": "1481eb98c17500e25b67217c61254d6b434043e96f7fbc6668032bd55034c793",
+      "category": "current_saved_intrinsics",
+      "applicability": "Directly associated with the named September28 recording. K/dist/dimensions are useful; no saved depth scale, serial or extrinsics.",
+      "evidence": {
+        "K": [
+          [
+            645.772216796875,
+            0,
+            634.3516235351562
+          ],
+          [
+            0,
+            645.1732177734375,
+            360.0220947265625
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "dist": [
+          -0.0542781837284565,
+          0.05645398050546646,
+          0.000695822003763169,
+          0.0007303903112187982,
+          -0.01802046038210392
+        ],
+        "height": 720,
+        "width": 1280
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928144647_L515/rgb_824020.png",
+      "bytes": 1349320,
+      "sha256": "5b03bf2d47996ebf8c97d9c195e01f7a47f2074b88b64e08040ae100b663fd21",
+      "category": "current_representative_png_container",
+      "applicability": "Current recording; container metadata only. Does not establish depth units.",
+      "evidence": {
+        "ihdr": {
+          "width": 1280,
+          "height": 720,
+          "bit_depth": 8,
+          "colour_type": 2
+        },
+        "chunk_counts": {
+          "IHDR": 1,
+          "IDAT": 165,
+          "IEND": 1
+        },
+        "metadata_chunk_types": [],
+        "scope": "Representative PNG container only; compressed image pixels not decoded."
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928144647_L515/depth_824020.png",
+      "bytes": 388481,
+      "sha256": "5b51e8c8211d90e763cc403618fbc4cca85d2ff16eb328904832e2dc1334f145",
+      "category": "current_representative_png_container",
+      "applicability": "Current recording; container metadata only. Does not establish depth units.",
+      "evidence": {
+        "ihdr": {
+          "width": 1280,
+          "height": 720,
+          "bit_depth": 16,
+          "colour_type": 0
+        },
+        "chunk_counts": {
+          "IHDR": 1,
+          "IDAT": 48,
+          "IEND": 1
+        },
+        "metadata_chunk_types": [],
+        "scope": "Representative PNG container only; compressed image pixels not decoded."
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928144647_L515/kd_intrinsics.txt",
+      "bytes": 372,
+      "sha256": "a4376fb6d756aad60db8171bfc56414fb1ec9365c3d816b392376ed676612898",
+      "category": "current_saved_intrinsics",
+      "applicability": "Directly associated with the named September28 recording. K/dist/dimensions are useful; no saved depth scale, serial or extrinsics.",
+      "evidence": {
+        "K": [
+          [
+            734.796875,
+            0,
+            543.125
+          ],
+          [
+            0,
+            734.921875,
+            396.33984375
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "dist": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "height": 768,
+        "width": 1024
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928144647_L515/kdc_intrinsics.txt",
+      "bytes": 486,
+      "sha256": "81f74f5d74e3b0f7b65af4fe2aa9fe1c4ef4ded36f66b3ab1beb3d3584058797",
+      "category": "current_saved_intrinsics",
+      "applicability": "Directly associated with the named September28 recording. K/dist/dimensions are useful; no saved depth scale, serial or extrinsics.",
+      "evidence": {
+        "K": [
+          [
+            898.4381103515625,
+            0,
+            655.9896240234375
+          ],
+          [
+            0,
+            898.5916137695312,
+            355.45782470703125
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "dist": [
+          0.14393945038318634,
+          -0.482932984828949,
+          -0.0023646382614970207,
+          -0.0005440952372737229,
+          0.4404349625110626
+        ],
+        "height": 720,
+        "width": 1280
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928162111_L515/rgb_816080.png",
+      "bytes": 1381863,
+      "sha256": "366596eeb409f8f29970da18a50b4b2d519bb68b8edcd96f3d33e3e9c9dd1c6f",
+      "category": "current_representative_png_container",
+      "applicability": "Current recording; container metadata only. Does not establish depth units.",
+      "evidence": {
+        "ihdr": {
+          "width": 1280,
+          "height": 720,
+          "bit_depth": 8,
+          "colour_type": 2
+        },
+        "chunk_counts": {
+          "IHDR": 1,
+          "IDAT": 169,
+          "IEND": 1
+        },
+        "metadata_chunk_types": [],
+        "scope": "Representative PNG container only; compressed image pixels not decoded."
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928162111_L515/depth_816080.png",
+      "bytes": 409467,
+      "sha256": "9470ee1d76a281221b663d6864a0d0f4bb8a6d29bbe07d749262c781dc9e0319",
+      "category": "current_representative_png_container",
+      "applicability": "Current recording; container metadata only. Does not establish depth units.",
+      "evidence": {
+        "ihdr": {
+          "width": 1280,
+          "height": 720,
+          "bit_depth": 16,
+          "colour_type": 0
+        },
+        "chunk_counts": {
+          "IHDR": 1,
+          "IDAT": 50,
+          "IEND": 1
+        },
+        "metadata_chunk_types": [],
+        "scope": "Representative PNG container only; compressed image pixels not decoded."
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928162111_L515/kd_intrinsics.txt",
+      "bytes": 372,
+      "sha256": "a4376fb6d756aad60db8171bfc56414fb1ec9365c3d816b392376ed676612898",
+      "category": "current_saved_intrinsics",
+      "applicability": "Directly associated with the named September28 recording. K/dist/dimensions are useful; no saved depth scale, serial or extrinsics.",
+      "evidence": {
+        "K": [
+          [
+            734.796875,
+            0,
+            543.125
+          ],
+          [
+            0,
+            734.921875,
+            396.33984375
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "dist": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "height": 768,
+        "width": 1024
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928162111_L515/kdc_intrinsics.txt",
+      "bytes": 486,
+      "sha256": "81f74f5d74e3b0f7b65af4fe2aa9fe1c4ef4ded36f66b3ab1beb3d3584058797",
+      "category": "current_saved_intrinsics",
+      "applicability": "Directly associated with the named September28 recording. K/dist/dimensions are useful; no saved depth scale, serial or extrinsics.",
+      "evidence": {
+        "K": [
+          [
+            898.4381103515625,
+            0,
+            655.9896240234375
+          ],
+          [
+            0,
+            898.5916137695312,
+            355.45782470703125
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "dist": [
+          0.14393945038318634,
+          -0.482932984828949,
+          -0.0023646382614970207,
+          -0.0005440952372737229,
+          0.4404349625110626
+        ],
+        "height": 720,
+        "width": 1280
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928162354/rgb_837784.png",
+      "bytes": 1279438,
+      "sha256": "279f0df6a31eed1a42ec68313f75b732a50f9f4ee7a0b786b61fdfd9c7ca570a",
+      "category": "current_representative_png_container",
+      "applicability": "Current recording; container metadata only. Does not establish depth units.",
+      "evidence": {
+        "ihdr": {
+          "width": 1280,
+          "height": 720,
+          "bit_depth": 8,
+          "colour_type": 2
+        },
+        "chunk_counts": {
+          "IHDR": 1,
+          "IDAT": 156,
+          "IEND": 1
+        },
+        "metadata_chunk_types": [],
+        "scope": "Representative PNG container only; compressed image pixels not decoded."
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928162354/depth_837784.png",
+      "bytes": 598541,
+      "sha256": "211a90843f1b31051bb87b101cdfe494de961ede6a8fa3a7b4d4f2588793bc36",
+      "category": "current_representative_png_container",
+      "applicability": "Current recording; container metadata only. Does not establish depth units.",
+      "evidence": {
+        "ihdr": {
+          "width": 1280,
+          "height": 720,
+          "bit_depth": 16,
+          "colour_type": 0
+        },
+        "chunk_counts": {
+          "IHDR": 1,
+          "IDAT": 73,
+          "IEND": 1
+        },
+        "metadata_chunk_types": [],
+        "scope": "Representative PNG container only; compressed image pixels not decoded."
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928162354/kd_intrinsics.txt",
+      "bytes": 397,
+      "sha256": "3f7b416ce1f51f9d84275c73024d31231bd41f67890bcd78b2fd12684caf558b",
+      "category": "current_saved_intrinsics",
+      "applicability": "Directly associated with the named September28 recording. K/dist/dimensions are useful; no saved depth scale, serial or extrinsics.",
+      "evidence": {
+        "K": [
+          [
+            642.5546264648438,
+            0,
+            638.240234375
+          ],
+          [
+            0,
+            642.5546264648438,
+            364.5859069824219
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "dist": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "height": 720,
+        "width": 1280
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/main/test_plant_10-7/test_plant_20260928162354/kdc_intrinsics.txt",
+      "bytes": 484,
+      "sha256": "1481eb98c17500e25b67217c61254d6b434043e96f7fbc6668032bd55034c793",
+      "category": "current_saved_intrinsics",
+      "applicability": "Directly associated with the named September28 recording. K/dist/dimensions are useful; no saved depth scale, serial or extrinsics.",
+      "evidence": {
+        "K": [
+          [
+            645.772216796875,
+            0,
+            634.3516235351562
+          ],
+          [
+            0,
+            645.1732177734375,
+            360.0220947265625
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "dist": [
+          -0.0542781837284565,
+          0.05645398050546646,
+          0.000695822003763169,
+          0.0007303903112187982,
+          -0.01802046038210392
+        ],
+        "height": 720,
+        "width": 1280
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "rospy_thread_fin_1.py",
+      "bytes": 7648,
+      "sha256": "9d9ab192653cf7dce6b89d4ad186b12f3f2013d577991ac331f4568f7b2fea45",
+      "category": "capture_source_convention",
+      "applicability": "Source code only; executed September28 version and driver units not recorded.",
+      "evidence": "get_depth_scale() is read at52 but omitted from saved intrinsics47-98. position=int(position*10**6) at129, ROS message.position[0] at142. Active D405 serial128422272123; historical comments mention L515f1230450.",
+      "relevant_line_numbers": [
+        24,
+        25,
+        26,
+        47,
+        52,
+        60,
+        68,
+        69,
+        70,
+        83,
+        91,
+        92,
+        93,
+        129,
+        132,
+        134,
+        142,
+        232
+      ],
+      "source_excerpt_lines": {
+        "24": "# serial_number = 'f1230450' #L515",
+        "25": "# serial_number = '017322071325' #D435",
+        "26": "serial_number = '128422272123'  #D405",
+        "47": "def save_intrinsics():",
+        "52": "    depth_scale = depth_sensor.get_depth_scale()",
+        "60": "    intrinsics_dict = {",
+        "68": "        \"dist\": depth_intrinsics.coeffs,",
+        "69": "        \"height\": depth_intrinsics.height,",
+        "70": "        \"width\": depth_intrinsics.width",
+        "83": "    intrinsics_dict = {",
+        "91": "        \"dist\": depth_intrinsics.coeffs,",
+        "92": "        \"height\": depth_intrinsics.height,",
+        "93": "        \"width\": depth_intrinsics.width",
+        "129": "    position = int(position * 10**6)",
+        "132": "    all_imgs.append((color_image.copy(), save_fold_p+'rgb_'+str(position)+'.png'))",
+        "134": "    cv2.imwrite(save_fold_p+'depth_'+str(position)+'.png', depth_image)",
+        "142": "    current_position = message.position[0]",
+        "232": "        if current_position != 0.0 and current_position >= 1.65:"
+      }
+    },
+    {
+      "path": "stakeholder_reference/rospy_thread_fin_1.py",
+      "bytes": 7601,
+      "sha256": "fd8cea52c659e0280666e2139a6bde206feccd24702948e4d983e8b7ae24b2a7",
+      "category": "capture_source_convention",
+      "applicability": "Reference source only; different endpoint underscores need for exact executed revision.",
+      "evidence": "Same filename/depth-scale omission; endpoint0.78 versus root script1.65.",
+      "relevant_line_numbers": [
+        52,
+        129,
+        232
+      ],
+      "source_excerpt_lines": {
+        "52": "    depth_scale = depth_sensor.get_depth_scale()",
+        "129": "    position = int(position * 10**6)",
+        "232": "        if current_position != 0.0 and current_position >= 0.78:"
+      }
+    },
+    {
+      "path": "capture/base.py",
+      "bytes": 9798,
+      "sha256": "56a241f59f80ab23c984d725edd7def790e6405eca03a262aaa9c49bb93184a2",
+      "category": "current_software_metadata_schema",
+      "applicability": "Current software capability, not evidence that current recordings used this version.",
+      "evidence": "CaptureSession declares velocity_mps/frame_positions/gantry_axis; no depth-scale field.",
+      "relevant_line_numbers": [
+        58,
+        66,
+        70,
+        74,
+        75
+      ],
+      "source_excerpt_lines": {
+        "58": "    # Naming -- always 0.png, 1.png, ... (matches load_image_pairs default)",
+        "66": "    started_at: str                    # ISO timestamp",
+        "70": "    velocity_mps: float",
+        "74": "    # frame_index (int) -> gantry position (metres) when available",
+        "75": "    frame_positions: dict = field(default_factory=dict)"
+      }
+    },
+    {
+      "path": "capture/realsense_capture.py",
+      "bytes": 21380,
+      "sha256": "899891601a569c1d921a5c9aed56e3d0fcaf9ce33e2baef8893390419e14eae2",
+      "category": "current_software_metadata_schema",
+      "applicability": "Current software source; does not retrofit missing recording values.",
+      "evidence": "Saved intrinsics payload contains K,dist,height,width.",
+      "relevant_line_numbers": [
+        503,
+        508,
+        509,
+        514,
+        520,
+        521,
+        522
+      ],
+      "source_excerpt_lines": {
+        "503": "    def _read_intrinsics(self, profile, rs) -> dict:",
+        "508": "            (rs.stream.depth, \"kd_intrinsics.txt\"),",
+        "509": "            (rs.stream.color, \"kdc_intrinsics.txt\"),",
+        "514": "                payload = {",
+        "520": "                    \"dist\": list(intr.coeffs),",
+        "521": "                    \"height\": intr.height,",
+        "522": "                    \"width\":  intr.width,"
+      }
+    },
+    {
+      "path": "imp_positions.txt",
+      "bytes": 172,
+      "sha256": "69e7ef521c35523db9db1af9ca99da4e36285a4586f290f3a68de3268e359388",
+      "category": "undated_operator_notes",
+      "applicability": "Undated values, not a run-linked driver conversion or trigger log.",
+      "evidence": "start_pos=0.005; end_pos=1.665. SCM/hypercam service names are notes, not logs.",
+      "relevant_line_numbers": [
+        1,
+        3
+      ],
+      "source_excerpt_lines": {
+        "1": "start_pos = 0.005",
+        "3": "end_pos = 1.665"
+      }
+    },
+    {
+      "path": "data/main/20260901122109/session.json",
+      "bytes": 27897,
+      "sha256": "48773666232a6a638164db9b868ac4787871504bf4f79b2dfa75e202670f939b",
+      "category": "historical_session",
+      "applicability": "September1 recording only; cannot transfer its positions or FPS to September28.",
+      "evidence": {
+        "backend": "ros",
+        "started_at": "2026-09-01T12:21:09",
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "velocity_mps": 0.038,
+        "gantry_axis": 0,
+        "end_position_m": 1.65,
+        "n_frames": 1309,
+        "termination_reason": "endpoint_reached",
+        "home_returned": true,
+        "frame_positions_count": 1309,
+        "frame_positions_first_last": [
+          [
+            "0",
+            0.005104
+          ],
+          [
+            "1308",
+            1.651101
+          ]
+        ],
+        "top_level_keys": [
+          "backend",
+          "end_position_m",
+          "fps",
+          "frame_positions",
+          "gantry_axis",
+          "height",
+          "home_returned",
+          "n_frames",
+          "started_at",
+          "termination_reason",
+          "velocity_mps",
+          "width"
+        ]
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "data/captures/20260511131409/session.json",
+      "bytes": 4935,
+      "sha256": "a4d807220630de03f11a333d8f3c45a7a530cab0fd1c315d8390b9ecfd3cdf0d",
+      "category": "historical_session",
+      "applicability": "May11 camera-only recording; not current run or synchronized HSI.",
+      "evidence": {
+        "backend": "realsense",
+        "started_at": "2026-05-11T13:14:09",
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "velocity_mps": 0.038,
+        "gantry_axis": 0,
+        "end_position_m": 0.78,
+        "duration_s": 10.0,
+        "n_frames": 81,
+        "actual_fps_estimate": 15.56229848209946,
+        "actual_spacing_median_m": 0.0,
+        "frame_positions_count": 0,
+        "frame_positions_first_last": [],
+        "frame_timestamps_count": 81,
+        "frame_timestamps_first_last": [
+          [
+            "0",
+            1778469251.6892502
+          ],
+          [
+            "80",
+            1778469256.7350962
+          ]
+        ],
+        "top_level_keys": [
+          "actual_fps_estimate",
+          "actual_frame_intervals_ms",
+          "actual_spacing_median_m",
+          "backend",
+          "depth_filtering",
+          "duration_s",
+          "end_position_m",
+          "fps",
+          "frame_positions",
+          "frame_timestamps",
+          "gantry_axis",
+          "height",
+          "n_frames",
+          "started_at",
+          "velocity_mps",
+          "width"
+        ]
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "processing/hyperspectral/profile_20260828.json",
+      "bytes": 10917,
+      "sha256": "a023de2aae3182aa92f92d4f29042cbf809015308d763d24f0ce34924bb625dc",
+      "category": "historical_processing_profile",
+      "applicability": "Explicitly August28 reviewed dataset only; 10000 is its processing scale, not current camera readback.",
+      "evidence": "id20260828; depth_scale10000; validation_status historical dataset only.",
+      "relevant_line_numbers": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "source_excerpt_lines": {
+        "2": "  \"id\": \"20260828\",",
+        "3": "  \"label\": \"28 August 2026: FX10 + FX17 and three matched plants\",",
+        "4": "  \"validation_status\": \"Historical dataset only; integration experimental; untested on new datasets\",",
+        "6": "  \"depth_scale\": 10000,"
+      }
+    },
+    {
+      "path": "data/main/test_plant_20230809133659/gantry_config.json",
+      "bytes": 64,
+      "sha256": "efc0a2984ec378c7387910864e7e4675fca55b8ec074e80bc79ca18432847acf",
+      "category": "historical_processing_profile",
+      "applicability": "August2023 dataset only; per-frame model is not a September28 encoder calibration.",
+      "evidence": {
+        "gantry_step_m_per_frame": 0.003476,
+        "gantry_axis": 1,
+        "top_level_keys": [
+          "gantry_axis",
+          "gantry_step_m_per_frame"
+        ]
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "../3d_hyperspec_ai/notebooks/aruco_markers.ipynb",
+      "bytes": 2214,
+      "sha256": "3d6deecc78ae7d8dd1648e40bb8fec775b697306c495e84315eedad6064941af",
+      "category": "historical_board_design",
+      "applicability": "Four standalone 600px ArUco designs; no physical dimensions or proof these are September28 ChArUco sheets.",
+      "evidence": "DICT_4X4_50; IDs0,1,2,3; marker_size_px600; corner labels. Pixel size is not printed millimetres.",
+      "relevant_line_numbers": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "source_excerpt_lines": {
+        "30": "    \"aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)\\n\",",
+        "31": "    \"\\n\",",
+        "32": "    \"# Marker settings\\n\",",
+        "33": "    \"marker_ids = [0, 1, 2, 3]\\n\",",
+        "34": "    \"marker_size_px = 600  # image size in pixels\\n\",",
+        "35": "    \"\\n\",",
+        "36": "    \"# Corner naming\\n\",",
+        "37": "    \"corner_names = {\\n\",",
+        "38": "    \"    0: \\\"top_left\\\",\\n\",",
+        "39": "    \"    1: \\\"top_right\\\",\\n\",",
+        "40": "    \"    2: \\\"bottom_left\\\",\\n\",",
+        "41": "    \"    3: \\\"bottom_right\\\",\\n\","
+      }
+    },
+    {
+      "path": "../3d_hyperspec_ai/notebooks/ROS/rospy_thread_fin_1.py",
+      "bytes": 7601,
+      "sha256": "fd8cea52c659e0280666e2139a6bde206feccd24702948e4d983e8b7ae24b2a7",
+      "category": "historical_capture_source",
+      "applicability": "Historical source only; no run-linked execution provenance.",
+      "evidence": "D405 serial128422272123; reads but does not save depth_scale; filenameROSposition*1e6; velocity0.038; endpoint0.78.",
+      "relevant_line_numbers": [
+        24,
+        25,
+        26,
+        52,
+        129,
+        142,
+        156,
+        159,
+        172,
+        173,
+        189,
+        193,
+        232
+      ],
+      "source_excerpt_lines": {
+        "24": "# serial_number = 'f1230450' #L515",
+        "25": "# serial_number = '017322071325' #D435",
+        "26": "serial_number = '128422272123'  #D405",
+        "52": "    depth_scale = depth_sensor.get_depth_scale()",
+        "129": "    position = int(position * 10**6)",
+        "142": "    current_position = message.position[0]",
+        "156": "    velocity = 0.038",
+        "159": "    cmd_vel_message.linear.x = velocity",
+        "172": "    msg.goal.position = 0.005",
+        "173": "    msg.goal.velocity = 0.2",
+        "189": "config.enable_stream(rs.stream.color, 1280, 720, rs.format.bgr8, 30) #D405",
+        "193": "align = rs.align(rs.stream.color)",
+        "232": "        if current_position != 0.0 and current_position >= 0.78:"
+      }
+    },
+    {
+      "path": "../3d_hyperspec_ai/notebooks/ROS/settings.yaml",
+      "bytes": 174,
+      "sha256": "4d8f19c45144f874dc081aa74ce8a32b1e3f08d11aab039047ee4c9756d78d48",
+      "category": "historical_driver_configuration",
+      "applicability": "Unit declaration and September28 execution provenance absent; do not select among differing source velocities.",
+      "evidence": "min_pos:-5000; max_pos:1600000; tollerence:5000; target_velocity:0.025.",
+      "relevant_line_numbers": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "source_excerpt_lines": {
+        "2": "min_pos: -5000",
+        "3": "max_pos: 1600000",
+        "4": "tollerence: 5000",
+        "5": "#<!--ramp_parameters-->",
+        "6": "target_velocity: 0.025 "
+      }
+    },
+    {
+      "path": "../3d_hyperspec_ai/notebooks/ROS/imp_positions.txt",
+      "bytes": 172,
+      "sha256": "69e7ef521c35523db9db1af9ca99da4e36285a4586f290f3a68de3268e359388",
+      "category": "historical_operator_notes",
+      "applicability": "Undated notes; no trigger/start correspondence.",
+      "evidence": "start_pos=0.005; end_pos=1.665.",
+      "relevant_line_numbers": [
+        1,
+        3
+      ],
+      "source_excerpt_lines": {
+        "1": "start_pos = 0.005",
+        "3": "end_pos = 1.665"
+      }
+    },
+    {
+      "path": "../3d_hyperspec_ai/results/20260828_showcase/rgbd_icp/reconstruction_summary.json",
+      "bytes": 1233,
+      "sha256": "7feb530415bafccece83c4bd4982a8916ad240dbd72fe9ece4e220ce706d88d5",
+      "category": "historical_processing_scale",
+      "applicability": "August28 processing result only; not current hardware depth-scale metadata.",
+      "evidence": "dataset test_plant_20260828120800_best_lighting; depth_scale_units_per_m10000; depth_unit_m0.0001.",
+      "relevant_line_numbers": [
+        2,
+        11,
+        12
+      ],
+      "source_excerpt_lines": {
+        "2": "  \"dataset\": \"C:\\\\Personal\\\\My_DEGREE's\\\\Master_of_Computing_(Advanced)\\\\Australian_National_University\\\\Technical Team Project - COMP8715\\\\PhenoFusion3D\\\\data\\\\main\\\\test_plant_20260828120800_best_lighting\",",
+        "11": "  \"depth_scale_units_per_m\": 10000.0,",
+        "12": "  \"depth_unit_m\": 0.0001,"
+      }
+    },
+    {
+      "path": "../3d_hyperspec_ai/results/20260828_showcase/fusion/coleus/fusion_metrics.json",
+      "bytes": 3821,
+      "sha256": "6e96829aa866860275f1f19c02e244e873f277d520a258ddcfa8c8b70ade9877",
+      "category": "historical_planar_mapping",
+      "applicability": "August28 empirical image registration; not HSI spatial intrinsics or sensor-to-sensor extrinsics.",
+      "evidence": "Plant-local SIFT/RANSAC homography; depthscale10000; explicit planar/parallax limitation.",
+      "relevant_line_numbers": [
+        7,
+        19,
+        33,
+        65,
+        124
+      ],
+      "source_excerpt_lines": {
+        "7": "    \"method\": \"mutual SIFT matches plus RANSAC board homography and plant-masked ECC refinement\",",
+        "19": "    \"selected_model\": \"plant-local SIFT/RANSAC homography\",",
+        "33": "    \"homography_hsi_to_rgb\": [",
+        "65": "    \"depth_scale_units_per_m\": 10000.0,",
+        "124": "    \"A planar homography approximates cross-modal alignment; elevated leaves can exhibit parallax.\","
+      }
+    },
+    {
+      "path": "../3d_hyperspec_ai/results/20260828_showcase/global_placement/coleus/global_placement.json",
+      "bytes": 2137,
+      "sha256": "0e2f1d37953e7aaebdd086cfa4c4d153bdd4929753ed283bdcc9c13732cd8cdf",
+      "category": "historical_specimen_placement",
+      "applicability": "Specimen-to-scene ICP, not fixed camera-mount calibration or recovered missing trajectory.",
+      "evidence": "Direct specimen-to-scene rigid transform; explicitly does not reconstruct missing95-frame trajectory.",
+      "relevant_line_numbers": [
+        5,
+        11,
+        67
+      ],
+      "source_excerpt_lines": {
+        "5": "  \"method\": \"direct cleaned-plant to sampled-global-scene robust rigid ICP\",",
+        "11": "  \"transform_camera_to_global\": [",
+        "67": "    \"This recovers the selected plant-frame transform directly against the saved scene; it does not reconstruct the missing complete 95-frame pose trajectory.\","
+      }
+    },
+    {
+      "path": "../3d_hyperspec_ai/data/20260828/001-specim-fx10.json",
+      "bytes": 400111,
+      "sha256": "1dad42b8845b63321b0fd238cfe7c2002f3e3717c67d081cdaef4e140e47c2a4",
+      "category": "historical_hsi_line_metadata",
+      "applicability": "August28 run001 only. Demonstrates recoverable acquisition-sidecar fields, not September28 timing or current scale.",
+      "evidence": {
+        "camera": "fx10",
+        "header": {
+          "acquisition time": "2026-08-28T02:13:42Z",
+          "bands": 224,
+          "byte order": 0,
+          "data type": 12,
+          "description": "{ Experiment: ANU; Batch: 20260828; Run: 001. }",
+          "file type": "ENVI Standard",
+          "header offset": "0",
+          "interleave": "bil",
+          "lines": 2127,
+          "samples": 1024,
+          "wavelength units": "nm"
+        },
+        "frame_fields": [
+          "frame_id",
+          "frame_start_offset",
+          "system_time",
+          "timestamp"
+        ],
+        "frame_count": 2127,
+        "first": {
+          "frame_id": 1,
+          "frame_start_offset": 0,
+          "system_time": 1787883089705028786,
+          "timestamp": 30605645434272540
+        },
+        "last": {
+          "frame_id": 2127,
+          "frame_start_offset": 731480064,
+          "system_time": 1787883222588450142,
+          "timestamp": 30605778309272540
+        },
+        "missing_ids": [],
+        "first_timestamp_delta": 62500000,
+        "info": {
+          "frame_count": 2127,
+          "height": 224,
+          "n_completed_buffers": 2127,
+          "n_failures": 0,
+          "n_underrun": 0,
+          "pixel_format": 17563654,
+          "size": 344064,
+          "width": 1024
+        },
+        "declared_time_units": null,
+        "transfer_to_september28": false
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "../3d_hyperspec_ai/data/20260828/001-specim-fx10.hdr",
+      "bytes": 3369,
+      "sha256": "b50d522a9b71474c09439e17dbe946583d24e4d1c6ecce57a30776cb95ac0114",
+      "category": "historical_hsi_header",
+      "applicability": "August28 run001, explicitly historical; no transfer.",
+      "evidence": {
+        "acquisition time": "2026-08-28T02:13:42Z",
+        "bands": "224",
+        "byte order": "0",
+        "data type": "12",
+        "description": "{ Experiment: ANU; Batch: 20260828; Run: 001. }",
+        "file type": "ENVI Standard",
+        "header offset": "0",
+        "interleave": "bil",
+        "lines": "2127",
+        "samples": "1024",
+        "wavelength units": "nm"
+      },
+      "relevant_line_numbers": [
+        2,
+        6
+      ],
+      "source_excerpt_lines": {
+        "2": "acquisition time = 2026-08-28T02:13:42Z",
+        "6": "description = { Experiment: ANU; Batch: 20260828; Run: 001. }"
+      }
+    },
+    {
+      "path": "../3d_hyperspec_ai/data/20260828/001-specim-fx17.json",
+      "bytes": 399987,
+      "sha256": "ad8cda1e17ff4eeeff548a0ae609c9baea4c1e107b3f89cf0f3aa089c067a140",
+      "category": "historical_hsi_line_metadata",
+      "applicability": "August28 run001 only. Demonstrates recoverable acquisition-sidecar fields, not September28 timing or current scale.",
+      "evidence": {
+        "camera": "fx17",
+        "header": {
+          "acquisition time": "2026-08-28T02:13:42Z",
+          "bands": 224,
+          "byte order": 0,
+          "data type": 12,
+          "description": "{ Experiment: ANU; Batch: 20260828; Run: 001. }",
+          "file type": "ENVI Standard",
+          "header offset": "0",
+          "interleave": "bil",
+          "lines": 2126,
+          "samples": 640,
+          "wavelength units": "nm"
+        },
+        "frame_fields": [
+          "frame_id",
+          "frame_start_offset",
+          "system_time",
+          "timestamp"
+        ],
+        "frame_count": 2126,
+        "first": {
+          "frame_id": 1,
+          "frame_start_offset": 0,
+          "system_time": 1787883089664766886,
+          "timestamp": 30605490152309230
+        },
+        "last": {
+          "frame_id": 2127,
+          "frame_start_offset": 456960000,
+          "system_time": 1787883222548648264,
+          "timestamp": 30605623027309230
+        },
+        "missing_ids": [
+          946
+        ],
+        "first_timestamp_delta": 62500000,
+        "info": {
+          "frame_count": 2126,
+          "height": 224,
+          "n_completed_buffers": 2126,
+          "n_failures": 1,
+          "n_underrun": 0,
+          "pixel_format": 17563654,
+          "size": 215040,
+          "width": 640
+        },
+        "declared_time_units": null,
+        "transfer_to_september28": false
+      },
+      "relevant_line_numbers": null,
+      "source_excerpt_lines": null
+    },
+    {
+      "path": "../3d_hyperspec_ai/data/20260828/001-specim-fx17.hdr",
+      "bytes": 3626,
+      "sha256": "d49242d105cc82684c4a1f058ba243a26216b4ce29639aae4d15cea8a3b9395f",
+      "category": "historical_hsi_header",
+      "applicability": "August28 run001, explicitly historical; no transfer.",
+      "evidence": {
+        "acquisition time": "2026-08-28T02:13:42Z",
+        "bands": "224",
+        "byte order": "0",
+        "data type": "12",
+        "description": "{ Experiment: ANU; Batch: 20260828; Run: 001. }",
+        "file type": "ENVI Standard",
+        "header offset": "0",
+        "interleave": "bil",
+        "lines": "2126",
+        "samples": "640",
+        "wavelength units": "nm"
+      },
+      "relevant_line_numbers": [
+        2,
+        6
+      ],
+      "source_excerpt_lines": {
+        "2": "acquisition time = 2026-08-28T02:13:42Z",
+        "6": "description = { Experiment: ANU; Batch: 20260828; Run: 001. }"
+      }
+    }
+  ],
+  "lab_records_to_collect": [
+    {
+      "gap": "printed_board_scale",
+      "records": "Original ChArUco design/PDF with dictionary, rows/columns, square and marker dimensions; print settings and a dated ruler/caliper check of the actual three September28 sheets.",
+      "why": "The available 600px four-marker design does not specify the physical September28 board pitch.",
+      "closed": false
+    },
+    {
+      "gap": "D405_and_L515_depth_units",
+      "records": "September28 camera/session export or original .bag/device-settings record containing camera serial, firmware, depth_units/get_depth_scale value, stream formats/resolutions, alignment/filter settings and acquisition time for all four named RGB-D folders.",
+      "why": "K/dist/dimensions were saved, but the queried depth scale was not serialized. Present device defaults are not proof of past settings.",
+      "closed": false
+    },
+    {
+      "gap": "gantry_units_and_exporter",
+      "records": "Exact executed September28 capture script/commit and ROS driver config; joint-state position unit/conversion; dated encoder calibration or independent travel check; associated ROS bag/position log.",
+      "why": "Filename=position*1e6 is recoverable source convention. Current driver scale and exact executed version are not preserved.",
+      "closed": false
+    },
+    {
+      "gap": "HSI_line_timing_and_start",
+      "records": "Acquisition-computer sidecars 002-specim-fx10.json, 002-specim-fx17.json, 003-specim-fx10.json and 003-specim-fx17.json if retained; matching SCM/hypercam session/event logs, timestamp units/timebase, dropped-frame counters, per-line encoder/trigger relationship and run-start fiducial observations.",
+      "why": "August28 sidecars show frame IDs/timestamp/system_time fields and one FX17 missing frame. September28 headers alone cannot supply these records; acquisition time must not be assumed to mean first line.",
+      "closed": false
+    },
+    {
+      "gap": "HSI_spatial_geometry",
+      "records": "Per-sensor serial and lens/focus identifier; spatial column-to-ray/lens/keystone calibration; measured fixed rig transforms in a stated shared frame; applicability/change log proving the geometry applies to September28.",
+      "why": "Historical homographies and specimen ICP transforms are not calibrated camera intrinsics/extrinsics.",
+      "closed": false
+    },
+    {
+      "gap": "independent_offplane_validation",
+      "records": "Exact noncoplanar shared XYZ-to-HSI control records and independently reserved elevated holdouts, repeat-localization evidence and numeric residual thresholds; otherwise follow the saved multi-height capture specification.",
+      "why": "Metadata recovery alone cannot certify raised-leaf mapping or visibility.",
+      "closed": false
+    },
+    {
+      "gap": "radiometric_reference",
+      "records": "Matching white-panel spectral reflectance/certificate and exposure/gain records; confirmed shutter-closed dark capture and timing; usable reference spatial support.",
+      "why": "Fixed exposure/intended white use are recorded but panel reflectance and shutter-tail state remain unknown.",
+      "closed": false
+    }
+  ],
+  "historical_timing_unit_warning": "Units of timestamp/system_time/frame_start_offset are not declared. Historical values are not converted into a current line rate or scan-start offset.",
+  "source_commit_at_audit": "920a577958a22e10998d24935265c77e2296d867"
+}

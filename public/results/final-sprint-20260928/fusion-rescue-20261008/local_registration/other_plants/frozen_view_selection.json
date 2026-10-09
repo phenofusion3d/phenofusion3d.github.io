@@ -1,0 +1,2153 @@
+{
+  "predefined_runs": 16,
+  "selections": [
+    {
+      "plant_id": 1,
+      "identity_scope": "Provisional scan-order region R1 to existing RGB-D plant P1; whole-plant identity alone does not establish same-organ pixel correspondence.",
+      "view_selection": "Highest depth-supported projected pixel occupancy times in-frame fraction; adjacent accepted view chosen by same geometry score. No HSI match results used.",
+      "selected_views": [
+        {
+          "frame": 86916,
+          "pose_index": 3,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.8003637381085619,
+          "occupied_pixels": 3288,
+          "score": 3288.0
+        },
+        {
+          "frame": 115793,
+          "pose_index": 4,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.79252937884723,
+          "occupied_pixels": 3206,
+          "score": 3206.0
+        }
+      ],
+      "ranking": [
+        {
+          "frame": 86916,
+          "pose_index": 3,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.8003637381085619,
+          "occupied_pixels": 3288,
+          "score": 3288.0
+        },
+        {
+          "frame": 115793,
+          "pose_index": 4,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.79252937884723,
+          "occupied_pixels": 3206,
+          "score": 3206.0
+        },
+        {
+          "frame": 58790,
+          "pose_index": 2,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7827364297705652,
+          "occupied_pixels": 3182,
+          "score": 3182.0
+        },
+        {
+          "frame": 459309,
+          "pose_index": 17,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.786094012311136,
+          "occupied_pixels": 3160,
+          "score": 3160.0
+        },
+        {
+          "frame": 433466,
+          "pose_index": 16,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7700055959709009,
+          "occupied_pixels": 3014,
+          "score": 3014.0
+        },
+        {
+          "frame": 143152,
+          "pose_index": 5,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7502797985450476,
+          "occupied_pixels": 2991,
+          "score": 2991.0
+        },
+        {
+          "frame": 407630,
+          "pose_index": 15,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7339115836597649,
+          "occupied_pixels": 2924,
+          "score": 2924.0
+        },
+        {
+          "frame": 381031,
+          "pose_index": 14,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7442641298265249,
+          "occupied_pixels": 2859,
+          "score": 2859.0
+        },
+        {
+          "frame": 355184,
+          "pose_index": 13,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7313933967543369,
+          "occupied_pixels": 2752,
+          "score": 2752.0
+        },
+        {
+          "frame": 29908,
+          "pose_index": 1,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.6814493564633464,
+          "occupied_pixels": 2745,
+          "score": 2745.0
+        },
+        {
+          "frame": 487431,
+          "pose_index": 18,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.6944599888080581,
+          "occupied_pixels": 2710,
+          "score": 2710.0
+        },
+        {
+          "frame": 328592,
+          "pose_index": 12,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7083100167879127,
+          "occupied_pixels": 2649,
+          "score": 2649.0
+        },
+        {
+          "frame": 170514,
+          "pose_index": 6,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.6696978175713486,
+          "occupied_pixels": 2588,
+          "score": 2588.0
+        },
+        {
+          "frame": 512509,
+          "pose_index": 19,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.6449356463346391,
+          "occupied_pixels": 2543,
+          "score": 2543.0
+        },
+        {
+          "frame": 302754,
+          "pose_index": 11,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.6505316172355904,
+          "occupied_pixels": 2448,
+          "score": 2448.0
+        },
+        {
+          "frame": 197108,
+          "pose_index": 7,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.6433967543368775,
+          "occupied_pixels": 2420,
+          "score": 2420.0
+        },
+        {
+          "frame": 539871,
+          "pose_index": 20,
+          "inside_fraction": 0.985170677112479,
+          "supported_fraction": 0.6235310576385003,
+          "occupied_pixels": 2454,
+          "score": 2417.6088416340235
+        },
+        {
+          "frame": 565708,
+          "pose_index": 21,
+          "inside_fraction": 0.9455791829882485,
+          "supported_fraction": 0.625069949636262,
+          "occupied_pixels": 2495,
+          "score": 2359.22006155568
+        },
+        {
+          "frame": 222952,
+          "pose_index": 8,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.6203133743704533,
+          "occupied_pixels": 2356,
+          "score": 2356.0
+        },
+        {
+          "frame": 0,
+          "pose_index": 0,
+          "inside_fraction": 0.9907666480134303,
+          "supported_fraction": 0.568970341354225,
+          "occupied_pixels": 2315,
+          "score": 2293.624790151091
+        },
+        {
+          "frame": 591548,
+          "pose_index": 22,
+          "inside_fraction": 0.9174594292109681,
+          "supported_fraction": 0.5996082820369334,
+          "occupied_pixels": 2348,
+          "score": 2154.1947397873532
+        },
+        {
+          "frame": 249551,
+          "pose_index": 9,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.5516228315612759,
+          "occupied_pixels": 2103,
+          "score": 2103.0
+        },
+        {
+          "frame": 618150,
+          "pose_index": 23,
+          "inside_fraction": 0.8912982652490207,
+          "supported_fraction": 0.5114717403469502,
+          "occupied_pixels": 2028,
+          "score": 1807.552881925014
+        },
+        {
+          "frame": 275384,
+          "pose_index": 10,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.4622271964185786,
+          "occupied_pixels": 1801,
+          "score": 1801.0
+        },
+        {
+          "frame": 643232,
+          "pose_index": 24,
+          "inside_fraction": 0.8670956911024063,
+          "supported_fraction": 0.35156687185226637,
+          "occupied_pixels": 1329,
+          "score": 1152.370173475098
+        },
+        {
+          "frame": 670589,
+          "pose_index": 25,
+          "inside_fraction": 0.8497481813094572,
+          "supported_fraction": 0.20733072188024623,
+          "occupied_pixels": 723,
+          "score": 614.3679350867376
+        },
+        {
+          "frame": 696431,
+          "pose_index": 26,
+          "inside_fraction": 0.8344991606043649,
+          "supported_fraction": 0.19418019026301064,
+          "occupied_pixels": 688,
+          "score": 574.135422495803
+        },
+        {
+          "frame": 747348,
+          "pose_index": 28,
+          "inside_fraction": 0.7981253497481813,
+          "supported_fraction": 0.1968382764409625,
+          "occupied_pixels": 678,
+          "score": 541.1289871292669
+        },
+        {
+          "frame": 721510,
+          "pose_index": 27,
+          "inside_fraction": 0.8210688304420817,
+          "supported_fraction": 0.17501398992725237,
+          "occupied_pixels": 640,
+          "score": 525.4840514829323
+        },
+        {
+          "frame": 773192,
+          "pose_index": 29,
+          "inside_fraction": 0.7749020705092333,
+          "supported_fraction": 0.06897034135422496,
+          "occupied_pixels": 285,
+          "score": 220.8470900951315
+        },
+        {
+          "frame": 799028,
+          "pose_index": 30,
+          "inside_fraction": 0.6976776720761052,
+          "supported_fraction": 0.02378287632904309,
+          "occupied_pixels": 106,
+          "score": 73.95383324006715
+        },
+        {
+          "frame": 824869,
+          "pose_index": 31,
+          "inside_fraction": 0.6054840514829323,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 851470,
+          "pose_index": 32,
+          "inside_fraction": 0.5352546166759933,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 877311,
+          "pose_index": 33,
+          "inside_fraction": 0.49272523782876326,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 902387,
+          "pose_index": 34,
+          "inside_fraction": 0.49888080581980976,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 927469,
+          "pose_index": 35,
+          "inside_fraction": 0.43088975937325125,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 952549,
+          "pose_index": 36,
+          "inside_fraction": 0.3087576944599888,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 977624,
+          "pose_index": 37,
+          "inside_fraction": 0.14045886961387802,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1003470,
+          "pose_index": 38,
+          "inside_fraction": 0.06267487409065473,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1030829,
+          "pose_index": 39,
+          "inside_fraction": 0.04770565193060996,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1055904,
+          "pose_index": 40,
+          "inside_fraction": 0.04322887520984891,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1081749,
+          "pose_index": 41,
+          "inside_fraction": 0.03987129266927812,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1107591,
+          "pose_index": 42,
+          "inside_fraction": 0.03861219921656407,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1133422,
+          "pose_index": 43,
+          "inside_fraction": 0.0302182428651371,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1160788,
+          "pose_index": 44,
+          "inside_fraction": 0.028819250139899274,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1187389,
+          "pose_index": 45,
+          "inside_fraction": 0.032176832680470065,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1215512,
+          "pose_index": 46,
+          "inside_fraction": 0.0376329043088976,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1240590,
+          "pose_index": 47,
+          "inside_fraction": 0.04071068830442082,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1267191,
+          "pose_index": 48,
+          "inside_fraction": 0.05274202574146614,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1293028,
+          "pose_index": 49,
+          "inside_fraction": 0.047845551203133746,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1318110,
+          "pose_index": 50,
+          "inside_fraction": 0.04448796866256295,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1343952,
+          "pose_index": 51,
+          "inside_fraction": 0.041130386121992164,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1369024,
+          "pose_index": 52,
+          "inside_fraction": 0.05344152210408506,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1396388,
+          "pose_index": 53,
+          "inside_fraction": 0.1250699496362619,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1420709,
+          "pose_index": 54,
+          "inside_fraction": 0.18074986010072747,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1445026,
+          "pose_index": 55,
+          "inside_fraction": 0.22775601566871853,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1469347,
+          "pose_index": 56,
+          "inside_fraction": 0.2621712367095691,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1493670,
+          "pose_index": 57,
+          "inside_fraction": 0.2888919977616116,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1517985,
+          "pose_index": 58,
+          "inside_fraction": 0.325405707890319,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1542304,
+          "pose_index": 59,
+          "inside_fraction": 0.4029099048684947,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1567391,
+          "pose_index": 60,
+          "inside_fraction": 0.3994124230554001,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1591708,
+          "pose_index": 61,
+          "inside_fraction": 0.33379966424174595,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1615265,
+          "pose_index": 62,
+          "inside_fraction": 0.29127028539451594,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1639585,
+          "pose_index": 63,
+          "inside_fraction": 0.30134303301622833,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        }
+      ]
+    },
+    {
+      "plant_id": 2,
+      "identity_scope": "Provisional scan-order region R2 to existing RGB-D plant P2; whole-plant identity alone does not establish same-organ pixel correspondence.",
+      "view_selection": "Highest depth-supported projected pixel occupancy times in-frame fraction; adjacent accepted view chosen by same geometry score. No HSI match results used.",
+      "selected_views": [
+        {
+          "frame": 381031,
+          "pose_index": 14,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7220344571758305,
+          "occupied_pixels": 11976,
+          "score": 11976.0
+        },
+        {
+          "frame": 407630,
+          "pose_index": 15,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7015085318605226,
+          "occupied_pixels": 11897,
+          "score": 11897.0
+        }
+      ],
+      "ranking": [
+        {
+          "frame": 381031,
+          "pose_index": 14,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7220344571758305,
+          "occupied_pixels": 11976,
+          "score": 11976.0
+        },
+        {
+          "frame": 407630,
+          "pose_index": 15,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7015085318605226,
+          "occupied_pixels": 11897,
+          "score": 11897.0
+        },
+        {
+          "frame": 355184,
+          "pose_index": 13,
+          "inside_fraction": 0.9979391641249691,
+          "supported_fraction": 0.6732750803725991,
+          "occupied_pixels": 10956,
+          "score": 10933.42148215316
+        },
+        {
+          "frame": 433466,
+          "pose_index": 16,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.6046080290165691,
+          "occupied_pixels": 10483,
+          "score": 10483.0
+        },
+        {
+          "frame": 328592,
+          "pose_index": 12,
+          "inside_fraction": 0.9759706536971395,
+          "supported_fraction": 0.6550160745198252,
+          "occupied_pixels": 10420,
+          "score": 10169.614211524195
+        },
+        {
+          "frame": 670589,
+          "pose_index": 25,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.4969087461874536,
+          "occupied_pixels": 8811,
+          "score": 8811.0
+        },
+        {
+          "frame": 302754,
+          "pose_index": 11,
+          "inside_fraction": 0.897864974033468,
+          "supported_fraction": 0.6139230071717089,
+          "occupied_pixels": 9756,
+          "score": 8759.570686670513
+        },
+        {
+          "frame": 696431,
+          "pose_index": 26,
+          "inside_fraction": 0.9965790124474487,
+          "supported_fraction": 0.47815513972467233,
+          "occupied_pixels": 8445,
+          "score": 8416.109760118705
+        },
+        {
+          "frame": 459309,
+          "pose_index": 17,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.45668122990685023,
+          "occupied_pixels": 8370,
+          "score": 8370.0
+        },
+        {
+          "frame": 643232,
+          "pose_index": 24,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.47139559805457093,
+          "occupied_pixels": 8290,
+          "score": 8290.0
+        },
+        {
+          "frame": 275384,
+          "pose_index": 10,
+          "inside_fraction": 0.8476217954002143,
+          "supported_fraction": 0.5817739675212266,
+          "occupied_pixels": 9237,
+          "score": 7829.48252411178
+        },
+        {
+          "frame": 618150,
+          "pose_index": 23,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.4335586513890034,
+          "occupied_pixels": 7701,
+          "score": 7701.0
+        },
+        {
+          "frame": 487431,
+          "pose_index": 18,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.3756903800181354,
+          "occupied_pixels": 7237,
+          "score": 7237.0
+        },
+        {
+          "frame": 721510,
+          "pose_index": 27,
+          "inside_fraction": 0.9936114087874042,
+          "supported_fraction": 0.39563927128843457,
+          "occupied_pixels": 7005,
+          "score": 6960.247918555766
+        },
+        {
+          "frame": 591548,
+          "pose_index": 22,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.38244992168823677,
+          "occupied_pixels": 6752,
+          "score": 6752.0
+        },
+        {
+          "frame": 565708,
+          "pose_index": 21,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.33319594427499793,
+          "occupied_pixels": 6384,
+          "score": 6384.0
+        },
+        {
+          "frame": 249551,
+          "pose_index": 9,
+          "inside_fraction": 0.8101145824746517,
+          "supported_fraction": 0.490932322149864,
+          "occupied_pixels": 7793,
+          "score": 6313.222941224961
+        },
+        {
+          "frame": 512509,
+          "pose_index": 19,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.318934960019784,
+          "occupied_pixels": 6249,
+          "score": 6249.0
+        },
+        {
+          "frame": 539871,
+          "pose_index": 20,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.31794575879976916,
+          "occupied_pixels": 6191,
+          "score": 6191.0
+        },
+        {
+          "frame": 747348,
+          "pose_index": 28,
+          "inside_fraction": 0.9887890528398319,
+          "supported_fraction": 0.3500535817327508,
+          "occupied_pixels": 5980,
+          "score": 5912.958535982195
+        },
+        {
+          "frame": 773192,
+          "pose_index": 29,
+          "inside_fraction": 0.9360728711565411,
+          "supported_fraction": 0.31658560712224876,
+          "occupied_pixels": 5258,
+          "score": 4921.871156541093
+        },
+        {
+          "frame": 222952,
+          "pose_index": 8,
+          "inside_fraction": 0.7455279861511829,
+          "supported_fraction": 0.3446541917401698,
+          "occupied_pixels": 5409,
+          "score": 4032.5608770917484
+        },
+        {
+          "frame": 799028,
+          "pose_index": 30,
+          "inside_fraction": 0.8722281757480834,
+          "supported_fraction": 0.281798697551727,
+          "occupied_pixels": 4343,
+          "score": 3788.0869672739263
+        },
+        {
+          "frame": 824869,
+          "pose_index": 31,
+          "inside_fraction": 0.8347209628225208,
+          "supported_fraction": 0.22384799274585773,
+          "occupied_pixels": 3290,
+          "score": 2746.2319676860934
+        },
+        {
+          "frame": 197108,
+          "pose_index": 7,
+          "inside_fraction": 0.7326683702909901,
+          "supported_fraction": 0.241200230813618,
+          "occupied_pixels": 3715,
+          "score": 2721.8629956310283
+        },
+        {
+          "frame": 851470,
+          "pose_index": 32,
+          "inside_fraction": 0.8105679663671586,
+          "supported_fraction": 0.20810320666062154,
+          "occupied_pixels": 2947,
+          "score": 2388.7437968840163
+        },
+        {
+          "frame": 877311,
+          "pose_index": 33,
+          "inside_fraction": 0.7860852361717913,
+          "supported_fraction": 0.1809001731102135,
+          "occupied_pixels": 2558,
+          "score": 2010.806034127442
+        },
+        {
+          "frame": 902387,
+          "pose_index": 34,
+          "inside_fraction": 0.6939246558404089,
+          "supported_fraction": 0.16569120435248536,
+          "occupied_pixels": 2295,
+          "score": 1592.5570851537384
+        },
+        {
+          "frame": 170514,
+          "pose_index": 6,
+          "inside_fraction": 0.7160992498557415,
+          "supported_fraction": 0.13696315225455444,
+          "occupied_pixels": 2016,
+          "score": 1443.6560877091747
+        },
+        {
+          "frame": 927469,
+          "pose_index": 35,
+          "inside_fraction": 0.5798779985161981,
+          "supported_fraction": 0.11322232297419833,
+          "occupied_pixels": 1463,
+          "score": 848.3615118291979
+        },
+        {
+          "frame": 143152,
+          "pose_index": 5,
+          "inside_fraction": 0.6604978979474074,
+          "supported_fraction": 0.07155222158107329,
+          "occupied_pixels": 1010,
+          "score": 667.1028769268815
+        },
+        {
+          "frame": 952549,
+          "pose_index": 36,
+          "inside_fraction": 0.5063473744950953,
+          "supported_fraction": 0.06829610089852445,
+          "occupied_pixels": 711,
+          "score": 360.0129832660127
+        },
+        {
+          "frame": 977624,
+          "pose_index": 37,
+          "inside_fraction": 0.46290495424944356,
+          "supported_fraction": 0.05873382243838101,
+          "occupied_pixels": 616,
+          "score": 285.1494518176572
+        },
+        {
+          "frame": 115793,
+          "pose_index": 4,
+          "inside_fraction": 0.5485945099332289,
+          "supported_fraction": 0.020649575467809742,
+          "occupied_pixels": 275,
+          "score": 150.86349023163794
+        },
+        {
+          "frame": 1003470,
+          "pose_index": 38,
+          "inside_fraction": 0.4659549913444893,
+          "supported_fraction": 0.0066771082351001565,
+          "occupied_pixels": 112,
+          "score": 52.186959030582805
+        },
+        {
+          "frame": 29908,
+          "pose_index": 1,
+          "inside_fraction": 0.25488418102382326,
+          "supported_fraction": 0.00037095045750556424,
+          "occupied_pixels": 7,
+          "score": 1.784189267166763
+        },
+        {
+          "frame": 0,
+          "pose_index": 0,
+          "inside_fraction": 0.1562525760448438,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 58790,
+          "pose_index": 2,
+          "inside_fraction": 0.3885499958783282,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 86916,
+          "pose_index": 3,
+          "inside_fraction": 0.5192894237902893,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1030829,
+          "pose_index": 39,
+          "inside_fraction": 0.4659137746269887,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1055904,
+          "pose_index": 40,
+          "inside_fraction": 0.31489572170472346,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1081749,
+          "pose_index": 41,
+          "inside_fraction": 0.17459401533261892,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1107591,
+          "pose_index": 42,
+          "inside_fraction": 0.13341851454950127,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1133422,
+          "pose_index": 43,
+          "inside_fraction": 0.12987387684444812,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1160788,
+          "pose_index": 44,
+          "inside_fraction": 0.1135932734317039,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1187389,
+          "pose_index": 45,
+          "inside_fraction": 0.06693594922100404,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1215512,
+          "pose_index": 46,
+          "inside_fraction": 0.044843788640672656,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1240590,
+          "pose_index": 47,
+          "inside_fraction": 0.05790948808836864,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1267191,
+          "pose_index": 48,
+          "inside_fraction": 0.08577198911878658,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1293028,
+          "pose_index": 49,
+          "inside_fraction": 0.09455114994641826,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1318110,
+          "pose_index": 50,
+          "inside_fraction": 0.11194460473167916,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1343952,
+          "pose_index": 51,
+          "inside_fraction": 0.1524606380347869,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1369024,
+          "pose_index": 52,
+          "inside_fraction": 0.19075096859286125,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1396388,
+          "pose_index": 53,
+          "inside_fraction": 0.22768114747341522,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1420709,
+          "pose_index": 54,
+          "inside_fraction": 0.24808342263622124,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1445026,
+          "pose_index": 55,
+          "inside_fraction": 0.2350589399060259,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1469347,
+          "pose_index": 56,
+          "inside_fraction": 0.19417195614541258,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1493670,
+          "pose_index": 57,
+          "inside_fraction": 0.14912208391723683,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1517985,
+          "pose_index": 58,
+          "inside_fraction": 0.16231143351743468,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1542304,
+          "pose_index": 59,
+          "inside_fraction": 0.2501854752287528,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1567391,
+          "pose_index": 60,
+          "inside_fraction": 0.2917731431868766,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1591708,
+          "pose_index": 61,
+          "inside_fraction": 0.2958535982194378,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1615265,
+          "pose_index": 62,
+          "inside_fraction": 0.296801582721952,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1639585,
+          "pose_index": 63,
+          "inside_fraction": 0.27025801665155386,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        }
+      ]
+    },
+    {
+      "plant_id": 3,
+      "identity_scope": "Provisional scan-order region R3 to existing RGB-D plant P3; whole-plant identity alone does not establish same-organ pixel correspondence.",
+      "view_selection": "Highest depth-supported projected pixel occupancy times in-frame fraction; adjacent accepted view chosen by same geometry score. No HSI match results used.",
+      "selected_views": [
+        {
+          "frame": 824869,
+          "pose_index": 31,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7554717382065448,
+          "occupied_pixels": 19411,
+          "score": 19411.0
+        },
+        {
+          "frame": 799028,
+          "pose_index": 30,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7545686357841054,
+          "occupied_pixels": 19238,
+          "score": 19238.0
+        }
+      ],
+      "ranking": [
+        {
+          "frame": 824869,
+          "pose_index": 31,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7554717382065448,
+          "occupied_pixels": 19411,
+          "score": 19411.0
+        },
+        {
+          "frame": 799028,
+          "pose_index": 30,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7545686357841054,
+          "occupied_pixels": 19238,
+          "score": 19238.0
+        },
+        {
+          "frame": 747348,
+          "pose_index": 28,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7540639609009775,
+          "occupied_pixels": 19003,
+          "score": 19003.0
+        },
+        {
+          "frame": 773192,
+          "pose_index": 29,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7508499787505313,
+          "occupied_pixels": 18934,
+          "score": 18934.0
+        },
+        {
+          "frame": 851470,
+          "pose_index": 32,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7350722481937951,
+          "occupied_pixels": 18926,
+          "score": 18926.0
+        },
+        {
+          "frame": 721510,
+          "pose_index": 27,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7412345941351466,
+          "occupied_pixels": 18775,
+          "score": 18775.0
+        },
+        {
+          "frame": 877311,
+          "pose_index": 33,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.7162399065023375,
+          "occupied_pixels": 18486,
+          "score": 18486.0
+        },
+        {
+          "frame": 670589,
+          "pose_index": 25,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.714035274118147,
+          "occupied_pixels": 18278,
+          "score": 18278.0
+        },
+        {
+          "frame": 643232,
+          "pose_index": 24,
+          "inside_fraction": 0.9994156396090098,
+          "supported_fraction": 0.7173820654483638,
+          "occupied_pixels": 18224,
+          "score": 18213.350616234595
+        },
+        {
+          "frame": 618150,
+          "pose_index": 23,
+          "inside_fraction": 0.9988844028899277,
+          "supported_fraction": 0.7204101147471313,
+          "occupied_pixels": 18165,
+          "score": 18144.73517849554
+        },
+        {
+          "frame": 696431,
+          "pose_index": 26,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.704021461963451,
+          "occupied_pixels": 17995,
+          "score": 17995.0
+        },
+        {
+          "frame": 902387,
+          "pose_index": 34,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.6763705907352316,
+          "occupied_pixels": 17480,
+          "score": 17480.0
+        },
+        {
+          "frame": 591548,
+          "pose_index": 22,
+          "inside_fraction": 0.9968125796855078,
+          "supported_fraction": 0.6850828729281768,
+          "occupied_pixels": 17294,
+          "score": 17238.87675308117
+        },
+        {
+          "frame": 927469,
+          "pose_index": 35,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.6524649383765406,
+          "occupied_pixels": 16904,
+          "score": 16904.0
+        },
+        {
+          "frame": 952549,
+          "pose_index": 36,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.6362090947726307,
+          "occupied_pixels": 16546,
+          "score": 16546.0
+        },
+        {
+          "frame": 565708,
+          "pose_index": 21,
+          "inside_fraction": 0.9787770930726731,
+          "supported_fraction": 0.6642318317042074,
+          "occupied_pixels": 16765,
+          "score": 16409.197965363364
+        },
+        {
+          "frame": 977624,
+          "pose_index": 37,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.5920367615809605,
+          "occupied_pixels": 15373,
+          "score": 15373.0
+        },
+        {
+          "frame": 539871,
+          "pose_index": 20,
+          "inside_fraction": 0.9776083722906928,
+          "supported_fraction": 0.620006374840629,
+          "occupied_pixels": 15528,
+          "score": 15180.302804929877
+        },
+        {
+          "frame": 1003470,
+          "pose_index": 38,
+          "inside_fraction": 0.9998406289842754,
+          "supported_fraction": 0.5673342541436464,
+          "occupied_pixels": 14744,
+          "score": 14741.650233744156
+        },
+        {
+          "frame": 512509,
+          "pose_index": 19,
+          "inside_fraction": 0.9687898427539311,
+          "supported_fraction": 0.5524596260093497,
+          "occupied_pixels": 13925,
+          "score": 13490.39856034849
+        },
+        {
+          "frame": 1030829,
+          "pose_index": 39,
+          "inside_fraction": 0.979520824479388,
+          "supported_fraction": 0.5361240968975776,
+          "occupied_pixels": 13693,
+          "score": 13412.57864959626
+        },
+        {
+          "frame": 1055904,
+          "pose_index": 40,
+          "inside_fraction": 0.9628665533361666,
+          "supported_fraction": 0.5053654908627284,
+          "occupied_pixels": 13001,
+          "score": 12518.228059923502
+        },
+        {
+          "frame": 487431,
+          "pose_index": 18,
+          "inside_fraction": 0.9539152146196345,
+          "supported_fraction": 0.48738312792180194,
+          "occupied_pixels": 12244,
+          "score": 11679.737887802805
+        },
+        {
+          "frame": 1081749,
+          "pose_index": 41,
+          "inside_fraction": 0.9508074798130047,
+          "supported_fraction": 0.44777943051423713,
+          "occupied_pixels": 11615,
+          "score": 11043.62887802805
+        },
+        {
+          "frame": 459309,
+          "pose_index": 17,
+          "inside_fraction": 0.9358266043348916,
+          "supported_fraction": 0.40185401614959626,
+          "occupied_pixels": 9753,
+          "score": 9127.116872078199
+        },
+        {
+          "frame": 1107591,
+          "pose_index": 42,
+          "inside_fraction": 0.9356141096472588,
+          "supported_fraction": 0.34371015724606885,
+          "occupied_pixels": 8680,
+          "score": 8121.130471738206
+        },
+        {
+          "frame": 433466,
+          "pose_index": 16,
+          "inside_fraction": 0.9194379515512112,
+          "supported_fraction": 0.2824054398640034,
+          "occupied_pixels": 6798,
+          "score": 6250.339194645134
+        },
+        {
+          "frame": 1133422,
+          "pose_index": 43,
+          "inside_fraction": 0.922784742881428,
+          "supported_fraction": 0.21581491712707182,
+          "occupied_pixels": 5405,
+          "score": 4987.651535274118
+        },
+        {
+          "frame": 407630,
+          "pose_index": 15,
+          "inside_fraction": 0.9020665108372291,
+          "supported_fraction": 0.1994528261793455,
+          "occupied_pixels": 4836,
+          "score": 4362.39364640884
+        },
+        {
+          "frame": 381031,
+          "pose_index": 14,
+          "inside_fraction": 0.8638440288992775,
+          "supported_fraction": 0.1690660858478538,
+          "occupied_pixels": 4037,
+          "score": 3487.3383446663834
+        },
+        {
+          "frame": 355184,
+          "pose_index": 13,
+          "inside_fraction": 0.8092063323416915,
+          "supported_fraction": 0.16290373990650234,
+          "occupied_pixels": 3961,
+          "score": 3205.26628240544
+        },
+        {
+          "frame": 328592,
+          "pose_index": 12,
+          "inside_fraction": 0.7433329791755207,
+          "supported_fraction": 0.14707288567785806,
+          "occupied_pixels": 3577,
+          "score": 2658.9020665108374
+        },
+        {
+          "frame": 1160788,
+          "pose_index": 44,
+          "inside_fraction": 0.8871918827029325,
+          "supported_fraction": 0.11501274968125796,
+          "occupied_pixels": 2985,
+          "score": 2648.2677698682533
+        },
+        {
+          "frame": 1187389,
+          "pose_index": 45,
+          "inside_fraction": 0.8404961750956226,
+          "supported_fraction": 0.06143752656183595,
+          "occupied_pixels": 1631,
+          "score": 1370.8492615809605
+        },
+        {
+          "frame": 302754,
+          "pose_index": 11,
+          "inside_fraction": 0.5385412239694007,
+          "supported_fraction": 0.08823841903952401,
+          "occupied_pixels": 2349,
+          "score": 1265.0333351041224
+        },
+        {
+          "frame": 1267191,
+          "pose_index": 48,
+          "inside_fraction": 0.6507118572035699,
+          "supported_fraction": 0.028102422439439015,
+          "occupied_pixels": 834,
+          "score": 542.6936889077773
+        },
+        {
+          "frame": 1215512,
+          "pose_index": 46,
+          "inside_fraction": 0.7919942626434339,
+          "supported_fraction": 0.022736931576710584,
+          "occupied_pixels": 602,
+          "score": 476.7805461113472
+        },
+        {
+          "frame": 1240590,
+          "pose_index": 47,
+          "inside_fraction": 0.7123884402889927,
+          "supported_fraction": 0.021940076498087546,
+          "occupied_pixels": 626,
+          "score": 445.95516362090945
+        },
+        {
+          "frame": 275384,
+          "pose_index": 10,
+          "inside_fraction": 0.4350031874203145,
+          "supported_fraction": 0.038727156821079474,
+          "occupied_pixels": 1019,
+          "score": 443.2682479813005
+        },
+        {
+          "frame": 1293028,
+          "pose_index": 49,
+          "inside_fraction": 0.5663514662133446,
+          "supported_fraction": 0.012616872078198045,
+          "occupied_pixels": 355,
+          "score": 201.05477050573734
+        },
+        {
+          "frame": 249551,
+          "pose_index": 9,
+          "inside_fraction": 0.42254568635784107,
+          "supported_fraction": 0.011899702507437314,
+          "occupied_pixels": 335,
+          "score": 141.55280492987677
+        },
+        {
+          "frame": 1343952,
+          "pose_index": 51,
+          "inside_fraction": 0.2731619209519762,
+          "supported_fraction": 0.002523374415639609,
+          "occupied_pixels": 48,
+          "score": 13.111772205694859
+        },
+        {
+          "frame": 0,
+          "pose_index": 0,
+          "inside_fraction": 0.03561942201444964,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 29908,
+          "pose_index": 1,
+          "inside_fraction": 0.034769443263918405,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 58790,
+          "pose_index": 2,
+          "inside_fraction": 0.04271143221419464,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 86916,
+          "pose_index": 3,
+          "inside_fraction": 0.060481300467488314,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 115793,
+          "pose_index": 4,
+          "inside_fraction": 0.09450701232469189,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 143152,
+          "pose_index": 5,
+          "inside_fraction": 0.15844135146621335,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 170514,
+          "pose_index": 6,
+          "inside_fraction": 0.2753399915002125,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 197108,
+          "pose_index": 7,
+          "inside_fraction": 0.3498725031874203,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 222952,
+          "pose_index": 8,
+          "inside_fraction": 0.40878665533361663,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1318110,
+          "pose_index": 50,
+          "inside_fraction": 0.418853591160221,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1369024,
+          "pose_index": 52,
+          "inside_fraction": 0.17278474288142798,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1396388,
+          "pose_index": 53,
+          "inside_fraction": 0.11947513812154696,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1420709,
+          "pose_index": 54,
+          "inside_fraction": 0.07992456438589035,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1445026,
+          "pose_index": 55,
+          "inside_fraction": 0.04781130471738206,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1469347,
+          "pose_index": 56,
+          "inside_fraction": 0.023347853803654908,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1493670,
+          "pose_index": 57,
+          "inside_fraction": 0.022285380365490864,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1517985,
+          "pose_index": 58,
+          "inside_fraction": 0.03567254568635784,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1542304,
+          "pose_index": 59,
+          "inside_fraction": 0.0486081597960051,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1567391,
+          "pose_index": 60,
+          "inside_fraction": 0.06175626859328517,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1591708,
+          "pose_index": 61,
+          "inside_fraction": 0.07238100297492563,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1615265,
+          "pose_index": 62,
+          "inside_fraction": 0.06207501062473438,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1639585,
+          "pose_index": 63,
+          "inside_fraction": 0.05006906077348066,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        }
+      ]
+    },
+    {
+      "plant_id": 4,
+      "identity_scope": "Provisional scan-order region R4 to existing RGB-D plant P4; whole-plant identity alone does not establish same-organ pixel correspondence.",
+      "view_selection": "Highest depth-supported projected pixel occupancy times in-frame fraction; adjacent accepted view chosen by same geometry score. No HSI match results used.",
+      "selected_views": [
+        {
+          "frame": 851470,
+          "pose_index": 32,
+          "inside_fraction": 0.9942409988130303,
+          "supported_fraction": 0.5342682551545259,
+          "occupied_pixels": 8298,
+          "score": 8250.211808150525
+        },
+        {
+          "frame": 877311,
+          "pose_index": 33,
+          "inside_fraction": 0.9987690684485866,
+          "supported_fraction": 0.5129907240515232,
+          "occupied_pixels": 8143,
+          "score": 8132.976524376841
+        }
+      ],
+      "ranking": [
+        {
+          "frame": 851470,
+          "pose_index": 32,
+          "inside_fraction": 0.9942409988130303,
+          "supported_fraction": 0.5342682551545259,
+          "occupied_pixels": 8298,
+          "score": 8250.211808150525
+        },
+        {
+          "frame": 877311,
+          "pose_index": 33,
+          "inside_fraction": 0.9987690684485866,
+          "supported_fraction": 0.5129907240515232,
+          "occupied_pixels": 8143,
+          "score": 8132.976524376841
+        },
+        {
+          "frame": 824869,
+          "pose_index": 31,
+          "inside_fraction": 0.9912515936167406,
+          "supported_fraction": 0.5084626544159669,
+          "occupied_pixels": 7669,
+          "score": 7601.9084714467845
+        },
+        {
+          "frame": 902387,
+          "pose_index": 34,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.45302677276124326,
+          "occupied_pixels": 7456,
+          "score": 7456.0
+        },
+        {
+          "frame": 927469,
+          "pose_index": 35,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.44304743482657055,
+          "occupied_pixels": 7175,
+          "score": 7175.0
+        },
+        {
+          "frame": 1160788,
+          "pose_index": 44,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.4055040225084627,
+          "occupied_pixels": 6678,
+          "score": 6678.0
+        },
+        {
+          "frame": 799028,
+          "pose_index": 30,
+          "inside_fraction": 0.9562140062425815,
+          "supported_fraction": 0.47210621180815054,
+          "occupied_pixels": 6935,
+          "score": 6631.344133292302
+        },
+        {
+          "frame": 1187389,
+          "pose_index": 45,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.4080098474524113,
+          "occupied_pixels": 6561,
+          "score": 6561.0
+        },
+        {
+          "frame": 952549,
+          "pose_index": 36,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.3957884556205214,
+          "occupied_pixels": 6523,
+          "score": 6523.0
+        },
+        {
+          "frame": 1215512,
+          "pose_index": 46,
+          "inside_fraction": 0.9696223677847629,
+          "supported_fraction": 0.4195278498263507,
+          "occupied_pixels": 6621,
+          "score": 6419.869697102915
+        },
+        {
+          "frame": 1133422,
+          "pose_index": 43,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.3554314854706115,
+          "occupied_pixels": 6155,
+          "score": 6155.0
+        },
+        {
+          "frame": 1240590,
+          "pose_index": 47,
+          "inside_fraction": 0.9271991911021233,
+          "supported_fraction": 0.42445157603200423,
+          "occupied_pixels": 6631,
+          "score": 6148.25783619818
+        },
+        {
+          "frame": 1267191,
+          "pose_index": 48,
+          "inside_fraction": 0.8764672264474436,
+          "supported_fraction": 0.4348265705367741,
+          "occupied_pixels": 6583,
+          "score": 5769.783751703521
+        },
+        {
+          "frame": 977624,
+          "pose_index": 37,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.33520903855453466,
+          "occupied_pixels": 5635,
+          "score": 5635.0
+        },
+        {
+          "frame": 1003470,
+          "pose_index": 38,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.32755967819932297,
+          "occupied_pixels": 5574,
+          "score": 5574.0
+        },
+        {
+          "frame": 1293028,
+          "pose_index": 49,
+          "inside_fraction": 0.831801995867587,
+          "supported_fraction": 0.40682287774211984,
+          "occupied_pixels": 6155,
+          "score": 5119.741284564998
+        },
+        {
+          "frame": 773192,
+          "pose_index": 29,
+          "inside_fraction": 0.8874137248867983,
+          "supported_fraction": 0.40840550402250847,
+          "occupied_pixels": 5712,
+          "score": 5068.907196553391
+        },
+        {
+          "frame": 1055904,
+          "pose_index": 40,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.2764320569745461,
+          "occupied_pixels": 5025,
+          "score": 5025.0
+        },
+        {
+          "frame": 1107591,
+          "pose_index": 42,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.2677715742735306,
+          "occupied_pixels": 4917,
+          "score": 4917.0
+        },
+        {
+          "frame": 1030829,
+          "pose_index": 39,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.2686947729370906,
+          "occupied_pixels": 4850,
+          "score": 4850.0
+        },
+        {
+          "frame": 1081749,
+          "pose_index": 41,
+          "inside_fraction": 1.0,
+          "supported_fraction": 0.24847232602101377,
+          "occupied_pixels": 4682,
+          "score": 4682.0
+        },
+        {
+          "frame": 1318110,
+          "pose_index": 50,
+          "inside_fraction": 0.803666417549567,
+          "supported_fraction": 0.36554270892864993,
+          "occupied_pixels": 5420,
+          "score": 4355.871983118654
+        },
+        {
+          "frame": 747348,
+          "pose_index": 28,
+          "inside_fraction": 0.8151844199235064,
+          "supported_fraction": 0.39257924121862225,
+          "occupied_pixels": 5276,
+          "score": 4300.91299951642
+        },
+        {
+          "frame": 721510,
+          "pose_index": 27,
+          "inside_fraction": 0.7565832857080055,
+          "supported_fraction": 0.3572778827977316,
+          "occupied_pixels": 4869,
+          "score": 3683.8040181122788
+        },
+        {
+          "frame": 1343952,
+          "pose_index": 51,
+          "inside_fraction": 0.7771574273530576,
+          "supported_fraction": 0.3014023827317888,
+          "occupied_pixels": 4430,
+          "score": 3442.8074031740452
+        },
+        {
+          "frame": 696431,
+          "pose_index": 26,
+          "inside_fraction": 0.6819360794830087,
+          "supported_fraction": 0.3303292741900031,
+          "occupied_pixels": 4540,
+          "score": 3095.9898008528594
+        },
+        {
+          "frame": 1369024,
+          "pose_index": 52,
+          "inside_fraction": 0.7517914450257177,
+          "supported_fraction": 0.268518925572603,
+          "occupied_pixels": 3978,
+          "score": 2990.626368312305
+        },
+        {
+          "frame": 1396388,
+          "pose_index": 53,
+          "inside_fraction": 0.7149514221655603,
+          "supported_fraction": 0.24609838660043082,
+          "occupied_pixels": 3604,
+          "score": 2576.6849254846793
+        },
+        {
+          "frame": 670589,
+          "pose_index": 25,
+          "inside_fraction": 0.6037719259682596,
+          "supported_fraction": 0.23510792631995428,
+          "occupied_pixels": 3305,
+          "score": 1995.466215325098
+        },
+        {
+          "frame": 1420709,
+          "pose_index": 54,
+          "inside_fraction": 0.6862003780718336,
+          "supported_fraction": 0.2060931111794962,
+          "occupied_pixels": 2857,
+          "score": 1960.4744801512288
+        },
+        {
+          "frame": 1445026,
+          "pose_index": 55,
+          "inside_fraction": 0.6329186266320833,
+          "supported_fraction": 0.15865828460895942,
+          "occupied_pixels": 2185,
+          "score": 1382.927199191102
+        },
+        {
+          "frame": 643232,
+          "pose_index": 24,
+          "inside_fraction": 0.5680749109772717,
+          "supported_fraction": 0.14766782432848288,
+          "occupied_pixels": 2139,
+          "score": 1215.1122345803842
+        },
+        {
+          "frame": 618150,
+          "pose_index": 23,
+          "inside_fraction": 0.5435442036312481,
+          "supported_fraction": 0.11460851980480942,
+          "occupied_pixels": 1645,
+          "score": 894.1302149734031
+        },
+        {
+          "frame": 1469347,
+          "pose_index": 56,
+          "inside_fraction": 0.629357717501209,
+          "supported_fraction": 0.10819009100101112,
+          "occupied_pixels": 1362,
+          "score": 857.1852112366466
+        },
+        {
+          "frame": 591548,
+          "pose_index": 22,
+          "inside_fraction": 0.5323778959862839,
+          "supported_fraction": 0.09513342418780499,
+          "occupied_pixels": 1400,
+          "score": 745.3290543807975
+        },
+        {
+          "frame": 1493670,
+          "pose_index": 57,
+          "inside_fraction": 0.6290499846133556,
+          "supported_fraction": 0.09029762166439531,
+          "occupied_pixels": 1149,
+          "score": 722.7784323207455
+        },
+        {
+          "frame": 565708,
+          "pose_index": 21,
+          "inside_fraction": 0.5483800061546578,
+          "supported_fraction": 0.039345847804106035,
+          "occupied_pixels": 600,
+          "score": 329.02800369279464
+        },
+        {
+          "frame": 1517985,
+          "pose_index": 58,
+          "inside_fraction": 0.5985844287158746,
+          "supported_fraction": 0.03367477029938014,
+          "occupied_pixels": 451,
+          "score": 269.96157735085944
+        },
+        {
+          "frame": 539871,
+          "pose_index": 20,
+          "inside_fraction": 0.5627115663603992,
+          "supported_fraction": 0.00334109992526487,
+          "occupied_pixels": 62,
+          "score": 34.88811711434475
+        },
+        {
+          "frame": 0,
+          "pose_index": 0,
+          "inside_fraction": 0.0739877786081681,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 29908,
+          "pose_index": 1,
+          "inside_fraction": 0.06229392886974106,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 58790,
+          "pose_index": 2,
+          "inside_fraction": 0.050863850178045455,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 86916,
+          "pose_index": 3,
+          "inside_fraction": 0.029146700663823803,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 115793,
+          "pose_index": 4,
+          "inside_fraction": 0.03859849650503363,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 143152,
+          "pose_index": 5,
+          "inside_fraction": 0.044885039785466214,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 170514,
+          "pose_index": 6,
+          "inside_fraction": 0.05591946190706467,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 197108,
+          "pose_index": 7,
+          "inside_fraction": 0.08295599419703698,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 222952,
+          "pose_index": 8,
+          "inside_fraction": 0.0916164768980525,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 249551,
+          "pose_index": 9,
+          "inside_fraction": 0.14085373895458742,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 275384,
+          "pose_index": 10,
+          "inside_fraction": 0.1640655910669539,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 302754,
+          "pose_index": 11,
+          "inside_fraction": 0.1443706862443399,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 328592,
+          "pose_index": 12,
+          "inside_fraction": 0.10792631995427969,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 355184,
+          "pose_index": 13,
+          "inside_fraction": 0.058864905262232384,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 381031,
+          "pose_index": 14,
+          "inside_fraction": 0.06523937222490878,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 407630,
+          "pose_index": 15,
+          "inside_fraction": 0.10454125818789291,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 433466,
+          "pose_index": 16,
+          "inside_fraction": 0.18969534444102518,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 459309,
+          "pose_index": 17,
+          "inside_fraction": 0.2402074998900954,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 487431,
+          "pose_index": 18,
+          "inside_fraction": 0.3033806655822746,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 512509,
+          "pose_index": 19,
+          "inside_fraction": 0.4909658416494483,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1542304,
+          "pose_index": 59,
+          "inside_fraction": 0.5365103090517431,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1567391,
+          "pose_index": 60,
+          "inside_fraction": 0.40247065547105115,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1591708,
+          "pose_index": 61,
+          "inside_fraction": 0.27458565964742604,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1615265,
+          "pose_index": 62,
+          "inside_fraction": 0.18182617488020397,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        },
+        {
+          "frame": 1639585,
+          "pose_index": 63,
+          "inside_fraction": 0.16586802655295205,
+          "supported_fraction": 0.0,
+          "occupied_pixels": 0,
+          "score": 0.0
+        }
+      ]
+    }
+  ]
+}

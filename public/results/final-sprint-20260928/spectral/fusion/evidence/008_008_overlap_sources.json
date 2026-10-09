@@ -1,0 +1,74 @@
+{
+  "status": "ACTUAL_SELECTED_NEAR_OVERLAP_BANDS_SAVED_FOR_NEW_FX17_CORRESPONDENCE_PROBE",
+  "elapsed_seconds": 2.3523712000023806,
+  "sources": [
+    {
+      "camera": "fx10",
+      "source_header": "data\\main\\test_plant_10-7\\20260928\\003-specim-fx10.hdr",
+      "header_sha256": "6aaf169bc24b22abfd7cf8aed1d22517f5a956a99cb58698ec50d258b2dd048a",
+      "source_BIL": "data\\main\\test_plant_10-7\\20260928\\003-specim-fx10.bil",
+      "source_size": 975765504,
+      "source_mtime_ns": 1791339722284996900,
+      "source_shape": [
+        2127,
+        224,
+        1024
+      ],
+      "source_bands": [
+        202,
+        211,
+        218,
+        222
+      ],
+      "wavelength_nm": [
+        944.78,
+        970.03,
+        989.72,
+        1000.99
+      ],
+      "first_scan_line": 1450,
+      "last_scan_line_exclusive": 2050,
+      "read_values": 2457600,
+      "source_identity_stable": true,
+      "planes_npz": "fx10_overlap_P5_planes.npz",
+      "raw_planes_bytes_sha256": "f3f387efd15d91026604b10f4bcd8c0394d2fd3770a3fa4b9ac1778dfc27978f",
+      "spectral_interpolation": false,
+      "display_only": "Per-band1st/99th percentile stretch. Display resize for matching, not measured-data modification."
+    },
+    {
+      "camera": "fx17",
+      "source_header": "data\\main\\test_plant_10-7\\20260928\\003-specim-fx17.hdr",
+      "header_sha256": "762de08de4f6f2892aa0caf4dd69da81a4a283e4a83783a210d75664b3c64d4f",
+      "source_BIL": "data\\main\\test_plant_10-7\\20260928\\003-specim-fx17.bil",
+      "source_size": 609853440,
+      "source_mtime_ns": 1791339727075563300,
+      "source_shape": [
+        2127,
+        224,
+        640
+      ],
+      "source_bands": [
+        3,
+        10,
+        16,
+        19
+      ],
+      "wavelength_nm": [
+        945.98,
+        970.19,
+        990.97,
+        1001.37
+      ],
+      "first_scan_line": 1350,
+      "last_scan_line_exclusive": 1950,
+      "read_values": 1536000,
+      "source_identity_stable": true,
+      "planes_npz": "fx17_overlap_P5_planes.npz",
+      "raw_planes_bytes_sha256": "ddfeee7fb1c100e2419b7cf75dd1447d677beb7f26588173e0dd78b71182e4b8",
+      "spectral_interpolation": false,
+      "display_only": "Per-band1st/99th percentile stretch. Display resize for matching, not measured-data modification."
+    }
+  ],
+  "whole_cube_loaded": false,
+  "physical_calibration": false
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "status": "complete_measured_spectral_inspection",
+  "warning": "Measured camera-space spectra. Q/Q0 and spectral descriptors are provisional reference-relative signals, not calibrated reflectance or plant-health measurements. Camera regions are not verified 3D plant identities.",
+  "sensors": [
+    {
+      "id": "fx10",
+      "source_directory": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_spectral_extension_20261007\\result\\spectra\\sensors\\fx10",
+      "sample_count": 3,
+      "band_count": 224,
+      "wavelengths_nm": [
+        397.66,
+        1003.81
+      ],
+      "source_hashes": {
+        "summary.json": "bb6038ee237b80c8600202bd80c300a6d710cfa28eaacdec12cb76290e2f1ea8",
+        "measured_spectra.npz": "d8c4e9143e5dc55268277d9d419d4886510595a0d7f1e90e119ef39b0fc97eb2",
+        "measured_spectra.metadata.json": "8082deceb78c7bd74e9ff93e4357f20d4a7e3b9214fb276684b7bc44ac626229",
+        "input_config.json": "b6aa11507294b85e4f4d8b25cf2f3d75e4a6f1ea8278b2dc73a7aea2a127a940",
+        "patch_spectral_summary.csv": "23d704859982b4db4155be2efa9658d6bd1778bba27084bd891ad67a21504c3b",
+        "patch_index_summary.csv": "8d64ede7e8df271237a3c1f4d65c21e54f55d477752bb1262355b2269350ef52",
+        "reference_profiles.npz": "31637fe6c09a25633035fb07b8501174c8c2461a196129c6729b292f38cb3f06",
+        "reviewed_patch_mask.npz": "4b932961a68de6137628fb9dd9e0dae8cd098711d78a6a92cb0482cb34232c0c"
+      },
+      "descriptors": [
+        "NDVI_800_680",
+        "NDRE_790_720",
+        "GNDVI_800_550",
+        "PRI_531_570",
+        "PSRI_678_500_750",
+        "SIPI_800_445_680"
+      ],
+      "data_script": "sensors/fx10/browser_data.js",
+      "exports": [
+        "sensors/fx10/summary.json",
+        "sensors/fx10/measured_spectra.npz",
+        "sensors/fx10/measured_spectra.metadata.json",
+        "sensors/fx10/input_config.json",
+        "sensors/fx10/patch_spectral_summary.csv",
+        "sensors/fx10/patch_index_summary.csv",
+        "sensors/fx10/reference_profiles.npz",
+        "sensors/fx10/reviewed_patch_mask.npz",
+        "sensors/fx10/sample_bands.csv.gz",
+        "sensors/fx10/sample_indices.csv.gz"
+      ]
+    },
+    {
+      "id": "fx17",
+      "source_directory": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_spectral_extension_20261007\\result\\spectra\\sensors\\fx17",
+      "sample_count": 3,
+      "band_count": 224,
+      "wavelengths_nm": [
+        935.61,
+        1720.23
+      ],
+      "source_hashes": {
+        "summary.json": "d64061b2c36b0e24e37221bcee7fda36f2dbc262c85566451fc801901898a968",
+        "measured_spectra.npz": "30bb919ab907d1372aecced4166c70ce04f59c3a396f4b466b2618f733406eee",
+        "measured_spectra.metadata.json": "3e695fa051a7fd8a391ed49c01488358e7cc126526320e60bc641f0e025871bc",
+        "input_config.json": "b59dd126b8fbb0e94d654e06746e4bf26d714d0dce2def8a71f4f10d1b085749",
+        "patch_spectral_summary.csv": "238ea0ff3dd6a50336da4e0e023eeed49862e4bee039aaa17a1cef46c1274081",
+        "reference_profiles.npz": "466c87b9a48dd876c48a622780fec3d7931a81d9196a0bc2144ae293253c5ed5",
+        "reviewed_patch_mask.npz": "bbac63a20cdafbfa3414ae5d1542882ea314523d55a058ffb168d2aec2e3b634"
+      },
+      "descriptors": [],
+      "data_script": "sensors/fx17/browser_data.js",
+      "exports": [
+        "sensors/fx17/summary.json",
+        "sensors/fx17/measured_spectra.npz",
+        "sensors/fx17/measured_spectra.metadata.json",
+        "sensors/fx17/input_config.json",
+        "sensors/fx17/patch_spectral_summary.csv",
+        "sensors/fx17/reference_profiles.npz",
+        "sensors/fx17/reviewed_patch_mask.npz",
+        "sensors/fx17/sample_bands.csv.gz"
+      ]
+    }
+  ],
+  "source_inputs_unchanged": true,
+  "physical_fusion": null,
+  "calibrated_reflectance": false,
+  "physiological_claims": false,
+  "cross_camera_concatenation": false,
+  "sample_id_convention": "zero-based row of sensor measured_spectra.npz",
+  "csv_missing_values": "Blank numeric cells mean NaN or unavailable; never zero filled.",
+  "viewer_sampling": "Every saved measured sample; no added or interpolated sample.",
+  "software_sha256": "ac44c4c96623f723b9b125d7df3253be3867b523ec07672c9b7737f957e58a9a"
+}

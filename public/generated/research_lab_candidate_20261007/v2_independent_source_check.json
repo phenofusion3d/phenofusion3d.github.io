@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-07T10:22:59.005393+00:00",
+  "status": "passed",
+  "scope": "Read-only independent v2 source, manifest, patch and handoff-claim checks; no hardware or Linux runtime acceptance.",
+  "kit": "generated/research_lab_candidate_20261007/lab_test_kit_v2",
+  "checks": {
+    "exact_source_inventory": {
+      "old_count": 208,
+      "new_count": 208,
+      "missing": [],
+      "extra": [],
+      "modified_paths": [
+        "tests/test_gantry_offline.py"
+      ],
+      "unchanged_count": 207
+    },
+    "base_commit_verification": {
+      "base_commit": "920a577958a22e10998d24935265c77e2296d867",
+      "git_archive_files": 208,
+      "original_kit_matches_git_archive_exactly": true,
+      "new_candidate_is_exact_commit_snapshot": false
+    },
+    "source_manifests": {
+      "all_original_and_candidate_size_and_sha256_records_match": true,
+      "candidate_source_tree_sha256": "e7991bede31f3f8e93a67529553dcc0c909c0e0324864521bbf0f9ed8d5e36e3",
+      "candidate_metadata_matches_observed_source": true,
+      "working_raw_sha256_currently_matches_at_copy_record": true
+    },
+    "protected_files": {
+      "count": 26,
+      "all_raw_bytes_unchanged": true,
+      "all_lf_baseline_hashes_match": true,
+      "baseline_manifest_byte_identical": true,
+      "inherited_raw_baseline_differences": [
+        "app/main_window.py"
+      ],
+      "raw_baseline_note": "The retained v1 baseline has one raw hash differing from committed archive bytes (app/main_window.py); normalized LF content matches. All 26 v2 source files exactly match v1 and Git archive bytes."
+    },
+    "patch_validation": {
+      "patch": {
+        "hunks": 1,
+        "added_lines": 380,
+        "removed_lines": 374,
+        "sha256": "bbc67be027c1bafc6ffdd25cbbd8ee4d9029a6b316bb4383779a137201e6e59e",
+        "reproduces_candidate_exactly": true
+      },
+      "semantic_patch": {
+        "hunks": 1,
+        "added_lines": 6,
+        "removed_lines": 0,
+        "sha256": "ce17bb969abb50854bfcc4d4eac5a27cc8d5049fbc089de049b30bec95506629",
+        "reproduces_candidate_exactly": true
+      }
+    },
+    "generated_checker": {
+      "only_change": "HTML report prose identifies a frozen candidate snapshot rather than a committed snapshot",
+      "all_other_bytes_unchanged": true,
+      "syntax_parses": true
+    },
+    "handoff_claims": {
+      "start_here_disclaims_exact_commit_and_lab_acceptance_and_labels_development_tests": true,
+      "operator_record_consistent_with_uncommitted_candidate_and_unperformed_acceptance": true
+    },
+    "packaged_runtime_evidence": {
+      "linux_all_208_tested_source_hashes_match_kit": true,
+      "linux_xml_counts": {
+        "tests": 142,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 1
+      },
+      "changed_test_repeat_xml_counts": {
+        "tests": 20,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "windows_targeted_xml_counts": {
+        "tests": 18,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "preparation_source_and_checker_hashes_match": true,
+      "scope": "Checks packaged evidence consistency; independent review does not rerun the runtime tests."
+    },
+    "final_archive": {
+      "members": 230,
+      "checksum_entries": 229,
+      "no_missing_extra_or_duplicate_members": true,
+      "every_member_exact_bytes_match_kit": true,
+      "all_checksum_entries_match": true,
+      "crc_check_passed": true,
+      "archive_sha256": "c829b887087933031a32260f8a7bb0451ab8b1654dcef84dfa85d4b00101a2a6",
+      "receipt_bytes_and_sha256_match": true
+    }
+  },
+  "findings": []
+}

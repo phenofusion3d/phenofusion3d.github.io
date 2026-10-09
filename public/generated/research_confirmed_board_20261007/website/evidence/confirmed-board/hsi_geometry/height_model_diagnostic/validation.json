@@ -1,0 +1,18 @@
+{
+  "status": "pass_for_computation_not_model_acceptance",
+  "checks": [
+    {
+      "camera": "fx10",
+      "all_three_folds_checked": true,
+      "third_identity_not_in_training": true,
+      "scenario_count_per_fold": 35
+    },
+    {
+      "camera": "fx17",
+      "all_three_folds_checked": true,
+      "third_identity_not_in_training": true,
+      "scenario_count_per_fold": 35
+    }
+  ],
+  "scientific_decision": "Model fails held-out prediction; no dense projection accepted."
+}

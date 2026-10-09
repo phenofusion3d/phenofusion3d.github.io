@@ -1,0 +1,18 @@
+STATIC IMAGE TRANSFER, CALIBRATION 002 TO PLANTS 003
+
+The same white panel, mounting brackets and exposed table markings are present in the empty-board scan 002 and plant scan 003. Their raw image signals support a small, measured scan-coordinate transfer for both hyperspectral cameras.
+
+FX10: fit at 661.10 nm, six panel/support controls. Translation (column, line) = (-0.026187, 0.688984) pixels. Start hold-out n=2, RMS=0.171px; long-range hold-out n=7, RMS=0.388px, max=0.457px. A second recorded band repeats 10 usable features; displacement differences RMS=0.085px. These repeats are correlated.
+
+FX17: fit at 1301.56 nm, six panel/support controls. Translation (column, line) = (0.049255, 0.115489) pixels. Start hold-out n=1, RMS=0.088px; long-range hold-out n=4, RMS=0.353px, max=0.451px. A second recorded band repeats 11 usable features; displacement differences RMS=0.022px. These repeats are correlated.
+
+This is a locally initialized (±12 px) static-feature displacement check after direct visual alignment, not an unconstrained global matching test.
+Subpixel maxima use parabolic interpolation of the raw template-correlation peak; decimal precision is not independent positional accuracy.
+Small scan drift remains in held-out residuals. A single translation is an approximation, not proof of perfectly identical line motion.
+Controls validate the visible static reference/table only and do not determine height-dependent camera rays.
+D405 calibration-zero to plant reconstruction frame transfer is a separate problem.
+Spatial wavelength dependence beyond these two sampled bands remains untested.
+Q/Q0, panel reflectance and dark-reference uncertainty are unchanged.
+No source arrays, reconstructed geometry, spectral assignments or previous results are modified.
+
+Each observation, including rejected candidates, remains in static_feature_candidates.json and static_controls.csv. Crops show calibration on the left and plant scan on the right for each pair. Nominal anchor centres are template locations, not independently surveyed physical landmarks. Marker/panel detection errors and table-plane calibration errors must not be silently combined into a physical uncertainty estimate.

@@ -1,0 +1,85 @@
+{
+  "status": "incomplete_or_failed_linux_compatibility_check",
+  "commit": "920a577958a22e10998d24935265c77e2296d867",
+  "source": "/tmp/phenofusion3d-validation-u6bcgpn1/source",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "existing_environment_changed": false,
+  "existing_checkouts_changed": false,
+  "hardware_contacted": false,
+  "system_packages_changed": false,
+  "new_environment": "/tmp/phenofusion3d-validation-u6bcgpn1/environment",
+  "full_offline_selection": [
+    "test_analysis_ui.py",
+    "test_analysis_workflow.py",
+    "test_gantry_offline.py",
+    "test_hyperspectral.py",
+    "test_realsense_runtime.py",
+    "test_reference_traits.py",
+    "test_research_spectral_extract.py",
+    "test_research_spectral_mapping.py",
+    "test_research_workspace.py",
+    "test_research_workspace_review.py",
+    "test_ros_runtime.py"
+  ],
+  "missing_existing_dependencies": [
+    "open3d",
+    "cv2",
+    "PyQt5",
+    "pytest",
+    "natsort"
+  ],
+  "create_environment": {
+    "command": [
+      "/usr/bin/python3",
+      "-m",
+      "venv",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/environment"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 5.465,
+    "log": "create_environment.log"
+  },
+  "install_dependencies": {
+    "command": [
+      "/tmp/phenofusion3d-validation-u6bcgpn1/environment/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--only-binary=:all:",
+      "--index-url",
+      "https://pypi.org/simple",
+      "-r",
+      "/mnt/c/Personal/My_DEGREE's/Master_of_Computing_(Advanced)/Australian_National_University/Technical Team Project - COMP8715/PhenoFusion3D/generated/research_lab_candidate_20261007/linux_check/test_requirements.txt"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 93.402,
+    "log": "install_dependencies.log"
+  },
+  "new_environment_dependencies_installed": true,
+  "freeze": {
+    "command": [
+      "/tmp/phenofusion3d-validation-u6bcgpn1/environment/bin/python",
+      "-m",
+      "pip",
+      "freeze"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.827,
+    "log": "environment_freeze.log"
+  },
+  "import_probe": {
+    "command": [
+      "/tmp/phenofusion3d-validation-u6bcgpn1/environment/bin/python",
+      "-c",
+      "import importlib,json,sys; names=['numpy','scipy','open3d','cv2','PyQt5','pytest','processing.research_workspace.workflow','processing.research_workspace.spectral_extract','processing.research_workspace.spectral_mapping']; print(json.dumps({n:{'path':getattr(importlib.import_module(n),'__file__',None),'version':getattr(importlib.import_module(n),'__version__',None)} for n in names},indent=2)); assert not any(n=='capture' or n.startswith('capture.') for n in sys.modules)"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 0.498,
+    "log": "import_probe.log"
+  },
+  "error": "AssertionError: Installed dependencies cannot import; inspect import_probe.log",
+  "source_snapshot_files_changed": [],
+  "finished_utc": "2026-10-07T10:02:20Z"
+}

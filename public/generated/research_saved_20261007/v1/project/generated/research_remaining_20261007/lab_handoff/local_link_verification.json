@@ -1,0 +1,153 @@
+{
+  "status": "pass",
+  "reference_count": 29,
+  "missing": [],
+  "external_assets": [],
+  "checks": [
+    {
+      "page": "index.html",
+      "url": "verification.json",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "url": "LAB_ACCEPTANCE_CHECKLIST.md",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "url": "checklist.json",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "url": "protected_source_verification.json",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "url": "runtime_preconditions.json",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "url": "package_verification.json",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "url": "wheel_verification.json",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "url": "handoff_source_hashes.json",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "url": "prior_cloud_input_reuse.json",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "url": "source_index_preview_check.json",
+      "exists": true
+    },
+    {
+      "page": "index.html",
+      "url": "prior_cloud_workspace/result/index.html",
+      "exists": true
+    },
+    {
+      "page": "prior_cloud_workspace\\result\\index.html",
+      "url": "point_review.html",
+      "exists": true
+    },
+    {
+      "page": "prior_cloud_workspace\\result\\index.html",
+      "url": "../workspace_summary.json",
+      "exists": true
+    },
+    {
+      "page": "prior_cloud_workspace\\result\\index.html",
+      "url": "../../../../integration_109_final/reviewed_result/summary.json",
+      "exists": true
+    },
+    {
+      "page": "prior_cloud_workspace\\result\\index.html",
+      "url": "../../../../integration_109_final/profile.json",
+      "exists": true
+    },
+    {
+      "page": "prior_cloud_workspace\\result\\index.html",
+      "url": "../measurements.csv",
+      "exists": true
+    },
+    {
+      "page": "prior_cloud_workspace\\result\\index.html",
+      "url": "../measurements.json",
+      "exists": true
+    },
+    {
+      "page": "prior_cloud_workspace\\result\\point_review.html",
+      "url": "../../../../integration_109_final/reviewed_result/plant_upright.ply",
+      "exists": true
+    },
+    {
+      "page": "prior_cloud_workspace\\result\\point_review.html",
+      "url": "index.html",
+      "exists": true
+    },
+    {
+      "page": "prior_cloud_workspace\\result\\point_review.html",
+      "url": "research_cloud_0.js",
+      "exists": true
+    },
+    {
+      "page": "wheel_cloud_workspace\\result\\index.html",
+      "url": "point_review.html",
+      "exists": true
+    },
+    {
+      "page": "wheel_cloud_workspace\\result\\index.html",
+      "url": "../workspace_summary.json",
+      "exists": true
+    },
+    {
+      "page": "wheel_cloud_workspace\\result\\index.html",
+      "url": "../../../../integration_109_final/reviewed_result/summary.json",
+      "exists": true
+    },
+    {
+      "page": "wheel_cloud_workspace\\result\\index.html",
+      "url": "../../../../integration_109_final/profile.json",
+      "exists": true
+    },
+    {
+      "page": "wheel_cloud_workspace\\result\\index.html",
+      "url": "../measurements.csv",
+      "exists": true
+    },
+    {
+      "page": "wheel_cloud_workspace\\result\\index.html",
+      "url": "../measurements.json",
+      "exists": true
+    },
+    {
+      "page": "wheel_cloud_workspace\\result\\point_review.html",
+      "url": "../../../../integration_109_final/reviewed_result/plant_upright.ply",
+      "exists": true
+    },
+    {
+      "page": "wheel_cloud_workspace\\result\\point_review.html",
+      "url": "index.html",
+      "exists": true
+    },
+    {
+      "page": "wheel_cloud_workspace\\result\\point_review.html",
+      "url": "research_cloud_0.js",
+      "exists": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+﻿chord_id,baseline_conditional_cm,endpoint_disk_range_cm,endpoint_disk_definition,scale_scenarios_are_separate,combined_uncertainty_interval_computed
+P1.O03.observed_blade_extent,5.642877354066358,"[4.976776262496502, 6.670808387156944]",Full min/max of all endpoint-pair distances within independently clicked 4px source disks; not a confidence interval or calibrated physical uncertainty.,True,False
+P3.O03.blade_chord,7.475255446013435,"[6.706684147069889, 8.419306985087646]",Full min/max of all endpoint-pair distances within independently clicked 4px source disks; not a confidence interval or calibrated physical uncertainty.,True,False
+P5.O04.terminal_lamina_chord,12.148629537473008,"[10.711865475651088, 13.761444924819703]",Full min/max of all endpoint-pair distances within independently clicked 4px source disks; not a confidence interval or calibrated physical uncertainty.,True,False

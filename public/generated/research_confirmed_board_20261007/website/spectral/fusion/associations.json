@@ -1,0 +1,523 @@
+{
+  "warning": "Sparse provisional measured-spectrum associations. Unassigned geometry has no spectral value. No independently validated surface registration, calibrated reflectance, or physiological claim.",
+  "frame_id": "D405_short_dense_v3_metric_reference",
+  "coordinate_unit": "m",
+  "associations": [
+    {
+      "id": "red_upper_2",
+      "sensor_id": "fx10",
+      "sample_index": 0,
+      "cloud_id": "P5",
+      "point_index": 65318,
+      "status": "provisional_reviewed_correspondence",
+      "reviewer": "Codex assistant visual inspection of saved source crops; no independent human confirmation",
+      "review_method": "Mutual local descriptors, assistant visual interior-feature review, distortion-aware recovered-depth localization, existing accepted ICP pose; no independently withheld physical controls.",
+      "feature_description": "Distinct pale island boundary within upper red leaf. Matching island shape and adjacent dark region support local association; feature centroid is not an independently measured anatomical landmark.",
+      "evidence_ids": [
+        "correspondence_review",
+        "feature_probe",
+        "visual_shortlist",
+        "rgb_recorded_frame",
+        "recorded_intrinsics",
+        "accepted_ICP_poses",
+        "confirmed_board",
+        "metric_calibration",
+        "metric_cleanup",
+        "old_P5_source_identity",
+        "new_P5_source_identity",
+        "shared_calibration_plane",
+        "measured_scan_transfer",
+        "failed_height_model_diagnostic"
+      ],
+      "localized_reference_xyz": [
+        1.244710018011557,
+        -0.11151135851143458,
+        0.5553050258107196
+      ],
+      "maximum_vertex_distance": 0.0010288746669066683,
+      "supporting_rgb_pairs": 6,
+      "native_rgb_xy": [
+        819.0327987670898,
+        258.50301361083984
+      ],
+      "native_hsi_subpixel_column_line": [
+        965.163122177124,
+        1614.6909942626953
+      ],
+      "rounded_hsi_column_line": [
+        965,
+        1615
+      ],
+      "depth_pair_range": 0.006807804107666016,
+      "RGB_reprojection_error_px": 0.12872490228337244,
+      "locality_limit_scope": "Analyst-selected one-voxel locality check in original conditional units; not a physical accuracy bound.",
+      "prior_cleanup_point_index": 66518,
+      "source_camera": "D405",
+      "original_D405_full_scene_point_index": 6706132,
+      "source_identity_remap": "Exact source camera + original full-scene point index; no spatial nearest-neighbour mapping",
+      "new_cleanup_provenance_sha256": "c6730bd9fdfd17634da0ac199c07345208c4a8a3be0329fe5ec2cc87299131d0",
+      "metric_scale_factor": 1.0288746669066682,
+      "height_model_status": "Three-control generalization test failed; existing association remains provisional and is not a calibrated projection",
+      "source_scan_line": 1615,
+      "source_detector_column": 965,
+      "source_patch_id": 1,
+      "source_cloud_sha256": "ebba027f13ed2d927f3d547e94ad5833925bd73b6e7774a8fa97548ce14a9b9f",
+      "xyz_reference": [
+        1.2445826731886735,
+        -0.1116329013593735,
+        0.5550778827961474
+      ],
+      "xyz_upright": [
+        1.2483245218016674,
+        0.09113135443687072,
+        -0.5504001776380256
+      ],
+      "vertex_distance": 0.00028737313178030867,
+      "coordinate_unit": "m",
+      "physical_registration_validated": false,
+      "surface_visibility_validated": false,
+      "calibrated_reflectance": false
+    },
+    {
+      "id": "red_upper_6",
+      "sensor_id": "fx10",
+      "sample_index": 1,
+      "cloud_id": "P5",
+      "point_index": 71560,
+      "status": "provisional_reviewed_correspondence",
+      "reviewer": "Codex assistant visual inspection of saved source crops; no independent human confirmation",
+      "review_method": "Mutual local descriptors, assistant visual interior-feature review, distortion-aware recovered-depth localization, existing accepted ICP pose; no independently withheld physical controls.",
+      "feature_description": "Major-vein/side-vein junction in upper red leaf, same branch topology and adjacent pale patch. Registration remains provisional.",
+      "evidence_ids": [
+        "correspondence_review",
+        "feature_probe",
+        "visual_shortlist",
+        "rgb_recorded_frame",
+        "recorded_intrinsics",
+        "accepted_ICP_poses",
+        "confirmed_board",
+        "metric_calibration",
+        "metric_cleanup",
+        "old_P5_source_identity",
+        "new_P5_source_identity",
+        "shared_calibration_plane",
+        "measured_scan_transfer",
+        "failed_height_model_diagnostic"
+      ],
+      "localized_reference_xyz": [
+        1.2789207610597497,
+        -0.12693236642666642,
+        0.5552112321525042
+      ],
+      "maximum_vertex_distance": 0.0010288746669066683,
+      "supporting_rgb_pairs": 6,
+      "native_rgb_xy": [
+        858.1754531860352,
+        240.53552627563477
+      ],
+      "native_hsi_subpixel_column_line": [
+        992.1574348722186,
+        1668.2689918518067
+      ],
+      "rounded_hsi_column_line": [
+        992,
+        1668
+      ],
+      "depth_pair_range": 0.0025401711463928223,
+      "RGB_reprojection_error_px": 0.7159720389283274,
+      "locality_limit_scope": "Analyst-selected one-voxel locality check in original conditional units; not a physical accuracy bound.",
+      "prior_cleanup_point_index": 72896,
+      "source_camera": "D405",
+      "original_D405_full_scene_point_index": 6770251,
+      "source_identity_remap": "Exact source camera + original full-scene point index; no spatial nearest-neighbour mapping",
+      "new_cleanup_provenance_sha256": "c6730bd9fdfd17634da0ac199c07345208c4a8a3be0329fe5ec2cc87299131d0",
+      "metric_scale_factor": 1.0288746669066682,
+      "height_model_status": "Three-control generalization test failed; existing association remains provisional and is not a calibrated projection",
+      "source_scan_line": 1668,
+      "source_detector_column": 992,
+      "source_patch_id": 2,
+      "source_cloud_sha256": "ebba027f13ed2d927f3d547e94ad5833925bd73b6e7774a8fa97548ce14a9b9f",
+      "xyz_reference": [
+        1.279405648298442,
+        -0.1270660213629735,
+        0.5559248230166736
+      ],
+      "xyz_upright": [
+        1.2834952676074274,
+        0.10576933050533134,
+        -0.5509353340301245
+      ],
+      "vertex_distance": 0.0008730356222238348,
+      "coordinate_unit": "m",
+      "physical_registration_validated": false,
+      "surface_visibility_validated": false,
+      "calibrated_reflectance": false
+    },
+    {
+      "id": "green_lower_0",
+      "sensor_id": "fx10",
+      "sample_index": 2,
+      "cloud_id": "P5",
+      "point_index": 6128,
+      "status": "provisional_reviewed_correspondence",
+      "reviewer": "Codex assistant visual inspection of saved source crops; no independent human confirmation",
+      "review_method": "Mutual local descriptors, assistant visual interior-feature review, distortion-aware recovered-depth localization, existing accepted ICP pose; no independently withheld physical controls.",
+      "feature_description": "Strongest candidate: interior secondary-vein junction on lower green leaf. Matching local branching repeats in 25 scale/channel configurations.",
+      "evidence_ids": [
+        "correspondence_review",
+        "feature_probe",
+        "visual_shortlist",
+        "rgb_recorded_frame",
+        "recorded_intrinsics",
+        "accepted_ICP_poses",
+        "confirmed_board",
+        "metric_calibration",
+        "metric_cleanup",
+        "old_P5_source_identity",
+        "new_P5_source_identity",
+        "shared_calibration_plane",
+        "measured_scan_transfer",
+        "failed_height_model_diagnostic"
+      ],
+      "localized_reference_xyz": [
+        1.414210799731525,
+        0.09743931962325626,
+        0.5120385832510218
+      ],
+      "maximum_vertex_distance": 0.0010288746669066683,
+      "supporting_rgb_pairs": 3,
+      "native_rgb_xy": [
+        1045.8220138549805,
+        512.3255348205566
+      ],
+      "native_hsi_subpixel_column_line": [
+        411.8931819370814,
+        1826.8903121948242
+      ],
+      "rounded_hsi_column_line": [
+        412,
+        1827
+      ],
+      "depth_pair_range": 0.002364218235015869,
+      "RGB_reprojection_error_px": 0.9531790304429968,
+      "locality_limit_scope": "Analyst-selected one-voxel locality check in original conditional units; not a physical accuracy bound.",
+      "prior_cleanup_point_index": 6213,
+      "source_camera": "D405",
+      "original_D405_full_scene_point_index": 669320,
+      "source_identity_remap": "Exact source camera + original full-scene point index; no spatial nearest-neighbour mapping",
+      "new_cleanup_provenance_sha256": "c6730bd9fdfd17634da0ac199c07345208c4a8a3be0329fe5ec2cc87299131d0",
+      "metric_scale_factor": 1.0288746669066682,
+      "height_model_status": "Three-control generalization test failed; existing association remains provisional and is not a calibrated projection",
+      "source_scan_line": 1827,
+      "source_detector_column": 412,
+      "source_patch_id": 3,
+      "source_cloud_sha256": "ebba027f13ed2d927f3d547e94ad5833925bd73b6e7774a8fa97548ce14a9b9f",
+      "xyz_reference": [
+        1.4141882296632156,
+        0.09683900324439142,
+        0.5118651467860674
+      ],
+      "xyz_upright": [
+        1.4129744749497894,
+        -0.12180640891233895,
+        -0.5098807721908292
+      ],
+      "vertex_distance": 0.0006252754353824916,
+      "coordinate_unit": "m",
+      "physical_registration_validated": false,
+      "surface_visibility_validated": false,
+      "calibrated_reflectance": false
+    },
+    {
+      "id": "fx17_track_red_upper_2",
+      "sensor_id": "fx17",
+      "sample_index": 0,
+      "cloud_id": "P5",
+      "point_index": 65318,
+      "status": "provisional_reviewed_correspondence",
+      "reviewer": "Codex assistant source-crop review with separate agent visual cross-check; no independent physical validation",
+      "review_method": "Provisional compound chain: local multiband FX17-to-FX10 feature tracking, inherited FX10-to-RGB feature, saved recovered depth and ICP. No global spatial model or physical holdout.",
+      "feature_description": "FX17 compound match of red_upper_2. Trial spread 2.347 native FX17 pixels; physical error unknown. Distinct pale island boundary within upper red leaf. Matching island shape and adjacent dark region support local association; feature centroid is not an independently measured anatomical landmark.",
+      "evidence_ids": [
+        "correspondence_review",
+        "feature_probe",
+        "visual_shortlist",
+        "rgb_recorded_frame",
+        "recorded_intrinsics",
+        "accepted_ICP_poses",
+        "fx17_tracking",
+        "fx17_tracking_source_crops",
+        "fx17_overlap_sources",
+        "root_compound_review",
+        "confirmed_board",
+        "metric_calibration",
+        "metric_cleanup",
+        "old_P5_source_identity",
+        "new_P5_source_identity",
+        "shared_calibration_plane",
+        "measured_scan_transfer",
+        "failed_height_model_diagnostic"
+      ],
+      "localized_reference_xyz": [
+        1.244710018011557,
+        -0.11151135851143458,
+        0.5553050258107196
+      ],
+      "maximum_vertex_distance": 0.0010288746669066683,
+      "supporting_rgb_pairs": 6,
+      "native_rgb_xy": [
+        819.0327987670898,
+        258.50301361083984
+      ],
+      "native_hsi_subpixel_column_line": [
+        587.4865264892578,
+        1508.8011627197266
+      ],
+      "rounded_hsi_column_line": [
+        587,
+        1509
+      ],
+      "depth_pair_range": 0.006807804107666016,
+      "RGB_reprojection_error_px": 0.12872490228337244,
+      "locality_limit_scope": "Analyst-selected one-voxel locality check in original conditional units; not a physical accuracy bound.",
+      "prior_fx10_association_id": "red_upper_2",
+      "prior_fx10_native_anchor_column_line": [
+        965.163122177124,
+        1614.6909942626953
+      ],
+      "correspondence_chain": [
+        "fx17",
+        "fx10",
+        "rgb",
+        "recovered_depth",
+        "accepted_ICP",
+        "existing_P5_vertex"
+      ],
+      "tracking_consistent_trials": 21,
+      "tracking_total_trials": 24,
+      "tracking_native_fx17_max_radius": 2.3465012448106135,
+      "physical_localization_uncertainty": null,
+      "rgb_support_scope": "Inherited support of the prior FX10/RGB localized point; not independent FX17 depth observations.",
+      "prior_cleanup_point_index": 66518,
+      "source_camera": "D405",
+      "original_D405_full_scene_point_index": 6706132,
+      "source_identity_remap": "Exact source camera + original full-scene point index; no spatial nearest-neighbour mapping",
+      "new_cleanup_provenance_sha256": "c6730bd9fdfd17634da0ac199c07345208c4a8a3be0329fe5ec2cc87299131d0",
+      "metric_scale_factor": 1.0288746669066682,
+      "height_model_status": "Three-control generalization test failed; existing association remains provisional and is not a calibrated projection",
+      "source_scan_line": 1509,
+      "source_detector_column": 587,
+      "source_patch_id": 1,
+      "source_cloud_sha256": "ebba027f13ed2d927f3d547e94ad5833925bd73b6e7774a8fa97548ce14a9b9f",
+      "xyz_reference": [
+        1.2445826731886735,
+        -0.1116329013593735,
+        0.5550778827961474
+      ],
+      "xyz_upright": [
+        1.2483245218016674,
+        0.09113135443687072,
+        -0.5504001776380256
+      ],
+      "vertex_distance": 0.00028737313178030867,
+      "coordinate_unit": "m",
+      "physical_registration_validated": false,
+      "surface_visibility_validated": false,
+      "calibrated_reflectance": false
+    },
+    {
+      "id": "fx17_track_red_upper_6",
+      "sensor_id": "fx17",
+      "sample_index": 1,
+      "cloud_id": "P5",
+      "point_index": 71560,
+      "status": "provisional_reviewed_correspondence",
+      "reviewer": "Codex assistant source-crop review with separate agent visual cross-check; no independent physical validation",
+      "review_method": "Provisional compound chain: local multiband FX17-to-FX10 feature tracking, inherited FX10-to-RGB feature, saved recovered depth and ICP. No global spatial model or physical holdout.",
+      "feature_description": "FX17 compound match of red_upper_6. Trial spread 0.986 native FX17 pixels; physical error unknown. Major-vein/side-vein junction in upper red leaf, same branch topology and adjacent pale patch. Registration remains provisional.",
+      "evidence_ids": [
+        "correspondence_review",
+        "feature_probe",
+        "visual_shortlist",
+        "rgb_recorded_frame",
+        "recorded_intrinsics",
+        "accepted_ICP_poses",
+        "fx17_tracking",
+        "fx17_tracking_source_crops",
+        "fx17_overlap_sources",
+        "root_compound_review",
+        "confirmed_board",
+        "metric_calibration",
+        "metric_cleanup",
+        "old_P5_source_identity",
+        "new_P5_source_identity",
+        "shared_calibration_plane",
+        "measured_scan_transfer",
+        "failed_height_model_diagnostic"
+      ],
+      "localized_reference_xyz": [
+        1.2789207610597497,
+        -0.12693236642666642,
+        0.5552112321525042
+      ],
+      "maximum_vertex_distance": 0.0010288746669066683,
+      "supporting_rgb_pairs": 6,
+      "native_rgb_xy": [
+        858.1754531860352,
+        240.53552627563477
+      ],
+      "native_hsi_subpixel_column_line": [
+        604.085506439209,
+        1561.5630493164062
+      ],
+      "rounded_hsi_column_line": [
+        604,
+        1562
+      ],
+      "depth_pair_range": 0.0025401711463928223,
+      "RGB_reprojection_error_px": 0.7159720389283274,
+      "locality_limit_scope": "Analyst-selected one-voxel locality check in original conditional units; not a physical accuracy bound.",
+      "prior_fx10_association_id": "red_upper_6",
+      "prior_fx10_native_anchor_column_line": [
+        992.1574348722186,
+        1668.2689918518067
+      ],
+      "correspondence_chain": [
+        "fx17",
+        "fx10",
+        "rgb",
+        "recovered_depth",
+        "accepted_ICP",
+        "existing_P5_vertex"
+      ],
+      "tracking_consistent_trials": 15,
+      "tracking_total_trials": 24,
+      "tracking_native_fx17_max_radius": 0.9856120335181232,
+      "physical_localization_uncertainty": null,
+      "rgb_support_scope": "Inherited support of the prior FX10/RGB localized point; not independent FX17 depth observations.",
+      "prior_cleanup_point_index": 72896,
+      "source_camera": "D405",
+      "original_D405_full_scene_point_index": 6770251,
+      "source_identity_remap": "Exact source camera + original full-scene point index; no spatial nearest-neighbour mapping",
+      "new_cleanup_provenance_sha256": "c6730bd9fdfd17634da0ac199c07345208c4a8a3be0329fe5ec2cc87299131d0",
+      "metric_scale_factor": 1.0288746669066682,
+      "height_model_status": "Three-control generalization test failed; existing association remains provisional and is not a calibrated projection",
+      "source_scan_line": 1562,
+      "source_detector_column": 604,
+      "source_patch_id": 2,
+      "source_cloud_sha256": "ebba027f13ed2d927f3d547e94ad5833925bd73b6e7774a8fa97548ce14a9b9f",
+      "xyz_reference": [
+        1.279405648298442,
+        -0.1270660213629735,
+        0.5559248230166736
+      ],
+      "xyz_upright": [
+        1.2834952676074274,
+        0.10576933050533134,
+        -0.5509353340301245
+      ],
+      "vertex_distance": 0.0008730356222238348,
+      "coordinate_unit": "m",
+      "physical_registration_validated": false,
+      "surface_visibility_validated": false,
+      "calibrated_reflectance": false
+    },
+    {
+      "id": "fx17_track_green_lower_0",
+      "sensor_id": "fx17",
+      "sample_index": 2,
+      "cloud_id": "P5",
+      "point_index": 6128,
+      "status": "provisional_reviewed_correspondence",
+      "reviewer": "Codex assistant source-crop review with separate agent visual cross-check; no independent physical validation",
+      "review_method": "Provisional compound chain: local multiband FX17-to-FX10 feature tracking, inherited FX10-to-RGB feature, saved recovered depth and ICP. No global spatial model or physical holdout.",
+      "feature_description": "FX17 compound match of green_lower_0. Trial spread 1.385 native FX17 pixels; physical error unknown. Strongest candidate: interior secondary-vein junction on lower green leaf. Matching local branching repeats in 25 scale/channel configurations.",
+      "evidence_ids": [
+        "correspondence_review",
+        "feature_probe",
+        "visual_shortlist",
+        "rgb_recorded_frame",
+        "recorded_intrinsics",
+        "accepted_ICP_poses",
+        "fx17_tracking",
+        "fx17_tracking_source_crops",
+        "fx17_overlap_sources",
+        "root_compound_review",
+        "confirmed_board",
+        "metric_calibration",
+        "metric_cleanup",
+        "old_P5_source_identity",
+        "new_P5_source_identity",
+        "shared_calibration_plane",
+        "measured_scan_transfer",
+        "failed_height_model_diagnostic"
+      ],
+      "localized_reference_xyz": [
+        1.414210799731525,
+        0.09743931962325626,
+        0.5120385832510218
+      ],
+      "maximum_vertex_distance": 0.0010288746669066683,
+      "supporting_rgb_pairs": 3,
+      "native_rgb_xy": [
+        1045.8220138549805,
+        512.3255348205566
+      ],
+      "native_hsi_subpixel_column_line": [
+        234.6998748779297,
+        1718.3388214111328
+      ],
+      "rounded_hsi_column_line": [
+        235,
+        1718
+      ],
+      "depth_pair_range": 0.002364218235015869,
+      "RGB_reprojection_error_px": 0.9531790304429968,
+      "locality_limit_scope": "Analyst-selected one-voxel locality check in original conditional units; not a physical accuracy bound.",
+      "prior_fx10_association_id": "green_lower_0",
+      "prior_fx10_native_anchor_column_line": [
+        411.8931819370814,
+        1826.8903121948242
+      ],
+      "correspondence_chain": [
+        "fx17",
+        "fx10",
+        "rgb",
+        "recovered_depth",
+        "accepted_ICP",
+        "existing_P5_vertex"
+      ],
+      "tracking_consistent_trials": 24,
+      "tracking_total_trials": 24,
+      "tracking_native_fx17_max_radius": 1.3846089144287157,
+      "physical_localization_uncertainty": null,
+      "rgb_support_scope": "Inherited support of the prior FX10/RGB localized point; not independent FX17 depth observations.",
+      "prior_cleanup_point_index": 6213,
+      "source_camera": "D405",
+      "original_D405_full_scene_point_index": 669320,
+      "source_identity_remap": "Exact source camera + original full-scene point index; no spatial nearest-neighbour mapping",
+      "new_cleanup_provenance_sha256": "c6730bd9fdfd17634da0ac199c07345208c4a8a3be0329fe5ec2cc87299131d0",
+      "metric_scale_factor": 1.0288746669066682,
+      "height_model_status": "Three-control generalization test failed; existing association remains provisional and is not a calibrated projection",
+      "source_scan_line": 1718,
+      "source_detector_column": 235,
+      "source_patch_id": 3,
+      "source_cloud_sha256": "ebba027f13ed2d927f3d547e94ad5833925bd73b6e7774a8fa97548ce14a9b9f",
+      "xyz_reference": [
+        1.4141882296632156,
+        0.09683900324439142,
+        0.5118651467860674
+      ],
+      "xyz_upright": [
+        1.4129744749497894,
+        -0.12180640891233895,
+        -0.5098807721908292
+      ],
+      "vertex_distance": 0.0006252754353824916,
+      "coordinate_unit": "m",
+      "physical_registration_validated": false,
+      "surface_visibility_validated": false,
+      "calibrated_reflectance": false
+    }
+  ]
+}

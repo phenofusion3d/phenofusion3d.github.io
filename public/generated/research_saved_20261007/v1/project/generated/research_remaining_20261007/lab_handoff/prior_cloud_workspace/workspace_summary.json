@@ -1,0 +1,146 @@
+{
+  "status": "research_review_ready_with_recorded_gaps",
+  "schema_version": 1,
+  "coordinate_unit": "unknown",
+  "scale_status": "Unverified in this handoff; no scale is fitted",
+  "physical_accuracy_validated": false,
+  "calibrated_3d_spectral_fusion_achieved": false,
+  "gaps": [
+    {
+      "id": "input_reuse_only",
+      "title": "This is only a new-manifest input check",
+      "status": "unresolved",
+      "resolution": "Independent reconstruction, mask quality and generalization require separate datasets and review."
+    },
+    {
+      "id": "physical_scale",
+      "title": "Physical scale and trait accuracy are unverified",
+      "status": "unresolved",
+      "resolution": "Recover independent scale evidence and matched organ measurements; no values are inferred here."
+    },
+    {
+      "id": "landmarks",
+      "title": "Anatomical endpoints have not been supplied",
+      "status": "unresolved",
+      "resolution": "No height, leaf-length or leaf-width endpoint claims are made."
+    },
+    {
+      "id": "coverage",
+      "title": "Complete plant coverage and pot exclusion remain unverified",
+      "status": "unresolved",
+      "resolution": "Inspect original recording and retained candidate; prior summary remains a candidate."
+    },
+    {
+      "id": "hsi",
+      "title": "No spectral pairing is supplied",
+      "status": "unresolved",
+      "resolution": "This test makes no 3D fusion or radiometry claim."
+    }
+  ],
+  "input_hashes": {
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_remaining_20261007\\lab_handoff\\prior_cloud_manifest.json": "6bad456c0159f1daf57f62288a88a2642a992080f16e22fbe43d87875392ed60",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\integration_109_final\\reviewed_result\\plant_upright.ply": "e872fb8065c9cff2464a4ec0ac72ab87ab6fee749470391a021bc0da6c8da8a9",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\integration_109_final\\reviewed_result\\summary.json": "2727acf52380560bce89efd0767d08a90de4f6636e9bf1a5c80b36be2359d79f",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\integration_109_final\\profile.json": "9095e0dc607ec03d3ea98d2f9e4aae81dccce73dfd797d9976c1d8dcecece8de"
+  },
+  "observed_descriptors": [
+    {
+      "specimen_id": "prior_109_candidate",
+      "source_sha256": "e872fb8065c9cff2464a4ec0ac72ab87ab6fee749470391a021bc0da6c8da8a9",
+      "points": 1266476,
+      "coordinate_unit": "unknown",
+      "observed_extent_xyz": [
+        0.519408062610622,
+        0.42879726490432724,
+        0.3693349559951129
+      ],
+      "observed_p99_extent_xyz": [
+        0.48220987808459637,
+        0.39191624999999997,
+        0.35703458811453254
+      ],
+      "minimum_xyz": [
+        -0.266799849289184,
+        -0.334514375,
+        0.0
+      ],
+      "maximum_xyz": [
+        0.252608213321438,
+        0.09428288990432729,
+        0.3693349559951129
+      ],
+      "anatomical_height": null,
+      "whole_leaf_area": null,
+      "whole_plant_volume": null,
+      "status": "observed_cloud_distribution_only",
+      "limitation": "Retained point range is not stem-base height, complete canopy extent, tissue surface area or volume."
+    }
+  ],
+  "measurement_count": 0,
+  "error_summaries": {
+    "observed_chord": {
+      "n": 0,
+      "mean_signed_error": null,
+      "mae": null,
+      "rmse": null,
+      "status": "no_eligible_pairs",
+      "physical_accuracy_validated": false
+    },
+    "height": {
+      "n": 0,
+      "mean_signed_error": null,
+      "mae": null,
+      "rmse": null,
+      "status": "no_eligible_pairs",
+      "physical_accuracy_validated": false
+    },
+    "leaf_chord_length": {
+      "n": 0,
+      "mean_signed_error": null,
+      "mae": null,
+      "rmse": null,
+      "status": "no_eligible_pairs",
+      "physical_accuracy_validated": false
+    },
+    "leaf_section_width": {
+      "n": 0,
+      "mean_signed_error": null,
+      "mae": null,
+      "rmse": null,
+      "status": "no_eligible_pairs",
+      "physical_accuracy_validated": false
+    }
+  },
+  "source_clouds": [
+    {
+      "id": "prior_109_candidate",
+      "label": "Earlier saved upright candidate",
+      "sha256": "e872fb8065c9cff2464a4ec0ac72ab87ab6fee749470391a021bc0da6c8da8a9",
+      "context": false,
+      "source_count": 1266476,
+      "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\integration_109_final\\reviewed_result\\plant_upright.ply"
+    }
+  ],
+  "upright_R": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "notes": [
+    "Display point sampling never changes source files.",
+    "No acquisition/camera/gantry module is imported.",
+    "Geometry and scale are never fitted to physical validation traits."
+  ]
+}

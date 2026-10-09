@@ -1,0 +1,180 @@
+{
+  "status": "linux_offline_run_completed_with_one_existing_test_timing_failure",
+  "commit": "920a577958a22e10998d24935265c77e2296d867",
+  "source": "/tmp/phenofusion3d-validation-u6bcgpn1/source",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "existing_environment_changed": false,
+  "existing_checkouts_changed": false,
+  "hardware_contacted": false,
+  "system_packages_changed": false,
+  "new_environment": "/tmp/phenofusion3d-validation-u6bcgpn1/environment",
+  "full_offline_selection": [
+    "test_analysis_ui.py",
+    "test_analysis_workflow.py",
+    "test_gantry_offline.py",
+    "test_hyperspectral.py",
+    "test_realsense_runtime.py",
+    "test_reference_traits.py",
+    "test_research_spectral_extract.py",
+    "test_research_spectral_mapping.py",
+    "test_research_workspace.py",
+    "test_research_workspace_review.py",
+    "test_ros_runtime.py"
+  ],
+  "missing_existing_dependencies": [
+    "open3d",
+    "cv2",
+    "PyQt5",
+    "pytest",
+    "natsort"
+  ],
+  "create_environment": {
+    "command": [
+      "/usr/bin/python3",
+      "-m",
+      "venv",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/environment"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 5.465,
+    "log": "create_environment.log"
+  },
+  "install_dependencies": {
+    "command": [
+      "/tmp/phenofusion3d-validation-u6bcgpn1/environment/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--only-binary=:all:",
+      "--index-url",
+      "https://pypi.org/simple",
+      "-r",
+      "/mnt/c/Personal/My_DEGREE's/Master_of_Computing_(Advanced)/Australian_National_University/Technical Team Project - COMP8715/PhenoFusion3D/generated/research_lab_candidate_20261007/linux_check/test_requirements.txt"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 93.402,
+    "log": "install_dependencies.log"
+  },
+  "new_environment_dependencies_installed": true,
+  "freeze": {
+    "command": [
+      "/tmp/phenofusion3d-validation-u6bcgpn1/environment/bin/python",
+      "-m",
+      "pip",
+      "freeze"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.827,
+    "log": "environment_freeze.log"
+  },
+  "import_probe": {
+    "command": [
+      "/tmp/phenofusion3d-validation-u6bcgpn1/environment/bin/python",
+      "-c",
+      "import importlib,json,sys; names=['numpy','scipy','open3d','cv2','PyQt5','pytest','processing.research_workspace.workflow','processing.research_workspace.spectral_extract','processing.research_workspace.spectral_mapping']; print(json.dumps({n:{'path':getattr(importlib.import_module(n),'__file__',None),'version':getattr(importlib.import_module(n),'__version__',None)} for n in names},indent=2)); assert not any(n=='capture' or n.startswith('capture.') for n in sys.modules)"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 3.488,
+    "log": "import_probe.log"
+  },
+  "error": "AssertionError: Offline selection failed; inspect tests.log and tests.xml",
+  "source_snapshot_files_changed": [],
+  "finished_utc": "2026-10-07T10:02:20Z",
+  "runtime_download": {
+    "command": [
+      "apt-get",
+      "download",
+      "libusb-1.0-0=2:1.0.27-1"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 3.347,
+    "log": "runtime_download.log"
+  },
+  "runtime_extract": {
+    "command": [
+      "dpkg-deb",
+      "--extract",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/downloaded_runtime/libusb-1.0-0_2%3a1.0.27-1_amd64.deb",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/runtime_overlay"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.036,
+    "log": "runtime_extract.log"
+  },
+  "runtime_overlay": {
+    "package": "libusb-1.0-0",
+    "version": "2:1.0.27-1",
+    "architecture": "amd64",
+    "archive_uri": "'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb-1.0/libusb-1.0-0_1.0.27-1_amd64.deb' libusb-1.0-0_2%3a1.0.27-1_amd64.deb 54008 SHA512:9887228479a9f4b8973a2ab5df211487542bc66e59dd5bc9eb3e9772346bf6b5263f39afa6c8dd00459f8e7be7330a731cea08ef7548fe0e99e571f228456ed7",
+    "archive_sha256": "d59e679a82ee2b724c556397e831e879936adbe8a007705872b65a5e1ec887b5",
+    "metadata_sha256": "d59e679a82ee2b724c556397e831e879936adbe8a007705872b65a5e1ec887b5",
+    "archive_path": "/tmp/phenofusion3d-validation-u6bcgpn1/downloaded_runtime/libusb-1.0-0_2%3a1.0.27-1_amd64.deb",
+    "extracted_to": "/tmp/phenofusion3d-validation-u6bcgpn1/runtime_overlay",
+    "ld_library_path": "/tmp/phenofusion3d-validation-u6bcgpn1/runtime_overlay/usr/lib/x86_64-linux-gnu",
+    "apt_update_run": false,
+    "apt_install_run": false,
+    "system_files_changed": false,
+    "postinstall_scripts_run": false,
+    "sdk_installed": false,
+    "device_access_performed": false
+  },
+  "source_module_origins": {
+    "processing.research_workspace.workflow": "/tmp/phenofusion3d-validation-u6bcgpn1/source/processing/research_workspace/workflow.py",
+    "processing.research_workspace.spectral_extract": "/tmp/phenofusion3d-validation-u6bcgpn1/source/processing/research_workspace/spectral_extract.py",
+    "processing.research_workspace.spectral_mapping": "/tmp/phenofusion3d-validation-u6bcgpn1/source/processing/research_workspace/spectral_mapping.py"
+  },
+  "tests": {
+    "command": [
+      "/tmp/phenofusion3d-validation-u6bcgpn1/environment/bin/python",
+      "-m",
+      "pytest",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source/tests/test_analysis_ui.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source/tests/test_analysis_workflow.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source/tests/test_gantry_offline.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source/tests/test_hyperspectral.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source/tests/test_realsense_runtime.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source/tests/test_reference_traits.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source/tests/test_research_spectral_extract.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source/tests/test_research_spectral_mapping.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source/tests/test_research_workspace.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source/tests/test_research_workspace_review.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source/tests/test_ros_runtime.py",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/pytest_temp",
+      "--junitxml",
+      "/mnt/c/Personal/My_DEGREE's/Master_of_Computing_(Advanced)/Australian_National_University/Technical Team Project - COMP8715/PhenoFusion3D/generated/research_lab_candidate_20261007/linux_check/tests.xml"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 31.285,
+    "log": "tests.log"
+  },
+  "full_selection_executed": true,
+  "test_counts": {
+    "tests": 142,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 1
+  },
+  "skips": [
+    {
+      "test": "test_current_recording_subset_matches_reviewed_saved_spectra",
+      "reason": "Real recording and reviewed generated spectra are optional local parity fixtures, not packaged data."
+    }
+  ],
+  "compatibility_finding": "Existing gantry test checks an error list before queued Qt delivery: the start-thread sentinel is cleared before error emission. In a separate 20-iteration mock-only diagnostic, immediate assertion failed in 10 iterations; bounded event waiting delivered the expected error in all 20, with nonblocking start and retryability preserved. Recommended fix is a bounded wait for the expected error in the test, not an acquisition implementation change.",
+  "diagnostic": "gantry_signal_timing.json",
+  "system_preservation": "system_preservation.json",
+  "full_suite_passed": false,
+  "passed_tests": 140,
+  "new_case_vs_prior_141_test_evidence": "test_current_recording_subset_matches_reviewed_saved_spectra; skipped because optional recording is absent from committed source snapshot",
+  "test_source_modified": false,
+  "production_source_modified": false,
+  "evidence_frozen_utc": "2026-10-07T10:11:06.169553+00:00",
+  "protected_current_files_checked": 26,
+  "protected_current_files_changed": []
+}

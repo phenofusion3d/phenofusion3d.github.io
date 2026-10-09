@@ -20,6 +20,7 @@ export default function Home() {
       <Pipeline />
       <Visualisation />
       <section className="mx-auto max-w-7xl px-6 py-8">
+        <a href="/results/all/" className="mb-6 block rounded-xl border border-lime-300/50 bg-green-950/40 p-6 text-xl font-semibold text-lime-200">All research results · open the complete dashboard →</a>
         <p className="text-xs font-semibold uppercase tracking-widest text-lime-400">Current research outputs</p>
         <h2 className="mt-3 text-3xl font-semibold text-white">Explore reconstruction, validation and fusion results</h2>
         <a href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/results/whole-plant-spectral-20260928/`} className="mt-6 block rounded-xl border border-lime-300/50 bg-green-950/40 p-6 hover:bg-green-900/40">

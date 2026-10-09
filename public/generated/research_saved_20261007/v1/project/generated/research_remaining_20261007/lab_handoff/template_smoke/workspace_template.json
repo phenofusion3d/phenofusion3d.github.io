@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "title": "New research workspace",
+  "coordinate_unit": "unknown",
+  "scale_status": "unverified",
+  "upright_R": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "specimens": [],
+  "context_clouds": [],
+  "artifacts": [],
+  "manual_references": [],
+  "protected_input_roots": [],
+  "gaps": [
+    {
+      "id": "physical_scale",
+      "title": "Physical scale needs independent evidence",
+      "status": "unresolved",
+      "resolution": "Provide measured reference and acquisition units"
+    }
+  ],
+  "instructions": "Add specimens with unique id and cloud local PLY path (relative to this JSON or absolute). upright_R maps all clouds into the same Z-up frame. Use context_clouds for original scene points, including stem bases omitted by cleanup. Artifacts have title,path,description. Manual references use stable id,specimen_id,definition,value,unit=m,evidence_status,source. Never set scale from plant traits reserved for validation."
+}

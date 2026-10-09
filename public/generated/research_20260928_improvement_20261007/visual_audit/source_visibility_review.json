@@ -1,0 +1,2286 @@
+{
+  "schema_version": 1,
+  "frozen_utc": "2026-10-07T04:28:24.979423+00:00",
+  "status": "assistant-reviewed source-only comparison ROIs; operator confirmation pending",
+  "coordinate_system": "native distorted RGB pixels, x right/y down; masks must be remapped for undistorted stereo using nearest-neighbor labels",
+  "label_map": {
+    "0": "not_assessed",
+    "1": "visible_plant_surface_sample",
+    "2": "localization_uncertainty_band",
+    "3": "bare_board_background_sample"
+  },
+  "selection_timing": "Selected solely from source RGB and coordinate crops before viewing new reconstruction or old-versus-new coverage results.",
+  "held_fixed_for_old_new_comparison": true,
+  "manual_trait_dimensions_read_or_used": false,
+  "views": [
+    {
+      "frame_id": 197108,
+      "specimen_candidate": "P1",
+      "source_rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_197108.png",
+      "source_sha256": "5b8410c123f925180467e14774a8f7dca28c20b4bec174b3d14bea09a38bb186",
+      "exact_bundle_pose_available": true,
+      "dense_anchor": false,
+      "native_width_height": [
+        1280,
+        720
+      ],
+      "camera_to_reference_transform": [
+        [
+          0.9999999888983667,
+          7.832416149955433e-05,
+          -0.00012676195074111957,
+          0.19396208155808034
+        ],
+        [
+          -7.83904882566109e-05,
+          0.9999998599964183,
+          -0.0005233183306644487,
+          -0.004149295642536363
+        ],
+        [
+          0.00012672094452454357,
+          0.0005233282617859719,
+          0.9999998550346557,
+          0.000254203644576328
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "annotated_panel": "P1_197108_annotated.jpg",
+      "native_label_mask": "P1_197108_native_labels.png",
+      "foreground_mask": "P1_197108_foreground_native_mask.png",
+      "background_mask": "P1_197108_background_native_mask.png",
+      "uncertain_boundary_mask": "P1_197108_uncertain_boundary_native_mask.png",
+      "annotation_ids": [
+        "P1_197108_01_P1_ear_body",
+        "P1_197108_02_P1_dry_hanging_strip",
+        "P1_197108_03_nearby_board_background"
+      ]
+    },
+    {
+      "frame_id": 222952,
+      "specimen_candidate": "P1",
+      "source_rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_222952.png",
+      "source_sha256": "a0f66a009e2375982a88f9908144fe34d3d770404295486de68e808e338e67b4",
+      "exact_bundle_pose_available": true,
+      "dense_anchor": true,
+      "native_width_height": [
+        1280,
+        720
+      ],
+      "camera_to_reference_transform": [
+        [
+          0.9999999639125152,
+          2.3060199432704445e-06,
+          -0.00026864409603819705,
+          0.21947716074812124
+        ],
+        [
+          -2.448548373684809e-06,
+          0.9999998592562468,
+          -0.0005305482930359847,
+          -0.004768897850587278
+        ],
+        [
+          0.0002686428347732739,
+          0.0005305489316778957,
+          0.9999998231744136,
+          0.00023193633696317833
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "annotated_panel": "P1_222952_annotated.jpg",
+      "native_label_mask": "P1_222952_native_labels.png",
+      "foreground_mask": "P1_222952_foreground_native_mask.png",
+      "background_mask": "P1_222952_background_native_mask.png",
+      "uncertain_boundary_mask": "P1_222952_uncertain_boundary_native_mask.png",
+      "annotation_ids": [
+        "P1_222952_01_P1_ear_body",
+        "P1_222952_02_P1_dry_hanging_strip",
+        "P1_222952_03_nearby_board_background"
+      ]
+    },
+    {
+      "frame_id": 249551,
+      "specimen_candidate": "P1",
+      "source_rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_249551.png",
+      "source_sha256": "edb4b734f39ed4e2e9293fdb2e6a4792e9d153649d86aaa152b1d47de1938e84",
+      "exact_bundle_pose_available": true,
+      "dense_anchor": false,
+      "native_width_height": [
+        1280,
+        720
+      ],
+      "camera_to_reference_transform": [
+        [
+          0.9999999789256184,
+          4.0328513804130106e-05,
+          -0.00020130169847624194,
+          0.24605065484444325
+        ],
+        [
+          -4.045800212295959e-05,
+          0.9999997922690262,
+          -0.0006432923551370249,
+          -0.0052895806965844745
+        ],
+        [
+          0.00020127571363502442,
+          0.0006433004858445792,
+          0.9999997728262603,
+          0.00028140207870285146
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "annotated_panel": "P1_249551_annotated.jpg",
+      "native_label_mask": "P1_249551_native_labels.png",
+      "foreground_mask": "P1_249551_foreground_native_mask.png",
+      "background_mask": "P1_249551_background_native_mask.png",
+      "uncertain_boundary_mask": "P1_249551_uncertain_boundary_native_mask.png",
+      "annotation_ids": [
+        "P1_249551_01_P1_ear_body",
+        "P1_249551_02_P1_dry_hanging_strip",
+        "P1_249551_03_nearby_board_background"
+      ]
+    },
+    {
+      "frame_id": 275384,
+      "specimen_candidate": "P1",
+      "source_rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_275384.png",
+      "source_sha256": "15e8d6aff396e62b2b5c1d7606d1ca94e6f45afd0ae21aafc5023efd2db16cc8",
+      "exact_bundle_pose_available": true,
+      "dense_anchor": true,
+      "native_width_height": [
+        1280,
+        720
+      ],
+      "camera_to_reference_transform": [
+        [
+          0.9999999779726726,
+          2.7904806937761046e-05,
+          -0.0002080287861572075,
+          0.271457658272159
+        ],
+        [
+          -2.8059401193723737e-05,
+          0.9999997234533221,
+          -0.0007431728932056905,
+          -0.005791659249257527
+        ],
+        [
+          0.00020800799053143258,
+          0.0007431787139987482,
+          0.9999997022089931,
+          0.0002954795046201504
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "annotated_panel": "P1_275384_annotated.jpg",
+      "native_label_mask": "P1_275384_native_labels.png",
+      "foreground_mask": "P1_275384_foreground_native_mask.png",
+      "background_mask": "P1_275384_background_native_mask.png",
+      "uncertain_boundary_mask": "P1_275384_uncertain_boundary_native_mask.png",
+      "annotation_ids": [
+        "P1_275384_01_P1_ear_body",
+        "P1_275384_02_P1_dry_hanging_strip",
+        "P1_275384_03_P1_green_peduncle_region",
+        "P1_275384_04_nearby_board_background"
+      ]
+    },
+    {
+      "frame_id": 487431,
+      "specimen_candidate": "P2",
+      "source_rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_487431.png",
+      "source_sha256": "e5e01c7284b0ff2c4ff2f7e4cef59a957c550989eedd0a0cc1b171cecba54564",
+      "exact_bundle_pose_available": true,
+      "dense_anchor": true,
+      "native_width_height": [
+        1280,
+        720
+      ],
+      "camera_to_reference_transform": [
+        [
+          0.9999997759232631,
+          0.00014694191482011838,
+          -0.000653116756246256,
+          0.4849481620862717
+        ],
+        [
+          -0.00014788489807152002,
+          0.9999989464869153,
+          -0.0014440066191515114,
+          -0.010125311572476666
+        ],
+        [
+          0.0006529038830815837,
+          0.0014441028816881427,
+          0.9999987441409048,
+          0.00058684811370863
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "annotated_panel": "P2_487431_annotated.jpg",
+      "native_label_mask": "P2_487431_native_labels.png",
+      "foreground_mask": "P2_487431_foreground_native_mask.png",
+      "background_mask": "P2_487431_background_native_mask.png",
+      "uncertain_boundary_mask": "P2_487431_uncertain_boundary_native_mask.png",
+      "annotation_ids": [
+        "P2_487431_01_P2_upper_curved_stem",
+        "P2_487431_02_P2_upright_narrow_leaf",
+        "P2_487431_03_P2_lower_textured_leaf",
+        "P2_487431_04_nearby_board_background"
+      ]
+    },
+    {
+      "frame_id": 799028,
+      "specimen_candidate": "P3",
+      "source_rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_799028.png",
+      "source_sha256": "ca03571d38d83039b6fb0ad95b319b31426f8a68a57b497fda46735489561c68",
+      "exact_bundle_pose_available": true,
+      "dense_anchor": true,
+      "native_width_height": [
+        1280,
+        720
+      ],
+      "camera_to_reference_transform": [
+        [
+          0.9999991305091153,
+          0.0002981664252263636,
+          -0.0012845535397373478,
+          0.7978397335878076
+        ],
+        [
+          -0.000300996265993633,
+          0.999997527330053,
+          -0.0022033463249341973,
+          -0.016486582131696403
+        ],
+        [
+          0.0012838933995631841,
+          0.0022037310549635754,
+          0.9999967475882989,
+          0.0012384159920819763
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "annotated_panel": "P3_799028_annotated.jpg",
+      "native_label_mask": "P3_799028_native_labels.png",
+      "foreground_mask": "P3_799028_foreground_native_mask.png",
+      "background_mask": "P3_799028_background_native_mask.png",
+      "uncertain_boundary_mask": "P3_799028_uncertain_boundary_native_mask.png",
+      "annotation_ids": [
+        "P3_799028_01_P3_lower_main_stem",
+        "P3_799028_02_P3_upper_leaf_interior",
+        "P3_799028_03_P3_left_leaf_interior",
+        "P3_799028_04_nearby_board_background"
+      ]
+    },
+    {
+      "frame_id": 1003470,
+      "specimen_candidate": "P4",
+      "source_rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1003470.png",
+      "source_sha256": "76da08b943df68c8a1e6a99e0cf5c5cb9b67122670e58218a60052e77c4cfc88",
+      "exact_bundle_pose_available": true,
+      "dense_anchor": true,
+      "native_width_height": [
+        1280,
+        720
+      ],
+      "camera_to_reference_transform": [
+        [
+          0.9999991085442452,
+          0.0004144333946998719,
+          -0.001269313072588715,
+          1.0025272686825273
+        ],
+        [
+          -0.0004175198444896241,
+          0.9999969548125622,
+          -0.0024322916728456655,
+          -0.02082862722040936
+        ],
+        [
+          0.0012683011843976273,
+          0.002432819467961926,
+          0.9999962363936886,
+          0.0020507648955131073
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "annotated_panel": "P4_1003470_annotated.jpg",
+      "native_label_mask": "P4_1003470_native_labels.png",
+      "foreground_mask": "P4_1003470_foreground_native_mask.png",
+      "background_mask": "P4_1003470_background_native_mask.png",
+      "uncertain_boundary_mask": "P4_1003470_uncertain_boundary_native_mask.png",
+      "annotation_ids": [
+        "P4_1003470_01_P4_upper_arch",
+        "P4_1003470_02_P4_upright_flower_stalk",
+        "P4_1003470_03_P4_yellow_flower",
+        "P4_1003470_04_nearby_board_background"
+      ]
+    },
+    {
+      "frame_id": 1030829,
+      "specimen_candidate": "P4",
+      "source_rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1030829.png",
+      "source_sha256": "457b2da5706924f223e27e33b88f23d1f0aa46baf02163ab5178575262f5bb73",
+      "exact_bundle_pose_available": true,
+      "dense_anchor": false,
+      "native_width_height": [
+        1280,
+        720
+      ],
+      "camera_to_reference_transform": [
+        [
+          0.9999989345482108,
+          0.0003683608505177281,
+          -0.001412519991725383,
+          1.0306074677971393
+        ],
+        [
+          -0.000371961031129796,
+          0.9999966812261345,
+          -0.0025493492715012887,
+          -0.021406981445514547
+        ],
+        [
+          0.001411576223425033,
+          0.00254987195768516,
+          0.999995752793763,
+          0.0021922928785821244
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "annotated_panel": "P4_1030829_annotated.jpg",
+      "native_label_mask": "P4_1030829_native_labels.png",
+      "foreground_mask": "P4_1030829_foreground_native_mask.png",
+      "background_mask": "P4_1030829_background_native_mask.png",
+      "uncertain_boundary_mask": "P4_1030829_uncertain_boundary_native_mask.png",
+      "annotation_ids": [
+        "P4_1030829_01_P4_upper_arch",
+        "P4_1030829_02_P4_upright_flower_stalk",
+        "P4_1030829_03_P4_yellow_flower",
+        "P4_1030829_04_nearby_board_background"
+      ]
+    },
+    {
+      "frame_id": 1055904,
+      "specimen_candidate": "P4",
+      "source_rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1055904.png",
+      "source_sha256": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494",
+      "exact_bundle_pose_available": true,
+      "dense_anchor": true,
+      "native_width_height": [
+        1280,
+        720
+      ],
+      "camera_to_reference_transform": [
+        [
+          0.999998968109585,
+          0.00036447491171068285,
+          -0.001389581880867672,
+          1.055977273434892
+        ],
+        [
+          -0.0003679386945476706,
+          0.9999968241834897,
+          -0.00249323966994535,
+          -0.02205107401550122
+        ],
+        [
+          0.0013886687445020147,
+          0.002493748378138447,
+          0.9999959264007752,
+          0.002264512499226478
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "annotated_panel": "P4_1055904_annotated.jpg",
+      "native_label_mask": "P4_1055904_native_labels.png",
+      "foreground_mask": "P4_1055904_foreground_native_mask.png",
+      "background_mask": "P4_1055904_background_native_mask.png",
+      "uncertain_boundary_mask": "P4_1055904_uncertain_boundary_native_mask.png",
+      "annotation_ids": [
+        "P4_1055904_01_P4_upper_arch",
+        "P4_1055904_02_P4_upright_flower_stalk",
+        "P4_1055904_03_P4_yellow_flower",
+        "P4_1055904_04_nearby_board_background"
+      ]
+    },
+    {
+      "frame_id": 1420709,
+      "specimen_candidate": "P5",
+      "source_rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1420709.png",
+      "source_sha256": "e8162ab3b6887cd844dd0bdefeb5af4e45a8db0c73b75cb802821c1550681ae1",
+      "exact_bundle_pose_available": true,
+      "dense_anchor": true,
+      "native_width_height": [
+        1280,
+        720
+      ],
+      "camera_to_reference_transform": [
+        [
+          0.9999987144190021,
+          0.0004332276211079613,
+          -0.0015438504368222386,
+          1.4218560448402986
+        ],
+        [
+          -0.00043965037814508906,
+          0.9999912408966601,
+          -0.004162311557639873,
+          -0.029600172022735766
+        ],
+        [
+          0.001542033685742293,
+          0.004162984961079577,
+          0.9999901457956102,
+          0.003328442634190239
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "annotated_panel": "P5_1420709_annotated.jpg",
+      "native_label_mask": "P5_1420709_native_labels.png",
+      "foreground_mask": "P5_1420709_foreground_native_mask.png",
+      "background_mask": "P5_1420709_background_native_mask.png",
+      "uncertain_boundary_mask": "P5_1420709_uncertain_boundary_native_mask.png",
+      "annotation_ids": [
+        "P5_1420709_01_P5_green_leaf_control",
+        "P5_1420709_02_P5_visible_upper_stem",
+        "P5_1420709_03_P5_brown_leaf_control",
+        "P5_1420709_04_nearby_board_background"
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "group": "P1_ear_body",
+      "geometry": "polygon",
+      "xy": [
+        [
+          797,
+          406
+        ],
+        [
+          809,
+          413
+        ],
+        [
+          824,
+          421
+        ],
+        [
+          839,
+          430
+        ],
+        [
+          837,
+          438
+        ],
+        [
+          824,
+          433
+        ],
+        [
+          810,
+          425
+        ],
+        [
+          800,
+          416
+        ]
+      ],
+      "confidence": "moderate",
+      "note": "Visible interior patch; boundary and exact organ ownership remain unconfirmed.",
+      "annotation_id": "P1_197108_01_P1_ear_body",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P1",
+      "source_frame_id": 197108,
+      "source_rgb_sha256": "5b8410c123f925180467e14774a8f7dca28c20b4bec174b3d14bea09a38bb186",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P1_197108_01_P1_ear_body_native_mask.png",
+      "mask_pixels": 452,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        789,
+        398,
+        848,
+        447
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P1_dry_hanging_strip",
+      "geometry": "polyline",
+      "xy": [
+        [
+          744,
+          497
+        ],
+        [
+          749,
+          528
+        ],
+        [
+          756,
+          570
+        ],
+        [
+          765,
+          615
+        ]
+      ],
+      "width_px": 2,
+      "confidence": "moderate",
+      "note": "Pale dry narrow strip visible against board; this is not confidently identified as the main stem.",
+      "annotation_id": "P1_197108_02_P1_dry_hanging_strip",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P1",
+      "source_frame_id": 197108,
+      "source_rgb_sha256": "5b8410c123f925180467e14774a8f7dca28c20b4bec174b3d14bea09a38bb186",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P1_197108_02_P1_dry_hanging_strip_native_mask.png",
+      "mask_pixels": 231,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        736,
+        489,
+        774,
+        624
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "nearby_board_background",
+      "geometry": "polygon",
+      "xy": [
+        [
+          805,
+          512
+        ],
+        [
+          823,
+          512
+        ],
+        [
+          823,
+          530
+        ],
+        [
+          805,
+          530
+        ]
+      ],
+      "confidence": "high",
+      "note": "Visible bare board patch; negative for plant foreground, but legitimate background in full-scene reconstruction.",
+      "annotation_id": "P1_197108_03_nearby_board_background",
+      "class_name": "board_background",
+      "specimen_candidate": "P1",
+      "source_frame_id": 197108,
+      "source_rgb_sha256": "5b8410c123f925180467e14774a8f7dca28c20b4bec174b3d14bea09a38bb186",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P1_197108_03_nearby_board_background_native_mask.png",
+      "mask_pixels": 361,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        797,
+        504,
+        832,
+        539
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P1_ear_body",
+      "geometry": "polygon",
+      "xy": [
+        [
+          735,
+          404
+        ],
+        [
+          747,
+          411
+        ],
+        [
+          759,
+          420
+        ],
+        [
+          773,
+          431
+        ],
+        [
+          770,
+          439
+        ],
+        [
+          752,
+          431
+        ],
+        [
+          743,
+          419
+        ]
+      ],
+      "confidence": "moderate",
+      "note": "Visible interior patch; boundary and exact organ ownership remain unconfirmed.",
+      "annotation_id": "P1_222952_01_P1_ear_body",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P1",
+      "source_frame_id": 222952,
+      "source_rgb_sha256": "a0f66a009e2375982a88f9908144fe34d3d770404295486de68e808e338e67b4",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P1_222952_01_P1_ear_body_native_mask.png",
+      "mask_pixels": 452,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        727,
+        396,
+        782,
+        448
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P1_dry_hanging_strip",
+      "geometry": "polyline",
+      "xy": [
+        [
+          715,
+          497
+        ],
+        [
+          721,
+          527
+        ],
+        [
+          730,
+          573
+        ],
+        [
+          740,
+          614
+        ]
+      ],
+      "width_px": 2,
+      "confidence": "moderate",
+      "note": "Pale dry narrow strip visible against board; this is not confidently identified as the main stem.",
+      "annotation_id": "P1_222952_02_P1_dry_hanging_strip",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P1",
+      "source_frame_id": 222952,
+      "source_rgb_sha256": "a0f66a009e2375982a88f9908144fe34d3d770404295486de68e808e338e67b4",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P1_222952_02_P1_dry_hanging_strip_native_mask.png",
+      "mask_pixels": 235,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        707,
+        489,
+        749,
+        623
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "nearby_board_background",
+      "geometry": "polygon",
+      "xy": [
+        [
+          785,
+          510
+        ],
+        [
+          803,
+          510
+        ],
+        [
+          803,
+          528
+        ],
+        [
+          785,
+          528
+        ]
+      ],
+      "confidence": "high",
+      "note": "Visible bare board patch; negative for plant foreground, but legitimate background in full-scene reconstruction.",
+      "annotation_id": "P1_222952_03_nearby_board_background",
+      "class_name": "board_background",
+      "specimen_candidate": "P1",
+      "source_frame_id": 222952,
+      "source_rgb_sha256": "a0f66a009e2375982a88f9908144fe34d3d770404295486de68e808e338e67b4",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P1_222952_03_nearby_board_background_native_mask.png",
+      "mask_pixels": 361,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        777,
+        502,
+        812,
+        537
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P1_ear_body",
+      "geometry": "polygon",
+      "xy": [
+        [
+          673,
+          405
+        ],
+        [
+          683,
+          410
+        ],
+        [
+          693,
+          423
+        ],
+        [
+          707,
+          435
+        ],
+        [
+          703,
+          443
+        ],
+        [
+          690,
+          434
+        ],
+        [
+          679,
+          421
+        ]
+      ],
+      "confidence": "moderate",
+      "note": "Visible interior patch; boundary and exact organ ownership remain unconfirmed.",
+      "annotation_id": "P1_249551_01_P1_ear_body",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P1",
+      "source_frame_id": 249551,
+      "source_rgb_sha256": "edb4b734f39ed4e2e9293fdb2e6a4792e9d153649d86aaa152b1d47de1938e84",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P1_249551_01_P1_ear_body_native_mask.png",
+      "mask_pixels": 426,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        665,
+        397,
+        716,
+        452
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P1_dry_hanging_strip",
+      "geometry": "polyline",
+      "xy": [
+        [
+          685,
+          498
+        ],
+        [
+          693,
+          529
+        ],
+        [
+          704,
+          575
+        ],
+        [
+          715,
+          614
+        ]
+      ],
+      "width_px": 2,
+      "confidence": "moderate",
+      "note": "Pale dry narrow strip visible against board; this is not confidently identified as the main stem.",
+      "annotation_id": "P1_249551_02_P1_dry_hanging_strip",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P1",
+      "source_frame_id": 249551,
+      "source_rgb_sha256": "edb4b734f39ed4e2e9293fdb2e6a4792e9d153649d86aaa152b1d47de1938e84",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P1_249551_02_P1_dry_hanging_strip_native_mask.png",
+      "mask_pixels": 233,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        677,
+        490,
+        724,
+        623
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "nearby_board_background",
+      "geometry": "polygon",
+      "xy": [
+        [
+          749,
+          511
+        ],
+        [
+          765,
+          511
+        ],
+        [
+          765,
+          529
+        ],
+        [
+          749,
+          529
+        ]
+      ],
+      "confidence": "high",
+      "note": "Visible bare board patch; negative for plant foreground, but legitimate background in full-scene reconstruction.",
+      "annotation_id": "P1_249551_03_nearby_board_background",
+      "class_name": "board_background",
+      "specimen_candidate": "P1",
+      "source_frame_id": 249551,
+      "source_rgb_sha256": "edb4b734f39ed4e2e9293fdb2e6a4792e9d153649d86aaa152b1d47de1938e84",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P1_249551_03_nearby_board_background_native_mask.png",
+      "mask_pixels": 323,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        741,
+        503,
+        774,
+        538
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P1_ear_body",
+      "geometry": "polygon",
+      "xy": [
+        [
+          618,
+          406
+        ],
+        [
+          629,
+          405
+        ],
+        [
+          637,
+          418
+        ],
+        [
+          640,
+          439
+        ],
+        [
+          631,
+          447
+        ],
+        [
+          621,
+          434
+        ],
+        [
+          616,
+          419
+        ]
+      ],
+      "confidence": "moderate",
+      "note": "Visible interior patch; boundary and exact organ ownership remain unconfirmed.",
+      "annotation_id": "P1_275384_01_P1_ear_body",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P1",
+      "source_frame_id": 275384,
+      "source_rgb_sha256": "15e8d6aff396e62b2b5c1d7606d1ca94e6f45afd0ae21aafc5023efd2db16cc8",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P1_275384_01_P1_ear_body_native_mask.png",
+      "mask_pixels": 704,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        608,
+        397,
+        649,
+        456
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P1_dry_hanging_strip",
+      "geometry": "polyline",
+      "xy": [
+        [
+          666,
+          497
+        ],
+        [
+          674,
+          530
+        ],
+        [
+          682,
+          574
+        ],
+        [
+          691,
+          615
+        ]
+      ],
+      "width_px": 2,
+      "confidence": "moderate",
+      "note": "Pale dry narrow strip visible against board; partly overlaps other dry strips above the sampled segment.",
+      "annotation_id": "P1_275384_02_P1_dry_hanging_strip",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P1",
+      "source_frame_id": 275384,
+      "source_rgb_sha256": "15e8d6aff396e62b2b5c1d7606d1ca94e6f45afd0ae21aafc5023efd2db16cc8",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P1_275384_02_P1_dry_hanging_strip_native_mask.png",
+      "mask_pixels": 238,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        658,
+        489,
+        700,
+        624
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P1_green_peduncle_region",
+      "geometry": "polygon",
+      "xy": [
+        [
+          620,
+          381
+        ],
+        [
+          629,
+          375
+        ],
+        [
+          635,
+          382
+        ],
+        [
+          629,
+          394
+        ],
+        [
+          620,
+          398
+        ]
+      ],
+      "confidence": "moderate",
+      "note": "Green tissue at the ear attachment; leaf/peduncle distinction is uncertain, so score visible surface only.",
+      "annotation_id": "P1_275384_03_P1_green_peduncle_region",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P1",
+      "source_frame_id": 275384,
+      "source_rgb_sha256": "15e8d6aff396e62b2b5c1d7606d1ca94e6f45afd0ae21aafc5023efd2db16cc8",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P1_275384_03_P1_green_peduncle_region_native_mask.png",
+      "mask_pixels": 238,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        612,
+        367,
+        644,
+        407
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "nearby_board_background",
+      "geometry": "polygon",
+      "xy": [
+        [
+          711,
+          511
+        ],
+        [
+          729,
+          511
+        ],
+        [
+          729,
+          530
+        ],
+        [
+          711,
+          530
+        ]
+      ],
+      "confidence": "high",
+      "note": "Visible bare board patch; negative for plant foreground, but legitimate background in full-scene reconstruction.",
+      "annotation_id": "P1_275384_04_nearby_board_background",
+      "class_name": "board_background",
+      "specimen_candidate": "P1",
+      "source_frame_id": 275384,
+      "source_rgb_sha256": "15e8d6aff396e62b2b5c1d7606d1ca94e6f45afd0ae21aafc5023efd2db16cc8",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P1_275384_04_nearby_board_background_native_mask.png",
+      "mask_pixels": 380,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        703,
+        503,
+        738,
+        539
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P2_upper_curved_stem",
+      "geometry": "polyline",
+      "xy": [
+        [
+          718,
+          411
+        ],
+        [
+          742,
+          404
+        ],
+        [
+          764,
+          403
+        ],
+        [
+          790,
+          407
+        ]
+      ],
+      "width_px": 4,
+      "confidence": "moderate",
+      "note": "Exposed blue-green curved stem; endpoints are internal samples, not whole-organ endpoints.",
+      "annotation_id": "P2_487431_01_P2_upper_curved_stem",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P2",
+      "source_frame_id": 487431,
+      "source_rgb_sha256": "e5e01c7284b0ff2c4ff2f7e4cef59a957c550989eedd0a0cc1b171cecba54564",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P2_487431_01_P2_upper_curved_stem_native_mask.png",
+      "mask_pixels": 239,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        710,
+        395,
+        799,
+        420
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P2_upright_narrow_leaf",
+      "geometry": "polygon",
+      "xy": [
+        [
+          748,
+          464
+        ],
+        [
+          754,
+          474
+        ],
+        [
+          761,
+          496
+        ],
+        [
+          763,
+          507
+        ],
+        [
+          755,
+          503
+        ],
+        [
+          750,
+          484
+        ]
+      ],
+      "confidence": "moderate",
+      "note": "Visible interior patch; boundary and exact organ ownership remain unconfirmed.",
+      "annotation_id": "P2_487431_02_P2_upright_narrow_leaf",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P2",
+      "source_frame_id": 487431,
+      "source_rgb_sha256": "e5e01c7284b0ff2c4ff2f7e4cef59a957c550989eedd0a0cc1b171cecba54564",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P2_487431_02_P2_upright_narrow_leaf_native_mask.png",
+      "mask_pixels": 286,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        740,
+        456,
+        772,
+        516
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P2_lower_textured_leaf",
+      "geometry": "polygon",
+      "xy": [
+        [
+          839,
+          604
+        ],
+        [
+          854,
+          609
+        ],
+        [
+          869,
+          622
+        ],
+        [
+          879,
+          636
+        ],
+        [
+          872,
+          642
+        ],
+        [
+          856,
+          629
+        ],
+        [
+          845,
+          616
+        ]
+      ],
+      "confidence": "moderate",
+      "note": "Visible interior patch; boundary and exact organ ownership remain unconfirmed.",
+      "annotation_id": "P2_487431_03_P2_lower_textured_leaf",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P2",
+      "source_frame_id": 487431,
+      "source_rgb_sha256": "e5e01c7284b0ff2c4ff2f7e4cef59a957c550989eedd0a0cc1b171cecba54564",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P2_487431_03_P2_lower_textured_leaf_native_mask.png",
+      "mask_pixels": 564,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        831,
+        596,
+        888,
+        651
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "nearby_board_background",
+      "geometry": "polygon",
+      "xy": [
+        [
+          581,
+          572
+        ],
+        [
+          599,
+          572
+        ],
+        [
+          599,
+          590
+        ],
+        [
+          581,
+          590
+        ]
+      ],
+      "confidence": "high",
+      "note": "Visible bare board patch; negative for plant foreground, but legitimate background in full-scene reconstruction.",
+      "annotation_id": "P2_487431_04_nearby_board_background",
+      "class_name": "board_background",
+      "specimen_candidate": "P2",
+      "source_frame_id": 487431,
+      "source_rgb_sha256": "e5e01c7284b0ff2c4ff2f7e4cef59a957c550989eedd0a0cc1b171cecba54564",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P2_487431_04_nearby_board_background_native_mask.png",
+      "mask_pixels": 361,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        573,
+        564,
+        608,
+        599
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P3_lower_main_stem",
+      "geometry": "polyline",
+      "xy": [
+        [
+          584,
+          564
+        ],
+        [
+          577,
+          589
+        ],
+        [
+          574,
+          617
+        ],
+        [
+          579,
+          639
+        ]
+      ],
+      "width_px": 4,
+      "confidence": "moderate",
+      "note": "Exposed thick stem sample; no inference about its hidden back surface or complete path.",
+      "annotation_id": "P3_799028_01_P3_lower_main_stem",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P3",
+      "source_frame_id": 799028,
+      "source_rgb_sha256": "ca03571d38d83039b6fb0ad95b319b31426f8a68a57b497fda46735489561c68",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P3_799028_01_P3_lower_main_stem_native_mask.png",
+      "mask_pixels": 310,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        566,
+        556,
+        593,
+        648
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P3_upper_leaf_interior",
+      "geometry": "polygon",
+      "xy": [
+        [
+          612,
+          355
+        ],
+        [
+          624,
+          343
+        ],
+        [
+          641,
+          352
+        ],
+        [
+          649,
+          366
+        ],
+        [
+          639,
+          386
+        ],
+        [
+          624,
+          391
+        ],
+        [
+          614,
+          379
+        ]
+      ],
+      "confidence": "moderate",
+      "note": "Visible interior patch; boundary and exact organ ownership remain unconfirmed.",
+      "annotation_id": "P3_799028_02_P3_upper_leaf_interior",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P3",
+      "source_frame_id": 799028,
+      "source_rgb_sha256": "ca03571d38d83039b6fb0ad95b319b31426f8a68a57b497fda46735489561c68",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P3_799028_02_P3_upper_leaf_interior_native_mask.png",
+      "mask_pixels": 1246,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        604,
+        335,
+        658,
+        400
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P3_left_leaf_interior",
+      "geometry": "polygon",
+      "xy": [
+        [
+          499,
+          463
+        ],
+        [
+          514,
+          467
+        ],
+        [
+          524,
+          480
+        ],
+        [
+          515,
+          491
+        ],
+        [
+          499,
+          483
+        ],
+        [
+          491,
+          471
+        ]
+      ],
+      "confidence": "moderate",
+      "note": "Visible interior patch; boundary and exact organ ownership remain unconfirmed.",
+      "annotation_id": "P3_799028_03_P3_left_leaf_interior",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P3",
+      "source_frame_id": 799028,
+      "source_rgb_sha256": "ca03571d38d83039b6fb0ad95b319b31426f8a68a57b497fda46735489561c68",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P3_799028_03_P3_left_leaf_interior_native_mask.png",
+      "mask_pixels": 560,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        483,
+        455,
+        533,
+        500
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "nearby_board_background",
+      "geometry": "polygon",
+      "xy": [
+        [
+          743,
+          519
+        ],
+        [
+          759,
+          519
+        ],
+        [
+          759,
+          539
+        ],
+        [
+          743,
+          539
+        ]
+      ],
+      "confidence": "high",
+      "note": "Visible bare board patch; negative for plant foreground, but legitimate background in full-scene reconstruction.",
+      "annotation_id": "P3_799028_04_nearby_board_background",
+      "class_name": "board_background",
+      "specimen_candidate": "P3",
+      "source_frame_id": 799028,
+      "source_rgb_sha256": "ca03571d38d83039b6fb0ad95b319b31426f8a68a57b497fda46735489561c68",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P3_799028_04_nearby_board_background_native_mask.png",
+      "mask_pixels": 357,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        735,
+        511,
+        768,
+        548
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P4_upper_arch",
+      "geometry": "polyline",
+      "xy": [
+        [
+          643,
+          353
+        ],
+        [
+          661,
+          344
+        ],
+        [
+          681,
+          340
+        ],
+        [
+          701,
+          349
+        ],
+        [
+          721,
+          369
+        ]
+      ],
+      "width_px": 3,
+      "confidence": "moderate",
+      "note": "Same clearly exposed arch tracked across three short-baseline source views; crossings beyond endpoints are excluded.",
+      "annotation_id": "P4_1003470_01_P4_upper_arch",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P4",
+      "source_frame_id": 1003470,
+      "source_rgb_sha256": "76da08b943df68c8a1e6a99e0cf5c5cb9b67122670e58218a60052e77c4cfc88",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P4_1003470_01_P4_upper_arch_native_mask.png",
+      "mask_pixels": 242,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        635,
+        332,
+        730,
+        378
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P4_upright_flower_stalk",
+      "geometry": "polyline",
+      "xy": [
+        [
+          779,
+          346
+        ],
+        [
+          784,
+          368
+        ],
+        [
+          788,
+          393
+        ]
+      ],
+      "width_px": 3,
+      "confidence": "moderate",
+      "note": "Visible stalk in front of board/pot, away from the bud cluster and branch crossing.",
+      "annotation_id": "P4_1003470_02_P4_upright_flower_stalk",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P4",
+      "source_frame_id": 1003470,
+      "source_rgb_sha256": "76da08b943df68c8a1e6a99e0cf5c5cb9b67122670e58218a60052e77c4cfc88",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P4_1003470_02_P4_upright_flower_stalk_native_mask.png",
+      "mask_pixels": 143,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        771,
+        338,
+        797,
+        402
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P4_yellow_flower",
+      "geometry": "polygon",
+      "xy": [
+        [
+          643,
+          448
+        ],
+        [
+          652,
+          445
+        ],
+        [
+          661,
+          451
+        ],
+        [
+          663,
+          462
+        ],
+        [
+          654,
+          463
+        ],
+        [
+          647,
+          458
+        ]
+      ],
+      "confidence": "moderate",
+      "note": "Visible interior patch; boundary and exact organ ownership remain unconfirmed.",
+      "annotation_id": "P4_1003470_03_P4_yellow_flower",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P4",
+      "source_frame_id": 1003470,
+      "source_rgb_sha256": "76da08b943df68c8a1e6a99e0cf5c5cb9b67122670e58218a60052e77c4cfc88",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P4_1003470_03_P4_yellow_flower_native_mask.png",
+      "mask_pixels": 252,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        635,
+        437,
+        672,
+        472
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "nearby_board_background",
+      "geometry": "polygon",
+      "xy": [
+        [
+          814,
+          549
+        ],
+        [
+          829,
+          549
+        ],
+        [
+          829,
+          563
+        ],
+        [
+          814,
+          563
+        ]
+      ],
+      "confidence": "high",
+      "note": "Visible bare board patch; negative for plant foreground, but legitimate background in full-scene reconstruction.",
+      "annotation_id": "P4_1003470_04_nearby_board_background",
+      "class_name": "board_background",
+      "specimen_candidate": "P4",
+      "source_frame_id": 1003470,
+      "source_rgb_sha256": "76da08b943df68c8a1e6a99e0cf5c5cb9b67122670e58218a60052e77c4cfc88",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P4_1003470_04_nearby_board_background_native_mask.png",
+      "mask_pixels": 240,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        806,
+        541,
+        838,
+        572
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P4_upper_arch",
+      "geometry": "polyline",
+      "xy": [
+        [
+          579,
+          359
+        ],
+        [
+          592,
+          347
+        ],
+        [
+          615,
+          340
+        ],
+        [
+          638,
+          345
+        ],
+        [
+          660,
+          364
+        ]
+      ],
+      "width_px": 3,
+      "confidence": "moderate",
+      "note": "Same clearly exposed arch tracked across three short-baseline source views; crossings beyond endpoints are excluded.",
+      "annotation_id": "P4_1030829_01_P4_upper_arch",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P4",
+      "source_frame_id": 1030829,
+      "source_rgb_sha256": "457b2da5706924f223e27e33b88f23d1f0aa46baf02163ab5178575262f5bb73",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P4_1030829_01_P4_upper_arch_native_mask.png",
+      "mask_pixels": 271,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        571,
+        332,
+        669,
+        373
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P4_upright_flower_stalk",
+      "geometry": "polyline",
+      "xy": [
+        [
+          712,
+          347
+        ],
+        [
+          716,
+          370
+        ],
+        [
+          721,
+          398
+        ]
+      ],
+      "width_px": 3,
+      "confidence": "moderate",
+      "note": "Visible stalk in front of board/pot, away from the bud cluster and branch crossing.",
+      "annotation_id": "P4_1030829_02_P4_upright_flower_stalk",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P4",
+      "source_frame_id": 1030829,
+      "source_rgb_sha256": "457b2da5706924f223e27e33b88f23d1f0aa46baf02163ab5178575262f5bb73",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P4_1030829_02_P4_upright_flower_stalk_native_mask.png",
+      "mask_pixels": 155,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        704,
+        339,
+        730,
+        407
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P4_yellow_flower",
+      "geometry": "polygon",
+      "xy": [
+        [
+          563,
+          449
+        ],
+        [
+          570,
+          445
+        ],
+        [
+          578,
+          451
+        ],
+        [
+          579,
+          462
+        ],
+        [
+          570,
+          464
+        ],
+        [
+          564,
+          458
+        ]
+      ],
+      "confidence": "moderate",
+      "note": "Visible interior patch; boundary and exact organ ownership remain unconfirmed.",
+      "annotation_id": "P4_1030829_03_P4_yellow_flower",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P4",
+      "source_frame_id": 1030829,
+      "source_rgb_sha256": "457b2da5706924f223e27e33b88f23d1f0aa46baf02163ab5178575262f5bb73",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P4_1030829_03_P4_yellow_flower_native_mask.png",
+      "mask_pixels": 236,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        555,
+        437,
+        588,
+        473
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "nearby_board_background",
+      "geometry": "polygon",
+      "xy": [
+        [
+          779,
+          549
+        ],
+        [
+          794,
+          549
+        ],
+        [
+          794,
+          563
+        ],
+        [
+          779,
+          563
+        ]
+      ],
+      "confidence": "high",
+      "note": "Visible bare board patch; negative for plant foreground, but legitimate background in full-scene reconstruction.",
+      "annotation_id": "P4_1030829_04_nearby_board_background",
+      "class_name": "board_background",
+      "specimen_candidate": "P4",
+      "source_frame_id": 1030829,
+      "source_rgb_sha256": "457b2da5706924f223e27e33b88f23d1f0aa46baf02163ab5178575262f5bb73",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P4_1030829_04_nearby_board_background_native_mask.png",
+      "mask_pixels": 240,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        771,
+        541,
+        803,
+        572
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P4_upper_arch",
+      "geometry": "polyline",
+      "xy": [
+        [
+          497,
+          362
+        ],
+        [
+          516,
+          350
+        ],
+        [
+          542,
+          344
+        ],
+        [
+          562,
+          350
+        ],
+        [
+          583,
+          368
+        ]
+      ],
+      "width_px": 3,
+      "confidence": "moderate",
+      "note": "Same clearly exposed arch tracked across three short-baseline source views; crossings beyond endpoints are excluded.",
+      "annotation_id": "P4_1055904_01_P4_upper_arch",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P4",
+      "source_frame_id": 1055904,
+      "source_rgb_sha256": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P4_1055904_01_P4_upper_arch_native_mask.png",
+      "mask_pixels": 275,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        489,
+        336,
+        592,
+        377
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P4_upright_flower_stalk",
+      "geometry": "polyline",
+      "xy": [
+        [
+          640,
+          347
+        ],
+        [
+          646,
+          371
+        ],
+        [
+          653,
+          400
+        ]
+      ],
+      "width_px": 3,
+      "confidence": "moderate",
+      "note": "Visible stalk in front of board/pot, away from the bud cluster and branch crossing.",
+      "annotation_id": "P4_1055904_02_P4_upright_flower_stalk",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P4",
+      "source_frame_id": 1055904,
+      "source_rgb_sha256": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P4_1055904_02_P4_upright_flower_stalk_native_mask.png",
+      "mask_pixels": 156,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        632,
+        339,
+        662,
+        409
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P4_yellow_flower",
+      "geometry": "polygon",
+      "xy": [
+        [
+          477,
+          449
+        ],
+        [
+          485,
+          445
+        ],
+        [
+          494,
+          451
+        ],
+        [
+          495,
+          462
+        ],
+        [
+          486,
+          465
+        ],
+        [
+          479,
+          459
+        ]
+      ],
+      "confidence": "moderate",
+      "note": "Visible interior patch; boundary and exact organ ownership remain unconfirmed.",
+      "annotation_id": "P4_1055904_03_P4_yellow_flower",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P4",
+      "source_frame_id": 1055904,
+      "source_rgb_sha256": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P4_1055904_03_P4_yellow_flower_native_mask.png",
+      "mask_pixels": 268,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        469,
+        437,
+        504,
+        474
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "nearby_board_background",
+      "geometry": "polygon",
+      "xy": [
+        [
+          747,
+          550
+        ],
+        [
+          763,
+          550
+        ],
+        [
+          763,
+          563
+        ],
+        [
+          747,
+          563
+        ]
+      ],
+      "confidence": "high",
+      "note": "Visible bare board patch; negative for plant foreground, but legitimate background in full-scene reconstruction.",
+      "annotation_id": "P4_1055904_04_nearby_board_background",
+      "class_name": "board_background",
+      "specimen_candidate": "P4",
+      "source_frame_id": 1055904,
+      "source_rgb_sha256": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P4_1055904_04_nearby_board_background_native_mask.png",
+      "mask_pixels": 238,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        739,
+        542,
+        772,
+        572
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P5_green_leaf_control",
+      "geometry": "polygon",
+      "xy": [
+        [
+          535,
+          233
+        ],
+        [
+          551,
+          224
+        ],
+        [
+          570,
+          234
+        ],
+        [
+          576,
+          249
+        ],
+        [
+          565,
+          263
+        ],
+        [
+          548,
+          263
+        ],
+        [
+          537,
+          249
+        ]
+      ],
+      "confidence": "high",
+      "note": "Textured visible leaf interior; positive control with wider support than thin structures.",
+      "annotation_id": "P5_1420709_01_P5_green_leaf_control",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P5",
+      "source_frame_id": 1420709,
+      "source_rgb_sha256": "e8162ab3b6887cd844dd0bdefeb5af4e45a8db0c73b75cb802821c1550681ae1",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P5_1420709_01_P5_green_leaf_control_native_mask.png",
+      "mask_pixels": 1175,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        527,
+        216,
+        585,
+        272
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P5_visible_upper_stem",
+      "geometry": "polyline",
+      "xy": [
+        [
+          551,
+          333
+        ],
+        [
+          550,
+          350
+        ],
+        [
+          547,
+          369
+        ],
+        [
+          541,
+          388
+        ]
+      ],
+      "width_px": 3,
+      "confidence": "moderate",
+      "note": "Visible upper stem over pot; inspect independently of broad pot-projection masks.",
+      "annotation_id": "P5_1420709_02_P5_visible_upper_stem",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P5",
+      "source_frame_id": 1420709,
+      "source_rgb_sha256": "e8162ab3b6887cd844dd0bdefeb5af4e45a8db0c73b75cb802821c1550681ae1",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P5_1420709_02_P5_visible_upper_stem_native_mask.png",
+      "mask_pixels": 168,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        533,
+        325,
+        560,
+        397
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "P5_brown_leaf_control",
+      "geometry": "polygon",
+      "xy": [
+        [
+          409,
+          249
+        ],
+        [
+          428,
+          232
+        ],
+        [
+          451,
+          233
+        ],
+        [
+          463,
+          252
+        ],
+        [
+          453,
+          274
+        ],
+        [
+          431,
+          280
+        ],
+        [
+          414,
+          267
+        ]
+      ],
+      "confidence": "high",
+      "note": "Visible brown leaf interior; prevents a green-only benchmark.",
+      "annotation_id": "P5_1420709_03_P5_brown_leaf_control",
+      "class_name": "visible_plant_surface_sample",
+      "specimen_candidate": "P5",
+      "source_frame_id": 1420709,
+      "source_rgb_sha256": "e8162ab3b6887cd844dd0bdefeb5af4e45a8db0c73b75cb802821c1550681ae1",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P5_1420709_03_P5_brown_leaf_control_native_mask.png",
+      "mask_pixels": 1885,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        401,
+        224,
+        472,
+        289
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    },
+    {
+      "group": "nearby_board_background",
+      "geometry": "polygon",
+      "xy": [
+        [
+          763,
+          475
+        ],
+        [
+          787,
+          475
+        ],
+        [
+          787,
+          498
+        ],
+        [
+          763,
+          498
+        ]
+      ],
+      "confidence": "high",
+      "note": "Visible bare board patch; negative for plant foreground, but legitimate background in full-scene reconstruction.",
+      "annotation_id": "P5_1420709_04_nearby_board_background",
+      "class_name": "board_background",
+      "specimen_candidate": "P5",
+      "source_frame_id": 1420709,
+      "source_rgb_sha256": "e8162ab3b6887cd844dd0bdefeb5af4e45a8db0c73b75cb802821c1550681ae1",
+      "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+      "native_mask": "P5_1420709_04_nearby_board_background_native_mask.png",
+      "mask_pixels": 600,
+      "boundary_localization_uncertainty_px": 3,
+      "roi_xyxy": [
+        755,
+        467,
+        796,
+        507
+      ],
+      "accepted_as_ground_truth": false,
+      "observed_visibility": "visible surface only; not hidden/reverse surfaces",
+      "manual_trait_dimensions_used": false
+    }
+  ],
+  "short_baseline_groups": [
+    {
+      "group": "P1_ear_and_dry_strip",
+      "frames": [
+        197108,
+        222952
+      ],
+      "bundle_camera_translation_m": 0.02552261093233347,
+      "note": "Bundle-derived candidate metric; not an independently calibrated ruler measurement."
+    },
+    {
+      "group": "P1_ear_and_dry_strip",
+      "frames": [
+        222952,
+        249551
+      ],
+      "bundle_camera_translation_m": 0.026578640784904375,
+      "note": "Bundle-derived candidate metric; not an independently calibrated ruler measurement."
+    },
+    {
+      "group": "P1_ear_and_dry_strip",
+      "frames": [
+        249551,
+        275384
+      ],
+      "bundle_camera_translation_m": 0.025411967736146197,
+      "note": "Bundle-derived candidate metric; not an independently calibrated ruler measurement."
+    },
+    {
+      "group": "P4_arch_and_stalk",
+      "frames": [
+        1003470,
+        1030829
+      ],
+      "bundle_camera_translation_m": 0.028086511105795003,
+      "note": "Bundle-derived candidate metric; not an independently calibrated ruler measurement."
+    },
+    {
+      "group": "P4_arch_and_stalk",
+      "frames": [
+        1030829,
+        1055904
+      ],
+      "bundle_camera_translation_m": 0.025378083241444124,
+      "note": "Bundle-derived candidate metric; not an independently calibrated ruler measurement."
+    }
+  ],
+  "visible_recovery_candidates": [
+    "P1 textured ear body across four consecutive exact bundle frames; coarse surface plausibly recoverable, fine awns remain below reliable support.",
+    "P1 dry strips visible against board, but narrow, low contrast and blurred; broad green-only masks would omit them.",
+    "P2 exposed upper curved stem and broad/narrow leaf faces; tangled lower canopy is partly occluded.",
+    "P3 exposed lower stem and separated upper leaf faces; reverse leaf faces and hidden junctions unobserved.",
+    "P4 upper arch and upright flower stalk track across three nearby exact bundle frames; thin crossing segments and petals are fragile.",
+    "P5 green and brown leaf interior controls plus an exposed stem over the pot."
+  ],
+  "unobservable_or_unresolved": [
+    "Leaf undersides/back surfaces hidden throughout these predominantly overhead lateral views.",
+    "Stem junctions hidden by leaves, soil or pot; no complete base-to-tip path is established.",
+    "Fine ear awns, thin petal edges and subpixel dry threads cannot be assumed recoverable from RGB visibility alone.",
+    "Some pale leaf crossings lack confirmed specimen attachment; annotations sample visible surfaces, not whole-plant ownership."
+  ],
+  "comparison_rules": [
+    "Use the same frozen masks, camera model, pixel raster and occlusion policy for old and new outputs.",
+    "Exclude label2 boundaries from primary counts; report their sensitivity separately.",
+    "Projected occupancy on foreground RGB pixels is not proof of recovered foreground: a board surface behind a missing stem can project there.",
+    "A full-scene cloud correctly contains board geometry. Background-mask occupancy alone is not a false-surface rate; use it to detect plant-mask leakage or independently depth-inconsistent foreground geometry.",
+    "No metric depth truth is supplied by these annotations. Report coverage and visual support as proxy evidence, not reconstruction accuracy.",
+    "Keep group-level results and visible failure images; do not retune review masks or inflate splats after seeing algorithm output."
+  ]
+}

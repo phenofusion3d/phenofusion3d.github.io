@@ -1,0 +1,2202 @@
+{
+  "status": "CANDIDATE_FEATURES_REQUIRE_VISUAL_REVIEW",
+  "frame": 1055904,
+  "regions": [
+    {
+      "region": "red_upper",
+      "hsi_rotated_bounds": [
+        1555,
+        0,
+        1755,
+        205
+      ],
+      "rgb_bounds": [
+        780,
+        200,
+        920,
+        325
+      ],
+      "raw_match_count": 134,
+      "unique_clusters": 61,
+      "candidates": [
+        {
+          "id": "red_upper_0",
+          "hsi_column_line": [
+            847.1049346923828,
+            1656.9587173461914
+          ],
+          "rgb_xy": [
+            872.2813262939453,
+            296.9452438354492
+          ],
+          "configurations": 9,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.6193150909326265,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_1",
+          "hsi_column_line": [
+            833.1752135867164,
+            1574.3980972290037
+          ],
+          "rgb_xy": [
+            811.2761917114258,
+            310.9287567138672
+          ],
+          "configurations": 8,
+          "channels": [
+            -1,
+            1
+          ],
+          "minimum_ratio": 0.6569556376654209,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_2",
+          "hsi_column_line": [
+            965.163122177124,
+            1614.6909942626953
+          ],
+          "rgb_xy": [
+            819.0327987670898,
+            258.50301361083984
+          ],
+          "configurations": 8,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.6668878770909844,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_3",
+          "hsi_column_line": [
+            848.5182211739676,
+            1561.4783395926156
+          ],
+          "rgb_xy": [
+            790.942741394043,
+            249.00452041625977
+          ],
+          "configurations": 8,
+          "channels": [
+            0,
+            1
+          ],
+          "minimum_ratio": 0.6746822049505861,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_4",
+          "hsi_column_line": [
+            855.6715342203776,
+            1708.0206604003906
+          ],
+          "rgb_xy": [
+            851.5754547119141,
+            314.70548248291016
+          ],
+          "configurations": 6,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.5648165408600946,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_5",
+          "hsi_column_line": [
+            876.0778249104817,
+            1662.78338470459
+          ],
+          "rgb_xy": [
+            857.8026275634766,
+            297.72682189941406
+          ],
+          "configurations": 6,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.5823046696696127,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_6",
+          "hsi_column_line": [
+            992.1574348722186,
+            1668.2689918518067
+          ],
+          "rgb_xy": [
+            858.1754531860352,
+            240.53552627563477
+          ],
+          "configurations": 6,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.6954107286243919,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_7",
+          "hsi_column_line": [
+            960.7759424845377,
+            1743.980419921875
+          ],
+          "rgb_xy": [
+            901.8040237426758,
+            280.54734802246094
+          ],
+          "configurations": 5,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.6800690521539939,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_8",
+          "hsi_column_line": [
+            923.7201262882777,
+            1677.6240158081055
+          ],
+          "rgb_xy": [
+            885.1544952392578,
+            273.9730224609375
+          ],
+          "configurations": 4,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.6805821614058171,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_9",
+          "hsi_column_line": [
+            929.5433534894671,
+            1644.8807983398438
+          ],
+          "rgb_xy": [
+            816.0318260192871,
+            268.01904296875
+          ],
+          "configurations": 4,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.7341564717926211,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_10",
+          "hsi_column_line": [
+            827.4016901652018,
+            1569.3694458007812
+          ],
+          "rgb_xy": [
+            818.3027114868164,
+            241.5616455078125
+          ],
+          "configurations": 3,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.6132607242955833,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_11",
+          "hsi_column_line": [
+            889.062380472819,
+            1597.1728134155273
+          ],
+          "rgb_xy": [
+            818.3027114868164,
+            241.5616455078125
+          ],
+          "configurations": 3,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.6621065040837625,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_12",
+          "hsi_column_line": [
+            941.60182762146,
+            1739.2554473876953
+          ],
+          "rgb_xy": [
+            901.9036560058594,
+            311.974365234375
+          ],
+          "configurations": 3,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.6636923372379367,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_13",
+          "hsi_column_line": [
+            834.4734141031901,
+            1687.955342610677
+          ],
+          "rgb_xy": [
+            825.653392791748,
+            267.4415283203125
+          ],
+          "configurations": 3,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.7415093273708463,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_14",
+          "hsi_column_line": [
+            985.4564129965646,
+            1708.2931091308592
+          ],
+          "rgb_xy": [
+            900.7817459106445,
+            260.8123550415039
+          ],
+          "configurations": 2,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.6459753675284503,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_15",
+          "hsi_column_line": [
+            842.1843185424805,
+            1626.302799987793
+          ],
+          "rgb_xy": [
+            819.6607513427734,
+            309.9334945678711
+          ],
+          "configurations": 2,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.6881372172718598,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_16",
+          "hsi_column_line": [
+            928.4472055435181,
+            1616.4133769989014
+          ],
+          "rgb_xy": [
+            798.4708423614502,
+            264.0969924926758
+          ],
+          "configurations": 2,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.6945014277947149,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_17",
+          "hsi_column_line": [
+            969.5494680404663,
+            1699.611520385742
+          ],
+          "rgb_xy": [
+            849.5028610229492,
+            261.3917007446289
+          ],
+          "configurations": 2,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.7131148911476548,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_18",
+          "hsi_column_line": [
+            900.8475697835286,
+            1717.5979934692382
+          ],
+          "rgb_xy": [
+            906.2611312866211,
+            290.99536895751953
+          ],
+          "configurations": 2,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.7252015796502596,
+          "accepted": false
+        },
+        {
+          "id": "red_upper_19",
+          "hsi_column_line": [
+            900.3589815412249,
+            1640.0295842488608
+          ],
+          "rgb_xy": [
+            876.3791351318359,
+            303.1910171508789
+          ],
+          "configurations": 2,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.7281176154455256,
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "region": "green_upper",
+      "hsi_rotated_bounds": [
+        1735,
+        0,
+        1880,
+        240
+      ],
+      "rgb_bounds": [
+        930,
+        195,
+        1080,
+        325
+      ],
+      "raw_match_count": 143,
+      "unique_clusters": 66,
+      "candidates": [
+        {
+          "id": "green_upper_0",
+          "hsi_column_line": [
+            903.0128600710914,
+            1861.8342109680175
+          ],
+          "rgb_xy": [
+            992.3514080047607,
+            202.13227605819702
+          ],
+          "configurations": 10,
+          "channels": [
+            -1,
+            1
+          ],
+          "minimum_ratio": 0.632572437039622,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_1",
+          "hsi_column_line": [
+            970.54065990448,
+            1748.8490476608276
+          ],
+          "rgb_xy": [
+            973.5864486694336,
+            246.72272491455078
+          ],
+          "configurations": 9,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.6463644575068189,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_2",
+          "hsi_column_line": [
+            857.9169540405273,
+            1738.07146692276
+          ],
+          "rgb_xy": [
+            1077.0320434570312,
+            276.9490661621094
+          ],
+          "configurations": 7,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.6542668962008944,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_3",
+          "hsi_column_line": [
+            858.6527099609375,
+            1737.7353439331055
+          ],
+          "rgb_xy": [
+            988.0806007385254,
+            321.3318862915039
+          ],
+          "configurations": 7,
+          "channels": [
+            -1,
+            1
+          ],
+          "minimum_ratio": 0.7306006326912311,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_4",
+          "hsi_column_line": [
+            955.6364740644183,
+            1774.2821111043295
+          ],
+          "rgb_xy": [
+            1061.014549255371,
+            226.35645294189453
+          ],
+          "configurations": 6,
+          "channels": [
+            -1,
+            0,
+            1
+          ],
+          "minimum_ratio": 0.6794147412373033,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_5",
+          "hsi_column_line": [
+            850.5281047821045,
+            1850.855021158854
+          ],
+          "rgb_xy": [
+            1043.1123275756836,
+            304.65386962890625
+          ],
+          "configurations": 6,
+          "channels": [
+            -1,
+            0
+          ],
+          "minimum_ratio": 0.7455220471653458,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_6",
+          "hsi_column_line": [
+            884.9304148356119,
+            1744.920373916626
+          ],
+          "rgb_xy": [
+            1071.8241729736328,
+            203.56009197235107
+          ],
+          "configurations": 5,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.663142745171977,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_7",
+          "hsi_column_line": [
+            981.297259012858,
+            1815.7935485839844
+          ],
+          "rgb_xy": [
+            1028.525978088379,
+            251.57365036010742
+          ],
+          "configurations": 5,
+          "channels": [
+            -1,
+            1,
+            2
+          ],
+          "minimum_ratio": 0.7551978041667119,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_8",
+          "hsi_column_line": [
+            835.9915250142415,
+            1842.4032592773438
+          ],
+          "rgb_xy": [
+            953.0503482818604,
+            271.22570037841797
+          ],
+          "configurations": 4,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.7012818762737135,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_9",
+          "hsi_column_line": [
+            823.2084426879883,
+            1770.592966079712
+          ],
+          "rgb_xy": [
+            942.1651058197021,
+            312.59344482421875
+          ],
+          "configurations": 4,
+          "channels": [
+            -1,
+            1
+          ],
+          "minimum_ratio": 0.7342096478596969,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_10",
+          "hsi_column_line": [
+            890.2378540039062,
+            1863.8681182861328
+          ],
+          "rgb_xy": [
+            992.568286895752,
+            202.17125511169434
+          ],
+          "configurations": 3,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.6704384735463276,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_11",
+          "hsi_column_line": [
+            862.3601379394531,
+            1809.421859741211
+          ],
+          "rgb_xy": [
+            943.63232421875,
+            300.7415771484375
+          ],
+          "configurations": 3,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.7361315456870251,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_12",
+          "hsi_column_line": [
+            1012.3294790812901,
+            1794.5445678710937
+          ],
+          "rgb_xy": [
+            1044.7844772338867,
+            309.39381408691406
+          ],
+          "configurations": 3,
+          "channels": [
+            -1,
+            0
+          ],
+          "minimum_ratio": 0.7374083428195155,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_13",
+          "hsi_column_line": [
+            808.5354766845703,
+            1822.619888305664
+          ],
+          "rgb_xy": [
+            935.6722974777222,
+            260.26841735839844
+          ],
+          "configurations": 3,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.7592702281335723,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_14",
+          "hsi_column_line": [
+            955.5687503814697,
+            1774.3639500935872
+          ],
+          "rgb_xy": [
+            945.3563861846924,
+            258.72589111328125
+          ],
+          "configurations": 3,
+          "channels": [
+            0,
+            2
+          ],
+          "minimum_ratio": 0.7696451709155416,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_15",
+          "hsi_column_line": [
+            1017.0152776241302,
+            1759.522617340088
+          ],
+          "rgb_xy": [
+            940.3789319992065,
+            197.58878636360168
+          ],
+          "configurations": 2,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.5461516492507733,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_16",
+          "hsi_column_line": [
+            991.5383558273315,
+            1853.419940185547
+          ],
+          "rgb_xy": [
+            965.4302635192871,
+            254.82923126220703
+          ],
+          "configurations": 2,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.6393087999134275,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_17",
+          "hsi_column_line": [
+            993.7875776290894,
+            1770.9450687408448
+          ],
+          "rgb_xy": [
+            969.0868453979492,
+            243.94443130493164
+          ],
+          "configurations": 2,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.6716656632718851,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_18",
+          "hsi_column_line": [
+            831.07619367327,
+            1812.6875775655112
+          ],
+          "rgb_xy": [
+            1052.0241317749023,
+            254.01704788208008
+          ],
+          "configurations": 2,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.6829997858744563,
+          "accepted": false
+        },
+        {
+          "id": "green_upper_19",
+          "hsi_column_line": [
+            861.5609635852632,
+            1871.5744654337564
+          ],
+          "rgb_xy": [
+            955.713623046875,
+            244.98736190795898
+          ],
+          "configurations": 2,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.6916421502434597,
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "region": "green_lower",
+      "hsi_rotated_bounds": [
+        1735,
+        510,
+        1905,
+        730
+      ],
+      "rgb_bounds": [
+        975,
+        450,
+        1125,
+        555
+      ],
+      "raw_match_count": 145,
+      "unique_clusters": 65,
+      "candidates": [
+        {
+          "id": "green_lower_0",
+          "hsi_column_line": [
+            411.8931819370814,
+            1826.8903121948242
+          ],
+          "rgb_xy": [
+            1045.8220138549805,
+            512.3255348205566
+          ],
+          "configurations": 25,
+          "channels": [
+            -1,
+            0,
+            1
+          ],
+          "minimum_ratio": 0.49021849470037665,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_1",
+          "hsi_column_line": [
+            504.29994690418243,
+            1740.9261875152588
+          ],
+          "rgb_xy": [
+            1042.940933227539,
+            541.7938766479492
+          ],
+          "configurations": 13,
+          "channels": [
+            -1,
+            0
+          ],
+          "minimum_ratio": 0.5493560359337077,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_2",
+          "hsi_column_line": [
+            412.1559824262347,
+            1832.2783711751304
+          ],
+          "rgb_xy": [
+            1049.6443557739258,
+            511.67163467407227
+          ],
+          "configurations": 12,
+          "channels": [
+            -1,
+            0,
+            1,
+            2
+          ],
+          "minimum_ratio": 0.6262074907567452,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_3",
+          "hsi_column_line": [
+            381.96048736572266,
+            1901.7210754394532
+          ],
+          "rgb_xy": [
+            981.5043330192566,
+            533.0309219360352
+          ],
+          "configurations": 6,
+          "channels": [
+            -1,
+            0
+          ],
+          "minimum_ratio": 0.7018917563126992,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_4",
+          "hsi_column_line": [
+            412.4420623779297,
+            1856.7222747802734
+          ],
+          "rgb_xy": [
+            1072.1388320922852,
+            510.5
+          ],
+          "configurations": 5,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.7347083379834701,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_5",
+          "hsi_column_line": [
+            426.0937870570592,
+            1745.0858878135682
+          ],
+          "rgb_xy": [
+            1112.4544830322266,
+            498.68922424316406
+          ],
+          "configurations": 4,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.757377218238826,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_6",
+          "hsi_column_line": [
+            464.2191390991211,
+            1883.3125915527344
+          ],
+          "rgb_xy": [
+            981.624345779419,
+            512.3368339538574
+          ],
+          "configurations": 3,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.5355371273561806,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_7",
+          "hsi_column_line": [
+            418.22887547810876,
+            1743.9896589914958
+          ],
+          "rgb_xy": [
+            1042.8661575317383,
+            541.7603607177734
+          ],
+          "configurations": 3,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.6521256093021695,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_8",
+          "hsi_column_line": [
+            425.0682307652064,
+            1744.2537180582683
+          ],
+          "rgb_xy": [
+            1111.0877990722656,
+            484.4918022155762
+          ],
+          "configurations": 3,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.7287855651828434,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_9",
+          "hsi_column_line": [
+            342.378662109375,
+            1809.8149795532227
+          ],
+          "rgb_xy": [
+            979.2964463233948,
+            540.4851837158203
+          ],
+          "configurations": 3,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.7410404158285411,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_10",
+          "hsi_column_line": [
+            446.5763883590698,
+            1775.0853607177735
+          ],
+          "rgb_xy": [
+            1060.0487060546875,
+            510.411678314209
+          ],
+          "configurations": 3,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.7481031548154456,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_11",
+          "hsi_column_line": [
+            322.4601567586262,
+            1856.61220703125
+          ],
+          "rgb_xy": [
+            1063.2914581298828,
+            533.9063873291016
+          ],
+          "configurations": 3,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.7606553597254734,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_12",
+          "hsi_column_line": [
+            460.2258595057896,
+            1751.143388112386
+          ],
+          "rgb_xy": [
+            1101.3524856567383,
+            480.91281509399414
+          ],
+          "configurations": 3,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.7706362348145139,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_13",
+          "hsi_column_line": [
+            438.2551460266113,
+            1829.0461476643882
+          ],
+          "rgb_xy": [
+            1101.82523727417,
+            460.11240339279175
+          ],
+          "configurations": 2,
+          "channels": [
+            1,
+            2
+          ],
+          "minimum_ratio": 0.6682908903653598,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_14",
+          "hsi_column_line": [
+            338.93854904174805,
+            1860.3047841389973
+          ],
+          "rgb_xy": [
+            1076.7673950195312,
+            477.21537017822266
+          ],
+          "configurations": 2,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.7012496337034932,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_15",
+          "hsi_column_line": [
+            402.5115032196045,
+            1780.617774963379
+          ],
+          "rgb_xy": [
+            998.0430507659912,
+            507.18852615356445
+          ],
+          "configurations": 2,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.7138048391716971,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_16",
+          "hsi_column_line": [
+            345.6298096066429,
+            1886.3453877766929
+          ],
+          "rgb_xy": [
+            1042.2482986450195,
+            551.947509765625
+          ],
+          "configurations": 2,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.7555464798852781,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_17",
+          "hsi_column_line": [
+            405.54195976257324,
+            1847.3151489257812
+          ],
+          "rgb_xy": [
+            1101.8171844482422,
+            460.12152194976807
+          ],
+          "configurations": 2,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.7576431416786736,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_18",
+          "hsi_column_line": [
+            370.7653503417969,
+            1835.5197448730469
+          ],
+          "rgb_xy": [
+            1001.0796394348145,
+            473.23081970214844
+          ],
+          "configurations": 2,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.7822464288917973,
+          "accepted": false
+        },
+        {
+          "id": "green_lower_19",
+          "hsi_column_line": [
+            356.73589038848877,
+            1799.2245483398438
+          ],
+          "rgb_xy": [
+            1070.834457397461,
+            491.21831130981445
+          ],
+          "configurations": 2,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.7878461722497712,
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "region": "red_lower",
+      "hsi_rotated_bounds": [
+        1590,
+        535,
+        1760,
+        800
+      ],
+      "rgb_bounds": [
+        815,
+        480,
+        950,
+        600
+      ],
+      "raw_match_count": 172,
+      "unique_clusters": 95,
+      "candidates": [
+        {
+          "id": "red_lower_0",
+          "hsi_column_line": [
+            445.6717027028402,
+            1669.3215408325195
+          ],
+          "rgb_xy": [
+            933.8110046386719,
+            525.9911193847656
+          ],
+          "configurations": 11,
+          "channels": [
+            -1,
+            1
+          ],
+          "minimum_ratio": 0.6299755790894592,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_1",
+          "hsi_column_line": [
+            416.3401870727539,
+            1737.7894083658855
+          ],
+          "rgb_xy": [
+            836.9741363525391,
+            506.8913631439209
+          ],
+          "configurations": 9,
+          "channels": [
+            -1,
+            1
+          ],
+          "minimum_ratio": 0.7173337446676438,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_2",
+          "hsi_column_line": [
+            268.62530517578125,
+            1717.6743062337239
+          ],
+          "rgb_xy": [
+            853.2408180236816,
+            543.050350189209
+          ],
+          "configurations": 7,
+          "channels": [
+            1,
+            2
+          ],
+          "minimum_ratio": 0.619614563773683,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_3",
+          "hsi_column_line": [
+            252.4768851143973,
+            1706.6504516601562
+          ],
+          "rgb_xy": [
+            884.3253631591797,
+            517.9186630249023
+          ],
+          "configurations": 7,
+          "channels": [
+            -1,
+            0
+          ],
+          "minimum_ratio": 0.6673064354293815,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_4",
+          "hsi_column_line": [
+            373.3955907821655,
+            1682.843871307373
+          ],
+          "rgb_xy": [
+            826.0731039047241,
+            538.4184379577637
+          ],
+          "configurations": 6,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.7211104105216922,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_5",
+          "hsi_column_line": [
+            248.32993861607144,
+            1651.7960586547852
+          ],
+          "rgb_xy": [
+            872.7803726196289,
+            581.0535507202148
+          ],
+          "configurations": 5,
+          "channels": [
+            -1,
+            0
+          ],
+          "minimum_ratio": 0.5759404907201969,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_6",
+          "hsi_column_line": [
+            374.4206886291504,
+            1646.7818237304687
+          ],
+          "rgb_xy": [
+            853.3995742797852,
+            522.8292350769043
+          ],
+          "configurations": 4,
+          "channels": [
+            -1,
+            1
+          ],
+          "minimum_ratio": 0.6390017553785889,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_7",
+          "hsi_column_line": [
+            374.6087218693324,
+            1626.3763805389403
+          ],
+          "rgb_xy": [
+            901.5373611450195,
+            519.4047966003418
+          ],
+          "configurations": 4,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.6809155561278138,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_8",
+          "hsi_column_line": [
+            362.0112622578938,
+            1739.778864542643
+          ],
+          "rgb_xy": [
+            883.9003601074219,
+            592.6873931884766
+          ],
+          "configurations": 4,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.7172133820763652,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_9",
+          "hsi_column_line": [
+            476.5792640277318,
+            1682.6393356323242
+          ],
+          "rgb_xy": [
+            908.8258972167969,
+            568.3354721069336
+          ],
+          "configurations": 4,
+          "channels": [
+            -1,
+            1
+          ],
+          "minimum_ratio": 0.7340661484355414,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_10",
+          "hsi_column_line": [
+            273.7467905680338,
+            1628.7407048543294
+          ],
+          "rgb_xy": [
+            933.3114395141602,
+            566.3834915161133
+          ],
+          "configurations": 3,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.6003030846127805,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_11",
+          "hsi_column_line": [
+            393.3110831124442,
+            1750.0877075195312
+          ],
+          "rgb_xy": [
+            875.3961563110352,
+            586.7289123535156
+          ],
+          "configurations": 3,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.6324588395862888,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_12",
+          "hsi_column_line": [
+            320.8006199428013,
+            1744.6061248779297
+          ],
+          "rgb_xy": [
+            944.3898468017578,
+            551.3438262939453
+          ],
+          "configurations": 3,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.6872006777880031,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_13",
+          "hsi_column_line": [
+            332.90338134765625,
+            1678.867138671875
+          ],
+          "rgb_xy": [
+            884.6477966308594,
+            541.2883567810059
+          ],
+          "configurations": 3,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.7019987905372385,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_14",
+          "hsi_column_line": [
+            433.03377532958984,
+            1755.3087127685546
+          ],
+          "rgb_xy": [
+            888.9293823242188,
+            582.3903656005859
+          ],
+          "configurations": 2,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.5582989531492315,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_15",
+          "hsi_column_line": [
+            344.80599212646484,
+            1745.2170303344726
+          ],
+          "rgb_xy": [
+            833.0555877685547,
+            524.0657119750977
+          ],
+          "configurations": 2,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.5590391729097586,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_16",
+          "hsi_column_line": [
+            288.4549625941686,
+            1602.389025847117
+          ],
+          "rgb_xy": [
+            930.533332824707,
+            516.0021896362305
+          ],
+          "configurations": 2,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.6380306084734814,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_17",
+          "hsi_column_line": [
+            421.07029111044744,
+            1660.9345642089843
+          ],
+          "rgb_xy": [
+            854.0799770355225,
+            511.88823986053467
+          ],
+          "configurations": 2,
+          "channels": [
+            1,
+            2
+          ],
+          "minimum_ratio": 0.6582862121767981,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_18",
+          "hsi_column_line": [
+            251.997802734375,
+            1680.944581349691
+          ],
+          "rgb_xy": [
+            888.9293823242188,
+            582.3903656005859
+          ],
+          "configurations": 2,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.6671313346595816,
+          "accepted": false
+        },
+        {
+          "id": "red_lower_19",
+          "hsi_column_line": [
+            389.03273800441195,
+            1644.5178833007812
+          ],
+          "rgb_xy": [
+            944.1387329101562,
+            492.55062103271484
+          ],
+          "configurations": 2,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.6811267687222118,
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "region": "green_central",
+      "hsi_rotated_bounds": [
+        1640,
+        210,
+        1805,
+        420
+      ],
+      "rgb_bounds": [
+        885,
+        340,
+        1005,
+        430
+      ],
+      "raw_match_count": 98,
+      "unique_clusters": 57,
+      "candidates": [
+        {
+          "id": "green_central_0",
+          "hsi_column_line": [
+            730.8853117624918,
+            1646.8999878565469
+          ],
+          "rgb_xy": [
+            985.8454742431641,
+            395.5702819824219
+          ],
+          "configurations": 10,
+          "channels": [
+            -1,
+            0
+          ],
+          "minimum_ratio": 0.5757896321347277,
+          "accepted": false
+        },
+        {
+          "id": "green_central_1",
+          "hsi_column_line": [
+            689.934211730957,
+            1751.4449844360352
+          ],
+          "rgb_xy": [
+            969.0862808227539,
+            381.35268783569336
+          ],
+          "configurations": 9,
+          "channels": [
+            -1,
+            1
+          ],
+          "minimum_ratio": 0.6406293017351044,
+          "accepted": false
+        },
+        {
+          "id": "green_central_2",
+          "hsi_column_line": [
+            776.9497101306915,
+            1720.3806401570637
+          ],
+          "rgb_xy": [
+            978.1477127075195,
+            368.8314456939697
+          ],
+          "configurations": 4,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.6574399628012227,
+          "accepted": false
+        },
+        {
+          "id": "green_central_3",
+          "hsi_column_line": [
+            661.833698999314,
+            1798.090950012207
+          ],
+          "rgb_xy": [
+            977.4999923706055,
+            368.84672355651855
+          ],
+          "configurations": 4,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.7245239132458818,
+          "accepted": false
+        },
+        {
+          "id": "green_central_4",
+          "hsi_column_line": [
+            644.137996673584,
+            1725.9908612569175
+          ],
+          "rgb_xy": [
+            997.1388549804688,
+            392.22224044799805
+          ],
+          "configurations": 4,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.7409339679737579,
+          "accepted": false
+        },
+        {
+          "id": "green_central_5",
+          "hsi_column_line": [
+            638.2225646972656,
+            1775.0061401367188
+          ],
+          "rgb_xy": [
+            934.6945037841797,
+            391.3895797729492
+          ],
+          "configurations": 3,
+          "channels": [
+            -1,
+            1
+          ],
+          "minimum_ratio": 0.6345681870535855,
+          "accepted": false
+        },
+        {
+          "id": "green_central_6",
+          "hsi_column_line": [
+            787.5376341683524,
+            1725.4822692871094
+          ],
+          "rgb_xy": [
+            995.1031112670898,
+            367.83360862731934
+          ],
+          "configurations": 3,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.7265647435964885,
+          "accepted": false
+        },
+        {
+          "id": "green_central_7",
+          "hsi_column_line": [
+            785.0650508403778,
+            1788.07725982666
+          ],
+          "rgb_xy": [
+            897.9903078079224,
+            358.4259281158447
+          ],
+          "configurations": 2,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.6656469381606968,
+          "accepted": false
+        },
+        {
+          "id": "green_central_8",
+          "hsi_column_line": [
+            727.209545135498,
+            1715.1748161315918
+          ],
+          "rgb_xy": [
+            990.6196517944336,
+            398.34593200683594
+          ],
+          "configurations": 2,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.6740492608644658,
+          "accepted": false
+        },
+        {
+          "id": "green_central_9",
+          "hsi_column_line": [
+            785.1171900431316,
+            1758.88641204834
+          ],
+          "rgb_xy": [
+            988.5385589599609,
+            364.54494857788086
+          ],
+          "configurations": 2,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.6827881327781492,
+          "accepted": false
+        },
+        {
+          "id": "green_central_10",
+          "hsi_column_line": [
+            607.6446945553735,
+            1694.3733221689859
+          ],
+          "rgb_xy": [
+            961.3264846801758,
+            351.43269538879395
+          ],
+          "configurations": 2,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.6869087056029803,
+          "accepted": false
+        },
+        {
+          "id": "green_central_11",
+          "hsi_column_line": [
+            645.7003161112467,
+            1661.1076393127441
+          ],
+          "rgb_xy": [
+            973.5639953613281,
+            412.91038513183594
+          ],
+          "configurations": 2,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.6912792315995845,
+          "accepted": false
+        },
+        {
+          "id": "green_central_12",
+          "hsi_column_line": [
+            721.071250007266,
+            1667.53540019989
+          ],
+          "rgb_xy": [
+            913.0584144592285,
+            391.6388359069824
+          ],
+          "configurations": 2,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.6971710055619669,
+          "accepted": false
+        },
+        {
+          "id": "green_central_13",
+          "hsi_column_line": [
+            772.9661472865514,
+            1720.2430241902669
+          ],
+          "rgb_xy": [
+            995.4298477172852,
+            372.7057800292969
+          ],
+          "configurations": 2,
+          "channels": [
+            -1,
+            2
+          ],
+          "minimum_ratio": 0.7388458829680424,
+          "accepted": false
+        },
+        {
+          "id": "green_central_14",
+          "hsi_column_line": [
+            723.9353383382161,
+            1703.2127490997314
+          ],
+          "rgb_xy": [
+            980.1981201171875,
+            401.596736907959
+          ],
+          "configurations": 2,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.7487825706987468,
+          "accepted": false
+        },
+        {
+          "id": "green_central_15",
+          "hsi_column_line": [
+            681.1666803359985,
+            1666.0921785354615
+          ],
+          "rgb_xy": [
+            995.676139831543,
+            348.07845306396484
+          ],
+          "configurations": 2,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.7614354129988947,
+          "accepted": false
+        },
+        {
+          "id": "green_central_16",
+          "hsi_column_line": [
+            652.2212813241141,
+            1688.7787844340005
+          ],
+          "rgb_xy": [
+            910.11940574646,
+            351.44288539886475
+          ],
+          "configurations": 2,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.7731088962352138,
+          "accepted": false
+        },
+        {
+          "id": "green_central_17",
+          "hsi_column_line": [
+            658.2855892181396,
+            1727.7821784973144
+          ],
+          "rgb_xy": [
+            959.9027938842773,
+            403.53324127197266
+          ],
+          "configurations": 2,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.7817239698717179,
+          "accepted": false
+        },
+        {
+          "id": "green_central_18",
+          "hsi_column_line": [
+            764.8430662155151,
+            1653.9637908935547
+          ],
+          "rgb_xy": [
+            936.0771598815918,
+            366.11184883117676
+          ],
+          "configurations": 1,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.4586574156873509,
+          "accepted": false
+        },
+        {
+          "id": "green_central_19",
+          "hsi_column_line": [
+            760.7231870378766,
+            1644.5382375717163
+          ],
+          "rgb_xy": [
+            987.8885955810547,
+            345.5811667442322
+          ],
+          "configurations": 1,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.5740913649272981,
+          "accepted": false
+        }
+      ]
+    },
+    {
+      "region": "variegated_right",
+      "hsi_rotated_bounds": [
+        1865,
+        240,
+        2025,
+        570
+      ],
+      "rgb_bounds": [
+        1040,
+        350,
+        1190,
+        465
+      ],
+      "raw_match_count": 198,
+      "unique_clusters": 94,
+      "candidates": [
+        {
+          "id": "variegated_right_0",
+          "hsi_column_line": [
+            737.3365135192871,
+            1916.815221786499
+          ],
+          "rgb_xy": [
+            1050.9705352783203,
+            404.3285942077637
+          ],
+          "configurations": 8,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.6889973693211114,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_1",
+          "hsi_column_line": [
+            744.1743974685669,
+            2006.9175720214844
+          ],
+          "rgb_xy": [
+            1050.6855583190918,
+            460.57196044921875
+          ],
+          "configurations": 7,
+          "channels": [
+            -1
+          ],
+          "minimum_ratio": 0.23100701651165867,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_2",
+          "hsi_column_line": [
+            669.3213119506836,
+            1891.7085781097412
+          ],
+          "rgb_xy": [
+            1174.294921875,
+            404.4784622192383
+          ],
+          "configurations": 7,
+          "channels": [
+            1,
+            2
+          ],
+          "minimum_ratio": 0.7146028150172419,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_3",
+          "hsi_column_line": [
+            461.0562438964844,
+            1983.6602478027344
+          ],
+          "rgb_xy": [
+            1108.5382080078125,
+            357.11595392227173
+          ],
+          "configurations": 7,
+          "channels": [
+            -1,
+            1
+          ],
+          "minimum_ratio": 0.7342543597565769,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_4",
+          "hsi_column_line": [
+            655.9196294148762,
+            1913.0562004089356
+          ],
+          "rgb_xy": [
+            1122.3366012573242,
+            369.34947204589844
+          ],
+          "configurations": 6,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.7241055691120134,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_5",
+          "hsi_column_line": [
+            525.6835123697916,
+            2017.2109069824219
+          ],
+          "rgb_xy": [
+            1088.606159210205,
+            401.8900451660156
+          ],
+          "configurations": 5,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.582771879905434,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_6",
+          "hsi_column_line": [
+            763.7594926016671,
+            1968.2198994954426
+          ],
+          "rgb_xy": [
+            1054.8605327606201,
+            355.87508487701416
+          ],
+          "configurations": 5,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.5875949621757023,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_7",
+          "hsi_column_line": [
+            742.3597459793091,
+            1966.0951538085938
+          ],
+          "rgb_xy": [
+            1062.2564964294434,
+            456.97940826416016
+          ],
+          "configurations": 5,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.6557816562831947,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_8",
+          "hsi_column_line": [
+            711.7561416625977,
+            1901.1900825500488
+          ],
+          "rgb_xy": [
+            1053.0761833190918,
+            421.16505432128906
+          ],
+          "configurations": 5,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.7367501973815973,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_9",
+          "hsi_column_line": [
+            732.5612597465515,
+            1895.1854782104492
+          ],
+          "rgb_xy": [
+            1087.9476776123047,
+            368.9440212249756
+          ],
+          "configurations": 4,
+          "channels": [
+            -1,
+            1
+          ],
+          "minimum_ratio": 0.5204818036806499,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_10",
+          "hsi_column_line": [
+            718.6827101026263,
+            2010.638671875
+          ],
+          "rgb_xy": [
+            1147.1298065185547,
+            447.22681427001953
+          ],
+          "configurations": 4,
+          "channels": [
+            -1,
+            0
+          ],
+          "minimum_ratio": 0.5587099591535868,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_11",
+          "hsi_column_line": [
+            744.0580106008621,
+            2006.7976430257163
+          ],
+          "rgb_xy": [
+            1060.5094108581543,
+            402.09469985961914
+          ],
+          "configurations": 4,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.605456450610467,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_12",
+          "hsi_column_line": [
+            554.969482421875,
+            1979.2523651123047
+          ],
+          "rgb_xy": [
+            1091.2814865112305,
+            428.7415084838867
+          ],
+          "configurations": 4,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.6937634704577706,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_13",
+          "hsi_column_line": [
+            729.9569129943848,
+            1883.4010710398356
+          ],
+          "rgb_xy": [
+            1075.02640914917,
+            369.8365821838379
+          ],
+          "configurations": 4,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.7124107812680324,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_14",
+          "hsi_column_line": [
+            654.7226057052612,
+            1912.9779956817626
+          ],
+          "rgb_xy": [
+            1123.3827819824219,
+            378.9029846191406
+          ],
+          "configurations": 4,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.7953326045111787,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_15",
+          "hsi_column_line": [
+            678.5305671691895,
+            2021.8161743164062
+          ],
+          "rgb_xy": [
+            1150.2915420532227,
+            447.9902648925781
+          ],
+          "configurations": 3,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.5382474445424279,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_16",
+          "hsi_column_line": [
+            466.46250261579235,
+            1876.6174507141113
+          ],
+          "rgb_xy": [
+            1094.2892112731934,
+            406.9491539001465
+          ],
+          "configurations": 3,
+          "channels": [
+            2
+          ],
+          "minimum_ratio": 0.576011607246314,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_17",
+          "hsi_column_line": [
+            654.8088912963867,
+            1872.0663102467854
+          ],
+          "rgb_xy": [
+            1157.14794921875,
+            432.9923858642578
+          ],
+          "configurations": 3,
+          "channels": [
+            1
+          ],
+          "minimum_ratio": 0.5851375920941061,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_18",
+          "hsi_column_line": [
+            698.908317565918,
+            1999.908056640625
+          ],
+          "rgb_xy": [
+            1054.1021175384521,
+            356.45535945892334
+          ],
+          "configurations": 3,
+          "channels": [
+            -1,
+            1
+          ],
+          "minimum_ratio": 0.632270589703048,
+          "accepted": false
+        },
+        {
+          "id": "variegated_right_19",
+          "hsi_column_line": [
+            482.8680725097656,
+            1932.199151611328
+          ],
+          "rgb_xy": [
+            1060.9204406738281,
+            460.87574768066406
+          ],
+          "configurations": 3,
+          "channels": [
+            0
+          ],
+          "minimum_ratio": 0.6446926584217061,
+          "accepted": false
+        }
+      ]
+    }
+  ],
+  "source_hashes": {
+    "generated\\research_followthrough_20261007\\spectral\\fx10_display_rgb.npy": "d8c55904d2d347cc7a4cac24a2f2274b38ae917caff3ca34e827b21a9d4153c3",
+    "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1055904.png": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494"
+  },
+  "script_sha256": "f4d7a09bc1f248a313bfe83d6d9a858c60c9cc607488f564969f1456ac5e8eac"
+}

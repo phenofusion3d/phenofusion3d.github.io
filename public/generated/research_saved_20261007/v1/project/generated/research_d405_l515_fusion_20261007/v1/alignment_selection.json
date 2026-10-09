@@ -1,0 +1,37 @@
+{
+  "decision": "Selected empirical surface alignment for exploratory source-preserving fusion; not accepted as physical camera extrinsics.",
+  "heldout_soil_median_mm": 3.411,
+  "heldout_soil_p90_mm": 7.415,
+  "heldout_soil_max_mm": 22.506,
+  "T_D405_reference_from_L515_reference": [
+    [
+      0.9983370263342132,
+      -0.02484730751168994,
+      -0.05201723906148835,
+      0.05807794028405626
+    ],
+    [
+      0.022896412652888876,
+      0.9990240918546295,
+      -0.03777059943473978,
+      -0.030682727743949367
+    ],
+    [
+      0.052904972713244416,
+      0.03651677975192299,
+      0.9979316553044894,
+      -0.06091014977631162
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "evidence_hashes": {
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_l515_20261007\\cross_camera\\pot_rigid_probe\\pot_rigid_alignment.json": "32052b06aba36b860aea71685fecb14c17a67446e5339ffb761f6d665224f6b6",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_l515_20261007\\cross_camera\\near_static_holdouts\\near_sensor_alignment_comparison.json": "0f73c5e0cf986b1b36b02f410e804ca2f26f21a84fbc727205f15922f3272e20"
+  },
+  "rejected_model_for_this_fusion": "far-static camera-trajectory correction; weaker near-soil 3D agreement"
+}

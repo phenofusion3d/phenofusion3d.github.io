@@ -1,0 +1,1 @@
+control_id,camera,physical_sheet,marker_id,x,y,z,shared_frame_id,shared_length_unit,detector_column,scan_line,source_band_zero_based,role_train_or_holdout,measurement_source

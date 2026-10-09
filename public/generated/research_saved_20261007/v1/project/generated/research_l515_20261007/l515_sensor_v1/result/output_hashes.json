@@ -1,0 +1,9 @@
+{
+  "filtered_source_indices.npz": "d95baf093c38e86318d572a473847edd28cc8bde1e64bdb285ea21bef93d5e2f",
+  "icp_diagnostics.json": "332898a2c91c56406008e6edc3598d7736d35fbf279f4793a297c4e0fe0338f2",
+  "l515_filtered_reference.ply": "289632920d301ba3b49124466c14b41842f84496e1e767652223392dc8816a00",
+  "l515_supported_reference.ply": "c2fc1b6a15e5703f4864e130b0cc76cc572aedb3292cddf97bc861207f830386",
+  "l515_supported_upright.ply": "06a2e0da9594be026686b6f1b51dbb2ccad8f717be376ca56ac324b14630eaa7",
+  "point_evidence.npz": "e592da0df0d05e89e88f66cbdecef37eb2d6836222fb5187f4799eed3ef05fb2",
+  "summary.json": "72a520b69e9ed65ee8a8ea529dcb1f5ca3be827845329811862b6b2ea4562f0d"
+}

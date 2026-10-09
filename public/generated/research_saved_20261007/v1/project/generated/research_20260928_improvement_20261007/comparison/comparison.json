@@ -1,0 +1,92 @@
+{
+  "status": "Controlled reconstruction comparison; no absolute accuracy or complete-plant claim",
+  "sources": [
+    {
+      "label": "Earlier result",
+      "description": "Earlier: 32 dense views, original camera pairs and sensor-dependent filtering.",
+      "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_20260928_processing_20261007\\scene_supported_replay_v2\\result\\plant_rgb_icp.ply",
+      "sha256": "712988be2bcb8f0b94dad77d3819dc3dc18b7058822da4eb9339cb5097e8abdd",
+      "download": "earlier.ply",
+      "full_count": 3468158,
+      "review_count": 924874
+    },
+    {
+      "label": "Filtering fix only",
+      "description": "Filtering fix: the same 32 depth maps and camera alignments. RGB surfaces can pass where sensor depth is missing. Other surface checks remain unchanged.",
+      "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_20260928_improvement_20261007\\roi_only_v4\\result\\plant_rgb_icp.ply",
+      "sha256": "61e72cce4787acf375c7be330632af92f543b72df0577f85632f0cbe6235973a",
+      "download": "filter_fix.ply",
+      "full_count": 3960257,
+      "review_count": 1026440
+    },
+    {
+      "label": "Filtering fix: before cleanup",
+      "description": "The filtering fix before statistical cleanup: keeps all fragments that passed the same multi-view support and conflict checks. Preserves the checked bud patch, but other retained fragments may include noise.",
+      "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_20260928_improvement_20261007\\roi_only_v4\\result\\supported_cloud.ply",
+      "sha256": "88cd08830d32b16578aaadceece0d45ed188d7f367d4038221d50234bd493986",
+      "download": "fine_fragments.ply",
+      "full_count": 4092685,
+      "review_count": 1061410
+    },
+    {
+      "label": "Closer-view trial",
+      "description": "Closer-view trial: 64 dense views with nearer camera pairs, corrected filtering and freshly checked ICP alignment. Helps some structures but can lose others.",
+      "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_20260928_improvement_20261007\\short_dense_v3\\result\\plant_rgb_icp.ply",
+      "sha256": "9f832f84560d4cb8af9d2c1cefa8d789b1da6f97e79bc5d035fcd5475e175338",
+      "download": "reprocessed.ply",
+      "full_count": 8265080,
+      "review_count": 1719001
+    },
+    {
+      "label": "Combined pairs: after cleanup",
+      "description": "Complementary pairs: retains old accepted depths and adds only unambiguous missing pixels with at least three distinct agreeing pairs. Same 32 camera alignments and surface checks, followed by statistical cleanup.",
+      "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_20260928_improvement_20261007\\combined_v5\\result\\plant_rgb_icp.ply",
+      "sha256": "8b12228922d965f0f226dc3edb15e2a05f435548a1f74574e47c913d46da7297",
+      "download": "combined.ply",
+      "full_count": 4159263,
+      "review_count": 1104454
+    },
+    {
+      "label": "Combined pairs: fine fragments retained",
+      "description": "Complementary pairs before statistical cleanup. Keeps all fragments passing the unchanged multi-view support and conflict checks. Incomplete plant parts and potentially incorrect fragments remain; no shape completion is applied.",
+      "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_20260928_improvement_20261007\\combined_v5\\result\\supported_cloud.ply",
+      "sha256": "0956c157ffb3e69683922bca5257b8b108b315cd9616e4b7a5108d451091c8cf",
+      "download": "combined_fine.ply",
+      "full_count": 4303406,
+      "review_count": 1143063
+    }
+  ],
+  "calibration_transfer_sha256": "bd325cb89f1285d0aabb87cea82eb27601cc67759cbf50dc47ace8ffb2072a65",
+  "identical_review_bounds_upright_conditional_m": [
+    [
+      0.0,
+      -0.4,
+      -0.79
+    ],
+    [
+      1.8,
+      0.4,
+      -0.1
+    ]
+  ],
+  "identical_display_centre": [
+    0.9,
+    0.0,
+    -0.445
+  ],
+  "identical_display_scale": 1.8,
+  "identical_display_stride": 2,
+  "source_voxel_m": 0.001,
+  "new_frames": 64,
+  "new_icp_accepted": 64,
+  "new_support_min": 3,
+  "new_support_median": 7.0,
+  "no_gap_filling": true,
+  "manual_plant_dimensions_used": false,
+  "limits": [
+    "Shared scene review crops include pots/background, may omit outlying foliage.",
+    "New point count is not a plant-completeness or accuracy score.",
+    "Different stereo maps share input images; supporting anchors are not independent statistical trials.",
+    "Scale remains conditional. Hidden surfaces require other observations."
+  ]
+}

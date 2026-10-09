@@ -1,0 +1,46 @@
+{
+  "edition": "confirmed-board 25 mm, rechecked 7-8 October 2026",
+  "overall": "reviewed research outputs with explicit unresolved scientific limits",
+  "completed": [
+    "Confirmed board specification saved and metric poses recomputed",
+    "D405 metric re-expression and independent full-cloud audit",
+    "Two fresh L515 raw-depth reconstructions with raw-frame support verification",
+    "Fixed-region rigid camera comparison and frozen matched-soil comparison",
+    "Selected fusion and source-mask cleanup recomputed with source indices",
+    "24 full-resolution geometry selections and download/provenance",
+    "Five-plant descriptors and all 47 manual-reference dimensions reviewed",
+    "Both-camera measured spectral samples and six provisional associations at three P5 vertices",
+    "Metric HSI table calibration, scan transfer and failed elevated-height generalization test",
+    "Both-camera quality and index sensitivity diagnostics"
+  ],
+  "unresolved": [
+    {
+      "item": "Traceable dimensional accuracy",
+      "reason": "No independent print tolerance, session-certified depth unit and external measurement target."
+    },
+    {
+      "item": "Gap-free 360 degree plant geometry",
+      "reason": "Missing coverage, fine tips, occlusion and motion remain."
+    },
+    {
+      "item": "Physical trait accuracy statistics",
+      "reason": "No accepted anatomical/reference pairs; confirmed scale alone is insufficient."
+    },
+    {
+      "item": "Dense 3D spectral fusion across five plants",
+      "reason": "Only three P5 material controls; height model fails heldout predictions."
+    },
+    {
+      "item": "Calibrated reflectance and physiological scores",
+      "reason": "Unknown white-board reflectance and unconfirmed shutter-dark capture."
+    },
+    {
+      "item": "Generalisation to arbitrary datasets and lab operation",
+      "reason": "Single reviewed study; no new hardware or independent-dataset validation."
+    }
+  ],
+  "prior_results_preserved": true,
+  "pushed": false,
+  "live_publication_verified": false,
+  "lab_source_changed": false
+}

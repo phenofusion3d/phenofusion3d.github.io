@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "window_title": "PhenoFusion3D \u2014 research workspace",
+  "labels": [
+    "RESEARCH REVIEW \u00b7 Measurements remain provisional. See the report for calibration gaps, source evidence and dataset-specific limitations.",
+    "Static report view: optional PyQtWebEngine is missing. Open in browser for interactive point selection and 3D inspection, or use the hyperspectral-viewer extra in your offline environment."
+  ],
+  "view_mode": "static QTextBrowser",
+  "report_path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_followthrough_20261007\\workspace_v2\\result\\index.html",
+  "loaded_source": "C:/Personal/My_DEGREE's/Master_of_Computing_(Advanced)/Australian_National_University/Technical Team Project - COMP8715/PhenoFusion3D/generated/research_followthrough_20261007/workspace_v2/result/index.html",
+  "real_main_called": true,
+  "bounded_subprocess": true,
+  "offscreen": true,
+  "hardware_operated": false
+}

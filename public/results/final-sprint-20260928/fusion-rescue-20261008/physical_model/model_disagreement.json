@@ -1,0 +1,12 @@
+{
+  "scope": "Model disagreement on existing P5 points, not measured physical error or probability bound",
+  "points_both_inside_recorded_FX10": 145459,
+  "primary_landmark_vs_colour_model_disagreement_native_HSI_px": {
+    "median": 5.5179175857030875,
+    "p90": 12.388201504668173,
+    "p95": 13.468537220668948,
+    "max": 16.898996808616115,
+    "fraction_le3": 0.0861136127706089,
+    "fraction_le5": 0.4249032373383565
+  }
+}

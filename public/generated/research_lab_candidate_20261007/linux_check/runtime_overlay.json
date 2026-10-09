@@ -1,0 +1,17 @@
+{
+  "package": "libusb-1.0-0",
+  "version": "2:1.0.27-1",
+  "architecture": "amd64",
+  "archive_uri": "'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb-1.0/libusb-1.0-0_1.0.27-1_amd64.deb' libusb-1.0-0_2%3a1.0.27-1_amd64.deb 54008 SHA512:9887228479a9f4b8973a2ab5df211487542bc66e59dd5bc9eb3e9772346bf6b5263f39afa6c8dd00459f8e7be7330a731cea08ef7548fe0e99e571f228456ed7",
+  "archive_sha256": "d59e679a82ee2b724c556397e831e879936adbe8a007705872b65a5e1ec887b5",
+  "metadata_sha256": "d59e679a82ee2b724c556397e831e879936adbe8a007705872b65a5e1ec887b5",
+  "archive_path": "/tmp/phenofusion3d-validation-u6bcgpn1/downloaded_runtime/libusb-1.0-0_2%3a1.0.27-1_amd64.deb",
+  "extracted_to": "/tmp/phenofusion3d-validation-u6bcgpn1/runtime_overlay",
+  "ld_library_path": "/tmp/phenofusion3d-validation-u6bcgpn1/runtime_overlay/usr/lib/x86_64-linux-gnu",
+  "apt_update_run": false,
+  "apt_install_run": false,
+  "system_files_changed": false,
+  "postinstall_scripts_run": false,
+  "sdk_installed": false,
+  "device_access_performed": false
+}

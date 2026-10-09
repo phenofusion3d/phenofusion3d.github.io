@@ -1,0 +1,198 @@
+{
+  "warning": "PROVISIONAL white-board-relative signal: panel spectral reflectance UNKNOWN; tail shutter UNCONFIRMED (assumed dark offset). NOT verified reflectance or plant health.",
+  "camera": "fx17",
+  "source_header": "data\\main\\test_plant_10-7\\20260928\\003-specim-fx17.hdr",
+  "header_sha256": "762de08de4f6f2892aa0caf4dd69da81a4a283e4a83783a210d75664b3c64d4f",
+  "source_bil_size": 609853440,
+  "raw_source_shape_line_band_column": [
+    2127,
+    224,
+    640
+  ],
+  "coordinate_convention": "zero-based scan_line and detector_column; no 3D or cross-camera correspondence",
+  "axis_order": "sample,source_band",
+  "sampling": "even scan lines AND even columns inside assistant-reviewed visible-tissue polygons",
+  "region_identity": "R1-R5 are scan-order specimen-region candidates; not operator-verified P1-P5 or whole-plant segmentation",
+  "patch_method": "Selected from recorded three-band display before examining index values; tissue/organ and ownership remain review candidates",
+  "white_roi_y0_y1_x0_x1_exclusive": [
+    8,
+    45,
+    90,
+    520
+  ],
+  "assumed_dark_tail_roi": [
+    2080,
+    2127,
+    0,
+    640
+  ],
+  "source_band_index_base": 0,
+  "band_flags": {
+    "outside_white_columns": 1,
+    "sample_suspected_clipping": 2,
+    "reference_suspected_clipping": 4,
+    "weak_white_minus_tail": 8,
+    "raw_zero": 16,
+    "low_signal_above_assumed_tail_advisory": 32
+  },
+  "normalization_invalid_bits": 31,
+  "low_signal_advisory_bit": 32,
+  "reference_formula": "Q=(DN-D_tail)/(W_board-D_tail)",
+  "zero_offset_formula": "Q0=DN/W_board",
+  "clipping_policy": "DN >= 65520 suspected clipping; never reconstructed",
+  "reference_extrapolation": false,
+  "cross_camera_concatenation": false,
+  "physical_3d_coordinates_produced": false,
+  "reference_hashes": [
+    {
+      "first_band": 0,
+      "stop_band": 16,
+      "white_selected_roi_sha256_float32": "e6d5a61795f5be65456ba38d8487fac81353534a29a93eac158b3f36451556df",
+      "tail_selected_roi_sha256_float32": "8ebd284a3ec0ef68f4c34e4d7bd41e67333c449ef6f5ec1e6ac2da777ecd063d"
+    },
+    {
+      "first_band": 16,
+      "stop_band": 32,
+      "white_selected_roi_sha256_float32": "4878f60bf520910e9130d98070e81a76bcdc8c090d5f09afe42eebd5fcebad66",
+      "tail_selected_roi_sha256_float32": "e049c1c0bf63ed7e06e24b215fa6e35507d14d0aa4c4ba35ebaae2c05d3debff"
+    },
+    {
+      "first_band": 32,
+      "stop_band": 48,
+      "white_selected_roi_sha256_float32": "fb35708a7f421a89f81c8bf98038f16e98535b33cac0ded27967a735e1d8fba1",
+      "tail_selected_roi_sha256_float32": "b78467fc0383eca4d85c45fe2dc552610c164bc44c15e8bf18c0f5cb24af8475"
+    },
+    {
+      "first_band": 48,
+      "stop_band": 64,
+      "white_selected_roi_sha256_float32": "3f44750acc2e264c92b87790c35f2b3cf37697645be801d02063bf767bbb44dd",
+      "tail_selected_roi_sha256_float32": "d8f744b314348eee53acdd447a4e19a7c60cc030c05e35f0f6e40b83467ddc82"
+    },
+    {
+      "first_band": 64,
+      "stop_band": 80,
+      "white_selected_roi_sha256_float32": "32201a7e811d7763c5190d2b109b2825d06278c4e222c0ad43e3cc66034720bb",
+      "tail_selected_roi_sha256_float32": "843c63ccbc440615d60f964f67747895b84561c694ab3385605da3cdefb9558c"
+    },
+    {
+      "first_band": 80,
+      "stop_band": 96,
+      "white_selected_roi_sha256_float32": "f9d4a3cf960d87dd75c86f999e75ceecbee153d321c956cfbdb78b69b4586b5f",
+      "tail_selected_roi_sha256_float32": "8624d1038f60d8a07780e172efd477b9f0bfb5e86b136d7db7fb1a36bae76982"
+    },
+    {
+      "first_band": 96,
+      "stop_band": 112,
+      "white_selected_roi_sha256_float32": "726028f42475747a7ac74022b729aebe5a40ad0658a17c17020d6463e2ebea22",
+      "tail_selected_roi_sha256_float32": "43f614bf27201e826ac0b0dc9e8384f9037f9042e0fa04df0831866dce823ba6"
+    },
+    {
+      "first_band": 112,
+      "stop_band": 128,
+      "white_selected_roi_sha256_float32": "0ce71b08868f4d1e182ebe3c14e00094dd22aa923be310251059f2127104ca96",
+      "tail_selected_roi_sha256_float32": "13e82e82c7d8ccc108873eab45b97ab6a5d07adb4ff01a56e150560eb9ca052e"
+    },
+    {
+      "first_band": 128,
+      "stop_band": 144,
+      "white_selected_roi_sha256_float32": "f116bc30168b0275b012dbb4cd85ba56407e90a9614f6ec81bb9c0cbd3736364",
+      "tail_selected_roi_sha256_float32": "ba94f301c1f5ffcebf0b8de59e87a545c8e7a22a447acb13cec0e218dad82c12"
+    },
+    {
+      "first_band": 144,
+      "stop_band": 160,
+      "white_selected_roi_sha256_float32": "a3720f1002897542b4be51d61fef778414319d5e6993c45a5f20280d9a6982c9",
+      "tail_selected_roi_sha256_float32": "7518975682ead8c4686ecff42f4ef470ebb910814febb6a435a25574a4fd8694"
+    },
+    {
+      "first_band": 160,
+      "stop_band": 176,
+      "white_selected_roi_sha256_float32": "a15693229593d977dda55870efa781a2be7991222cc3ee708b727ec0089f7582",
+      "tail_selected_roi_sha256_float32": "565d533e9f71625a3359b2a7c8947050b3748e044dcff3f8194f0b8d357b49d0"
+    },
+    {
+      "first_band": 176,
+      "stop_band": 192,
+      "white_selected_roi_sha256_float32": "6af9bc1517be4df86c1d84ce923df46d964c70d70eb45e34a5f57619603f057b",
+      "tail_selected_roi_sha256_float32": "06efd8c65313ee281120a608e9ad9999ddf6127a7b72db95718185c44fadc6b4"
+    },
+    {
+      "first_band": 192,
+      "stop_band": 208,
+      "white_selected_roi_sha256_float32": "6858713fdb699263a0b32184a83c78864726b191038c7070713a0dea537371a7",
+      "tail_selected_roi_sha256_float32": "873716e456fc96d8e6e7ff9e90f324663e041f8a391459875a9c00b95291a490"
+    },
+    {
+      "first_band": 208,
+      "stop_band": 224,
+      "white_selected_roi_sha256_float32": "bd97c842f4249b09dde26050cd199a7d58ec699cd331bed751e9851682328ac7",
+      "tail_selected_roi_sha256_float32": "820d0268cc30b5459cbca50f9f60ad4e19c5e644085682be4e5205f51878c753"
+    }
+  ],
+  "prior_implementation_sha256": "52691162f3f15aa23477f862af7697fc78db94b12be5fc410c4fcf4ca1530d55",
+  "arrays": {
+    "W_board": {
+      "shape": [
+        224,
+        640
+      ],
+      "dtype": "float32"
+    },
+    "D_assumed_tail": {
+      "shape": [
+        224,
+        640
+      ],
+      "dtype": "float32"
+    },
+    "white_MAD_sigma": {
+      "shape": [
+        224,
+        640
+      ],
+      "dtype": "float32"
+    },
+    "tail_MAD_sigma": {
+      "shape": [
+        224,
+        640
+      ],
+      "dtype": "float32"
+    },
+    "denominator_guard_DN": {
+      "shape": [
+        224,
+        640
+      ],
+      "dtype": "float32"
+    },
+    "coverage_columns": {
+      "shape": [
+        224,
+        640
+      ],
+      "dtype": "bool"
+    },
+    "reference_clipping": {
+      "shape": [
+        224,
+        640
+      ],
+      "dtype": "bool"
+    },
+    "weak_reference": {
+      "shape": [
+        224,
+        640
+      ],
+      "dtype": "bool"
+    },
+    "wavelength_nm": {
+      "shape": [
+        224
+      ],
+      "dtype": "float64"
+    }
+  },
+  "sha256": "e4134199ab59b586df665ba0c00a4fd0bf9845d2f862117212676ad1e5e60370"
+}

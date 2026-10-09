@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "html_local_links_checked": 264,
+  "broken_links": [],
+  "escaped_links": [],
+  "current_plants": 5,
+  "current_points": 430060,
+  "manual_dimensions": 47,
+  "original_manual_annotations_and_ruler_candidates_unchanged": true,
+  "original_manual_images_verified": 60,
+  "numerical_chords": [
+    "P1.O03.observed_blade_extent",
+    "P3.O03.blade_chord",
+    "P5.O04.terminal_lamina_chord"
+  ],
+  "all_six_selected_chord_endpoints_retained_in_current_multiview_plant_core": true,
+  "two_missing_tip_searches_still_empty": true,
+  "accuracy_metric_count": 0,
+  "physical_accuracy_validated": false
+}

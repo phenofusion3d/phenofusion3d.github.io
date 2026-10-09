@@ -1,0 +1,188 @@
+{
+  "count": 26,
+  "changed": [],
+  "files": [
+    {
+      "path": "main.py",
+      "baseline_working_tree_sha256": "9f3b051f5b784732c4124fb84db4aa62b5566677e816cc1cdc7f000d7a382afc",
+      "current_working_tree_sha256": "9f3b051f5b784732c4124fb84db4aa62b5566677e816cc1cdc7f000d7a382afc",
+      "base_commit_source_sha256": "9f3b051f5b784732c4124fb84db4aa62b5566677e816cc1cdc7f000d7a382afc",
+      "v2_source_sha256": "9f3b051f5b784732c4124fb84db4aa62b5566677e816cc1cdc7f000d7a382afc"
+    },
+    {
+      "path": "app/main_window.py",
+      "baseline_working_tree_sha256": "040c856575c96c6e09c314f73b95188cd31521ad6a887519eac987c9141669a1",
+      "current_working_tree_sha256": "040c856575c96c6e09c314f73b95188cd31521ad6a887519eac987c9141669a1",
+      "base_commit_source_sha256": "67c43e86ddf11d800a3e0a724e7e115e53d4371671e9d200b120b7167e65f319",
+      "v2_source_sha256": "67c43e86ddf11d800a3e0a724e7e115e53d4371671e9d200b120b7167e65f319"
+    },
+    {
+      "path": "app/controller.py",
+      "baseline_working_tree_sha256": "6dc964d58bc9f332d547676953939581bfa470668bbc2c3598f9ae1501eddf1b",
+      "current_working_tree_sha256": "6dc964d58bc9f332d547676953939581bfa470668bbc2c3598f9ae1501eddf1b",
+      "base_commit_source_sha256": "6dc964d58bc9f332d547676953939581bfa470668bbc2c3598f9ae1501eddf1b",
+      "v2_source_sha256": "6dc964d58bc9f332d547676953939581bfa470668bbc2c3598f9ae1501eddf1b"
+    },
+    {
+      "path": "app/capture_worker.py",
+      "baseline_working_tree_sha256": "8b9b4dcbc9ce6c3d7a5139f56c3de9a1851c48eb58732624ba307d4558a9da12",
+      "current_working_tree_sha256": "8b9b4dcbc9ce6c3d7a5139f56c3de9a1851c48eb58732624ba307d4558a9da12",
+      "base_commit_source_sha256": "8b9b4dcbc9ce6c3d7a5139f56c3de9a1851c48eb58732624ba307d4558a9da12",
+      "v2_source_sha256": "8b9b4dcbc9ce6c3d7a5139f56c3de9a1851c48eb58732624ba307d4558a9da12"
+    },
+    {
+      "path": "app/panels/capture_panel.py",
+      "baseline_working_tree_sha256": "f06408603428d4f73b4d5d9acad378ea1e5226a51e5758f8b19b3f4c51672d41",
+      "current_working_tree_sha256": "f06408603428d4f73b4d5d9acad378ea1e5226a51e5758f8b19b3f4c51672d41",
+      "base_commit_source_sha256": "f06408603428d4f73b4d5d9acad378ea1e5226a51e5758f8b19b3f4c51672d41",
+      "v2_source_sha256": "f06408603428d4f73b4d5d9acad378ea1e5226a51e5758f8b19b3f4c51672d41"
+    },
+    {
+      "path": "app/panels/gantry_panel.py",
+      "baseline_working_tree_sha256": "782eb3bc0c9081990f82771ac81304ca36581517474886110eaedad487968145",
+      "current_working_tree_sha256": "782eb3bc0c9081990f82771ac81304ca36581517474886110eaedad487968145",
+      "base_commit_source_sha256": "782eb3bc0c9081990f82771ac81304ca36581517474886110eaedad487968145",
+      "v2_source_sha256": "782eb3bc0c9081990f82771ac81304ca36581517474886110eaedad487968145"
+    },
+    {
+      "path": "processing/reconstructor.py",
+      "baseline_working_tree_sha256": "077bf48dfb5745114d327e00541b65d383743f00da85c8b60cef3d3b5ee600d9",
+      "current_working_tree_sha256": "077bf48dfb5745114d327e00541b65d383743f00da85c8b60cef3d3b5ee600d9",
+      "base_commit_source_sha256": "077bf48dfb5745114d327e00541b65d383743f00da85c8b60cef3d3b5ee600d9",
+      "v2_source_sha256": "077bf48dfb5745114d327e00541b65d383743f00da85c8b60cef3d3b5ee600d9"
+    },
+    {
+      "path": "processing/icp.py",
+      "baseline_working_tree_sha256": "b44b9c8d559f9abb0f6679b63468b5f84b7248715f5d2eee2c81bfe84103755d",
+      "current_working_tree_sha256": "b44b9c8d559f9abb0f6679b63468b5f84b7248715f5d2eee2c81bfe84103755d",
+      "base_commit_source_sha256": "b44b9c8d559f9abb0f6679b63468b5f84b7248715f5d2eee2c81bfe84103755d",
+      "v2_source_sha256": "b44b9c8d559f9abb0f6679b63468b5f84b7248715f5d2eee2c81bfe84103755d"
+    },
+    {
+      "path": "setup.sh",
+      "baseline_working_tree_sha256": "f5a1a0d31d825dbb91fe71a907d497a76ef9ec87b985249b0ef84f550c1e30b0",
+      "current_working_tree_sha256": "f5a1a0d31d825dbb91fe71a907d497a76ef9ec87b985249b0ef84f550c1e30b0",
+      "base_commit_source_sha256": "f5a1a0d31d825dbb91fe71a907d497a76ef9ec87b985249b0ef84f550c1e30b0",
+      "v2_source_sha256": "f5a1a0d31d825dbb91fe71a907d497a76ef9ec87b985249b0ef84f550c1e30b0"
+    },
+    {
+      "path": "requirements.txt",
+      "baseline_working_tree_sha256": "b57524e871cf764869874d78d4f7f6fda73961adcf3249ee0cd097679cfbb57f",
+      "current_working_tree_sha256": "b57524e871cf764869874d78d4f7f6fda73961adcf3249ee0cd097679cfbb57f",
+      "base_commit_source_sha256": "b57524e871cf764869874d78d4f7f6fda73961adcf3249ee0cd097679cfbb57f",
+      "v2_source_sha256": "b57524e871cf764869874d78d4f7f6fda73961adcf3249ee0cd097679cfbb57f"
+    },
+    {
+      "path": "capture/__init__.py",
+      "baseline_working_tree_sha256": "9ee0dd1bfae4c8ef77379b3520e656d36ba0710d3a7b4ec64263519dc4ad9a29",
+      "current_working_tree_sha256": "9ee0dd1bfae4c8ef77379b3520e656d36ba0710d3a7b4ec64263519dc4ad9a29",
+      "base_commit_source_sha256": "9ee0dd1bfae4c8ef77379b3520e656d36ba0710d3a7b4ec64263519dc4ad9a29",
+      "v2_source_sha256": "9ee0dd1bfae4c8ef77379b3520e656d36ba0710d3a7b4ec64263519dc4ad9a29"
+    },
+    {
+      "path": "capture/base.py",
+      "baseline_working_tree_sha256": "56a241f59f80ab23c984d725edd7def790e6405eca03a262aaa9c49bb93184a2",
+      "current_working_tree_sha256": "56a241f59f80ab23c984d725edd7def790e6405eca03a262aaa9c49bb93184a2",
+      "base_commit_source_sha256": "56a241f59f80ab23c984d725edd7def790e6405eca03a262aaa9c49bb93184a2",
+      "v2_source_sha256": "56a241f59f80ab23c984d725edd7def790e6405eca03a262aaa9c49bb93184a2"
+    },
+    {
+      "path": "capture/gantry.py",
+      "baseline_working_tree_sha256": "d25c45ff238014a9eead4eecba37ffd651456640ed6b3b96cfe74041c95b5fde",
+      "current_working_tree_sha256": "d25c45ff238014a9eead4eecba37ffd651456640ed6b3b96cfe74041c95b5fde",
+      "base_commit_source_sha256": "d25c45ff238014a9eead4eecba37ffd651456640ed6b3b96cfe74041c95b5fde",
+      "v2_source_sha256": "d25c45ff238014a9eead4eecba37ffd651456640ed6b3b96cfe74041c95b5fde"
+    },
+    {
+      "path": "capture/realsense_capture.py",
+      "baseline_working_tree_sha256": "899891601a569c1d921a5c9aed56e3d0fcaf9ce33e2baef8893390419e14eae2",
+      "current_working_tree_sha256": "899891601a569c1d921a5c9aed56e3d0fcaf9ce33e2baef8893390419e14eae2",
+      "base_commit_source_sha256": "899891601a569c1d921a5c9aed56e3d0fcaf9ce33e2baef8893390419e14eae2",
+      "v2_source_sha256": "899891601a569c1d921a5c9aed56e3d0fcaf9ce33e2baef8893390419e14eae2"
+    },
+    {
+      "path": "capture/realsense_runtime.py",
+      "baseline_working_tree_sha256": "b6419299ee14e56920e4023c90d18fdb0ff63c7f7b4c99b85dafe3d8fc45f0c4",
+      "current_working_tree_sha256": "b6419299ee14e56920e4023c90d18fdb0ff63c7f7b4c99b85dafe3d8fc45f0c4",
+      "base_commit_source_sha256": "b6419299ee14e56920e4023c90d18fdb0ff63c7f7b4c99b85dafe3d8fc45f0c4",
+      "v2_source_sha256": "b6419299ee14e56920e4023c90d18fdb0ff63c7f7b4c99b85dafe3d8fc45f0c4"
+    },
+    {
+      "path": "capture/ros_agent.py",
+      "baseline_working_tree_sha256": "824cdb7ed1f6f70b4d1444edaec3d32693329ae3c03d7d20ffe8bd47ec0bdb8d",
+      "current_working_tree_sha256": "824cdb7ed1f6f70b4d1444edaec3d32693329ae3c03d7d20ffe8bd47ec0bdb8d",
+      "base_commit_source_sha256": "824cdb7ed1f6f70b4d1444edaec3d32693329ae3c03d7d20ffe8bd47ec0bdb8d",
+      "v2_source_sha256": "824cdb7ed1f6f70b4d1444edaec3d32693329ae3c03d7d20ffe8bd47ec0bdb8d"
+    },
+    {
+      "path": "capture/ros_capture.py",
+      "baseline_working_tree_sha256": "b19b722f22f6ebefe03fd2bc6ce0a540e2eadcfe9c38b00ea3d49614dcbc23ff",
+      "current_working_tree_sha256": "b19b722f22f6ebefe03fd2bc6ce0a540e2eadcfe9c38b00ea3d49614dcbc23ff",
+      "base_commit_source_sha256": "b19b722f22f6ebefe03fd2bc6ce0a540e2eadcfe9c38b00ea3d49614dcbc23ff",
+      "v2_source_sha256": "b19b722f22f6ebefe03fd2bc6ce0a540e2eadcfe9c38b00ea3d49614dcbc23ff"
+    },
+    {
+      "path": "capture/ros_client.py",
+      "baseline_working_tree_sha256": "ef7ed633ecf59719984e61f6f885a9e5b75820af9e6fa2ed92e9be8a48fdd842",
+      "current_working_tree_sha256": "ef7ed633ecf59719984e61f6f885a9e5b75820af9e6fa2ed92e9be8a48fdd842",
+      "base_commit_source_sha256": "ef7ed633ecf59719984e61f6f885a9e5b75820af9e6fa2ed92e9be8a48fdd842",
+      "v2_source_sha256": "ef7ed633ecf59719984e61f6f885a9e5b75820af9e6fa2ed92e9be8a48fdd842"
+    },
+    {
+      "path": "capture/ros_runtime.py",
+      "baseline_working_tree_sha256": "a22b757fe033b7a40039772bc14e98e79c2d320352320f7767ae0a8dd90da120",
+      "current_working_tree_sha256": "a22b757fe033b7a40039772bc14e98e79c2d320352320f7767ae0a8dd90da120",
+      "base_commit_source_sha256": "a22b757fe033b7a40039772bc14e98e79c2d320352320f7767ae0a8dd90da120",
+      "v2_source_sha256": "a22b757fe033b7a40039772bc14e98e79c2d320352320f7767ae0a8dd90da120"
+    },
+    {
+      "path": "install/build_appimage.sh",
+      "baseline_working_tree_sha256": "6596844b7919aff2e528245b5daab712c33ec4f7074ee2583e217a217a26b668",
+      "current_working_tree_sha256": "6596844b7919aff2e528245b5daab712c33ec4f7074ee2583e217a217a26b668",
+      "base_commit_source_sha256": "6596844b7919aff2e528245b5daab712c33ec4f7074ee2583e217a217a26b668",
+      "v2_source_sha256": "6596844b7919aff2e528245b5daab712c33ec4f7074ee2583e217a217a26b668"
+    },
+    {
+      "path": "install/install_linux.sh",
+      "baseline_working_tree_sha256": "4dc7a44e384799e885420e6743c206be6ed9606743b38bf70ff5201dac1fe603",
+      "current_working_tree_sha256": "4dc7a44e384799e885420e6743c206be6ed9606743b38bf70ff5201dac1fe603",
+      "base_commit_source_sha256": "4dc7a44e384799e885420e6743c206be6ed9606743b38bf70ff5201dac1fe603",
+      "v2_source_sha256": "4dc7a44e384799e885420e6743c206be6ed9606743b38bf70ff5201dac1fe603"
+    },
+    {
+      "path": "install/install_windows.ps1",
+      "baseline_working_tree_sha256": "4e63a3724cd717c77bab8f551c2df5f215ad3df65899922757304aa53a6e0aaf",
+      "current_working_tree_sha256": "4e63a3724cd717c77bab8f551c2df5f215ad3df65899922757304aa53a6e0aaf",
+      "base_commit_source_sha256": "4e63a3724cd717c77bab8f551c2df5f215ad3df65899922757304aa53a6e0aaf",
+      "v2_source_sha256": "4e63a3724cd717c77bab8f551c2df5f215ad3df65899922757304aa53a6e0aaf"
+    },
+    {
+      "path": "install/README.md",
+      "baseline_working_tree_sha256": "ffa8f8615903b3b2435d14b0607392985677a9b9ee9db21e1e8af288c49c8510",
+      "current_working_tree_sha256": "ffa8f8615903b3b2435d14b0607392985677a9b9ee9db21e1e8af288c49c8510",
+      "base_commit_source_sha256": "ffa8f8615903b3b2435d14b0607392985677a9b9ee9db21e1e8af288c49c8510",
+      "v2_source_sha256": "ffa8f8615903b3b2435d14b0607392985677a9b9ee9db21e1e8af288c49c8510"
+    },
+    {
+      "path": "install/appimage/entrypoint.sh",
+      "baseline_working_tree_sha256": "bab3e17c4513fc5a5361587e6a0bc3235a9ff0731a1d695629a48cb5baaf5bb0",
+      "current_working_tree_sha256": "bab3e17c4513fc5a5361587e6a0bc3235a9ff0731a1d695629a48cb5baaf5bb0",
+      "base_commit_source_sha256": "bab3e17c4513fc5a5361587e6a0bc3235a9ff0731a1d695629a48cb5baaf5bb0",
+      "v2_source_sha256": "bab3e17c4513fc5a5361587e6a0bc3235a9ff0731a1d695629a48cb5baaf5bb0"
+    },
+    {
+      "path": "install/appimage/phenofusion3d.desktop",
+      "baseline_working_tree_sha256": "d4be5035152c349399d6c70285423aa690561bd96bd1427bc56be3d065f5648c",
+      "current_working_tree_sha256": "d4be5035152c349399d6c70285423aa690561bd96bd1427bc56be3d065f5648c",
+      "base_commit_source_sha256": "d4be5035152c349399d6c70285423aa690561bd96bd1427bc56be3d065f5648c",
+      "v2_source_sha256": "d4be5035152c349399d6c70285423aa690561bd96bd1427bc56be3d065f5648c"
+    },
+    {
+      "path": "install/appimage/requirements.txt",
+      "baseline_working_tree_sha256": "b8b07df63a0b81b001fb8882de9bfc24f193f479d592da3c00b777eb222e122e",
+      "current_working_tree_sha256": "b8b07df63a0b81b001fb8882de9bfc24f193f479d592da3c00b777eb222e122e",
+      "base_commit_source_sha256": "b8b07df63a0b81b001fb8882de9bfc24f193f479d592da3c00b777eb222e122e",
+      "v2_source_sha256": "b8b07df63a0b81b001fb8882de9bfc24f193f479d592da3c00b777eb222e122e"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "warning": "Measured camera-space DN; any Q/Q0 is provisional reference-relative signal. No calibrated reflectance, physiological interpretation, or 3D fusion.",
+  "summary": "summary.json",
+  "arrays": {
+    "raw_DN": {
+      "shape": [
+        643,
+        224
+      ],
+      "dtype": "uint16"
+    },
+    "band_quality_flags": {
+      "shape": [
+        643,
+        224
+      ],
+      "dtype": "uint8"
+    },
+    "scan_line": {
+      "shape": [
+        643
+      ],
+      "dtype": "int32"
+    },
+    "detector_column": {
+      "shape": [
+        643
+      ],
+      "dtype": "int32"
+    },
+    "patch_id": {
+      "shape": [
+        643
+      ],
+      "dtype": "uint16"
+    },
+    "source_band_zero_based": {
+      "shape": [
+        224
+      ],
+      "dtype": "int32"
+    },
+    "wavelength_nm": {
+      "shape": [
+        224
+      ],
+      "dtype": "float64"
+    },
+    "Q_assumed_or_confirmed_dark": {
+      "shape": [
+        643,
+        224
+      ],
+      "dtype": "float32"
+    },
+    "Q_zero_offset": {
+      "shape": [
+        643,
+        224
+      ],
+      "dtype": "float32"
+    }
+  },
+  "sha256": "d6533d8991da8a68e3830dfe168f5274fa9cfca2e16e7c28637b3bf65ae8777d"
+}

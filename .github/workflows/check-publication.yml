@@ -16,4 +16,6 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
-      - run: python3 scripts/check-spectral-publication.py
+      - run: |
+          python3 scripts/check-spectral-publication.py
+          python3 scripts/check-dashboard.py --out

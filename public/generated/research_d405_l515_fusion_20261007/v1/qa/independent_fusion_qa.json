@@ -1,0 +1,115 @@
+{
+  "status": "PASS_algorithm_and_provenance_checks_not_physical_accuracy",
+  "elapsed_seconds": 10.703338623046875,
+  "source_point_counts": {
+    "d405": 8265080,
+    "l515": 1598977
+  },
+  "retained_d405_points": 1719001,
+  "added_l515_points": 13489,
+  "final_points": 1732490,
+  "crop_is_scene_review_not_organ_segmentation": true,
+  "geometry_checks": {
+    "d405_crop": {
+      "points": 1719001,
+      "max_coordinate_error_m": 0.0,
+      "colours_exact": true
+    },
+    "l515_rigid_crop": {
+      "points": 175708,
+      "max_coordinate_error_m": 0.0,
+      "colours_exact": true
+    },
+    "l515_additions": {
+      "points": 13489,
+      "max_coordinate_error_m": 0.0,
+      "colours_exact": true
+    },
+    "l515_excluded": {
+      "points": 21785,
+      "max_coordinate_error_m": 0.0,
+      "colours_exact": true
+    },
+    "fused_union": {
+      "points": 1732490,
+      "max_coordinate_error_m": 0.0,
+      "colours_exact": true
+    }
+  },
+  "d405_points_within_declared_crop_unchanged": true,
+  "d405_points_outside_crop_not_in_union": 6546079,
+  "all_source_indices_and_colours_preserved": true,
+  "input_hashes_checked": 74,
+  "output_hashes_checked": 10,
+  "input_hash_failures": [],
+  "output_hash_failures": [],
+  "all_classification_flags_and_exclusive_codes_verified": true,
+  "decision_counts": {
+    "0": 140434,
+    "1": 3823,
+    "2": 17962,
+    "3": 8330,
+    "4": 5159
+  },
+  "sensor_only_additions_by_D405_votes": {
+    "0": 4875,
+    "1": 284
+  },
+  "maximum_nearest_distance_recomputation_error_m": 0.0,
+  "equally_near_alternative_indices": 0,
+  "independent_vote_sample": {
+    "points": 579,
+    "views": 64,
+    "point_view_checks": 37056,
+    "selection": "100 random per exclusive class plus 40 nearest each 4/12 mm distance boundary; deterministic seed20261007",
+    "mismatches": {
+      "support": 0,
+      "conflict": 0
+    },
+    "imported_fusion_helpers": false
+  },
+  "alignment_validation": {
+    "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_l515_20261007\\cross_camera\\near_static_holdouts\\near_sensor_alignment_comparison.json",
+    "sha256": "0f73c5e0cf986b1b36b02f410e804ca2f26f21a84fbc727205f15922f3272e20",
+    "status": "conditional_empirical_surface_alignment_check_not_true_camera_extrinsics",
+    "fit_pots": [
+      "P1",
+      "P3",
+      "P5"
+    ],
+    "validation_pots": [
+      "P2",
+      "P4"
+    ],
+    "summary": {
+      "count": 62,
+      "q0_p10_median_p90_max_m": [
+        0.0010621487215564873,
+        0.001622538031638453,
+        0.003410818800027225,
+        0.00741524632097974,
+        0.022506039730105145
+      ],
+      "rms_m": 0.006049150493311153,
+      "within_3mm": 23,
+      "within_5mm": 51,
+      "within_10mm": 58,
+      "median_residual_xyz_m": [
+        0.001821874564975956,
+        0.0001861093698888672,
+        -0.0022099180689184594
+      ]
+    }
+  },
+  "tracked_checkout_clean": true,
+  "tracked_source_diff_empty": true,
+  "git_stderr": "warning: unable to access 'C:\\Users\\Adithya Rama/.config/git/ignore': Permission denied\nwarning: unable to access 'C:\\Users\\Adithya Rama/.config/git/ignore': Permission denied\n",
+  "limitations": [
+    "Passing QA establishes faithful execution of the declared exploratory observed-point union, not true camera extrinsics or absolute physical accuracy.",
+    "Metric scales, colour-depth registration and camera/gantry models remain conditional.",
+    "Held-out soil matches support empirical alignment near their layer; they do not validate elevated leaves or hidden surfaces.",
+    "The 5159 additions with fewer than two D405 votes are L515-only complementary candidates, not independent cross-camera confirmation.",
+    "This QA hashes all fusion inputs. The earlier sensor audit performed the full raw-image-manifest rehash; no claim that the full raw dataset was rehashed again here."
+  ],
+  "verifier_sha256": "a815ee697adbc8cee4deabbb0c5fc6478d0b65e486c8dbb41b1b07a60cad8c55"
+}

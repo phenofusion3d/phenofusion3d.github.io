@@ -1,0 +1,370 @@
+{
+  "status": "research_review_ready_with_recorded_gaps",
+  "schema_version": 1,
+  "coordinate_unit": "conditional_m",
+  "scale_status": "Unverified: physical ChArUco size and independent recording units are unavailable",
+  "physical_accuracy_validated": false,
+  "calibrated_3d_spectral_fusion_achieved": false,
+  "gaps": [
+    {
+      "id": "board_pitch",
+      "status": "unresolved",
+      "title": "Printed ChArUco size unavailable",
+      "affects": [
+        "absolute scale",
+        "physical trait validation"
+      ],
+      "resolution": "Measured pitch across multiple cells or original target design with verified print scale"
+    },
+    {
+      "id": "recording_units",
+      "status": "unresolved",
+      "title": "Independent depth and gantry units unavailable",
+      "affects": [
+        "absolute scale",
+        "physical alignment accuracy"
+      ],
+      "resolution": "Saved device depth units and independently verified gantry displacement conversion"
+    },
+    {
+      "id": "measurement_landmarks",
+      "status": "reviewed_but_unresolved",
+      "title": "Five specimen identities reviewed; true bases/tips and full organ boundaries incomplete",
+      "affects": [
+        "height",
+        "leaf validation"
+      ],
+      "resolution": "Explicit source-supported point/organ identities and compatible measurement definitions"
+    },
+    {
+      "id": "manual_references",
+      "status": "partially_resolved",
+      "title": "Ruler evidence contains unreadable and conflicting dimensions",
+      "affects": [
+        "accepted validation pairs"
+      ],
+      "resolution": "Retain annotation and photo evidence separately; exclude unresolved dimensions"
+    },
+    {
+      "id": "hsi_radiometry",
+      "status": "unresolved",
+      "title": "White spectral reflectance and confirmed dark reference unavailable",
+      "affects": [
+        "calibrated reflectance",
+        "physiological interpretation"
+      ],
+      "resolution": "Documented panel spectrum and shutter-closed reference at matching acquisition settings"
+    },
+    {
+      "id": "hsi_spatial",
+      "status": "unresolved",
+      "title": "Plant-height HSI spatial model and line/start linkage unavailable",
+      "affects": [
+        "validated 3D spectral mapping"
+      ],
+      "resolution": "Independent spatial/rig calibration or multi-height controls with off-plane validation and scan-position linkage"
+    },
+    {
+      "id": "surface_coverage",
+      "status": "unresolved",
+      "title": "Unobserved and incomplete plant surfaces",
+      "affects": [
+        "whole-plant completeness",
+        "whole-leaf area and volume"
+      ],
+      "resolution": "Additional overlapping views of hidden surfaces or explicit observed-only reporting"
+    },
+    {
+      "id": "external_generalization",
+      "status": "unverified",
+      "title": "Additional datasets and lab hardware tests unavailable",
+      "affects": [
+        "arbitrary-plant automation",
+        "physical lab readiness"
+      ],
+      "resolution": "Independent dataset tests and lab regression checks after local software verification"
+    }
+  ],
+  "input_hashes": {
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_followthrough_20261007\\workspace_manifest.json": "1b24b13cdf8aeaf36260164cd84b1b18dfddcaa3d050d2657a96332d4a7b29e2",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\result\\P1_reference.ply": "83260a35fc2885ca60daf9e7d69d55c29b8131f263eb63d5f5a4c64ab2f45aae",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\result\\P2_reference.ply": "bb19b09daa8a122b4fd855ce3b866cd05060e2a20769afc1cba3456df30dd742",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\result\\P3_reference.ply": "1fa8e16b42ebf598eb67fbd1e301f02845bc753213ab45a31eeb68ca596866aa",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\result\\P4_reference.ply": "a0fb7091556524eeb4b9faea079dd1ab267d6f047e7bdf2640ba2691b5acb1b8",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\result\\P5_reference.ply": "2d236b5d5c6387e211718e2f6b03f4bc7131f557c805228be3f57a4a25eab39f",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_d405_l515_fusion_20261007\\v1\\fused_review_reference.ply": "9caee0edcc1fb5f66a9cdd490a0054e2ab45872302a32a81cd24788dee01ab10",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_followthrough_20261007\\traits\\index.html": "d59f6822b381cc465990a986d5fb0449c57f4458e84b1162f3493145c9a7e212",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_followthrough_20261007\\spectral\\index.html": "93e93fade6adf7ca3881ab2d16e4de8c8b5a4293a9380949c05a03f95b4e32ed",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_followthrough_20261007\\spectral\\mapping_workspace\\readiness.json": "03019d119fb554fe347c1983d6cec517c60acc551bef6a8e744854daa0ccd7d6",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\review\\index.html": "946095773e30e8a048fe2f54a73103fa3832a43ff6545d47d7c013a352528b87",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_d405_l515_fusion_20261007\\v1\\review\\index.html": "2e57ed2a61b0f8687a22956a7d74d4640566968c44138053548f913dca4777ab",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_20260928_improvement_20261007\\comparison\\index.html": "876654c96e69e14d32f4ecbea1a0fa07e7a15a744ac4db192390e14b5c271947",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_l515_20261007\\l515_sensor_v1\\review\\index.html": "9d672fe82822ebd743ca8ebc4de8fe9259c5781a1e898e2bb4f3ff10e3f13439",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_followthrough_20261007\\gaps.json": "46ab08f3418cd0c27a71ac052afec222cf34390d5d0f9b449abb5ef2350af605",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_followthrough_20261007\\workspace_endpoints.json": "60e80aab06bf0fc32e9b07a780f9e923524553dd1620f141264901027a8b6712"
+  },
+  "observed_descriptors": [
+    {
+      "specimen_id": "P1",
+      "source_sha256": "83260a35fc2885ca60daf9e7d69d55c29b8131f263eb63d5f5a4c64ab2f45aae",
+      "points": 21891,
+      "coordinate_unit": "conditional_m",
+      "observed_extent_xyz": [
+        0.17017827235934563,
+        0.33062954153899976,
+        0.46733408012839606
+      ],
+      "observed_p99_extent_xyz": [
+        0.16460407665643875,
+        0.320017996150772,
+        0.4537580577288426
+      ],
+      "minimum_xyz": [
+        0.15487630930653423,
+        -0.27295011303230526,
+        -0.7131169140752449
+      ],
+      "maximum_xyz": [
+        0.32505458166587986,
+        0.0576794285066945,
+        -0.24578283394684883
+      ],
+      "anatomical_height": null,
+      "whole_leaf_area": null,
+      "whole_plant_volume": null,
+      "status": "observed_cloud_distribution_only",
+      "limitation": "Retained point range is not stem-base height, complete canopy extent, tissue surface area or volume."
+    },
+    {
+      "specimen_id": "P2",
+      "source_sha256": "bb19b09daa8a122b4fd855ce3b866cd05060e2a20769afc1cba3456df30dd742",
+      "points": 74306,
+      "coordinate_unit": "conditional_m",
+      "observed_extent_xyz": [
+        0.33133937806305375,
+        0.19031735825552742,
+        0.498438992525309
+      ],
+      "observed_p99_extent_xyz": [
+        0.1717298575145375,
+        0.17934738810327144,
+        0.47546482281822444
+      ],
+      "minimum_xyz": [
+        0.4468217343289214,
+        -0.19946911860738328,
+        -0.6948404539282147
+      ],
+      "maximum_xyz": [
+        0.7781611123919752,
+        -0.00915176035185586,
+        -0.19640146140290574
+      ],
+      "anatomical_height": null,
+      "whole_leaf_area": null,
+      "whole_plant_volume": null,
+      "status": "observed_cloud_distribution_only",
+      "limitation": "Retained point range is not stem-base height, complete canopy extent, tissue surface area or volume."
+    },
+    {
+      "specimen_id": "P3",
+      "source_sha256": "1fa8e16b42ebf598eb67fbd1e301f02845bc753213ab45a31eeb68ca596866aa",
+      "points": 113901,
+      "coordinate_unit": "conditional_m",
+      "observed_extent_xyz": [
+        0.24806796925301478,
+        0.24126645121046986,
+        0.49003776292070494
+      ],
+      "observed_p99_extent_xyz": [
+        0.23549213118438994,
+        0.22467140933771512,
+        0.4288503429863578
+      ],
+      "minimum_xyz": [
+        0.6564478651206953,
+        -0.1752395355437442,
+        -0.7065770656456251
+      ],
+      "maximum_xyz": [
+        0.9045158343737101,
+        0.06602691566672568,
+        -0.2165393027249201
+      ],
+      "anatomical_height": null,
+      "whole_leaf_area": null,
+      "whole_plant_volume": null,
+      "status": "observed_cloud_distribution_only",
+      "limitation": "Retained point range is not stem-base height, complete canopy extent, tissue surface area or volume."
+    },
+    {
+      "specimen_id": "P4",
+      "source_sha256": "a0fb7091556524eeb4b9faea079dd1ab267d6f047e7bdf2640ba2691b5acb1b8",
+      "points": 69634,
+      "coordinate_unit": "conditional_m",
+      "observed_extent_xyz": [
+        0.17464434079060642,
+        0.17154955703374636,
+        0.4355300420756314
+      ],
+      "observed_p99_extent_xyz": [
+        0.16066115100915512,
+        0.1606297626741674,
+        0.41860787716342307
+      ],
+      "minimum_xyz": [
+        0.9512918035936153,
+        -0.15253831148946598,
+        -0.625514864846808
+      ],
+      "maximum_xyz": [
+        1.1259361443842217,
+        0.019011245544280395,
+        -0.1899848227711766
+      ],
+      "anatomical_height": null,
+      "whole_leaf_area": null,
+      "whole_plant_volume": null,
+      "status": "observed_cloud_distribution_only",
+      "limitation": "Retained point range is not stem-base height, complete canopy extent, tissue surface area or volume."
+    },
+    {
+      "specimen_id": "P5",
+      "source_sha256": "2d236b5d5c6387e211718e2f6b03f4bc7131f557c805228be3f57a4a25eab39f",
+      "points": 156185,
+      "coordinate_unit": "conditional_m",
+      "observed_extent_xyz": [
+        0.3332321121512316,
+        0.3523269133678708,
+        0.24387250568490754
+      ],
+      "observed_p99_extent_xyz": [
+        0.31204840254822397,
+        0.3318725703695115,
+        0.19387717690997086
+      ],
+      "minimum_xyz": [
+        1.1848277307268036,
+        -0.20594669784128256,
+        -0.6812808952597337
+      ],
+      "maximum_xyz": [
+        1.5180598428780352,
+        0.14638021552658825,
+        -0.43740838957482614
+      ],
+      "anatomical_height": null,
+      "whole_leaf_area": null,
+      "whole_plant_volume": null,
+      "status": "observed_cloud_distribution_only",
+      "limitation": "Retained point range is not stem-base height, complete canopy extent, tissue surface area or volume."
+    }
+  ],
+  "measurement_count": 3,
+  "error_summaries": {
+    "observed_chord": {
+      "n": 0,
+      "mean_signed_error": null,
+      "mae": null,
+      "rmse": null,
+      "status": "no_eligible_pairs",
+      "physical_accuracy_validated": false
+    },
+    "height": {
+      "n": 0,
+      "mean_signed_error": null,
+      "mae": null,
+      "rmse": null,
+      "status": "no_eligible_pairs",
+      "physical_accuracy_validated": false
+    },
+    "leaf_chord_length": {
+      "n": 0,
+      "mean_signed_error": null,
+      "mae": null,
+      "rmse": null,
+      "status": "no_eligible_pairs",
+      "physical_accuracy_validated": false
+    },
+    "leaf_section_width": {
+      "n": 0,
+      "mean_signed_error": null,
+      "mae": null,
+      "rmse": null,
+      "status": "no_eligible_pairs",
+      "physical_accuracy_validated": false
+    }
+  },
+  "source_clouds": [
+    {
+      "id": "P1",
+      "label": "Plant 1 \u2014 cleaned observed tissue",
+      "sha256": "83260a35fc2885ca60daf9e7d69d55c29b8131f263eb63d5f5a4c64ab2f45aae",
+      "context": false,
+      "source_count": 21891,
+      "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\result\\P1_reference.ply"
+    },
+    {
+      "id": "P2",
+      "label": "Plant 2 \u2014 cleaned observed tissue",
+      "sha256": "bb19b09daa8a122b4fd855ce3b866cd05060e2a20769afc1cba3456df30dd742",
+      "context": false,
+      "source_count": 74306,
+      "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\result\\P2_reference.ply"
+    },
+    {
+      "id": "P3",
+      "label": "Plant 3 \u2014 cleaned observed tissue",
+      "sha256": "1fa8e16b42ebf598eb67fbd1e301f02845bc753213ab45a31eeb68ca596866aa",
+      "context": false,
+      "source_count": 113901,
+      "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\result\\P3_reference.ply"
+    },
+    {
+      "id": "P4",
+      "label": "Plant 4 \u2014 cleaned observed tissue",
+      "sha256": "a0fb7091556524eeb4b9faea079dd1ab267d6f047e7bdf2640ba2691b5acb1b8",
+      "context": false,
+      "source_count": 69634,
+      "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\result\\P4_reference.ply"
+    },
+    {
+      "id": "P5",
+      "label": "Plant 5 \u2014 cleaned observed tissue",
+      "sha256": "2d236b5d5c6387e211718e2f6b03f4bc7131f557c805228be3f57a4a25eab39f",
+      "context": false,
+      "source_count": 156185,
+      "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\result\\P5_reference.ply"
+    },
+    {
+      "id": "fusion_context",
+      "label": "Original fused scene \u2014 base and organ context",
+      "sha256": "9caee0edcc1fb5f66a9cdd490a0054e2ab45872302a32a81cd24788dee01ab10",
+      "context": true,
+      "source_count": 1732490,
+      "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_d405_l515_fusion_20261007\\v1\\fused_review_reference.ply"
+    }
+  ],
+  "upright_R": [
+    [
+      0.9997320091584629,
+      -0.022989551247924105,
+      0.002718528536188047
+    ],
+    [
+      -0.023027275267776585,
+      -0.9996256969203645,
+      0.014771954854300693
+    ],
+    [
+      0.0023779103694299077,
+      -0.014830596410614249,
+      -0.9998871931134934
+    ]
+  ],
+  "notes": [
+    "Display point sampling never changes source files.",
+    "No acquisition/camera/gantry module is imported.",
+    "Geometry and scale are never fitted to physical validation traits."
+  ]
+}

@@ -1,0 +1,2527 @@
+{
+  "status": "PASS",
+  "independent_verifier_sha256": "fbb70378bb7d487ac52edb9a1e7760feb1eba541a717cf2374757105f9dfd5e7",
+  "checks_run": 406,
+  "checks_failed": 0,
+  "scope": "Every original indexed vertex, exported coordinate/colour, exact normalized float32 JS payload, recorded package hash, 15 source gallery images, and linked local HTTP assets. This does not validate semantic segmentation, physical scale, browser rendering, or traits.",
+  "results": {
+    "full_point_audit": [
+      {
+        "name": "plants_cleaned",
+        "points": 435917,
+        "inverse_display_max_absolute_error_m": 2.682205813009375e-08
+      },
+      {
+        "name": "original_fusion",
+        "points": 1732490,
+        "inverse_display_max_absolute_error_m": 2.6822079168820068e-08
+      },
+      {
+        "name": "uncertainty_overlay",
+        "points": 1039657,
+        "inverse_display_max_absolute_error_m": 2.6822079168820068e-08
+      },
+      {
+        "name": "scene_context",
+        "points": 692833,
+        "inverse_display_max_absolute_error_m": 2.6821917947089657e-08
+      },
+      {
+        "name": "P1",
+        "points": 21891,
+        "inverse_display_max_absolute_error_m": 7.660183543034549e-09
+      },
+      {
+        "name": "P2",
+        "points": 74306,
+        "inverse_display_max_absolute_error_m": 8.170049053957129e-09
+      },
+      {
+        "name": "P3",
+        "points": 113901,
+        "inverse_display_max_absolute_error_m": 8.032173592908975e-09
+      },
+      {
+        "name": "P4",
+        "points": 69634,
+        "inverse_display_max_absolute_error_m": 7.1388912559200435e-09
+      },
+      {
+        "name": "P5",
+        "points": 156185,
+        "inverse_display_max_absolute_error_m": 5.775065869961793e-09
+      }
+    ],
+    "source_gallery_audit": {
+      "view_count": 15,
+      "image_count": 15
+    },
+    "http_audit": {
+      "index_url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/index.html",
+      "assets": [
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/index.html",
+          "status": 200,
+          "bytes": 3431913,
+          "mime": "text/html",
+          "sha256": "946095773e30e8a048fe2f54a73103fa3832a43ff6545d47d7c013a352528b87"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/source_review.html",
+          "status": 200,
+          "bytes": 10499,
+          "mime": "text/html",
+          "sha256": "e6f0672a6c22ec378b64979430de9053877608200b7e357f48af227b87149c9c"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_d405_l515_fusion_20261007/index.html",
+          "status": 200,
+          "bytes": 5137,
+          "mime": "text/html",
+          "sha256": "f7f590d390da800eabed56b68a90ab564ccc4ed6df32d6209fd0042af7b37ddc"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/plants_cleaned_upright.ply",
+          "status": 200,
+          "bytes": 11769968,
+          "mime": "application/octet-stream",
+          "sha256": "a22c8fad0678a50c7f6a6baef3268618684d7ffce7dd01ecec0ed7d21847c4a0"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/CLEANUP_REPORT.md",
+          "status": 200,
+          "bytes": 8732,
+          "mime": "text/markdown",
+          "sha256": "f0346f221adeb77f381d27d085960a6a17ae3a04c2056760443921edc8882fbe"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_0.js",
+          "status": 200,
+          "bytes": 8718776,
+          "mime": "text/javascript",
+          "sha256": "e73e34f5366d7047d2b35e2339fea93c966d4ae2d832181866297c8916ebf7d4"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_1.js",
+          "status": 200,
+          "bytes": 34650214,
+          "mime": "text/javascript",
+          "sha256": "95191d5ad0493dd0e9bfb3e4fd39509f8f888c2f290a6201385286018c16ed0a"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_2.js",
+          "status": 200,
+          "bytes": 20793591,
+          "mime": "text/javascript",
+          "sha256": "293a3c58399771d52ae5c74ba94f85b071b597d3af2c74566a02daa7dc7d099d"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_3.js",
+          "status": 200,
+          "bytes": 13857049,
+          "mime": "text/javascript",
+          "sha256": "739cb373e124d46c99815acc041adf24b3618f930e7f633e7b9130626236bf94"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_4.js",
+          "status": 200,
+          "bytes": 438242,
+          "mime": "text/javascript",
+          "sha256": "9bc55871c4755b09c94ac720659a9473223c2472f373fb41c6f41fbbb123b9a9"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_5.js",
+          "status": 200,
+          "bytes": 1486542,
+          "mime": "text/javascript",
+          "sha256": "7d766c105fba28157a08d71f3eccfd949e49c064a005c9a8775993da86fd6b93"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_6.js",
+          "status": 200,
+          "bytes": 2278444,
+          "mime": "text/javascript",
+          "sha256": "88ecf865257bc716923936e5fffef6e2c5f79519c4380ffe39544a7953a84957"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_7.js",
+          "status": 200,
+          "bytes": 1393102,
+          "mime": "text/javascript",
+          "sha256": "2a05968e41b2c548be373b4c24a8c1a3f2c5d4ad8da6e4ed6455749a1f9dde84"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_8.js",
+          "status": 200,
+          "bytes": 3124124,
+          "mime": "text/javascript",
+          "sha256": "c4721fdc30a2172ed19a9f304e746908d19bb7a5aef3ea3d3f2914cf59878b27"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P1_143152_source_review.jpg",
+          "status": 200,
+          "bytes": 265462,
+          "mime": "image/jpeg",
+          "sha256": "3dafc6296ffaf01e38c05def02aaa71de74f30a2e5923d6507c83daa6684bacd"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P1_302754_source_review.jpg",
+          "status": 200,
+          "bytes": 271541,
+          "mime": "image/jpeg",
+          "sha256": "38f2b62a85c9d915340da9302db3f3e51796f5afa0686e55fdda733a2a721e1f"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P1_459309_source_review.jpg",
+          "status": 200,
+          "bytes": 291038,
+          "mime": "image/jpeg",
+          "sha256": "d3c844d81904585917e9b321da3a5738dfbcccc309e0fadadaf412352d4ca1e4"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P2_249551_source_review.jpg",
+          "status": 200,
+          "bytes": 270391,
+          "mime": "image/jpeg",
+          "sha256": "08dc2ceb6cf324d6556ed1b5c55222d507a66537ade6596cb1b4fb436a4db932"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P2_459309_source_review.jpg",
+          "status": 200,
+          "bytes": 288520,
+          "mime": "image/jpeg",
+          "sha256": "06f34be66d396f1b02534bad369092adf1e4f9743e6ac3e3737070ef9e9c037e"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P2_670589_source_review.jpg",
+          "status": 200,
+          "bytes": 302797,
+          "mime": "image/jpeg",
+          "sha256": "99658ab8025322c690a5ccbe9e84d10c24490c8b14379ace985c9091971d6e11"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p3_618150_annotated.jpg",
+          "status": 200,
+          "bytes": 274863,
+          "mime": "image/jpeg",
+          "sha256": "c7cdcc0fc791fdf751d6ba99d959d07bf0e571517e127473887b7bcccd72b22a"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p3_824869_annotated.jpg",
+          "status": 200,
+          "bytes": 274501,
+          "mime": "image/jpeg",
+          "sha256": "93ac5c57c0d51828050351ba9c91e192e16d5879a071b670b2fadaed8273d030"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p3_1055904_annotated.jpg",
+          "status": 200,
+          "bytes": 270357,
+          "mime": "image/jpeg",
+          "sha256": "a8433e34ac68b79f7992c788f49dda12bf108db1b5d909cd1306781c7a38b862"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p4_851470_annotated.jpg",
+          "status": 200,
+          "bytes": 277780,
+          "mime": "image/jpeg",
+          "sha256": "c5ad9d2546d2951f7f127848579c6896f18a54a2047e0c50e63cd9cdac553cdd"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p4_1003470_annotated.jpg",
+          "status": 200,
+          "bytes": 269075,
+          "mime": "image/jpeg",
+          "sha256": "5e78e4d0a4cb1d1707722066b8f2619ad48e59e6920ce1c5fb0b69a2f2830453"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p4_1160788_annotated.jpg",
+          "status": 200,
+          "bytes": 265137,
+          "mime": "image/jpeg",
+          "sha256": "2afdb53ba114b80eb22292ba0d433aa9874918fcf1ac493a99c42da793f70e84"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p5/P5_1030829_annotated.png",
+          "status": 200,
+          "bytes": 996319,
+          "mime": "image/png",
+          "sha256": "41ec5977001bcbc5464a3b34f29fca1fed300059fbbee650c029bff6c961e228"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p5/P5_1445026_annotated.png",
+          "status": 200,
+          "bytes": 883110,
+          "mime": "image/png",
+          "sha256": "a0195ea12af632f855afaf39c00b1100505ae63d53a02af27a39dbe087a574b1"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p5/P5_1639585_annotated.png",
+          "status": 200,
+          "bytes": 835246,
+          "mime": "image/png",
+          "sha256": "444420b18e48193c6b9eef804c432786c31a057acccfea72d7d21c0d47fc3832"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/plants_cleaned_display_provenance.npz",
+          "status": 200,
+          "bytes": 663309,
+          "mime": "application/octet-stream",
+          "sha256": "8b03f7af23673c52bdc5b6d39ede71eb6a128e1148eba9db5d6fbc348b0ee787"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/plants_cleaned_front.jpg",
+          "status": 200,
+          "bytes": 91908,
+          "mime": "image/jpeg",
+          "sha256": "ca3459053160ff24ea22eb004d305ed5abca1b174a86f49c0ead33235f55a5a6"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/original_fusion_upright.ply",
+          "status": 200,
+          "bytes": 46777440,
+          "mime": "application/octet-stream",
+          "sha256": "fb5cdaddf268de99e6bb0e0cfd9f022e15f468b3a68fbe44406736b3712761dc"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/original_fusion_display_provenance.npz",
+          "status": 200,
+          "bytes": 2396317,
+          "mime": "application/octet-stream",
+          "sha256": "82ef127f87fccefbbc0bcb2dd3008327276a63a23227e7d7757beaef3190335a"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/original_fusion_front.jpg",
+          "status": 200,
+          "bytes": 156469,
+          "mime": "image/jpeg",
+          "sha256": "300fa89af108ab75a20c0f6e12feccc3295119614d336e76ee701e2a6a17adf5"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/uncertainty_overlay_upright.ply",
+          "status": 200,
+          "bytes": 28070949,
+          "mime": "application/octet-stream",
+          "sha256": "dee0d35990edcc7cba6dbdc9d7399bcfa12d8a335fd94884055dfb3646a9a7e8"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/uncertainty_overlay_display_provenance.npz",
+          "status": 200,
+          "bytes": 1578493,
+          "mime": "application/octet-stream",
+          "sha256": "0cbebf897c37db6dfe286b8e16228c72f949e183b7f00e1d85fb1479af4b55d5"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/uncertainty_overlay_front.jpg",
+          "status": 200,
+          "bytes": 170527,
+          "mime": "image/jpeg",
+          "sha256": "027ab82266e1af02bf007389aa5ec4e0345d0b72575899a06310ca77bfb15367"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/scene_context_upright.ply",
+          "status": 200,
+          "bytes": 18706700,
+          "mime": "application/octet-stream",
+          "sha256": "046c8dd2c64b81f0420894035e571ed2be94d7d47955793875579050919219e4"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/scene_context_display_provenance.npz",
+          "status": 200,
+          "bytes": 1055556,
+          "mime": "application/octet-stream",
+          "sha256": "d65ae0326d19651feb01d1908abf576041214b0e11d3fef8a56e996095879232"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/scene_context_front.jpg",
+          "status": 200,
+          "bytes": 136782,
+          "mime": "image/jpeg",
+          "sha256": "5d93bd15539e69be05f9ee6b7e018bb11c069e2ded1886b9c22191c2a7e4aa76"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P1_upright.ply",
+          "status": 200,
+          "bytes": 591265,
+          "mime": "application/octet-stream",
+          "sha256": "9bc22dbc0b9ce8bbecf65cf9afac50aef53dcf887b514231d9190475f4925ad8"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P1_display_provenance.npz",
+          "status": 200,
+          "bytes": 33776,
+          "mime": "application/octet-stream",
+          "sha256": "4dac6cac9d5e761dff160840b8dc2d2afb70b2e45522c2ce9ac20064ee39d93b"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P1_front.jpg",
+          "status": 200,
+          "bytes": 39648,
+          "mime": "image/jpeg",
+          "sha256": "56ed56fdbe214d80d164b7e97224604d7e2150fbc33dfb6e45e949e451064a84"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P2_upright.ply",
+          "status": 200,
+          "bytes": 2006470,
+          "mime": "application/octet-stream",
+          "sha256": "60d3b45e77c85d7cc5836d1bbac0d57a2e8135e0d67f89bee1ea72a2077bccca"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P2_display_provenance.npz",
+          "status": 200,
+          "bytes": 113510,
+          "mime": "application/octet-stream",
+          "sha256": "4ce2c7de83dda22be1519f0ff914d7e3fd2c9f99e8fc8676c7e416ff9f86754a"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P2_front.jpg",
+          "status": 200,
+          "bytes": 45281,
+          "mime": "image/jpeg",
+          "sha256": "e656f3c39f5bd0be2bb4c6414c8a4656e50b5f5911b7aa12e8343e56db8ab3f1"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P3_upright.ply",
+          "status": 200,
+          "bytes": 3075536,
+          "mime": "application/octet-stream",
+          "sha256": "e9df48e0b32ee953b4e53fe3c710fa207797157e9e19d9d3307aa4a33e06bae1"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P3_display_provenance.npz",
+          "status": 200,
+          "bytes": 173681,
+          "mime": "application/octet-stream",
+          "sha256": "4bfc0f9a825ca4d038ff8e4b2d07de65947a90502b75aeb50d45fbeb5ca2c45e"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P3_front.jpg",
+          "status": 200,
+          "bytes": 46505,
+          "mime": "image/jpeg",
+          "sha256": "a89a848bc01758ee76e79f3f8e74b1650394a3ae487452050bf25966eaee66ac"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P4_upright.ply",
+          "status": 200,
+          "bytes": 1880326,
+          "mime": "application/octet-stream",
+          "sha256": "164dd96958c85ec365e74349a61e697e2e6560d81ff5008f44d150f5aaa78c44"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P4_display_provenance.npz",
+          "status": 200,
+          "bytes": 106501,
+          "mime": "application/octet-stream",
+          "sha256": "5cb95ddfdc214f8bce578aa044ddb4ca8cf86ba24fb8951ac04756b0dca79a2f"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P4_front.jpg",
+          "status": 200,
+          "bytes": 46765,
+          "mime": "image/jpeg",
+          "sha256": "35724d06ee94ad3e1fa7f37c5ddfe61a7b05a7d1261f767f1b2f0b66b1723022"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P5_upright.ply",
+          "status": 200,
+          "bytes": 4217204,
+          "mime": "application/octet-stream",
+          "sha256": "c1e9c6ca252fec8af3469c061ad722fb30455fdaefaff8cc27a607aa3473eff0"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P5_display_provenance.npz",
+          "status": 200,
+          "bytes": 237970,
+          "mime": "application/octet-stream",
+          "sha256": "c2b21826dc8705e74002c1abfb15cc97094da95b385f335bb3814143fa160a97"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P5_front.jpg",
+          "status": 200,
+          "bytes": 47704,
+          "mime": "image/jpeg",
+          "sha256": "9ada22fa3789da94ccfde79daa7ee3e45436e76f3d178ca2c234d42372ec474f"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/review_provenance.json",
+          "status": 200,
+          "bytes": 6514,
+          "mime": "application/json",
+          "sha256": "b343669e5cf715c449546bc050cfa0bb92d8d9feaaafb0f408331620460ee3c1"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/result/summary.json",
+          "status": 200,
+          "bytes": 6890,
+          "mime": "application/json",
+          "sha256": "642b6b0be164aa37e3b0c64449a489f7bc261e7ec053e06a34c5c0b8b4a6f54e"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/result/input_hashes.json",
+          "status": 200,
+          "bytes": 6056,
+          "mime": "application/json",
+          "sha256": "8cf4c7ad46b2b39dea8e7f9cd6b6708e42941f443021e2babb59b2486141a72b"
+        },
+        {
+          "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/result/output_hashes.json",
+          "status": 200,
+          "bytes": 1807,
+          "mime": "application/json",
+          "sha256": "6b34be56102b57ca7a864cb00a29e08174513d86bf5da5624f238cc6e0d9f161"
+        }
+      ]
+    }
+  },
+  "checks": [
+    {
+      "name": "classification_covers_input",
+      "passed": true,
+      "count": 1732490
+    },
+    {
+      "name": "classification_identity_order",
+      "passed": true
+    },
+    {
+      "name": "classification_labels_range",
+      "passed": true
+    },
+    {
+      "name": "classification_source_provenance:camera_id",
+      "passed": true
+    },
+    {
+      "name": "classification_source_provenance:original_point_index",
+      "passed": true
+    },
+    {
+      "name": "original_fusion_hash",
+      "passed": true
+    },
+    {
+      "name": "classification_hash",
+      "passed": true
+    },
+    {
+      "name": "package_script_hash",
+      "passed": true
+    },
+    {
+      "name": "rotation_matches_fusion",
+      "passed": true
+    },
+    {
+      "name": "rotation_orthogonal",
+      "passed": true,
+      "determinant": 1.0
+    },
+    {
+      "name": "full_points_flag",
+      "passed": true
+    },
+    {
+      "name": "all_nine_models",
+      "passed": true,
+      "count": 9
+    },
+    {
+      "name": "plants_cleaned:indices_exact",
+      "passed": true,
+      "count": 435917
+    },
+    {
+      "name": "plants_cleaned:unique_in_range",
+      "passed": true
+    },
+    {
+      "name": "plants_cleaned:ply_sha256",
+      "passed": true
+    },
+    {
+      "name": "plants_cleaned:js_sha256",
+      "passed": true
+    },
+    {
+      "name": "plants_cleaned:provenance_sha256",
+      "passed": true
+    },
+    {
+      "name": "plants_cleaned:full_point_count",
+      "passed": true
+    },
+    {
+      "name": "plants_cleaned:js_wrapper",
+      "passed": true
+    },
+    {
+      "name": "plants_cleaned:js_counts",
+      "passed": true
+    },
+    {
+      "name": "plants_cleaned:js_download_identity",
+      "passed": true
+    },
+    {
+      "name": "plants_cleaned:display_transform_finite",
+      "passed": true
+    },
+    {
+      "name": "plants_cleaned:every_js_coordinate_bit_exact",
+      "passed": true,
+      "points": 435917,
+      "encoding": "IEEE little-endian float32 of recorded display transform"
+    },
+    {
+      "name": "plants_cleaned:inverse_display_rounding_bound",
+      "passed": true,
+      "max_absolute_error_m": 2.682205813009375e-08
+    },
+    {
+      "name": "plants_cleaned:no_undocumented_colour_override",
+      "passed": true
+    },
+    {
+      "name": "plants_cleaned:every_js_colour_exact",
+      "passed": true,
+      "orange_override_points": 0
+    },
+    {
+      "name": "plants_cleaned:every_upright_ply_coordinate_exact",
+      "passed": true,
+      "points": 435917
+    },
+    {
+      "name": "plants_cleaned:every_upright_ply_colour_exact",
+      "passed": true
+    },
+    {
+      "name": "original_fusion:indices_exact",
+      "passed": true,
+      "count": 1732490
+    },
+    {
+      "name": "original_fusion:unique_in_range",
+      "passed": true
+    },
+    {
+      "name": "original_fusion:ply_sha256",
+      "passed": true
+    },
+    {
+      "name": "original_fusion:js_sha256",
+      "passed": true
+    },
+    {
+      "name": "original_fusion:provenance_sha256",
+      "passed": true
+    },
+    {
+      "name": "original_fusion:full_point_count",
+      "passed": true
+    },
+    {
+      "name": "original_fusion:js_wrapper",
+      "passed": true
+    },
+    {
+      "name": "original_fusion:js_counts",
+      "passed": true
+    },
+    {
+      "name": "original_fusion:js_download_identity",
+      "passed": true
+    },
+    {
+      "name": "original_fusion:display_transform_finite",
+      "passed": true
+    },
+    {
+      "name": "original_fusion:every_js_coordinate_bit_exact",
+      "passed": true,
+      "points": 1732490,
+      "encoding": "IEEE little-endian float32 of recorded display transform"
+    },
+    {
+      "name": "original_fusion:inverse_display_rounding_bound",
+      "passed": true,
+      "max_absolute_error_m": 2.6822079168820068e-08
+    },
+    {
+      "name": "original_fusion:no_undocumented_colour_override",
+      "passed": true
+    },
+    {
+      "name": "original_fusion:every_js_colour_exact",
+      "passed": true,
+      "orange_override_points": 0
+    },
+    {
+      "name": "original_fusion:every_upright_ply_coordinate_exact",
+      "passed": true,
+      "points": 1732490
+    },
+    {
+      "name": "original_fusion:every_upright_ply_colour_exact",
+      "passed": true
+    },
+    {
+      "name": "uncertainty_overlay:indices_exact",
+      "passed": true,
+      "count": 1039657
+    },
+    {
+      "name": "uncertainty_overlay:unique_in_range",
+      "passed": true
+    },
+    {
+      "name": "uncertainty_overlay:ply_sha256",
+      "passed": true
+    },
+    {
+      "name": "uncertainty_overlay:js_sha256",
+      "passed": true
+    },
+    {
+      "name": "uncertainty_overlay:provenance_sha256",
+      "passed": true
+    },
+    {
+      "name": "uncertainty_overlay:full_point_count",
+      "passed": true
+    },
+    {
+      "name": "uncertainty_overlay:js_wrapper",
+      "passed": true
+    },
+    {
+      "name": "uncertainty_overlay:js_counts",
+      "passed": true
+    },
+    {
+      "name": "uncertainty_overlay:js_download_identity",
+      "passed": true
+    },
+    {
+      "name": "uncertainty_overlay:display_transform_finite",
+      "passed": true
+    },
+    {
+      "name": "uncertainty_overlay:every_js_coordinate_bit_exact",
+      "passed": true,
+      "points": 1039657,
+      "encoding": "IEEE little-endian float32 of recorded display transform"
+    },
+    {
+      "name": "uncertainty_overlay:inverse_display_rounding_bound",
+      "passed": true,
+      "max_absolute_error_m": 2.6822079168820068e-08
+    },
+    {
+      "name": "uncertainty_overlay:every_js_colour_exact",
+      "passed": true,
+      "orange_override_points": 603740
+    },
+    {
+      "name": "uncertainty_overlay:every_upright_ply_coordinate_exact",
+      "passed": true,
+      "points": 1039657
+    },
+    {
+      "name": "uncertainty_overlay:every_upright_ply_colour_exact",
+      "passed": true
+    },
+    {
+      "name": "scene_context:indices_exact",
+      "passed": true,
+      "count": 692833
+    },
+    {
+      "name": "scene_context:unique_in_range",
+      "passed": true
+    },
+    {
+      "name": "scene_context:ply_sha256",
+      "passed": true
+    },
+    {
+      "name": "scene_context:js_sha256",
+      "passed": true
+    },
+    {
+      "name": "scene_context:provenance_sha256",
+      "passed": true
+    },
+    {
+      "name": "scene_context:full_point_count",
+      "passed": true
+    },
+    {
+      "name": "scene_context:js_wrapper",
+      "passed": true
+    },
+    {
+      "name": "scene_context:js_counts",
+      "passed": true
+    },
+    {
+      "name": "scene_context:js_download_identity",
+      "passed": true
+    },
+    {
+      "name": "scene_context:display_transform_finite",
+      "passed": true
+    },
+    {
+      "name": "scene_context:every_js_coordinate_bit_exact",
+      "passed": true,
+      "points": 692833,
+      "encoding": "IEEE little-endian float32 of recorded display transform"
+    },
+    {
+      "name": "scene_context:inverse_display_rounding_bound",
+      "passed": true,
+      "max_absolute_error_m": 2.6821917947089657e-08
+    },
+    {
+      "name": "scene_context:no_undocumented_colour_override",
+      "passed": true
+    },
+    {
+      "name": "scene_context:every_js_colour_exact",
+      "passed": true,
+      "orange_override_points": 0
+    },
+    {
+      "name": "scene_context:every_upright_ply_coordinate_exact",
+      "passed": true,
+      "points": 692833
+    },
+    {
+      "name": "scene_context:every_upright_ply_colour_exact",
+      "passed": true
+    },
+    {
+      "name": "P1:indices_exact",
+      "passed": true,
+      "count": 21891
+    },
+    {
+      "name": "P1:unique_in_range",
+      "passed": true
+    },
+    {
+      "name": "P1:ply_sha256",
+      "passed": true
+    },
+    {
+      "name": "P1:js_sha256",
+      "passed": true
+    },
+    {
+      "name": "P1:provenance_sha256",
+      "passed": true
+    },
+    {
+      "name": "P1:full_point_count",
+      "passed": true
+    },
+    {
+      "name": "P1:js_wrapper",
+      "passed": true
+    },
+    {
+      "name": "P1:js_counts",
+      "passed": true
+    },
+    {
+      "name": "P1:js_download_identity",
+      "passed": true
+    },
+    {
+      "name": "P1:display_transform_finite",
+      "passed": true
+    },
+    {
+      "name": "P1:every_js_coordinate_bit_exact",
+      "passed": true,
+      "points": 21891,
+      "encoding": "IEEE little-endian float32 of recorded display transform"
+    },
+    {
+      "name": "P1:inverse_display_rounding_bound",
+      "passed": true,
+      "max_absolute_error_m": 7.660183543034549e-09
+    },
+    {
+      "name": "P1:no_undocumented_colour_override",
+      "passed": true
+    },
+    {
+      "name": "P1:every_js_colour_exact",
+      "passed": true,
+      "orange_override_points": 0
+    },
+    {
+      "name": "P1:every_upright_ply_coordinate_exact",
+      "passed": true,
+      "points": 21891
+    },
+    {
+      "name": "P1:every_upright_ply_colour_exact",
+      "passed": true
+    },
+    {
+      "name": "P2:indices_exact",
+      "passed": true,
+      "count": 74306
+    },
+    {
+      "name": "P2:unique_in_range",
+      "passed": true
+    },
+    {
+      "name": "P2:ply_sha256",
+      "passed": true
+    },
+    {
+      "name": "P2:js_sha256",
+      "passed": true
+    },
+    {
+      "name": "P2:provenance_sha256",
+      "passed": true
+    },
+    {
+      "name": "P2:full_point_count",
+      "passed": true
+    },
+    {
+      "name": "P2:js_wrapper",
+      "passed": true
+    },
+    {
+      "name": "P2:js_counts",
+      "passed": true
+    },
+    {
+      "name": "P2:js_download_identity",
+      "passed": true
+    },
+    {
+      "name": "P2:display_transform_finite",
+      "passed": true
+    },
+    {
+      "name": "P2:every_js_coordinate_bit_exact",
+      "passed": true,
+      "points": 74306,
+      "encoding": "IEEE little-endian float32 of recorded display transform"
+    },
+    {
+      "name": "P2:inverse_display_rounding_bound",
+      "passed": true,
+      "max_absolute_error_m": 8.170049053957129e-09
+    },
+    {
+      "name": "P2:no_undocumented_colour_override",
+      "passed": true
+    },
+    {
+      "name": "P2:every_js_colour_exact",
+      "passed": true,
+      "orange_override_points": 0
+    },
+    {
+      "name": "P2:every_upright_ply_coordinate_exact",
+      "passed": true,
+      "points": 74306
+    },
+    {
+      "name": "P2:every_upright_ply_colour_exact",
+      "passed": true
+    },
+    {
+      "name": "P3:indices_exact",
+      "passed": true,
+      "count": 113901
+    },
+    {
+      "name": "P3:unique_in_range",
+      "passed": true
+    },
+    {
+      "name": "P3:ply_sha256",
+      "passed": true
+    },
+    {
+      "name": "P3:js_sha256",
+      "passed": true
+    },
+    {
+      "name": "P3:provenance_sha256",
+      "passed": true
+    },
+    {
+      "name": "P3:full_point_count",
+      "passed": true
+    },
+    {
+      "name": "P3:js_wrapper",
+      "passed": true
+    },
+    {
+      "name": "P3:js_counts",
+      "passed": true
+    },
+    {
+      "name": "P3:js_download_identity",
+      "passed": true
+    },
+    {
+      "name": "P3:display_transform_finite",
+      "passed": true
+    },
+    {
+      "name": "P3:every_js_coordinate_bit_exact",
+      "passed": true,
+      "points": 113901,
+      "encoding": "IEEE little-endian float32 of recorded display transform"
+    },
+    {
+      "name": "P3:inverse_display_rounding_bound",
+      "passed": true,
+      "max_absolute_error_m": 8.032173592908975e-09
+    },
+    {
+      "name": "P3:no_undocumented_colour_override",
+      "passed": true
+    },
+    {
+      "name": "P3:every_js_colour_exact",
+      "passed": true,
+      "orange_override_points": 0
+    },
+    {
+      "name": "P3:every_upright_ply_coordinate_exact",
+      "passed": true,
+      "points": 113901
+    },
+    {
+      "name": "P3:every_upright_ply_colour_exact",
+      "passed": true
+    },
+    {
+      "name": "P4:indices_exact",
+      "passed": true,
+      "count": 69634
+    },
+    {
+      "name": "P4:unique_in_range",
+      "passed": true
+    },
+    {
+      "name": "P4:ply_sha256",
+      "passed": true
+    },
+    {
+      "name": "P4:js_sha256",
+      "passed": true
+    },
+    {
+      "name": "P4:provenance_sha256",
+      "passed": true
+    },
+    {
+      "name": "P4:full_point_count",
+      "passed": true
+    },
+    {
+      "name": "P4:js_wrapper",
+      "passed": true
+    },
+    {
+      "name": "P4:js_counts",
+      "passed": true
+    },
+    {
+      "name": "P4:js_download_identity",
+      "passed": true
+    },
+    {
+      "name": "P4:display_transform_finite",
+      "passed": true
+    },
+    {
+      "name": "P4:every_js_coordinate_bit_exact",
+      "passed": true,
+      "points": 69634,
+      "encoding": "IEEE little-endian float32 of recorded display transform"
+    },
+    {
+      "name": "P4:inverse_display_rounding_bound",
+      "passed": true,
+      "max_absolute_error_m": 7.1388912559200435e-09
+    },
+    {
+      "name": "P4:no_undocumented_colour_override",
+      "passed": true
+    },
+    {
+      "name": "P4:every_js_colour_exact",
+      "passed": true,
+      "orange_override_points": 0
+    },
+    {
+      "name": "P4:every_upright_ply_coordinate_exact",
+      "passed": true,
+      "points": 69634
+    },
+    {
+      "name": "P4:every_upright_ply_colour_exact",
+      "passed": true
+    },
+    {
+      "name": "P5:indices_exact",
+      "passed": true,
+      "count": 156185
+    },
+    {
+      "name": "P5:unique_in_range",
+      "passed": true
+    },
+    {
+      "name": "P5:ply_sha256",
+      "passed": true
+    },
+    {
+      "name": "P5:js_sha256",
+      "passed": true
+    },
+    {
+      "name": "P5:provenance_sha256",
+      "passed": true
+    },
+    {
+      "name": "P5:full_point_count",
+      "passed": true
+    },
+    {
+      "name": "P5:js_wrapper",
+      "passed": true
+    },
+    {
+      "name": "P5:js_counts",
+      "passed": true
+    },
+    {
+      "name": "P5:js_download_identity",
+      "passed": true
+    },
+    {
+      "name": "P5:display_transform_finite",
+      "passed": true
+    },
+    {
+      "name": "P5:every_js_coordinate_bit_exact",
+      "passed": true,
+      "points": 156185,
+      "encoding": "IEEE little-endian float32 of recorded display transform"
+    },
+    {
+      "name": "P5:inverse_display_rounding_bound",
+      "passed": true,
+      "max_absolute_error_m": 5.775065869961793e-09
+    },
+    {
+      "name": "P5:no_undocumented_colour_override",
+      "passed": true
+    },
+    {
+      "name": "P5:every_js_colour_exact",
+      "passed": true,
+      "orange_override_points": 0
+    },
+    {
+      "name": "P5:every_upright_ply_coordinate_exact",
+      "passed": true,
+      "points": 156185
+    },
+    {
+      "name": "P5:every_upright_ply_colour_exact",
+      "passed": true
+    },
+    {
+      "name": "P1:reference_records_byte_exact",
+      "passed": true,
+      "points": 21891
+    },
+    {
+      "name": "P1:reference_indices_exact",
+      "passed": true
+    },
+    {
+      "name": "P1:reference_source_provenance:camera_id",
+      "passed": true
+    },
+    {
+      "name": "P1:reference_source_provenance:original_point_index",
+      "passed": true
+    },
+    {
+      "name": "P2:reference_records_byte_exact",
+      "passed": true,
+      "points": 74306
+    },
+    {
+      "name": "P2:reference_indices_exact",
+      "passed": true
+    },
+    {
+      "name": "P2:reference_source_provenance:camera_id",
+      "passed": true
+    },
+    {
+      "name": "P2:reference_source_provenance:original_point_index",
+      "passed": true
+    },
+    {
+      "name": "P3:reference_records_byte_exact",
+      "passed": true,
+      "points": 113901
+    },
+    {
+      "name": "P3:reference_indices_exact",
+      "passed": true
+    },
+    {
+      "name": "P3:reference_source_provenance:camera_id",
+      "passed": true
+    },
+    {
+      "name": "P3:reference_source_provenance:original_point_index",
+      "passed": true
+    },
+    {
+      "name": "P4:reference_records_byte_exact",
+      "passed": true,
+      "points": 69634
+    },
+    {
+      "name": "P4:reference_indices_exact",
+      "passed": true
+    },
+    {
+      "name": "P4:reference_source_provenance:camera_id",
+      "passed": true
+    },
+    {
+      "name": "P4:reference_source_provenance:original_point_index",
+      "passed": true
+    },
+    {
+      "name": "P5:reference_records_byte_exact",
+      "passed": true,
+      "points": 156185
+    },
+    {
+      "name": "P5:reference_indices_exact",
+      "passed": true
+    },
+    {
+      "name": "P5:reference_source_provenance:camera_id",
+      "passed": true
+    },
+    {
+      "name": "P5:reference_source_provenance:original_point_index",
+      "passed": true
+    },
+    {
+      "name": "plants_cleaned:reference_records_byte_exact",
+      "passed": true,
+      "points": 435917
+    },
+    {
+      "name": "plants_cleaned:reference_indices_exact",
+      "passed": true
+    },
+    {
+      "name": "plants_cleaned:reference_source_provenance:camera_id",
+      "passed": true
+    },
+    {
+      "name": "plants_cleaned:reference_source_provenance:original_point_index",
+      "passed": true
+    },
+    {
+      "name": "uncertain:reference_records_byte_exact",
+      "passed": true,
+      "points": 603740
+    },
+    {
+      "name": "uncertain:reference_indices_exact",
+      "passed": true
+    },
+    {
+      "name": "uncertain:reference_source_provenance:camera_id",
+      "passed": true
+    },
+    {
+      "name": "uncertain:reference_source_provenance:original_point_index",
+      "passed": true
+    },
+    {
+      "name": "scene_context:reference_records_byte_exact",
+      "passed": true,
+      "points": 692833
+    },
+    {
+      "name": "scene_context:reference_indices_exact",
+      "passed": true
+    },
+    {
+      "name": "scene_context:reference_source_provenance:camera_id",
+      "passed": true
+    },
+    {
+      "name": "scene_context:reference_source_provenance:original_point_index",
+      "passed": true
+    },
+    {
+      "name": "hash_manifest_exists:input_hashes.json",
+      "passed": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_d405_l515_fusion_20261007\\v1\\fused_review_reference.ply",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_d405_l515_fusion_20261007\\v1\\fused_point_provenance.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_d405_l515_fusion_20261007\\v1\\summary.json",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\profile.json",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\result\\icp_diagnostics.json",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_l515_20261007\\cross_camera\\pot_rigid_probe\\inputs.json",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_plant_cleanup_20261007\\source_review\\p1_p2\\P1_P2_basal_nonplant_depth_support.json",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_plant_cleanup_20261007\\source_review\\p1_p2\\P1_P2_multiview_polygon_review.json",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_plant_cleanup_20261007\\source_review\\p3_p4\\source_review_p3_p4.json",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_plant_cleanup_20261007\\source_review\\p5\\P5_source_review.json",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_plant_cleanup_20261007\\cleanup.py",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_143152.png",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_143152.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_302754.png",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_302754.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_459309.png",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_459309.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_249551.png",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_249551.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_670589.png",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_670589.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_618150.png",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_618150.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_824869.png",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_824869.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1055904.png",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1055904.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_851470.png",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_851470.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1003470.png",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1003470.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1160788.png",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1160788.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1030829.png",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1030829.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1445026.png",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1445026.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1639585.png",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1639585.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\input_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "hash_manifest_exists:output_hashes.json",
+      "passed": true
+    },
+    {
+      "name": "recorded_hash:input_hashes.json",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:P1_provenance.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:P1_reference.ply",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:P2_provenance.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:P2_reference.ply",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:P3_provenance.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:P3_reference.ply",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:P4_provenance.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:P4_reference.ply",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:P5_provenance.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:P5_reference.ply",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:plants_cleaned_provenance.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:plants_cleaned_reference.ply",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:point_classification.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:scene_context_provenance.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:scene_context_reference.ply",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:summary.json",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:uncertain_provenance.npz",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "recorded_hash:uncertain_reference.ply",
+      "passed": true,
+      "manifest": "generated\\research_plant_cleanup_20261007\\v1\\result\\output_hashes.json",
+      "exists": true
+    },
+    {
+      "name": "source_raw_exists:P1:143152",
+      "passed": true
+    },
+    {
+      "name": "source_raw_hash:P1:143152",
+      "passed": true
+    },
+    {
+      "name": "source_raw_exists:P1:302754",
+      "passed": true
+    },
+    {
+      "name": "source_raw_hash:P1:302754",
+      "passed": true
+    },
+    {
+      "name": "source_raw_exists:P1:459309",
+      "passed": true
+    },
+    {
+      "name": "source_raw_hash:P1:459309",
+      "passed": true
+    },
+    {
+      "name": "source_raw_exists:P2:249551",
+      "passed": true
+    },
+    {
+      "name": "source_raw_hash:P2:249551",
+      "passed": true
+    },
+    {
+      "name": "source_raw_exists:P2:459309",
+      "passed": true
+    },
+    {
+      "name": "source_raw_hash:P2:459309",
+      "passed": true
+    },
+    {
+      "name": "source_raw_exists:P2:670589",
+      "passed": true
+    },
+    {
+      "name": "source_raw_hash:P2:670589",
+      "passed": true
+    },
+    {
+      "name": "source_raw_exists:P3:618150",
+      "passed": true
+    },
+    {
+      "name": "source_raw_exists:P3:824869",
+      "passed": true
+    },
+    {
+      "name": "source_raw_exists:P3:1055904",
+      "passed": true
+    },
+    {
+      "name": "source_raw_exists:P4:851470",
+      "passed": true
+    },
+    {
+      "name": "source_raw_exists:P4:1003470",
+      "passed": true
+    },
+    {
+      "name": "source_raw_exists:P4:1160788",
+      "passed": true
+    },
+    {
+      "name": "source_raw_exists:P5:1030829",
+      "passed": true
+    },
+    {
+      "name": "source_raw_hash:P5:1030829",
+      "passed": true
+    },
+    {
+      "name": "source_raw_exists:P5:1445026",
+      "passed": true
+    },
+    {
+      "name": "source_raw_hash:P5:1445026",
+      "passed": true
+    },
+    {
+      "name": "source_raw_exists:P5:1639585",
+      "passed": true
+    },
+    {
+      "name": "source_raw_hash:P5:1639585",
+      "passed": true
+    },
+    {
+      "name": "source_gallery_15_distinct_views",
+      "passed": true,
+      "identities": [
+        [
+          "P1",
+          143152
+        ],
+        [
+          "P1",
+          302754
+        ],
+        [
+          "P1",
+          459309
+        ],
+        [
+          "P2",
+          249551
+        ],
+        [
+          "P2",
+          459309
+        ],
+        [
+          "P2",
+          670589
+        ],
+        [
+          "P3",
+          618150
+        ],
+        [
+          "P3",
+          824869
+        ],
+        [
+          "P3",
+          1055904
+        ],
+        [
+          "P4",
+          851470
+        ],
+        [
+          "P4",
+          1003470
+        ],
+        [
+          "P4",
+          1160788
+        ],
+        [
+          "P5",
+          1030829
+        ],
+        [
+          "P5",
+          1445026
+        ],
+        [
+          "P5",
+          1639585
+        ]
+      ]
+    },
+    {
+      "name": "source_gallery_all_expected_images",
+      "passed": true,
+      "linked_count": 15,
+      "expected_count": 15,
+      "missing": []
+    },
+    {
+      "name": "source_annotation_file:P1_459309_source_review.jpg",
+      "passed": true
+    },
+    {
+      "name": "source_annotation_file:p3_618150_annotated.jpg",
+      "passed": true
+    },
+    {
+      "name": "source_annotation_file:P5_1030829_annotated.png",
+      "passed": true
+    },
+    {
+      "name": "source_annotation_file:P1_302754_source_review.jpg",
+      "passed": true
+    },
+    {
+      "name": "source_annotation_file:p4_1160788_annotated.jpg",
+      "passed": true
+    },
+    {
+      "name": "source_annotation_file:P2_670589_source_review.jpg",
+      "passed": true
+    },
+    {
+      "name": "source_annotation_file:P1_143152_source_review.jpg",
+      "passed": true
+    },
+    {
+      "name": "source_annotation_file:p3_1055904_annotated.jpg",
+      "passed": true
+    },
+    {
+      "name": "source_annotation_file:p4_1003470_annotated.jpg",
+      "passed": true
+    },
+    {
+      "name": "source_annotation_file:P5_1639585_annotated.png",
+      "passed": true
+    },
+    {
+      "name": "source_annotation_file:P2_249551_source_review.jpg",
+      "passed": true
+    },
+    {
+      "name": "source_annotation_file:P5_1445026_annotated.png",
+      "passed": true
+    },
+    {
+      "name": "source_annotation_file:p4_851470_annotated.jpg",
+      "passed": true
+    },
+    {
+      "name": "source_annotation_file:P2_459309_source_review.jpg",
+      "passed": true
+    },
+    {
+      "name": "source_annotation_file:p3_824869_annotated.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/index.html",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/index.html",
+      "passed": true,
+      "status": 200,
+      "bytes": 3431913,
+      "mime": "text/html"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/source_review.html",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/source_review.html",
+      "passed": true,
+      "status": 200,
+      "bytes": 10499,
+      "mime": "text/html"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_d405_l515_fusion_20261007/index.html",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_d405_l515_fusion_20261007/index.html",
+      "passed": true,
+      "status": 200,
+      "bytes": 5137,
+      "mime": "text/html"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/plants_cleaned_upright.ply",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/plants_cleaned_upright.ply",
+      "passed": true,
+      "status": 200,
+      "bytes": 11769968,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/CLEANUP_REPORT.md",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/CLEANUP_REPORT.md",
+      "passed": true,
+      "status": 200,
+      "bytes": 8732,
+      "mime": "text/markdown"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_0.js",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_0.js",
+      "passed": true,
+      "status": 200,
+      "bytes": 8718776,
+      "mime": "text/javascript"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_1.js",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_1.js",
+      "passed": true,
+      "status": 200,
+      "bytes": 34650214,
+      "mime": "text/javascript"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_2.js",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_2.js",
+      "passed": true,
+      "status": 200,
+      "bytes": 20793591,
+      "mime": "text/javascript"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_3.js",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_3.js",
+      "passed": true,
+      "status": 200,
+      "bytes": 13857049,
+      "mime": "text/javascript"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_4.js",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_4.js",
+      "passed": true,
+      "status": 200,
+      "bytes": 438242,
+      "mime": "text/javascript"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_5.js",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_5.js",
+      "passed": true,
+      "status": 200,
+      "bytes": 1486542,
+      "mime": "text/javascript"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_6.js",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_6.js",
+      "passed": true,
+      "status": 200,
+      "bytes": 2278444,
+      "mime": "text/javascript"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_7.js",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_7.js",
+      "passed": true,
+      "status": 200,
+      "bytes": 1393102,
+      "mime": "text/javascript"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_8.js",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/cloud_8.js",
+      "passed": true,
+      "status": 200,
+      "bytes": 3124124,
+      "mime": "text/javascript"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P1_143152_source_review.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P1_143152_source_review.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 265462,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P1_302754_source_review.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P1_302754_source_review.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 271541,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P1_459309_source_review.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P1_459309_source_review.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 291038,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P2_249551_source_review.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P2_249551_source_review.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 270391,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P2_459309_source_review.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P2_459309_source_review.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 288520,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P2_670589_source_review.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p1_p2/P2_670589_source_review.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 302797,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p3_618150_annotated.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p3_618150_annotated.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 274863,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p3_824869_annotated.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p3_824869_annotated.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 274501,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p3_1055904_annotated.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p3_1055904_annotated.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 270357,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p4_851470_annotated.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p4_851470_annotated.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 277780,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p4_1003470_annotated.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p4_1003470_annotated.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 269075,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p4_1160788_annotated.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p3_p4/p4_1160788_annotated.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 265137,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p5/P5_1030829_annotated.png",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p5/P5_1030829_annotated.png",
+      "passed": true,
+      "status": 200,
+      "bytes": 996319,
+      "mime": "image/png"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p5/P5_1445026_annotated.png",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p5/P5_1445026_annotated.png",
+      "passed": true,
+      "status": 200,
+      "bytes": 883110,
+      "mime": "image/png"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p5/P5_1639585_annotated.png",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/source_review/p5/P5_1639585_annotated.png",
+      "passed": true,
+      "status": 200,
+      "bytes": 835246,
+      "mime": "image/png"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/plants_cleaned_display_provenance.npz",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/plants_cleaned_display_provenance.npz",
+      "passed": true,
+      "status": 200,
+      "bytes": 663309,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/plants_cleaned_front.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/plants_cleaned_front.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 91908,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/original_fusion_upright.ply",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/original_fusion_upright.ply",
+      "passed": true,
+      "status": 200,
+      "bytes": 46777440,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/original_fusion_display_provenance.npz",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/original_fusion_display_provenance.npz",
+      "passed": true,
+      "status": 200,
+      "bytes": 2396317,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/original_fusion_front.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/original_fusion_front.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 156469,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/uncertainty_overlay_upright.ply",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/uncertainty_overlay_upright.ply",
+      "passed": true,
+      "status": 200,
+      "bytes": 28070949,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/uncertainty_overlay_display_provenance.npz",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/uncertainty_overlay_display_provenance.npz",
+      "passed": true,
+      "status": 200,
+      "bytes": 1578493,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/uncertainty_overlay_front.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/uncertainty_overlay_front.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 170527,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/scene_context_upright.ply",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/scene_context_upright.ply",
+      "passed": true,
+      "status": 200,
+      "bytes": 18706700,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/scene_context_display_provenance.npz",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/scene_context_display_provenance.npz",
+      "passed": true,
+      "status": 200,
+      "bytes": 1055556,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/scene_context_front.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/scene_context_front.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 136782,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P1_upright.ply",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P1_upright.ply",
+      "passed": true,
+      "status": 200,
+      "bytes": 591265,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P1_display_provenance.npz",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P1_display_provenance.npz",
+      "passed": true,
+      "status": 200,
+      "bytes": 33776,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P1_front.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P1_front.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 39648,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P2_upright.ply",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P2_upright.ply",
+      "passed": true,
+      "status": 200,
+      "bytes": 2006470,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P2_display_provenance.npz",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P2_display_provenance.npz",
+      "passed": true,
+      "status": 200,
+      "bytes": 113510,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P2_front.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P2_front.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 45281,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P3_upright.ply",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P3_upright.ply",
+      "passed": true,
+      "status": 200,
+      "bytes": 3075536,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P3_display_provenance.npz",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P3_display_provenance.npz",
+      "passed": true,
+      "status": 200,
+      "bytes": 173681,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P3_front.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P3_front.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 46505,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P4_upright.ply",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P4_upright.ply",
+      "passed": true,
+      "status": 200,
+      "bytes": 1880326,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P4_display_provenance.npz",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P4_display_provenance.npz",
+      "passed": true,
+      "status": 200,
+      "bytes": 106501,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P4_front.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P4_front.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 46765,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P5_upright.ply",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P5_upright.ply",
+      "passed": true,
+      "status": 200,
+      "bytes": 4217204,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P5_display_provenance.npz",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P5_display_provenance.npz",
+      "passed": true,
+      "status": 200,
+      "bytes": 237970,
+      "mime": "application/octet-stream"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P5_front.jpg",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/P5_front.jpg",
+      "passed": true,
+      "status": 200,
+      "bytes": 47704,
+      "mime": "image/jpeg"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/review_provenance.json",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/review_provenance.json",
+      "passed": true,
+      "status": 200,
+      "bytes": 6514,
+      "mime": "application/json"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/result/summary.json",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/result/summary.json",
+      "passed": true,
+      "status": 200,
+      "bytes": 6890,
+      "mime": "application/json"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/result/input_hashes.json",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/result/input_hashes.json",
+      "passed": true,
+      "status": 200,
+      "bytes": 6056,
+      "mime": "application/json"
+    },
+    {
+      "name": "http_asset_local_exists:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/result/output_hashes.json",
+      "passed": true
+    },
+    {
+      "name": "http_asset:http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/result/output_hashes.json",
+      "passed": true,
+      "status": 200,
+      "bytes": 1807,
+      "mime": "application/json"
+    }
+  ]
+}

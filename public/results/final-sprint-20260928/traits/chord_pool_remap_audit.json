@@ -1,0 +1,90 @@
+{
+  "P1_O03_observed_blade_extent_base_fused_indices": {
+    "historical_count": 56,
+    "exact_d405_remap_count": 56,
+    "old_l515_not_remappable_count": 0,
+    "current_cleanup_plant_counts": {
+      "1": 56
+    },
+    "policy": "No reuse of old L515 vertex IDs in the rebuilt L515 cloud; unmappable historical points excluded from current candidate sensitivity."
+  },
+  "P1_O03_observed_blade_extent_tip_fused_indices": {
+    "historical_count": 14,
+    "exact_d405_remap_count": 14,
+    "old_l515_not_remappable_count": 0,
+    "current_cleanup_plant_counts": {
+      "1": 14
+    },
+    "policy": "No reuse of old L515 vertex IDs in the rebuilt L515 cloud; unmappable historical points excluded from current candidate sensitivity."
+  },
+  "P1_O03_true_tip_attempt_base_fused_indices": {
+    "historical_count": 74,
+    "exact_d405_remap_count": 74,
+    "old_l515_not_remappable_count": 0,
+    "current_cleanup_plant_counts": {
+      "1": 74
+    },
+    "policy": "No reuse of old L515 vertex IDs in the rebuilt L515 cloud; unmappable historical points excluded from current candidate sensitivity."
+  },
+  "P1_O03_true_tip_attempt_tip_fused_indices": {
+    "historical_count": 0,
+    "exact_d405_remap_count": 0,
+    "old_l515_not_remappable_count": 0,
+    "current_cleanup_plant_counts": {},
+    "policy": "No reuse of old L515 vertex IDs in the rebuilt L515 cloud; unmappable historical points excluded from current candidate sensitivity."
+  },
+  "P1_O04_ear_body_chord_base_fused_indices": {
+    "historical_count": 9,
+    "exact_d405_remap_count": 9,
+    "old_l515_not_remappable_count": 0,
+    "current_cleanup_plant_counts": {
+      "0": 1,
+      "1": 8
+    },
+    "policy": "No reuse of old L515 vertex IDs in the rebuilt L515 cloud; unmappable historical points excluded from current candidate sensitivity."
+  },
+  "P1_O04_ear_body_chord_tip_fused_indices": {
+    "historical_count": 0,
+    "exact_d405_remap_count": 0,
+    "old_l515_not_remappable_count": 0,
+    "current_cleanup_plant_counts": {},
+    "policy": "No reuse of old L515 vertex IDs in the rebuilt L515 cloud; unmappable historical points excluded from current candidate sensitivity."
+  },
+  "P3_O03_blade_chord_base_fused_indices": {
+    "historical_count": 158,
+    "exact_d405_remap_count": 158,
+    "old_l515_not_remappable_count": 0,
+    "current_cleanup_plant_counts": {
+      "0": 1,
+      "3": 157
+    },
+    "policy": "No reuse of old L515 vertex IDs in the rebuilt L515 cloud; unmappable historical points excluded from current candidate sensitivity."
+  },
+  "P3_O03_blade_chord_tip_fused_indices": {
+    "historical_count": 79,
+    "exact_d405_remap_count": 79,
+    "old_l515_not_remappable_count": 0,
+    "current_cleanup_plant_counts": {
+      "3": 79
+    },
+    "policy": "No reuse of old L515 vertex IDs in the rebuilt L515 cloud; unmappable historical points excluded from current candidate sensitivity."
+  },
+  "P5_O04_terminal_lamina_chord_base_fused_indices": {
+    "historical_count": 181,
+    "exact_d405_remap_count": 181,
+    "old_l515_not_remappable_count": 0,
+    "current_cleanup_plant_counts": {
+      "5": 181
+    },
+    "policy": "No reuse of old L515 vertex IDs in the rebuilt L515 cloud; unmappable historical points excluded from current candidate sensitivity."
+  },
+  "P5_O04_terminal_lamina_chord_tip_fused_indices": {
+    "historical_count": 74,
+    "exact_d405_remap_count": 73,
+    "old_l515_not_remappable_count": 1,
+    "current_cleanup_plant_counts": {
+      "5": 73
+    },
+    "policy": "No reuse of old L515 vertex IDs in the rebuilt L515 cloud; unmappable historical points excluded from current candidate sensitivity."
+  }
+}

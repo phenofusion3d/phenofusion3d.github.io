@@ -1,0 +1,346 @@
+{
+  "model_freeze_sha256": "3e923f72a3d9ac53f7b8f297c1a2e1121e701f5398844932cf37a7543e220859",
+  "policy": "All frozen variants scored. Missing predictions outside convex hull are out of domain, not failed interpolation. These manually proposed controls are independent of model fitting but not independently verified physical landmark truth.",
+  "results": [
+    {
+      "id": "green_central_lightglue_outdoor_affine",
+      "region": "green_central",
+      "map_sha256": "51ec4688b19d2d7250d3c32f62393147ec0c9fb505fc54586bb76d8b42432baf",
+      "checks": []
+    },
+    {
+      "id": "green_central_lightglue_outdoor_thin_plate_residual_s1",
+      "region": "green_central",
+      "map_sha256": "fc9bc96ff727dd7d6b94d0c0114249ffb9cca0f3ce01bdff0093723c7694c04a",
+      "checks": []
+    },
+    {
+      "id": "green_central_lightglue_outdoor_thin_plate_residual_s4",
+      "region": "green_central",
+      "map_sha256": "39e786427cbfe3bcaeddd30c9e6705cc7f6bb186fe2d3fe7e843535a3ed812de",
+      "checks": []
+    },
+    {
+      "id": "green_central_lightglue_outdoor_thin_plate_residual_s16",
+      "region": "green_central",
+      "map_sha256": "2b3813aafa99a54f1ab9b74b08f4612fee2a990f3513baa64715de211e321835",
+      "checks": []
+    },
+    {
+      "id": "green_lower_lightglue_outdoor_projective",
+      "region": "green_lower",
+      "map_sha256": "8959e6ede8ca6f2422f99b5bd88a8428eb4c29b9e7809f488acea71002a58336",
+      "checks": [
+        {
+          "id": "round2_lower_green_midvein_upper",
+          "confidence": "low-medium",
+          "inside_learned_inlier_hull": true,
+          "map_sample_supported": true,
+          "prediction_native_RGB_xy": [
+            1048.762451171875,
+            502.6719665527344
+          ],
+          "error_RGB_px": 19.34848165669644,
+          "global_only_extrapolation_error_RGB_px": null,
+          "extrapolation_does_not_validate_interpolation": false,
+          "HSI_localization_radius_px": 5,
+          "RGB_localization_radius_px": 3,
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "round2_lower_green_midvein_lower",
+          "confidence": "medium",
+          "inside_learned_inlier_hull": true,
+          "map_sample_supported": true,
+          "prediction_native_RGB_xy": [
+            1066.90966796875,
+            521.6976928710938
+          ],
+          "error_RGB_px": 7.9154429425053205,
+          "global_only_extrapolation_error_RGB_px": null,
+          "extrapolation_does_not_validate_interpolation": false,
+          "HSI_localization_radius_px": 4,
+          "RGB_localization_radius_px": 3,
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "round2_lower_green_right_branch",
+          "confidence": "low",
+          "inside_learned_inlier_hull": true,
+          "map_sample_supported": true,
+          "prediction_native_RGB_xy": [
+            1103.631103515625,
+            530.0851440429688
+          ],
+          "error_RGB_px": 6.806980572534514,
+          "global_only_extrapolation_error_RGB_px": null,
+          "extrapolation_does_not_validate_interpolation": false,
+          "HSI_localization_radius_px": 6,
+          "RGB_localization_radius_px": 4,
+          "eligible_for_strict_accuracy_gate": false
+        }
+      ]
+    },
+    {
+      "id": "green_lower_lightglue_outdoor_thin_plate_residual_s1",
+      "region": "green_lower",
+      "map_sha256": "155e690d4257fdd23b28a4a3ff196239a870961e776f3fe36e079e415e760cb8",
+      "checks": [
+        {
+          "id": "round2_lower_green_midvein_upper",
+          "confidence": "low-medium",
+          "inside_learned_inlier_hull": true,
+          "map_sample_supported": true,
+          "prediction_native_RGB_xy": [
+            1049.5810546875,
+            502.49005126953125
+          ],
+          "error_RGB_px": 20.033882831844465,
+          "global_only_extrapolation_error_RGB_px": null,
+          "extrapolation_does_not_validate_interpolation": false,
+          "HSI_localization_radius_px": 5,
+          "RGB_localization_radius_px": 3,
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "round2_lower_green_midvein_lower",
+          "confidence": "medium",
+          "inside_learned_inlier_hull": true,
+          "map_sample_supported": true,
+          "prediction_native_RGB_xy": [
+            1067.6744384765625,
+            522.5900268554688
+          ],
+          "error_RGB_px": 8.694481846196602,
+          "global_only_extrapolation_error_RGB_px": null,
+          "extrapolation_does_not_validate_interpolation": false,
+          "HSI_localization_radius_px": 4,
+          "RGB_localization_radius_px": 3,
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "round2_lower_green_right_branch",
+          "confidence": "low",
+          "inside_learned_inlier_hull": true,
+          "map_sample_supported": true,
+          "prediction_native_RGB_xy": [
+            1103.3546142578125,
+            529.1829223632812
+          ],
+          "error_RGB_px": 7.730548797750054,
+          "global_only_extrapolation_error_RGB_px": null,
+          "extrapolation_does_not_validate_interpolation": false,
+          "HSI_localization_radius_px": 6,
+          "RGB_localization_radius_px": 4,
+          "eligible_for_strict_accuracy_gate": false
+        }
+      ]
+    },
+    {
+      "id": "green_lower_lightglue_outdoor_thin_plate_residual_s4",
+      "region": "green_lower",
+      "map_sha256": "bc5d23ed5dd74cd4b1e3cce667ef642bd6066c81a4cba6b2884cb28067ce89f5",
+      "checks": [
+        {
+          "id": "round2_lower_green_midvein_upper",
+          "confidence": "low-medium",
+          "inside_learned_inlier_hull": true,
+          "map_sample_supported": true,
+          "prediction_native_RGB_xy": [
+            1049.5391845703125,
+            502.47186279296875
+          ],
+          "error_RGB_px": 19.988249001077204,
+          "global_only_extrapolation_error_RGB_px": null,
+          "extrapolation_does_not_validate_interpolation": false,
+          "HSI_localization_radius_px": 5,
+          "RGB_localization_radius_px": 3,
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "round2_lower_green_midvein_lower",
+          "confidence": "medium",
+          "inside_learned_inlier_hull": true,
+          "map_sample_supported": true,
+          "prediction_native_RGB_xy": [
+            1067.611328125,
+            522.6336669921875
+          ],
+          "error_RGB_px": 8.634610931211895,
+          "global_only_extrapolation_error_RGB_px": null,
+          "extrapolation_does_not_validate_interpolation": false,
+          "HSI_localization_radius_px": 4,
+          "RGB_localization_radius_px": 3,
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "round2_lower_green_right_branch",
+          "confidence": "low",
+          "inside_learned_inlier_hull": true,
+          "map_sample_supported": true,
+          "prediction_native_RGB_xy": [
+            1103.333984375,
+            529.217529296875
+          ],
+          "error_RGB_px": 7.7098365353289475,
+          "global_only_extrapolation_error_RGB_px": null,
+          "extrapolation_does_not_validate_interpolation": false,
+          "HSI_localization_radius_px": 6,
+          "RGB_localization_radius_px": 4,
+          "eligible_for_strict_accuracy_gate": false
+        }
+      ]
+    },
+    {
+      "id": "green_lower_lightglue_outdoor_thin_plate_residual_s16",
+      "region": "green_lower",
+      "map_sha256": "d528b63533305b1bedac7915a056c6048b9ac080ae22309f8df056877023fcc5",
+      "checks": [
+        {
+          "id": "round2_lower_green_midvein_upper",
+          "confidence": "low-medium",
+          "inside_learned_inlier_hull": true,
+          "map_sample_supported": true,
+          "prediction_native_RGB_xy": [
+            1049.3648681640625,
+            502.4311828613281
+          ],
+          "error_RGB_px": 19.811382117406477,
+          "global_only_extrapolation_error_RGB_px": null,
+          "extrapolation_does_not_validate_interpolation": false,
+          "HSI_localization_radius_px": 5,
+          "RGB_localization_radius_px": 3,
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "round2_lower_green_midvein_lower",
+          "confidence": "medium",
+          "inside_learned_inlier_hull": true,
+          "map_sample_supported": true,
+          "prediction_native_RGB_xy": [
+            1067.4652099609375,
+            522.7024536132812
+          ],
+          "error_RGB_px": 8.494305195927879,
+          "global_only_extrapolation_error_RGB_px": null,
+          "extrapolation_does_not_validate_interpolation": false,
+          "HSI_localization_radius_px": 4,
+          "RGB_localization_radius_px": 3,
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "round2_lower_green_right_branch",
+          "confidence": "low",
+          "inside_learned_inlier_hull": true,
+          "map_sample_supported": true,
+          "prediction_native_RGB_xy": [
+            1103.28564453125,
+            529.3157958984375
+          ],
+          "error_RGB_px": 7.646896169007265,
+          "global_only_extrapolation_error_RGB_px": null,
+          "extrapolation_does_not_validate_interpolation": false,
+          "HSI_localization_radius_px": 6,
+          "RGB_localization_radius_px": 4,
+          "eligible_for_strict_accuracy_gate": false
+        }
+      ]
+    },
+    {
+      "id": "green_upper_lightglue_outdoor_projective",
+      "region": "green_upper",
+      "map_sha256": "9b11adf7a9d9c0d08aa853c2f1be23b16dcb506c0c1e352723e8f38b3f9a8c75",
+      "checks": []
+    },
+    {
+      "id": "green_upper_lightglue_outdoor_thin_plate_residual_s1",
+      "region": "green_upper",
+      "map_sha256": "9bee5bff1408f5fc3bc118b6860aef0519c7597b0e4e82eaf08bd7013b557463",
+      "checks": []
+    },
+    {
+      "id": "green_upper_lightglue_outdoor_thin_plate_residual_s4",
+      "region": "green_upper",
+      "map_sha256": "0cc642432850a2a109f89f2c88b91239d8de0b2327ab76db89f8279811d07c3a",
+      "checks": []
+    },
+    {
+      "id": "green_upper_lightglue_outdoor_thin_plate_residual_s16",
+      "region": "green_upper",
+      "map_sha256": "bc4930cd6392dc4ee3a7eb7ccf8083f6aa9ccc6779645072ac1433c693a19e51",
+      "checks": []
+    },
+    {
+      "id": "red_lower_lightglue_outdoor_affine",
+      "region": "red_lower",
+      "map_sha256": "4d70dbe4b7f2f5152669cde66f05c4568d4ea0adbebf44f5230a94ebad30abbe",
+      "checks": []
+    },
+    {
+      "id": "red_lower_lightglue_outdoor_thin_plate_residual_s1",
+      "region": "red_lower",
+      "map_sha256": "fe5d13604ed17fb6c109e6427c9521ae839eea149e64f7b96c6b947db25be83f",
+      "checks": []
+    },
+    {
+      "id": "red_lower_lightglue_outdoor_thin_plate_residual_s4",
+      "region": "red_lower",
+      "map_sha256": "645e51a9daa8bc80d7e9411d14a430f0bc42bc677f77cb7af3c734d83b27c375",
+      "checks": []
+    },
+    {
+      "id": "red_lower_lightglue_outdoor_thin_plate_residual_s16",
+      "region": "red_lower",
+      "map_sha256": "61426c7b06faf1f97ca1bbd4e44570e2a914f33818cb4fef6acedbc4a018167c",
+      "checks": []
+    },
+    {
+      "id": "red_upper_lightglue_outdoor_projective",
+      "region": "red_upper",
+      "map_sha256": "d094e9bfeb5fa346735314539ad45d3b545bc39ce8e86be134fc8bcb22d76833",
+      "checks": []
+    },
+    {
+      "id": "red_upper_lightglue_outdoor_thin_plate_residual_s1",
+      "region": "red_upper",
+      "map_sha256": "bd421963a7b0ea7fb8d19fe05c3a99a86f17428fc9381802d9d73cf6d732dfbc",
+      "checks": []
+    },
+    {
+      "id": "red_upper_lightglue_outdoor_thin_plate_residual_s4",
+      "region": "red_upper",
+      "map_sha256": "297f4d9a2d8782ceb91563d630f40dec1ff62c0bdc724e785fa57294ef99ec37",
+      "checks": []
+    },
+    {
+      "id": "red_upper_lightglue_outdoor_thin_plate_residual_s16",
+      "region": "red_upper",
+      "map_sha256": "88f7a5374c209a34a07e189f42874a97e08c80908d7b7b2684702c55de3d1df1",
+      "checks": []
+    },
+    {
+      "id": "variegated_right_lightglue_outdoor_affine",
+      "region": "variegated_right",
+      "map_sha256": "691163c21fbfa0d8d0bd616bf75f99616bce4ca8b33bfd554f505413984d04e9",
+      "checks": []
+    },
+    {
+      "id": "variegated_right_lightglue_outdoor_thin_plate_residual_s1",
+      "region": "variegated_right",
+      "map_sha256": "caaa1066f7113343027bea572755c580ace7cf4071ea30262156683d43f8a157",
+      "checks": []
+    },
+    {
+      "id": "variegated_right_lightglue_outdoor_thin_plate_residual_s4",
+      "region": "variegated_right",
+      "map_sha256": "b90bf41a4f76dc0202870353fc2993934d82906448059155b97159f677b0e9cb",
+      "checks": []
+    },
+    {
+      "id": "variegated_right_lightglue_outdoor_thin_plate_residual_s16",
+      "region": "variegated_right",
+      "map_sha256": "62012e7fd008df827a108bcde3ca189f1a63fb347c458b4f590bd2a30980ccd9",
+      "checks": []
+    }
+  ]
+}

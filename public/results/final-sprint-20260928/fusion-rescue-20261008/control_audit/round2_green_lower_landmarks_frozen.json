@@ -1,0 +1,77 @@
+{
+  "records": [
+    {
+      "id": "round2_lower_green_midvein_upper",
+      "region": "green_lower",
+      "hsi_rotated_xy": [
+        1833,
+        594
+      ],
+      "native_hsi_column_line": [
+        429,
+        1833
+      ],
+      "native_RGB_xy": [
+        1031,
+        495
+      ],
+      "hsi_uncertainty_radius_px": 5,
+      "RGB_uncertainty_radius_px": 3,
+      "confidence": "low-medium",
+      "feature": "Mainrib branch above the old central SIFT feature; dark HSI and closely spaced forks limit exact assignment.",
+      "role": "second_round_reserved_evaluation",
+      "RGB_frame": 1055904,
+      "selection_policy": "Raw gridded source images only. Candidate maps unchanged, no predicted marker overlay used to choose or adjust coordinates. This adaptive second round follows prior results; all3 attempts retained.",
+      "independent_operator_ground_truth": false
+    },
+    {
+      "id": "round2_lower_green_midvein_lower",
+      "region": "green_lower",
+      "hsi_rotated_xy": [
+        1841,
+        631
+      ],
+      "native_hsi_column_line": [
+        392,
+        1841
+      ],
+      "native_RGB_xy": [
+        1059,
+        522
+      ],
+      "hsi_uncertainty_radius_px": 4,
+      "RGB_uncertainty_radius_px": 3,
+      "confidence": "medium",
+      "feature": "Main vein branch between old central feature and previously exposed hand distal fork; broad junction, no descriptor centre assumed.",
+      "role": "second_round_reserved_evaluation",
+      "RGB_frame": 1055904,
+      "selection_policy": "Raw gridded source images only. Candidate maps unchanged, no predicted marker overlay used to choose or adjust coordinates. This adaptive second round follows prior results; all3 attempts retained.",
+      "independent_operator_ground_truth": false
+    },
+    {
+      "id": "round2_lower_green_right_branch",
+      "region": "green_lower",
+      "hsi_rotated_xy": [
+        1866,
+        650
+      ],
+      "native_hsi_column_line": [
+        373,
+        1866
+      ],
+      "native_RGB_xy": [
+        1107,
+        536
+      ],
+      "hsi_uncertainty_radius_px": 6,
+      "RGB_uncertainty_radius_px": 4,
+      "confidence": "low",
+      "feature": "Right lateral branch/fork toward margin; repetitive vein topology and foreshortening make material identity ambiguous.",
+      "role": "second_round_reserved_evaluation",
+      "RGB_frame": 1055904,
+      "selection_policy": "Raw gridded source images only. Candidate maps unchanged, no predicted marker overlay used to choose or adjust coordinates. This adaptive second round follows prior results; all3 attempts retained.",
+      "independent_operator_ground_truth": false
+    }
+  ],
+  "policy": "None is unambiguous subpixel truth; medium mark is usable only as a provisional localization check."
+}

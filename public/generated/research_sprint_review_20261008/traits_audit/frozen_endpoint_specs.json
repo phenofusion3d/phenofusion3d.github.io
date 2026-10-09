@@ -1,0 +1,52 @@
+[
+  {
+    "id": "P3.O05.length_probe",
+    "manual_dimension_id": "P3.O05.length",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        551,
+        467
+      ],
+      [
+        431,
+        479
+      ]
+    ],
+    "roles": [
+      "visible basal lamina/petiole junction candidate",
+      "terminal margin"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Full visible lobed blade base-to-tip straight chord candidate; held-flat reference convention and tissue pose remain conditional."
+  },
+  {
+    "id": "P3.O05.width_probe",
+    "manual_dimension_id": "P3.O05.width",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        510,
+        431
+      ],
+      [
+        516,
+        521
+      ]
+    ],
+    "roles": [
+      "upper lateral lobe margin",
+      "opposite lower lateral lobe margin"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Opposing visible lobe-margin chord across the same blade; anatomical mapping of the ruler cross-section remains conditional, and chord is not a geodesic or certified maximum width."
+  }
+]

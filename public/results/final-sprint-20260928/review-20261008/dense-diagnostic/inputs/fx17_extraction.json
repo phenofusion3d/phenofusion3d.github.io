@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "dataset_label": "20260928 fx17: native spectral pixels selected by rejected local-warp diagnostic",
+  "header": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\20260928\\003-specim-fx17.hdr",
+  "data": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\20260928\\003-specim-fx17.bil",
+  "suspected_clipping_dn": 65520,
+  "sampling": {
+    "line_step": 1,
+    "column_step": 1
+  },
+  "selection": {
+    "review_status": "assistant_reviewed",
+    "provenance": "REJECTED FOR MEASUREMENT: this local image warp failed its registration check (maximum reviewed-point error about 8.25 RGB pixels). This is a diagnostic overlay of one visible green-leaf patch on Plant 5, provided to inspect the failure, not an accepted spectral fusion result. Colours use measured native spectral pixels; geometry uses unchanged existing source points. Local image registration is provisional; this is not complete five-plant spectral coverage, independently validated physical registration, calibrated reflectance or plant-health diagnosis. Source mapping evidence: C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_sprint_review_20261008\\multiview_probe\\projection_demo\\evidence.json",
+    "label_mask_npy": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_sprint_review_20261008\\fusion_candidates\\candidate_result\\inputs\\fx17_exact_pixels.npy",
+    "label_names": {
+      "1": "P5 visible green-leaf candidate patch"
+    }
+  },
+  "normalization": {
+    "white_roi": [
+      8,
+      45,
+      90,
+      520
+    ],
+    "dark_roi": [
+      2080,
+      2127,
+      0,
+      640
+    ],
+    "white_identity": "User-confirmed white board at scan start; spectral reflectance unknown",
+    "settings_assumption": "User confirmed fixed exposure; gain and source export packing not independently established",
+    "dark_status": "assumed_tail",
+    "dark_provenance": "Abrupt final low-signal tail; shutter closure unconfirmed. This is an explicit assumed offset, not certified dark calibration."
+  },
+  "indices": [
+    "NDVI_800_680",
+    "NDRE_790_720",
+    "GNDVI_800_550",
+    "PRI_531_570",
+    "PSRI_678_500_750",
+    "SIPI_800_445_680"
+  ],
+  "max_band_error_nm": 3
+}

@@ -1,0 +1,402 @@
+{
+  "status": "FROZEN_SILHOUETTE_CAMERA_SELECTION_CANDIDATES",
+  "primary_selection": "Lowest colour-class distance objective, before reserved material-point scores.",
+  "source_points": 18215,
+  "class_names": [
+    "green",
+    "red"
+  ],
+  "limitations": [
+    "Colour thresholds are heuristic and modality/illumination dependent.",
+    "Incomplete geometry and occlusions can bias silhouette objectives.",
+    "Symmetric pixel coverage is not guaranteed; score is projected-source-to-observed-class distance.",
+    "Near-colour agreement does not prove exact material correspondence.",
+    "No native spectral data assigned; this is camera-model search only.",
+    "Reserved label coordinates and errors were not consumed; labels share this recorded imagery, not independent physical acquisition."
+  ],
+  "class_thresholds": {
+    "green": "g>1.1r and g>1.05b and g>0.15",
+    "red": "r>1.3g and r>1.2b and r>0.15"
+  },
+  "native_roi": [
+    240,
+    1510,
+    1024,
+    2010
+  ],
+  "varied_parameters": [
+    "ah",
+    "bh",
+    "lh"
+  ],
+  "bounds_normalized": [
+    [
+      0.5,
+      1.8
+    ],
+    [
+      0.5,
+      1.6
+    ],
+    [
+      -2,
+      2
+    ]
+  ],
+  "normalization": [
+    500,
+    1,
+    100
+  ],
+  "initial": {
+    "parameters": [
+      -1633.814554989236,
+      545.4917826354392,
+      497.312424793791,
+      -0.002059066301645965,
+      1.0149182119472204,
+      1295.9988156059337,
+      8.448434793145509,
+      -0.3811945513533026,
+      1123.0879355906234
+    ],
+    "objective": {
+      "score": 104.99390963801925,
+      "class_mean_clipped_squared_distance": [
+        28.856287002563477,
+        180.86439514160156
+      ],
+      "within_3px_fraction": [
+        0.8946084038740182,
+        0.8733829870638965
+      ],
+      "camera": {
+        "near_orthogonal_scan_principal_column_px": 540.7373723566976,
+        "near_orthogonal_scan_focal_pixels": 1608.7021807947244,
+        "cross_section_camera_yz_m": [
+          -0.02459791685015531,
+          -0.9853509740681283
+        ],
+        "line_height_tilt_degrees": -0.016852156050491725
+      }
+    }
+  },
+  "models": [
+    {
+      "id": "colour_class_geometry_seed_+0",
+      "parameters": [
+        -1633.814554989236,
+        405.2794212180698,
+        497.312424793791,
+        -0.002059066301645965,
+        0.7833099141225464,
+        1295.9988156059337,
+        8.448434793145509,
+        -1.2679292514000926,
+        1123.0879355906234
+      ],
+      "nfev": 418,
+      "success": true,
+      "objective": {
+        "score": 6.463248680019034,
+        "class_mean_clipped_squared_distance": [
+          7.279628276824951,
+          5.6063995361328125
+        ],
+        "within_3px_fraction": [
+          0.8490048043925875,
+          0.9208153665229322
+        ],
+        "camera": {
+          "near_orthogonal_scan_principal_column_px": 522.872683405921,
+          "near_orthogonal_scan_focal_pixels": 2084.408605112264,
+          "cross_section_camera_yz_m": [
+            -0.012298905483461412,
+            -1.276666241843809
+          ],
+          "line_height_tilt_degrees": -0.056053622301032585
+        }
+      },
+      "coordinates": {
+        "origin_calibration_reference_m": [
+          0.8704091724291624,
+          0.09157517687069369,
+          0.8987493593403587
+        ],
+        "basis_columns": [
+          [
+            0.999734013399787,
+            0.023061659476095068,
+            0.0002496272484900125
+          ],
+          [
+            -0.023062852848396834,
+            0.9996286036122375,
+            0.014517563801871896
+          ],
+          [
+            8.52645749896175e-05,
+            -0.014519459440931736,
+            0.999894583457424
+          ]
+        ],
+        "T_plant_reference_from_calibration": [
+          [
+            0.9999986382803937,
+            0.0014222016324722635,
+            -0.0008371259612493966,
+            -0.0011276114277333066
+          ],
+          [
+            -0.0014274139201005116,
+            0.9999793928940846,
+            -0.0062590955160321225,
+            0.007743867551161987
+          ],
+          [
+            0.0008282070146453647,
+            0.0062602819181490025,
+            0.9999800612729467,
+            0.00306307125988818
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scan_002_to_003_column_line_translation": [
+          -0.02618719555123672,
+          0.6889836310192123
+        ]
+      },
+      "sensor": "fx10",
+      "parameter_order": [
+        "ay",
+        "ah",
+        "a0",
+        "by",
+        "bh",
+        "lx",
+        "ly",
+        "lh",
+        "l0"
+      ],
+      "input_3d_field_for_new_controls": "depth_lift_reference_xyz_m",
+      "prediction_recipe": "cal=(P_plant_m-T[:3,3])@T[:3,:3]; XYZ=(cal-origin)@basis; column=(ay*Y+ah*Z+a0)/(1+by*Y+bh*Z); line=lx*X+ly*Y+lh*Z+l0; add scan translation to obtain native003 column,line.",
+      "no_reserved_labels_consumed": true
+    },
+    {
+      "id": "colour_class_geometry_seed_-0.2",
+      "parameters": [
+        -1633.814554989236,
+        435.84338759481744,
+        497.312424793791,
+        -0.002059066301645965,
+        0.812563445338063,
+        1295.9988156059337,
+        8.448434793145509,
+        -2.9964139261290024,
+        1123.0879355906234
+      ],
+      "nfev": 293,
+      "success": true,
+      "objective": {
+        "score": 7.228630841636343,
+        "class_mean_clipped_squared_distance": [
+          7.7716383934021,
+          6.404602527618408
+        ],
+        "within_3px_fraction": [
+          0.8580797681689926,
+          0.9184633477067816
+        ],
+        "camera": {
+          "near_orthogonal_scan_principal_column_px": 541.4724380251907,
+          "near_orthogonal_scan_focal_pixels": 2009.3195635444217,
+          "cross_section_camera_yz_m": [
+            -0.023928511059630873,
+            -1.230733767471789
+          ],
+          "line_height_tilt_degrees": -0.13246765038795077
+        }
+      },
+      "coordinates": {
+        "origin_calibration_reference_m": [
+          0.8704091724291624,
+          0.09157517687069369,
+          0.8987493593403587
+        ],
+        "basis_columns": [
+          [
+            0.999734013399787,
+            0.023061659476095068,
+            0.0002496272484900125
+          ],
+          [
+            -0.023062852848396834,
+            0.9996286036122375,
+            0.014517563801871896
+          ],
+          [
+            8.52645749896175e-05,
+            -0.014519459440931736,
+            0.999894583457424
+          ]
+        ],
+        "T_plant_reference_from_calibration": [
+          [
+            0.9999986382803937,
+            0.0014222016324722635,
+            -0.0008371259612493966,
+            -0.0011276114277333066
+          ],
+          [
+            -0.0014274139201005116,
+            0.9999793928940846,
+            -0.0062590955160321225,
+            0.007743867551161987
+          ],
+          [
+            0.0008282070146453647,
+            0.0062602819181490025,
+            0.9999800612729467,
+            0.00306307125988818
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scan_002_to_003_column_line_translation": [
+          -0.02618719555123672,
+          0.6889836310192123
+        ]
+      },
+      "sensor": "fx10",
+      "parameter_order": [
+        "ay",
+        "ah",
+        "a0",
+        "by",
+        "bh",
+        "lx",
+        "ly",
+        "lh",
+        "l0"
+      ],
+      "input_3d_field_for_new_controls": "depth_lift_reference_xyz_m",
+      "prediction_recipe": "cal=(P_plant_m-T[:3,3])@T[:3,:3]; XYZ=(cal-origin)@basis; column=(ay*Y+ah*Z+a0)/(1+by*Y+bh*Z); line=lx*X+ly*Y+lh*Z+l0; add scan translation to obtain native003 column,line.",
+      "no_reserved_labels_consumed": true
+    },
+    {
+      "id": "colour_class_geometry_seed_+0.2",
+      "parameters": [
+        -1633.814554989236,
+        404.9590347673047,
+        497.312424793791,
+        -0.002059066301645965,
+        0.7816746882638184,
+        1295.9988156059337,
+        8.448434793145509,
+        -1.563593349593944,
+        1123.0879355906234
+      ],
+      "nfev": 312,
+      "success": true,
+      "objective": {
+        "score": 6.399383150566694,
+        "class_mean_clipped_squared_distance": [
+          6.989405632019043,
+          5.76377010345459
+        ],
+        "within_3px_fraction": [
+          0.8497674063906048,
+          0.9196393571148569
+        ],
+        "camera": {
+          "near_orthogonal_scan_principal_column_px": 523.5681175051013,
+          "near_orthogonal_scan_focal_pixels": 2088.7672557855803,
+          "cross_section_camera_yz_m": [
+            -0.012710792361464402,
+            -1.2793380512107688
+          ],
+          "line_height_tilt_degrees": -0.06912456384500931
+        }
+      },
+      "coordinates": {
+        "origin_calibration_reference_m": [
+          0.8704091724291624,
+          0.09157517687069369,
+          0.8987493593403587
+        ],
+        "basis_columns": [
+          [
+            0.999734013399787,
+            0.023061659476095068,
+            0.0002496272484900125
+          ],
+          [
+            -0.023062852848396834,
+            0.9996286036122375,
+            0.014517563801871896
+          ],
+          [
+            8.52645749896175e-05,
+            -0.014519459440931736,
+            0.999894583457424
+          ]
+        ],
+        "T_plant_reference_from_calibration": [
+          [
+            0.9999986382803937,
+            0.0014222016324722635,
+            -0.0008371259612493966,
+            -0.0011276114277333066
+          ],
+          [
+            -0.0014274139201005116,
+            0.9999793928940846,
+            -0.0062590955160321225,
+            0.007743867551161987
+          ],
+          [
+            0.0008282070146453647,
+            0.0062602819181490025,
+            0.9999800612729467,
+            0.00306307125988818
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "scan_002_to_003_column_line_translation": [
+          -0.02618719555123672,
+          0.6889836310192123
+        ]
+      },
+      "sensor": "fx10",
+      "parameter_order": [
+        "ay",
+        "ah",
+        "a0",
+        "by",
+        "bh",
+        "lx",
+        "ly",
+        "lh",
+        "l0"
+      ],
+      "input_3d_field_for_new_controls": "depth_lift_reference_xyz_m",
+      "prediction_recipe": "cal=(P_plant_m-T[:3,3])@T[:3,:3]; XYZ=(cal-origin)@basis; column=(ay*Y+ah*Z+a0)/(1+by*Y+bh*Z); line=lx*X+ly*Y+lh*Z+l0; add scan translation to obtain native003 column,line.",
+      "no_reserved_labels_consumed": true,
+      "primary_candidate": true
+    }
+  ]
+}

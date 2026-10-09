@@ -1,0 +1,74 @@
+{
+  "name": "sensitivity_gray",
+  "descriptor": "gray",
+  "grid": [
+    5,
+    7
+  ],
+  "smoothness_weight": 0.002,
+  "initial_affine": [
+    [
+      0.8584900498390198,
+      0.3707118630409241,
+      -756.1212768554688
+    ],
+    [
+      0.03015737608075142,
+      0.5153898000717163,
+      142.0458221435547
+    ]
+  ],
+  "crop": [
+    930,
+    430,
+    1170,
+    605
+  ],
+  "training_pixels": 6810,
+  "training_loss": 0.25808191299438477,
+  "training_objective": 0.25825613737106323,
+  "deformation_max_rgb_px": 0.8844856023788452,
+  "jacobian_min_in_training": 0.986193835735321,
+  "jacobian_max_in_training": 1.0220417976379395,
+  "folded_training_pixels": 0,
+  "history": [
+    {
+      "stage": "affine",
+      "iteration": 0,
+      "data": 0.2704688608646393,
+      "penalty": 0.0
+    },
+    {
+      "stage": "affine",
+      "iteration": 80,
+      "data": 0.2588229477405548,
+      "penalty": 3.225714863219764e-06
+    },
+    {
+      "stage": "affine",
+      "iteration": 160,
+      "data": 0.2588224411010742,
+      "penalty": 3.217539870092878e-06
+    },
+    {
+      "stage": "smooth",
+      "iteration": 0,
+      "data": 0.2588224411010742,
+      "penalty": 0.0
+    },
+    {
+      "stage": "smooth",
+      "iteration": 120,
+      "data": 0.2580818235874176,
+      "penalty": 0.0001742710155667737
+    },
+    {
+      "stage": "smooth",
+      "iteration": 240,
+      "data": 0.25808191299438477,
+      "penalty": 0.00017420997028239071
+    }
+  ],
+  "artifact": "sensitivity_gray.npz",
+  "sha256": "bdb2b6fb01b13128a6054bfd3512e39b380899194aca40d009da61f884ce8eab"
+}

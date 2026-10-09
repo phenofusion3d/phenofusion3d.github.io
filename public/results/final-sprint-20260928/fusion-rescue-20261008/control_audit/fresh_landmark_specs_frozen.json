@@ -1,0 +1,425 @@
+{
+  "status": "frozen_before_model_evaluation",
+  "records": [
+    {
+      "id": "audit_red_pale_island_terminal",
+      "role": "new_provisional_training",
+      "hsi_rotated_xy": [
+        1600.0,
+        97.0
+      ],
+      "native_RGB_xy": [
+        810.0,
+        276.0
+      ],
+      "hsi_uncertainty_radius_px": 3,
+      "RGB_uncertainty_radius_px": 2,
+      "confidence": "medium",
+      "feature": "Terminal lower point of leftmost long pale island in upper red leaf; a material colour-patch extremity, not blade silhouette.",
+      "native_hsi_column_line": [
+        926.0,
+        1600.0
+      ],
+      "RGB_frame": 1055904,
+      "selection_policy": "Visually specified from native source grids before evaluating any candidate warp; not adjusted to model predictions. Radiometric pseudoRGB colours are not calibrated reflectance.",
+      "independent_operator_ground_truth": false,
+      "uncertainty_note": "Subjective localization radius, not a calibrated confidence interval; do not use strict3px gate for these landmarks.",
+      "depth_votes": 6,
+      "sampled_undistorted_pixel_xy": [
+        811,
+        276
+      ],
+      "depth_m": 0.5491853387549679,
+      "nearest_P5_distance_m": 0.001379608241595088,
+      "point_index": 36941,
+      "reference_xyz_m": [
+        1.2372211798468011,
+        -0.09517090668886681,
+        0.5519912587954274
+      ],
+      "depth_lift_reference_xyz_m": [
+        1.2359789747146286,
+        -0.09557708768518405,
+        0.5515493738464735
+      ],
+      "reference_frame": "D405_short_dense_v3_metric_reference",
+      "source_geometry_supported": true,
+      "projections": [
+        {
+          "frame": 1055904,
+          "native_RGB_xy": [
+            811.5907365649607,
+            276.9495649114044
+          ]
+        },
+        {
+          "frame": 1445026,
+          "native_RGB_xy": [
+            344.154954530149,
+            288.0630943484546
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audit_red_midvein_lower_junction",
+      "role": "new_provisional_training",
+      "hsi_rotated_xy": [
+        1684.0,
+        86.0
+      ],
+      "native_RGB_xy": [
+        874.0,
+        266.0
+      ],
+      "hsi_uncertainty_radius_px": 4,
+      "RGB_uncertainty_radius_px": 3,
+      "confidence": "low-medium",
+      "feature": "Lower main-vein branch neighbourhood in upper red leaf; visible vein is broad and modality dependent.",
+      "native_hsi_column_line": [
+        937.0,
+        1684.0
+      ],
+      "RGB_frame": 1055904,
+      "selection_policy": "Visually specified from native source grids before evaluating any candidate warp; not adjusted to model predictions. Radiometric pseudoRGB colours are not calibrated reflectance.",
+      "independent_operator_ground_truth": false,
+      "uncertainty_note": "Subjective localization radius, not a calibrated confidence interval; do not use strict3px gate for these landmarks.",
+      "depth_votes": 5,
+      "sampled_undistorted_pixel_xy": [
+        876,
+        265
+      ],
+      "depth_m": 0.564039468021357,
+      "nearest_P5_distance_m": 0.0010182173171349024,
+      "point_index": 34259,
+      "reference_xyz_m": [
+        1.2968965176358551,
+        -0.10648852802484017,
+        0.5657319812702971
+      ],
+      "depth_lift_reference_xyz_m": [
+        1.2967894165208722,
+        -0.10719134095397374,
+        0.5664609187454797
+      ],
+      "reference_frame": "D405_short_dense_v3_metric_reference",
+      "source_geometry_supported": true,
+      "projections": [
+        {
+          "frame": 1055904,
+          "native_RGB_xy": [
+            874.806770879537,
+            266.41632742451594
+          ]
+        },
+        {
+          "frame": 1445026,
+          "native_RGB_xy": [
+            418.17359150588135,
+            276.7652072965889
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reserved_red_right_notch",
+      "role": "reserved_evaluation",
+      "hsi_rotated_xy": [
+        1705.0,
+        57.0
+      ],
+      "native_RGB_xy": [
+        899.0,
+        255.0
+      ],
+      "hsi_uncertainty_radius_px": 4,
+      "RGB_uncertainty_radius_px": 3,
+      "confidence": "medium",
+      "feature": "Deep upper-right lobe notch on red blade; distinctive boundary topology, potentially viewpoint dependent.",
+      "native_hsi_column_line": [
+        966.0,
+        1705.0
+      ],
+      "RGB_frame": 1055904,
+      "selection_policy": "Visually specified from native source grids before evaluating any candidate warp; not adjusted to model predictions. Radiometric pseudoRGB colours are not calibrated reflectance.",
+      "independent_operator_ground_truth": false,
+      "uncertainty_note": "Subjective localization radius, not a calibrated confidence interval; do not use strict3px gate for these landmarks.",
+      "depth_votes": 5,
+      "sampled_undistorted_pixel_xy": [
+        901,
+        254
+      ],
+      "depth_m": 0.5593105812716221,
+      "nearest_P5_distance_m": 0.0005905365768019306,
+      "point_index": 79237,
+      "reference_xyz_m": [
+        1.316445136307082,
+        -0.11600492390671878,
+        0.5622800054644942
+      ],
+      "depth_lift_reference_xyz_m": [
+        1.3166763217619575,
+        -0.11602530857876771,
+        0.5617369850236815
+      ],
+      "reference_frame": "D405_short_dense_v3_metric_reference",
+      "source_geometry_supported": true,
+      "projections": [
+        {
+          "frame": 1055904,
+          "native_RGB_xy": [
+            898.3706013990491,
+            255.09081538448797
+          ]
+        },
+        {
+          "frame": 1445026,
+          "native_RGB_xy": [
+            439.08870664505525,
+            265.283652207493
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reserved_red_distal_tip",
+      "role": "reserved_evaluation",
+      "hsi_rotated_xy": [
+        1663.0,
+        216.0
+      ],
+      "native_RGB_xy": [
+        853.0,
+        326.0
+      ],
+      "hsi_uncertainty_radius_px": 4,
+      "RGB_uncertainty_radius_px": 3,
+      "confidence": "medium",
+      "feature": "Lowest distal lobe tip on upper red blade; isolated silhouette tip, potentially viewpoint dependent.",
+      "native_hsi_column_line": [
+        807.0,
+        1663.0
+      ],
+      "RGB_frame": 1055904,
+      "selection_policy": "Visually specified from native source grids before evaluating any candidate warp; not adjusted to model predictions. Radiometric pseudoRGB colours are not calibrated reflectance.",
+      "independent_operator_ground_truth": false,
+      "uncertainty_note": "Subjective localization radius, not a calibrated confidence interval; do not use strict3px gate for these landmarks.",
+      "depth_votes": 5,
+      "sampled_undistorted_pixel_xy": [
+        854,
+        326
+      ],
+      "depth_m": 0.5914933934898481,
+      "nearest_P5_distance_m": 0.001358354827190563,
+      "point_index": 2958,
+      "reference_xyz_m": [
+        1.2866077709667885,
+        -0.0560263155819734,
+        0.5952039948055076
+      ],
+      "depth_lift_reference_xyz_m": [
+        1.2868905909618735,
+        -0.05538178992060348,
+        0.5940422171336754
+      ],
+      "reference_frame": "D405_short_dense_v3_metric_reference",
+      "source_geometry_supported": true,
+      "projections": [
+        {
+          "frame": 1055904,
+          "native_RGB_xy": [
+            852.175508354672,
+            325.60229137668694
+          ]
+        },
+        {
+          "frame": 1445026,
+          "native_RGB_xy": [
+            417.58381778136715,
+            335.5458652081855
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reserved_green_basal_notch",
+      "role": "reserved_evaluation",
+      "hsi_rotated_xy": [
+        1822.0,
+        508.0
+      ],
+      "native_RGB_xy": [
+        995.0,
+        460.0
+      ],
+      "hsi_uncertainty_radius_px": 5,
+      "RGB_uncertainty_radius_px": 3,
+      "confidence": "low-medium",
+      "feature": "Notch between two basal lobes on lower green blade; shadow/foreshortening makes extent uncertain.",
+      "native_hsi_column_line": [
+        515.0,
+        1822.0
+      ],
+      "RGB_frame": 1055904,
+      "selection_policy": "Visually specified from native source grids before evaluating any candidate warp; not adjusted to model predictions. Radiometric pseudoRGB colours are not calibrated reflectance.",
+      "independent_operator_ground_truth": false,
+      "uncertainty_note": "Subjective localization radius, not a calibrated confidence interval; do not use strict3px gate for these landmarks.",
+      "depth_votes": 3,
+      "sampled_undistorted_pixel_xy": [
+        999,
+        461
+      ],
+      "depth_m": 0.5612582857907126,
+      "nearest_P5_distance_m": 0.000679244745159649,
+      "point_index": 48129,
+      "reference_xyz_m": [
+        1.4028706083272422,
+        0.0632757920147601,
+        0.5637889121563067
+      ],
+      "depth_lift_reference_xyz_m": [
+        1.4027177898500969,
+        0.06369322785979012,
+        0.5643024949170707
+      ],
+      "reference_frame": "D405_short_dense_v3_metric_reference",
+      "source_geometry_supported": true,
+      "projections": [
+        {
+          "frame": 1055904,
+          "native_RGB_xy": [
+            995.4048848251982,
+            459.58977634470386
+          ]
+        },
+        {
+          "frame": 1445026,
+          "native_RGB_xy": [
+            537.7758592415872,
+            470.89694745582864
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reserved_green_basal_vein",
+      "role": "reserved_evaluation",
+      "hsi_rotated_xy": [
+        1827.0,
+        575.0
+      ],
+      "native_RGB_xy": [
+        1012.0,
+        478.0
+      ],
+      "hsi_uncertainty_radius_px": 5,
+      "RGB_uncertainty_radius_px": 3,
+      "confidence": "low",
+      "feature": "Basal main-vein/side-vein fork candidate; assignment uncertain because several similar vein junctions and dark HSI region. Exploratory falsification only.",
+      "native_hsi_column_line": [
+        448.0,
+        1827.0
+      ],
+      "RGB_frame": 1055904,
+      "selection_policy": "Visually specified from native source grids before evaluating any candidate warp; not adjusted to model predictions. Radiometric pseudoRGB colours are not calibrated reflectance.",
+      "independent_operator_ground_truth": false,
+      "uncertainty_note": "Subjective localization radius, not a calibrated confidence interval; do not use strict3px gate for these landmarks.",
+      "depth_votes": 3,
+      "sampled_undistorted_pixel_xy": [
+        1017,
+        479
+      ],
+      "depth_m": 0.5443653220016005,
+      "nearest_P5_distance_m": 0.0007562310444111988,
+      "point_index": 37618,
+      "reference_xyz_m": [
+        1.4080149816617755,
+        0.07562228801764012,
+        0.5473908633036275
+      ],
+      "depth_lift_reference_xyz_m": [
+        1.4083815953678007,
+        0.07628086140572866,
+        0.5474521892817061
+      ],
+      "reference_frame": "D405_short_dense_v3_metric_reference",
+      "source_geometry_supported": true,
+      "projections": [
+        {
+          "frame": 1055904,
+          "native_RGB_xy": [
+            1012.0408586093905,
+            476.93633346981414
+          ]
+        },
+        {
+          "frame": 1445026,
+          "native_RGB_xy": [
+            540.9376061588263,
+            488.7282335110035
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reserved_green_distal_vein",
+      "role": "reserved_evaluation",
+      "hsi_rotated_xy": [
+        1836.0,
+        704.0
+      ],
+      "native_RGB_xy": [
+        1082.0,
+        559.0
+      ],
+      "hsi_uncertainty_radius_px": 5,
+      "RGB_uncertainty_radius_px": 3,
+      "confidence": "low-medium",
+      "feature": "Distal main-vein branch before blade tip; two closely spaced branches and mild blur limit exact material-centre localization.",
+      "native_hsi_column_line": [
+        319.0,
+        1836.0
+      ],
+      "RGB_frame": 1055904,
+      "selection_policy": "Visually specified from native source grids before evaluating any candidate warp; not adjusted to model predictions. Radiometric pseudoRGB colours are not calibrated reflectance.",
+      "independent_operator_ground_truth": false,
+      "uncertainty_note": "Subjective localization radius, not a calibrated confidence interval; do not use strict3px gate for these landmarks.",
+      "depth_votes": 2,
+      "sampled_undistorted_pixel_xy": [
+        1088,
+        562
+      ],
+      "depth_m": 0.478892063271334,
+      "nearest_P5_distance_m": 0.0023209236936648633,
+      "point_index": 24146,
+      "reference_xyz_m": [
+        1.4224192269984688,
+        0.1280948960298802,
+        0.483108270085025
+      ],
+      "depth_lift_reference_xyz_m": [
+        1.4223520735058828,
+        0.12598892991774113,
+        0.48213508771014846
+      ],
+      "reference_frame": "D405_short_dense_v3_metric_reference",
+      "source_geometry_supported": true,
+      "projections": [
+        {
+          "frame": 1055904,
+          "native_RGB_xy": [
+            1080.834967637388,
+            561.7049756979147
+          ]
+        },
+        {
+          "frame": 1445026,
+          "native_RGB_xy": [
+            547.778497931805,
+            575.4841889625759
+          ]
+        }
+      ]
+    }
+  ]
+}

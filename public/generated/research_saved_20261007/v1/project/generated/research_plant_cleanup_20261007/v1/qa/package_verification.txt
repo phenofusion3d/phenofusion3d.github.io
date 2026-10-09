@@ -1,0 +1,3 @@
+PASS: 406 checks; 0 failures.
+
+Every original indexed vertex, exported coordinate/colour, exact normalized float32 JS payload, recorded package hash, 15 source gallery images, and linked local HTTP assets. This does not validate semantic segmentation, physical scale, browser rendering, or traits.

@@ -1,0 +1,282 @@
+{
+  "status": "ACTUAL_IMAGE_AND_DEPTH_CANDIDATE_AUDIT_NO_ACCEPTED_3D_HSI_CONTROLS",
+  "scope": "Bounded review of two distinctive broad-leaf regions and six candidate same-leaf windows in P5; not an exhaustive impossibility claim.",
+  "source_frame_transform_accepted": true,
+  "source_depth_method": "Saved RGB multi-view recovered depth, undistorted RGB raster; not assumed L515/HSI ray geometry",
+  "coordinate_scale": "Original reconstructed reference frame; physical scale remains conditional on unknown recording units. Consistent arbitrary units would be sufficient for pixel-validation if correspondences existed.",
+  "candidates": [
+    {
+      "candidate_id": "P5_red_upper",
+      "description": "Large reddish upper-left leaf, with damaged/lobed boundary",
+      "source_rgb_frame": 1055904,
+      "native_rgb_review_centre_xy": [
+        860.0,
+        265.0
+      ],
+      "undistorted_depth_sample_xy": [
+        861.3969638215307,
+        264.3168212811528
+      ],
+      "rounded_depth_pixel_xy": [
+        861,
+        264
+      ],
+      "candidate_fx10_review_centre_column_line": [
+        905,
+        1660
+      ],
+      "cross_sensor_point_identity": "NOT_ESTABLISHED; approximate same-leaf review windows, not a physical-point correspondence",
+      "accepted_for_fit": false,
+      "measured_depth_at_review_pixel": 0.543144941329956,
+      "pair_votes_at_review_pixel": 6,
+      "supported_depth_pixels_in_7x7": 49,
+      "depth_7x7_supported_median": 0.5436609983444214,
+      "depth_7x7_supported_p05_p95": [
+        0.5415630578994751,
+        0.547317373752594
+      ],
+      "pair_depth_values_at_review_pixel": [
+        0.5399707555770874,
+        0.5422618985176086,
+        0.5447974801063538,
+        0.5440279841423035,
+        0.5460208654403687,
+        0.5416038036346436
+      ],
+      "conditional_reference_xyz_at_review_pixel": [
+        1.2462257310086047,
+        -0.10399313070142148,
+        0.5454781640863423
+      ],
+      "xyz_use": "Diagnostic sampled geometry only. No assignment of this XYZ to the HSI review centre.",
+      "not_a_control_reason": "Same leaf appearance does not establish that these two manually selected centres refer to the same vein junction or physical surface point. No independent repeated pixel localization or off-plane holdout is available."
+    },
+    {
+      "candidate_id": "P5_green_upper",
+      "description": "Upper green lobed leaf and its major vein region",
+      "source_rgb_frame": 1055904,
+      "native_rgb_review_centre_xy": [
+        1018.0,
+        272.0
+      ],
+      "undistorted_depth_sample_xy": [
+        1022.790581774847,
+        270.6858601393814
+      ],
+      "rounded_depth_pixel_xy": [
+        1023,
+        271
+      ],
+      "candidate_fx10_review_centre_column_line": [
+        873,
+        1807
+      ],
+      "cross_sensor_point_identity": "NOT_ESTABLISHED; approximate same-leaf review windows, not a physical-point correspondence",
+      "accepted_for_fit": false,
+      "measured_depth_at_review_pixel": 0.5197547674179077,
+      "pair_votes_at_review_pixel": 3,
+      "supported_depth_pixels_in_7x7": 49,
+      "depth_7x7_supported_median": 0.517889142036438,
+      "depth_7x7_supported_p05_p95": [
+        0.5116085290908814,
+        0.5203419208526612
+      ],
+      "pair_depth_values_at_review_pixel": [
+        0.5197547674179077,
+        0.5200849771499634,
+        0.5178849697113037
+      ],
+      "conditional_reference_xyz_at_review_pixel": [
+        1.3679382285874662,
+        -0.09537349604671069,
+        0.5222898345310782
+      ],
+      "xyz_use": "Diagnostic sampled geometry only. No assignment of this XYZ to the HSI review centre.",
+      "not_a_control_reason": "Same leaf appearance does not establish that these two manually selected centres refer to the same vein junction or physical surface point. No independent repeated pixel localization or off-plane holdout is available."
+    },
+    {
+      "candidate_id": "P5_green_lower",
+      "description": "Large lower-right green leaf and its major vein region",
+      "source_rgb_frame": 1055904,
+      "native_rgb_review_centre_xy": [
+        1018.0,
+        501.0
+      ],
+      "undistorted_depth_sample_xy": [
+        1022.7905377593731,
+        502.64570441034505
+      ],
+      "rounded_depth_pixel_xy": [
+        1023,
+        503
+      ],
+      "candidate_fx10_review_centre_column_line": [
+        430,
+        1816
+      ],
+      "cross_sensor_point_identity": "NOT_ESTABLISHED; approximate same-leaf review windows, not a physical-point correspondence",
+      "accepted_for_fit": false,
+      "measured_depth_at_review_pixel": 0.5045544505119324,
+      "pair_votes_at_review_pixel": 3,
+      "supported_depth_pixels_in_7x7": 49,
+      "depth_7x7_supported_median": 0.5054216384887695,
+      "depth_7x7_supported_p05_p95": [
+        0.5014681816101074,
+        0.5085835099220276
+      ],
+      "pair_depth_values_at_review_pixel": [
+        0.505424976348877,
+        0.5038628578186035,
+        0.5045544505119324
+      ],
+      "conditional_reference_xyz_at_review_pixel": [
+        1.3588844051009392,
+        0.08817855957188744,
+        0.5075783629717106
+      ],
+      "xyz_use": "Diagnostic sampled geometry only. No assignment of this XYZ to the HSI review centre.",
+      "not_a_control_reason": "Same leaf appearance does not establish that these two manually selected centres refer to the same vein junction or physical surface point. No independent repeated pixel localization or off-plane holdout is available."
+    },
+    {
+      "candidate_id": "P5_red_lower",
+      "description": "Lower-left reddish elongated leaf",
+      "source_rgb_frame": 1055904,
+      "native_rgb_review_centre_xy": [
+        897.0,
+        541.0
+      ],
+      "undistorted_depth_sample_xy": [
+        899.3429767019145,
+        542.5833503735785
+      ],
+      "rounded_depth_pixel_xy": [
+        899,
+        543
+      ],
+      "candidate_fx10_review_centre_column_line": [
+        355,
+        1672
+      ],
+      "cross_sensor_point_identity": "NOT_ESTABLISHED; approximate same-leaf review windows, not a physical-point correspondence",
+      "accepted_for_fit": false,
+      "measured_depth_at_review_pixel": 0.5308235287666321,
+      "pair_votes_at_review_pixel": 5,
+      "supported_depth_pixels_in_7x7": 49,
+      "depth_7x7_supported_median": 0.5308260321617126,
+      "depth_7x7_supported_p05_p95": [
+        0.5278846621513367,
+        0.5341308832168579
+      ],
+      "pair_depth_values_at_review_pixel": [
+        0.5347687005996704,
+        0.5308235287666321,
+        0.5322012305259705,
+        0.5267232060432434,
+        0.527472734451294
+      ],
+      "conditional_reference_xyz_at_review_pixel": [
+        1.2731876114887237,
+        0.12680445793340223,
+        0.5338276540072463
+      ],
+      "xyz_use": "Diagnostic sampled geometry only. No assignment of this XYZ to the HSI review centre.",
+      "not_a_control_reason": "Same leaf appearance does not establish that these two manually selected centres refer to the same vein junction or physical surface point. No independent repeated pixel localization or off-plane holdout is available."
+    },
+    {
+      "candidate_id": "P5_variegated_right",
+      "description": "Rightmost variegated multi-lobed leaf",
+      "source_rgb_frame": 1055904,
+      "native_rgb_review_centre_xy": [
+        1110.0,
+        410.0
+      ],
+      "undistorted_depth_sample_xy": [
+        1116.8214394561733,
+        410.4880250132125
+      ],
+      "rounded_depth_pixel_xy": [
+        1117,
+        410
+      ],
+      "candidate_fx10_review_centre_column_line": [
+        622,
+        1935
+      ],
+      "cross_sensor_point_identity": "NOT_ESTABLISHED; approximate same-leaf review windows, not a physical-point correspondence",
+      "accepted_for_fit": false,
+      "measured_depth_at_review_pixel": 0.5857841372489929,
+      "pair_votes_at_review_pixel": 1,
+      "supported_depth_pixels_in_7x7": 0,
+      "depth_7x7_supported_median": null,
+      "depth_7x7_supported_p05_p95": null,
+      "pair_depth_values_at_review_pixel": [
+        0.5857841372489929
+      ],
+      "conditional_reference_xyz_at_review_pixel": [
+        1.4928977497040543,
+        0.022189394627566583,
+        0.5888243001813778
+      ],
+      "xyz_use": "Diagnostic sampled geometry only. No assignment of this XYZ to the HSI review centre.",
+      "not_a_control_reason": "Same leaf appearance does not establish that these two manually selected centres refer to the same vein junction or physical surface point. No independent repeated pixel localization or off-plane holdout is available."
+    },
+    {
+      "candidate_id": "P5_green_central",
+      "description": "Central green leaf near overlapping petioles",
+      "source_rgb_frame": 1055904,
+      "native_rgb_review_centre_xy": [
+        937.0,
+        396.0
+      ],
+      "undistorted_depth_sample_xy": [
+        939.5917031485511,
+        396.2182909489798
+      ],
+      "rounded_depth_pixel_xy": [
+        940,
+        396
+      ],
+      "candidate_fx10_review_centre_column_line": [
+        696,
+        1720
+      ],
+      "cross_sensor_point_identity": "NOT_ESTABLISHED; approximate same-leaf review windows, not a physical-point correspondence",
+      "accepted_for_fit": false,
+      "measured_depth_at_review_pixel": 0.47602397203445435,
+      "pair_votes_at_review_pixel": 5,
+      "supported_depth_pixels_in_7x7": 49,
+      "depth_7x7_supported_median": 0.47602397203445435,
+      "depth_7x7_supported_p05_p95": [
+        0.4738625049591064,
+        0.48059749603271484
+      ],
+      "pair_depth_values_at_review_pixel": [
+        0.46910780668258667,
+        0.4782101511955261,
+        0.47757425904273987,
+        0.4752211570739746,
+        0.47602397203445435
+      ],
+      "conditional_reference_xyz_at_review_pixel": [
+        1.2804047923203377,
+        0.00345427831023944,
+        0.4787009317773045
+      ],
+      "xyz_use": "Diagnostic sampled geometry only. No assignment of this XYZ to the HSI review centre.",
+      "not_a_control_reason": "Same leaf appearance does not establish that these two manually selected centres refer to the same vein junction or physical surface point. No independent repeated pixel localization or off-plane holdout is available."
+    }
+  ],
+  "accepted_training_controls": 0,
+  "accepted_independent_offplane_holdout_controls": 0,
+  "fit_attempted": false,
+  "physical_fusion": null,
+  "source_hashes": {
+    "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1055904.png": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494",
+    "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1055904.npz": "6f390f935b5e9227b07b3d11146fc0b081b654b06d26600d6feb67d93b5c2eff",
+    "generated\\research_20260928_improvement_20261007\\short_dense_v3\\profile.json": "101f44a9b1329cae37431151bedeeedbf01c84a1e09bc6e91002ed2834910db9",
+    "generated\\research_20260928_improvement_20261007\\short_dense_v3\\result\\icp_diagnostics.json": "420fc50e1808d285d1835802f361a29372421e122a02ee0e52222c2fb0d38f77",
+    "generated\\research_followthrough_20261007\\spectral\\fx10_display_rgb.npy": "d8c55904d2d347cc7a4cac24a2f2274b38ae917caff3ca34e827b21a9d4153c3",
+    "generated\\research_20260928_processing_20261007\\spectral_geometry\\raw_calibration_marker_observations.json": "70331b2a1b7a32cff50de7a69de4bb87b05c4ee6127edf70f87389474fd8dc45"
+  },
+  "script_sha256": "7d94e253ac65c75e32153884895f9685210e22e2a88c8eec3d9c7efe97eeb4b9"
+}

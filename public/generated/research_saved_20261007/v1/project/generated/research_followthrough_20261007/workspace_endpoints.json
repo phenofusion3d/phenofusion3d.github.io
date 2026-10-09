@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "measurements": [
+    {
+      "specimen_id": "P1",
+      "trait": "observed_chord",
+      "definition": "straight_distance_between_observed_points",
+      "label": "P1.O03.observed_blade_extent",
+      "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included. Magnified source review shows the thin dry terminal tip extends beyond this reconstructed endpoint. This is partial observed extent, not whole-leaf length, so no reference residual is computed.",
+      "points": [
+        {
+          "cloud_id": "fusion_context",
+          "source_sha256": "9caee0edcc1fb5f66a9cdd490a0054e2ab45872302a32a81cd24788dee01ab10",
+          "point_index": 49071
+        },
+        {
+          "cloud_id": "fusion_context",
+          "source_sha256": "9caee0edcc1fb5f66a9cdd490a0054e2ab45872302a32a81cd24788dee01ab10",
+          "point_index": 158296
+        }
+      ],
+      "landmarks_reviewed": true,
+      "organ_match_confirmed": false,
+      "reference_id": null
+    },
+    {
+      "specimen_id": "P3",
+      "trait": "observed_chord",
+      "definition": "straight_distance_between_observed_points",
+      "label": "P3.O03.blade_chord",
+      "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate. Basal small-lobe/petiole convention remains tentative. The operator length is not independently photo-readable; this explicitly conditional comparison does not establish the measurement definition or physical accuracy.",
+      "points": [
+        {
+          "cloud_id": "fusion_context",
+          "source_sha256": "9caee0edcc1fb5f66a9cdd490a0054e2ab45872302a32a81cd24788dee01ab10",
+          "point_index": 1221511
+        },
+        {
+          "cloud_id": "fusion_context",
+          "source_sha256": "9caee0edcc1fb5f66a9cdd490a0054e2ab45872302a32a81cd24788dee01ab10",
+          "point_index": 944608
+        }
+      ],
+      "landmarks_reviewed": true,
+      "organ_match_confirmed": false,
+      "reference_id": null
+    },
+    {
+      "specimen_id": "P5",
+      "trait": "observed_chord",
+      "definition": "straight_distance_between_observed_points",
+      "label": "P5.O04.terminal_lamina_chord",
+      "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included. Ruler image includes basal lobes down toward a small low lobe at its zero. This raw terminal-lamina origin cannot be substituted for that ruler origin; no residual is meaningful.",
+      "points": [
+        {
+          "cloud_id": "fusion_context",
+          "source_sha256": "9caee0edcc1fb5f66a9cdd490a0054e2ab45872302a32a81cd24788dee01ab10",
+          "point_index": 135290
+        },
+        {
+          "cloud_id": "fusion_context",
+          "source_sha256": "9caee0edcc1fb5f66a9cdd490a0054e2ab45872302a32a81cd24788dee01ab10",
+          "point_index": 657710
+        }
+      ],
+      "landmarks_reviewed": true,
+      "organ_match_confirmed": false,
+      "reference_id": null
+    }
+  ],
+  "source": "traits/provisional_chords.json; exact fused source indices; no manual dimension is used to adjust geometry"
+}

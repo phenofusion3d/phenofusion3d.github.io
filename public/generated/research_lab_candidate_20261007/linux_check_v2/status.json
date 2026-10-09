@@ -1,0 +1,35 @@
+{
+  "status": "passed_linux_offline_selection_and_changed_test_repeats",
+  "base_commit": "920a577958a22e10998d24935265c77e2296d867",
+  "patch_uncommitted": true,
+  "patch_sha256": "48f7de6b42d6b53dc8921641cd8bad3683d585334cd503e52e73cb6253041752",
+  "test_lf_sha256": "34788b6168d98a45d307480457efa4958f1636960d565f99ebe218f9b3272e1b",
+  "test_counts": {
+    "tests": 142,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 1
+  },
+  "repeat_counts": {
+    "tests": 20,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "full_suite_passed": true,
+  "production_source_changed": false,
+  "hardware_contacted": false,
+  "error": null,
+  "passed_tests": 141,
+  "skipped_tests": 1,
+  "repeat_passed_tests": 20,
+  "identical_full_selection": true,
+  "windows_test_identity_matches": true,
+  "protected_file_count": 26,
+  "protected_mismatches": [],
+  "source_snapshot_files": 208,
+  "unchanged_base_files": 207,
+  "platform": "Ubuntu on WSL2, offscreen Qt, isolated Python environment",
+  "runtime_overlay": "Official Ubuntu libusb archive extracted locally; LD_LIBRARY_PATH set only for validation processes",
+  "validation_scope": "Offline software tests; hardware and physical measurement accuracy untested"
+}

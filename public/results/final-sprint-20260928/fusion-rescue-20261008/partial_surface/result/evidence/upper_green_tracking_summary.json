@@ -1,0 +1,23 @@
+{
+  "region": "upper_green",
+  "status": "provisional_per_leaf_cross_sensor_tracks_no_3D_accuracy_claim",
+  "native_FX10_queries": 34800,
+  "passes_numeric_tracking": 18549,
+  "inside_inlier_hull": 16817,
+  "valid_tracking": 11575,
+  "unique_native_FX17_pixels_after_rounding": 7254,
+  "gate": "At least3of4overlap bands: FB<=0.5scaledpixel,11x11NCC>=0.85,source/targetstd>=5displayunits,target inside bounded ROI and6pximage margin; maxacceptedcrossbandradius<=1nativeFX17pixel; within affineinliersourceconvexhull.",
+  "registration_model": "Per-leaf affine selected for simplicity, independently fitted from its own local overlap features. No lower-green warp reused.",
+  "remaining_required_intersections": [
+    "reviewed corresponding leaf/tissue masks in both native sensor images",
+    "supported mapping of that material patch into RGB-D geometry",
+    "visibility/depth consistency and unique source-pixel/source-vertex assignment"
+  ],
+  "existing_excluded_red_anchor_check": [],
+  "spectra_interpolated": false,
+  "raw_spectra_read_or_changed": false,
+  "geometry_assigned": false,
+  "tracking_accuracy_certified": false,
+  "warning": "Image consistency and repeated bands are correlated; points can include background or mixtures. Tracks are not a whole-leaf segmentation and do not establish per-band physical footprints.",
+  "npz_sha256": "fb72c3e8ebc4afa3f3fb994ba8dcb66b759e04deba69b1a5fbbd3abbf7a941b5"
+}

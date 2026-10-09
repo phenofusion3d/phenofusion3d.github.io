@@ -1,0 +1,18 @@
+BOUNDED HEIGHT-MODEL DIAGNOSTIC: FAILED GENERALIZATION
+
+The known 25 mm board supports shared metric table-plane geometry. Static panel and paper controls support a small calibration-to-plant HSI scan-coordinate transfer. A separately reviewed, deduplicated paper-only RGB bridge provides an approximate calibration-camera-zero to plant-reference transform, with material conditioning and fold variation.
+
+We tested whether these advances plus the three existing P5 feature correspondences could determine the three remaining height coefficients of a general linear pushbroom model. The plane model stays fixed. Each fold uses two P5 points to fit one line-height coefficient and two column-height coefficients, then predicts the untouched third point. Existing D405-localized points are scaled by the confirmed metric factor. Spectral source coordinates stay unchanged.
+
+The model fails this test. FX10 held-out errors are 10.08, 14.48 and 174.70 pixels. FX17 errors are 7.24, 12.28 and 123.43 pixels. The two similar-height red points provide a poorly conditioned basis for predicting the distant green point: normalized condition numbers are 145.0 and 143.6. A single-coordinate 1 mm stress changes the green prediction by as much as 34.26 px for FX10 or 20.48 px for FX17. These stresses are explicit scenarios, not physical confidence bounds.
+
+This is not fixed by claiming a small training error: two column-height coefficients can exactly fit two columns algebraically. It is also not evidence that a denser warp is justified. The available plane/frame assumptions, three source-feature correspondences and reconstructed point locations do not support this height model sufficiently. The test cannot uniquely attribute the failure to one element of that chain. It does not validate the previously provisional material identities.
+
+DECISION
+Do not use this fitted model to distribute spectra over the plant surface. Keep the six real source-pixel spectra at three manually/assistant-reviewed provisional P5 associations with their existing uncertainty labels. No new spectral point assignments or interpolated texture are created. The successful table-plane and scan-transfer diagnostics remain useful independent results.
+
+NEXT EVIDENCE
+Recover spatial camera intrinsics/rig geometry and/or record independently measured elevated controls spanning the plant volume and detector width. Establish calibration-to-plant frame transfer with broader or independently surveyed controls. Hold out whole heights or independent spatial groups. Verify feature identities and triangulated positions independently, especially beyond one plant. Use a physically constrained model and visibility checks before claiming dense 3D spectral fusion.
+
+SAVED DETAILS
+height_diagnostic.json retains every unchanged observed third point, prediction, residual vector, training identities, fitted coefficients, normalized singular values, and 35 sensitivity scenarios per fold: six RGB-frame variants, three plane-sheet variants, eighteen single-coordinate 1 mm stresses and eight training-pixel 1 px stresses. Six P5 folds were evaluated across both cameras. These are conditional geometry tests, not calibrated reflectance or physiology.

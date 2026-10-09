@@ -1,0 +1,596 @@
+[
+  {
+    "id": "P1.O03.observed_blade_extent",
+    "plant": 1,
+    "frame": 459309,
+    "base": [
+      240,
+      401
+    ],
+    "tip": [
+      149,
+      379
+    ],
+    "radius": 4,
+    "secondary": [
+      143152,
+      302754
+    ],
+    "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+    "manual_dimension_id": "P1.O03.length",
+    "comparison": "not_homologous_partial_extent",
+    "limitation": "Magnified source review shows the thin dry terminal tip extends beyond this reconstructed endpoint. This is partial observed extent, not whole-leaf length, so no reference residual is computed.",
+    "endpoints": [
+      {
+        "role": "base",
+        "source_pixel_xy": [
+          240,
+          401
+        ],
+        "fused_point_index": 49071,
+        "camera_id": 0,
+        "original_point_index": 300697,
+        "reference_xyz_conditional_m": [
+          0.2696336641831242,
+          0.009500000000000001,
+          0.30250000000000005
+        ],
+        "source_reprojection_pixel_xy": [
+          240.17194962037968,
+          400.9103055486601
+        ],
+        "source_click_distance_px": 0.193937532597168,
+        "candidate_count": 56,
+        "candidate_index_key": "P1_O03_observed_blade_extent_base_fused_indices"
+      },
+      {
+        "role": "tip",
+        "source_pixel_xy": [
+          149,
+          379
+        ],
+        "fused_point_index": 158296,
+        "camera_id": 0,
+        "original_point_index": 1029316,
+        "reference_xyz_conditional_m": [
+          0.2675,
+          -0.0029359945503824357,
+          0.2475
+        ],
+        "source_reprojection_pixel_xy": [
+          148.38560254477034,
+          377.82841480296577
+        ],
+        "source_click_distance_px": 1.322911980028312,
+        "candidate_count": 14,
+        "candidate_index_key": "P1_O03_observed_blade_extent_tip_fused_indices"
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "scale_status": "Conditional existing metre-coordinate scale; physical board size and recording units unavailable.",
+    "chord_conditional_m": 0.05642877354066358,
+    "endpoint_pixel_disk_sensitivity_conditional_m": [
+      0.04976776262496502,
+      0.06670808387156944
+    ],
+    "sensitivity_interpretation": "Full min/max of all endpoint-pair distances within independently clicked 4px source disks; not a confidence interval or calibrated physical uncertainty.",
+    "projections": [
+      {
+        "frame": 459309,
+        "endpoint_pixels_xy": [
+          [
+            240.17194962037968,
+            400.9103055486601
+          ],
+          [
+            148.38560254477034,
+            377.82841480296577
+          ]
+        ],
+        "stereo_votes": [
+          3,
+          1
+        ],
+        "point_minus_stereo_depth_conditional_m": [
+          -0.000365939553712058,
+          -0.0018722012342529681
+        ]
+      },
+      {
+        "frame": 143152,
+        "endpoint_pixels_xy": [
+          [
+            910.8201408625761,
+            386.532724538262
+          ],
+          [
+            965.9334828949148,
+            360.1950856468146
+          ]
+        ],
+        "stereo_votes": [
+          4,
+          2
+        ],
+        "point_minus_stereo_depth_conditional_m": [
+          0.0020361147722723905,
+          0.0006048435189225931
+        ]
+      },
+      {
+        "frame": 302754,
+        "endpoint_pixels_xy": [
+          [
+            571.0159948929876,
+            394.6633634734361
+          ],
+          [
+            551.3622016268082,
+            369.85592404711974
+          ]
+        ],
+        "stereo_votes": [
+          1,
+          0
+        ],
+        "point_minus_stereo_depth_conditional_m": [
+          0.0004151228294868581,
+          null
+        ]
+      }
+    ],
+    "reference_class": "photo_supported_approximate",
+    "reference_annotation_cm": 7.3,
+    "photo_reference_candidate_cm": 7.3,
+    "photo_reading_interval_cm": [
+      7.0,
+      7.6
+    ],
+    "conditional_chord_cm": 5.642877354066358,
+    "signed_difference_from_operator_annotation_cm": null,
+    "included_in_physical_accuracy_statistics": false,
+    "comparison_status": "No homologous whole-organ comparison: Magnified source review shows the thin dry terminal tip extends beyond this reconstructed endpoint. This is partial observed extent, not whole-leaf length, so no reference residual is computed."
+  },
+  {
+    "id": "P1.O03.true_tip_attempt",
+    "plant": 1,
+    "frame": 143152,
+    "base": [
+      909,
+      387
+    ],
+    "tip": [
+      983,
+      354
+    ],
+    "radius": 4,
+    "secondary": [
+      302754,
+      459309
+    ],
+    "scope": "Attempted source-visible narrow blade base to fine dry terminal tip.",
+    "manual_dimension_id": "P1.O03.length",
+    "comparison": "conditional_candidate_if_both_endpoints_supported",
+    "limitation": "True dry terminal tip is selected from the source silhouette; no farther nearest point is substituted if this disk lacks reconstructed support.",
+    "endpoints": [
+      {
+        "role": "base",
+        "source_pixel_xy": [
+          909,
+          387
+        ],
+        "fused_point_index": 48904,
+        "camera_id": 0,
+        "original_point_index": 300530,
+        "reference_xyz_conditional_m": [
+          0.2680354867147755,
+          0.009500000000000001,
+          0.30050000000000004
+        ],
+        "source_reprojection_pixel_xy": [
+          909.2696137769228,
+          386.70694868476306
+        ],
+        "source_click_distance_px": 0.3982093194146632,
+        "candidate_count": 74,
+        "candidate_index_key": "P1_O03_true_tip_attempt_base_fused_indices"
+      },
+      {
+        "role": "tip",
+        "source_pixel_xy": [
+          983,
+          354
+        ],
+        "point_index": null,
+        "candidate_count": 0
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "scale_status": "Conditional existing metre-coordinate scale; physical board size and recording units unavailable.",
+    "chord_conditional_m": null,
+    "status": "No existing source-supported endpoint within prescribed click disk.",
+    "reference_class": "photo_supported_approximate",
+    "reference_annotation_cm": 7.3,
+    "photo_reference_candidate_cm": 7.3,
+    "photo_reading_interval_cm": [
+      7.0,
+      7.6
+    ],
+    "conditional_chord_cm": null,
+    "signed_difference_from_operator_annotation_cm": null,
+    "included_in_physical_accuracy_statistics": false,
+    "comparison_status": "No homologous whole-organ comparison: True dry terminal tip is selected from the source silhouette; no farther nearest point is substituted if this disk lacks reconstructed support."
+  },
+  {
+    "id": "P1.O04.ear_body_chord",
+    "plant": 1,
+    "frame": 459309,
+    "base": [
+      232,
+      412
+    ],
+    "tip": [
+      157,
+      469
+    ],
+    "radius": 4,
+    "secondary": [
+      143152,
+      302754
+    ],
+    "scope": "Cereal ear body base-to-distal-body straight chord candidate, excluding awns.",
+    "manual_dimension_id": "P1.O04.length",
+    "comparison": "conditional_candidate",
+    "limitation": "Body-to-awn transition is a source-visible candidate; exact distal glume boundary has pixel-scale ambiguity. This is an ear, never a leaf.",
+    "endpoints": [
+      {
+        "role": "base",
+        "source_pixel_xy": [
+          232,
+          412
+        ],
+        "fused_point_index": 49084,
+        "camera_id": 0,
+        "original_point_index": 300710,
+        "reference_xyz_conditional_m": [
+          0.2695,
+          0.013084643452923898,
+          0.29650000000000004
+        ],
+        "source_reprojection_pixel_xy": [
+          232.02490488408728,
+          409.3982649474286
+        ],
+        "source_click_distance_px": 2.6018542497669332,
+        "candidate_count": 9,
+        "candidate_index_key": "P1_O04_ear_body_chord_base_fused_indices"
+      },
+      {
+        "role": "tip",
+        "source_pixel_xy": [
+          157,
+          469
+        ],
+        "point_index": null,
+        "candidate_count": 0
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "scale_status": "Conditional existing metre-coordinate scale; physical board size and recording units unavailable.",
+    "chord_conditional_m": null,
+    "status": "No existing source-supported endpoint within prescribed click disk.",
+    "reference_class": "photo_supported_approximate",
+    "reference_annotation_cm": 6.5,
+    "photo_reference_candidate_cm": 6.4,
+    "photo_reading_interval_cm": [
+      6.1,
+      6.7
+    ],
+    "conditional_chord_cm": null,
+    "signed_difference_from_operator_annotation_cm": null,
+    "included_in_physical_accuracy_statistics": false,
+    "comparison_status": "No homologous whole-organ comparison: Body-to-awn transition is a source-visible candidate; exact distal glume boundary has pixel-scale ambiguity. This is an ear, never a leaf."
+  },
+  {
+    "id": "P3.O03.blade_chord",
+    "plant": 3,
+    "frame": 824869,
+    "base": [
+      594,
+      424
+    ],
+    "tip": [
+      590,
+      326
+    ],
+    "radius": 4,
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+    "manual_dimension_id": "P3.O03.length",
+    "comparison": "conditional_candidate",
+    "limitation": "Basal small-lobe/petiole convention remains tentative. The operator length is not independently photo-readable; this explicitly conditional comparison does not establish the measurement definition or physical accuracy.",
+    "endpoints": [
+      {
+        "role": "base",
+        "source_pixel_xy": [
+          594,
+          424
+        ],
+        "fused_point_index": 1221511,
+        "camera_id": 0,
+        "original_point_index": 5799835,
+        "reference_xyz_conditional_m": [
+          0.7935,
+          0.0285,
+          0.4696911997379415
+        ],
+        "source_reprojection_pixel_xy": [
+          594.2204964846065,
+          424.12699211786963
+        ],
+        "source_click_distance_px": 0.25445175913099527,
+        "candidate_count": 158,
+        "candidate_index_key": "P3_O03_blade_chord_base_fused_indices"
+      },
+      {
+        "role": "tip",
+        "source_pixel_xy": [
+          590,
+          326
+        ],
+        "fused_point_index": 944608,
+        "camera_id": 0,
+        "original_point_index": 4949838,
+        "reference_xyz_conditional_m": [
+          0.7920980532811104,
+          -0.0415,
+          0.4435
+        ],
+        "source_reprojection_pixel_xy": [
+          589.774822916392,
+          325.7844029666501
+        ],
+        "source_click_distance_px": 0.3117479747672268,
+        "candidate_count": 79,
+        "candidate_index_key": "P3_O03_blade_chord_tip_fused_indices"
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "scale_status": "Conditional existing metre-coordinate scale; physical board size and recording units unavailable.",
+    "chord_conditional_m": 0.07475255446013435,
+    "endpoint_pixel_disk_sensitivity_conditional_m": [
+      0.06706684147069888,
+      0.08419306985087646
+    ],
+    "sensitivity_interpretation": "Full min/max of all endpoint-pair distances within independently clicked 4px source disks; not a confidence interval or calibrated physical uncertainty.",
+    "projections": [
+      {
+        "frame": 824869,
+        "endpoint_pixels_xy": [
+          [
+            594.2204964846065,
+            424.12699211786963
+          ],
+          [
+            589.774822916392,
+            325.7844029666501
+          ]
+        ],
+        "stereo_votes": [
+          6,
+          6
+        ],
+        "point_minus_stereo_depth_conditional_m": [
+          0.0014925310389716229,
+          -0.0008612001219553411
+        ]
+      },
+      {
+        "frame": 618150,
+        "endpoint_pixels_xy": [
+          [
+            877.9358204034024,
+            417.80515002887194
+          ],
+          [
+            890.0954695770749,
+            319.8849959153212
+          ]
+        ],
+        "stereo_votes": [
+          5,
+          3
+        ],
+        "point_minus_stereo_depth_conditional_m": [
+          0.0015343768068578623,
+          0.0006547679421843311
+        ]
+      },
+      {
+        "frame": 1055904,
+        "endpoint_pixels_xy": [
+          [
+            277.52184229262235,
+            430.3617561020619
+          ],
+          [
+            254.85076744370457,
+            333.502146547338
+          ]
+        ],
+        "stereo_votes": [
+          2,
+          1
+        ],
+        "point_minus_stereo_depth_conditional_m": [
+          -0.006845971384406346,
+          0.008775437862872937
+        ]
+      }
+    ],
+    "reference_class": "operator_annotation_only",
+    "reference_annotation_cm": 7.5,
+    "photo_reference_candidate_cm": null,
+    "photo_reading_interval_cm": null,
+    "conditional_chord_cm": 7.475255446013435,
+    "signed_difference_from_operator_annotation_cm": -0.024744553986565165,
+    "included_in_physical_accuracy_statistics": false,
+    "comparison_status": "Provisional operator-reported chord comparison only; physical scale and basal convention unresolved.",
+    "endpoint_review_note": "Magnified source review located the lowest visible basal lamina at [594,424] and apex at [590,326]. Initial interior clicks [594,416] and [590,331] were rejected as inside the blade. Endpoints were set by source anatomy, without moving geometry or targeting a reference value."
+  },
+  {
+    "id": "P5.O04.terminal_lamina_chord",
+    "plant": 5,
+    "frame": 1445026,
+    "base": [
+      534,
+      463
+    ],
+    "tip": [
+      546,
+      580
+    ],
+    "radius": 4,
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+    "manual_dimension_id": "P5.O04.length",
+    "comparison": "not_homologous_partial_extent",
+    "limitation": "Ruler image includes basal lobes down toward a small low lobe at its zero. This raw terminal-lamina origin cannot be substituted for that ruler origin; no residual is meaningful.",
+    "endpoints": [
+      {
+        "role": "base",
+        "source_pixel_xy": [
+          534,
+          463
+        ],
+        "fused_point_index": 135290,
+        "camera_id": 0,
+        "original_point_index": 890216,
+        "reference_xyz_conditional_m": [
+          1.3575000000000002,
+          0.05742938022102854,
+          0.5645
+        ],
+        "source_reprojection_pixel_xy": [
+          533.7722866405313,
+          463.045137147898
+        ],
+        "source_click_distance_px": 0.23214378346378053,
+        "candidate_count": 181,
+        "candidate_index_key": "P5_O04_terminal_lamina_chord_base_fused_indices"
+      },
+      {
+        "role": "tip",
+        "source_pixel_xy": [
+          546,
+          580
+        ],
+        "fused_point_index": 657710,
+        "camera_id": 0,
+        "original_point_index": 3532313,
+        "reference_xyz_conditional_m": [
+          1.3815000000000002,
+          0.1275,
+          0.4682034361585681
+        ],
+        "source_reprojection_pixel_xy": [
+          546.1605846238848,
+          580.1984966689186
+        ],
+        "source_click_distance_px": 0.25532009125798183,
+        "candidate_count": 74,
+        "candidate_index_key": "P5_O04_terminal_lamina_chord_tip_fused_indices"
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "scale_status": "Conditional existing metre-coordinate scale; physical board size and recording units unavailable.",
+    "chord_conditional_m": 0.12148629537473009,
+    "endpoint_pixel_disk_sensitivity_conditional_m": [
+      0.10711865475651088,
+      0.13761444924819702
+    ],
+    "sensitivity_interpretation": "Full min/max of all endpoint-pair distances within independently clicked 4px source disks; not a confidence interval or calibrated physical uncertainty.",
+    "projections": [
+      {
+        "frame": 1445026,
+        "endpoint_pixels_xy": [
+          [
+            533.7722866405313,
+            463.045137147898
+          ],
+          [
+            546.1605846238848,
+            580.1984966689186
+          ]
+        ],
+        "stereo_votes": [
+          6,
+          6
+        ],
+        "point_minus_stereo_depth_conditional_m": [
+          -0.0037014272083319977,
+          -2.9149246007720286e-05
+        ]
+      },
+      {
+        "frame": 1030829,
+        "endpoint_pixels_xy": [
+          [
+            1006.8805101349528,
+            451.519794401576
+          ],
+          [
+            1115.6429421861499,
+            565.7405594924082
+          ]
+        ],
+        "stereo_votes": [
+          3,
+          1
+        ],
+        "point_minus_stereo_depth_conditional_m": [
+          0.0024428619799248263,
+          -0.0011828988998204837
+        ]
+      },
+      {
+        "frame": 1639585,
+        "endpoint_pixels_xy": [
+          [
+            312.0334017817556,
+            467.75873173120505
+          ],
+          [
+            278.8241932666374,
+            585.1989516314815
+          ]
+        ],
+        "stereo_votes": [
+          2,
+          2
+        ],
+        "point_minus_stereo_depth_conditional_m": [
+          -0.0031061310337724413,
+          -0.004525914752329663
+        ]
+      }
+    ],
+    "reference_class": "photo_supported_approximate",
+    "reference_annotation_cm": 12.9,
+    "photo_reference_candidate_cm": 12.9,
+    "photo_reading_interval_cm": [
+      12.6,
+      13.2
+    ],
+    "conditional_chord_cm": 12.148629537473008,
+    "signed_difference_from_operator_annotation_cm": null,
+    "included_in_physical_accuracy_statistics": false,
+    "comparison_status": "No homologous whole-organ comparison: Ruler image includes basal lobes down toward a small low lobe at its zero. This raw terminal-lamina origin cannot be substituted for that ruler origin; no residual is meaningful."
+  }
+]

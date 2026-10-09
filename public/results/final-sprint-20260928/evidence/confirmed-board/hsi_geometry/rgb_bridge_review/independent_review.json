@@ -1,0 +1,446 @@
+{
+  "status": "provisional_paper_plane_RGB_frame_bridge_for_bounded_diagnostics_only",
+  "original_feature_records": 428,
+  "unique_pixel_pairs": 386,
+  "deduplication": "Rounded (calibration u,v,plant u,v) at 1e-4 pixels within each frame; duplicate SIFT orientations do not count as independent features.",
+  "visual_review": [
+    {
+      "frame": 0,
+      "original_candidates": 75,
+      "unique_pixel_pairs": 65,
+      "source_images_visually_reviewed": true,
+      "observation": "Matches lie on repeated handwritten paper text/grid; no obvious gantry support matches in the inspected revised panels. Exact feature locations are still automatic subpixel estimates."
+    },
+    {
+      "frame": 328592,
+      "original_candidates": 62,
+      "unique_pixel_pairs": 53,
+      "source_images_visually_reviewed": true,
+      "observation": "Matches lie on repeated handwritten paper text/grid; no obvious gantry support matches in the inspected revised panels. Exact feature locations are still automatic subpixel estimates."
+    },
+    {
+      "frame": 670589,
+      "original_candidates": 94,
+      "unique_pixel_pairs": 88,
+      "source_images_visually_reviewed": true,
+      "observation": "Matches lie on repeated handwritten paper text/grid; no obvious gantry support matches in the inspected revised panels. Exact feature locations are still automatic subpixel estimates."
+    },
+    {
+      "frame": 1003470,
+      "original_candidates": 38,
+      "unique_pixel_pairs": 36,
+      "source_images_visually_reviewed": true,
+      "observation": "Matches lie on repeated handwritten paper text/grid; no obvious gantry support matches in the inspected revised panels. Exact feature locations are still automatic subpixel estimates."
+    },
+    {
+      "frame": 1318110,
+      "original_candidates": 90,
+      "unique_pixel_pairs": 83,
+      "source_images_visually_reviewed": true,
+      "observation": "Matches lie on repeated handwritten paper text/grid; no obvious gantry support matches in the inspected revised panels. Exact feature locations are still automatic subpixel estimates."
+    },
+    {
+      "frame": 1639585,
+      "original_candidates": 69,
+      "unique_pixel_pairs": 61,
+      "source_images_visually_reviewed": true,
+      "observation": "Matches lie on repeated handwritten paper text/grid; no obvious gantry support matches in the inspected revised panels. Exact feature locations are still automatic subpixel estimates."
+    }
+  ],
+  "T_plant_reference_from_calibration_zero": [
+    [
+      0.9999986382803937,
+      0.0014222016324722635,
+      -0.0008371259612493966,
+      -0.0011276114277333066
+    ],
+    [
+      -0.0014274139201005116,
+      0.9999793928940846,
+      -0.0062590955160321225,
+      0.007743867551161987
+    ],
+    [
+      0.0008282070146453647,
+      0.0062602819181490025,
+      0.9999800612729467,
+      0.00306307125988818
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "fit_parameters": [
+    0.006259732438829352,
+    -0.0008326723038318968,
+    -0.001424817728070931,
+    -0.0011276114277333066,
+    0.007743867551161987,
+    0.00306307125988818
+  ],
+  "identity_errors": {
+    "n": 386,
+    "rms_px": 2.793570793369324,
+    "median_px": 2.760434863211164,
+    "p95_px": 3.968262769259823,
+    "max_px": 4.983875381673043
+  },
+  "fit_errors": {
+    "n": 386,
+    "rms_px": 1.2771546013076884,
+    "median_px": 0.9558481385082689,
+    "p95_px": 2.2253472443482525,
+    "max_px": 2.635229633174694
+  },
+  "leave_frame_out": [
+    {
+      "held_frame": 0,
+      "test_unique_pairs": 65,
+      "errors": {
+        "n": 65,
+        "rms_px": 1.6458107431451783,
+        "median_px": 1.433178303296333,
+        "p95_px": 2.443320272549714,
+        "max_px": 2.7733706543160035
+      },
+      "T_plant_reference_from_calibration_zero": [
+        [
+          0.9999948305596488,
+          0.0003801573036887294,
+          -0.0031928567778281773,
+          0.0016519976754338186
+        ],
+        [
+          -0.0003840826040176849,
+          0.9999991711699522,
+          -0.001228877521183558,
+          0.002098232788590443
+        ],
+        [
+          0.0031923869647275233,
+          0.00123009748932,
+          0.9999941477456926,
+          0.0021214311788338874
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fit_parameters": [
+        0.0012294899336028774,
+        -0.0031926281770001896,
+        -0.0003821207085753215,
+        0.0016519976754338186,
+        0.002098232788590443,
+        0.0021214311788338874
+      ]
+    },
+    {
+      "held_frame": 328592,
+      "test_unique_pairs": 53,
+      "errors": {
+        "n": 53,
+        "rms_px": 1.609050390831593,
+        "median_px": 1.433563255934179,
+        "p95_px": 2.3599087592419656,
+        "max_px": 2.791155362573821
+      },
+      "T_plant_reference_from_calibration_zero": [
+        [
+          0.9999978130708638,
+          0.0015379327036386746,
+          -0.0014172566771191262,
+          -0.00030936609961616725
+        ],
+        [
+          -0.0015587514791975782,
+          0.9998891498715172,
+          -0.014807371915394378,
+          0.015643077102877864
+        ],
+        [
+          0.0013943268325107541,
+          0.014809548683663167,
+          0.999889360439679,
+          0.00032532542328721946
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fit_parameters": [
+        0.01480901237527892,
+        -0.0014058441642837095,
+        -0.0015483998153208358,
+        -0.00030936609961616725,
+        0.015643077102877864,
+        0.00032532542328721946
+      ]
+    },
+    {
+      "held_frame": 670589,
+      "test_unique_pairs": 88,
+      "errors": {
+        "n": 88,
+        "rms_px": 2.5042641785104958,
+        "median_px": 1.586979650296568,
+        "p95_px": 4.770460933284379,
+        "max_px": 5.1516965561257635
+      },
+      "T_plant_reference_from_calibration_zero": [
+        [
+          0.9999668482101959,
+          -0.00070634041791641,
+          -0.008111939581938477,
+          0.005781874509092653
+        ],
+        [
+          0.0005320783226618333,
+          0.9997694743166402,
+          -0.02146427537299138,
+          0.020046236891987985
+        ],
+        [
+          0.008125230656760208,
+          0.021459247606639628,
+          0.9997367059975999,
+          -0.005766853513561951
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fit_parameters": [
+        0.02146364664452163,
+        -0.008119298238305216,
+        0.000619263760300819,
+        0.005781874509092653,
+        0.020046236891987985,
+        -0.005766853513561951
+      ]
+    },
+    {
+      "held_frame": 1003470,
+      "test_unique_pairs": 36,
+      "errors": {
+        "n": 36,
+        "rms_px": 1.3021163760866494,
+        "median_px": 1.0178761392693705,
+        "p95_px": 2.106520575559596,
+        "max_px": 2.269718583587485
+      },
+      "T_plant_reference_from_calibration_zero": [
+        [
+          0.9999986530036709,
+          0.0016368839577276244,
+          -0.00012083771250014434,
+          -0.0016798850050636078
+        ],
+        [
+          -0.00163666284408333,
+          0.9999970265825459,
+          0.0018078055210367643,
+          0.0007812856958181321
+        ],
+        [
+          0.00012379652105525707,
+          -0.001807605315335151,
+          0.9999983586173756,
+          0.006293436713894922
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fit_parameters": [
+        -0.0018077072143833773,
+        -0.00012231723831613683,
+        -0.0016367750272590468,
+        -0.0016798850050636078,
+        0.0007812856958181321,
+        0.006293436713894922
+      ]
+    },
+    {
+      "held_frame": 1318110,
+      "test_unique_pairs": 83,
+      "errors": {
+        "n": 83,
+        "rms_px": 0.9031375227086281,
+        "median_px": 0.821898306941734,
+        "p95_px": 1.3006733312607601,
+        "max_px": 1.9746780541561426
+      },
+      "T_plant_reference_from_calibration_zero": [
+        [
+          0.9999985925751106,
+          0.0014975526097946524,
+          -0.0007564284359978571,
+          -0.0016038743944095215
+        ],
+        [
+          -0.0015043476053902475,
+          0.9999577916852087,
+          -0.009063762260952363,
+          0.010258910134515332
+        ],
+        [
+          0.0007428230475998751,
+          0.009064887435694106,
+          0.9999586371594068,
+          0.0019621376510971793
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fit_parameters": [
+        0.009064453229414625,
+        -0.0007496363590011924,
+        -0.0015009713660552872,
+        -0.0016038743944095215,
+        0.010258910134515332,
+        0.0019621376510971793
+      ]
+    },
+    {
+      "held_frame": 1639585,
+      "test_unique_pairs": 61,
+      "errors": {
+        "n": 61,
+        "rms_px": 3.0294495545962974,
+        "median_px": 3.0184011279312712,
+        "p95_px": 3.2868910732144294,
+        "max_px": 3.5496516140720735
+      },
+      "T_plant_reference_from_calibration_zero": [
+        [
+          0.9999978273405542,
+          0.0015636892066738255,
+          0.0013784738794007545,
+          -0.00381003383145911
+        ],
+        [
+          -0.0015652831288262591,
+          0.999998106803174,
+          0.0011559752567885193,
+          0.0011709128103145536
+        ],
+        [
+          -0.0013766636836461765,
+          -0.0011581304471548915,
+          0.9999983817641754,
+          0.006291878068420398
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fit_parameters": [
+        -0.0011570539481054467,
+        0.0013775700865629196,
+        -0.0015644876498656373,
+        -0.00381003383145911,
+        0.0011709128103145536,
+        0.006291878068420398
+      ]
+    }
+  ],
+  "conditioning": {
+    "jacobian_parameter_units": "first3 radians, last3 metres",
+    "jacobian_columns_l2_norm": [
+      13862.73898750313,
+      15668.357233226652,
+      14440.765080050758,
+      13911.252507587078,
+      13898.494198039121,
+      8125.063204856399
+    ],
+    "column_normalized_singular_values": [
+      1.841759420731863,
+      1.385751219927612,
+      0.7363785157066147,
+      0.36748902273481654,
+      0.10144684761427734,
+      0.004778022480855998
+    ],
+    "column_normalized_condition_number": 385.4647876001425,
+    "column_normalized_rank": 6,
+    "limit": "Full rank does not establish ground-truth camera accuracy; paper-strip coverage is narrow and geometry/pose errors are correlated."
+  },
+  "illustrative_P5_region_point_fold_spread": {
+    "calibration_xyz_m": [
+      1.25,
+      0.0,
+      0.55
+    ],
+    "fold_mapped_points": [
+      [
+        1.2498894646471894,
+        0.0009422468969173801,
+        0.5561086961448742
+      ],
+      [
+        1.248908409066548,
+        0.005550583200413982,
+        0.5520073822057492
+      ],
+      [
+        1.2512788680017712,
+        0.008905983340170018,
+        0.5542448731060683
+      ],
+      [
+        1.2482519705076498,
+        -0.00027024982271581016,
+        0.5564472796047707
+      ],
+      [
+        1.24797833068468,
+        0.0033934063842537224,
+        0.5528679168982709
+      ],
+      [
+        1.2469454109779041,
+        -0.00014990470948458433,
+        0.5545701584341591
+      ]
+    ],
+    "max_distance_from_fold_mean_m": 0.006320237537967805,
+    "meaning": "Leave-frame-out model variation at a representative height; not physical confidence interval."
+  },
+  "limitations": [
+    "All controls are a narrow lower paper strip; the bridge is approximate and model-dependent.",
+    "Revised masks exclude off-plane gantry areas present in rejected first probe.",
+    "RANSAC selects within each image pair before this bridge fit; test-frame feature correspondence filtering uses that pair, but held-out pixels never enter the bridge fit.",
+    "Coplanarity of paper with the boards is assumed; no independent elevated calibration exists.",
+    "Use only as one sensitivity scenario for a bounded three-point height-model diagnostic; not a production dense-fusion transform."
+  ],
+  "source_hashes": {
+    "generated\\research_confirmed_board_20261007\\rgb_run_transfer_paper_v2\\summary.json": "08d78c06bd29952cccdea17ee9679458080a027e32f38ea5905fb8d581a54511",
+    "generated\\research_confirmed_board_20261007\\d405_metric_calibration.json": "4875f09593b49966f1f191296de8b055a68b61f8626f6cd1a3eda269b8d0c3cf",
+    "generated\\research_confirmed_board_20261007\\d405_metric\\icp_diagnostics_reexpressed.json": "6aec0da7727ed3a3bd386597f51f4f2398db44fba6b94dcd7e53058ce1b6be6c",
+    "generated\\research_confirmed_board_20261007\\hsi_geometry\\rgb_bridge_review\\review_bridge.py": "21e27c1dc8038658a84ef2f5ac3e5413dc9dd98b7b06b9b3841ea1b98a14ba04"
+  }
+}

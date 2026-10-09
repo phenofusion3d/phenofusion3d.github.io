@@ -1,0 +1,30 @@
+d405_all 1719001
+d405_P1 217216
+d405_P2 466062
+d405_P3 364106
+d405_P4 250582
+d405_P5 459798
+l515_all 199811
+l515_P1 15052
+l515_P2 49030
+l515_P3 48270
+l515_P4 31517
+l515_P5 65424
+fused_all 1740673
+fused_P1 218440
+fused_P2 470969
+fused_P3 369375
+fused_P4 253107
+fused_P5 468555
+cleaned_all 430060
+cleaned_P1 21444
+cleaned_P2 72786
+cleaned_P3 112943
+cleaned_P4 68239
+cleaned_P5 154648
+{
+  "status": "pass",
+  "models": 24,
+  "cloud_bytes": 124006812,
+  "download_bytes": 104010072
+}

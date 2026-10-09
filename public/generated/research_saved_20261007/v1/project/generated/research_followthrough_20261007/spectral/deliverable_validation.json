@@ -1,0 +1,27 @@
+{
+  "status": "PASSED_SAVED_ARTIFACT_CONSISTENCY_NOT_PHYSICAL_VALIDATION",
+  "local_links_checked": 25,
+  "cameras": [
+    {
+      "camera": "fx10",
+      "spectra": 7982,
+      "bands": 224,
+      "suspected_clipped_samples": 2332,
+      "unsupported_samples": 693,
+      "Q_valid_values": 1591044,
+      "raw_values": 1787968
+    },
+    {
+      "camera": "fx17",
+      "spectra": 5361,
+      "bands": 224,
+      "suspected_clipped_samples": 350,
+      "unsupported_samples": 616,
+      "Q_valid_values": 1054905,
+      "raw_values": 1200864
+    }
+  ],
+  "geometry_status": "blocked_missing_calibration",
+  "physical_fusion": null,
+  "script_sha256": "65f753b162d0877e2912d2b502b045b4fafc0ff08e3d8e25f392cd66078940f8"
+}

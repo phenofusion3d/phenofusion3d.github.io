@@ -1,0 +1,191 @@
+[
+  {
+    "id": "P1.O03.length_candidate",
+    "measurement_id": "P1.O03.length",
+    "status": "rejected_missing_endpoint_support",
+    "reason": "At least one endpoint lacks current retained source support; no distance published as a manual comparison.",
+    "attempt_chord_cm": null
+  },
+  {
+    "id": "P1.O03.width_candidate",
+    "measurement_id": "P1.O03.width",
+    "status": "descriptive_only_reference_section_mismatch",
+    "reason": "Visible chord is not matched to the ruler section; P1 also has unresolved annotation-unit discrepancy.",
+    "attempt_chord_cm": 0.34477037243138364
+  },
+  {
+    "id": "P1.O04.length_candidate",
+    "measurement_id": "P1.O04.length",
+    "status": "rejected_missing_endpoint_support",
+    "reason": "At least one endpoint lacks current retained source support; no distance published as a manual comparison.",
+    "attempt_chord_cm": null
+  },
+  {
+    "id": "P1.O04.width_candidate",
+    "measurement_id": "P1.O04.width",
+    "status": "rejected_missing_endpoint_support",
+    "reason": "At least one endpoint lacks current retained source support; no distance published as a manual comparison.",
+    "attempt_chord_cm": null
+  },
+  {
+    "id": "P3.O01.length_candidate",
+    "measurement_id": "P3.O01.length",
+    "status": "rejected_anatomical_origin_or_partial_lamina",
+    "reason": "Crossing stem or partial visible lamina origin does not match full ruler length.",
+    "attempt_chord_cm": 16.19121655167727
+  },
+  {
+    "id": "P3.O01.width_candidate",
+    "measurement_id": "P3.O01.width",
+    "status": "conditional_comparison_in_curated_table",
+    "reason": "Visually reviewed in three views; exact geometry and two-view stereo support verified. Definitions and held-ruler pose remain conditional.",
+    "attempt_chord_cm": 3.9358752315052756
+  },
+  {
+    "id": "P3.O02.length_candidate",
+    "measurement_id": "P3.O02.length",
+    "status": "conditional_comparison_in_curated_table",
+    "reason": "Visually reviewed in three views; exact geometry and two-view stereo support verified. Definitions and held-ruler pose remain conditional.",
+    "attempt_chord_cm": 9.12092539833513
+  },
+  {
+    "id": "P3.O02.width_candidate",
+    "measurement_id": "P3.O02.width",
+    "status": "conditional_comparison_in_curated_table",
+    "reason": "Visually reviewed in three views; exact geometry and two-view stereo support verified. Definitions and held-ruler pose remain conditional.",
+    "attempt_chord_cm": 9.265520307458768
+  },
+  {
+    "id": "P3.O03.length_candidate",
+    "measurement_id": "P3.O03.length",
+    "status": "conditional_comparison_in_curated_table",
+    "reason": "Visually reviewed in three views; exact geometry and two-view stereo support verified. Definitions and held-ruler pose remain conditional.",
+    "attempt_chord_cm": 7.691100957059331
+  },
+  {
+    "id": "P3.O03.width_candidate",
+    "measurement_id": "P3.O03.width",
+    "status": "conditional_comparison_in_curated_table",
+    "reason": "Visually reviewed in three views; exact geometry and two-view stereo support verified. Definitions and held-ruler pose remain conditional.",
+    "attempt_chord_cm": 5.036529578582992
+  },
+  {
+    "id": "P3.O04.length_candidate",
+    "measurement_id": "P3.O04.length",
+    "status": "conditional_comparison_in_curated_table",
+    "reason": "Visually reviewed in three views; exact geometry and two-view stereo support verified. Definitions and held-ruler pose remain conditional.",
+    "attempt_chord_cm": 11.500610903923318
+  },
+  {
+    "id": "P3.O04.width_candidate",
+    "measurement_id": "P3.O04.width",
+    "status": "conditional_comparison_in_curated_table",
+    "reason": "Visually reviewed in three views; exact geometry and two-view stereo support verified. Definitions and held-ruler pose remain conditional.",
+    "attempt_chord_cm": 7.081279655122308
+  },
+  {
+    "id": "P3.O05.length_candidate",
+    "measurement_id": "P3.O05.length",
+    "status": "rejected_anatomical_origin_or_partial_lamina",
+    "reason": "Crossing stem or partial visible lamina origin does not match full ruler length.",
+    "attempt_chord_cm": 16.373130758901777
+  },
+  {
+    "id": "P3.O05.width_candidate",
+    "measurement_id": "P3.O05.width",
+    "status": "rejected_missing_endpoint_support",
+    "reason": "At least one endpoint lacks current retained source support; no distance published as a manual comparison.",
+    "attempt_chord_cm": null
+  },
+  {
+    "id": "P5.O01.length_candidate",
+    "measurement_id": "P5.O01.length",
+    "status": "conditional_comparison_in_curated_table",
+    "reason": "Visually reviewed in three views; exact geometry and two-view stereo support verified. Definitions and held-ruler pose remain conditional.",
+    "attempt_chord_cm": 11.679115200213703
+  },
+  {
+    "id": "P5.O01.width_candidate",
+    "measurement_id": "P5.O01.width",
+    "status": "conditional_comparison_in_curated_table",
+    "reason": "Visually reviewed in three views; exact geometry and two-view stereo support verified. Definitions and held-ruler pose remain conditional.",
+    "attempt_chord_cm": 9.758400367366564
+  },
+  {
+    "id": "P5.O02.length_candidate",
+    "measurement_id": "P5.O02.length",
+    "status": "superseded_after_venation_axis_review",
+    "reason": "First batch axis interpretation was wrong; revised length provided, revised width abstains.",
+    "attempt_chord_cm": 4.696025177440155
+  },
+  {
+    "id": "P5.O02.width_candidate",
+    "measurement_id": "P5.O02.width",
+    "status": "superseded_after_venation_axis_review",
+    "reason": "First batch axis interpretation was wrong; revised length provided, revised width abstains.",
+    "attempt_chord_cm": 6.490830167587274
+  },
+  {
+    "id": "P5.O03.length_candidate",
+    "measurement_id": "P5.O03.length",
+    "status": "conditional_comparison_in_curated_table",
+    "reason": "Visually reviewed in three views; exact geometry and two-view stereo support verified. Definitions and held-ruler pose remain conditional.",
+    "attempt_chord_cm": 9.797323277103388
+  },
+  {
+    "id": "P5.O03.width_candidate",
+    "measurement_id": "P5.O03.width",
+    "status": "conditional_comparison_in_curated_table",
+    "reason": "Visually reviewed in three views; exact geometry and two-view stereo support verified. Definitions and held-ruler pose remain conditional.",
+    "attempt_chord_cm": 11.571735824370721
+  },
+  {
+    "id": "P5.O04.length_candidate",
+    "measurement_id": "P5.O04.length",
+    "status": "rejected_anatomical_origin_or_partial_lamina",
+    "reason": "Crossing stem or partial visible lamina origin does not match full ruler length.",
+    "attempt_chord_cm": 17.06267465742734
+  },
+  {
+    "id": "P5.O04.width_candidate",
+    "measurement_id": "P5.O04.width",
+    "status": "descriptive_only_reference_section_mismatch",
+    "reason": "Visible chord is not matched to the ruler section; P1 also has unresolved annotation-unit discrepancy.",
+    "attempt_chord_cm": 8.766063917654657
+  },
+  {
+    "id": "P5.O05.length_candidate",
+    "measurement_id": "P5.O05.length",
+    "status": "conditional_comparison_in_curated_table",
+    "reason": "Visually reviewed in three views; exact geometry and two-view stereo support verified. Definitions and held-ruler pose remain conditional.",
+    "attempt_chord_cm": 11.97660275005639
+  },
+  {
+    "id": "P5.O05.width_candidate",
+    "measurement_id": "P5.O05.width",
+    "status": "rejected_missing_endpoint_support",
+    "reason": "At least one endpoint lacks current retained source support; no distance published as a manual comparison.",
+    "attempt_chord_cm": null
+  },
+  {
+    "id": "P5.O02.length_revision",
+    "measurement_id": "P5.O02.length",
+    "status": "conditional_comparison_in_curated_table",
+    "reason": "Visually reviewed in three views; exact geometry and two-view stereo support verified. Definitions and held-ruler pose remain conditional.",
+    "attempt_chord_cm": 6.4682762513886995
+  },
+  {
+    "id": "P5.O02.width_revision",
+    "measurement_id": "P5.O02.width",
+    "status": "rejected_missing_endpoint_support",
+    "reason": "At least one endpoint lacks current retained source support; no distance published as a manual comparison.",
+    "attempt_chord_cm": null
+  },
+  {
+    "id": "P3.O01.length_revision",
+    "measurement_id": "P3.O01.length",
+    "status": "rejected_anatomical_origin_or_partial_lamina",
+    "reason": "Crossing stem or partial visible lamina origin does not match full ruler length.",
+    "attempt_chord_cm": 5.353546011997693
+  }
+]

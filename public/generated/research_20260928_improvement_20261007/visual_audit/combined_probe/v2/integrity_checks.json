@@ -1,0 +1,47 @@
+[
+  {
+    "frame": 275384,
+    "unique_pairs": 8,
+    "shared_pair_map_equality_verified_in_run": true,
+    "legacy_values_identical": true,
+    "new_fills_meet_stricter_consensus": true,
+    "bitmap_counts_equal_votes": true,
+    "nonaccepted_fusion_depth_nan_votes_zero": true
+  },
+  {
+    "frame": 487431,
+    "unique_pairs": 8,
+    "shared_pair_map_equality_verified_in_run": true,
+    "legacy_values_identical": true,
+    "new_fills_meet_stricter_consensus": true,
+    "bitmap_counts_equal_votes": true,
+    "nonaccepted_fusion_depth_nan_votes_zero": true
+  },
+  {
+    "frame": 799028,
+    "unique_pairs": 8,
+    "shared_pair_map_equality_verified_in_run": true,
+    "legacy_values_identical": true,
+    "new_fills_meet_stricter_consensus": true,
+    "bitmap_counts_equal_votes": true,
+    "nonaccepted_fusion_depth_nan_votes_zero": true
+  },
+  {
+    "frame": 1055904,
+    "unique_pairs": 8,
+    "shared_pair_map_equality_verified_in_run": true,
+    "legacy_values_identical": true,
+    "new_fills_meet_stricter_consensus": true,
+    "bitmap_counts_equal_votes": true,
+    "nonaccepted_fusion_depth_nan_votes_zero": true
+  },
+  {
+    "frame": 1420709,
+    "unique_pairs": 8,
+    "shared_pair_map_equality_verified_in_run": true,
+    "legacy_values_identical": true,
+    "new_fills_meet_stricter_consensus": true,
+    "bitmap_counts_equal_votes": true,
+    "nonaccepted_fusion_depth_nan_votes_zero": true
+  }
+]

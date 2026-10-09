@@ -1,0 +1,302 @@
+{
+  "saved_utc": "2026-10-07T09:11:44.853337+00:00",
+  "original_copies_verified": 843,
+  "original_copies_byte_identical": true,
+  "local_html_script_style_references_checked": 373,
+  "dynamic_js_cloud_downloads_checked": 36,
+  "missing_local_links": [],
+  "external_viewer_dependencies": [],
+  "independent_checks": {
+    "status": "pass_independent_portable_source_replay",
+    "package": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_saved_20261007\\v1\\project",
+    "verifier_sha256": "6ce87928081baab5fddd640341b1841f48745ccdb596e116f9104bef7507a18c",
+    "output": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_saved_20261007\\independent_replay",
+    "package_modified": false,
+    "hardware_operated": false,
+    "dependencies_installed": false,
+    "network_used": false,
+    "cloud_inputs": [
+      {
+        "id": "P1",
+        "path": "generated\\research_plant_cleanup_20261007\\v1\\result\\P1_reference.ply",
+        "absolute_path_characters": 247,
+        "sha256": "83260a35fc2885ca60daf9e7d69d55c29b8131f263eb63d5f5a4c64ab2f45aae",
+        "inside_package": true,
+        "matches_original": true
+      },
+      {
+        "id": "P2",
+        "path": "generated\\research_plant_cleanup_20261007\\v1\\result\\P2_reference.ply",
+        "absolute_path_characters": 247,
+        "sha256": "bb19b09daa8a122b4fd855ce3b866cd05060e2a20769afc1cba3456df30dd742",
+        "inside_package": true,
+        "matches_original": true
+      },
+      {
+        "id": "P3",
+        "path": "generated\\research_plant_cleanup_20261007\\v1\\result\\P3_reference.ply",
+        "absolute_path_characters": 247,
+        "sha256": "1fa8e16b42ebf598eb67fbd1e301f02845bc753213ab45a31eeb68ca596866aa",
+        "inside_package": true,
+        "matches_original": true
+      },
+      {
+        "id": "P4",
+        "path": "generated\\research_plant_cleanup_20261007\\v1\\result\\P4_reference.ply",
+        "absolute_path_characters": 247,
+        "sha256": "a0fb7091556524eeb4b9faea079dd1ab267d6f047e7bdf2640ba2691b5acb1b8",
+        "inside_package": true,
+        "matches_original": true
+      },
+      {
+        "id": "P5",
+        "path": "generated\\research_plant_cleanup_20261007\\v1\\result\\P5_reference.ply",
+        "absolute_path_characters": 247,
+        "sha256": "2d236b5d5c6387e211718e2f6b03f4bc7131f557c805228be3f57a4a25eab39f",
+        "inside_package": true,
+        "matches_original": true
+      },
+      {
+        "id": "fusion_context",
+        "path": "generated\\research_d405_l515_fusion_20261007\\v1\\fused_review_reference.ply",
+        "absolute_path_characters": 253,
+        "sha256": "9caee0edcc1fb5f66a9cdd490a0054e2ab45872302a32a81cd24788dee01ab10",
+        "inside_package": true,
+        "matches_original": true
+      }
+    ],
+    "specimens": 5,
+    "context_clouds": 1,
+    "protected_files": [
+      {
+        "path": "main.py",
+        "baseline_sha256": "9f3b051f5b784732c4124fb84db4aa62b5566677e816cc1cdc7f000d7a382afc",
+        "current_sha256": "9f3b051f5b784732c4124fb84db4aa62b5566677e816cc1cdc7f000d7a382afc",
+        "packaged_sha256": "9f3b051f5b784732c4124fb84db4aa62b5566677e816cc1cdc7f000d7a382afc"
+      },
+      {
+        "path": "app/main_window.py",
+        "baseline_sha256": "040c856575c96c6e09c314f73b95188cd31521ad6a887519eac987c9141669a1",
+        "current_sha256": "040c856575c96c6e09c314f73b95188cd31521ad6a887519eac987c9141669a1",
+        "packaged_sha256": "040c856575c96c6e09c314f73b95188cd31521ad6a887519eac987c9141669a1"
+      },
+      {
+        "path": "app/controller.py",
+        "baseline_sha256": "6dc964d58bc9f332d547676953939581bfa470668bbc2c3598f9ae1501eddf1b",
+        "current_sha256": "6dc964d58bc9f332d547676953939581bfa470668bbc2c3598f9ae1501eddf1b",
+        "packaged_sha256": "6dc964d58bc9f332d547676953939581bfa470668bbc2c3598f9ae1501eddf1b"
+      },
+      {
+        "path": "app/capture_worker.py",
+        "baseline_sha256": "8b9b4dcbc9ce6c3d7a5139f56c3de9a1851c48eb58732624ba307d4558a9da12",
+        "current_sha256": "8b9b4dcbc9ce6c3d7a5139f56c3de9a1851c48eb58732624ba307d4558a9da12",
+        "packaged_sha256": "8b9b4dcbc9ce6c3d7a5139f56c3de9a1851c48eb58732624ba307d4558a9da12"
+      },
+      {
+        "path": "app/panels/capture_panel.py",
+        "baseline_sha256": "f06408603428d4f73b4d5d9acad378ea1e5226a51e5758f8b19b3f4c51672d41",
+        "current_sha256": "f06408603428d4f73b4d5d9acad378ea1e5226a51e5758f8b19b3f4c51672d41",
+        "packaged_sha256": "f06408603428d4f73b4d5d9acad378ea1e5226a51e5758f8b19b3f4c51672d41"
+      },
+      {
+        "path": "app/panels/gantry_panel.py",
+        "baseline_sha256": "782eb3bc0c9081990f82771ac81304ca36581517474886110eaedad487968145",
+        "current_sha256": "782eb3bc0c9081990f82771ac81304ca36581517474886110eaedad487968145",
+        "packaged_sha256": "782eb3bc0c9081990f82771ac81304ca36581517474886110eaedad487968145"
+      },
+      {
+        "path": "processing/reconstructor.py",
+        "baseline_sha256": "077bf48dfb5745114d327e00541b65d383743f00da85c8b60cef3d3b5ee600d9",
+        "current_sha256": "077bf48dfb5745114d327e00541b65d383743f00da85c8b60cef3d3b5ee600d9",
+        "packaged_sha256": "077bf48dfb5745114d327e00541b65d383743f00da85c8b60cef3d3b5ee600d9"
+      },
+      {
+        "path": "processing/icp.py",
+        "baseline_sha256": "b44b9c8d559f9abb0f6679b63468b5f84b7248715f5d2eee2c81bfe84103755d",
+        "current_sha256": "b44b9c8d559f9abb0f6679b63468b5f84b7248715f5d2eee2c81bfe84103755d",
+        "packaged_sha256": "b44b9c8d559f9abb0f6679b63468b5f84b7248715f5d2eee2c81bfe84103755d"
+      },
+      {
+        "path": "setup.sh",
+        "baseline_sha256": "f5a1a0d31d825dbb91fe71a907d497a76ef9ec87b985249b0ef84f550c1e30b0",
+        "current_sha256": "f5a1a0d31d825dbb91fe71a907d497a76ef9ec87b985249b0ef84f550c1e30b0",
+        "packaged_sha256": "f5a1a0d31d825dbb91fe71a907d497a76ef9ec87b985249b0ef84f550c1e30b0"
+      },
+      {
+        "path": "requirements.txt",
+        "baseline_sha256": "b57524e871cf764869874d78d4f7f6fda73961adcf3249ee0cd097679cfbb57f",
+        "current_sha256": "b57524e871cf764869874d78d4f7f6fda73961adcf3249ee0cd097679cfbb57f",
+        "packaged_sha256": "b57524e871cf764869874d78d4f7f6fda73961adcf3249ee0cd097679cfbb57f"
+      },
+      {
+        "path": "capture/__init__.py",
+        "baseline_sha256": "9ee0dd1bfae4c8ef77379b3520e656d36ba0710d3a7b4ec64263519dc4ad9a29",
+        "current_sha256": "9ee0dd1bfae4c8ef77379b3520e656d36ba0710d3a7b4ec64263519dc4ad9a29",
+        "packaged_sha256": "9ee0dd1bfae4c8ef77379b3520e656d36ba0710d3a7b4ec64263519dc4ad9a29"
+      },
+      {
+        "path": "capture/base.py",
+        "baseline_sha256": "56a241f59f80ab23c984d725edd7def790e6405eca03a262aaa9c49bb93184a2",
+        "current_sha256": "56a241f59f80ab23c984d725edd7def790e6405eca03a262aaa9c49bb93184a2",
+        "packaged_sha256": "56a241f59f80ab23c984d725edd7def790e6405eca03a262aaa9c49bb93184a2"
+      },
+      {
+        "path": "capture/gantry.py",
+        "baseline_sha256": "d25c45ff238014a9eead4eecba37ffd651456640ed6b3b96cfe74041c95b5fde",
+        "current_sha256": "d25c45ff238014a9eead4eecba37ffd651456640ed6b3b96cfe74041c95b5fde",
+        "packaged_sha256": "d25c45ff238014a9eead4eecba37ffd651456640ed6b3b96cfe74041c95b5fde"
+      },
+      {
+        "path": "capture/realsense_capture.py",
+        "baseline_sha256": "899891601a569c1d921a5c9aed56e3d0fcaf9ce33e2baef8893390419e14eae2",
+        "current_sha256": "899891601a569c1d921a5c9aed56e3d0fcaf9ce33e2baef8893390419e14eae2",
+        "packaged_sha256": "899891601a569c1d921a5c9aed56e3d0fcaf9ce33e2baef8893390419e14eae2"
+      },
+      {
+        "path": "capture/realsense_runtime.py",
+        "baseline_sha256": "b6419299ee14e56920e4023c90d18fdb0ff63c7f7b4c99b85dafe3d8fc45f0c4",
+        "current_sha256": "b6419299ee14e56920e4023c90d18fdb0ff63c7f7b4c99b85dafe3d8fc45f0c4",
+        "packaged_sha256": "b6419299ee14e56920e4023c90d18fdb0ff63c7f7b4c99b85dafe3d8fc45f0c4"
+      },
+      {
+        "path": "capture/ros_agent.py",
+        "baseline_sha256": "824cdb7ed1f6f70b4d1444edaec3d32693329ae3c03d7d20ffe8bd47ec0bdb8d",
+        "current_sha256": "824cdb7ed1f6f70b4d1444edaec3d32693329ae3c03d7d20ffe8bd47ec0bdb8d",
+        "packaged_sha256": "824cdb7ed1f6f70b4d1444edaec3d32693329ae3c03d7d20ffe8bd47ec0bdb8d"
+      },
+      {
+        "path": "capture/ros_capture.py",
+        "baseline_sha256": "b19b722f22f6ebefe03fd2bc6ce0a540e2eadcfe9c38b00ea3d49614dcbc23ff",
+        "current_sha256": "b19b722f22f6ebefe03fd2bc6ce0a540e2eadcfe9c38b00ea3d49614dcbc23ff",
+        "packaged_sha256": "b19b722f22f6ebefe03fd2bc6ce0a540e2eadcfe9c38b00ea3d49614dcbc23ff"
+      },
+      {
+        "path": "capture/ros_client.py",
+        "baseline_sha256": "ef7ed633ecf59719984e61f6f885a9e5b75820af9e6fa2ed92e9be8a48fdd842",
+        "current_sha256": "ef7ed633ecf59719984e61f6f885a9e5b75820af9e6fa2ed92e9be8a48fdd842",
+        "packaged_sha256": "ef7ed633ecf59719984e61f6f885a9e5b75820af9e6fa2ed92e9be8a48fdd842"
+      },
+      {
+        "path": "capture/ros_runtime.py",
+        "baseline_sha256": "a22b757fe033b7a40039772bc14e98e79c2d320352320f7767ae0a8dd90da120",
+        "current_sha256": "a22b757fe033b7a40039772bc14e98e79c2d320352320f7767ae0a8dd90da120",
+        "packaged_sha256": "a22b757fe033b7a40039772bc14e98e79c2d320352320f7767ae0a8dd90da120"
+      },
+      {
+        "path": "install/build_appimage.sh",
+        "baseline_sha256": "6596844b7919aff2e528245b5daab712c33ec4f7074ee2583e217a217a26b668",
+        "current_sha256": "6596844b7919aff2e528245b5daab712c33ec4f7074ee2583e217a217a26b668",
+        "packaged_sha256": "6596844b7919aff2e528245b5daab712c33ec4f7074ee2583e217a217a26b668"
+      },
+      {
+        "path": "install/install_linux.sh",
+        "baseline_sha256": "4dc7a44e384799e885420e6743c206be6ed9606743b38bf70ff5201dac1fe603",
+        "current_sha256": "4dc7a44e384799e885420e6743c206be6ed9606743b38bf70ff5201dac1fe603",
+        "packaged_sha256": "4dc7a44e384799e885420e6743c206be6ed9606743b38bf70ff5201dac1fe603"
+      },
+      {
+        "path": "install/install_windows.ps1",
+        "baseline_sha256": "4e63a3724cd717c77bab8f551c2df5f215ad3df65899922757304aa53a6e0aaf",
+        "current_sha256": "4e63a3724cd717c77bab8f551c2df5f215ad3df65899922757304aa53a6e0aaf",
+        "packaged_sha256": "4e63a3724cd717c77bab8f551c2df5f215ad3df65899922757304aa53a6e0aaf"
+      },
+      {
+        "path": "install/README.md",
+        "baseline_sha256": "ffa8f8615903b3b2435d14b0607392985677a9b9ee9db21e1e8af288c49c8510",
+        "current_sha256": "ffa8f8615903b3b2435d14b0607392985677a9b9ee9db21e1e8af288c49c8510",
+        "packaged_sha256": "ffa8f8615903b3b2435d14b0607392985677a9b9ee9db21e1e8af288c49c8510"
+      },
+      {
+        "path": "install/appimage/entrypoint.sh",
+        "baseline_sha256": "bab3e17c4513fc5a5361587e6a0bc3235a9ff0731a1d695629a48cb5baaf5bb0",
+        "current_sha256": "bab3e17c4513fc5a5361587e6a0bc3235a9ff0731a1d695629a48cb5baaf5bb0",
+        "packaged_sha256": "bab3e17c4513fc5a5361587e6a0bc3235a9ff0731a1d695629a48cb5baaf5bb0"
+      },
+      {
+        "path": "install/appimage/phenofusion3d.desktop",
+        "baseline_sha256": "d4be5035152c349399d6c70285423aa690561bd96bd1427bc56be3d065f5648c",
+        "current_sha256": "d4be5035152c349399d6c70285423aa690561bd96bd1427bc56be3d065f5648c",
+        "packaged_sha256": "d4be5035152c349399d6c70285423aa690561bd96bd1427bc56be3d065f5648c"
+      },
+      {
+        "path": "install/appimage/requirements.txt",
+        "baseline_sha256": "b8b07df63a0b81b001fb8882de9bfc24f193f479d592da3c00b777eb222e122e",
+        "current_sha256": "b8b07df63a0b81b001fb8882de9bfc24f193f479d592da3c00b777eb222e122e",
+        "packaged_sha256": "b8b07df63a0b81b001fb8882de9bfc24f193f479d592da3c00b777eb222e122e"
+      }
+    ],
+    "protected_file_count": 26,
+    "exit_code": 0,
+    "elapsed_seconds": 8.859,
+    "cwd": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_saved_20261007\\independent_cwd",
+    "pythonpath": [
+      "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_saved_20261007\\v1\\project",
+      "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\venv\\Lib\\site-packages"
+    ],
+    "log": "independent_replay.log",
+    "module_origins": {
+      "processing.research_workspace": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_saved_20261007\\v1\\project\\processing\\research_workspace\\__init__.py",
+      "processing.research_workspace.workflow": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_saved_20261007\\v1\\project\\processing\\research_workspace\\workflow.py",
+      "processing.research_workspace.viewer": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_saved_20261007\\v1\\project\\processing\\research_workspace\\viewer.py",
+      "processing.rgb_recovery.viewer": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_saved_20261007\\v1\\project\\processing\\rgb_recovery\\viewer.py",
+      "processing.research_workspace.spectral_extract": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_saved_20261007\\v1\\project\\processing\\research_workspace\\spectral_extract.py",
+      "app.research_report": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_saved_20261007\\v1\\project\\app\\research_report.py"
+    },
+    "all_input_fingerprints_unchanged": true,
+    "all_cloud_inputs_inside_package": true,
+    "cloud_counts_hashes_and_descriptors_exact": true,
+    "endpoint_measurements_json_and_csv_exact": true,
+    "source_index_preview_payloads_exact": true,
+    "eligible_accuracy_pairs": 0,
+    "empty_error_scores_null": true,
+    "conditional_chords": [
+      {
+        "specimen_id": "P1",
+        "value": 0.05642877354066353,
+        "unit": "conditional_m"
+      },
+      {
+        "specimen_id": "P3",
+        "value": 0.07475255446013435,
+        "unit": "conditional_m"
+      },
+      {
+        "specimen_id": "P5",
+        "value": 0.1214862953747301,
+        "unit": "conditional_m"
+      }
+    ],
+    "source_point_counts": {
+      "P1": 21891,
+      "P2": 74306,
+      "P3": 113901,
+      "P4": 69634,
+      "P5": 156185,
+      "fusion_context": 1732490
+    },
+    "physical_accuracy_validated": false,
+    "calibrated_3d_spectral_fusion_achieved": false,
+    "live_hardware_or_fresh_dependency_install_verified": false,
+    "pyproject_sha256_current": "9a65d780b1c87749280fccbc07d1d767470d1bbe77ff1a0d3c9529af939056a6",
+    "pyproject_sha256_packaged": "9a65d780b1c87749280fccbc07d1d767470d1bbe77ff1a0d3c9529af939056a6",
+    "browser_checks": {
+      "portable_landing_rendered": true,
+      "upright_fused_context_rendered": true,
+      "fused_context_source_points": 1732490,
+      "fused_context_display_points": 577497,
+      "dynamic_cloud_link_stayed_inside_package": true,
+      "spectral_mapping_findings_rendered": true,
+      "both_spectral_mapping_evidence_images_loaded": true,
+      "fx10_extraction_report_rendered": true,
+      "fx10_report_samples": 7982,
+      "fx10_report_bands": 224,
+      "scope": "Read-only local browser inspection; no physical validation or spectral mapping inferred."
+    }
+  },
+  "raw_acquisition_backup_complete": false,
+  "physical_accuracy_validated": false,
+  "calibrated_3d_spectral_fusion_achieved": false,
+  "lab_hardware_tested": false,
+  "commit_created": false,
+  "pushed": false
+}

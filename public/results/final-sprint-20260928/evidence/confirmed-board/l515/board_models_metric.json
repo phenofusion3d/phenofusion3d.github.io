@@ -1,0 +1,90 @@
+{
+  "square_length_m": 0.025,
+  "marker_length_m": 0.018,
+  "metres_per_previous_filename_unit": 1.0296675588864626,
+  "board_models": [
+    {
+      "sheet": "left_sheet",
+      "R_board_to_reference": [
+        [
+          -0.998003770042988,
+          -0.05172265520138822,
+          0.03623867987249311
+        ],
+        [
+          0.0538487122313584,
+          -0.9967218718104616,
+          0.060380679407192245
+        ],
+        [
+          0.03299683577264766,
+          0.062211551930233075,
+          0.9975173841269258
+        ]
+      ],
+      "t_board_to_reference_m": [
+        0.44626934078276875,
+        0.2841613048138739,
+        0.9158468999016723
+      ],
+      "reference": "L515 calibration colour camera at filename coordinate zero under fixed-mount shared-linear-motion fit",
+      "uncertainty": "Supplied 25mm board dimensions; mean orientation and shared-motion model; paper shape, camera model and mounting errors remain. Not physical extrinsics validation."
+    },
+    {
+      "sheet": "middle_sheet",
+      "R_board_to_reference": [
+        [
+          0.6584381398361625,
+          0.7517117740800388,
+          0.03726425523924058
+        ],
+        [
+          -0.7522483545248715,
+          0.6557063605855405,
+          0.06458778369233983
+        ],
+        [
+          0.02411698828041346,
+          -0.0705590348368382,
+          0.9972160214713643
+        ]
+      ],
+      "t_board_to_reference_m": [
+        0.7008897239485609,
+        0.11560651364192008,
+        0.9127843090258297
+      ],
+      "reference": "L515 calibration colour camera at filename coordinate zero under fixed-mount shared-linear-motion fit",
+      "uncertainty": "Supplied 25mm board dimensions; mean orientation and shared-motion model; paper shape, camera model and mounting errors remain. Not physical extrinsics validation."
+    },
+    {
+      "sheet": "right_sheet",
+      "R_board_to_reference": [
+        [
+          0.9985227235604247,
+          0.03664122029828011,
+          0.04012220717414158
+        ],
+        [
+          -0.038937479467839556,
+          0.9975551671948545,
+          0.058030690979322334
+        ],
+        [
+          -0.03789779975359263,
+          -0.05950722122481384,
+          0.9975082192122218
+        ]
+      ],
+      "t_board_to_reference_m": [
+        1.2618564634262959,
+        -0.0035611319604590963,
+        0.8958351032423154
+      ],
+      "reference": "L515 calibration colour camera at filename coordinate zero under fixed-mount shared-linear-motion fit",
+      "uncertainty": "Supplied 25mm board dimensions; mean orientation and shared-motion model; paper shape, camera model and mounting errors remain. Not physical extrinsics validation."
+    }
+  ],
+  "source": "board_poses_metres.json",
+  "joint_model": "Separate sheet intercepts, shared robust translation slope; orientation mean over each sheet, no plant data."
+}

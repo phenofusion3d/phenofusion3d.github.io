@@ -1,0 +1,750 @@
+{
+  "status": "POST_FREEZE_CONSISTENCY_SCREEN_ONLY",
+  "policy": "Gray/green duplicate proposals merged within2HSI/2RGBpx; mutual nearest source coordinates across frames within3nativeHSIpx and same reviewed patch. Screen: existing-vertex separation<=10mm and forward reprojection<=3RGBpx. Thresholds fixed before evaluating results.",
+  "limits": [
+    "Matching-confidence and multiview consistency are necessary support, not independent same-material truth.",
+    "Nearest observed vertices may lie on same nearby patch without proving exact spectral localization.",
+    "No blind anatomical control has been established for these P1\u2013P4 pairs.",
+    "No dense surface assignment created."
+  ],
+  "accepted_new_dense_assignments": 0,
+  "plants": [
+    {
+      "plant_id": 1,
+      "frames": [
+        86916,
+        115793
+      ],
+      "unique_domain_proposals_by_view": [
+        0,
+        0
+      ],
+      "matched_source_proposals": 0,
+      "geometrically_consistent_proposals": 0,
+      "checks": []
+    },
+    {
+      "plant_id": 2,
+      "frames": [
+        381031,
+        407630
+      ],
+      "unique_domain_proposals_by_view": [
+        8,
+        5
+      ],
+      "matched_source_proposals": 3,
+      "geometrically_consistent_proposals": 2,
+      "checks": [
+        {
+          "patch": 3,
+          "source_a": [
+            632.4296875,
+            560.3645833333334
+          ],
+          "source_b": [
+            632.4296875,
+            560.3645833333334
+          ],
+          "hsi_localization_difference_px": 0.0,
+          "view_a": {
+            "source": [
+              632.4296875,
+              560.3645833333334
+            ],
+            "target": [
+              774.112641453743,
+              513.0092814366024
+            ],
+            "patch": 3,
+            "vertex": 8903,
+            "confidence": 0.6713675856590271,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "view_b": {
+            "source": [
+              632.4296875,
+              560.3645833333334
+            ],
+            "target": [
+              738.3726102113724,
+              515.2440710067749
+            ],
+            "patch": 3,
+            "vertex": 9106,
+            "confidence": 0.7318629026412964,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "nearest_vertex_separation_m": 0.010804826234035596,
+          "view_a_vertex_reprojection_to_b_error_rgb_px": 5.269365236307633,
+          "passes_geometric_consistency_screen": false
+        },
+        {
+          "patch": 3,
+          "source_a": [
+            618.6796875,
+            598.6979166666667
+          ],
+          "source_b": [
+            618.6796875,
+            598.6979166666667
+          ],
+          "hsi_localization_difference_px": 0.0,
+          "view_a": {
+            "source": [
+              618.6796875,
+              598.6979166666667
+            ],
+            "target": [
+              764.5867967009544,
+              527.1309759219488
+            ],
+            "patch": 3,
+            "vertex": 13928,
+            "confidence": 0.4977547228336334,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "view_b": {
+            "source": [
+              618.6796875,
+              598.6979166666667
+            ],
+            "target": [
+              726.2088023424149,
+              527.8736342191696
+            ],
+            "patch": 3,
+            "vertex": 2979,
+            "confidence": 0.5977621674537659,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "nearest_vertex_separation_m": 0.006283731696208907,
+          "view_a_vertex_reprojection_to_b_error_rgb_px": 0.9725233318013925,
+          "passes_geometric_consistency_screen": true
+        },
+        {
+          "patch": 3,
+          "source_a": [
+            625.5546875,
+            541.1979166666667
+          ],
+          "source_b": [
+            625.5546875,
+            541.1979166666667
+          ],
+          "hsi_localization_difference_px": 0.0,
+          "view_a": {
+            "source": [
+              625.5546875,
+              541.1979166666667
+            ],
+            "target": [
+              773.5001477599144,
+              506.0617375771205
+            ],
+            "patch": 3,
+            "vertex": 8858,
+            "confidence": 0.4313544034957886,
+            "channels": [
+              "gray"
+            ]
+          },
+          "view_b": {
+            "source": [
+              625.5546875,
+              541.1979166666667
+            ],
+            "target": [
+              729.9087150096893,
+              507.26852691173553
+            ],
+            "patch": 3,
+            "vertex": 8817,
+            "confidence": 0.5162201523780823,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "nearest_vertex_separation_m": 0.0010314029009785772,
+          "view_a_vertex_reprojection_to_b_error_rgb_px": 2.191298419771576,
+          "passes_geometric_consistency_screen": true
+        }
+      ]
+    },
+    {
+      "plant_id": 3,
+      "frames": [
+        799028,
+        824869
+      ],
+      "unique_domain_proposals_by_view": [
+        16,
+        14
+      ],
+      "matched_source_proposals": 9,
+      "geometrically_consistent_proposals": 9,
+      "checks": [
+        {
+          "patch": 5,
+          "source_a": [
+            957.8854166666666,
+            502.86458333333337
+          ],
+          "source_b": [
+            957.8854166666666,
+            502.86458333333337
+          ],
+          "hsi_localization_difference_px": 0.0,
+          "view_a": {
+            "source": [
+              957.8854166666666,
+              502.86458333333337
+            ],
+            "target": [
+              533.6703439288669,
+              472.19827365875244
+            ],
+            "patch": 5,
+            "vertex": 71280,
+            "confidence": 0.8697220087051392,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "view_b": {
+            "source": [
+              957.8854166666666,
+              502.86458333333337
+            ],
+            "target": [
+              501.62166659037274,
+              472.95471799373627
+            ],
+            "patch": 5,
+            "vertex": 71280,
+            "confidence": 0.40657371282577515,
+            "channels": [
+              "green"
+            ]
+          },
+          "nearest_vertex_separation_m": 0.0,
+          "view_a_vertex_reprojection_to_b_error_rgb_px": 0.3120208869645362,
+          "passes_geometric_consistency_screen": true
+        },
+        {
+          "patch": 5,
+          "source_a": [
+            948.1631944444445,
+            560.3645833333334
+          ],
+          "source_b": [
+            948.1631944444445,
+            560.3645833333334
+          ],
+          "hsi_localization_difference_px": 0.0,
+          "view_a": {
+            "source": [
+              948.1631944444445,
+              560.3645833333334
+            ],
+            "target": [
+              521.6261384752062,
+              501.33024883270264
+            ],
+            "patch": 5,
+            "vertex": 73401,
+            "confidence": 0.8254567980766296,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "view_b": {
+            "source": [
+              948.1631944444445,
+              560.3645833333334
+            ],
+            "target": [
+              490.64666001001996,
+              500.4834858973821
+            ],
+            "patch": 5,
+            "vertex": 73426,
+            "confidence": 0.6629917621612549,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "nearest_vertex_separation_m": 0.001456703103211917,
+          "view_a_vertex_reprojection_to_b_error_rgb_px": 1.7905062556558002,
+          "passes_geometric_consistency_screen": true
+        },
+        {
+          "patch": 5,
+          "source_a": [
+            957.8854166666666,
+            579.53125
+          ],
+          "source_b": [
+            957.8854166666666,
+            579.53125
+          ],
+          "hsi_localization_difference_px": 0.0,
+          "view_a": {
+            "source": [
+              957.8854166666666,
+              579.53125
+            ],
+            "target": [
+              534.0254309972128,
+              509.1155571937561
+            ],
+            "patch": 5,
+            "vertex": 21526,
+            "confidence": 0.7582844495773315,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "view_b": {
+            "source": [
+              957.8854166666666,
+              579.53125
+            ],
+            "target": [
+              504.5137438774109,
+              510.1854741573334
+            ],
+            "patch": 5,
+            "vertex": 21579,
+            "confidence": 0.39295464754104614,
+            "channels": [
+              "gray"
+            ]
+          },
+          "nearest_vertex_separation_m": 0.0023271825503199802,
+          "view_a_vertex_reprojection_to_b_error_rgb_px": 2.5326845762846197,
+          "passes_geometric_consistency_screen": true
+        },
+        {
+          "patch": 5,
+          "source_a": [
+            948.1631944444445,
+            541.1979166666667
+          ],
+          "source_b": [
+            948.1631944444445,
+            541.1979166666667
+          ],
+          "hsi_localization_difference_px": 0.0,
+          "view_a": {
+            "source": [
+              948.1631944444445,
+              541.1979166666667
+            ],
+            "target": [
+              524.5825827916464,
+              490.3683156967163
+            ],
+            "patch": 5,
+            "vertex": 73439,
+            "confidence": 0.7522032260894775,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "view_b": {
+            "source": [
+              948.1631944444445,
+              541.1979166666667
+            ],
+            "target": [
+              493.04315455754596,
+              490.9993766148885
+            ],
+            "patch": 5,
+            "vertex": 73439,
+            "confidence": 0.7393374443054199,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "nearest_vertex_separation_m": 0.0,
+          "view_a_vertex_reprojection_to_b_error_rgb_px": 0.4566310552041264,
+          "passes_geometric_consistency_screen": true
+        },
+        {
+          "patch": 6,
+          "source_a": [
+            967.6076388888889,
+            253.69791666666669
+          ],
+          "source_b": [
+            967.6076388888889,
+            253.69791666666669
+          ],
+          "hsi_localization_difference_px": 0.0,
+          "view_a": {
+            "source": [
+              967.6076388888889,
+              253.69791666666669
+            ],
+            "target": [
+              555.9188114802042,
+              350.28960061073303
+            ],
+            "patch": 6,
+            "vertex": 35458,
+            "confidence": 0.7105551958084106,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "view_b": {
+            "source": [
+              967.6076388888889,
+              253.69791666666669
+            ],
+            "target": [
+              526.2022301355997,
+              350.6820278763771
+            ],
+            "patch": 6,
+            "vertex": 58150,
+            "confidence": 0.7802895903587341,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "nearest_vertex_separation_m": 0.00846294367688823,
+          "view_a_vertex_reprojection_to_b_error_rgb_px": 2.335620885623106,
+          "passes_geometric_consistency_screen": true
+        },
+        {
+          "patch": 7,
+          "source_a": [
+            1181.4965277777778,
+            253.69791666666669
+          ],
+          "source_b": [
+            1181.4965277777778,
+            253.69791666666669
+          ],
+          "hsi_localization_difference_px": 0.0,
+          "view_a": {
+            "source": [
+              1181.4965277777778,
+              253.69791666666669
+            ],
+            "target": [
+              735.6025869581434,
+              348.74446761608124
+            ],
+            "patch": 7,
+            "vertex": 101388,
+            "confidence": 0.5975460410118103,
+            "channels": [
+              "gray"
+            ]
+          },
+          "view_b": {
+            "source": [
+              1181.4965277777778,
+              253.69791666666669
+            ],
+            "target": [
+              706.5139643351238,
+              348.9480171899001
+            ],
+            "patch": 7,
+            "vertex": 101388,
+            "confidence": 0.47717297077178955,
+            "channels": [
+              "gray"
+            ]
+          },
+          "nearest_vertex_separation_m": 0.0,
+          "view_a_vertex_reprojection_to_b_error_rgb_px": 0.5680573200331651,
+          "passes_geometric_consistency_screen": true
+        },
+        {
+          "patch": 7,
+          "source_a": [
+            1181.4965277777778,
+            272.86458333333337
+          ],
+          "source_b": [
+            1181.4965277777778,
+            272.86458333333337
+          ],
+          "hsi_localization_difference_px": 0.0,
+          "view_a": {
+            "source": [
+              1181.4965277777778,
+              272.86458333333337
+            ],
+            "target": [
+              736.5773896111382,
+              358.4946573972702
+            ],
+            "patch": 7,
+            "vertex": 101461,
+            "confidence": 0.5664012432098389,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "view_b": {
+            "source": [
+              1181.4965277777778,
+              272.86458333333337
+            ],
+            "target": [
+              707.7206020355225,
+              359.50466685493785
+            ],
+            "patch": 7,
+            "vertex": 101460,
+            "confidence": 0.3518698811531067,
+            "channels": [
+              "gray"
+            ]
+          },
+          "nearest_vertex_separation_m": 0.0009345700630557824,
+          "view_a_vertex_reprojection_to_b_error_rgb_px": 0.8572295865482584,
+          "passes_geometric_consistency_screen": true
+        },
+        {
+          "patch": 6,
+          "source_a": [
+            938.4409722222222,
+            253.69791666666669
+          ],
+          "source_b": [
+            938.4409722222222,
+            253.69791666666669
+          ],
+          "hsi_localization_difference_px": 0.0,
+          "view_a": {
+            "source": [
+              938.4409722222222,
+              253.69791666666669
+            ],
+            "target": [
+              541.4729339811537,
+              341.8304867744446
+            ],
+            "patch": 6,
+            "vertex": 51311,
+            "confidence": 0.5616981983184814,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "view_b": {
+            "source": [
+              938.4409722222222,
+              253.69791666666669
+            ],
+            "target": [
+              512.3705023129781,
+              342.8716754714648
+            ],
+            "patch": 6,
+            "vertex": 51233,
+            "confidence": 0.8481022119522095,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "nearest_vertex_separation_m": 0.006640801630960441,
+          "view_a_vertex_reprojection_to_b_error_rgb_px": 2.1279538209230986,
+          "passes_geometric_consistency_screen": true
+        },
+        {
+          "patch": 7,
+          "source_a": [
+            1162.0520833333333,
+            292.03125
+          ],
+          "source_b": [
+            1162.0520833333333,
+            292.03125
+          ],
+          "hsi_localization_difference_px": 0.0,
+          "view_a": {
+            "source": [
+              1162.0520833333333,
+              292.03125
+            ],
+            "target": [
+              721.9414034949409,
+              369.31016278266907
+            ],
+            "patch": 7,
+            "vertex": 101983,
+            "confidence": 0.4684509038925171,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "view_b": {
+            "source": [
+              1162.0520833333333,
+              292.03125
+            ],
+            "target": [
+              692.1022946039836,
+              369.7792022228241
+            ],
+            "patch": 7,
+            "vertex": 102042,
+            "confidence": 0.610869824886322,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "nearest_vertex_separation_m": 0.0016457080757907587,
+          "view_a_vertex_reprojection_to_b_error_rgb_px": 0.8543836825393456,
+          "passes_geometric_consistency_screen": true
+        }
+      ]
+    },
+    {
+      "plant_id": 4,
+      "frames": [
+        851470,
+        877311
+      ],
+      "unique_domain_proposals_by_view": [
+        2,
+        2
+      ],
+      "matched_source_proposals": 2,
+      "geometrically_consistent_proposals": 2,
+      "checks": [
+        {
+          "patch": 8,
+          "source_a": [
+            1296.5833333333333,
+            407.03125
+          ],
+          "source_b": [
+            1296.5833333333333,
+            407.03125
+          ],
+          "hsi_localization_difference_px": 0.0,
+          "view_a": {
+            "source": [
+              1296.5833333333333,
+              407.03125
+            ],
+            "target": [
+              774.1557352542877,
+              416.34739911556244
+            ],
+            "patch": 8,
+            "vertex": 34639,
+            "confidence": 0.46544843912124634,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "view_b": {
+            "source": [
+              1296.5833333333333,
+              407.03125
+            ],
+            "target": [
+              746.4715512692928,
+              416.1808193922043
+            ],
+            "patch": 8,
+            "vertex": 34681,
+            "confidence": 0.8115243315696716,
+            "channels": [
+              "gray",
+              "green"
+            ]
+          },
+          "nearest_vertex_separation_m": 0.001727618118072424,
+          "view_a_vertex_reprojection_to_b_error_rgb_px": 1.4112444095220926,
+          "passes_geometric_consistency_screen": true
+        },
+        {
+          "patch": 8,
+          "source_a": [
+            1303.25,
+            445.36458333333337
+          ],
+          "source_b": [
+            1303.25,
+            445.36458333333337
+          ],
+          "hsi_localization_difference_px": 0.0,
+          "view_a": {
+            "source": [
+              1303.25,
+              445.36458333333337
+            ],
+            "target": [
+              781.6993782520294,
+              431.684674680233
+            ],
+            "patch": 8,
+            "vertex": 35014,
+            "confidence": 0.39489418268203735,
+            "channels": [
+              "gray"
+            ]
+          },
+          "view_b": {
+            "source": [
+              1303.25,
+              445.36458333333337
+            ],
+            "target": [
+              755.7587477266788,
+              432.36203169822693
+            ],
+            "patch": 8,
+            "vertex": 35094,
+            "confidence": 0.5224515795707703,
+            "channels": [
+              "green"
+            ]
+          },
+          "nearest_vertex_separation_m": 0.0027059519330011545,
+          "view_a_vertex_reprojection_to_b_error_rgb_px": 2.451300989648521,
+          "passes_geometric_consistency_screen": true
+        }
+      ]
+    }
+  ]
+}

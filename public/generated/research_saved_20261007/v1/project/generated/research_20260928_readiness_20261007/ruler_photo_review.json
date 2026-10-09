@@ -1,0 +1,2915 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-07",
+  "dataset_root_relative_to_repository": "data/main/test_plant_10-7",
+  "source_inventory_sha256": "18bff51a79ccc9a9403b7575c919f0ce8cd9800b65a9591485be64cf1939d879",
+  "purpose": "Evidence-backed ruler photo review; source annotations preserved, approximate corrected readings separate",
+  "authorization": "User authorized readable ruler photograph values to take precedence over erroneous text annotations. This does not authorize inventing unseen endpoints.",
+  "review_scope": {
+    "source_images_visually_reviewed": 74,
+    "annotated_overviews": 9,
+    "supporting_photographs": 65,
+    "individual_full_image_reviews": 62,
+    "contextual_contact_sheet_reviews": 12,
+    "dimensions_reviewed": 47,
+    "photo_reference_candidates": 18,
+    "accepted_for_final_numeric_validation": 0,
+    "independently_photo_verified_heights": 0,
+    "per_dimension_categories": {
+      "photo_supported_approximate": 18,
+      "operator_annotation_only": 21,
+      "unusable_for_leaf_validation_pending_organ_type": 8
+    },
+    "photo_supported_by_dimension": {
+      "height": 0,
+      "length": 7,
+      "width": 11
+    },
+    "operator_only_heights": 5,
+    "operator_only_organ_dimensions": 16,
+    "exact_new_ground_truth_values": 0
+  },
+  "reference_use_policy": {
+    "held_out_from_camera_calibration": true,
+    "held_out_from_depth_scale_estimation": true,
+    "held_out_from_reconstruction_tuning": true,
+    "held_out_from_spectral_registration_tuning": true,
+    "allowed_use": "Independent trait comparison after calibration, reconstruction settings, physical specimen correspondence and measurement definitions are frozen.",
+    "report_exclusions": "Report missing visibility, unmatched identity, unresolved units and uncertain organs individually. Do not invent unobserved endpoints."
+  },
+  "user_protocol": {
+    "recorded_local_date": "2026-10-07",
+    "source": "Direct user clarification relayed in the current research-readiness task",
+    "height_bottom_endpoint": "stem base",
+    "height_bottom_original_wording": "step base",
+    "height_bottom_interpretation": "step base interpreted as stem base",
+    "height_top_endpoint": "very tip of plant / highest plant tip",
+    "height_method": "two rulers used for height",
+    "annotation_units": "cm",
+    "annotation_units_status": "user asserts centimetres, not millimetres; no global conversion applied",
+    "remaining_uncertainty": "Ruler joining/offset and repeat-measurement uncertainty have not been independently reconstructed from photographs."
+  },
+  "acceptance_semantics": {
+    "accepted_as_photo_reference": "Readable approximate candidate reference for this photographed organ/section, with stated visual interval. Does not establish reconstructed identity, instrument calibration or repeatability.",
+    "accepted_for_validation": "Final numerical validation eligibility. False for every row until same physical specimen/organ and compatible endpoint/length/width conventions are matched and frozen.",
+    "operator_reported_heights": "Original manual heights are retained and may be compared as operator-reported references after specimen matching. Failure to independently re-read a photo does not prove the measurement is incorrect.",
+    "uncertainty": "Intervals are cautious visual-reading ranges only, not confidence intervals; ruler calibration, parallax, pose/flattening, temporal change and repeatability remain unquantified.",
+    "matching": "Folder-to-overview associations are candidates. Agreement with an annotation value is not proof of physical identity. No leaf is yet linked to a reconstructed component."
+  },
+  "measurements": [
+    {
+      "measurement_id": "P1.H01.height",
+      "annotation_id": "P1.H01",
+      "specimen_id": "P1",
+      "dimension": "height",
+      "source_annotation_cm": 53.5,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "organ_kind": "whole_plant",
+      "annotation_location": "stem base to highest tip, per user",
+      "supporting_photos": [],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "operator_reported_value_retained_separate_from_photo_verified_reference",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_0.png",
+        "sha256": "1f8a90e2d537cb5f9c0554e372819bfdafd9113c444b3f7c171c29b27a1b4ac8",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "No supporting height-ruler photograph is present. The annotated overview supplies 53.5 cm only; the board in shared image.jpeg is not a height-ruler observation.",
+      "user_height_protocol": "stem base (user wording step base) to very tip/highest plant tip; two rulers used per user",
+      "units_basis": "centimetres asserted by user and source annotations",
+      "operator_reported_reference_preserved": true,
+      "allow_operator_reported_comparison_after_specimen_match": true,
+      "independent_photo_verification": false,
+      "height_formula": "(lower reading at join - lower reading at stem base) + (upper reading at tip - upper reading at join)",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P1.O01.length",
+      "annotation_id": "P1.O01",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "source_annotation_cm": 12.5,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "organ_kind": "leaf",
+      "annotation_location": "lower blade",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (3).jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_0.png",
+        "sha256": "1f8a90e2d537cb5f9c0554e372819bfdafd9113c444b3f7c171c29b27a1b4ac8",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Ruler and long blade diverge. Dry tip and basal endpoint are not both located against the same ruler axis clearly enough to recover 12.5 cm independently.",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P1.O01.width",
+      "annotation_id": "P1.O01",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "source_annotation_cm": 1,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "organ_kind": "leaf",
+      "annotation_location": "lower blade",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (4).jpeg"
+      ],
+      "direct_ruler_reading_cm": 1.1,
+      "endpoint_readings_cm": [
+        0,
+        1.1
+      ],
+      "endpoint_calculation": "abs(1.1 - 0) cm",
+      "approximate_reading_interval_cm": [
+        0.9,
+        1.3
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_0.png",
+        "sha256": "1f8a90e2d537cb5f9c0554e372819bfdafd9113c444b3f7c171c29b27a1b4ac8",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Visible blade margins span roughly 0.0 to 1.1 cm on the reversed scale. This is the photographed section, not demonstrated maximum blade width.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P1.O02.length",
+      "annotation_id": "P1.O02",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "source_annotation_cm": 10.9,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "organ_kind": "leaf",
+      "annotation_location": "middle blade",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": 10.9,
+      "endpoint_readings_cm": [
+        0,
+        10.9
+      ],
+      "endpoint_calculation": "abs(10.9 - 0) cm",
+      "approximate_reading_interval_cm": [
+        10.6,
+        11.2
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_0.png",
+        "sha256": "1f8a90e2d537cb5f9c0554e372819bfdafd9113c444b3f7c171c29b27a1b4ac8",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Tip is close to the ruler zero and blade attachment is near 10.9 cm. Approximate straight projected length; curved midrib length is not established.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P1.O02.width",
+      "annotation_id": "P1.O02",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "source_annotation_cm": 1,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "organ_kind": "leaf",
+      "annotation_location": "middle blade",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (2).jpeg"
+      ],
+      "direct_ruler_reading_cm": 1.0,
+      "endpoint_readings_cm": [
+        0,
+        1.0
+      ],
+      "endpoint_calculation": "abs(1.0 - 0) cm",
+      "approximate_reading_interval_cm": [
+        0.8,
+        1.2
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_0.png",
+        "sha256": "1f8a90e2d537cb5f9c0554e372819bfdafd9113c444b3f7c171c29b27a1b4ac8",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Two visible blade margins bracket roughly one centimetre interval. Zero alignment and slight blade angle limit precision.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P1.O03.length",
+      "annotation_id": "P1.O03",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "source_annotation_cm": 7.3,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "organ_kind": "leaf",
+      "annotation_location": "upper blade beside cereal ear",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (5).jpeg"
+      ],
+      "direct_ruler_reading_cm": 7.3,
+      "endpoint_readings_cm": [
+        0,
+        7.3
+      ],
+      "endpoint_calculation": "abs(7.3 - 0) cm",
+      "approximate_reading_interval_cm": [
+        7.0,
+        7.6
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_0.png",
+        "sha256": "1f8a90e2d537cb5f9c0554e372819bfdafd9113c444b3f7c171c29b27a1b4ac8",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Transparent ruler shows the blade base close to zero and tip near 7.3 cm. Approximate projected blade length.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P1.O03.width",
+      "annotation_id": "P1.O03",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "source_annotation_cm": 9,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "organ_kind": "leaf",
+      "annotation_location": "upper blade beside cereal ear",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (6).jpeg"
+      ],
+      "direct_ruler_reading_cm": 0.8,
+      "endpoint_readings_cm": [
+        0.2,
+        1.0
+      ],
+      "endpoint_calculation": "abs(1.0 - 0.2) cm",
+      "approximate_reading_interval_cm": [
+        0.6,
+        1.0
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_0.png",
+        "sha256": "1f8a90e2d537cb5f9c0554e372819bfdafd9113c444b3f7c171c29b27a1b4ac8",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Enlarged original crop shows left blade edge near 0.2 cm and right edge near 1.0 cm. Subtracting endpoints gives approximately 0.8 cm. The original annotation explicitly says 9 cm and is retained. Earlier 0.9 cm proposal lies within the photo reading interval but is not imposed as exact ground truth.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "source_annotation_conflict": true,
+      "supersedes_earlier_proposed_value_cm": 0.9,
+      "correction_authority": "user authorized preferring readable ruler photograph over erroneous annotation",
+      "diagnostic_image": "ruler_diagnostics/P1_upper_blade_width.png",
+      "diagnostic_crop_source_rectangle_xyxy": [
+        650,
+        170,
+        1110,
+        500
+      ],
+      "diagnostic_resize_factor": 3,
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P1.O04.length",
+      "annotation_id": "P1.O04",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "source_annotation_cm": 6.5,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "organ_kind": "ear",
+      "annotation_location": "cereal ear",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (7).jpeg"
+      ],
+      "direct_ruler_reading_cm": 6.4,
+      "endpoint_readings_cm": [
+        0.3,
+        6.7
+      ],
+      "endpoint_calculation": "abs(6.7 - 0.3) cm",
+      "approximate_reading_interval_cm": [
+        6.1,
+        6.7
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_0.png",
+        "sha256": "1f8a90e2d537cb5f9c0554e372819bfdafd9113c444b3f7c171c29b27a1b4ac8",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Ear body begins about 0.3 cm and ends about 6.7 cm along ruler: approximately 6.4 cm excluding projecting awns. Ear body versus awns must be defined for 3D comparison.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "exclude_from_leaf_statistics": true,
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P1.O04.width",
+      "annotation_id": "P1.O04",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "source_annotation_cm": 1.6,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "organ_kind": "ear",
+      "annotation_location": "cereal ear",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (8).jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_0.png",
+        "sha256": "1f8a90e2d537cb5f9c0554e372819bfdafd9113c444b3f7c171c29b27a1b4ac8",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Glumes and awns overlap the ruler and outer edges. The 1.6 cm annotation may include projecting structures; no defensible single body or maximum-width reading is recoverable.",
+      "exclude_from_leaf_statistics": true,
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P2.H01.height",
+      "annotation_id": "P2.H01",
+      "specimen_id": "P2",
+      "dimension": "height",
+      "source_annotation_cm": 51.7,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-2_measurements_02.png",
+      "organ_kind": "whole_plant",
+      "annotation_location": "stem base to highest tip, per user",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-2/Media (1).jpeg",
+        "manual_validation_5-plants_28-09/plant-2/Media (2).jpeg",
+        "manual_validation_5-plants_28-09/plant-2/Media (3).jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "operator_reported_value_retained_separate_from_photo_verified_reference",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_425109.png",
+        "sha256": "65060c65696a8dd74d272e9d39ab8db5d6d5f0a94320c775a405f38f77988e96",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Two-ruler setup is visible, but hand/plant obscures an unambiguous lower ruler zero or joining offset. Highest curled tip also changes pose between photographs. Cannot independently recompute 51.7 cm to 0.1 cm.",
+      "user_height_protocol": "stem base (user wording step base) to very tip/highest plant tip; two rulers used per user",
+      "units_basis": "centimetres asserted by user and source annotations",
+      "operator_reported_reference_preserved": true,
+      "allow_operator_reported_comparison_after_specimen_match": true,
+      "independent_photo_verification": false,
+      "height_formula": "(lower reading at join - lower reading at stem base) + (upper reading at tip - upper reading at join)",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P2.O01.length",
+      "annotation_id": "P2.O01",
+      "specimen_id": "P2",
+      "dimension": "length",
+      "source_annotation_cm": 5,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "upper-left arrow in overhead overview",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-1/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_425109.png",
+        "sha256": "65060c65696a8dd74d272e9d39ab8db5d6d5f0a94320c775a405f38f77988e96",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Tip is near the 5 cm region but ruler zero/basal blade endpoint lies among overlapping curled tissue. Do not equate a tip graduation with blade length without a visible base.",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P2.O01.width",
+      "annotation_id": "P2.O01",
+      "specimen_id": "P2",
+      "dimension": "width",
+      "source_annotation_cm": 2.7,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "upper-left arrow in overhead overview",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-1/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_425109.png",
+        "sha256": "65060c65696a8dd74d272e9d39ab8db5d6d5f0a94320c775a405f38f77988e96",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Opaque ruler hides the full width section and blade is curled. The visible margins near the ruler do not prove the maximum width or the exact 2.7 cm annotation.",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P2.O02.length",
+      "annotation_id": "P2.O02",
+      "specimen_id": "P2",
+      "dimension": "length",
+      "source_annotation_cm": 3.9,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "lower-left arrow in overhead overview",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-2/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": 3.9,
+      "endpoint_readings_cm": [
+        0.1,
+        4.0
+      ],
+      "endpoint_calculation": "abs(4.0 - 0.1) cm",
+      "approximate_reading_interval_cm": [
+        3.6,
+        4.2
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_425109.png",
+        "sha256": "65060c65696a8dd74d272e9d39ab8db5d6d5f0a94320c775a405f38f77988e96",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Held blade extends approximately from 0.1 to 4.0 cm; attachment/terminal margins are visible beside ruler but do not support millimetre precision.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P2.O02.width",
+      "annotation_id": "P2.O02",
+      "specimen_id": "P2",
+      "dimension": "width",
+      "source_annotation_cm": 3.4,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "lower-left arrow in overhead overview",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-2/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": 3.5,
+      "endpoint_readings_cm": [
+        0.4,
+        3.9
+      ],
+      "endpoint_calculation": "abs(3.9 - 0.4) cm",
+      "approximate_reading_interval_cm": [
+        3.2,
+        3.8
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_425109.png",
+        "sha256": "65060c65696a8dd74d272e9d39ab8db5d6d5f0a94320c775a405f38f77988e96",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Upper leaf margin is around 0.4 cm and opposite margin around 3.9 cm. Endpoint subtraction gives about 3.5 cm, consistent with but not copied from source 3.4 cm.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P3.H01.height",
+      "annotation_id": "P3.H01",
+      "specimen_id": "P3",
+      "dimension": "height",
+      "source_annotation_cm": 52.8,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_02.png",
+      "organ_kind": "whole_plant",
+      "annotation_location": "stem base to highest tip, per user",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Media (1).jpeg",
+        "manual_validation_5-plants_28-09/plant-3/Media (2).jpeg",
+        "manual_validation_5-plants_28-09/plant-3/Media (3).jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "operator_reported_value_retained_separate_from_photo_verified_reference",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_631832.png",
+        "sha256": "e1b48353219e2123b6e6f2b1667e67d48af540889f749010f3d18088bc44ddea",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Hand covers the ruler junction; the whole-plant frame does not show an unambiguous stem-base zero. Media (2).jpeg and Media (3).jpeg are byte-identical. No independent 52.8 cm sum can be justified.",
+      "user_height_protocol": "stem base (user wording step base) to very tip/highest plant tip; two rulers used per user",
+      "units_basis": "centimetres asserted by user and source annotations",
+      "operator_reported_reference_preserved": true,
+      "allow_operator_reported_comparison_after_specimen_match": true,
+      "independent_photo_verification": false,
+      "height_formula": "(lower reading at join - lower reading at stem base) + (upper reading at tip - upper reading at join)",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P3.O01.length",
+      "annotation_id": "P3.O01",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 7.4,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "left-middle arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-5/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_631832.png",
+        "sha256": "e1b48353219e2123b6e6f2b1667e67d48af540889f749010f3d18088bc44ddea",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Tip lies near 7.4 cm but basal lobes/petiole boundary is not unambiguously at zero. No numerical length is inferred from the tip mark alone.",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P3.O01.width",
+      "annotation_id": "P3.O01",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 5.5,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "left-middle arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-5/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": 5.4,
+      "endpoint_readings_cm": [
+        0.1,
+        5.5
+      ],
+      "endpoint_calculation": "abs(5.5 - 0.1) cm",
+      "approximate_reading_interval_cm": [
+        5.1,
+        5.7
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_631832.png",
+        "sha256": "e1b48353219e2123b6e6f2b1667e67d48af540889f749010f3d18088bc44ddea",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Upper blade edge near 5.5 cm and lower edge near 0.1 cm give about 5.4 cm. Lobed margins and ruler angle justify a broad visual interval.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P3.O02.length",
+      "annotation_id": "P3.O02",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 9.8,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "lower-left arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-4/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_631832.png",
+        "sha256": "e1b48353219e2123b6e6f2b1667e67d48af540889f749010f3d18088bc44ddea",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Tip is near the 9.8-10.0 cm region, but hand/leaf obscures the exact base and zero alignment. Source 9.8 cm is not independently verified.",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P3.O02.width",
+      "annotation_id": "P3.O02",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 7.6,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "lower-left arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-4/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_631832.png",
+        "sha256": "e1b48353219e2123b6e6f2b1667e67d48af540889f749010f3d18088bc44ddea",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "One margin lies near 7.5-7.6 cm; the opposite edge/zero alignment is obscured. Do not treat that endpoint as a width.",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P3.O03.length",
+      "annotation_id": "P3.O03",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 7.5,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "bottom-centre arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-3/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_631832.png",
+        "sha256": "e1b48353219e2123b6e6f2b1667e67d48af540889f749010f3d18088bc44ddea",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Tip is around the 7.5 cm region; ruler zero and the chosen blade-base endpoint are obscured by hand and basal tissue.",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P3.O03.width",
+      "annotation_id": "P3.O03",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 5.7,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "bottom-centre arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-3/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_631832.png",
+        "sha256": "e1b48353219e2123b6e6f2b1667e67d48af540889f749010f3d18088bc44ddea",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Lobed margins cross opposite sides of a broad opaque ruler at different positions. The exact lower offset and maximum section are not unambiguous; no 5.7 cm value is imputed.",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P3.O04.length",
+      "annotation_id": "P3.O04",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 11,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "lower-right arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-2/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": 11.0,
+      "endpoint_readings_cm": [
+        0,
+        11.0
+      ],
+      "endpoint_calculation": "abs(11.0 - 0) cm",
+      "approximate_reading_interval_cm": [
+        10.7,
+        11.3
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_631832.png",
+        "sha256": "e1b48353219e2123b6e6f2b1667e67d48af540889f749010f3d18088bc44ddea",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Attachment-side blade origin is near zero and opposite tip near 11.0 cm; both are visible beside the ruler. Straight projected length.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P3.O04.width",
+      "annotation_id": "P3.O04",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 8.7,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "lower-right arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-2/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": 8.7,
+      "endpoint_readings_cm": [
+        0,
+        8.7
+      ],
+      "endpoint_calculation": "abs(8.7 - 0) cm",
+      "approximate_reading_interval_cm": [
+        8.4,
+        9.0
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_631832.png",
+        "sha256": "e1b48353219e2123b6e6f2b1667e67d48af540889f749010f3d18088bc44ddea",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Bottom margin is close to zero and top margin near 8.7 cm. Thumb covers intermediate graduations, but the end regions are visible.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P3.O05.length",
+      "annotation_id": "P3.O05",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 9.2,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "upper-right arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-1/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": 9.2,
+      "endpoint_readings_cm": [
+        0,
+        9.2
+      ],
+      "endpoint_calculation": "abs(9.2 - 0) cm",
+      "approximate_reading_interval_cm": [
+        8.9,
+        9.5
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_631832.png",
+        "sha256": "e1b48353219e2123b6e6f2b1667e67d48af540889f749010f3d18088bc44ddea",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Transparent ruler shows blade-base region at zero and tip about 9.2 cm. Blade is held flat; this is an approximate chord/projection length.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P3.O05.width",
+      "annotation_id": "P3.O05",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 7.7,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "upper-right arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-1/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": 7.7,
+      "endpoint_readings_cm": [
+        0,
+        7.7
+      ],
+      "endpoint_calculation": "abs(7.7 - 0) cm",
+      "approximate_reading_interval_cm": [
+        7.4,
+        8.0
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_631832.png",
+        "sha256": "e1b48353219e2123b6e6f2b1667e67d48af540889f749010f3d18088bc44ddea",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Transparent ruler shows left margin near zero and right margin near 7.7 cm. Both leaf edges are visible through/along ruler.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P3.O06.length",
+      "annotation_id": "P3.O06",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 7.5,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "upper-centre arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-6/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_631832.png",
+        "sha256": "e1b48353219e2123b6e6f2b1667e67d48af540889f749010f3d18088bc44ddea",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Blade base/zero is hidden by tissue and hand. The approximately 7.5 cm tip location alone cannot establish length.",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P3.O06.width",
+      "annotation_id": "P3.O06",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 6.3,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "upper-centre arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-6/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_631832.png",
+        "sha256": "e1b48353219e2123b6e6f2b1667e67d48af540889f749010f3d18088bc44ddea",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Ruler traverses lobed blade; lower margin and adjacent foreground blade overlap the scale. Exact corresponding endpoints/maximum width remain ambiguous.",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P4.H01.height",
+      "annotation_id": "P4.H01",
+      "specimen_id": "P4",
+      "dimension": "height",
+      "source_annotation_cm": 52.3,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_02.png",
+      "organ_kind": "whole_plant",
+      "annotation_location": "stem base to highest tip, per user",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Media (1).jpeg",
+        "manual_validation_5-plants_28-09/plant-4/Media (2).jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "operator_reported_value_retained_separate_from_photo_verified_reference",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1034629.png",
+        "sha256": "5d4b86d534f241e5e68a16b1ccbbca511fc0fdc5426b167197cc37d2f37a104c",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Two rulers are visible; their joining/overlap point and exact stem-base zero are not simultaneously readable. Top inflorescence is visible, but adding a nominal 30 cm to its upper-ruler reading is unjustified.",
+      "user_height_protocol": "stem base (user wording step base) to very tip/highest plant tip; two rulers used per user",
+      "units_basis": "centimetres asserted by user and source annotations",
+      "operator_reported_reference_preserved": true,
+      "allow_operator_reported_comparison_after_specimen_match": true,
+      "independent_photo_verification": false,
+      "height_formula": "(lower reading at join - lower reading at stem base) + (upper reading at tip - upper reading at join)",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P4.O01.length",
+      "annotation_id": "P4.O01",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "source_annotation_cm": 3,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "annotation_location": "top-centre arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-1/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "blocked_by_organ_identity_and_endpoint_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1034629.png",
+        "sha256": "5d4b86d534f241e5e68a16b1ccbbca511fc0fdc5426b167197cc37d2f37a104c",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Organ runs along roughly the first 3 cm; distinguishing organ-body base from stalk is unresolved. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "exclude_from_leaf_statistics": true,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P4.O01.width",
+      "annotation_id": "P4.O01",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "source_annotation_cm": 0.2,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "annotation_location": "top-centre arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-1/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "blocked_by_organ_identity_and_endpoint_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1034629.png",
+        "sha256": "5d4b86d534f241e5e68a16b1ccbbca511fc0fdc5426b167197cc37d2f37a104c",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Very narrow organ and ruler/hand obscure both exact width endpoints; 0.2 cm cannot be independently certified. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "exclude_from_leaf_statistics": true,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P4.O02.length",
+      "annotation_id": "P4.O02",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "source_annotation_cm": 2.8,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "annotation_location": "left-middle arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-2/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "blocked_by_organ_identity_and_endpoint_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1034629.png",
+        "sha256": "5d4b86d534f241e5e68a16b1ccbbca511fc0fdc5426b167197cc37d2f37a104c",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Curved narrow organ follows roughly 2.8 cm of ruler, but straight chord versus curved body and basal endpoint are unresolved. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "exclude_from_leaf_statistics": true,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P4.O02.width",
+      "annotation_id": "P4.O02",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "source_annotation_cm": 0.5,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "annotation_location": "left-middle arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-2/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "blocked_by_organ_identity_and_endpoint_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1034629.png",
+        "sha256": "5d4b86d534f241e5e68a16b1ccbbca511fc0fdc5426b167197cc37d2f37a104c",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Organ lies partly beneath ruler end; both boundaries are not visible on a common graduated section. Source 0.5 cm remains unverified. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "exclude_from_leaf_statistics": true,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P4.O03.length",
+      "annotation_id": "P4.O03",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "source_annotation_cm": 2.9,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "annotation_location": "bottom-centre arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-3/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "blocked_by_organ_identity_and_endpoint_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1034629.png",
+        "sha256": "5d4b86d534f241e5e68a16b1ccbbca511fc0fdc5426b167197cc37d2f37a104c",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Narrow body is near the first 2.9 cm, but body/stalk endpoint and alignment are not clear enough for a direct accepted reading. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "exclude_from_leaf_statistics": true,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P4.O03.width",
+      "annotation_id": "P4.O03",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "source_annotation_cm": 0.3,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "annotation_location": "bottom-centre arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-3/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "blocked_by_organ_identity_and_endpoint_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1034629.png",
+        "sha256": "5d4b86d534f241e5e68a16b1ccbbca511fc0fdc5426b167197cc37d2f37a104c",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Organ is above ruler end without both width edges located against graduations. Source 0.3 cm remains unverified. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "exclude_from_leaf_statistics": true,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P4.O04.length",
+      "annotation_id": "P4.O04",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "source_annotation_cm": 2.9,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "annotation_location": "right-middle arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-4/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "blocked_by_organ_identity_and_endpoint_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1034629.png",
+        "sha256": "5d4b86d534f241e5e68a16b1ccbbca511fc0fdc5426b167197cc37d2f37a104c",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Elongated organ spans roughly the first 2.9 cm; the body-to-pedicel junction and organ kind are unresolved. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "exclude_from_leaf_statistics": true,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P4.O04.width",
+      "annotation_id": "P4.O04",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "source_annotation_cm": 0.4,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "annotation_location": "right-middle arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-4/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "blocked_by_organ_identity_and_endpoint_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1034629.png",
+        "sha256": "5d4b86d534f241e5e68a16b1ccbbca511fc0fdc5426b167197cc37d2f37a104c",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "A narrow green structure spans roughly the first few millimetres, but exact margins/body convention are uncertain. Source 0.4 cm remains unverified. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "exclude_from_leaf_statistics": true,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P5.H01.height",
+      "annotation_id": "P5.H01",
+      "specimen_id": "P5",
+      "dimension": "height",
+      "source_annotation_cm": 31.8,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_02.png",
+      "organ_kind": "whole_plant",
+      "annotation_location": "stem base to highest tip, per user",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "operator_reported_value_retained_separate_from_photo_verified_reference",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1441230.png",
+        "sha256": "70f2ebd90663a44fd8536d9237df2fdfde9771c44c9f96ace0bc5efbd7665392",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "The saved height photo shows a 30 cm ruler and the highest leaf extends beyond the visible calibrated end. Base alignment is partly hidden. Do not extrapolate an unseen 31.8 cm graduation.",
+      "user_height_protocol": "stem base (user wording step base) to very tip/highest plant tip; two rulers used per user",
+      "units_basis": "centimetres asserted by user and source annotations",
+      "operator_reported_reference_preserved": true,
+      "allow_operator_reported_comparison_after_specimen_match": true,
+      "independent_photo_verification": false,
+      "height_formula": "(lower reading at join - lower reading at stem base) + (upper reading at tip - upper reading at join)",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P5.O01.length",
+      "annotation_id": "P5.O01",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "source_annotation_cm": 12,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "left-side arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-4/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1441230.png",
+        "sha256": "70f2ebd90663a44fd8536d9237df2fdfde9771c44c9f96ace0bc5efbd7665392",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Opaque ruler and thumb hide the length tip/base alignment. Blade damage and lobes make source 12 cm not independently recoverable.",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P5.O01.width",
+      "annotation_id": "P5.O01",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "source_annotation_cm": 9.9,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "left-side arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-4/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": 9.8,
+      "endpoint_readings_cm": [
+        0.3,
+        10.1
+      ],
+      "endpoint_calculation": "abs(10.1 - 0.3) cm",
+      "approximate_reading_interval_cm": [
+        9.4,
+        10.2
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1441230.png",
+        "sha256": "70f2ebd90663a44fd8536d9237df2fdfde9771c44c9f96ace0bc5efbd7665392",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Opposite lobed margins lie near 0.3 and 10.1 cm, giving about 9.8 cm. Hand-held damaged blade and ruler plane limit precision.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P5.O02.length",
+      "annotation_id": "P5.O02",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "source_annotation_cm": 8,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "upper-left text pointing to small central leaf",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-3/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1441230.png",
+        "sha256": "70f2ebd90663a44fd8536d9237df2fdfde9771c44c9f96ace0bc5efbd7665392",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Small central blade lies behind ruler and hand; one endpoint is occluded. The 8 cm annotation is retained but no unseen tip/base is inferred.",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P5.O02.width",
+      "annotation_id": "P5.O02",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "source_annotation_cm": 4.8,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "upper-left text pointing to small central leaf",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-3/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1441230.png",
+        "sha256": "70f2ebd90663a44fd8536d9237df2fdfde9771c44c9f96ace0bc5efbd7665392",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Ruler and thumb overlap the small central blade. One width margin is hidden; a visible end near 5 cm does not independently establish source 4.8 cm.",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P5.O03.length",
+      "annotation_id": "P5.O03",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "source_annotation_cm": 11.9,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "top-centre arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-2/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1441230.png",
+        "sha256": "70f2ebd90663a44fd8536d9237df2fdfde9771c44c9f96ace0bc5efbd7665392",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Brown curled leaf has a projecting papery tip away from ruler axis, with zero/body base obscured by neighboring tissue. Source 11.9 cm cannot be independently recovered.",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P5.O03.width",
+      "annotation_id": "P5.O03",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "source_annotation_cm": 11.7,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "top-centre arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-2/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": 11.7,
+      "endpoint_readings_cm": [
+        0,
+        11.7
+      ],
+      "endpoint_calculation": "abs(11.7 - 0) cm",
+      "approximate_reading_interval_cm": [
+        11.2,
+        12.2
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1441230.png",
+        "sha256": "70f2ebd90663a44fd8536d9237df2fdfde9771c44c9f96ace0bc5efbd7665392",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Brown blade lower margin is close to zero and upper lobe near 11.7 cm. Both silhouette endpoints are visible but curling and plane mismatch warrant a broad interval.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P5.O04.length",
+      "annotation_id": "P5.O04",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "source_annotation_cm": 12.9,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "right-side arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-1/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": 12.9,
+      "endpoint_readings_cm": [
+        0,
+        12.9
+      ],
+      "endpoint_calculation": "abs(12.9 - 0) cm",
+      "approximate_reading_interval_cm": [
+        12.6,
+        13.2
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1441230.png",
+        "sha256": "70f2ebd90663a44fd8536d9237df2fdfde9771c44c9f96ace0bc5efbd7665392",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Green blade base is near zero and upper tip near 12.9 cm beside the ruler. Approximate straight, hand-held length.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P5.O04.width",
+      "annotation_id": "P5.O04",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "source_annotation_cm": 9,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "right-side arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-1/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": 9.0,
+      "endpoint_readings_cm": [
+        0,
+        9.0
+      ],
+      "endpoint_calculation": "abs(9.0 - 0) cm",
+      "approximate_reading_interval_cm": [
+        8.7,
+        9.3
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1441230.png",
+        "sha256": "70f2ebd90663a44fd8536d9237df2fdfde9771c44c9f96ace0bc5efbd7665392",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Visible margins span approximately zero to 9.0 cm at the photographed cross-section.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    },
+    {
+      "measurement_id": "P5.O05.length",
+      "annotation_id": "P5.O05",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "source_annotation_cm": 13.2,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "bottom-left arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-5/Media.jpeg"
+      ],
+      "direct_ruler_reading_cm": null,
+      "endpoint_readings_cm": null,
+      "endpoint_calculation": null,
+      "approximate_reading_interval_cm": null,
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "not_independently_readable",
+      "accepted_as_photo_reference": false,
+      "accepted_for_validation": false,
+      "validation_status": "held_pending_photo_readability_and_identity",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1441230.png",
+        "sha256": "70f2ebd90663a44fd8536d9237df2fdfde9771c44c9f96ace0bc5efbd7665392",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Ruler extends from petiole-side tissue to tip near 13 cm, but blade-only base versus petiole inclusion is unresolved. Do not assume source 13.2 cm uses the same 3D leaf endpoint.",
+      "reference_category": "operator_annotation_only",
+      "new_exact_ground_truth": false
+    },
+    {
+      "measurement_id": "P5.O05.width",
+      "annotation_id": "P5.O05",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "source_annotation_cm": 7.8,
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "organ_kind": "leaf",
+      "annotation_location": "bottom-left arrow",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-5/Media (1).jpeg"
+      ],
+      "direct_ruler_reading_cm": 7.6,
+      "endpoint_readings_cm": [
+        0.1,
+        7.7
+      ],
+      "endpoint_calculation": "abs(7.7 - 0.1) cm",
+      "approximate_reading_interval_cm": [
+        7.2,
+        8.0
+      ],
+      "uncertainty_kind": "visual reading interval only; not a confidence interval or calibrated measurement uncertainty",
+      "photo_reading_status": "approximate_endpoint_subtraction",
+      "accepted_as_photo_reference": true,
+      "accepted_for_validation": false,
+      "validation_status": "photo_reference_candidate_pending_physical_organ_match_and_metric_definition",
+      "matching_confidence": "tentative overview-to-photo correspondence; reconstruction correspondence absent",
+      "reference_use": "held_out_from_calibration_depth_scale_reconstruction_and_spectral_tuning",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1441230.png",
+        "sha256": "70f2ebd90663a44fd8536d9237df2fdfde9771c44c9f96ace0bc5efbd7665392",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      },
+      "rationale": "Visible margins along diagonal ruler are approximately 0.1 and 7.7 cm, giving about 7.6 cm. Lobes/curl and perspective make source 7.8 cm indistinguishable within the broad reading interval.",
+      "acceptance_conditions": [
+        "Confirm the same physical organ in reconstruction using morphology/attachment, not dimensions alone.",
+        "Use the same endpoints and straight/chord versus curved-length convention.",
+        "For width, compare the photographed section unless maximum width is independently established.",
+        "Account for pose/flattening, ruler-plane parallax and the stated approximate reading interval."
+      ],
+      "reference_category": "photo_supported_approximate",
+      "new_exact_ground_truth": false,
+      "pictured_section_demonstrably_maximum_width": false,
+      "width_scope": "photographed section only; global maximum width not independently demonstrated"
+    }
+  ],
+  "photo_review_log": [
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (1).jpeg",
+      "bytes": 326065,
+      "sha256": "be68c0892a0b960f32bab7a6e424dda2674ffcb2e017d863ebc7b8f87943f8f1",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P1.O02.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (2).jpeg",
+      "bytes": 296247,
+      "sha256": "7b662f116cc69339119b3fd13858d29c907e3b8eb977aabf1b434fe20847c692",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P1.O02.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (3).jpeg",
+      "bytes": 279904,
+      "sha256": "48cef63537c9ac02944d47c4e1fa745e5168c1ada7b062c8345f4c63baa3af41",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P1.O01.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (4).jpeg",
+      "bytes": 300912,
+      "sha256": "63e993553b534f6d6a2637cc1d611ea62ab3c7157e7ebb79a279c25217d18825",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P1.O01.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (5).jpeg",
+      "bytes": 262980,
+      "sha256": "2a5ecda225bfd1c0ceb698dd674fb2e098bbf55af8de1634d6ff032d9d25410a",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P1.O03.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (6).jpeg",
+      "bytes": 258476,
+      "sha256": "a39a15534cb12ebd4b8d00a9533eacb4ec9c90234e9d995348dd3028a9fe6649",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P1.O03.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (7).jpeg",
+      "bytes": 328251,
+      "sha256": "363a3c6e8ce7438309e5250d6febb6dc2ec6d8d0966c6616d86fb1ba02af8448",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P1.O04.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (8).jpeg",
+      "bytes": 294923,
+      "sha256": "fb1dc0c102a9b66a36fe1261173b9d5117238f6f35143badbf0b4f420c45199a",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P1.O04.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media.jpeg",
+      "bytes": 200140,
+      "sha256": "53c2beb1dbac65803aff2ee4f51cfd41e3b233fdc782c6bb5d1ca0e1b3cc45bd",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "plant appearance and context; no numeric endpoint reading inferred",
+      "linked_measurement_ids": []
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/shared image.jpeg",
+      "bytes": 385640,
+      "sha256": "21db09b283ba1f54cf3274d49678298d95d2738ff9152286625655911fe41e2a",
+      "width_px": 2048,
+      "height_px": 1536,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "plant appearance and context; no numeric endpoint reading inferred",
+      "linked_measurement_ids": []
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "bytes": 182358,
+      "sha256": "93e2b424b2ca6cab312b1be454bf8b9e8f3ae7c101be7437eb8f20ab8698e40e",
+      "width_px": 1280,
+      "height_px": 1706,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "annotated overview transcription",
+      "linked_measurement_ids": [
+        "P1.H01.height",
+        "P1.O01.length",
+        "P1.O01.width",
+        "P1.O02.length",
+        "P1.O02.width",
+        "P1.O03.length",
+        "P1.O03.width",
+        "P1.O04.length",
+        "P1.O04.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Leaf-1/Media (1).jpeg",
+      "bytes": 222177,
+      "sha256": "97e6e374e4c0c48fd0ede7dcdd1ef030b4297d9850ee014163fa0ae4c1cd3600",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P2.O01.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Leaf-1/Media.jpeg",
+      "bytes": 219625,
+      "sha256": "530f27ed2ad07e47bb9857b0056f972fa83e6f6fdc5dbe896e36ceeb494e6dc1",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P2.O01.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Leaf-2/Media (1).jpeg",
+      "bytes": 266973,
+      "sha256": "c7ca263f76574fd9803e1b9a35ef48a24e4badf0a6cdacc381e45fcf40398e1e",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P2.O02.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Leaf-2/Media.jpeg",
+      "bytes": 240798,
+      "sha256": "783fd9e43503236df278a2c79d37126a7be086f580cab4a21da9b2f191336b06",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P2.O02.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Media (1).jpeg",
+      "bytes": 285944,
+      "sha256": "1ddfc6791fd52142d44e38d41d74c112dddeb3b3d5cfdf3decc2ee94e3974b98",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P2.H01.height"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Media (2).jpeg",
+      "bytes": 246206,
+      "sha256": "f2e1ef9e842fe1f4a4bf685197b8d3da5ce5eee63b4c9fb7d9e4124a51314dfb",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P2.H01.height"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Media (3).jpeg",
+      "bytes": 251420,
+      "sha256": "2b0391d54d8a8cbfc27dbeede8600a637a112baf77d6bb2db305395186eca61d",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P2.H01.height"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Media (4).jpeg",
+      "bytes": 189371,
+      "sha256": "d8de7096302c4419be15831d03294a4751ce1b94b6a9a9390bcd8bc4df04b13a",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "contextual_contact_sheet",
+      "purpose": "plant appearance and context; no numeric endpoint reading inferred",
+      "linked_measurement_ids": []
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Media.jpeg",
+      "bytes": 254000,
+      "sha256": "15e22830e30027c1290d25d142c345937c94be932597e57415f3650e2ef4aaba",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "contextual_contact_sheet",
+      "purpose": "plant appearance and context; no numeric endpoint reading inferred",
+      "linked_measurement_ids": []
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+      "bytes": 751445,
+      "sha256": "e73a930058a018500c8a46f1ad860994abd343f9373e27cc0ed9428c28f5313a",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "annotated overview transcription",
+      "linked_measurement_ids": [
+        "P2.O01.length",
+        "P2.O01.width",
+        "P2.O02.length",
+        "P2.O02.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2_measurements_02.png",
+      "bytes": 219560,
+      "sha256": "2082372b3e7d25d0fd891db905544a9ee190cfaea31470d6ead17adbe010d313",
+      "width_px": 600,
+      "height_px": 800,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "annotated overview transcription",
+      "linked_measurement_ids": [
+        "P2.H01.height"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-1/Media (1).jpeg",
+      "bytes": 253410,
+      "sha256": "0c6f9b6f2d78d94326d16a78dcf1bbf7e55a9311a5af100f6bbdb93ba956f1c8",
+      "width_px": 1770,
+      "height_px": 1328,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P3.O05.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-1/Media.jpeg",
+      "bytes": 220929,
+      "sha256": "e6761c2d49941351dfac31ac2e6db46b61f4433a5f9f56d65808b57277e10441",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P3.O05.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-2/Media (1).jpeg",
+      "bytes": 279634,
+      "sha256": "cad4dc33ca2e09f57a723de8a4c8fc415542608cb30295c5520b80fce3560d4f",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P3.O04.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-2/Media.jpeg",
+      "bytes": 212299,
+      "sha256": "bf20e45bd488495db9eab008f56e3a1c96f55b3d37f089517cc941f717aa0107",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P3.O04.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-3/Media (1).jpeg",
+      "bytes": 245916,
+      "sha256": "c850a1ff59277ed2b887fd1e47486eaf004129277459b7aa011ed26c27fc53bd",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P3.O03.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-3/Media.jpeg",
+      "bytes": 223768,
+      "sha256": "07b9050ddf42f54bc1dccc5372d67380ab1aabc98a9375dfd1d9ca9e75fcd970",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P3.O03.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-4/Media (1).jpeg",
+      "bytes": 206045,
+      "sha256": "08b736618578fbcb21d84f04fc4c112a2297c395d80c54650edd21f63b8991f1",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P3.O02.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-4/Media.jpeg",
+      "bytes": 219212,
+      "sha256": "579fb396dcabcdaa057895ba2e482ee24b049b730713acdeebd33a94dcec373d",
+      "width_px": 1770,
+      "height_px": 1328,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P3.O02.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-5/Media (1).jpeg",
+      "bytes": 212405,
+      "sha256": "e6590e321208f5e430a195c64ef889e3f1da66a2bcff5b70128f3c47746dbcd2",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P3.O01.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-5/Media.jpeg",
+      "bytes": 228890,
+      "sha256": "8ee9e238b10179e71369f31510cfe2797a729a0f3edb96ba0528afa18d3626ab",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P3.O01.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-6/Media (1).jpeg",
+      "bytes": 240860,
+      "sha256": "8c66679eac26174936ac99d6ef3225068ebc7741b2de566520d13b49939a8b68",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P3.O06.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-6/Media.jpeg",
+      "bytes": 222840,
+      "sha256": "fe8c7e0eeae5de8632fa11134b261c011a7e4709ffd5c5e4d1cad517948afae6",
+      "width_px": 1770,
+      "height_px": 1328,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P3.O06.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Media (1).jpeg",
+      "bytes": 176645,
+      "sha256": "cee3463ad95c6d08b6fad0a9cd560af67d47b51bcf185fc8a0a4d1dbcf350290",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P3.H01.height"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Media (2).jpeg",
+      "bytes": 206426,
+      "sha256": "e765a00568e7f702b15ff431e82674ccefe0deb494df7e48c1c188588fecb053",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P3.H01.height"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Media (3).jpeg",
+      "bytes": 206426,
+      "sha256": "e765a00568e7f702b15ff431e82674ccefe0deb494df7e48c1c188588fecb053",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P3.H01.height"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Media (4).jpeg",
+      "bytes": 179887,
+      "sha256": "741b7bfb639adcd84244f6840cb10de35c81fc509c6a9e525001d323af7397ee",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "contextual_contact_sheet",
+      "purpose": "plant appearance and context; no numeric endpoint reading inferred",
+      "linked_measurement_ids": []
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Media (5).jpeg",
+      "bytes": 211944,
+      "sha256": "0feac7a8b7ad6b6155b2f500ddea58d716fdedefa447ca00f49a06ca1fe89593",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "contextual_contact_sheet",
+      "purpose": "plant appearance and context; no numeric endpoint reading inferred",
+      "linked_measurement_ids": []
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Media.jpeg",
+      "bytes": 236357,
+      "sha256": "7648df91ad33513d2a1a4b68079c15dfdfb3a3d0d3b26ac1f869bd6edf4a38d2",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "contextual_contact_sheet",
+      "purpose": "plant appearance and context; no numeric endpoint reading inferred",
+      "linked_measurement_ids": []
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "bytes": 839354,
+      "sha256": "11499eed550af48664b21972a28ee698bca0c6babd43ef5e21aa3f2a9943b8c6",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "annotated overview transcription",
+      "linked_measurement_ids": [
+        "P3.O01.length",
+        "P3.O01.width",
+        "P3.O02.length",
+        "P3.O02.width",
+        "P3.O03.length",
+        "P3.O03.width",
+        "P3.O04.length",
+        "P3.O04.width",
+        "P3.O05.length",
+        "P3.O05.width",
+        "P3.O06.length",
+        "P3.O06.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3_measurements_02.png",
+      "bytes": 758955,
+      "sha256": "a90da0c4404b5642f1ff27b213d59d2b9f5f4b077dbb7bb822b09d523ec4a9b6",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "annotated overview transcription",
+      "linked_measurement_ids": [
+        "P3.H01.height"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-1/Media (1).jpeg",
+      "bytes": 162462,
+      "sha256": "b2f11e99f0a1b78734a069ee446c7a246ffdd03fea73bccbe0cd5bc799739370",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P4.O01.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-1/Media.jpeg",
+      "bytes": 232290,
+      "sha256": "001a4d00387644361a6c59ea74526528bd74d1efedabdc4c50caf393f6bed236",
+      "width_px": 1770,
+      "height_px": 1328,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P4.O01.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-2/Media (1).jpeg",
+      "bytes": 269381,
+      "sha256": "7e244fea59c786d178297c2a8cf15ee52a7863ba7ae80f28e783a87693c83253",
+      "width_px": 1770,
+      "height_px": 1328,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P4.O02.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-2/Media.jpeg",
+      "bytes": 236163,
+      "sha256": "250370108e094f476e712e82ad115af8516c1c715e255e68f4aae4c4368e7696",
+      "width_px": 1770,
+      "height_px": 1328,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P4.O02.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-3/Media (1).jpeg",
+      "bytes": 205736,
+      "sha256": "555a8781b5dc98c10e7b9277f04747e1f5c81bd5e434633e8eb0caf3b7d9044a",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P4.O03.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-3/Media.jpeg",
+      "bytes": 201622,
+      "sha256": "9e5cfe9be0181faaa9405466f36c4012cc6287ca0e88059267912f8f75f01301",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P4.O03.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-4/Media (1).jpeg",
+      "bytes": 223389,
+      "sha256": "7d6b6448015cb4dab365519db7e7f567f25da6336023d57a97b597591a5e3207",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P4.O04.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-4/Media.jpeg",
+      "bytes": 259820,
+      "sha256": "5ff52deb5557894c10ef85e34f4ce0b5c44765797c391f64dbd1537c3a343e9d",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P4.O04.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Media (1).jpeg",
+      "bytes": 271213,
+      "sha256": "782c49272021c50e11c9b4387bec62d8187dc9a3184ed1d4821410a14eacb1ab",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P4.H01.height"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Media (2).jpeg",
+      "bytes": 271479,
+      "sha256": "79eab25cf57de1938f13a221e9e7d168ab3a0b84fadd12566eb72d731131e52c",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P4.H01.height"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Media (3).jpeg",
+      "bytes": 233133,
+      "sha256": "0726b13f513e0f16f4788d8b024d70dedd008388e27822b3e44de950fbfd2a5f",
+      "width_px": 1770,
+      "height_px": 1328,
+      "visually_reviewed": true,
+      "review_mode": "contextual_contact_sheet",
+      "purpose": "plant appearance and context; no numeric endpoint reading inferred",
+      "linked_measurement_ids": []
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Media (4).jpeg",
+      "bytes": 181136,
+      "sha256": "abe0e1722c8596283312baae251ec6ed66b0df8ed8dc524c75cadfcd69ce2e6e",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "contextual_contact_sheet",
+      "purpose": "plant appearance and context; no numeric endpoint reading inferred",
+      "linked_measurement_ids": []
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Media (5).jpeg",
+      "bytes": 223225,
+      "sha256": "2fd56f2a0d90c50096b80eff06f08d4de5717888ee597ce1c11af624b7ddc2ba",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "contextual_contact_sheet",
+      "purpose": "plant appearance and context; no numeric endpoint reading inferred",
+      "linked_measurement_ids": []
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Media.jpeg",
+      "bytes": 247155,
+      "sha256": "324a665d801feb9e265c73df1f23c009168670eb9e7d0ec29ea6d39f31a77d4e",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "contextual_contact_sheet",
+      "purpose": "plant appearance and context; no numeric endpoint reading inferred",
+      "linked_measurement_ids": []
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "bytes": 832722,
+      "sha256": "2c8b0968d78690bf5ed916e9eeaf88334b020f8ba8ef7f9736322b64fe1a3292",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "annotated overview transcription",
+      "linked_measurement_ids": [
+        "P4.O01.length",
+        "P4.O01.width",
+        "P4.O02.length",
+        "P4.O02.width",
+        "P4.O03.length",
+        "P4.O03.width",
+        "P4.O04.length",
+        "P4.O04.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4_measurements_02.png",
+      "bytes": 752689,
+      "sha256": "f83c4a5a98ca545cc1167e4bb19a178ae847593156af48120f7101408adb763f",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "annotated overview transcription",
+      "linked_measurement_ids": [
+        "P4.H01.height"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-1/Media (1).jpeg",
+      "bytes": 207700,
+      "sha256": "8a4aac05da4e83d17a7261024bea9a54e0b1911c7351012fa8c435a0e1b8a215",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P5.O04.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-1/Media.jpeg",
+      "bytes": 227912,
+      "sha256": "d51a4e159a635bdeeda6ecccf1570d469e65a3709982be91ae5d9b345dbb72a2",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P5.O04.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-2/Media (1).jpeg",
+      "bytes": 242387,
+      "sha256": "fa4db48926a9cd7e3d9fb30bd2a8e15148c5fa085063362c1ef5158830a7f4bc",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P5.O03.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-2/Media.jpeg",
+      "bytes": 225783,
+      "sha256": "a96c81aa8005809e2a2326f2d99d9347504546292f924b21276312a0495579e8",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P5.O03.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-3/Media (1).jpeg",
+      "bytes": 263596,
+      "sha256": "017554792f733af64c044f35572dd5c087b00ef630f5c11e744bbba50e2402c8",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P5.O02.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-3/Media.jpeg",
+      "bytes": 257539,
+      "sha256": "13b5c8b55fce2e86dbf3c240dee3f140ba7deaac499071c6b6415de757c36eec",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P5.O02.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-4/Media (1).jpeg",
+      "bytes": 314079,
+      "sha256": "ab7251a0647aae99faafde2cbf97a4d0d6ea5eab95d778739b3d789d3adc03cd",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P5.O01.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-4/Media.jpeg",
+      "bytes": 271990,
+      "sha256": "a09d49ff3fa45fcb26f2db0718aa50d616b7b5ed3cc4f6673099f841eeba7fbf",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P5.O01.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-5/Media (1).jpeg",
+      "bytes": 311447,
+      "sha256": "bd6f70e7cbfedbc122a1c5fb58844b3aa5e5a969a5cc4b04b0835959c85a8f7e",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P5.O05.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-5/Media.jpeg",
+      "bytes": 247752,
+      "sha256": "9e4291d7d6e0c44258ff0ab0f972c7d205aaf7ef5fe32353e5c38a1f0f476e57",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P5.O05.length"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/Media (1).jpeg",
+      "bytes": 215809,
+      "sha256": "e61eecb977dc1a0eb5c2b4f7d6d5ef67eec7e17cdd9060d1ffc16e43af81affc",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "ruler/organ endpoint review",
+      "linked_measurement_ids": [
+        "P5.H01.height"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/Media (2).jpeg",
+      "bytes": 294761,
+      "sha256": "7ad930f02a575428a93cb562cab1bd7e5c02ca7bf23caf0798d81fb64aee1687",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "contextual_contact_sheet",
+      "purpose": "plant appearance and context; no numeric endpoint reading inferred",
+      "linked_measurement_ids": []
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/Media (3).jpeg",
+      "bytes": 251532,
+      "sha256": "0ca480cddd75569317f84df1e4015ca211fc5d56e891de03b6d1bc8fc2698cd2",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "contextual_contact_sheet",
+      "purpose": "plant appearance and context; no numeric endpoint reading inferred",
+      "linked_measurement_ids": []
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/Media.jpeg",
+      "bytes": 252286,
+      "sha256": "d741f0a1a8fd00438c2c1da5bcfaa94bfae91ff3a43271c9828f2b0298fb38e1",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "contextual_contact_sheet",
+      "purpose": "plant appearance and context; no numeric endpoint reading inferred",
+      "linked_measurement_ids": []
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "bytes": 891074,
+      "sha256": "7eec6eba0fa90704dfdb08c623b09ba3c1d6ac39af8ea03d05a2151e84571a3b",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "annotated overview transcription",
+      "linked_measurement_ids": [
+        "P5.O01.length",
+        "P5.O01.width",
+        "P5.O02.length",
+        "P5.O02.width",
+        "P5.O03.length",
+        "P5.O03.width",
+        "P5.O04.length",
+        "P5.O04.width",
+        "P5.O05.length",
+        "P5.O05.width"
+      ]
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5_measurements_02.png",
+      "bytes": 759304,
+      "sha256": "52a5bf1c008720ffce5262ec8fac081e6bee218594dd2b9846da46444c6a018f",
+      "width_px": 1328,
+      "height_px": 1770,
+      "visually_reviewed": true,
+      "review_mode": "individual_full_image",
+      "purpose": "annotated overview transcription",
+      "linked_measurement_ids": [
+        "P5.H01.height"
+      ]
+    }
+  ],
+  "duplicate_source_evidence": [
+    {
+      "paths": [
+        "manual_validation_5-plants_28-09/plant-3/Media (2).jpeg",
+        "manual_validation_5-plants_28-09/plant-3/Media (3).jpeg"
+      ],
+      "status": "byte_identical_sha256; one observation stored twice"
+    }
+  ],
+  "remaining_requirements": [
+    "Freeze reconstruction/calibration before comparing held-out manual values.",
+    "Link physical specimens and individual organs using attachment, shape, damage and overview context; do not optimize matching by trait-value agreement.",
+    "Choose blade-only versus petiole-inclusive length, chord versus curved length, width-section versus maximum width, and ear body versus awns.",
+    "Confirm the four P4 structures are leaves or pods/reproductive organs.",
+    "Use heights as operator-reported until ruler base/join/tip evidence or repeat measurements can verify them.",
+    "Report every omitted or unreadable dimension rather than silently dropping it."
+  ]
+}

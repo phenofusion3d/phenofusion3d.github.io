@@ -1,0 +1,63 @@
+{
+  "source_hashes_before": {
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx10/measured_spectra.npz": "a824a2f8a7f5fbc43eb9f86f5fe4e7314d93b89e39b96cbffcfe954ab479f9b6",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx10/measured_spectra.metadata.json": "acdc6eee8fcc51849a903df32d7f7d2c1c14357391f0cf8dfcf2ad6284635206",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx10/summary.json": "7d6271611d1cebd8ba63bde9f0006763f2216574a458eb07b437748e5d868d65",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx10/reference_profiles.npz": "31637fe6c09a25633035fb07b8501174c8c2461a196129c6729b292f38cb3f06",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx10/input_config.json": "2d3ecd286764928ce0c230dd5181595d09579923737eb38d59b1824dfe2c7665",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx17/measured_spectra.npz": "b44115f387ae0c15f1d094bcdda877b240c4aa6f6472e5a3597cf8f2f224da7f",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx17/measured_spectra.metadata.json": "c21d2a12ca7343c160ca9d1133e483b388a27c6f01eb9aa40129ecd50a0fcd0c",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx17/summary.json": "f1e30633c294aaa12331cd483271692c8ce1c8b4b33ca5d7db0ae2b752449d6c",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx17/reference_profiles.npz": "466c87b9a48dd876c48a622780fec3d7931a81d9196a0bc2144ae293253c5ed5",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx17/input_config.json": "8643be0183997c59b6219a61414547893e033e1a37faece5d13bfbcb5e1b024d"
+  },
+  "source_hashes_after": {
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx10/measured_spectra.npz": "a824a2f8a7f5fbc43eb9f86f5fe4e7314d93b89e39b96cbffcfe954ab479f9b6",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx10/measured_spectra.metadata.json": "acdc6eee8fcc51849a903df32d7f7d2c1c14357391f0cf8dfcf2ad6284635206",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx10/summary.json": "7d6271611d1cebd8ba63bde9f0006763f2216574a458eb07b437748e5d868d65",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx10/reference_profiles.npz": "31637fe6c09a25633035fb07b8501174c8c2461a196129c6729b292f38cb3f06",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx10/input_config.json": "2d3ecd286764928ce0c230dd5181595d09579923737eb38d59b1824dfe2c7665",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx17/measured_spectra.npz": "b44115f387ae0c15f1d094bcdda877b240c4aa6f6472e5a3597cf8f2f224da7f",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx17/measured_spectra.metadata.json": "c21d2a12ca7343c160ca9d1133e483b388a27c6f01eb9aa40129ecd50a0fcd0c",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx17/summary.json": "f1e30633c294aaa12331cd483271692c8ce1c8b4b33ca5d7db0ae2b752449d6c",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx17/reference_profiles.npz": "466c87b9a48dd876c48a622780fec3d7931a81d9196a0bc2144ae293253c5ed5",
+    "generated/research_spectral_extension_20261007/full_spectral_review/sensors/fx17/input_config.json": "8643be0183997c59b6219a61414547893e033e1a37faece5d13bfbcb5e1b024d"
+  },
+  "all_sources_unchanged": true,
+  "checks": [
+    {
+      "sensor": "fx10",
+      "measured_npz_metadata_and_canonical_dn_hashes_verified": true,
+      "Q_Q0_exactly_reproduced_from_saved_DN_and_references": true,
+      "sample_count": 7982,
+      "bands": 224
+    },
+    {
+      "sensor": "fx17",
+      "measured_npz_metadata_and_canonical_dn_hashes_verified": true,
+      "Q_Q0_exactly_reproduced_from_saved_DN_and_references": true,
+      "sample_count": 5361,
+      "bands": 224
+    },
+    {
+      "FX10_six_saved_descriptors_and_flags_reproduced_exactly": true
+    }
+  ],
+  "fx17_ratio_invalid_samples_preserve_nan": true,
+  "fx17_source_pixel_coordinates_preserved": true,
+  "new_diagnostic_sample_count": 5361,
+  "figure_count": 7,
+  "figure_formats": [
+    "PNG",
+    "SVG"
+  ],
+  "no_new_spatial_or_physical_claim": true,
+  "local_report_links_resolve": true,
+  "local_report_link_count": 23,
+  "figures_visually_checked": [
+    "fx10_q_q0_spectra.png",
+    "valid_band_coverage.png",
+    "fx10_six_index_distributions.png",
+    "fx17_supported_ratio_sensitivity.png"
+  ]
+}

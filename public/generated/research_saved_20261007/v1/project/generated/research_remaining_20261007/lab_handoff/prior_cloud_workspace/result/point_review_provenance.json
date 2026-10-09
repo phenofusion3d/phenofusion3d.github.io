@@ -1,0 +1,26 @@
+{
+  "models": [
+    {
+      "id": "prior_109_candidate",
+      "label": "Earlier saved upright candidate",
+      "context": false,
+      "sha256": "e872fb8065c9cff2464a4ec0ac72ab87ab6fee749470391a021bc0da6c8da8a9",
+      "count": 422159,
+      "original_count": 1266476,
+      "span": 1.0,
+      "display_stride": 3,
+      "centre": [
+        -0.007095817983872987,
+        -0.12011574254783634,
+        0.18466747799755645
+      ],
+      "scale": 0.519408062610622,
+      "download": "../../../../integration_109_final/reviewed_result/plant_upright.ply"
+    }
+  ],
+  "display_only": true,
+  "endpoint_status": "unreviewed source point candidates",
+  "geometry_created": false,
+  "source_files_modified": false,
+  "coordinate_unit": "unknown"
+}

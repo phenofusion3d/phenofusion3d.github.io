@@ -1,0 +1,62 @@
+[
+  {
+    "id": "P1.H01.height",
+    "specimen_id": "P1",
+    "manual_stem_base_to_tip_height_cm": 53.5,
+    "observed_retained_vertical_span_cm": 48.156094823814705,
+    "span_minus_manual_cm": -5.343905176185295,
+    "span_to_manual_percent": 90.01139219404617,
+    "status": "extent_completeness_diagnostic_not_height_accuracy",
+    "reason": "Dry blades overlap narrow stems at the soil junction; the measured stem origin cannot be isolated. Highest retained surface projects to the upper green blade tip. Cereal ear awns extend beyond the dense ear body and are incompletely reconstructed; the very highest biological tip is not certified.",
+    "axis_definition": "X follows gantry row; Y perpendicular in display plane; Z fitted-board display normal, not independently verified gravity.",
+    "caveat": "Span endpoints are retained geometry extrema, not identified biological stem base and tip; this is not a height estimate, error score or certified completeness percentage."
+  },
+  {
+    "id": "P2.H01.height",
+    "specimen_id": "P2",
+    "manual_stem_base_to_tip_height_cm": 51.7,
+    "observed_retained_vertical_span_cm": 51.32792412716801,
+    "span_minus_manual_cm": -0.37207587283199217,
+    "span_to_manual_percent": 99.28031746067312,
+    "status": "extent_completeness_diagnostic_not_height_accuracy",
+    "reason": "Exposed curved green basal stem is visible against soil, but its precise emergence and measurement zero are unresolved. Highest retained points project to a curled yellowing edge and nearby overlapping tissue. Small terminal buds and curled margins are not a unique certified top endpoint.",
+    "axis_definition": "X follows gantry row; Y perpendicular in display plane; Z fitted-board display normal, not independently verified gravity.",
+    "caveat": "Span endpoints are retained geometry extrema, not identified biological stem base and tip; this is not a height estimate, error score or certified completeness percentage."
+  },
+  {
+    "id": "P3.H01.height",
+    "specimen_id": "P3",
+    "manual_stem_base_to_tip_height_cm": 52.8,
+    "observed_retained_vertical_span_cm": 50.49421445257626,
+    "span_minus_manual_cm": -2.3057855474237385,
+    "span_to_manual_percent": 95.63298191775807,
+    "status": "extent_completeness_diagnostic_not_height_accuracy",
+    "reason": "Purple/green petiole junction is visible, but the soil-level stem origin is beneath overlapping tissue. Branch-junction region only. Highest retained points lie in overlapping distal stalk/leaf tissue near the lower image edge. Long flowering-stem extremities and true terminal point are not fully resolved.",
+    "axis_definition": "X follows gantry row; Y perpendicular in display plane; Z fitted-board display normal, not independently verified gravity.",
+    "caveat": "Span endpoints are retained geometry extrema, not identified biological stem base and tip; this is not a height estimate, error score or certified completeness percentage."
+  },
+  {
+    "id": "P4.H01.height",
+    "specimen_id": "P4",
+    "manual_stem_base_to_tip_height_cm": 52.3,
+    "observed_retained_vertical_span_cm": 44.81058269684123,
+    "span_minus_manual_cm": -7.489417303158767,
+    "span_to_manual_percent": 85.67989043373085,
+    "status": "extent_completeness_diagnostic_not_height_accuracy",
+    "reason": "Pot-centre origin is obscured by leaves and crossing flowering stems. Region candidate only; no visible stem-base endpoint. Highest retained surface projects to a terminal pale bud/flower cluster, but its exact outermost endpoint and complete depth support remain uncertain.",
+    "axis_definition": "X follows gantry row; Y perpendicular in display plane; Z fitted-board display normal, not independently verified gravity.",
+    "caveat": "Span endpoints are retained geometry extrema, not identified biological stem base and tip; this is not a height estimate, error score or certified completeness percentage."
+  },
+  {
+    "id": "P5.H01.height",
+    "specimen_id": "P5",
+    "manual_stem_base_to_tip_height_cm": 31.8,
+    "observed_retained_vertical_span_cm": 24.988223710532992,
+    "span_minus_manual_cm": -6.811776289467009,
+    "span_to_manual_percent": 78.57931984444338,
+    "status": "extent_completeness_diagnostic_not_height_accuracy",
+    "reason": "Radial petiole junction and lower curved stem are visible; actual soil-emergence point is hidden by the stem/leaf cluster. Highest retained points project to the terminal margin of the left-facing lobed green O05 leaf candidate, a plausible top surface. This does not establish all-terminal completeness or the stem origin.",
+    "axis_definition": "X follows gantry row; Y perpendicular in display plane; Z fitted-board display normal, not independently verified gravity.",
+    "caveat": "Span endpoints are retained geometry extrema, not identified biological stem base and tip; this is not a height estimate, error score or certified completeness percentage."
+  }
+]

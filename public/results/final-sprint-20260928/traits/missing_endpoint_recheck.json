@@ -1,0 +1,28 @@
+[
+  {
+    "id": "P1.O03.true_tip_attempt",
+    "frame": 143152,
+    "pixel": [
+      983,
+      354
+    ],
+    "radius_px": 4,
+    "current_cleaned_visible_candidates": 0,
+    "source_fused_indices": [],
+    "new_endpoint_selected": false,
+    "policy": "Frozen click; current full-cloud occlusion plus scaled stereo depth and current P1 membership. No farther point substituted."
+  },
+  {
+    "id": "P1.O04.ear_body_chord",
+    "frame": 459309,
+    "pixel": [
+      157,
+      469
+    ],
+    "radius_px": 4,
+    "current_cleaned_visible_candidates": 0,
+    "source_fused_indices": [],
+    "new_endpoint_selected": false,
+    "policy": "Frozen click; current full-cloud occlusion plus scaled stereo depth and current P1 membership. No farther point substituted."
+  }
+]

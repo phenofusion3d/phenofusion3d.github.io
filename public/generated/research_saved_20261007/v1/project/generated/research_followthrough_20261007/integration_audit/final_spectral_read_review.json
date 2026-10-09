@@ -1,0 +1,50 @@
+{
+  "status": "pass_read_review_and_reconciled_replay_source_identity",
+  "source_sha256": "a01459dfab001296d69afa10d8ca44e78ba7ccf4b8754ca970d1e15fb4b77339",
+  "frozen_parity_source_sha256": "a01459dfab001296d69afa10d8ca44e78ba7ccf4b8754ca970d1e15fb4b77339",
+  "matches_frozen_replay_source": true,
+  "source_version_caveat": null,
+  "independently_reviewed": [
+    "strict_uint16_BIL_offset_and_endian_storage",
+    "source_pixel_and_band_identity",
+    "reference_support_intersection_and_no_extrapolation",
+    "clipping_weak_reference_raw_zero_and_advisory_low_signal_masks",
+    "negative_and_above_one_Q_retained",
+    "Q0_uses_same_conservative_eligibility",
+    "descriptor_nominal_to_measured_band_mapping_and_distinct_band_requirement",
+    "initial_and_final_config_header_mask_fingerprints",
+    "explicitly_weaker_raw_recording_stat_identity_check",
+    "bounded_full_line_reads_and_reference_windows",
+    "fresh_separate_output_and_replayable_absolute_input_snapshot",
+    "empty_sample_regions_retained_without_zero_measurement_invention"
+  ],
+  "prior_findings_resolved": [
+    "late_input_fingerprints",
+    "unbounded_full_BIL_line_reads",
+    "relative_replay_snapshot",
+    "silently_omitted_zero_sample_regions",
+    "duplicate_source_band_descriptor",
+    "ambiguous_duplicate_ENVI_header_key"
+  ],
+  "new_blocking_findings": [],
+  "test_scope": "Read-reviewed focused test source and frozen exact-parity report; did not duplicate the spectral agent full extraction runs.",
+  "reported_test_result": "13 passed, including separate real-recording subset parity test",
+  "frozen_replay_sample_count": 13343,
+  "physical_calibration_validated": false,
+  "hardware_operated": false,
+  "protected_source_files": 26,
+  "protected_changed": [],
+  "setuptools_discovery": {
+    "research_workspace_package": true,
+    "spectral_extract_module": true,
+    "research_report_module": true,
+    "wheel_built": false
+  },
+  "fallback_viewer_evidence": "research_report_fallback_fixed.json",
+  "source_hash_clarification": "Resolved: the former script_sha256 belonged to the parity verifier, not the extractor. Correctly labelled tracked_extractor_sha256 and both extraction summary software_sha256 values match the current module; extractor source and extraction outputs did not change.",
+  "parity_verifier_path": "generated\\research_followthrough_20261007\\spectral_extraction_v1\\verify_replay.py",
+  "parity_verifier_sha256": "4032bda354389f8a48d2ae9c10a5fc1847fcbd6fd70781248f8536e9477d30de",
+  "previous_parity_verifier_revision_sha256": "beb06d88a2ff55651f3726b965df6fc5be1a8b93054fa01bbe4f0c390a62a90a",
+  "both_replay_extractor_hashes_match_current_module": true,
+  "final_release_test_result_reported_by_root": "141 tests passed"
+}

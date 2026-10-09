@@ -1,0 +1,19 @@
+{
+  "status": "BLOCKED_NO_VALIDATED_NONCOPLANAR_CONTROLS",
+  "candidate_leaf_windows_inspected": 6,
+  "candidate_centres_with_two_or_more_depth_votes": 5,
+  "accepted_training_controls": 0,
+  "accepted_independent_offplane_holdout_controls": 0,
+  "fit_attempted": false,
+  "physical_fusion": null,
+  "achieved_3d_mapping": false,
+  "absolute_metric_scale_is_separate": true,
+  "new_evidence": [
+    "Source-image comparison of P3/R3 and P5/R5",
+    "Six source-linked candidate windows and corrected-raster depth samples",
+    "Additional FX17 appearance comparison",
+    "Practical calibration capture and validation specification"
+  ],
+  "bounded_scope": "No exhaustive impossibility claim; promising same-leaf appearance is retained for future exact landmark review.",
+  "result_report": "index.html"
+}

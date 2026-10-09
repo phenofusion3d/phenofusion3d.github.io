@@ -1,0 +1,23 @@
+CONFIRMED-BOARD SHARED HYPERSPECTRAL CALIBRATION PLANE
+
+Confirmed 25 mm cells connect the D405 board poses to 102 FX10 and 103 FX17 observed marker centres in a shared metric calibration frame. The best-supported sheet mapping is top → left, middle_rotated → middle, bottom → right. All six sheet permutations were evaluated, with marker IDs qualified by physical sheet.
+
+The white reference panel is adjacent to both the HSI top target and the D405 left target. The rotated middle target and the opposite outer-marker orientations support this identification visually. The affine fitting residual is 0.624 px for FX10 and 0.355 px for FX17; the best incorrect permutation is 134.265 px and 107.969 px respectively. This is strong internal evidence for correspondence, not an independently confirmed physical specimen-label inventory.
+
+Whole-sheet holdouts use two sheets for fitting and predict the third, without prior inlier removal. FX10 held-out RMS is 1.312 / 0.905 / 1.385 pixels for top / middle / bottom. FX17 is 0.679 / 0.475 / 0.656 pixels. Axis-wise values, exact held-out identities, predictions, residuals and alternative affine, planar pushbroom and homography models are preserved in shared_plane_calibration.json. Mapping/model selection uses these data; these folds are not a further independent final test.
+
+Estimated table-plane grid spacing: FX10 0.612431 mm per detector column, 0.771606 mm per line; FX17 0.967897 and 0.771712 mm. These are local fitted table-grid increments, not ray footprints or dimensions at plant height.
+
+FRAME AND HEIGHT LIMITS
+All 3D controls are in D405 calibration-camera-zero coordinates, as supplied by d405_metric_calibration.json. These are not the later optimized plant reconstruction coordinates. Applying a map to plant points requires a justified transfer between calibration and plant scans, including relative start position.
+
+The best-plane control departures span only -0.354 to +0.337 mm (0.166 mm RMS), reflecting fitted paper tilt/warp and pose uncertainty. This does not supply independent multi-height calibration across a plant volume. A planar map must not be projected onto raised leaves as if it were a calibrated pushbroom ray model. Off-plane geometry or independent spatial intrinsics/rig constraints and elevated validation controls are still needed.
+
+This analysis uses saved source observations and the newly confirmed board model only. It does not alter source pixels, radiometry, reconstructed points, sparse associations, or frozen result folders. The existing selected wavelengths are FX10 661.10 nm and FX17 1301.56 nm; spatial wavelength dependence is not assessed here. Unknown white reference reflectance and dark-tail status remain separate radiometric gaps.
+
+FILES
+shared_metric_controls.csv: all 205 sheet-qualified metric controls.
+shared_plane_calibration.json: every candidate mapping, model, held-out prediction and input hash.
+shared_plane_diagnostics.png: spatial layout and training residuals (clearly labelled as training).
+grid_spacing.json: approximate table-grid increments with explicit scope.
+validation.json: independent arithmetic/hash/CSV checks.

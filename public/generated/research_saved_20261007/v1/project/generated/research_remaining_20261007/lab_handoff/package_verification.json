@@ -1,0 +1,24 @@
+{
+  "method": "setuptools module selection plus actual wheel build, archive inspection, isolated import and CLI build",
+  "py_modules": [
+    "main"
+  ],
+  "main_discovered": true,
+  "research_modules": [
+    "app\\research_report.py",
+    "processing\\research_workspace\\spectral_extract.py",
+    "processing\\research_workspace\\spectral_mapping.py",
+    "processing\\research_workspace\\viewer.py",
+    "processing\\research_workspace\\workflow.py",
+    "processing\\research_workspace\\__init__.py",
+    "processing\\research_workspace\\__main__.py"
+  ],
+  "entry_points": {
+    "console_scripts": [
+      "phenofusion3d = main:main"
+    ]
+  },
+  "gui_entrypoint_complete": true,
+  "before_fix": "package_verification.before_fix.json",
+  "wheel_evidence": "wheel_verification.json"
+}

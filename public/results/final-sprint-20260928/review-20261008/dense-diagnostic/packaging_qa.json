@@ -1,0 +1,37 @@
+{
+  "array_checks": {
+    "fx10": {
+      "rows": 1613,
+      "exact_original_xyz": true,
+      "exact_source_camera_provenance": true,
+      "sample_row_and_association_aligned": true,
+      "unique_source_pixel_and_geometry_id": true,
+      "unmeasured_per_pixel_registration_error_is_null": true
+    },
+    "fx17": {
+      "rows": 643,
+      "exact_original_xyz": true,
+      "exact_source_camera_provenance": true,
+      "sample_row_and_association_aligned": true,
+      "unique_source_pixel_and_geometry_id": true,
+      "unmeasured_per_pixel_registration_error_is_null": true
+    }
+  },
+  "all_static_local_links_exist": true,
+  "static_local_link_count": 15,
+  "external_runtime_dependencies": [],
+  "browser": {
+    "browser": "Chrome",
+    "url": "http://127.0.0.1:8877/research_sprint_review_20261008/fusion_candidates/candidate_result/index.html",
+    "failure_banner_and_title_visible": true,
+    "FX10_1613_and_FX17_643_rows_visible": true,
+    "wavelength_and_Q_controls_work": true,
+    "FX17_unsupported_descriptors_disabled": true,
+    "FX10_NDVI_available": true,
+    "default_depth_test_and_regular_small_surface_points": true,
+    "focus_patch_button_works": true,
+    "console_errors_or_warnings_observed": [],
+    "screenshot": "diagnostic_viewer.jpg"
+  },
+  "scope": "Packaging and rendering validation only. Registration FAILED; this does not accept any new dense mapping."
+}

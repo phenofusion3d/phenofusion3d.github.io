@@ -1,0 +1,110 @@
+PHENOFUSION3D — LAB ACCEPTANCE CANDIDATE V2
+Base commit: 920a577958a22e10998d24935265c77e2296d867
+Candidate: uncommitted test-only Qt signal wait patch; not an exact commit snapshot
+Prepared: 7 October 2026
+
+PURPOSE
+This separate candidate lets a lab operator check the existing environment and
+compare protected files before any application update. It is not an installer.
+The metadata-only preflight never overwrites the working lab checkout, installs
+packages, connects to a
+camera/ROS master, moves the gantry, or declares hardware acceptance.
+
+1. EXTRACT BESIDE THE WORKING INSTALLATION
+Extract this whole kit to a short, separate directory. Keep source/, the two
+manifest JSON files, check_environment.py and the checklist together.
+Do not copy source/ over the working lab installation yet.
+Use the existing compatible lab Python executable (3.10 or later). If the lab
+only has an older interpreter, record that gap and leave it unchanged.
+Do not run setup.sh, pip install or a
+dependency upgrade as part of this preflight.
+
+2. RUN THE METADATA-ONLY PREFLIGHT
+From this kit directory, run the following with real paths substituted:
+
+Linux:
+  /path/to/existing/lab/venv/bin/python -B check_environment.py --lab-checkout /path/to/working/PhenoFusion3D --output /path/outside/both/checkouts/lab_preflight_01
+
+Windows PowerShell:
+  & 'C:\path\to\existing\venv\Scripts\python.exe' -B check_environment.py --lab-checkout 'C:\path\to\working\PhenoFusion3D' --output 'C:\separate_reports\lab_preflight_01'
+
+The output directory must not exist, and must be outside both candidate source/
+and the specified working lab checkout. Omitting --lab-checkout is allowed for
+environment inspection, but then no working-installation comparison occurs.
+Open index.html inside the new output directory. Keep preflight.json with it.
+
+Exit 0: declared dependency minimums/source checks completed, operator acceptance
+still pending. Exit 2: review required or invalid output/input path. Neither exit
+means that hardware works. The script prints no camera or motion commands.
+
+The preflight reads installed distribution metadata, not package imports. It
+cannot establish native-library/ABI compatibility or transitive dependency
+consistency. Other OpenCV distributions may supply cv2 even if opencv-python
+metadata is absent. Different or missing packages require investigation, not an
+automatic installation or a reason to alter a working lab environment.
+ROS may use a separate interpreter through the existing bridge. Missing rospy
+or pyrealsense2 here does not by itself establish the rig's state. Optional
+PyQtWebEngine absence means interactive in-app viewing needs separate checking;
+the static report fallback and an offline WebGL browser remain available.
+
+3. REVIEW BEFORE RUNNING THE APP
+If protected files differ, keep the working checkout untouched and inspect the
+differences. Only CRLF/LF line endings are normalized in the protected comparison.
+The complete candidate source is separately checked against its exact snapshot.
+Record the actual lab checkout revision and interpreter in OPERATOR_RECORD.json.
+Local Windows/WSL checks do not replace this comparison on the physical rig.
+
+4. OPERATOR ACCEPTANCE
+Use LAB_ACCEPTANCE_CHECKLIST.md for the concrete UI, saved-data and acquisition
+checks. The existing capture/gantry acceptance procedure and established movement
+bounds govern all hardware operations. This kit does not run those checks.
+Start with saved-data analysis and report viewing. Keep old recordings read-only
+and use fresh output folders. Record actual results; leave unperformed checks
+pending. Test with the lab's actual SDK, ROS bridge, cameras and gantry only when
+the responsible operator is present.
+
+For optional offline regression tests, the checklist gives the explicit selection
+and headless settings. Tests using original recordings may skip when those inputs
+are absent: report actual counts. A new environment is not equivalent to the lab
+environment. Do not leave QT_QPA_PLATFORM=offscreen set for an interactive session.
+
+5. CALIBRATION RECORDS
+LAB_RECORDS_TO_COLLECT.md names the missing September acquisition records that
+could resolve scale and spectral geometry. Historical recordings are recovery
+leads, not substitute calibration for the September scans. The evidence report
+is saved separately with the lab-candidate results.
+
+CONTENTS AND INTEGRITY
+source/ contains 208 files based on the stated commit. Exactly one file differs:
+tests/test_gantry_offline.py has six added lines that wait, for at most three
+seconds, for an already queued Qt error signal in an offline regression test.
+Only that file also changes from original CRLF line endings to LF.
+The patch does not change application, capture or gantry behavior. The other
+207 source files and all 26 protected files are unchanged from the first kit.
+This test-only patch is uncommitted. test_only_qt_signal_wait.patch records the
+exact original-to-candidate difference, including line endings; the companion
+test_only_qt_signal_wait_semantic.patch shows the six added lines with the
+original first normalized to LF for readability. SOURCE_MANIFEST.json hashes
+every actual candidate file and identifies the base commit, modification and
+source-tree hash. protected_files.json retains the original 26-file preservation
+baseline. CHECKSUMS.sha256 covers every kit file except itself. The redundant
+original committed-source ZIP is omitted; the original v1 kit remains preserved.
+Raw RGB-D recordings and full ENVI cubes are not included. The larger saved
+research-results archive contains the derived clouds, spectra and review data.
+
+Research limitations remain unchanged: conditional physical scale, incomplete
+plant surfaces, unresolved anatomical references, provisional spectral ratios,
+and no validated spectral surface assignment. Do not mark those gaps resolved
+merely because a software or hardware check passes.
+
+PREPARATION STATUS
+Nine metadata-preflight guard tests and a Windows metadata check are rerun for
+this candidate; see PREPARATION_EVIDENCE.json for their recorded outcomes.
+Separate Linux offline regression evidence is included under preparation/:
+141 passed, 1 skipped, 0 failures/errors from 142 selected tests; the changed
+test also passed 20 repeated runs. The skipped fixture requires excluded
+original recordings and is not counted as a pass. The tested Linux source hashes
+match all 208 candidate files. Windows targeted regression passed 18/18 tests.
+These are development-environment results, not an actual working lab comparison
+or physical hardware acceptance. The older Windows release test evidence is
+historical and is not relabelled as a new run.

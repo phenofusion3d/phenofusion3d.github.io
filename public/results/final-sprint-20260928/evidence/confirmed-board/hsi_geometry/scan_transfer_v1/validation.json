@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "sensor": "fx10",
+      "median_translation_and_holdout_errors_rederived_from_source_target_coordinates": true,
+      "training_features": 6
+    },
+    {
+      "sensor": "fx17",
+      "median_translation_and_holdout_errors_rederived_from_source_target_coordinates": true,
+      "training_features": 6
+    }
+  ],
+  "source_hashes_verified": true,
+  "candidate_csv_rows": 60,
+  "rendered_figure_review": "Inspected; labels, fitted start shifts, held-out later residual drift legible."
+}

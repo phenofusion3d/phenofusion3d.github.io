@@ -1,0 +1,94 @@
+{
+  "status": "SPECIFICATION_ONLY_NOT_A_COMPLETED_CALIBRATION",
+  "recover_existing_records_first": [
+    "FX10 and FX17 spatial intrinsics, lens/focus identity, spatial distortion/keystone",
+    "Fixed sensor-to-reference poses in a documented shared frame",
+    "Per-line encoder/timing and run 002 / run 003 start-position relationship",
+    "Original target dimensions and recording translation units"
+  ],
+  "coordinate_contract": {
+    "frame_id": null,
+    "units": null,
+    "height_axis": null,
+    "reference_plane_offset": null,
+    "absolute_mm_scale_required_for_pixel_fit": false,
+    "absolute_mm_scale_required_for_metric_traits": true
+  },
+  "capture_geometry": {
+    "target": "Rigid, individually coded noncoplanar target spanning the intended plant volume; independently measured marker centres or checker intersections",
+    "distribution": "Spread controls across detector columns, scan lines and measured height levels; not a single elevated corner",
+    "suggested_training_count": 24,
+    "suggested_independent_holdout_count": 12,
+    "count_note": "Planning recommendation, not a guarantee of observability or accuracy. Existing bounded fit API requires at least 12 train and 4 independent off-plane holdout controls.",
+    "target_heights_in_shared_units": null,
+    "target_xyz_measurement_uncertainty": null,
+    "holdout_policy": "Reserve an entire elevated target, height group or separated section before fit. Never tune model or choose thresholds on final holdout.",
+    "height_levels": "At least two distinct measured training heights, preferably three or more; a separate measured elevated holdout spanning the intended application domain"
+  },
+  "sensor_record": [
+    "Raw cubes and ENVI headers with wavelengths and valid native pixel indices",
+    "Lens/focus, working distance, gain, exposure and scan direction for each sensor",
+    "Per-line timestamps and encoder positions or independently validated line motion",
+    "Persistent rigid start and end fiducials visible in both calibration and plant scans",
+    "RGB-D intrinsics/distortion and reference-frame transforms at the corresponding exposure",
+    "Capture time and rigidity checks; document target/plant motion between scans"
+  ],
+  "control_record_fields": [
+    "control_id",
+    "physical_target_id",
+    "split",
+    "frame_id",
+    "length_unit",
+    "X",
+    "Y",
+    "Z",
+    "sensor",
+    "scan_id",
+    "source_band_index",
+    "wavelength_nm",
+    "detector_column",
+    "scan_line",
+    "rgb_frame",
+    "native_rgb_x",
+    "native_rgb_y",
+    "depth_raster_x",
+    "depth_raster_y",
+    "point_identity_evidence",
+    "repeat_localization_error_px",
+    "xyz_uncertainty"
+  ],
+  "acceptance": {
+    "numeric_thresholds_before_fit": {
+      "column_rms_px": null,
+      "column_p95_px": null,
+      "column_max_px": null,
+      "line_rms_px": null,
+      "line_p95_px": null,
+      "line_max_px": null,
+      "combined_rms_px": null,
+      "combined_p95_px": null,
+      "combined_max_px": null
+    },
+    "choose_thresholds_from": "Smallest intended leaf region, measured spatial footprint and independent localization repeatability; null values are not approval.",
+    "required_checks": [
+      "Noncoplanar rank and conditioning, distinct physical IDs/XYZ, unused elevated holdout",
+      "Axis-wise held-out residuals versus height, band, column and line",
+      "Positive optical/projective depth and observed detector/scan bounds",
+      "No extrapolation outside supported control volume",
+      "Plant-scan start and motion transfer validated using persistent observed fiducials",
+      "First-visible surface intersections, occlusion and mixed-pixel/footprint masks"
+    ],
+    "failure_policy": "Retain unassigned spectra and null physical fusion; never substitute a plane homography on leaves"
+  },
+  "radiometry": {
+    "raw_DN_always_retained": true,
+    "white_reference": "At recorded fixed settings; document spatial support, panel spectral reflectance and illumination stability",
+    "dark_reference": "True shutter-closed measurement with recorded confirmation and matching exposure/gain",
+    "current_panel_curve": null,
+    "current_tail_shutter_state": "UNCONFIRMED",
+    "current_allowed_signal_label": "Measured DN and provisional board-normalized Q / zero-offset Q0 only within reviewed support"
+  },
+  "backend_api": "processing.research_workspace.spectral_mapping:fit_pushbroom_controls",
+  "backend_boundary": "Offline empirical fit/project API only; not a completed visibility-aware cube-to-surface mapper.",
+  "physical_fusion": null
+}

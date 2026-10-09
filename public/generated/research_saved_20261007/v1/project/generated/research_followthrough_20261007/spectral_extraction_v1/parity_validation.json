@@ -1,0 +1,64 @@
+{
+  "status": "PASSED_EXACT_TRACKED_MODULE_REPLAY_PARITY_NOT_PHYSICAL_VALIDATION",
+  "cameras": [
+    {
+      "camera": "fx10",
+      "sample_count": 7982,
+      "source_bands": 224,
+      "exact_parity_arrays": [
+        "raw_DN",
+        "Q_assumed_or_confirmed_dark",
+        "Q_zero_offset",
+        "band_quality_flags",
+        "scan_line",
+        "detector_column",
+        "patch_id",
+        "wavelength_nm",
+        "source_band_zero_based",
+        "indices_dark",
+        "indices_zero",
+        "index_flags_dark",
+        "index_flags_zero"
+      ],
+      "local_report_links_checked": 8,
+      "unavailable_indices": {},
+      "source_fingerprints_stable": true,
+      "physical_fusion": null
+    },
+    {
+      "camera": "fx17",
+      "sample_count": 5361,
+      "source_bands": 224,
+      "exact_parity_arrays": [
+        "raw_DN",
+        "Q_assumed_or_confirmed_dark",
+        "Q_zero_offset",
+        "band_quality_flags",
+        "scan_line",
+        "detector_column",
+        "patch_id",
+        "wavelength_nm",
+        "source_band_zero_based"
+      ],
+      "local_report_links_checked": 7,
+      "unavailable_indices": {
+        "NDVI_800_680": "Distinct required wavelengths select the same recorded band; descriptor omitted.",
+        "NDRE_790_720": "Distinct required wavelengths select the same recorded band; descriptor omitted.",
+        "GNDVI_800_550": "Distinct required wavelengths select the same recorded band; descriptor omitted.",
+        "PRI_531_570": "Distinct required wavelengths select the same recorded band; descriptor omitted.",
+        "PSRI_678_500_750": "Distinct required wavelengths select the same recorded band; descriptor omitted.",
+        "SIPI_800_445_680": "Distinct required wavelengths select the same recorded band; descriptor omitted."
+      },
+      "source_fingerprints_stable": true,
+      "physical_fusion": null
+    }
+  ],
+  "focused_test_result": "13 passed, including separate real-recording subset parity test",
+  "parity_verifier_path": "generated\\research_followthrough_20261007\\spectral_extraction_v1\\verify_replay.py",
+  "parity_verifier_sha256": "4032bda354389f8a48d2ae9c10a5fc1847fcbd6fd70781248f8536e9477d30de",
+  "tracked_extractor_path": "processing\\research_workspace\\spectral_extract.py",
+  "tracked_extractor_sha256": "a01459dfab001296d69afa10d8ca44e78ba7ccf4b8754ca970d1e15fb4b77339",
+  "both_replay_extractor_hashes_match_current_module": true,
+  "previous_parity_verifier_revision_sha256": "beb06d88a2ff55651f3726b965df6fc5be1a8b93054fa01bbe4f0c390a62a90a",
+  "hash_clarification": "The former script_sha256 referred to this parity verifier before metadata clarification, not the tracked extractor. Extractor source and extraction outputs have not changed."
+}

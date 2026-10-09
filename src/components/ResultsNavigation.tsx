@@ -13,6 +13,7 @@ export default function ResultsNavigation({ current }: { current: string }) {
       <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-2 px-6 py-4">
         <span className="mr-2 text-xs font-semibold uppercase tracking-widest text-green-100/45">Navigate</span>
         <a href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/results/whole-plant-spectral-20260928/`} className="rounded-full border border-lime-300/50 px-4 py-2 text-sm font-semibold text-lime-200 hover:bg-green-900/40">Whole-plant spectral explorer</a>
+        <a href={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/results/all/`} className="rounded-full border border-lime-300/50 px-4 py-2 text-sm font-semibold text-lime-200">All research results</a>
         {links.map(([href, label]) => {
           const active = current === href;
           return (

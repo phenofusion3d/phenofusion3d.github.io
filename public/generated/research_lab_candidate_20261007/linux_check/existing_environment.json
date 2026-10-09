@@ -1,0 +1,21 @@
+{
+  "executable": "/usr/bin/python3",
+  "version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "modules": {
+    "numpy": true,
+    "scipy": true,
+    "open3d": false,
+    "cv2": false,
+    "PyQt5": false,
+    "pytest": false,
+    "natsort": false
+  },
+  "project_root": "/home/adithyarama/projects/PhenoFusion3D",
+  "project_children": [
+    "PhenoFusion3D-Website",
+    "phenofusion3d.github.io"
+  ],
+  "venv_module": true,
+  "ensurepip_module": true,
+  "uv": null
+}

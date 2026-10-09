@@ -1,0 +1,14 @@
+{
+  "status": "pass",
+  "checked_at_utc": "2026-10-07T07:47:37.091901+00:00",
+  "url": "http://127.0.0.1:8877/research_plant_cleanup_20261007/v1/review/index.html",
+  "verification": "Actual in-app browser UI through CUA",
+  "all_nine_selectors_counts_and_download_targets_match": true,
+  "front_and_back_views_rendered": true,
+  "individual_specimen_tip_framing_checked": true,
+  "original_photo_dialog_open_close": true,
+  "reset_returns_cleaned_front_view": true,
+  "browser_error_and_warning_logs": [],
+  "final_selected_model": "Cleaned plants - candidate",
+  "tab_marked_deliverable": true
+}

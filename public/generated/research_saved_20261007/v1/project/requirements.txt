@@ -1,0 +1,26 @@
+# PhenoFusion3D -- Python dependencies to run the application
+# (aligned with pyproject.toml [project] and optional capture extras).
+# Requires: Python >=3.10
+#
+# ROS (rospy, sensor_msgs, etc.) is deliberately NOT listed here. The GUI
+# launches its gantry helper under the lab's existing system ROS interpreter;
+# never pip-install rospy into this venv.
+
+# --- Core: GUI, reconstruction, quality pipeline ---
+open3d>=0.17.0
+opencv-python>=4.8.0
+numpy>=1.26.0
+natsort>=8.4.0
+tqdm>=4.66.0
+PyQt5>=5.15.0
+pyqtgraph>=0.13.0
+matplotlib>=3.8.0
+
+# --- Camera capture (RealSense USB on the Linux lab rig) ---
+# Exact shared L515/D405-compatible wheel; do not loosen this pin.
+pyrealsense2==2.54.2.5684
+
+# --- Developer tooling (optional) ---
+# pip install -e ".[dev]"   or uncomment:
+# pytest>=7.4.0
+# ruff>=0.4.0

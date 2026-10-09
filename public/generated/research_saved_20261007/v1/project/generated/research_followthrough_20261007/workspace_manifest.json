@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "title": "Five-plant research: geometry, traits and spectra",
+  "coordinate_unit": "conditional_m",
+  "scale_status": "Unverified: physical ChArUco size and independent recording units are unavailable",
+  "upright_R": [
+    [
+      0.9997320091584629,
+      -0.022989551247924105,
+      0.002718528536188047
+    ],
+    [
+      -0.023027275267776585,
+      -0.9996256969203645,
+      0.014771954854300693
+    ],
+    [
+      0.0023779103694299077,
+      -0.014830596410614249,
+      -0.9998871931134934
+    ]
+  ],
+  "specimens": [
+    {
+      "id": "P1",
+      "label": "Plant 1 \u2014 cleaned observed tissue",
+      "cloud": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\result\\P1_reference.ply",
+      "sha256": "83260a35fc2885ca60daf9e7d69d55c29b8131f263eb63d5f5a4c64ab2f45aae"
+    },
+    {
+      "id": "P2",
+      "label": "Plant 2 \u2014 cleaned observed tissue",
+      "cloud": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\result\\P2_reference.ply",
+      "sha256": "bb19b09daa8a122b4fd855ce3b866cd05060e2a20769afc1cba3456df30dd742"
+    },
+    {
+      "id": "P3",
+      "label": "Plant 3 \u2014 cleaned observed tissue",
+      "cloud": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\result\\P3_reference.ply",
+      "sha256": "1fa8e16b42ebf598eb67fbd1e301f02845bc753213ab45a31eeb68ca596866aa"
+    },
+    {
+      "id": "P4",
+      "label": "Plant 4 \u2014 cleaned observed tissue",
+      "cloud": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\result\\P4_reference.ply",
+      "sha256": "a0fb7091556524eeb4b9faea079dd1ab267d6f047e7bdf2640ba2691b5acb1b8"
+    },
+    {
+      "id": "P5",
+      "label": "Plant 5 \u2014 cleaned observed tissue",
+      "cloud": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_plant_cleanup_20261007\\v1\\result\\P5_reference.ply",
+      "sha256": "2d236b5d5c6387e211718e2f6b03f4bc7131f557c805228be3f57a4a25eab39f"
+    }
+  ],
+  "context_clouds": [
+    {
+      "id": "fusion_context",
+      "label": "Original fused scene \u2014 base and organ context",
+      "cloud": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_d405_l515_fusion_20261007\\v1\\fused_review_reference.ply",
+      "sha256": "9caee0edcc1fb5f66a9cdd490a0054e2ab45872302a32a81cd24788dee01ab10"
+    }
+  ],
+  "artifacts": [
+    {
+      "title": "Trait and ruler review",
+      "path": "traits/index.html",
+      "description": "Five specimens, 21 organ identities, 47 reference dimensions; missing endpoints and conflicting definitions retained."
+    },
+    {
+      "title": "Measured hyperspectral data",
+      "path": "spectral/index.html",
+      "description": "FX10 and FX17: 13,343 measured 224-band spectra, 24 tissue patches, provisional indices and quality masks."
+    },
+    {
+      "title": "3D spectral mapping readiness",
+      "path": "spectral/mapping_workspace/readiness.json",
+      "description": "Recorded planar observations and missing spatial calibration. Physical surface fusion remains unavailable."
+    },
+    {
+      "title": "D405 + L515 plant cleanup",
+      "path": "../research_plant_cleanup_20261007/v1/review/index.html",
+      "description": "435,917 conservatively retained tissue points; uncertain and scene-context points preserved separately."
+    },
+    {
+      "title": "Original D405 + L515 fusion",
+      "path": "../research_d405_l515_fusion_20261007/v1/review/index.html",
+      "description": "Preserved empirical rigid alignment and original fused scene, with camera provenance."
+    },
+    {
+      "title": "Camera reconstruction comparison",
+      "path": "../research_20260928_improvement_20261007/comparison/index.html",
+      "description": "Preserved D405 reconstruction comparison and source review."
+    },
+    {
+      "title": "L515 reconstruction",
+      "path": "../research_l515_20261007/l515_sensor_v1/review/index.html",
+      "description": "Separate preserved L515 result; coordinate scale remains conditional."
+    },
+    {
+      "title": "Recorded evidence gaps",
+      "path": "gaps.json",
+      "description": "User-confirmed unavailable physical target size and recording units, plus all remaining scientific and lab validation limits."
+    }
+  ],
+  "manual_references": [],
+  "protected_input_roots": [
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7"
+  ],
+  "gaps": [
+    {
+      "id": "board_pitch",
+      "status": "unresolved",
+      "title": "Printed ChArUco size unavailable",
+      "affects": [
+        "absolute scale",
+        "physical trait validation"
+      ],
+      "resolution": "Measured pitch across multiple cells or original target design with verified print scale"
+    },
+    {
+      "id": "recording_units",
+      "status": "unresolved",
+      "title": "Independent depth and gantry units unavailable",
+      "affects": [
+        "absolute scale",
+        "physical alignment accuracy"
+      ],
+      "resolution": "Saved device depth units and independently verified gantry displacement conversion"
+    },
+    {
+      "id": "measurement_landmarks",
+      "status": "reviewed_but_unresolved",
+      "title": "Five specimen identities reviewed; true bases/tips and full organ boundaries incomplete",
+      "affects": [
+        "height",
+        "leaf validation"
+      ],
+      "resolution": "Explicit source-supported point/organ identities and compatible measurement definitions"
+    },
+    {
+      "id": "manual_references",
+      "status": "partially_resolved",
+      "title": "Ruler evidence contains unreadable and conflicting dimensions",
+      "affects": [
+        "accepted validation pairs"
+      ],
+      "resolution": "Retain annotation and photo evidence separately; exclude unresolved dimensions"
+    },
+    {
+      "id": "hsi_radiometry",
+      "status": "unresolved",
+      "title": "White spectral reflectance and confirmed dark reference unavailable",
+      "affects": [
+        "calibrated reflectance",
+        "physiological interpretation"
+      ],
+      "resolution": "Documented panel spectrum and shutter-closed reference at matching acquisition settings"
+    },
+    {
+      "id": "hsi_spatial",
+      "status": "unresolved",
+      "title": "Plant-height HSI spatial model and line/start linkage unavailable",
+      "affects": [
+        "validated 3D spectral mapping"
+      ],
+      "resolution": "Independent spatial/rig calibration or multi-height controls with off-plane validation and scan-position linkage"
+    },
+    {
+      "id": "surface_coverage",
+      "status": "unresolved",
+      "title": "Unobserved and incomplete plant surfaces",
+      "affects": [
+        "whole-plant completeness",
+        "whole-leaf area and volume"
+      ],
+      "resolution": "Additional overlapping views of hidden surfaces or explicit observed-only reporting"
+    },
+    {
+      "id": "external_generalization",
+      "status": "unverified",
+      "title": "Additional datasets and lab hardware tests unavailable",
+      "affects": [
+        "arbitrary-plant automation",
+        "physical lab readiness"
+      ],
+      "resolution": "Independent dataset tests and lab regression checks after local software verification"
+    }
+  ]
+}

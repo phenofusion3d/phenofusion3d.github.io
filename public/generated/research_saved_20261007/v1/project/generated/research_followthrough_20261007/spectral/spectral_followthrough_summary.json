@@ -1,0 +1,40 @@
+{
+  "status": "MEASURED_CAMERA_SPACE_PATCH_SPECTRA_COMPLETE_3D_MAPPING_UNDERDETERMINED",
+  "warning": "PROVISIONAL white-board-relative signal: panel spectral reflectance UNKNOWN; tail shutter UNCONFIRMED (assumed dark offset). NOT verified reflectance or plant health.",
+  "cameras": [
+    {
+      "camera": "fx10",
+      "samples": 7982,
+      "bands": 224,
+      "patches": 12,
+      "verification": {
+        "source_sample_sha256_uint16_sample_band": "a9eaadd2d60b155bc64583e0bf13a664eb3990421f91ce5e57f534333a4b8d4c",
+        "samples": 7982,
+        "bands": 224,
+        "all_raw_values_match_saved_selected_planes": true,
+        "all_Q_values_match_previous_selected_planes": true,
+        "fresh_source_all_bands_checked_samples": 500,
+        "all_six_index_values_match_previous_at_every_sample": true
+      }
+    },
+    {
+      "camera": "fx17",
+      "samples": 5361,
+      "bands": 224,
+      "patches": 12,
+      "verification": {
+        "source_sample_sha256_uint16_sample_band": "a58cba1266fa51cf3d75ef03c118921cd5f8988692b5ca2cab65a2281e37f410",
+        "samples": 5361,
+        "bands": 224,
+        "all_raw_values_match_saved_selected_planes": true,
+        "all_Q_values_match_previous_selected_planes": true,
+        "fresh_source_all_bands_checked_samples": 500
+      }
+    }
+  ],
+  "source_inputs_unchanged": true,
+  "old_outputs_unchanged": true,
+  "whole_plant_masks": false,
+  "calibrated_reflectance": false,
+  "physical_3d_mapping": false
+}

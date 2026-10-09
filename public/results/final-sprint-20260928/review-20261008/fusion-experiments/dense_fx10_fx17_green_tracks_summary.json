@@ -1,0 +1,18 @@
+{
+  "status": "local_dense_cross_sensor_tracking_diagnostic_not_3d_assignment",
+  "sampled_native_FX10_pixels": 37570,
+  "tracking_pass_pixels": 11023,
+  "unique_rounded_fx17_pixels": 6984,
+  "requires_additional_intersection": [
+    "independently reviewed same-leaf source and target masks",
+    "supported FX10-to-RGB mapping domain and RGB depth/pose visibility",
+    "unique nonconflicting observed spectral-to-geometry identity"
+  ],
+  "gate": "At least3of4 recorded overlap bands: forward/backward<=0.5 resized-image px;11x11patchNCC>=0.85;patchstd>=5displayunits;target within bounded ROI;max accepted cross-band radius<=1nativeFX17px. Chosen exploratory checks, not accuracy bounds.",
+  "spectral_interpolation": false,
+  "geometry_assigned": false,
+  "warning": "Accepted image tracks may include background or edge mixtures. This is a registration mask, not a plant mask or proof of material identity. Pixel-footprint correspondence across all224bands remains unvalidated.",
+  "npz_sha256": "acfdf7ed91ec02247f6e31ec55e895cd7b9295211ecd9db5a495dd78623ae645",
+  "script_sha256": "ec1f1fff53989b071243eb25e932345bd698115fc7bb4e856a4717c633be5552",
+  "raw_measurements_modified": false
+}

@@ -1,0 +1,32 @@
+{
+  "fx10": {
+    "column_step_mm_on_fitted_plane": 0.6124310639431789,
+    "line_step_mm_on_fitted_plane": 0.7716055735527477,
+    "inverse_column_line_to_plane_XY": [
+      [
+        4.027980357522785e-06,
+        -0.0006124178177166414
+      ],
+      [
+        0.0007716055649558968,
+        1.1518140483592935e-07
+      ]
+    ],
+    "status": "Fitted calibration-plane grid spacing only; not a spectral surface footprint or arbitrary-height scale."
+  },
+  "fx17": {
+    "column_step_mm_on_fitted_plane": 0.9678972541987431,
+    "line_step_mm_on_fitted_plane": 0.7717120205388246,
+    "inverse_column_line_to_plane_XY": [
+      [
+        1.7366574181970382e-06,
+        -0.0009678956961917322
+      ],
+      [
+        0.0007717120180190534,
+        6.236245237631215e-08
+      ]
+    ],
+    "status": "Fitted calibration-plane grid spacing only; not a spectral surface footprint or arbitrary-height scale."
+  }
+}

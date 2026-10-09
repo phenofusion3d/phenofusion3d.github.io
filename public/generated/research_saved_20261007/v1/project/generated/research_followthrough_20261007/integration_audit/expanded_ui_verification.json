@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "ui_tests": {
+    "file": "tests/test_analysis_ui.py",
+    "passed": 14,
+    "failed": 0,
+    "elapsed_seconds": 8.52,
+    "xml": "expanded_ui_tests.xml"
+  },
+  "layout": {
+    "requested_size": [
+      850,
+      760
+    ],
+    "actual_size": [
+      850,
+      760
+    ],
+    "all_controls_visible": true,
+    "screenshot": "expanded_research_tab_850x760.png",
+    "details": "expanded_tab_layout.json",
+    "recommendation": "No layout change required at the current default size. Existing tab-bar scrolling handles tab labels."
+  },
+  "report_startup": {
+    "status": "pass",
+    "real_main_called": true,
+    "bounded_subprocess": true,
+    "mode": "Static QTextBrowser because optional PyQtWebEngine is absent in this test environment",
+    "research_banner_correct": true,
+    "historical_banner_absent": true,
+    "screenshot": "research_report_startup.png",
+    "details": "research_report_startup.json"
+  },
+  "protected_sources": {
+    "checked": 26,
+    "changed_count": 0,
+    "changed_files": [
+      null
+    ]
+  },
+  "limits": [
+    "Offscreen Qt layout and static report startup do not validate embedded WebEngine rendering.",
+    "No hardware or visible window was operated.",
+    "Segoe UI font was loaded explicitly for offscreen QA only."
+  ],
+  "source_files_edited": []
+}

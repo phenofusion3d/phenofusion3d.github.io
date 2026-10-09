@@ -1,0 +1,20 @@
+{
+  "status": "root_visual_review_provisional_compound_joins",
+  "reviewer": "Codex root assistant; second agent review reported matching local vein/material topology",
+  "source_crop_sha256": "0f366e9805c5650fd990b2782a45d48accfda0f646ead15a3dc22c23432c6a0e",
+  "tracking_sha256": "e031c1fcc33f9fc7d90e8a44811a276708e4449c7c5b973e465a47c45da9d6a4",
+  "accepted_provisional_ids": [
+    "fx17_track_red_upper_2",
+    "fx17_track_red_upper_6",
+    "fx17_track_green_lower_0"
+  ],
+  "physical_calibration_controls": 0,
+  "physical_registration_validated": false,
+  "rationale": "Local vein/material topology supports the same visible feature neighborhoods; exact tissue-point footprint and physical localization error remain unknown.",
+  "caveats": [
+    "Compound FX17 to FX10 to RGB/recovered-depth/ICP association, not direct calibrated FX17 projection.",
+    "Tracking trial coordinate spread is repeatability, not an independent physical accuracy estimate.",
+    "Red-upper-2 is the weakest centroid localization (maximum trial spread about 2.35 native FX17 pixels).",
+    "No assignment to neighboring or hidden points; no whole-leaf or five-plant mapping."
+  ]
+}

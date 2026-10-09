@@ -1,0 +1,525 @@
+{
+  "schema_version": 1,
+  "status": "VISUALLY_REVIEWED_SPARSE_PROVISIONAL_ASSOCIATIONS_NO_PHYSICAL_CALIBRATION",
+  "camera": "fx10",
+  "scan": "003",
+  "rgb_frame": 1055904,
+  "cloud_path": "generated\\research_plant_cleanup_20261007\\v1\\result\\P5_reference.ply",
+  "cloud_point_count": 156185,
+  "metric_scale_verified": false,
+  "physical_fusion": null,
+  "candidates": [
+    {
+      "id": "red_upper_2",
+      "hsi_column_line": [
+        965.163122177124,
+        1614.6909942626953
+      ],
+      "rgb_xy": [
+        819.0327987670898,
+        258.50301361083984
+      ],
+      "configurations": 8,
+      "channels": [
+        1
+      ],
+      "minimum_ratio": 0.6668878770909844,
+      "accepted": false,
+      "provisional_visual_association": true,
+      "visual_review_note": "Distinct pale island boundary within upper red leaf. Matching island shape and adjacent dark region support local association; feature centroid is not an independently measured anatomical landmark.",
+      "source_rgb_frame": 1055904,
+      "native_hsi_subpixel_column_line": [
+        965.163122177124,
+        1614.6909942626953
+      ],
+      "native_hsi_integer_column_line": [
+        965,
+        1615
+      ],
+      "native_rgb_subpixel_xy": [
+        819.0327987670898,
+        258.50301361083984
+      ],
+      "undistorted_rgb_subpixel_xy": [
+        819.9116375345333,
+        257.9433300196697
+      ],
+      "sampled_undistorted_depth_pixel_xy": [
+        820,
+        258
+      ],
+      "depth": 0.5374529957771301,
+      "depth_votes": 6,
+      "pair_depths": [
+        0.534667432308197,
+        0.5389554500579834,
+        0.541475236415863,
+        0.5363528728485107,
+        0.5378252863883972,
+        0.537080705165863
+      ],
+      "pair_depth_range": 0.006807804107666016,
+      "local_5x5_supported_depth_count": 25,
+      "local_5x5_depth_p05_p95": [
+        0.5362819910049439,
+        0.5380895137786865
+      ],
+      "sampled_reference_xyz": [
+        1.2097780789508619,
+        -0.10838186816932295,
+        0.539720768400543
+      ],
+      "nearest_cleaned_p5_sourcepoint_index": 66518,
+      "nearest_cleaned_p5_reference_xyz": [
+        1.2096543079737163,
+        -0.1085,
+        0.5395
+      ],
+      "nearest_cloud_distance_original_units": 0.0002793082005258302,
+      "five_nearest_cloud_distances": [
+        0.0002793082005258302,
+        0.0003244156084106624,
+        0.0007691228144368047,
+        0.000957107555617615,
+        0.0009680541375925567
+      ],
+      "nearest_cloud_undistorted_rgb_reprojection_error_pixels": 0.12872490228337244,
+      "sourcepoint_reference_frame": "D405 short_dense_v3 reference frame; unchanged in cleaned P5_reference.ply",
+      "registered_3d_fusion_physically_validated": false,
+      "calibrated_reflectance": false,
+      "independent_holdout": false,
+      "reviewer": "Codex assistant visual inspection of saved source crops; no independent human confirmation",
+      "recommended_for_sparse_exploratory_join": true
+    },
+    {
+      "id": "red_upper_6",
+      "hsi_column_line": [
+        992.1574348722186,
+        1668.2689918518067
+      ],
+      "rgb_xy": [
+        858.1754531860352,
+        240.53552627563477
+      ],
+      "configurations": 6,
+      "channels": [
+        0
+      ],
+      "minimum_ratio": 0.6954107286243919,
+      "accepted": false,
+      "provisional_visual_association": true,
+      "visual_review_note": "Major-vein/side-vein junction in upper red leaf, same branch topology and adjacent pale patch. Registration remains provisional.",
+      "source_rgb_frame": 1055904,
+      "native_hsi_subpixel_column_line": [
+        992.1574348722186,
+        1668.2689918518067
+      ],
+      "native_hsi_integer_column_line": [
+        992,
+        1668
+      ],
+      "native_rgb_subpixel_xy": [
+        858.1754531860352,
+        240.53552627563477
+      ],
+      "undistorted_rgb_subpixel_xy": [
+        859.6637005411417,
+        239.63057052314548
+      ],
+      "sampled_undistorted_depth_pixel_xy": [
+        860,
+        240
+      ],
+      "depth": 0.5373541116714478,
+      "depth_votes": 6,
+      "pair_depths": [
+        0.53785640001297,
+        0.5359033346176147,
+        0.5367914438247681,
+        0.5384435057640076,
+        0.5368697047233582,
+        0.5378384590148926
+      ],
+      "pair_depth_range": 0.0025401711463928223,
+      "local_5x5_supported_depth_count": 25,
+      "local_5x5_depth_p05_p95": [
+        0.5360752940177917,
+        0.5378175854682923
+      ],
+      "sampled_reference_xyz": [
+        1.243028720791474,
+        -0.12337009599846702,
+        0.5396296069974759
+      ],
+      "nearest_cleaned_p5_sourcepoint_index": 72896,
+      "nearest_cleaned_p5_reference_xyz": [
+        1.2435,
+        -0.1235,
+        0.5403231714199674
+      ],
+      "nearest_cloud_distance_original_units": 0.0008485344719863868,
+      "five_nearest_cloud_distances": [
+        0.0008485344719863868,
+        0.0008734275285892087,
+        0.0010662795117547667,
+        0.0011022326681760389,
+        0.0012183050204952986
+      ],
+      "nearest_cloud_undistorted_rgb_reprojection_error_pixels": 0.7159720389283274,
+      "sourcepoint_reference_frame": "D405 short_dense_v3 reference frame; unchanged in cleaned P5_reference.ply",
+      "registered_3d_fusion_physically_validated": false,
+      "calibrated_reflectance": false,
+      "independent_holdout": false,
+      "reviewer": "Codex assistant visual inspection of saved source crops; no independent human confirmation",
+      "recommended_for_sparse_exploratory_join": true
+    },
+    {
+      "id": "red_upper_8",
+      "hsi_column_line": [
+        923.7201262882777,
+        1677.6240158081055
+      ],
+      "rgb_xy": [
+        885.1544952392578,
+        273.9730224609375
+      ],
+      "configurations": 4,
+      "channels": [
+        2
+      ],
+      "minimum_ratio": 0.6805821614058171,
+      "accepted": false,
+      "provisional_visual_association": false,
+      "visual_review_note": "Rejected: exact correspondence is less clear at lower red/green transition; similar coarse location is insufficient.",
+      "source_rgb_frame": 1055904,
+      "native_hsi_subpixel_column_line": [
+        923.7201262882777,
+        1677.6240158081055
+      ],
+      "native_hsi_integer_column_line": [
+        924,
+        1678
+      ],
+      "native_rgb_subpixel_xy": [
+        885.1544952392578,
+        273.9730224609375
+      ],
+      "undistorted_rgb_subpixel_xy": [
+        886.9274526615782,
+        273.2594822352019
+      ],
+      "sampled_undistorted_depth_pixel_xy": [
+        887,
+        273
+      ],
+      "depth": 0.5488399267196655,
+      "depth_votes": 5,
+      "pair_depths": [
+        0.5508268475532532,
+        0.5488399267196655,
+        0.5453997254371643,
+        0.5492628216743469,
+        0.548234760761261
+      ],
+      "pair_depth_range": 0.005427122116088867,
+      "local_5x5_supported_depth_count": 25,
+      "local_5x5_depth_p05_p95": [
+        0.5477061986923217,
+        0.5510493993759156
+      ],
+      "sampled_reference_xyz": [
+        1.269981979713647,
+        -0.09747565451975145,
+        0.5512258239969257
+      ],
+      "nearest_cleaned_p5_sourcepoint_index": 80874,
+      "nearest_cleaned_p5_reference_xyz": [
+        1.2695,
+        -0.09802083211310209,
+        0.5515
+      ],
+      "nearest_cloud_distance_original_units": 0.0007776217160808286,
+      "five_nearest_cloud_distances": [
+        0.0007776217160808286,
+        0.0010415759075544434,
+        0.0010887676247356085,
+        0.0011421971353443997,
+        0.0011601168129035074
+      ],
+      "nearest_cloud_undistorted_rgb_reprojection_error_pixels": 1.0570066101811597,
+      "sourcepoint_reference_frame": "D405 short_dense_v3 reference frame; unchanged in cleaned P5_reference.ply",
+      "registered_3d_fusion_physically_validated": false,
+      "calibrated_reflectance": false,
+      "independent_holdout": false,
+      "reviewer": "Codex assistant visual inspection of saved source crops; no independent human confirmation",
+      "recommended_for_sparse_exploratory_join": false
+    },
+    {
+      "id": "green_lower_0",
+      "hsi_column_line": [
+        411.8931819370814,
+        1826.8903121948242
+      ],
+      "rgb_xy": [
+        1045.8220138549805,
+        512.3255348205566
+      ],
+      "configurations": 25,
+      "channels": [
+        -1,
+        0,
+        1
+      ],
+      "minimum_ratio": 0.49021849470037665,
+      "accepted": false,
+      "provisional_visual_association": true,
+      "visual_review_note": "Strongest candidate: interior secondary-vein junction on lower green leaf. Matching local branching repeats in 25 scale/channel configurations.",
+      "source_rgb_frame": 1055904,
+      "native_hsi_subpixel_column_line": [
+        411.8931819370814,
+        1826.8903121948242
+      ],
+      "native_hsi_integer_column_line": [
+        412,
+        1827
+      ],
+      "native_rgb_subpixel_xy": [
+        1045.8220138549805,
+        512.3255348205566
+      ],
+      "undistorted_rgb_subpixel_xy": [
+        1051.3054803131868,
+        514.2233636411522
+      ],
+      "sampled_undistorted_depth_pixel_xy": [
+        1051,
+        514
+      ],
+      "depth": 0.4946039319038391,
+      "depth_votes": 3,
+      "pair_depths": [
+        0.4954402446746826,
+        0.49307602643966675,
+        0.4946039319038391
+      ],
+      "pair_depth_range": 0.002364218235015869,
+      "local_5x5_supported_depth_count": 25,
+      "local_5x5_depth_p05_p95": [
+        0.4915041387081146,
+        0.49684743881225585
+      ],
+      "sampled_reference_xyz": [
+        1.3745219366547117,
+        0.09470475147007894,
+        0.4976685690886683
+      ],
+      "nearest_cleaned_p5_sourcepoint_index": 6213,
+      "nearest_cleaned_p5_reference_xyz": [
+        1.3745,
+        0.09412128256159691,
+        0.4975
+      ],
+      "nearest_cloud_distance_original_units": 0.0006077275060745643,
+      "five_nearest_cloud_distances": [
+        0.0006077275060745643,
+        0.0006664011752285752,
+        0.0010724586564308464,
+        0.0011105108297240034,
+        0.0011551598096229152
+      ],
+      "nearest_cloud_undistorted_rgb_reprojection_error_pixels": 0.9531790304429968,
+      "sourcepoint_reference_frame": "D405 short_dense_v3 reference frame; unchanged in cleaned P5_reference.ply",
+      "registered_3d_fusion_physically_validated": false,
+      "calibrated_reflectance": false,
+      "independent_holdout": false,
+      "reviewer": "Codex assistant visual inspection of saved source crops; no independent human confirmation",
+      "recommended_for_sparse_exploratory_join": true
+    },
+    {
+      "id": "green_lower_2",
+      "hsi_column_line": [
+        412.1559824262347,
+        1832.2783711751304
+      ],
+      "rgb_xy": [
+        1049.6443557739258,
+        511.67163467407227
+      ],
+      "configurations": 12,
+      "channels": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "minimum_ratio": 0.6262074907567452,
+      "accepted": false,
+      "provisional_visual_association": false,
+      "visual_review_note": "Rejected as near-duplicate of green_lower_0 feature footprint; not independent support.",
+      "source_rgb_frame": 1055904,
+      "native_hsi_subpixel_column_line": [
+        412.1559824262347,
+        1832.2783711751304
+      ],
+      "native_hsi_integer_column_line": [
+        412,
+        1832
+      ],
+      "native_rgb_subpixel_xy": [
+        1049.6443557739258,
+        511.67163467407227
+      ],
+      "undistorted_rgb_subpixel_xy": [
+        1055.214042708763,
+        513.570424584255
+      ],
+      "sampled_undistorted_depth_pixel_xy": [
+        1055,
+        514
+      ],
+      "depth": 0.49327751994132996,
+      "depth_votes": 3,
+      "pair_depths": [
+        0.4910210967063904,
+        0.49575549364089966,
+        0.49327751994132996
+      ],
+      "pair_depth_range": 0.004734396934509277,
+      "local_5x5_supported_depth_count": 25,
+      "local_5x5_depth_p05_p95": [
+        0.49158605337142947,
+        0.49595295190811156
+      ],
+      "sampled_reference_xyz": [
+        1.3767233965825767,
+        0.09439100552196601,
+        0.49634451866945556
+      ],
+      "nearest_cleaned_p5_sourcepoint_index": 138692,
+      "nearest_cleaned_p5_reference_xyz": [
+        1.3765,
+        0.09477914044440477,
+        0.4965
+      ],
+      "nearest_cloud_distance_original_units": 0.0004740561098344106,
+      "five_nearest_cloud_distances": [
+        0.0004740561098344106,
+        0.0006668332163045648,
+        0.0008126614263710534,
+        0.0008211924693983084,
+        0.0011964817988568536
+      ],
+      "nearest_cloud_undistorted_rgb_reprojection_error_pixels": 1.094555204501998,
+      "sourcepoint_reference_frame": "D405 short_dense_v3 reference frame; unchanged in cleaned P5_reference.ply",
+      "registered_3d_fusion_physically_validated": false,
+      "calibrated_reflectance": false,
+      "independent_holdout": false,
+      "reviewer": "Codex assistant visual inspection of saved source crops; no independent human confirmation",
+      "recommended_for_sparse_exploratory_join": false
+    },
+    {
+      "id": "green_lower_4",
+      "hsi_column_line": [
+        412.4420623779297,
+        1856.7222747802734
+      ],
+      "rgb_xy": [
+        1072.1388320922852,
+        510.5
+      ],
+      "configurations": 5,
+      "channels": [
+        -1
+      ],
+      "minimum_ratio": 0.7347083379834701,
+      "accepted": false,
+      "provisional_visual_association": true,
+      "visual_review_note": "Interior lateral-vein feature on same lower green leaf as green_lower_0. Same vein topology; lower repeatability than central feature and no independent holdout.",
+      "source_rgb_frame": 1055904,
+      "native_hsi_subpixel_column_line": [
+        412.4420623779297,
+        1856.7222747802734
+      ],
+      "native_hsi_integer_column_line": [
+        412,
+        1857
+      ],
+      "native_rgb_subpixel_xy": [
+        1072.1388320922852,
+        510.5
+      ],
+      "undistorted_rgb_subpixel_xy": [
+        1078.2113304231689,
+        512.4335754020092
+      ],
+      "sampled_undistorted_depth_pixel_xy": [
+        1078,
+        512
+      ],
+      "depth": 0.49077409505844116,
+      "depth_votes": 2,
+      "pair_depths": [
+        0.49104857444763184,
+        0.4904995858669281
+      ],
+      "pair_depth_range": 0.0005489885807037354,
+      "local_5x5_supported_depth_count": 25,
+      "local_5x5_depth_p05_p95": [
+        0.48990499377250674,
+        0.4912126898765564
+      ],
+      "sampled_reference_xyz": [
+        1.3925751159854076,
+        0.09227316362675524,
+        0.493858518729865
+      ],
+      "nearest_cleaned_p5_sourcepoint_index": 139318,
+      "nearest_cleaned_p5_reference_xyz": [
+        1.3905,
+        0.09122629991273645,
+        0.4925
+      ],
+      "nearest_cloud_distance_original_units": 0.002692137278820909,
+      "five_nearest_cloud_distances": [
+        0.002692137278820909,
+        0.0026935239278124664,
+        0.002719297495529804,
+        0.0027246978273480654,
+        0.0027358096855727883
+      ],
+      "nearest_cloud_undistorted_rgb_reprojection_error_pixels": 2.2215777342201837,
+      "sourcepoint_reference_frame": "D405 short_dense_v3 reference frame; unchanged in cleaned P5_reference.ply",
+      "registered_3d_fusion_physically_validated": false,
+      "calibrated_reflectance": false,
+      "independent_holdout": false,
+      "reviewer": "Codex assistant visual inspection of saved source crops; no independent human confirmation",
+      "recommended_for_sparse_exploratory_join": false
+    }
+  ],
+  "accepted_physical_controls": 0,
+  "provisional_visual_candidates": 4,
+  "recommended_sparse_joins": 3,
+  "limitations": [
+    "Visual review is assistant-only, without independent operator confirmation or held-out physical correspondences.",
+    "Scale/channel repeats reuse the same pixels and are not independent observations.",
+    "Recovered depth and nearest-cloud proximity support geometry consistency, not cross-modal physical identity or millimetre accuracy.",
+    "No global/leaf-area transform, spatial interpolation, other plant transfer, FX17 transfer, or unseen-surface spectrum is inferred.",
+    "HSI integer sampling rounds descriptor coordinates to the actual recorded detector/line; finite pixel footprints and localization errors remain."
+  ],
+  "geometric_method": "Undistort each exact RGB feature, sample nearest recovered-depth pixel without radius search/interpolation, lift that pixel with its saved depth and accepted ICP pose, report exact closest existing cleaned cloud point and residual. Proximity does not independently prove cross-modal identity.",
+  "evidence_files": [
+    "leaf_feature_probe.json",
+    "shortlist_detail.png",
+    "red_upper_matches.png",
+    "green_lower_matches.png"
+  ],
+  "source_hashes": {
+    "generated\\research_spectral_fusion_20261007\\registration_probe\\leaf_feature_probe.json": "3b14a209742c903a90c55624b60a3108e924c017f957645ad215d242e1dc318d",
+    "generated\\research_20260928_improvement_20261007\\short_dense_v3\\profile.json": "101f44a9b1329cae37431151bedeeedbf01c84a1e09bc6e91002ed2834910db9",
+    "generated\\research_20260928_improvement_20261007\\short_dense_v3\\result\\icp_diagnostics.json": "420fc50e1808d285d1835802f361a29372421e122a02ee0e52222c2fb0d38f77",
+    "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1055904.npz": "6f390f935b5e9227b07b3d11146fc0b081b654b06d26600d6feb67d93b5c2eff",
+    "generated\\research_plant_cleanup_20261007\\v1\\result\\P5_reference.ply": "2d236b5d5c6387e211718e2f6b03f4bc7131f557c805228be3f57a4a25eab39f",
+    "generated\\research_spectral_fusion_20261007\\registration_probe\\shortlist_detail.png": "83ae3cac60fc7e079bff944a50a78ec688f6ddc23018021f2e767c1abced66c0"
+  },
+  "script_sha256": "99d1a0991e53321174c9633821253ea1980f10bd6e44377c42ab5702e19bba60"
+}

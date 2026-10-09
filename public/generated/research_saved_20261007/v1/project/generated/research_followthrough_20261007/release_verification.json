@@ -1,0 +1,54 @@
+{
+  "status": "passed_local_software_and_saved_data_checks",
+  "tests": {
+    "tests": "141",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "time": "13.854"
+  },
+  "protected_files_checked": 26,
+  "protected_files_changed": [],
+  "landing_local_links": 15,
+  "spectral_replays": [
+    {
+      "camera": "fx10",
+      "spectra": 7982,
+      "bands": 224,
+      "report": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_followthrough_20261007\\spectral_extraction_v1\\fx10\\result\\index.html"
+    },
+    {
+      "camera": "fx17",
+      "spectra": 5361,
+      "bands": 224,
+      "report": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_followthrough_20261007\\spectral_extraction_v1\\fx17\\result\\index.html"
+    }
+  ],
+  "software_hashes": {
+    "processing\\research_workspace\\spectral_extract.py": "a01459dfab001296d69afa10d8ca44e78ba7ccf4b8754ca970d1e15fb4b77339",
+    "processing\\research_workspace\\spectral_mapping.py": "16ab2657a1600a1ef10654f0bc06639c4d517fa11f39143466f21612dd38c8e1",
+    "processing\\research_workspace\\viewer.py": "fe99bedeb54d8266d728bd0a287bde1aad5fd66d374f50281d164d39958c1415",
+    "processing\\research_workspace\\workflow.py": "b6062c4de7545211a94368eb056846f24d0490f727df6f6f2d7351c10c464493",
+    "processing\\research_workspace\\__init__.py": "ad8b954b5ace4146e8946868ffa837d9267df5d6e56ec92a3fa84cb20e9de8f5",
+    "processing\\research_workspace\\__main__.py": "d3ff98427f1033f7e952014e0eba6122afe696844409caf95b5d6adf480d0198",
+    "app\\analysis_dialog.py": "60af17d997e0786436a7b3890b4ea59a479f3e33adb432336e72997b6e9c6b2c",
+    "app\\research_report.py": "2d87f85e61df9b12899afe7cb32f921b0b75c888adbdc2eebdc6b5498ed1e9c0"
+  },
+  "package_discovery": "new processing and app modules included; no wheel/install performed",
+  "browser_checks": [
+    "workspace report rendered",
+    "upright source-index point cloud displayed",
+    "endpoint selection downloaded and source-hash validated",
+    "trait report rendered",
+    "spectral plots rendered",
+    "standalone FX10 extraction report rendered with source counts and clipping flags"
+  ],
+  "qt_checks": "actual dedicated viewer main ran in bounded offscreen static-fallback subprocess; no WebEngine available in test runtime",
+  "physical_accuracy_validated": false,
+  "calibrated_3d_spectral_fusion_achieved": false,
+  "lab_hardware_tested": false,
+  "pushed": false,
+  "commit_created": false,
+  "spectral_parity_report_sha256": "f44bc1f6fc237c3d3a353410641104b73286025fa8c3418f820588463f4894a3",
+  "parity_extractor_and_verifier_hashes_explicit_and_verified": true
+}

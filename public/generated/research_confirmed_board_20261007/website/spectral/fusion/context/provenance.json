@@ -1,0 +1,103 @@
+{
+  "plants": {
+    "P1": {
+      "offset": 0,
+      "count": 21444,
+      "centre": [
+        0.24718087615250728,
+        -0.11006235412864201,
+        -0.49366020552751455
+      ],
+      "scale": 0.48156094823814705,
+      "source": "generated\\research_confirmed_board_20261007\\cleanup_v1\\result\\P1_reference.ply",
+      "source_sha256": "cbac25f8d6a35c04da087d63734c115f86314fe093233431affcd872d455e36c",
+      "download": "context/P1_reference.ply",
+      "spectral_associations": 0
+    },
+    "P2": {
+      "offset": 21444,
+      "count": 72786,
+      "centre": [
+        0.6301769091931724,
+        -0.1074095306402445,
+        -0.4587121088167376
+      ],
+      "scale": 0.5132792412716801,
+      "source": "generated\\research_confirmed_board_20261007\\cleanup_v1\\result\\P2_reference.ply",
+      "source_sha256": "87a246c5626c1afe27039f517cb839d8eda60ca30a8f279fc022a88a0710bde9",
+      "download": "context/P2_reference.ply",
+      "spectral_associations": 0
+    },
+    "P3": {
+      "offset": 94230,
+      "count": 112943,
+      "centre": [
+        0.8030180031853533,
+        -0.056183048948986,
+        -0.47526287522618565
+      ],
+      "scale": 0.5049421445257626,
+      "source": "generated\\research_confirmed_board_20261007\\cleanup_v1\\result\\P3_reference.ply",
+      "source_sha256": "4966d052650bce08e3a6117125cca6df8b8c36faa0af2cd0049d7dcf950874b3",
+      "download": "context/P3_reference.ply",
+      "spectral_associations": 0
+    },
+    "P4": {
+      "offset": 207173,
+      "count": 68239,
+      "centre": [
+        1.0686036065324596,
+        -0.06869130774868876,
+        -0.41952348473022283
+      ],
+      "scale": 0.44810582696841234,
+      "source": "generated\\research_confirmed_board_20261007\\cleanup_v1\\result\\P4_reference.ply",
+      "source_sha256": "1e9eb2f55b7fc9f40f08ddc5a636707721d80777efe1c56bb3f524287321c8cb",
+      "download": "context/P4_reference.ply",
+      "spectral_associations": 0
+    },
+    "P5": {
+      "offset": 275412,
+      "count": 154648,
+      "centre": [
+        1.3904662759894257,
+        -0.03086897746395914,
+        -0.5749795296786463
+      ],
+      "scale": 0.3620487253560373,
+      "source": "generated\\research_confirmed_board_20261007\\cleanup_v1\\result\\P5_reference.ply",
+      "source_sha256": "ebba027f13ed2d927f3d547e94ad5833925bd73b6e7774a8fa97548ce14a9b9f",
+      "download": "context/P5_reference.ply",
+      "spectral_associations": 6
+    }
+  },
+  "all": {
+    "offset": 0,
+    "count": 430060,
+    "centre": [
+      0.860620813167511,
+      -0.06533803570709548,
+      -0.4649556254463024
+    ],
+    "scale": 1.4025450040360332
+  },
+  "upright_R": [
+    [
+      0.9997320091584629,
+      -0.022989551247924105,
+      0.002718528536188047
+    ],
+    [
+      -0.023027275267776585,
+      -0.9996256969203645,
+      0.014771954854300693
+    ],
+    [
+      0.0023779103694299077,
+      -0.014830596410614249,
+      -0.9998871931134934
+    ]
+  ],
+  "frame_id": "D405_short_dense_v3_metric_reference",
+  "coordinate_unit": "m"
+}

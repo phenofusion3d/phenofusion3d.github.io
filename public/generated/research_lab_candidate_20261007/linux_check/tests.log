@@ -1,0 +1,34 @@
+.........................................F.............................. [ 50%]
+..................................s...................................   [100%]
+=================================== FAILURES ===================================
+_____________ test_connection_failure_is_nonblocking_and_retryable _____________
+
+qapp = <PyQt5.QtWidgets.QApplication object at 0x7e6e30bbf020>
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7e6e2f973410>
+
+    def test_connection_failure_is_nonblocking_and_retryable(qapp, monkeypatch):
+        from capture import ros_client
+    
+        def fail_start(_self):
+            raise RuntimeError("No existing Python/ROS environment can import rospy")
+    
+        monkeypatch.setattr(ros_client.RosAgentClient, "start", fail_start)
+    
+        controller = GantryController()
+        errors = []
+        controller.error.connect(errors.append)
+    
+        started = time.monotonic()
+        controller.start_jog(0.05)
+        assert time.monotonic() - started < 0.25
+    
+        _wait_for_start(controller, qapp)
+>       assert any("rospy" in error.lower() for error in errors), errors
+E       AssertionError: ['Connecting to the gantry; the command is queued until ROS is ready.']
+E       assert False
+E        +  where False = any(<generator object test_connection_failure_is_nonblocking_and_retryable.<locals>.<genexpr> at 0x7e6e4558ecf0>)
+
+/tmp/phenofusion3d-validation-u6bcgpn1/source/tests/test_gantry_offline.py:282: AssertionError
+=========================== short test summary info ============================
+FAILED ../../../../../../../../../../../tmp/phenofusion3d-validation-u6bcgpn1/source/tests/test_gantry_offline.py::test_connection_failure_is_nonblocking_and_retryable
+1 failed, 140 passed, 1 skipped in 26.08s

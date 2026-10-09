@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "models": [
+    {
+      "label": "D405 + L515: fusion candidate",
+      "points": 1732490,
+      "display_points": 866245,
+      "geometry_colour_buffers_and_http": "pass"
+    },
+    {
+      "label": "D405 only: preserved result",
+      "points": 1719001,
+      "display_points": 859501,
+      "geometry_colour_buffers_and_http": "pass"
+    },
+    {
+      "label": "L515 only: aligned result",
+      "points": 175708,
+      "display_points": 87854,
+      "geometry_colour_buffers_and_http": "pass"
+    },
+    {
+      "label": "Fusion: camera sources",
+      "points": 1732490,
+      "display_points": 866245,
+      "geometry_colour_buffers_and_http": "pass"
+    },
+    {
+      "label": "L515 additions only",
+      "points": 13489,
+      "display_points": 6745,
+      "geometry_colour_buffers_and_http": "pass"
+    },
+    {
+      "label": "L515 withheld overlaps",
+      "points": 21785,
+      "display_points": 10893,
+      "geometry_colour_buffers_and_http": "pass"
+    }
+  ],
+  "html_sha256": "2e57ed2a61b0f8687a22956a7d74d4640566968c44138053548f913dca4777ab",
+  "browser_check": "Separate browser interaction verified selectors/counts/download paths/front-back controls and no console errors; fusion source photo opens and closes."
+}

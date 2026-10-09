@@ -1,0 +1,556 @@
+{
+  "status": "fixed_factory_board_calibration_transfer_conditional_metric_not_independent_accuracy",
+  "K": [
+    [
+      898.4381103515625,
+      0,
+      655.9896240234375
+    ],
+    [
+      0,
+      898.5916137695312,
+      355.45782470703125
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "dist": [
+    0.14393945038318634,
+    -0.482932984828949,
+    -0.0023646382614970207,
+    -0.0005440952372737229,
+    0.4404349625110626
+  ],
+  "image_width": 1280,
+  "image_height": 720,
+  "factory_colour_intrinsics_file": "data\\main\\test_plant_10-7\\test_plant_20260928144647_L515\\kdc_intrinsics.txt",
+  "factory_colour_intrinsics_sha256": "81f74f5d74e3b0f7b65af4fe2aa9fe1c4ef4ded36f66b3ab1beb3d3584058797",
+  "plant_colour_intrinsics_sha256": "81f74f5d74e3b0f7b65af4fe2aa9fe1c4ef4ded36f66b3ab1beb3d3584058797",
+  "calibration_and_plant_colour_intrinsics_equal": true,
+  "source_observations_sha256": "886cf4fd463e5d22a6c8ff42d8037f2dd50151ec0fbc8862d925b42f0e3d42a2",
+  "per_sheet": [
+    {
+      "sheet": "left_sheet",
+      "observations": 18,
+      "position_range_assumed_m": [
+        0.0,
+        0.719141
+      ],
+      "board_translation_slope_squares_per_assumed_m": [
+        -41.056310992955176,
+        2.0309449328373206,
+        1.6391939857855762
+      ],
+      "positive_gantry_direction_camera_xyz": [
+        0.9979855732717586,
+        -0.04936765369467347,
+        -0.039845078869568645
+      ],
+      "conditional_square_pitch_m": 0.02430772636740311,
+      "board_origin_at_mean_position_squares": [
+        3.05843386708289,
+        12.107607780976094,
+        37.23937817444028
+      ],
+      "translation_residual_board_squares": {
+        "count": 18,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0188538391299502,
+          0.02056230367537431,
+          0.04689588834181338,
+          0.08132108473431988,
+          0.12549514903962153
+        ],
+        "rms": 0.058154590009871984
+      },
+      "conditional_translation_residual_mm": {
+        "count": 18,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.45829396254586696,
+          0.4998228512244459,
+          1.1399324215690891,
+          1.97673067562225,
+          3.050501743291591
+        ],
+        "rms": 1.4136058609684827
+      },
+      "table_up_normal_camera_xyz": [
+        -0.031583679589722025,
+        -0.05533075451538406,
+        -0.9979684257471938
+      ],
+      "normal_scatter_degrees": {
+        "count": 18,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.1983906824007531,
+          0.3758937113204682,
+          0.8358436313043518,
+          1.135163403944223,
+          1.2198115437061263
+        ],
+        "rms": 0.8600887540703506
+      },
+      "alternating_subsets": [
+        {
+          "direction": [
+            0.9979377846235685,
+            -0.04954724224548725,
+            -0.04080746018157634
+          ],
+          "conditional_pitch_m": 0.024334118418267308
+        },
+        {
+          "direction": [
+            0.9980301395409581,
+            -0.04919626473417426,
+            -0.038930298021729925
+          ],
+          "conditional_pitch_m": 0.024274635709104805
+        }
+      ],
+      "split_direction_disagreement_deg": 0.10954517820169514,
+      "minimum_robust_weight": 0.9762596949430159
+    },
+    {
+      "sheet": "middle_sheet",
+      "observations": 22,
+      "position_range_assumed_m": [
+        0.337618,
+        1.219983
+      ],
+      "board_translation_slope_squares_per_assumed_m": [
+        -41.099875560629286,
+        2.040655760767824,
+        1.6897170028047808
+      ],
+      "positive_gantry_direction_camera_xyz": [
+        0.9979287179812276,
+        -0.04954830055823316,
+        -0.041027304811972025
+      ],
+      "conditional_square_pitch_m": 0.02428057760197141,
+      "board_origin_at_mean_position_squares": [
+        -4.046079636873639,
+        6.23173417833232,
+        37.825804555309034
+      ],
+      "translation_residual_board_squares": {
+        "count": 22,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00910356197294628,
+          0.01097232171479892,
+          0.039009387979222584,
+          0.08484591937762492,
+          0.10109745315549053
+        ],
+        "rms": 0.05044365064613972
+      },
+      "conditional_translation_residual_mm": {
+        "count": 22,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.2210397429384781,
+          0.2664143088699712,
+          0.9471704720349245,
+          2.060107929659032,
+          2.454704556703557
+        ],
+        "rms": 1.2248009740403307
+      },
+      "table_up_normal_camera_xyz": [
+        -0.03903335624857675,
+        -0.05972253854097011,
+        -0.9974515604730859
+      ],
+      "normal_scatter_degrees": {
+        "count": 22,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.25429931654776133,
+          0.3160536181778571,
+          0.5381561447689903,
+          1.1989727606704472,
+          1.370252401452096
+        ],
+        "rms": 0.7254168741201426
+      },
+      "alternating_subsets": [
+        {
+          "direction": [
+            0.9979296549199538,
+            -0.04953424266868269,
+            -0.04102148991177989
+          ],
+          "conditional_pitch_m": 0.024280892860408795
+        },
+        {
+          "direction": [
+            0.9979263936445245,
+            -0.049577288288306216,
+            -0.041048816713904306
+          ],
+          "conditional_pitch_m": 0.024279444741735698
+        }
+      ],
+      "split_direction_disagreement_deg": 0.0029273125740632865,
+      "minimum_robust_weight": 1.0
+    },
+    {
+      "sheet": "right_sheet",
+      "observations": 21,
+      "position_range_assumed_m": [
+        0.802739,
+        1.639496
+      ],
+      "board_translation_slope_squares_per_assumed_m": [
+        -41.12150435846847,
+        2.098315350109194,
+        1.7053251765955102
+      ],
+      "positive_gantry_direction_camera_xyz": [
+        0.9978452001058115,
+        -0.05091724957731546,
+        -0.04138103818507289
+      ],
+      "conditional_square_pitch_m": 0.02426577567316837,
+      "board_origin_at_mean_position_squares": [
+        0.29207651995703393,
+        2.371966781639955,
+        37.88944044299516
+      ],
+      "translation_residual_board_squares": {
+        "count": 21,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.003511625227806798,
+          0.01650267973544633,
+          0.03222587679010298,
+          0.0658133516881265,
+          0.07358014934813852
+        ],
+        "rms": 0.042971017073145004
+      },
+      "conditional_translation_residual_mm": {
+        "count": 21,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.08521231002619854,
+          0.40045032446648227,
+          0.7819858970598021,
+          1.5970120283634148,
+          1.785479398080155
+        ],
+        "rms": 1.0427250607448246
+      },
+      "table_up_normal_camera_xyz": [
+        -0.037961936765354934,
+        -0.05391943158600342,
+        -0.9978234243865323
+      ],
+      "normal_scatter_degrees": {
+        "count": 21,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.1704012048621623,
+          0.35421235120524636,
+          0.6423752683319046,
+          1.1342654274872142,
+          1.2050241097235364
+        ],
+        "rms": 0.7444685201352673
+      },
+      "alternating_subsets": [
+        {
+          "direction": [
+            0.9978720470071215,
+            -0.05085123436869507,
+            -0.04081090252612829
+          ],
+          "conditional_pitch_m": 0.024264518298867062
+        },
+        {
+          "direction": [
+            0.9978087889325608,
+            -0.05100563618239253,
+            -0.04214315847876058
+          ],
+          "conditional_pitch_m": 0.02426743609702332
+        }
+      ],
+      "split_direction_disagreement_deg": 0.07692900356996389,
+      "minimum_robust_weight": 1.0
+    }
+  ],
+  "positive_gantry_direction_camera_xyz": [
+    0.9979202861572708,
+    -0.049944424084064125,
+    -0.04075115923138635
+  ],
+  "table_up_normal_camera_xyz": [
+    -0.03619329792889247,
+    -0.05632471940180952,
+    -0.9977562684189651
+  ],
+  "upright_export_R_reference_camera_to_xyz_z_up": [
+    [
+      0.9982134793870803,
+      -0.04953150648721843,
+      -0.03341376116281363
+    ],
+    [
+      -0.047538350360202264,
+      -0.9971831104914554,
+      0.05801680270074003
+    ],
+    [
+      -0.03619329792889247,
+      -0.05632471940180952,
+      -0.9977562684189651
+    ]
+  ],
+  "camera_to_reference_rotation": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "plant_reference_frame_id": 0,
+  "plant_first_last_matched_ids": [
+    0,
+    1641398
+  ],
+  "plant_matched_frames": 1278,
+  "camera_axes": {
+    "x": "image right",
+    "y": "image down",
+    "z": "camera forward"
+  },
+  "camera_to_reference_translation_formula": "positive_gantry_direction_camera_xyz * (frame_id-reference_frame_id)/1e6 metres, conditional on gantry joint units",
+  "transform_convention": "Column vectors: p_reference=R_camera_to_reference@p_camera+t. Fixed mount initializes R=I; board motion slope has opposite camera translation sign.",
+  "upright_axes": {
+    "x": "positive gantry direction projected onto board plane",
+    "y": "up cross x; right-handed",
+    "z": "board normal toward camera"
+  },
+  "upright_origin": "reference camera; no soil/table height zero assigned",
+  "direction_disagreement_between_sheets_deg_max": 0.12526860953074448,
+  "normal_disagreement_between_sheets_deg_max": 0.49637152359951753,
+  "gantry_angle_to_board_plane_deg": 0.4214030284038943,
+  "basis_checks": {
+    "determinant": 1.0,
+    "max_orthogonality_error": 2.220446049250313e-16
+  },
+  "candidate_depth_metres_per_count_for_reconstruction": 0.00025,
+  "confirmed_physical_square_mm": null,
+  "scale_assumptions": [
+    "Numeric filenames are gantry position*1e6 and the joint positions are calibrated metres; matching exporter supports but session log does not prove this.",
+    "Camera mount/orientation and gantry setup remain fixed between calibration and plant, as user confirmed.",
+    "Saved factory colour intrinsics describe native RGB and exported depth was aligned to that RGB geometry.",
+    "Each physical sheet is approximately planar with equally spaced squares; physical print pitch and anisotropy are unmeasured."
+  ],
+  "calibration_scope": "Fixed-intrinsics board poses and motion/plane transfer; fitted residuals/split agreement are internal diagnostics, not independent physical accuracy.",
+  "manual_traits_used": false,
+  "D405_scale_used": false,
+  "raw_depth_used_for_camera_direction_or_board_pitch": false,
+  "depth_unit_conditional_estimate_m_per_count": 0.0002461241531013376,
+  "depth_unit_per_board_frame_medians": {
+    "count": 61,
+    "quantile_probabilities": [
+      0,
+      0.1,
+      0.5,
+      0.9,
+      1
+    ],
+    "quantiles": [
+      0.00024492625439783463,
+      0.0002453448025188631,
+      0.0002461241531013376,
+      0.0002466935361821317,
+      0.0002473633203536549
+    ],
+    "rms": 0.00024608575237075267
+  },
+  "depth_unit_per_sheet": [
+    {
+      "sheet": "left_sheet",
+      "metres_per_count": {
+        "count": 18,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002457159212036888,
+          0.0002459772871598951,
+          0.0002463504039357748,
+          0.00024698220538246253,
+          0.0002473633203536549
+        ],
+        "rms": 0.00024643221791093115
+      }
+    },
+    {
+      "sheet": "middle_sheet",
+      "metres_per_count": {
+        "count": 22,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024492625439783463,
+          0.0002449977398502576,
+          0.0002459663002358995,
+          0.00024669757722944663,
+          0.00024694124742760345
+        ],
+        "rms": 0.0002459419284573129
+      }
+    },
+    {
+      "sheet": "right_sheet",
+      "metres_per_count": {
+        "count": 21,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024524549050365706,
+          0.00024550015935101064,
+          0.00024601390393931923,
+          0.0002463137308763783,
+          0.00024660932899786444
+        ],
+        "rms": 0.0002459391578321554
+      }
+    }
+  ],
+  "candidate_depth_divisor_counts_per_metre_for_reconstruction": 4000.0,
+  "depth_unit_candidate_relative_difference_from_board_motion_estimate": 0.01574752761898412,
+  "depth_unit_role": "Board PnP motion fixes conditional pitch using filename gantry metres independently of raw depth; predicted board axial Z divided by exported counts estimates scale. Residual bias/alignment and gantry uncertainty remain confounded.",
+  "calibration_image_diagnostics": {
+    "fitted_corners_error_px": {
+      "count": 3285,
+      "quantile_probabilities": [
+        0,
+        0.1,
+        0.5,
+        0.9,
+        1
+      ],
+      "quantiles": [
+        0.004316700156778097,
+        0.0420715793967247,
+        0.1049751490354538,
+        0.19970975518226622,
+        1.352430820465088
+      ],
+      "rms": 0.13603542342523295
+    },
+    "held_out_corner_error_px": {
+      "count": 3285,
+      "quantile_probabilities": [
+        0,
+        0.1,
+        0.5,
+        0.9,
+        1
+      ],
+      "quantiles": [
+        0.001270059379749,
+        0.04725913330912591,
+        0.11782119423151016,
+        0.22909991443157196,
+        1.523687481880188
+      ],
+      "rms": 0.15617664645151338
+    },
+    "selection_is_factory_model_conditioned": true,
+    "intrinsic_parameters_changed": false
+  },
+  "limited_range_depth_bias_caveat": "The~1.57percent native-unit discrepancy is not corrected. Board data cannot identify a unique scale factor versus axial offset/gantry error/model error; validate with other depths and independent measured dimensions.",
+  "source_provenance_file": "calibration_provenance.json"
+}

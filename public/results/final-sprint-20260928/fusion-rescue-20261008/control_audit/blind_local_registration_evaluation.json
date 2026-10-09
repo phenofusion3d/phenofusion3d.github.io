@@ -1,0 +1,201 @@
+{
+  "evaluation_labels_frozen_sha256": "a80f090c375c8a2736faf37e366283201da7664692faaa5c78f286aa760ca19e",
+  "results": [
+    {
+      "candidate": "primary_mind_rgb",
+      "path": "generated\\research_fusion_rescue_20261008\\local_registration\\primary_mind_rgb.npz",
+      "sha256": "852803748df27a7fb8b7c0600da15ac02ee34a4e85588418cae57b3e340dbf5f",
+      "checks": [
+        {
+          "id": "reserved_green_basal_notch",
+          "prediction_native_RGB_xy": [
+            996.8570479750633,
+            459.17937388271093
+          ],
+          "error_RGB_px": 2.030284316558575,
+          "initial_error_RGB_px": 1.8136937041202992,
+          "subjective_worst_direction_uncertainty_bound_RGB_px": 7.84841186848001,
+          "error_exceeds_subjective_bound": false,
+          "confidence": "low-medium",
+          "eligible_for_strict_accuracy_gate": false,
+          "interpretation": "Exploratory image correspondence check only; uncertainty is subjective, not a confidence interval."
+        },
+        {
+          "id": "reserved_green_basal_vein",
+          "prediction_native_RGB_xy": [
+            1026.0575102567673,
+            494.0260685943067
+          ],
+          "error_RGB_px": 21.31779700645779,
+          "initial_error_RGB_px": 20.548720296880354,
+          "subjective_worst_direction_uncertainty_bound_RGB_px": 7.895639686335892,
+          "error_exceeds_subjective_bound": true,
+          "confidence": "low",
+          "eligible_for_strict_accuracy_gate": false,
+          "interpretation": "Exploratory image correspondence check only; uncertainty is subjective, not a confidence interval."
+        },
+        {
+          "id": "reserved_green_distal_vein",
+          "prediction_native_RGB_xy": [
+            1081.5018813610077,
+            560.8825167268515
+          ],
+          "error_RGB_px": 1.9473036243449806,
+          "initial_error_RGB_px": 1.5708323447653214,
+          "subjective_worst_direction_uncertainty_bound_RGB_px": 7.892678463516736,
+          "error_exceeds_subjective_bound": false,
+          "confidence": "low-medium",
+          "eligible_for_strict_accuracy_gate": false,
+          "interpretation": "Exploratory image correspondence check only; uncertainty is subjective, not a confidence interval."
+        }
+      ]
+    },
+    {
+      "candidate": "pyramid_mind_rgb",
+      "path": "generated\\research_fusion_rescue_20261008\\local_registration\\pyramid_mind_rgb.npz",
+      "sha256": "bf7c154297f696890b974b5a1aa9905fbabcd7127bd70f4a98354f97306a191a",
+      "checks": [
+        {
+          "id": "reserved_green_basal_notch",
+          "prediction_native_RGB_xy": [
+            1006.6177116632462,
+            457.5398992523551
+          ],
+          "error_RGB_px": 11.875323994691207,
+          "initial_error_RGB_px": 1.8136937041202992,
+          "subjective_worst_direction_uncertainty_bound_RGB_px": 8.18522907123992,
+          "error_exceeds_subjective_bound": true,
+          "confidence": "low-medium",
+          "eligible_for_strict_accuracy_gate": false,
+          "interpretation": "Exploratory image correspondence check only; uncertainty is subjective, not a confidence interval."
+        },
+        {
+          "id": "reserved_green_basal_vein",
+          "prediction_native_RGB_xy": [
+            1037.5400387048721,
+            492.2147518657148
+          ],
+          "error_RGB_px": 29.229313157346148,
+          "initial_error_RGB_px": 20.548720296880354,
+          "subjective_worst_direction_uncertainty_bound_RGB_px": 8.428077415068765,
+          "error_exceeds_subjective_bound": true,
+          "confidence": "low",
+          "eligible_for_strict_accuracy_gate": false,
+          "interpretation": "Exploratory image correspondence check only; uncertainty is subjective, not a confidence interval."
+        },
+        {
+          "id": "reserved_green_distal_vein",
+          "prediction_native_RGB_xy": [
+            1093.3567311763763,
+            561.2941257804632
+          ],
+          "error_RGB_px": 11.586127744378809,
+          "initial_error_RGB_px": 1.5708323447653214,
+          "subjective_worst_direction_uncertainty_bound_RGB_px": 7.9573062253734985,
+          "error_exceeds_subjective_bound": true,
+          "confidence": "low-medium",
+          "eligible_for_strict_accuracy_gate": false,
+          "interpretation": "Exploratory image correspondence check only; uncertainty is subjective, not a confidence interval."
+        }
+      ]
+    },
+    {
+      "candidate": "mutual_information_affine",
+      "path": "generated\\research_fusion_rescue_20261008\\local_registration\\mutual_information_affine.npz",
+      "sha256": "c6286ca2c531eba1cd20d255a00b910f152e2089579d4274c23d758aca042b08",
+      "checks": [
+        {
+          "id": "reserved_green_basal_notch",
+          "prediction_native_RGB_xy": [
+            1018.8591839075089,
+            467.5492882952094
+          ],
+          "error_RGB_px": 25.02503567423062,
+          "initial_error_RGB_px": 1.8136937041202992,
+          "subjective_worst_direction_uncertainty_bound_RGB_px": 8.162358273740965,
+          "error_exceeds_subjective_bound": true,
+          "confidence": "low-medium",
+          "eligible_for_strict_accuracy_gate": false,
+          "interpretation": "Exploratory image correspondence check only; uncertainty is subjective, not a confidence interval."
+        },
+        {
+          "id": "reserved_green_basal_vein",
+          "prediction_native_RGB_xy": [
+            1046.9658151865005,
+            494.9826604388654
+          ],
+          "error_RGB_px": 38.87182768070363,
+          "initial_error_RGB_px": 20.548720296880354,
+          "subjective_worst_direction_uncertainty_bound_RGB_px": 8.153667708573126,
+          "error_exceeds_subjective_bound": true,
+          "confidence": "low",
+          "eligible_for_strict_accuracy_gate": false,
+          "interpretation": "Exploratory image correspondence check only; uncertainty is subjective, not a confidence interval."
+        },
+        {
+          "id": "reserved_green_distal_vein",
+          "prediction_native_RGB_xy": [
+            1100.4815051555634,
+            547.8295957893133
+          ],
+          "error_RGB_px": 21.594998565529973,
+          "initial_error_RGB_px": 1.5708323447653214,
+          "subjective_worst_direction_uncertainty_bound_RGB_px": 8.158766253140687,
+          "error_exceeds_subjective_bound": true,
+          "confidence": "low-medium",
+          "eligible_for_strict_accuracy_gate": false,
+          "interpretation": "Exploratory image correspondence check only; uncertainty is subjective, not a confidence interval."
+        }
+      ]
+    },
+    {
+      "candidate": "pyramid_mind_foreground",
+      "path": "generated\\research_fusion_rescue_20261008\\local_registration\\pyramid_mind_foreground.npz",
+      "sha256": "29f75f69c731295bb832a3b0bdb076f773d5986092b6442442cdf9fa9739ce81",
+      "checks": [
+        {
+          "id": "reserved_green_basal_notch",
+          "prediction_native_RGB_xy": [
+            1004.7429634332657,
+            459.232909552753
+          ],
+          "error_RGB_px": 9.773114356038711,
+          "initial_error_RGB_px": 1.8136937041202992,
+          "subjective_worst_direction_uncertainty_bound_RGB_px": 6.735199342170475,
+          "error_exceeds_subjective_bound": true,
+          "confidence": "low-medium",
+          "eligible_for_strict_accuracy_gate": false,
+          "interpretation": "Exploratory image correspondence check only; uncertainty is subjective, not a confidence interval."
+        },
+        {
+          "id": "reserved_green_basal_vein",
+          "prediction_native_RGB_xy": [
+            1024.7712805867195,
+            491.9583106301725
+          ],
+          "error_RGB_px": 18.919303461626306,
+          "initial_error_RGB_px": 20.548720296880354,
+          "subjective_worst_direction_uncertainty_bound_RGB_px": 7.373913416923434,
+          "error_exceeds_subjective_bound": true,
+          "confidence": "low",
+          "eligible_for_strict_accuracy_gate": false,
+          "interpretation": "Exploratory image correspondence check only; uncertainty is subjective, not a confidence interval."
+        },
+        {
+          "id": "reserved_green_distal_vein",
+          "prediction_native_RGB_xy": [
+            1069.3091485500336,
+            558.9276727288961
+          ],
+          "error_RGB_px": 12.691057550860778,
+          "initial_error_RGB_px": 1.5708323447653214,
+          "subjective_worst_direction_uncertainty_bound_RGB_px": 7.14919781428872,
+          "error_exceeds_subjective_bound": true,
+          "confidence": "low-medium",
+          "eligible_for_strict_accuracy_gate": false,
+          "interpretation": "Exploratory image correspondence check only; uncertainty is subjective, not a confidence interval."
+        }
+      ]
+    }
+  ]
+}

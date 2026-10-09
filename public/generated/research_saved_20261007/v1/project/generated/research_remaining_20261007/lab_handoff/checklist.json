@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-07",
+  "scope": "Offline verification complete; rig acceptance pending",
+  "operator": null,
+  "machine": null,
+  "acceptance_date": null,
+  "checks": [
+    {
+      "section": "Preconditions to record on the lab machine",
+      "action": "Record operator, date, machine, source revision or source hashes, Python executable, and chosen output directory. Keep the protected-file comparison.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Preconditions to record on the lab machine",
+      "action": "Use the existing lab Python environment and existing ROS distribution, catkin workspace, camera USB/SDK configuration and device-selection settings. This handoff performs no installation. Keep the existing `pyrealsense2==2.54.2.5684` pin and all acquisition settings.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Preconditions to record on the lab machine",
+      "action": "Check required packages are available in that environment: NumPy and Open3D for workspace clouds; NumPy for extraction; OpenCV for polygon regions; PyQt5 for the desktop UI. Optional PyQtWebEngine enables interactive in-app reports. A local WebGL-capable browser can supply interactive point review.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Preconditions to record on the lab machine",
+      "action": "Record whether WebEngine is available. It is absent in the verified Windows audit runtime, which used the static report fallback. `rospy` is also absent there; that is not evidence about the configured Linux lab ROS runtime. Presence of a RealSense Python module is not a successful camera connection.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Preconditions to record on the lab machine",
+      "action": "Confirm the output parent is writable and outside recording/source directories. Each CLI output must be new or empty. Keep source clouds, source ENVI files, setup JSON, reviewed regions and any linked reports available.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Preconditions to record on the lab machine",
+      "action": "Use the normal checkout launch (`python main.py`) from the repository root or the existing lab launcher. Do not leave `QT_QPA_PLATFORM=offscreen` set for an interactive operator session; that setting was only used for headless tests.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Desktop software checks on the rig",
+      "action": "**Open Analysis.** Start the normal application, then choose **Analysis \u2192 Offline reconstruction, traits and hyperspectral fusion... \u2192 Research workspace**. Confirm the original **Data Capture** and **Gantry Control** panels remain present. No analysis action should request camera selection, begin capture or command gantry motion.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Desktop software checks on the rig",
+      "action": "**Create a setup.** Choose **New results parent folder**, then **Create workspace setup template**. Expect a new timestamped run containing `workspace_template.json` and `result/index.html`. The setup field should point to the new JSON and the old optional endpoint field should be cleared. Edit the template with actual saved PLY paths and protected input roots before build.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Desktop software checks on the rig",
+      "action": "**Build a saved-cloud report.** Select **Workspace setup JSON**, leave endpoints empty initially, and choose **Build / check research workspace**. Expect `run_status.json` with `complete_candidate_workspace`, a manifest snapshot, observed descriptors, empty measurements, and `result/index.html`. Coordinate-unit declarations must not rescale the source cloud.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Desktop software checks on the rig",
+      "action": "**Open the right report.** Use **Open latest result** or **Saved workspace report (index.html) \u2192 Open saved workspace report in software**. Expect the **RESEARCH REVIEW** banner. Confirm the saved report, local links and **Report home** work. If only the static view is available, use **Open in browser** for interactive points; record this limitation.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Desktop software checks on the rig",
+      "action": "**Review source-index points.** In the point reviewer choose specimen, displayed cloud and quantity. Use **Mark first point**, double-click an actual visible vertex, repeat for **Mark second point**, then **Keep endpoint pair** and **Download endpoint JSON**. Verify cloud ID/hash and zero-based source indices are exported. Unsampled or missing anatomical endpoints must remain missing. A partial visible chord is not a complete leaf length.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Desktop software checks on the rig",
+      "action": "**Rebuild annotations.** Select the exported JSON in **Reviewed landmark JSON (optional)** and build a fresh run. Exported records begin unreviewed. Expect source-index validation, provisional values and no physical-accuracy claim. Unknown units and empty eligible reference sets must retain null scores.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Desktop software checks on the rig",
+      "action": "**Extract a saved spectrum.** Select **Spectral extraction setup JSON** and **Extract measured spectra from reviewed regions**. Use a configuration reviewed for that exact recording. Expect `run_status.json` with `complete`, `result/index.html`, actual raw-DN spectra, source line/column/band identities, quality flags, mask, CSV and metadata. Q/Q0, reference profiles and descriptors appear only when their explicit inputs and wavelength requirements are met.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Desktop software checks on the rig",
+      "action": "**Check incomplete output.** Start a sufficiently long offline job and select **Cancel processing**. Expect the process to stop, status `cancelled`, and no completed latest result. A CLI interruption can leave `running` or partial files; accept completion only from a successful exit and complete status. Reusing a nonempty output folder should be rejected.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Desktop software checks on the rig",
+      "action": "**Keep historical HSI separate.** Confirm **Hyperspectral / fusion \u00b7 experimental** still describes its reviewed 28 August dataset. New September or other recording extraction belongs to the new reviewed-region action.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Acquisition acceptance \u2014 pending a lab operator",
+      "action": "**Camera-only behavior.** In **Data Capture**, select **RealSense Only** for the existing camera-only acceptance run. Confirm device selection, Capture, Stop, completion and **Open captured folder** behave as before. Saving must finish after acquisition stops; verify matched RGB/depth frame names and camera-intrinsic/session records using the existing capture procedure.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Acquisition acceptance \u2014 pending a lab operator",
+      "action": "**ROS/gantry behavior.** With the normal lab runtime available, verify the existing **Auto / ROS + Gantry** backend behavior and live position read-back. Check the existing **<< Jog**, **Jog >>**, release-to-stop, **Go**, **Go Home** and **STOP** controls using the rig's established safe procedure. The analysis integration must not change command topics, sign convention, units, limits, stop behavior or session frame-to-position recording.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Acquisition acceptance \u2014 pending a lab operator",
+      "action": "**Capture takes priority.** During the approved capture acceptance run, attempts to launch analysis or open its saved viewer should report **Processing busy**. Starting capture while offline work is active must cancel that offline job and leave partial results unaccepted. This interaction passed simulated worker tests; actual rig behavior still needs operator evidence.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Acquisition acceptance \u2014 pending a lab operator",
+      "action": "**Other worker guards.** While reconstruction, quality checking or post-processing is active, analysis should refuse to start. Close the Analysis window during an offline job and confirm its child process stops without changing capture/gantry settings. Record logs for any failure.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    },
+    {
+      "section": "Acquisition acceptance \u2014 pending a lab operator",
+      "action": "**Final preservation check.** Compare the protected 26 hashes after the acceptance session; preserve run statuses, logs, source fingerprints and operator observations. Hardware acceptance does not resolve plant-scale, organ-identity, radiometric or cross-sensor calibration gaps.",
+      "status": "pending_operator_acceptance",
+      "hardware_executed": false
+    }
+  ],
+  "software_evidence": "verification.json",
+  "hardware_executed": false
+}

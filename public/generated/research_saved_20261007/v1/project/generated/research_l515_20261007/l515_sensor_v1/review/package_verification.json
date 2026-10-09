@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "models": [
+    {
+      "label": "L515: supported surfaces",
+      "points": 180678,
+      "display_points": 180678,
+      "geometry_colour_buffers_and_http": "pass"
+    },
+    {
+      "label": "L515: optional cleanup",
+      "points": 175269,
+      "display_points": 175269,
+      "geometry_colour_buffers_and_http": "pass"
+    }
+  ],
+  "html_sha256": "9d672fe82822ebd743ca8ebc4de8fe9259c5781a1e898e2bb4f3ff10e3f13439",
+  "browser_check": "Separate browser interaction verified selectors/counts/download paths/front-back controls and no console errors; fusion source photo opens and closes."
+}

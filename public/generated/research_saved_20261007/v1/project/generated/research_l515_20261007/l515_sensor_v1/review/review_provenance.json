@@ -1,0 +1,102 @@
+{
+  "title": "L515 \u2014 separate reconstruction",
+  "sources": [
+    {
+      "source": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_l515_20261007\\l515_sensor_v1\\result\\l515_supported_reference.ply",
+      "transform": [
+        [
+          0.9982134793870803,
+          -0.04953150648721843,
+          -0.03341376116281363,
+          0.0
+        ],
+        [
+          -0.047538350360202264,
+          -0.9971831104914554,
+          0.05801680270074003,
+          0.0
+        ],
+        [
+          -0.03619329792889247,
+          -0.05632471940180952,
+          -0.9977562684189651,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "label": "L515: supported surfaces",
+      "description": "64 registered sensor views; at least 3 distinct depth views support each retained point. Fine fragments are preserved. This is a plants-and-pots review crop, not a trait mask.",
+      "download": "l515_supported_review.ply",
+      "source_sha256": "c2fc1b6a15e5703f4864e130b0cc76cc572aedb3292cddf97bc861207f830386",
+      "review_sha256": "f734da063455e43a11bd407e42e3e97d7e879b303f6b9af93103919d6c30e624",
+      "full_points": 1598977,
+      "review_points": 180678,
+      "source_indices_sha256": "f7a2823235ee24fa46db3b61b3cb3b66b626601dc39f602499b35f6e3b4c8406"
+    },
+    {
+      "source": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_l515_20261007\\l515_sensor_v1\\result\\l515_filtered_reference.ply",
+      "transform": [
+        [
+          0.9982134793870803,
+          -0.04953150648721843,
+          -0.03341376116281363,
+          0.0
+        ],
+        [
+          -0.047538350360202264,
+          -0.9971831104914554,
+          0.05801680270074003,
+          0.0
+        ],
+        [
+          -0.03619329792889247,
+          -0.05632471940180952,
+          -0.9977562684189651,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "label": "L515: optional cleanup",
+      "description": "The same supported reconstruction after statistical cleanup. Small real structures and noise can both be removed; compare with the supported version.",
+      "download": "l515_filtered_review.ply",
+      "source_sha256": "289632920d301ba3b49124466c14b41842f84496e1e767652223392dc8816a00",
+      "review_sha256": "4844406d8494a62c255d3ae2207a3dcb6fcbebf4c3e5c758656b2038a6adf2d1",
+      "full_points": 1562246,
+      "review_points": 175269,
+      "source_indices_sha256": "e0c56c043c7508d7b17efaff75f8413f2845f1a148cc5e185f065d0a7f2354b3"
+    }
+  ],
+  "bounds_min": [
+    -0.04,
+    -0.4,
+    -0.85
+  ],
+  "bounds_max": [
+    1.85,
+    0.46,
+    -0.1
+  ],
+  "display_centre": [
+    0.905,
+    0.03,
+    -0.475
+  ],
+  "display_scale": 1.8900000000000001,
+  "display_stride": 1,
+  "config_sha256": "5a9c4edaa356a3021458d88b5564216827b32d79776b99f154a9c3b01561f7d7",
+  "script_sha256": "f21ab6f818b625fce3f75d05e1e0d435938e414e3fc0465bf3eae0a7cf5539a0",
+  "photo_sha256": "366596eeb409f8f29970da18a50b4b2d519bb68b8edcd96f3d33e3e9c9dd1c6f",
+  "crop_is_trait_mask": false,
+  "manual_plant_dimensions_used": false,
+  "viewer_geometry": "Exported cloud coordinates preserved; centring and scaling only affect display."
+}

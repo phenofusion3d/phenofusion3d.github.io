@@ -1,0 +1,34 @@
+{
+  "status": "pass_wheel_archive_and_isolated_import_and_workspace_build",
+  "wheel": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_remaining_20261007\\lab_handoff\\wheels\\phenofusion3d-0.2.0-py3-none-any.whl",
+  "wheel_sha256": "d1610f764f8e611b4b98515af856122158ceca5819bbc6ce9fe4a6aba512328b",
+  "pyproject_sha256": "9a65d780b1c87749280fccbc07d1d767470d1bbe77ff1a0d3c9529af939056a6",
+  "archive_entries": 108,
+  "required_files_byte_identical": [
+    "main.py",
+    "app/research_report.py",
+    "app/analysis_dialog.py",
+    "processing/research_workspace/spectral_extract.py",
+    "processing/research_workspace/spectral_mapping.py",
+    "processing/research_workspace/viewer.py",
+    "processing/research_workspace/workflow.py",
+    "processing/research_workspace/__init__.py",
+    "processing/research_workspace/__main__.py",
+    "processing/rgb_recovery/viewer.py"
+  ],
+  "console_entrypoint": "[console_scripts]\nphenofusion3d = main:main\n",
+  "import_check": {
+    "main_origin": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_remaining_20261007\\lab_handoff\\wheels\\phenofusion3d-0.2.0-py3-none-any.whl\\main.py",
+    "research_origin": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_remaining_20261007\\lab_handoff\\wheels\\phenofusion3d-0.2.0-py3-none-any.whl\\processing\\research_workspace\\__init__.py",
+    "capture_imported": false
+  },
+  "isolated_build_exit_code": 0,
+  "isolated_build_observed_descriptors_match_source_build": true,
+  "source_clouds_bundled": false,
+  "build_dependencies_installed": false,
+  "network_used": false,
+  "wheel_installed": false,
+  "main_function_called": false,
+  "hardware_operated": false,
+  "source_change": "pyproject.toml: include existing main.py as a py-module; no code or dependency change"
+}

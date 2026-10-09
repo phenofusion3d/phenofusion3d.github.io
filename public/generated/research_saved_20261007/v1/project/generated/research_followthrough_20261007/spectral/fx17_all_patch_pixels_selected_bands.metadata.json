@@ -1,0 +1,53 @@
+{
+  "warning": "PROVISIONAL board-relative signal; unknown panel spectrum; tail shutter unconfirmed. Not calibrated reflectance or plant health.",
+  "camera": "fx17",
+  "coordinate_convention": "zero-based source scan_line and detector_column",
+  "array_axes": "pixel,selected_band_or_index",
+  "mask": "All pixels inside reviewed polygons; spectrum package separately samples even lines/columns",
+  "selected_bands": [
+    {
+      "target_nm": 1300,
+      "source_band_zero_based": 105,
+      "actual_nm": 1301.56,
+      "difference_from_target_nm": 1.5599999999999454
+    },
+    {
+      "target_nm": 1450,
+      "source_band_zero_based": 147,
+      "actual_nm": 1449.68,
+      "difference_from_target_nm": -0.31999999999993634
+    },
+    {
+      "target_nm": 1650,
+      "source_band_zero_based": 203,
+      "actual_nm": 1648.71,
+      "difference_from_target_nm": -1.2899999999999636
+    }
+  ],
+  "indices_in_order": [],
+  "source_summary_sha256": "8c5c62eb799988aceaf77b4a10760bba6eb0e345a8e6d3afb3388aa2d17de5be",
+  "source_product_directory": "generated\\research_20260928_processing_20261007\\spectral_provisional_v1\\products",
+  "array_shapes": {
+    "scan_line": [
+      21425
+    ],
+    "detector_column": [
+      21425
+    ],
+    "patch_id": [
+      21425
+    ],
+    "raw_selected_DN": [
+      21425,
+      3
+    ],
+    "white_board_relative": [
+      21425,
+      3
+    ],
+    "band_quality_flags": [
+      21425,
+      3
+    ]
+  }
+}

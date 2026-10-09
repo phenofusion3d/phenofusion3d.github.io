@@ -1,0 +1,18 @@
+{
+  "fx10": {
+    "samples": 2338,
+    "bands": 224,
+    "source_DN_reread_exact": true,
+    "Q_Q0_recomputed_exact": true,
+    "all_band_normalization_valid_samples": 0,
+    "every_invalid_normalized_value_NaN": true
+  },
+  "fx17": {
+    "samples": 862,
+    "bands": 224,
+    "source_DN_reread_exact": true,
+    "Q_Q0_recomputed_exact": true,
+    "all_band_normalization_valid_samples": 0,
+    "every_invalid_normalized_value_NaN": true
+  }
+}
