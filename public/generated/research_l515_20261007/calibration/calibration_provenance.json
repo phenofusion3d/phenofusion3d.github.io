@@ -1,0 +1,333 @@
+{
+  "script_sha256": "f3de948ee363f382ff4b688e8769fe9ae068ee14ce610cdc481a1dbd41644ebd",
+  "extraction_script_sha256": "dfc07fc5ea516b301518d63db9686b7deb78be4d43e205b3346a174dcd3b001e",
+  "colour_intrinsics_sha256": "81f74f5d74e3b0f7b65af4fe2aa9fe1c4ef4ded36f66b3ab1beb3d3584058797",
+  "native_depth_intrinsics_sha256": "a4376fb6d756aad60db8171bfc56414fb1ec9365c3d816b392376ed676612898",
+  "matching_exporter": {
+    "path": "rospy_thread_fin_1.py",
+    "sha256": "9d9ab192653cf7dce6b89d4ad186b12f3f2013d577991ac331f4568f7b2fea45",
+    "position_key_lines": [
+      129,
+      140,
+      142,
+      230
+    ],
+    "colour_alignment_lines": [
+      112,
+      115,
+      122,
+      193
+    ],
+    "depth_unit_read_but_not_exported_line": 52,
+    "caveat": "Exporter format/procedure matches, but this file currently selects D405 streams. It is not proof of the exact L515 recording version, settings or calibrated joint units."
+  },
+  "previous_colour_reference_checks": [
+    {
+      "file": "rgb_751820.png",
+      "matches_previous_colour_sha256": true
+    },
+    {
+      "file": "rgb_761699.png",
+      "matches_previous_colour_sha256": true
+    },
+    {
+      "file": "rgb_767021.png",
+      "matches_previous_colour_sha256": true
+    },
+    {
+      "file": "rgb_782221.png",
+      "matches_previous_colour_sha256": true
+    }
+  ],
+  "calibration_rgb_count": 1290,
+  "calibration_depth_count": 1290,
+  "calibration_exact_pair_count": 1290,
+  "inspected_depth_shapes": {
+    "0": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "44262": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "86826": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "128621": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "170424": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "212221": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "254019": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "295820": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "337618": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "379422": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "421982": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "463780": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "504062": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "552704": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "593739": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "635544": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "677341": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "719141": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "760938": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "802739": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "844542": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "886341": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "928142": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "969941": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1011740": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1053537": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1094581": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1136378": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1178181": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1219983": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1263302": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1305095": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1346902": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1388701": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1430497": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1472299": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1514099": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1555900": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1597697": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ],
+    "1639496": [
+      [
+        720,
+        1280
+      ],
+      "uint16"
+    ]
+  },
+  "board_observations": 61,
+  "sampled_unique_RGB_frames": 40,
+  "raw_and_app_source_changed": false,
+  "manual_trait_values_used": false,
+  "opencv_version": "4.10.0",
+  "numpy_version": "1.26.4"
+}

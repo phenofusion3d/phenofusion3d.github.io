@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -31,6 +32,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head><Script src="/research-assets.js" strategy="beforeInteractive" /></head>
       <body className={`${inter.className} bg-[#050a0a] text-[#f0fdf4] antialiased`}>{children}</body>
     </html>
   );

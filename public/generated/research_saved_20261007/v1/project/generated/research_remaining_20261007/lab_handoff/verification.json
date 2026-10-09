@@ -1,0 +1,128 @@
+{
+  "status": "offline_handoff_checks_pass",
+  "release_test_xml": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_followthrough_20261007\\release_tests.xml",
+  "release_test_xml_sha256": "2c9e1c077bd8d6b28b78dc5795dc791f237617024ae41893700f38de462ca7b5",
+  "release_tests": {
+    "tests": 141,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "test_evidence_rechecked_not_reexecuted": true,
+  "test_classes": [
+    "tests.test_analysis_ui",
+    "tests.test_analysis_workflow",
+    "tests.test_gantry_offline",
+    "tests.test_hyperspectral",
+    "tests.test_realsense_runtime",
+    "tests.test_reference_traits",
+    "tests.test_research_spectral_extract",
+    "tests.test_research_spectral_mapping",
+    "tests.test_research_workspace",
+    "tests.test_research_workspace_review",
+    "tests.test_ros_runtime"
+  ],
+  "release_software_hashes": {
+    "processing\\research_workspace\\spectral_extract.py": {
+      "expected": "a01459dfab001296d69afa10d8ca44e78ba7ccf4b8754ca970d1e15fb4b77339",
+      "actual": "a01459dfab001296d69afa10d8ca44e78ba7ccf4b8754ca970d1e15fb4b77339"
+    },
+    "processing\\research_workspace\\spectral_mapping.py": {
+      "expected": "16ab2657a1600a1ef10654f0bc06639c4d517fa11f39143466f21612dd38c8e1",
+      "actual": "16ab2657a1600a1ef10654f0bc06639c4d517fa11f39143466f21612dd38c8e1"
+    },
+    "processing\\research_workspace\\viewer.py": {
+      "expected": "fe99bedeb54d8266d728bd0a287bde1aad5fd66d374f50281d164d39958c1415",
+      "actual": "fe99bedeb54d8266d728bd0a287bde1aad5fd66d374f50281d164d39958c1415"
+    },
+    "processing\\research_workspace\\workflow.py": {
+      "expected": "b6062c4de7545211a94368eb056846f24d0490f727df6f6f2d7351c10c464493",
+      "actual": "b6062c4de7545211a94368eb056846f24d0490f727df6f6f2d7351c10c464493"
+    },
+    "processing\\research_workspace\\__init__.py": {
+      "expected": "ad8b954b5ace4146e8946868ffa837d9267df5d6e56ec92a3fa84cb20e9de8f5",
+      "actual": "ad8b954b5ace4146e8946868ffa837d9267df5d6e56ec92a3fa84cb20e9de8f5"
+    },
+    "processing\\research_workspace\\__main__.py": {
+      "expected": "d3ff98427f1033f7e952014e0eba6122afe696844409caf95b5d6adf480d0198",
+      "actual": "d3ff98427f1033f7e952014e0eba6122afe696844409caf95b5d6adf480d0198"
+    },
+    "app\\analysis_dialog.py": {
+      "expected": "60af17d997e0786436a7b3890b4ea59a479f3e33adb432336e72997b6e9c6b2c",
+      "actual": "60af17d997e0786436a7b3890b4ea59a479f3e33adb432336e72997b6e9c6b2c"
+    },
+    "app\\research_report.py": {
+      "expected": "2d87f85e61df9b12899afe7cb32f921b0b75c888adbdc2eebdc6b5498ed1e9c0",
+      "actual": "2d87f85e61df9b12899afe7cb32f921b0b75c888adbdc2eebdc6b5498ed1e9c0"
+    }
+  },
+  "all_release_software_hashes_match": true,
+  "protected_files_count": 26,
+  "protected_changed": [],
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Adithya Rama\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "processing.research_workspace",
+        "--help"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.532,
+      "log": "workspace_help.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Adithya Rama\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "processing.research_workspace.spectral_extract",
+        "--help"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.547,
+      "log": "extractor_help.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Adithya Rama\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "processing.research_workspace",
+        "template",
+        "--output",
+        "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_remaining_20261007\\lab_handoff\\template_smoke"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.421,
+      "log": "template_smoke.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\Adithya Rama\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "-m",
+        "processing.research_workspace",
+        "build",
+        "--manifest",
+        "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_remaining_20261007\\lab_handoff\\prior_cloud_manifest.json",
+        "--output",
+        "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_remaining_20261007\\lab_handoff\\prior_cloud_workspace"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.844,
+      "log": "prior_cloud_build.log"
+    }
+  ],
+  "prior_cloud_input_reuse": "prior_cloud_input_reuse.json",
+  "package_evidence": "package_verification.json",
+  "runtime_evidence": "runtime_preconditions.json",
+  "lab_hardware_executed": false,
+  "dependencies_installed": false,
+  "production_source_edited": true,
+  "production_source_paths_edited": [
+    "pyproject.toml"
+  ],
+  "dependencies_changed": false,
+  "wheel_evidence": "wheel_verification.json",
+  "final_source_hashes": "handoff_source_hashes.json",
+  "package_defect": "Resolved: existing main.py included as a py-module; no behavior change",
+  "release_test_scope": "141-test release evidence predates the packaging-only change. All 8 release software hashes still match. Added wheel archive/import/build checks verify that packaging change."
+}

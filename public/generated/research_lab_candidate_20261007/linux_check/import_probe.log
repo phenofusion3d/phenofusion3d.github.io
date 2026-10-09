@@ -1,0 +1,38 @@
+{
+  "numpy": {
+    "path": "/tmp/phenofusion3d-validation-u6bcgpn1/environment/lib/python3.12/site-packages/numpy/__init__.py",
+    "version": "2.5.3"
+  },
+  "scipy": {
+    "path": "/tmp/phenofusion3d-validation-u6bcgpn1/environment/lib/python3.12/site-packages/scipy/__init__.py",
+    "version": "1.18.1"
+  },
+  "open3d": {
+    "path": "/tmp/phenofusion3d-validation-u6bcgpn1/environment/lib/python3.12/site-packages/open3d/__init__.py",
+    "version": "0.20.0"
+  },
+  "cv2": {
+    "path": "/tmp/phenofusion3d-validation-u6bcgpn1/environment/lib/python3.12/site-packages/cv2/__init__.py",
+    "version": "5.0.0"
+  },
+  "PyQt5": {
+    "path": "/tmp/phenofusion3d-validation-u6bcgpn1/environment/lib/python3.12/site-packages/PyQt5/__init__.py",
+    "version": null
+  },
+  "pytest": {
+    "path": "/tmp/phenofusion3d-validation-u6bcgpn1/environment/lib/python3.12/site-packages/pytest/__init__.py",
+    "version": "9.1.1"
+  },
+  "processing.research_workspace.workflow": {
+    "path": "/tmp/phenofusion3d-validation-u6bcgpn1/source/processing/research_workspace/workflow.py",
+    "version": null
+  },
+  "processing.research_workspace.spectral_extract": {
+    "path": "/tmp/phenofusion3d-validation-u6bcgpn1/source/processing/research_workspace/spectral_extract.py",
+    "version": null
+  },
+  "processing.research_workspace.spectral_mapping": {
+    "path": "/tmp/phenofusion3d-validation-u6bcgpn1/source/processing/research_workspace/spectral_mapping.py",
+    "version": null
+  }
+}

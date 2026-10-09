@@ -1,0 +1,5728 @@
+{
+  "schema": "cross_camera.frozen_near_static_validation.v1",
+  "status": "independent_source_RGB_soil_correspondence_diagnostic_not_metric_ground_truth",
+  "matches": 65,
+  "unique_D405_landmarks": 59,
+  "review_status": "Assistant visually reviewed all 65 source patch pairs and three polygon overlays; all central keypoints lie on soil, with P2/P4 identity supported by source context. Operator confirmation pending.",
+  "near_matches_used_for_fitting": false,
+  "raw_depth_alignment_assumption": "Depth assumed exported onto native colour raster; supported by current exporter code and image size, no session alignment flag. Not independently certified.",
+  "methods": {
+    "board_rigid": {
+      "rgb_reprojection_px": {
+        "count": 65,
+        "median": 12.238973658711762,
+        "p90": 13.978547998066132,
+        "maximum": 15.84955988178104,
+        "within_2px": 0,
+        "within_3px": 0
+      },
+      "predicted_z_m_quantiles": [
+        0.7521979577507893,
+        0.769448505795316,
+        0.7829563087982498
+      ],
+      "raw_depth_bias_count": 62,
+      "raw_depth_minus_predicted_z_m_quantiles": [
+        -0.016977077985653177,
+        -0.00021964705755703743,
+        0.003422566721022424,
+        0.008819192200168455,
+        0.009776986347567962
+      ],
+      "conditional_sensor_landmark_distance_m_quantiles": [
+        0.008916067014563819,
+        0.010791946719309498,
+        0.01438251132231553,
+        0.022769675080148478
+      ]
+    },
+    "joint_rigid_failed": {
+      "rgb_reprojection_px": {
+        "count": 65,
+        "median": 10.41448304777037,
+        "p90": 11.596504389447372,
+        "maximum": 12.088665046628295,
+        "within_2px": 2,
+        "within_3px": 14
+      },
+      "predicted_z_m_quantiles": [
+        0.7391955382809648,
+        0.7566698408481547,
+        0.7706439330268303
+      ],
+      "raw_depth_bias_count": 62,
+      "raw_depth_minus_predicted_z_m_quantiles": [
+        -0.00432843514179948,
+        0.011665659247441396,
+        0.01564916897065982,
+        0.01876587589485894,
+        0.02025517606627214
+      ],
+      "conditional_sensor_landmark_distance_m_quantiles": [
+        0.00972402773534301,
+        0.016230678412455655,
+        0.019488418722619624,
+        0.021511161263090366
+      ]
+    },
+    "far_static_linear_camera_correction": {
+      "rgb_reprojection_px": {
+        "count": 65,
+        "median": 4.7255289550555375,
+        "p90": 5.728867370860642,
+        "maximum": 6.378896091891598,
+        "within_2px": 17,
+        "within_3px": 28
+      },
+      "predicted_z_m_quantiles": [
+        0.7435066505942265,
+        0.7608699466802271,
+        0.7747165349718319
+      ],
+      "raw_depth_bias_count": 62,
+      "raw_depth_minus_predicted_z_m_quantiles": [
+        -0.008483931229558705,
+        0.007584557976913853,
+        0.011445745695325693,
+        0.01454516390354088,
+        0.016059949556007758
+      ],
+      "conditional_sensor_landmark_distance_m_quantiles": [
+        0.0052842704465203,
+        0.012709006766039636,
+        0.015061925873275813,
+        0.01801099074029268
+      ]
+    }
+  },
+  "per_frame": {
+    "417039": {
+      "board_rigid": {
+        "count": 16,
+        "median": 8.520622187883333,
+        "p90": 9.171252960088704,
+        "maximum": 9.850708990205527,
+        "within_2px": 0,
+        "within_3px": 0
+      },
+      "joint_rigid_failed": {
+        "count": 16,
+        "median": 2.693537690893307,
+        "p90": 3.019391547911736,
+        "maximum": 3.646529433989412,
+        "within_2px": 2,
+        "within_3px": 14
+      },
+      "far_static_linear_camera_correction": {
+        "count": 16,
+        "median": 1.8715544376381352,
+        "p90": 2.292050364130885,
+        "maximum": 3.104577568311656,
+        "within_2px": 12,
+        "within_3px": 15
+      }
+    },
+    "828961": {
+      "board_rigid": {
+        "count": 14,
+        "median": 13.906288534209915,
+        "p90": 14.534107084363798,
+        "maximum": 15.84955988178104,
+        "within_2px": 0,
+        "within_3px": 0
+      },
+      "joint_rigid_failed": {
+        "count": 14,
+        "median": 4.924906547337363,
+        "p90": 9.596574615268763,
+        "maximum": 9.982120398258784,
+        "within_2px": 0,
+        "within_3px": 0
+      },
+      "far_static_linear_camera_correction": {
+        "count": 14,
+        "median": 2.4508484464187728,
+        "p90": 2.889211730488762,
+        "maximum": 3.4429747178307104,
+        "within_2px": 5,
+        "within_3px": 13
+      }
+    },
+    "1243159": {
+      "board_rigid": {
+        "count": 35,
+        "median": 12.484105733720618,
+        "p90": 13.06970925862065,
+        "maximum": 14.160498695560618,
+        "within_2px": 0,
+        "within_3px": 0
+      },
+      "joint_rigid_failed": {
+        "count": 35,
+        "median": 11.376513315393789,
+        "p90": 11.778520606981614,
+        "maximum": 12.088665046628295,
+        "within_2px": 0,
+        "within_3px": 0
+      },
+      "far_static_linear_camera_correction": {
+        "count": 35,
+        "median": 5.40136017514847,
+        "p90": 5.841196205600537,
+        "maximum": 6.378896091891598,
+        "within_2px": 0,
+        "within_3px": 0
+      }
+    }
+  },
+  "rows": [
+    {
+      "frame": 417039,
+      "point_id": 1768,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.507393245824837,
+        -0.00229158316439391,
+        0.71772846697401
+      ],
+      "L515_uv_native": [
+        737.1553973851554,
+        435.01357326045536
+      ],
+      "L515_uv_undistorted": [
+        737.0287475585938,
+        434.9156494140625
+      ],
+      "raw_depth_centre_count": 3071,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3064.4,
+        3075.0
+      ],
+      "patch_median_count": 3071.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 8.829166202127826,
+          "residual_xy": [
+            -8.743460381465184,
+            -1.2272230370006127
+          ],
+          "predicted_camera_z_m": 0.7610549216695944,
+          "raw_depth_minus_predicted_z_m": 0.006695078330405613,
+          "conditional_sensor_point_D405_reference": [
+            0.5150987281141202,
+            -0.0007776884854970301,
+            0.7247984839238792
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.007705482289283139,
+            0.0015138946788968801,
+            0.007070016949869196
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01056652611224172
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 2.638376653548081,
+          "residual_xy": [
+            -2.143751727023073,
+            1.5379726586884317
+          ],
+          "predicted_camera_z_m": 0.7520200790633256,
+          "raw_depth_minus_predicted_z_m": 0.01572992093667447,
+          "conditional_sensor_point_D405_reference": [
+            0.5098995942326614,
+            -0.00283069777471346,
+            0.7335775544272665
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.002506348407824377,
+            -0.0005391146103195499,
+            0.015849087453256416
+          ],
+          "conditional_sensor_landmark_distance_m": 0.016055092650166608
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 1.990931945228154,
+          "residual_xy": [
+            -1.8739532478166439,
+            -0.6723906866751008
+          ],
+          "predicted_camera_z_m": 0.7562467641098479,
+          "raw_depth_minus_predicted_z_m": 0.01150323589015212,
+          "conditional_sensor_point_D405_reference": [
+            0.5094566179099737,
+            -0.0011901508800567229,
+            0.7293988509353612
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0020633720851366277,
+            0.0011014322843371873,
+            0.011670383961351116
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011902458537800613
+        }
+      }
+    },
+    {
+      "frame": 417039,
+      "point_id": 1752,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.5061865512128212,
+        0.006939846213311908,
+        0.7207084559934401
+      ],
+      "L515_uv_native": [
+        735.6188850512056,
+        445.281886573526
+      ],
+      "L515_uv_undistorted": [
+        735.4811401367188,
+        445.1544494628906
+      ],
+      "raw_depth_centre_count": 3083,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3079.4,
+        3086.0
+      ],
+      "patch_median_count": 3083.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 8.475527630639514,
+          "residual_xy": [
+            -8.448019582061193,
+            -0.6823003435764008
+          ],
+          "predicted_camera_z_m": 0.7636373307673354,
+          "raw_depth_minus_predicted_z_m": 0.007112669232664626,
+          "conditional_sensor_point_D405_reference": [
+            0.5136851905597557,
+            0.008087789840910874,
+            0.7281716489151075
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.00749863934693451,
+            0.001147943627598966,
+            0.0074631929216674164
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010641739294568634
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 2.890577293806402,
+          "residual_xy": [
+            -1.8840608957665381,
+            2.1922024615697637
+          ],
+          "predicted_camera_z_m": 0.754626289656827,
+          "raw_depth_minus_predicted_z_m": 0.01612371034317306,
+          "conditional_sensor_point_D405_reference": [
+            0.5084800254390486,
+            0.0060430770492325495,
+            0.7369262827300344
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0022934742262273877,
+            -0.0008967691640793581,
+            0.01621782673659422
+          ],
+          "conditional_sensor_landmark_distance_m": 0.016403722840203173
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 1.6070136150372787,
+          "residual_xy": [
+            -1.605693346974249,
+            -0.06512783120768972
+          ],
+          "predicted_camera_z_m": 0.7588394597157576,
+          "raw_depth_minus_predicted_z_m": 0.011910540284242432,
+          "conditional_sensor_point_D405_reference": [
+            0.5080359931560385,
+            0.007678591962520513,
+            0.7327604371877718
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0018494419432173448,
+            0.0007387457492086056,
+            0.012051981194331707
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01221541777803078
+        }
+      }
+    },
+    {
+      "frame": 417039,
+      "point_id": 2992,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.5195544109808422,
+        -0.0056892325954169196,
+        0.716380642210883
+      ],
+      "L515_uv_native": [
+        751.2981884012052,
+        430.42701985312937
+      ],
+      "L515_uv_undistorted": [
+        751.121826171875,
+        430.31982421875
+      ],
+      "raw_depth_centre_count": 3077,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3073.0,
+        3078.0
+      ],
+      "patch_median_count": 3076.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 8.523601363051439,
+          "residual_xy": [
+            -8.471628793257764,
+            -0.9398328497442208
+          ],
+          "predicted_camera_z_m": 0.7594125867114027,
+          "raw_depth_minus_predicted_z_m": 0.009587413288597357,
+          "conditional_sensor_point_D405_reference": [
+            0.5273173467870991,
+            -0.004346599380852918,
+            0.7263423445127158
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.007762935806256865,
+            0.0013426332145640013,
+            0.009961702301832798
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01270044680439457
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 2.472731304874426,
+          "residual_xy": [
+            -1.6804196325086878,
+            1.813998336489135
+          ],
+          "predicted_camera_z_m": 0.7502889083293345,
+          "raw_depth_minus_predicted_z_m": 0.018711091670665536,
+          "conditional_sensor_point_D405_reference": [
+            0.5221007313418653,
+            -0.006419940330607617,
+            0.7352099955103651
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.002546320361023091,
+            -0.0007307077351906971,
+            0.0188293532994821
+          ],
+          "conditional_sensor_landmark_distance_m": 0.019014789687291988
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 1.5413289172621711,
+          "residual_xy": [
+            -1.4928166135493939,
+            -0.38365790686430046
+          ],
+          "predicted_camera_z_m": 0.7545250913037304,
+          "raw_depth_minus_predicted_z_m": 0.014474908696269662,
+          "conditional_sensor_point_D405_reference": [
+            0.5216592978424421,
+            -0.004778477958276045,
+            0.7310217446527275
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0021048868615999305,
+            0.0009107546371408745,
+            0.014641102441844467
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014819645860201708
+        }
+      }
+    },
+    {
+      "frame": 417039,
+      "point_id": 1510,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.5314713925321674,
+        -0.01473761838167445,
+        0.7188957251799599
+      ],
+      "L515_uv_native": [
+        764.9871081240397,
+        420.00145652106346
+      ],
+      "L515_uv_undistorted": [
+        764.7582397460938,
+        419.9021911621094
+      ],
+      "raw_depth_centre_count": 3086,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3080.4,
+        3090.0
+      ],
+      "patch_median_count": 3084.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 8.668794085334461,
+          "residual_xy": [
+            -8.507876761234343,
+            -1.6625353859627694
+          ],
+          "predicted_camera_z_m": 0.7619031105679938,
+          "raw_depth_minus_predicted_z_m": 0.009096889432006261,
+          "conditional_sensor_point_D405_reference": [
+            0.5393803252010343,
+            -0.012899823343137683,
+            0.7283950243957067
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.007908932668866941,
+            0.0018377950385367672,
+            0.00949929921574677
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012496615227917852
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 1.8071785430816363,
+          "residual_xy": [
+            -1.524074955736296,
+            0.9711281150662217
+          ],
+          "predicted_camera_z_m": 0.7526816108585019,
+          "raw_depth_minus_predicted_z_m": 0.01831838914149808,
+          "conditional_sensor_point_D405_reference": [
+            0.5341333775609892,
+            -0.014992332510528422,
+            0.737358506703061
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.002661985028821867,
+            -0.00025471412885397227,
+            0.0184627815231011
+          ],
+          "conditional_sensor_landmark_distance_m": 0.018655437415157895
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 1.8311107877902562,
+          "residual_xy": [
+            -1.4196639052038336,
+            -1.1565124787148875
+          ],
+          "predicted_camera_z_m": 0.7569349140122412,
+          "raw_depth_minus_predicted_z_m": 0.014065085987758796,
+          "conditional_sensor_point_D405_reference": [
+            0.5336949761348282,
+            -0.013350710684259581,
+            0.7331538462450237
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.002223583602660839,
+            0.0013869076974148686,
+            0.014258121065063745
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014496960140153014
+        }
+      }
+    },
+    {
+      "frame": 417039,
+      "point_id": 186,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.4764220741480557,
+        0.016840838486609354,
+        0.7140688405145929
+      ],
+      "L515_uv_native": [
+        700.7620664107055,
+        458.9709334895133
+      ],
+      "L515_uv_undistorted": [
+        700.7006225585938,
+        458.844482421875
+      ],
+      "raw_depth_centre_count": 3054,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3053.0,
+        3057.0
+      ],
+      "patch_median_count": 3055.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 8.482897240855877,
+          "residual_xy": [
+            -8.373903900445839,
+            -1.355462675627109
+          ],
+          "predicted_camera_z_m": 0.7576616205189951,
+          "raw_depth_minus_predicted_z_m": 0.006088379481004935,
+          "conditional_sensor_point_D405_reference": [
+            0.48349978939879956,
+            0.018578863826640715,
+            0.7205179996866774
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0070777152507438545,
+            0.0017380253400313614,
+            0.006449159172084551
+          ],
+          "conditional_sensor_landmark_distance_m": 0.009731723345846077
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 2.780450148385981,
+          "residual_xy": [
+            -2.2543334639001387,
+            1.6275391427549835
+          ],
+          "predicted_camera_z_m": 0.7488727649183419,
+          "raw_depth_minus_predicted_z_m": 0.014877235081658169,
+          "conditional_sensor_point_D405_reference": [
+            0.47836693803179225,
+            0.016577918752539257,
+            0.7290511001783109
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0019448638837365473,
+            -0.0002629197340700967,
+            0.014982259663718023
+          ],
+          "conditional_sensor_landmark_distance_m": 0.015110252378563978
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 1.911998087486014,
+          "residual_xy": [
+            -1.7711237813759908,
+            -0.7203174561223591
+          ],
+          "predicted_camera_z_m": 0.7530609477325505,
+          "raw_depth_minus_predicted_z_m": 0.01068905226744954,
+          "conditional_sensor_point_D405_reference": [
+            0.4779172236589722,
+            0.018216516928883167,
+            0.724911151582084
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0014951495109165047,
+            0.001375678442273813,
+            0.010842311067491117
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011031032250917007
+        }
+      }
+    },
+    {
+      "frame": 417039,
+      "point_id": 119,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.4688272916443954,
+        0.006693593668257369,
+        0.7154964926798011
+      ],
+      "L515_uv_native": [
+        691.378083879059,
+        446.9880418373677
+      ],
+      "L515_uv_undistorted": [
+        691.34423828125,
+        446.9107360839844
+      ],
+      "raw_depth_centre_count": 3069,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3068.0,
+        3069.0
+      ],
+      "patch_median_count": 3069.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 8.442963537627012,
+          "residual_xy": [
+            -8.329825944774143,
+            -1.3775460164607125
+          ],
+          "predicted_camera_z_m": 0.7598536682125399,
+          "raw_depth_minus_predicted_z_m": 0.007396331787460131,
+          "conditional_sensor_point_D405_reference": [
+            0.4758249857813448,
+            0.008443028195823536,
+            0.7232535301076818
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.006997694136949395,
+            0.0017494345275661672,
+            0.0077570374278806975
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010592444196599696
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 2.7127572549589125,
+          "residual_xy": [
+            -2.3029610227146122,
+            1.4336744582329288
+          ],
+          "predicted_camera_z_m": 0.7510987160609015,
+          "raw_depth_minus_predicted_z_m": 0.016151283939098482,
+          "conditional_sensor_point_D405_reference": [
+            0.4706546820981125,
+            0.006461122505517308,
+            0.7317515526025067
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0018273904537171037,
+            -0.00023247116274006073,
+            0.016255059922705595
+          ],
+          "conditional_sensor_landmark_distance_m": 0.016359106693294465
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 1.959802655114572,
+          "residual_xy": [
+            -1.7725742212683144,
+            -0.8359468147490929
+          ],
+          "predicted_camera_z_m": 0.7552980944669654,
+          "raw_depth_minus_predicted_z_m": 0.011951905533034601,
+          "conditional_sensor_point_D405_reference": [
+            0.4702086099797607,
+            0.008093968296499075,
+            0.7276004238842826
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0013813183353653113,
+            0.0014003746282417063,
+            0.0121039312044815
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012262717482102427
+        }
+      }
+    },
+    {
+      "frame": 417039,
+      "point_id": 745,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.5105733421741803,
+        0.0064195205668649,
+        0.7189808211754173
+      ],
+      "L515_uv_native": [
+        741.2124902483511,
+        445.54152743809374
+      ],
+      "L515_uv_undistorted": [
+        741.0529174804688,
+        445.4033203125
+      ],
+      "raw_depth_centre_count": 3087,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3084.4,
+        3087.0
+      ],
+      "patch_median_count": 3086.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 8.910090572313157,
+          "residual_xy": [
+            -8.772355995332418,
+            -1.560603824799614
+          ],
+          "predicted_camera_z_m": 0.7617723074123813,
+          "raw_depth_minus_predicted_z_m": 0.00972769258761863,
+          "conditional_sensor_point_D405_reference": [
+            0.5184948378242498,
+            0.008462803617750057,
+            0.7291223146252467
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.007921495650069499,
+            0.002043283050885157,
+            0.010141493449829397
+          ],
+          "conditional_sensor_landmark_distance_m": 0.013029773150482595
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 2.519124123757201,
+          "residual_xy": [
+            -2.139930891474478,
+            1.3291659529978688
+          ],
+          "predicted_camera_z_m": 0.7527307030919594,
+          "raw_depth_minus_predicted_z_m": 0.018769296908040523,
+          "conditional_sensor_point_D405_reference": [
+            0.5132838338346637,
+            0.006410658538404654,
+            0.7379088386730449
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0027104916604834273,
+            -8.862028460246418e-06,
+            0.018928017497627625
+          ],
+          "conditional_sensor_landmark_distance_m": 0.019121105877213176
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 2.108620341060061,
+          "residual_xy": [
+            -1.8900960786351106,
+            -0.9347815553702503
+          ],
+          "predicted_camera_z_m": 0.7569463725018474,
+          "raw_depth_minus_predicted_z_m": 0.014553627498152588,
+          "conditional_sensor_point_D405_reference": [
+            0.5128400728474859,
+            0.008046059907448437,
+            0.7337417083336755
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.002266730673305628,
+            0.0016265393405835368,
+            0.014760887158258185
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01502223311863459
+        }
+      }
+    },
+    {
+      "frame": 417039,
+      "point_id": 754,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.4967932644411976,
+        0.00801039614205949,
+        0.7170512254010962
+      ],
+      "L515_uv_native": [
+        724.6972630338078,
+        447.0699583499362
+      ],
+      "L515_uv_undistorted": [
+        724.592529296875,
+        446.9541320800781
+      ],
+      "raw_depth_centre_count": 3069,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3067.0,
+        3071.0
+      ],
+      "patch_median_count": 3069.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 8.50204596188055,
+          "residual_xy": [
+            -8.470908950456874,
+            -0.726971176181678
+          ],
+          "predicted_camera_z_m": 0.7602898464400544,
+          "raw_depth_minus_predicted_z_m": 0.006960153559945614,
+          "conditional_sensor_point_D405_reference": [
+            0.5041868934415517,
+            0.009196713988947822,
+            0.7243594823357015
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.007393629000354063,
+            0.0011863178468883313,
+            0.0073082569346052395
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010463446815028398
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 2.976103492801445,
+          "residual_xy": [
+            -2.0434910945874663,
+            2.1636395601408935
+          ],
+          "predicted_camera_z_m": 0.7513456440038087,
+          "raw_depth_minus_predicted_z_m": 0.015904355996191333,
+          "conditional_sensor_point_D405_reference": [
+            0.4990098354900636,
+            0.007163420225353746,
+            0.7330480990780156
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.002216571048866023,
+            -0.0008469759167057441,
+            0.015996873676919376
+          ],
+          "conditional_sensor_landmark_distance_m": 0.016171905356310575
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 1.7042281198099032,
+          "residual_xy": [
+            -1.7002606275968901,
+            -0.11622083545830719
+          ],
+          "predicted_camera_z_m": 0.7555538752300024,
+          "raw_depth_minus_predicted_z_m": 0.011696124769997596,
+          "conditional_sensor_point_D405_reference": [
+            0.4985640625673203,
+            0.008801854433901607,
+            0.7288873522049947
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0017707981261226857,
+            0.0007914582918421165,
+            0.01183612680389845
+          ],
+          "conditional_sensor_landmark_distance_m": 0.0119939997477559
+        }
+      }
+    },
+    {
+      "frame": 417039,
+      "point_id": 901,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.48121784161728115,
+        0.003129034312302912,
+        0.713660180267634
+      ],
+      "L515_uv_native": [
+        706.2856971755672,
+        442.3176294963791
+      ],
+      "L515_uv_undistorted": [
+        706.2314453125,
+        442.2398681640625
+      ],
+      "raw_depth_centre_count": 3072,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3069.4,
+        3072.0
+      ],
+      "patch_median_count": 3070.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 8.73572407828988,
+          "residual_xy": [
+            -8.656628390672267,
+            -1.1728853643133448
+          ],
+          "predicted_camera_z_m": 0.7577230136524321,
+          "raw_depth_minus_predicted_z_m": 0.009776986347567962,
+          "conditional_sensor_point_D405_reference": [
+            0.48863645116547233,
+            0.004794141549013267,
+            0.7238141248223685
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.00741860954819118,
+            0.0016651072367103552,
+            0.010153944554734506
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012685067589842834
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 2.941365226792717,
+          "residual_xy": [
+            -2.4472535865406826,
+            1.6317411806255109
+          ],
+          "predicted_camera_z_m": 0.7488774628548626,
+          "raw_depth_minus_predicted_z_m": 0.018622537145137508,
+          "conditional_sensor_point_D405_reference": [
+            0.48345514930768063,
+            0.0027891384121719043,
+            0.7324048959418709
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0022373076903994815,
+            -0.0003398959001310077,
+            0.018744715674236856
+          ],
+          "conditional_sensor_landmark_distance_m": 0.018880822032751314
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 2.0941777997880497,
+          "residual_xy": [
+            -1.9980745946902516,
+            -0.6271192639191554
+          ],
+          "predicted_camera_z_m": 0.7530866842662608,
+          "raw_depth_minus_predicted_z_m": 0.014413315733739274,
+          "conditional_sensor_point_D405_reference": [
+            0.4830102753545587,
+            0.004424416447801574,
+            0.7282438819990971
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0017924337372775545,
+            0.001295382135498662,
+            0.014583701731463061
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014750430155482875
+        }
+      }
+    },
+    {
+      "frame": 417039,
+      "point_id": 546,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.5513249031911548,
+        0.0021714311984683725,
+        0.7206374335566018
+      ],
+      "L515_uv_native": [
+        789.1297897098057,
+        438.04739435732625
+      ],
+      "L515_uv_undistorted": [
+        788.7030029296875,
+        437.8375244140625
+      ],
+      "raw_depth_centre_count": 3078,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3078.0,
+        3079.0
+      ],
+      "patch_median_count": 3078.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 8.51764301271523,
+          "residual_xy": [
+            -8.514197343337969,
+            -0.2422521222884484
+          ],
+          "predicted_camera_z_m": 0.7620924035966854,
+          "raw_depth_minus_predicted_z_m": 0.007407596403314565,
+          "conditional_sensor_point_D405_reference": [
+            0.5593293622501948,
+            0.0029135107848438646,
+            0.7283959084522494
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.008004459059040014,
+            0.0007420795863754921,
+            0.007758474895647627
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011172107216042882
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 2.9527947186385277,
+          "residual_xy": [
+            -1.2485896526646911,
+            2.675821468199672
+          ],
+          "predicted_camera_z_m": 0.7527643628445585,
+          "raw_depth_minus_predicted_z_m": 0.016735637155441463,
+          "conditional_sensor_point_D405_reference": [
+            0.5541117831134577,
+            0.0007835017222030116,
+            0.7374679692811429
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.002786879922302865,
+            -0.001387929476265361,
+            0.016830535724541074
+          ],
+          "conditional_sensor_landmark_distance_m": 0.017116073752688563
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 1.3463848195610149,
+          "residual_xy": [
+            -1.273975874873713,
+            0.43558874249009705
+          ],
+          "predicted_camera_z_m": 0.757001584407109,
+          "raw_depth_minus_predicted_z_m": 0.012498415592890999,
+          "conditional_sensor_point_D405_reference": [
+            0.5536693168137024,
+            0.002430162997415858,
+            0.7332777675942728
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0023444136225475587,
+            0.0002587317989474853,
+            0.012640334037670953
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012858509321117904
+        }
+      }
+    },
+    {
+      "frame": 417039,
+      "point_id": 895,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.47124080887900727,
+        -0.0008538374843317382,
+        0.7139658546419063
+      ],
+      "L515_uv_native": [
+        693.822015374659,
+        437.71618526972384
+      ],
+      "L515_uv_undistorted": [
+        693.791748046875,
+        437.6611328125
+      ],
+      "raw_depth_centre_count": 3064,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3058.4,
+        3067.6
+      ],
+      "patch_median_count": 3064.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 8.242529230647403,
+          "residual_xy": [
+            -8.173168604736134,
+            -1.06705345537722
+          ],
+          "predicted_camera_z_m": 0.7585926787536329,
+          "raw_depth_minus_predicted_z_m": 0.007407321246367116,
+          "conditional_sensor_point_D405_reference": [
+            0.4781240397615001,
+            0.0005532720810479883,
+            0.7217133270276728
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.006883230882492819,
+            0.0014071095653797265,
+            0.007747472385766452
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01045859230866658
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 2.6743181268277016,
+          "residual_xy": [
+            -2.101003691977553,
+            1.6546180616008996
+          ],
+          "predicted_camera_z_m": 0.7498083278322201,
+          "raw_depth_minus_predicted_z_m": 0.016191672167779947,
+          "conditional_sensor_point_D405_reference": [
+            0.47294919343796077,
+            -0.0014355140519439966,
+            0.7302401045972322
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0017083845589535018,
+            -0.0005816765676122583,
+            0.016274249955325892
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01637400797114148
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 1.686287527018227,
+          "residual_xy": [
+            -1.5861387021113842,
+            -0.5724767606127443
+          ],
+          "predicted_camera_z_m": 0.7540192619379732,
+          "raw_depth_minus_predicted_z_m": 0.011980738062026819,
+          "conditional_sensor_point_D405_reference": [
+            0.4725046100323431,
+            0.000200037867386281,
+            0.7260771470148846
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0012638011533358529,
+            0.0010538753517180192,
+            0.012111292372978255
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012222571315230402
+        }
+      }
+    },
+    {
+      "frame": 417039,
+      "point_id": 1780,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.5386615769297899,
+        -0.00705781041489681,
+        0.7227790641478221
+      ],
+      "L515_uv_native": [
+        773.9379582331244,
+        429.33485283699696
+      ],
+      "L515_uv_undistorted": [
+        773.6393432617188,
+        429.1911315917969
+      ],
+      "raw_depth_centre_count": 3085,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3083.0,
+        3089.0
+      ],
+      "patch_median_count": 3085.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 9.247473157020357,
+          "residual_xy": [
+            -8.975078071667326,
+            -2.227943759902473
+          ],
+          "predicted_camera_z_m": 0.7651445049864277,
+          "raw_depth_minus_predicted_z_m": 0.006105495013572271,
+          "conditional_sensor_point_D405_reference": [
+            0.5468007373349311,
+            -0.004739492377403801,
+            0.7293129770817702
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.008139160405141177,
+            0.0023183180374930093,
+            0.006533912933948116
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010691704674746578
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 1.9679313937919365,
+          "residual_xy": [
+            -1.9005692132941476,
+            0.510480789207918
+          ],
+          "predicted_camera_z_m": 0.7558864912015139,
+          "raw_depth_minus_predicted_z_m": 0.015363508798486136,
+          "conditional_sensor_point_D405_reference": [
+            0.5415628115878119,
+            -0.006844414850040344,
+            0.7383130236908841
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.002901234658022056,
+            0.0002133955648564662,
+            0.015533959543062026
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01580400579895795
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 2.47548038720171,
+          "residual_xy": [
+            -1.8426263250780721,
+            -1.6530975087845263
+          ],
+          "predicted_camera_z_m": 0.7601316389418901,
+          "raw_depth_minus_predicted_z_m": 0.011118361058109927,
+          "conditional_sensor_point_D405_reference": [
+            0.5411226468187106,
+            -0.005202191020899652,
+            0.734116909248507
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0024610698889206972,
+            0.001855619393997158,
+            0.011337845100684918
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011749336996641789
+        }
+      }
+    },
+    {
+      "frame": 417039,
+      "point_id": 27,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.5423525607171836,
+        -0.010467332272982455,
+        0.7221032310134421
+      ],
+      "L515_uv_native": [
+        778.3637961892714,
+        423.3388829442458
+      ],
+      "L515_uv_undistorted": [
+        778.046630859375,
+        423.20758056640625
+      ],
+      "raw_depth_centre_count": 3082,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3079.0,
+        3083.0
+      ],
+      "patch_median_count": 3082.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 9.095032763157054,
+          "residual_xy": [
+            -9.088698929700513,
+            -0.33937107737841643
+          ],
+          "predicted_camera_z_m": 0.7644925057206827,
+          "raw_depth_minus_predicted_z_m": 0.006007494279317238,
+          "conditional_sensor_point_D405_reference": [
+            0.5506468883401268,
+            -0.009795679996499697,
+            0.7284666239938148
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.008294327622943132,
+            0.0006716522764827586,
+            0.006363392980372695
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010475674571113711
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 3.062679603022027,
+          "residual_xy": [
+            -1.949618723699814,
+            2.361989242771074
+          ],
+          "predicted_camera_z_m": 0.7552034235009756,
+          "raw_depth_minus_predicted_z_m": 0.015296576499024384,
+          "conditional_sensor_point_D405_reference": [
+            0.5454050415389752,
+            -0.01190922984133333,
+            0.7375011478074409
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0030524808217915478,
+            -0.0014418975683508743,
+            0.015397916793998823
+          ],
+          "conditional_sensor_landmark_distance_m": 0.015763646448710155
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 1.9296960133459786,
+          "residual_xy": [
+            -1.9174439560587189,
+            0.21710683843963352
+          ],
+          "predicted_camera_z_m": 0.7594547921401685,
+          "raw_depth_minus_predicted_z_m": 0.01104520785983143,
+          "conditional_sensor_point_D405_reference": [
+            0.5449658902812906,
+            -0.010264871371054536,
+            0.7332965607230315
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.002613329564106981,
+            0.0002024609019279193,
+            0.011193329709589417
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011496134646698521
+        }
+      }
+    },
+    {
+      "frame": 417039,
+      "point_id": 4645,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.5584435958971553,
+        -0.0032932855228935166,
+        0.7202044309440557
+      ],
+      "L515_uv_native": [
+        797.3549320849488,
+        432.240345568068
+      ],
+      "L515_uv_undistorted": [
+        796.8724365234375,
+        432.03729248046875
+      ],
+      "raw_depth_centre_count": 3085,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3083.0,
+        3087.0
+      ],
+      "patch_median_count": 3084.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 8.475611530124862,
+          "residual_xy": [
+            -8.406114825709437,
+            -1.0831548119144827
+          ],
+          "predicted_camera_z_m": 0.7616511054796093,
+          "raw_depth_minus_predicted_z_m": 0.009348894520390671,
+          "conditional_sensor_point_D405_reference": [
+            0.566628153829148,
+            -0.0018071934629706188,
+            0.7299498972943048
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.008184557931992686,
+            0.0014860920599228979,
+            0.009745466350249088
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012812867459571551
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 2.0444641090700566,
+          "residual_xy": [
+            -1.016501162593272,
+            1.7738542442157268
+          ],
+          "predicted_camera_z_m": 0.7522649132237753,
+          "raw_depth_minus_predicted_z_m": 0.018735086776224708,
+          "conditional_sensor_point_D405_reference": [
+            0.5613909705430162,
+            -0.00394827730250473,
+            0.7390791756789261
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.002947374645860923,
+            -0.000654991779611213,
+            0.018874744734870386
+          ],
+          "conditional_sensor_landmark_distance_m": 0.019114706912242714
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 1.1748702706607734,
+          "residual_xy": [
+            -1.0918950026429002,
+            -0.4336882014604271
+          ],
+          "predicted_camera_z_m": 0.7565125375794688,
+          "raw_depth_minus_predicted_z_m": 0.014487462420531227,
+          "conditional_sensor_point_D405_reference": [
+            0.5609503368422455,
+            -0.0023019527940356874,
+            0.7348796776759602
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.00250674094509018,
+            0.0009913327288578293,
+            0.014675246731904457
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014920769329607933
+        }
+      }
+    },
+    {
+      "frame": 417039,
+      "point_id": 4827,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.49336783380308463,
+        -0.005618990999656708,
+        0.7156172441214281
+      ],
+      "L515_uv_native": [
+        721.493997000439,
+        431.6006075778477
+      ],
+      "L515_uv_undistorted": [
+        721.4188842773438,
+        431.5326843261719
+      ],
+      "raw_depth_centre_count": 3075,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3074.0,
+        3077.0
+      ],
+      "patch_median_count": 3075.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 9.850708990205527,
+          "residual_xy": [
+            -9.765141679334647,
+            -1.2955599531620692
+          ],
+          "predicted_camera_z_m": 0.7596335292095627,
+          "raw_depth_minus_predicted_z_m": 0.009116470790437314,
+          "conditional_sensor_point_D405_reference": [
+            0.5018847888632927,
+            -0.00396161998947276,
+            0.7251505351586459
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.008516955060208053,
+            0.0016573710101839478,
+            0.009533291037217784
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012890657088112252
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 3.646529433989412,
+          "residual_xy": [
+            -3.3663431271437503,
+            1.4017527825130855
+          ],
+          "predicted_camera_z_m": 0.7506892005649575,
+          "raw_depth_minus_predicted_z_m": 0.018060799435042574,
+          "conditional_sensor_point_D405_reference": [
+            0.4966775866320559,
+            -0.005989220216087075,
+            0.7338455122883932
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0033097528289712796,
+            -0.00037022921643036725,
+            0.0182282681669651
+          ],
+          "conditional_sensor_landmark_distance_m": 0.018530010626774483
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 3.104577568311656,
+          "residual_xy": [
+            -3.0018778153265657,
+            -0.7919163210302713
+          ],
+          "predicted_camera_z_m": 0.7549152385990938,
+          "raw_depth_minus_predicted_z_m": 0.013834761400906226,
+          "conditional_sensor_point_D405_reference": [
+            0.4962355334994682,
+            -0.004352488774815699,
+            0.7296673587902416
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0028676996963835633,
+            0.0012665022248410087,
+            0.014050114668813452
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014395605289148926
+        }
+      }
+    },
+    {
+      "frame": 417039,
+      "point_id": 302,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.5021115436793261,
+        -0.0020402216757601592,
+        0.7155175806464132
+      ],
+      "L515_uv_native": [
+        730.6193813550508,
+        435.2513879134814
+      ],
+      "L515_uv_undistorted": [
+        730.5140991210938,
+        435.16241455078125
+      ],
+      "raw_depth_centre_count": 3072,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3069.0,
+        3073.0
+      ],
+      "patch_median_count": 3072.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 8.426190699190588,
+          "residual_xy": [
+            -8.375701364544511,
+            -0.921040906308292
+          ],
+          "predicted_camera_z_m": 0.7590351020902428,
+          "raw_depth_minus_predicted_z_m": 0.008964897909757186,
+          "conditional_sensor_point_D405_reference": [
+            0.5095426954548776,
+            -0.000696860425800444,
+            0.7248431391720181
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.007431151775551537,
+            0.0013433612499597152,
+            0.009325558525604905
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011999694911690815
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 2.6176316836135354,
+          "residual_xy": [
+            -1.8526638708241308,
+            1.8492247599468215
+          ],
+          "predicted_camera_z_m": 0.7500372595662371,
+          "raw_depth_minus_predicted_z_m": 0.01796274043376289,
+          "conditional_sensor_point_D405_reference": [
+            0.5043435492056095,
+            -0.0027393643232755047,
+            0.7335844851567419
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0022320055262834426,
+            -0.0006991426475153454,
+            0.018066904510328663
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01821767514520634
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 1.5902957318769684,
+          "residual_xy": [
+            -1.546172946556453,
+            -0.3720077071285459
+          ],
+          "predicted_camera_z_m": 0.754261665186321,
+          "raw_depth_minus_predicted_z_m": 0.013738334813679032,
+          "conditional_sensor_point_D405_reference": [
+            0.5039005522926211,
+            -0.0011002753174927243,
+            0.7294079841668779
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0017890086132950067,
+            0.0009399463582674349,
+            0.013890403520464667
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01403664350677188
+        }
+      }
+    },
+    {
+      "frame": 828961,
+      "point_id": 1525,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.5233192216410741,
+        -0.01968388356615096,
+        0.7135791898922634
+      ],
+      "L515_uv_native": [
+        268.17216088007194,
+        436.6068008551454
+      ],
+      "L515_uv_undistorted": [
+        273.22979736328125,
+        435.9652099609375
+      ],
+      "raw_depth_centre_count": 0,
+      "patch_valid": 0,
+      "patch_p10p90_count": null,
+      "patch_median_count": null,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 10.455520866766616,
+          "residual_xy": [
+            -10.3944363274598,
+            -1.1285433220643881
+          ],
+          "predicted_camera_z_m": 0.7724522318750999,
+          "raw_depth_minus_predicted_z_m": null
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 9.540895597301633,
+          "residual_xy": [
+            -9.398339738804907,
+            1.6431369244862708
+          ],
+          "predicted_camera_z_m": 0.7633044649530658,
+          "raw_depth_minus_predicted_z_m": null
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 0.9834522345378298,
+          "residual_xy": [
+            0.4326940863423374,
+            -0.8831501147946597
+          ],
+          "predicted_camera_z_m": 0.7673830457352031,
+          "raw_depth_minus_predicted_z_m": null
+        }
+      }
+    },
+    {
+      "frame": 828961,
+      "point_id": 2149,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0838304805250083,
+        -0.03139392175787313,
+        0.7106589150852376
+      ],
+      "L515_uv_native": [
+        937.6916476755955,
+        407.0084233449188
+      ],
+      "L515_uv_undistorted": [
+        935.12109375,
+        406.7392272949219
+      ],
+      "raw_depth_centre_count": 3026,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3026.0,
+        3028.0
+      ],
+      "patch_median_count": 3026.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 14.61129341766934,
+          "residual_xy": [
+            -14.453293920501892,
+            -2.142939612964028
+          ],
+          "predicted_camera_z_m": 0.7521979577507893,
+          "raw_depth_minus_predicted_z_m": 0.0043020422492107135,
+          "conditional_sensor_point_D405_reference": [
+            1.0970629227135025,
+            -0.029221055356244245,
+            0.7154971324188537
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.013232442188494176,
+            0.0021728664016288854,
+            0.004838217333616113
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014255778534982633
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 4.370786629704831,
+          "residual_xy": [
+            -4.038331273814038,
+            1.6720216162902943
+          ],
+          "predicted_camera_z_m": 0.7391955382809648,
+          "raw_depth_minus_predicted_z_m": 0.017304461719035213,
+          "conditional_sensor_point_D405_reference": [
+            1.091858622360725,
+            -0.03238215762627026,
+            0.728261084230474
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.008028141835716651,
+            -0.000988235868397129,
+            0.01760216914523638
+          ],
+          "conditional_sensor_landmark_distance_m": 0.019371732758932076
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 2.553602305395587,
+          "residual_xy": [
+            2.3662405867409007,
+            -0.960099067691317
+          ],
+          "predicted_camera_z_m": 0.7435066505942265,
+          "raw_depth_minus_predicted_z_m": 0.012993349405773569,
+          "conditional_sensor_point_D405_reference": [
+            1.0853681016521342,
+            -0.03043538843283002,
+            0.7237823242489397
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0015376211271258544,
+            0.0009585333250431115,
+            0.013123409163702138
+          ],
+          "conditional_sensor_landmark_distance_m": 0.013247902964006917
+        }
+      }
+    },
+    {
+      "frame": 828961,
+      "point_id": 275,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0254365380109927,
+        -0.018186249450758453,
+        0.7134823941269886
+      ],
+      "L515_uv_native": [
+        864.101712277406,
+        423.8399400580695
+      ],
+      "L515_uv_undistorted": [
+        862.8336181640625,
+        423.5379333496094
+      ],
+      "raw_depth_centre_count": 3055,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3051.4,
+        3059.0
+      ],
+      "patch_median_count": 3055.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.46809031972893,
+          "residual_xy": [
+            -12.379445642111364,
+            -1.4841165098900433
+          ],
+          "predicted_camera_z_m": 0.7562421591861301,
+          "raw_depth_minus_predicted_z_m": 0.007507840813869904,
+          "conditional_sensor_point_D405_reference": [
+            1.03728509802744,
+            -0.01642298908811926,
+            0.7214676568679222
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.011848560016447296,
+            0.0017632603626391921,
+            0.007985262740933696
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014396592743130298
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 4.162264242069214,
+          "residual_xy": [
+            -3.3569936379678893,
+            2.4606985462366424
+          ],
+          "predicted_camera_z_m": 0.7436617552801328,
+          "raw_depth_minus_predicted_z_m": 0.020088244719867254,
+          "conditional_sensor_point_D405_reference": [
+            1.032066068448942,
+            -0.01946187094026612,
+            0.7338056919944058
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.006629530437949338,
+            -0.0012756214895076681,
+            0.020323297867417267
+          ],
+          "conditional_sensor_landmark_distance_m": 0.02141528239879077
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 3.4429747178307104,
+          "residual_xy": [
+            3.435101049693003,
+            -0.23271374265283384
+          ],
+          "predicted_camera_z_m": 0.7479317658444897,
+          "raw_depth_minus_predicted_z_m": 0.015818234155510313,
+          "conditional_sensor_point_D405_reference": [
+            1.0255742663427765,
+            -0.017538403730294798,
+            0.7293672173703755
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.00013772833178382626,
+            0.0006478457204636551,
+            0.015884823243386914
+          ],
+          "conditional_sensor_landmark_distance_m": 0.015898625180956503
+        }
+      }
+    },
+    {
+      "frame": 828961,
+      "point_id": 934,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0084705970298653,
+        -0.015298804969753999,
+        0.7145000462922926
+      ],
+      "L515_uv_native": [
+        844.006898490398,
+        427.420202853197
+      ],
+      "L515_uv_undistorted": [
+        843.0191650390625,
+        427.137939453125
+      ],
+      "raw_depth_centre_count": 3052,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3050.4,
+        3052.0
+      ],
+      "patch_median_count": 3051.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.955701946956117,
+          "residual_xy": [
+            -12.901513641680594,
+            -1.1837054920426908
+          ],
+          "predicted_camera_z_m": 0.757660182126644,
+          "raw_depth_minus_predicted_z_m": 0.005089817873356051,
+          "conditional_sensor_point_D405_reference": [
+            1.0201987201087261,
+            -0.013836883186250704,
+            0.7200447225857607
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.011728123078860841,
+            0.001461921783503295,
+            0.005544676293468109
+          ],
+          "conditional_sensor_landmark_distance_m": 0.013054865815217595
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 5.086046858877147,
+          "residual_xy": [
+            -4.263260306975667,
+            2.7735328023406964
+          ],
+          "predicted_camera_z_m": 0.7452007088600239,
+          "raw_depth_minus_predicted_z_m": 0.017549291139976164,
+          "conditional_sensor_point_D405_reference": [
+            1.0149946181487692,
+            -0.016846088506609312,
+            0.7322628818970027
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.006524021118903933,
+            -0.0015472835368553137,
+            0.017762835604710148
+          ],
+          "conditional_sensor_landmark_distance_m": 0.018986186205325346
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 2.6366987056205593,
+          "residual_xy": [
+            2.635748795057225,
+            0.07076972216646027
+          ],
+          "predicted_camera_z_m": 0.749460094545213,
+          "raw_depth_minus_predicted_z_m": 0.013289905454787032,
+          "conditional_sensor_point_D405_reference": [
+            1.0085015604648364,
+            -0.014924929778262208,
+            0.7278344212340458
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            3.096343497110965e-05,
+            0.0003738751914917904,
+            0.013334374941753269
+          ],
+          "conditional_sensor_landmark_distance_m": 0.013339651287810178
+        }
+      }
+    },
+    {
+      "frame": 828961,
+      "point_id": 680,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0643186003413792,
+        -0.04409440201470601,
+        0.7114918783550048
+      ],
+      "L515_uv_native": [
+        912.3025017332783,
+        392.1498355738083
+      ],
+      "L515_uv_undistorted": [
+        910.237548828125,
+        392.02081298828125
+      ],
+      "raw_depth_centre_count": 3042,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3040.0,
+        3042.0
+      ],
+      "patch_median_count": 3041.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 14.014151417643001,
+          "residual_xy": [
+            -13.872618117376987,
+            -1.9866822911701547
+          ],
+          "predicted_camera_z_m": 0.7542682732413586,
+          "raw_depth_minus_predicted_z_m": 0.0059817267586413925,
+          "conditional_sensor_point_D405_reference": [
+            1.0774029554760451,
+            -0.04213359440097962,
+            0.7179975846417266
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.013084355134665993,
+            0.001960807613726391,
+            0.0065057062867217574
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014743450412884994
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 4.194475625067454,
+          "residual_xy": [
+            -3.9110744418875356,
+            1.5156261014178654
+          ],
+          "predicted_camera_z_m": 0.7413771325443301,
+          "raw_depth_minus_predicted_z_m": 0.01887286745566985,
+          "conditional_sensor_point_D405_reference": [
+            1.0721578435824863,
+            -0.04525354343034617,
+            0.7306500130054939
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.007839243241107186,
+            -0.0011591414156401567,
+            0.0191581346504891
+          ],
+          "conditional_sensor_landmark_distance_m": 0.02073237725638254
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 2.80109841759607,
+          "residual_xy": [
+            2.6107005885221497,
+            -1.0150836330811899
+          ],
+          "predicted_camera_z_m": 0.7456984248205691,
+          "raw_depth_minus_predicted_z_m": 0.014551575179430842,
+          "conditional_sensor_point_D405_reference": [
+            1.0656715664277223,
+            -0.043315215777028196,
+            0.726160724008386
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0013529660863431658,
+            0.0007791862376778161,
+            0.014668845653381224
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014751700960448678
+        }
+      }
+    },
+    {
+      "frame": 828961,
+      "point_id": 78,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.051143978857876,
+        -0.03432501379535198,
+        0.7109246140788356
+      ],
+      "L515_uv_native": [
+        896.9685773796595,
+        404.2277949271473
+      ],
+      "L515_uv_undistorted": [
+        895.1810302734375,
+        404.014404296875
+      ],
+      "raw_depth_centre_count": 3034,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3031.0,
+        3036.0
+      ],
+      "patch_median_count": 3034.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 14.165419618235365,
+          "residual_xy": [
+            -14.03396042788711,
+            -1.925374682804886
+          ],
+          "predicted_camera_z_m": 0.7536494572949619,
+          "raw_depth_minus_predicted_z_m": 0.004850542705038152,
+          "conditional_sensor_point_D405_reference": [
+            1.0639900282545092,
+            -0.032350492488185785,
+            0.7162902659866107
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.012846049396633141,
+            0.001974521307166195,
+            0.00536565190777516
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014060936664696388
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 4.725898620402042,
+          "residual_xy": [
+            -4.385885717545307,
+            1.7601489263553844
+          ],
+          "predicted_camera_z_m": 0.7408655257938617,
+          "raw_depth_minus_predicted_z_m": 0.017634474206138395,
+          "conditional_sensor_point_D405_reference": [
+            1.0587752692580878,
+            -0.03544816226920926,
+            0.7288356697597952
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.007631290400211821,
+            -0.0011231484738572772,
+            0.01791105568095963
+          ],
+          "conditional_sensor_landmark_distance_m": 0.019501383829696017
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 2.391385957762527,
+          "residual_xy": [
+            2.238997852801049,
+            -0.8400091750309002
+          ],
+          "predicted_camera_z_m": 0.7451681217667232,
+          "raw_depth_minus_predicted_z_m": 0.013331878233276862,
+          "conditional_sensor_point_D405_reference": [
+            1.0522857643926187,
+            -0.03351081148815097,
+            0.7243650076906737
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0011417855347426453,
+            0.0008142023072010077,
+            0.01344039361183813
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01351335561751922
+        }
+      }
+    },
+    {
+      "frame": 828961,
+      "point_id": 307,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.5245512708032266,
+        -0.02444552577758411,
+        0.7103721298601737
+      ],
+      "L515_uv_native": [
+        267.86355011841545,
+        431.1250353534907
+      ],
+      "L515_uv_undistorted": [
+        272.9332275390625,
+        430.5503845214844
+      ],
+      "raw_depth_centre_count": 0,
+      "patch_valid": 0,
+      "patch_p10p90_count": null,
+      "patch_median_count": null,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 10.531381926726144,
+          "residual_xy": [
+            -10.46583829925612,
+            -1.173129992966608
+          ],
+          "predicted_camera_z_m": 0.7694419510031001,
+          "raw_depth_minus_predicted_z_m": null
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 9.62043705154039,
+          "residual_xy": [
+            -9.49409029370105,
+            1.55404586730981
+          ],
+          "predicted_camera_z_m": 0.7602779884756907,
+          "raw_depth_minus_predicted_z_m": null
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 1.0320103758461543,
+          "residual_xy": [
+            0.3817615504169112,
+            -0.9588031781744348
+          ],
+          "predicted_camera_z_m": 0.7643638612177099,
+          "raw_depth_minus_predicted_z_m": null
+        }
+      }
+    },
+    {
+      "frame": 828961,
+      "point_id": 27,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.5423525607171836,
+        -0.010467332272982455,
+        0.7221032310134421
+      ],
+      "L515_uv_native": [
+        295.4962668210331,
+        445.73635207189767
+      ],
+      "L515_uv_undistorted": [
+        300.05487060546875,
+        444.965087890625
+      ],
+      "raw_depth_centre_count": 3129,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3124.4,
+        3131.6
+      ],
+      "patch_median_count": 3129.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 10.963687272483194,
+          "residual_xy": [
+            -10.955862694177313,
+            -0.4141391494942468
+          ],
+          "predicted_camera_z_m": 0.7799072541538601,
+          "raw_depth_minus_predicted_z_m": 0.0023427458461399153,
+          "conditional_sensor_point_D405_reference": [
+            0.5508363285173083,
+            -0.009768558723896752,
+            0.7247553340372438
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.00848376780012472,
+            0.0006987735490857037,
+            0.0026521030238016996
+          ],
+          "conditional_sensor_landmark_distance_m": 0.008916067014563819
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 9.982120398258784,
+          "residual_xy": [
+            -9.669780516021149,
+            2.477513353609197
+          ],
+          "predicted_camera_z_m": 0.7706439330268303,
+          "raw_depth_minus_predicted_z_m": 0.011606066973169682,
+          "conditional_sensor_point_D405_reference": [
+            0.5456196247882017,
+            -0.01188870370922828,
+            0.7337911843314812
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0032670640710180665,
+            -0.0014213714362458253,
+            0.011687953318039068
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012218930279225474
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 0.10169060104166606,
+          "residual_xy": [
+            -0.07540529110309535,
+            -0.06822771001486672
+          ],
+          "predicted_camera_z_m": 0.7747165349718319,
+          "raw_depth_minus_predicted_z_m": 0.007533465028168096,
+          "conditional_sensor_point_D405_reference": [
+            0.5391258977332737,
+            -0.010092014783554405,
+            0.7295449569844359
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.0032266629839099448,
+            0.0003753174894280502,
+            0.0074417259709937955
+          ],
+          "conditional_sensor_landmark_distance_m": 0.0081198215902179
+        }
+      }
+    },
+    {
+      "frame": 828961,
+      "point_id": 2216,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0425799617234763,
+        -0.004189469435102025,
+        0.7206821155805982
+      ],
+      "L515_uv_native": [
+        885.3088841093748,
+        439.91019859282335
+      ],
+      "L515_uv_undistorted": [
+        883.6634521484375,
+        439.445068359375
+      ],
+      "raw_depth_centre_count": 3064,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3059.4,
+        3069.0
+      ],
+      "patch_median_count": 3064.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 13.925142868700826,
+          "residual_xy": [
+            -13.834951025005466,
+            -1.582319199602182
+          ],
+          "predicted_camera_z_m": 0.7622038371570983,
+          "raw_depth_minus_predicted_z_m": 0.0037961628429017402,
+          "conditional_sensor_point_D405_reference": [
+            1.055100336467038,
+            -0.0023529011191511934,
+            0.7249744895025166
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.012520374743561602,
+            0.0018365683159508317,
+            0.004292373921918391
+          ],
+          "conditional_sensor_landmark_distance_m": 0.013362531226677632
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 5.216720131170696,
+          "residual_xy": [
+            -4.507797774758728,
+            2.62562909582482
+          ],
+          "predicted_camera_z_m": 0.7495293306185928,
+          "raw_depth_minus_predicted_z_m": 0.016470669381407177,
+          "conditional_sensor_point_D405_reference": [
+            1.0498837276104693,
+            -0.005419377270001378,
+            0.7374094906521418
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.007303765886992997,
+            -0.0012299078348993533,
+            0.016727375071543538
+          ],
+          "conditional_sensor_landmark_distance_m": 0.018293789826015976
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 2.128693765729166,
+          "residual_xy": [
+            2.1246877012644063,
+            -0.13053474767275475
+          ],
+          "predicted_camera_z_m": 0.7537860240763112,
+          "raw_depth_minus_predicted_z_m": 0.01221397592368878,
+          "conditional_sensor_point_D405_reference": [
+            1.0433896184006053,
+            -0.0034962875022470016,
+            0.7329838697085045
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.000809656677128956,
+            0.0006931819328550234,
+            0.01230175412790624
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012347841906597053
+        }
+      }
+    },
+    {
+      "frame": 828961,
+      "point_id": 3156,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.1040116840592116,
+        -0.014857721008033195,
+        0.7137252459597125
+      ],
+      "L515_uv_native": [
+        962.0069704062503,
+        425.6043289964162
+      ],
+      "L515_uv_undistorted": [
+        958.9353637695312,
+        425.13873291015625
+      ],
+      "raw_depth_centre_count": 3015,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3012.4,
+        3017.0
+      ],
+      "patch_median_count": 3015.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 14.24888284392863,
+          "residual_xy": [
+            -14.175248284934696,
+            -1.4467198624680577
+          ],
+          "predicted_camera_z_m": 0.7538131151411571,
+          "raw_depth_minus_predicted_z_m": -6.31151411570885e-05,
+          "conditional_sensor_point_D405_reference": [
+            1.1158424209026616,
+            -0.013342877978171259,
+            0.7141141405313722
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.01183073684345004,
+            0.001514843029861936,
+            0.00038889457165969255
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011933663421261466
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 4.313908083319036,
+          "residual_xy": [
+            -3.3321590615339574,
+            2.739802719168381
+          ],
+          "predicted_camera_z_m": 0.7407008840557447,
+          "raw_depth_minus_predicted_z_m": 0.013049115944255285,
+          "conditional_sensor_point_D405_reference": [
+            1.1106769984053078,
+            -0.016541611293178594,
+            0.7269786839182227
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.006665314346096185,
+            -0.001683890285145399,
+            0.013253437958510195
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01493035564026395
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 2.926974578871344,
+          "residual_xy": [
+            2.9269745564920413,
+            -0.00036194930623878463
+          ],
+          "predicted_camera_z_m": 0.7449965151398932,
+          "raw_depth_minus_predicted_z_m": 0.008753484860106853,
+          "conditional_sensor_point_D405_reference": [
+            1.1041818756433603,
+            -0.014588171060032695,
+            0.7225149074298218
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0001701915841487711,
+            0.00026954994800050015,
+            0.008789661470109289
+          ],
+          "conditional_sensor_landmark_distance_m": 0.008795440359010226
+        }
+      }
+    },
+    {
+      "frame": 828961,
+      "point_id": 754,
+      "specimen": "P2",
+      "D405_point_reference": [
+        0.4967932644411976,
+        0.00801039614205949,
+        0.7170512254010962
+      ],
+      "L515_uv_native": [
+        239.1027091925052,
+        469.24728695424164
+      ],
+      "L515_uv_undistorted": [
+        244.5029754638672,
+        468.276123046875
+      ],
+      "raw_depth_centre_count": 0,
+      "patch_valid": 0,
+      "patch_p10p90_count": null,
+      "patch_median_count": null,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 9.932888007670423,
+          "residual_xy": [
+            -9.910284331829018,
+            -0.6697228047686394
+          ],
+          "predicted_camera_z_m": 0.7754238568413907,
+          "raw_depth_minus_predicted_z_m": null
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 9.463297089074826,
+          "residual_xy": [
+            -9.154975129005777,
+            2.395917816490737
+          ],
+          "predicted_camera_z_m": 0.7665051607523157,
+          "raw_depth_minus_predicted_z_m": null
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 0.8133541800789861,
+          "residual_xy": [
+            0.764788706713091,
+            -0.27684518478037035
+          ],
+          "predicted_camera_z_m": 0.7705346504020867,
+          "raw_depth_minus_predicted_z_m": null
+        }
+      }
+    },
+    {
+      "frame": 828961,
+      "point_id": 921,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0545596867846463,
+        -0.03214611002937458,
+        0.7108903567161203
+      ],
+      "L515_uv_native": [
+        901.0450929031161,
+        406.13214934823753
+      ],
+      "L515_uv_undistorted": [
+        899.181640625,
+        405.9002685546875
+      ],
+      "raw_depth_centre_count": 3042,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3038.0,
+        3043.6
+      ],
+      "patch_median_count": 3041.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 13.887434199719005,
+          "residual_xy": [
+            -13.825142108781733,
+            -1.313877590765287
+          ],
+          "predicted_camera_z_m": 0.753400555845843,
+          "raw_depth_minus_predicted_z_m": 0.006849444154157003,
+          "conditional_sensor_point_D405_reference": [
+            1.0677358602374991,
+            -0.030648846753911933,
+            0.7182456841573814
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.013176173452852824,
+            0.0014972632754626444,
+            0.007355327441261106
+          ],
+          "conditional_sensor_landmark_distance_m": 0.015164240368178067
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 4.763766235797578,
+          "residual_xy": [
+            -4.100767116924999,
+            2.424289133348509
+          ],
+          "predicted_camera_z_m": 0.7405970491102962,
+          "raw_depth_minus_predicted_z_m": 0.019652950889703757,
+          "conditional_sensor_point_D405_reference": [
+            1.0625109998171691,
+            -0.0337502667029441,
+            0.7308135432411759
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.007951313032522833,
+            -0.001604156673569522,
+            0.019923186525055536
+          ],
+          "conditional_sensor_landmark_distance_m": 0.021511161263090366
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 2.510310935075019,
+          "residual_xy": [
+            2.5029066545420164,
+            -0.19266361723612135
+          ],
+          "predicted_camera_z_m": 0.744897919307957,
+          "raw_depth_minus_predicted_z_m": 0.015352080692042969,
+          "conditional_sensor_point_D405_reference": [
+            1.0560217924910706,
+            -0.031814692195256296,
+            0.7263438429703752
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0014621057064243548,
+            0.0003314178341182819,
+            0.015453486254254911
+          ],
+          "conditional_sensor_landmark_distance_m": 0.015526037108289282
+        }
+      }
+    },
+    {
+      "frame": 828961,
+      "point_id": 499,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0844749682093064,
+        -0.01553490513329867,
+        0.7152317167019949
+      ],
+      "L515_uv_native": [
+        937.6109968483654,
+        425.5829404957108
+      ],
+      "L515_uv_undistorted": [
+        935.0247802734375,
+        425.1423034667969
+      ],
+      "raw_depth_centre_count": 3039,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        2957.0,
+        3042.0
+      ],
+      "patch_median_count": 3039.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 14.354005639984196,
+          "residual_xy": [
+            -14.249235103895671,
+            -1.7311201190574366
+          ],
+          "predicted_camera_z_m": 0.755973989244991,
+          "raw_depth_minus_predicted_z_m": 0.003776010755008996,
+          "conditional_sensor_point_D405_reference": [
+            1.0974575717129775,
+            -0.013633310123788541,
+            0.7195218523010685
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.012982603503671086,
+            0.0019015950095101295,
+            0.004290135599073541
+          ],
+          "conditional_sensor_landmark_distance_m": 0.013804684740049832
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 4.5642406601687435,
+          "residual_xy": [
+            -3.891548656500163,
+            2.384982569753788
+          ],
+          "predicted_camera_z_m": 0.7429940018080191,
+          "raw_depth_minus_predicted_z_m": 0.016755998191980925,
+          "conditional_sensor_point_D405_reference": [
+            1.0922554857500943,
+            -0.016788436434828774,
+            0.7322623688053066
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.007780517540787901,
+            -0.0012535313015301034,
+            0.017030652103311672
+          ],
+          "conditional_sensor_landmark_distance_m": 0.018765684239868748
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 2.5131048379800984,
+          "residual_xy": [
+            2.4905627761087317,
+            -0.33584666879477254
+          ],
+          "predicted_camera_z_m": 0.7472829719108129,
+          "raw_depth_minus_predicted_z_m": 0.012467028089187093,
+          "conditional_sensor_point_D405_reference": [
+            1.0857624048618058,
+            -0.01484713922690958,
+            0.7278051256444836
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0012874366524993075,
+            0.0006877659063890904,
+            0.012573408942488706
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012657848455059208
+        }
+      }
+    },
+    {
+      "frame": 828961,
+      "point_id": 236,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.064361460867695,
+        -0.03909428857297588,
+        0.7109463849822875
+      ],
+      "L515_uv_native": [
+        914.6696856512134,
+        397.869230833769
+      ],
+      "L515_uv_undistorted": [
+        912.5570068359375,
+        397.69268798828125
+      ],
+      "raw_depth_centre_count": 3038,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3036.0,
+        3041.6
+      ],
+      "patch_median_count": 3038.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 15.84955988178104,
+          "residual_xy": [
+            -15.75805771538478,
+            -1.7006367880194944
+          ],
+          "predicted_camera_z_m": 0.7534800421512551,
+          "raw_depth_minus_predicted_z_m": 0.006019957848744983,
+          "conditional_sensor_point_D405_reference": [
+            1.0790441162805042,
+            -0.03729610188440468,
+            0.7175336398191344
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.01468265541280922,
+            0.0017981866885712003,
+            0.0065872548368469674
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01619276911537413
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 6.103501231893549,
+          "residual_xy": [
+            -5.796724467877084,
+            1.9106838386402956
+          ],
+          "predicted_camera_z_m": 0.740597387892793,
+          "raw_depth_minus_predicted_z_m": 0.018902612107207117,
+          "conditional_sensor_point_D405_reference": [
+            1.0738112376573121,
+            -0.04041992727790775,
+            0.7301891113276504
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.009449776789617115,
+            -0.0013256387049318669,
+            0.019242726345362948
+          ],
+          "conditional_sensor_landmark_distance_m": 0.021478782939266486
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 0.9857398638546218,
+          "residual_xy": [
+            0.7332176047002577,
+            -0.6588437017607021
+          ],
+          "predicted_camera_z_m": 0.7449117395323759,
+          "raw_depth_minus_predicted_z_m": 0.014588260467624181,
+          "conditional_sensor_point_D405_reference": [
+            1.0673235306257325,
+            -0.03848053307298859,
+            0.7257059219941269
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0029620697580374777,
+            0.0006137554999872882,
+            0.014759537011839408
+          ],
+          "conditional_sensor_landmark_distance_m": 0.015066336179347061
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 123,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0319676967299014,
+        -0.02192142610816818,
+        0.711860889769823
+      ],
+      "L515_uv_native": [
+        376.8382245537612,
+        442.38940570448744
+      ],
+      "L515_uv_undistorted": [
+        379.6826477050781,
+        441.73760986328125
+      ],
+      "raw_depth_centre_count": 3081,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3072.4,
+        3088.0
+      ],
+      "patch_median_count": 3081.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.141023102324656,
+          "residual_xy": [
+            -12.04603436409684,
+            -1.515750002533082
+          ],
+          "predicted_camera_z_m": 0.7703306656771686,
+          "raw_depth_minus_predicted_z_m": -8.066567716857875e-05,
+          "conditional_sensor_point_D405_reference": [
+            1.0422803804200143,
+            -0.02035824176843915,
+            0.7121232565627781
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010312683690112845,
+            0.0015631843397290283,
+            0.00026236679295510434
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010433782943225296
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.439753763318848,
+          "residual_xy": [
+            -11.129145991563917,
+            2.6476547478522434
+          ],
+          "predicted_camera_z_m": 0.7577250551934238,
+          "raw_depth_minus_predicted_z_m": 0.012524944806576177,
+          "conditional_sensor_point_D405_reference": [
+            1.0371169841117798,
+            -0.02342219875832611,
+            0.7245018792575375
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.005149287381878365,
+            -0.0015007726501579284,
+            0.012640989487714527
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01373179137320193
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.409166156027621,
+          "residual_xy": [
+            5.391038461551261,
+            -0.4424735128678776
+          ],
+          "predicted_camera_z_m": 0.7619016976500159,
+          "raw_depth_minus_predicted_z_m": 0.008348302349984071,
+          "conditional_sensor_point_D405_reference": [
+            1.0245361037383118,
+            -0.021336550921297624,
+            0.7200142017828312
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.007431592991589575,
+            0.0005848751868705558,
+            0.008153312013008174
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011047495198384272
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 1179,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.066194385570176,
+        -0.009336174463622966,
+        0.7157581045646543
+      ],
+      "L515_uv_native": [
+        419.692916065562,
+        456.9154324412075
+      ],
+      "L515_uv_undistorted": [
+        421.7110900878906,
+        456.2354431152344
+      ],
+      "raw_depth_centre_count": 3095,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3090.4,
+        3101.0
+      ],
+      "patch_median_count": 3096.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 13.159449512710413,
+          "residual_xy": [
+            -12.914476121172754,
+            -2.527334167306151
+          ],
+          "predicted_camera_z_m": 0.7727137752465519,
+          "raw_depth_minus_predicted_z_m": 0.0012862247534480842,
+          "conditional_sensor_point_D405_reference": [
+            1.076862356819271,
+            -0.00680635551676971,
+            0.7174471853406872
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.01066797124909491,
+            0.002529818946853255,
+            0.001689080776032914
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011093177558451739
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.552035727806787,
+          "residual_xy": [
+            -11.38938761356826,
+            1.9316778314259295
+          ],
+          "predicted_camera_z_m": 0.7598951529745055,
+          "raw_depth_minus_predicted_z_m": 0.014104847025494527,
+          "conditional_sensor_point_D405_reference": [
+            1.0716877016774413,
+            -0.009926327166237703,
+            0.7300370276073376
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.005493316107265223,
+            -0.0005901527026147373,
+            0.0142789230426833
+          ],
+          "conditional_sensor_landmark_distance_m": 0.015310533802765177
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.0091089209299655,
+          "residual_xy": [
+            4.856039512231121,
+            -1.2288419090307343
+          ],
+          "predicted_camera_z_m": 0.7640672208502501,
+          "raw_depth_minus_predicted_z_m": 0.009932779149749882,
+          "conditional_sensor_point_D405_reference": [
+            1.059105376853652,
+            -0.00783937322698209,
+            0.7255551837223676
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.00708900871652407,
+            0.001496801236640876,
+            0.009797079157713329
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012185122836781942
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 616,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.059550568959852,
+        -0.023569941676123807,
+        0.713479946877288
+      ],
+      "L515_uv_native": [
+        410.49685962932386,
+        440.0110719917416
+      ],
+      "L515_uv_undistorted": [
+        412.64404296875,
+        439.45819091796875
+      ],
+      "raw_depth_centre_count": 3089,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3087.0,
+        3095.0
+      ],
+      "patch_median_count": 3089.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.695937326801038,
+          "residual_xy": [
+            -12.529612784534606,
+            -2.0483232351576817
+          ],
+          "predicted_camera_z_m": 0.7713230030337596,
+          "raw_depth_minus_predicted_z_m": 0.0009269969662404343,
+          "conditional_sensor_point_D405_reference": [
+            1.0699747725943811,
+            -0.021500962665796812,
+            0.7147798346258522
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010424203634529228,
+            0.0020689790103269948,
+            0.0012998877485641547
+          ],
+          "conditional_sensor_landmark_distance_m": 0.0107067457109139
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.32970013792505,
+          "residual_xy": [
+            -11.127372538739223,
+            2.1315922685661803
+          ],
+          "predicted_camera_z_m": 0.7585255420160668,
+          "raw_depth_minus_predicted_z_m": 0.01372445798393318,
+          "conditional_sensor_point_D405_reference": [
+            1.0647905711273584,
+            -0.024612441644298953,
+            0.7273476620190407
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.00524000216750653,
+            -0.0010424999681751465,
+            0.013867715141752668
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014861290393230142
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.283573487417612,
+          "residual_xy": [
+            5.198115338087177,
+            -0.9464384443190852
+          ],
+          "predicted_camera_z_m": 0.7627150382142623,
+          "raw_depth_minus_predicted_z_m": 0.00953496178573765,
+          "conditional_sensor_point_D405_reference": [
+            1.0522110616367735,
+            -0.02252353383316843,
+            0.7228479895037779
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.00733950732307842,
+            0.0010464078429553783,
+            0.009368042626489936
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011946696604963766
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 2366,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0369252746896374,
+        -0.014232597574420032,
+        0.720082741814956
+      ],
+      "L515_uv_native": [
+        386.1871003599717,
+        450.81109696610855
+      ],
+      "L515_uv_undistorted": [
+        388.85369873046875,
+        450.0950622558594
+      ],
+      "raw_depth_centre_count": 3047,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3042.8,
+        3089.0
+      ],
+      "patch_median_count": 3046.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.253023185868988,
+          "residual_xy": [
+            -12.156772825111204,
+            -1.5327921163943756
+          ],
+          "predicted_camera_z_m": 0.7780270074078163,
+          "raw_depth_minus_predicted_z_m": -0.016527007407816208,
+          "conditional_sensor_point_D405_reference": [
+            1.0527907517604789,
+            -0.01341486704824784,
+            0.7039777247931179
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.015865477070841516,
+            0.0008177305261721918,
+            -0.016105017021838086
+          ],
+          "conditional_sensor_landmark_distance_m": 0.022621972044287526
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.390194071280872,
+          "residual_xy": [
+            -11.060362352682773,
+            2.721195621192919
+          ],
+          "predicted_camera_z_m": 0.7653997997688787,
+          "raw_depth_minus_predicted_z_m": -0.0038997997688786645,
+          "conditional_sensor_point_D405_reference": [
+            1.0476952919315174,
+            -0.016512271894451785,
+            0.7164160669645905
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010770017241880092,
+            -0.0022796743200317535,
+            -0.0036666748503655366
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011603218986734234
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.253603863202166,
+          "residual_xy": [
+            5.240460461002272,
+            -0.37138619808035855
+          ],
+          "predicted_camera_z_m": 0.7695671632716383,
+          "raw_depth_minus_predicted_z_m": -0.008067163271638256,
+          "conditional_sensor_point_D405_reference": [
+            1.035109589425796,
+            -0.014412638402906575,
+            0.711934048202346
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.001815685263841349,
+            -0.00018004082848654263,
+            -0.008148693612610058
+          ],
+          "conditional_sensor_landmark_distance_m": 0.008350469164630494
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 20,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0275464529602871,
+        -0.024862800583863413,
+        0.7107892294909927
+      ],
+      "L515_uv_native": [
+        370.90317456235573,
+        439.6501202718648
+      ],
+      "L515_uv_undistorted": [
+        373.8692932128906,
+        439.0150451660156
+      ],
+      "raw_depth_centre_count": 3092,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3090.0,
+        3094.6
+      ],
+      "patch_median_count": 3092.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 11.994515116581036,
+          "residual_xy": [
+            -11.81734423137425,
+            -2.0539640208866103
+          ],
+          "predicted_camera_z_m": 0.7695214453681778,
+          "raw_depth_minus_predicted_z_m": 0.0034785546318222282,
+          "conditional_sensor_point_D405_reference": [
+            1.0364233998167314,
+            -0.022723019620020497,
+            0.7146085727837812
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.008876946856444246,
+            0.002139780963842916,
+            0.0038193432927885462
+          ],
+          "conditional_sensor_landmark_distance_m": 0.009897789210400914
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.173756410357397,
+          "residual_xy": [
+            -10.984005684869658,
+            2.050475903968163
+          ],
+          "predicted_camera_z_m": 0.7569411436130324,
+          "raw_depth_minus_predicted_z_m": 0.01605885638696758,
+          "conditional_sensor_point_D405_reference": [
+            1.0312388753552435,
+            -0.02577179523764056,
+            0.7269514560829651
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.003692422394956374,
+            -0.0009089946537771468,
+            0.016162226591972417
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01660354850125813
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.678152463419699,
+          "residual_xy": [
+            5.584847166890029,
+            -1.0251329281218204
+          ],
+          "predicted_camera_z_m": 0.7611202450138448,
+          "raw_depth_minus_predicted_z_m": 0.011879754986155233,
+          "conditional_sensor_point_D405_reference": [
+            1.0186595227702366,
+            -0.02369108088755703,
+            0.7224627069505993
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.00888693019005049,
+            0.0011717196963063822,
+            0.011673477459606674
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014718034218246955
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 1625,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0224965448481644,
+        -0.02110742985790118,
+        0.7118074994368895
+      ],
+      "L515_uv_native": [
+        365.52839615442696,
+        444.1811623949156
+      ],
+      "L515_uv_undistorted": [
+        368.6182861328125,
+        443.4891662597656
+      ],
+      "raw_depth_centre_count": 3089,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3085.4,
+        3093.6
+      ],
+      "patch_median_count": 3089.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.111862605327149,
+          "residual_xy": [
+            -11.939366528603273,
+            -2.0368462548729553
+          ],
+          "predicted_camera_z_m": 0.7704792462486705,
+          "raw_depth_minus_predicted_z_m": 0.0017707537513295124,
+          "conditional_sensor_point_D405_reference": [
+            1.032064406164182,
+            -0.01902750797662805,
+            0.7139310557525526
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0095678613160175,
+            0.002079921881273133,
+            0.0021235563156630777
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010018958859109837
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.378692782951182,
+          "residual_xy": [
+            -11.179239889528503,
+            2.121142367018308
+          ],
+          "predicted_camera_z_m": 0.7579398825091889,
+          "raw_depth_minus_predicted_z_m": 0.014310117490811125,
+          "conditional_sensor_point_D405_reference": [
+            1.0268915502566964,
+            -0.022069251046431856,
+            0.7262382995105994
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.004395005408531993,
+            -0.0009618211885306753,
+            0.014430800073709893
+          ],
+          "conditional_sensor_landmark_distance_m": 0.015115858007639444
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.482390554476948,
+          "residual_xy": [
+            5.395584367551578,
+            -0.9717384033015719
+          ],
+          "predicted_camera_z_m": 0.7621117371186814,
+          "raw_depth_minus_predicted_z_m": 0.010138262881318583,
+          "conditional_sensor_point_D405_reference": [
+            1.01431096831366,
+            -0.019988682572853585,
+            0.7217563202615342
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.008185576534504468,
+            0.0011187472850475964,
+            0.009948820824644766
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012931909932060188
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 973,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0904907765991059,
+        -0.015069491590022887,
+        0.7153032606364
+      ],
+      "L515_uv_native": [
+        447.5018123683248,
+        449.07562546027066
+      ],
+      "L515_uv_undistorted": [
+        449.0013122558594,
+        448.55084228515625
+      ],
+      "raw_depth_centre_count": 3090,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3084.4,
+        3094.0
+      ],
+      "patch_median_count": 3090.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.581681380417471,
+          "residual_xy": [
+            -12.386900547295795,
+            -2.205312039088085
+          ],
+          "predicted_camera_z_m": 0.7719244829088884,
+          "raw_depth_minus_predicted_z_m": 0.0005755170911115881,
+          "conditional_sensor_point_D405_reference": [
+            1.1009252589497365,
+            -0.012873758914967164,
+            0.7162577381389992
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010434482350630603,
+            0.0021957326750557237,
+            0.0009544775025991381
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010705638290587667
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 10.666203024637758,
+          "residual_xy": [
+            -10.436669024060393,
+            2.200869520214667
+          ],
+          "predicted_camera_z_m": 0.7589296905282016,
+          "raw_depth_minus_predicted_z_m": 0.01357030947179838,
+          "conditional_sensor_point_D405_reference": [
+            1.0957465946806733,
+            -0.0160408852928602,
+            0.7290205267673908
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.005255818081567387,
+            -0.0009713937028373119,
+            0.01371726613099078
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014721773654722091
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.754446509434842,
+          "residual_xy": [
+            5.678408262300309,
+            -0.9323809503558209
+          ],
+          "predicted_camera_z_m": 0.7631191610072985,
+          "raw_depth_minus_predicted_z_m": 0.009380838992701479,
+          "conditional_sensor_point_D405_reference": [
+            1.0831654778217397,
+            -0.013946241918625694,
+            0.72452119930717
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.007325298777366207,
+            0.0011232496713971928,
+            0.00921793867076992
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011827598460382914
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 564,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.057027483232235,
+        -0.0029333800931134464,
+        0.7177405509180753
+      ],
+      "L515_uv_native": [
+        409.5402224137774,
+        464.206026232086
+      ],
+      "L515_uv_undistorted": [
+        411.7756652832031,
+        463.42449951171875
+      ],
+      "raw_depth_centre_count": 3105,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3103.0,
+        3110.0
+      ],
+      "patch_median_count": 3106.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.922248092001611,
+          "residual_xy": [
+            -12.744440923825607,
+            -2.136286799649895
+          ],
+          "predicted_camera_z_m": 0.7746070046820585,
+          "raw_depth_minus_predicted_z_m": 0.0018929953179415149,
+          "conditional_sensor_point_D405_reference": [
+            1.067388371526894,
+            -0.0006899267449476595,
+            0.7200151067492534
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010360888294658865,
+            0.002243453348165787,
+            0.0022745558311780822
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01084226421966102
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.61170718170042,
+          "residual_xy": [
+            -11.359194685917828,
+            2.4084102144296935
+          ],
+          "predicted_camera_z_m": 0.7618619651176252,
+          "raw_depth_minus_predicted_z_m": 0.014638034882374806,
+          "conditional_sensor_point_D405_reference": [
+            1.062208136993014,
+            -0.0037878147227150896,
+            0.7325305867054945
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.00518065376077903,
+            -0.0008544346296016432,
+            0.01479003578741922
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01569440634488854
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 4.956830950665192,
+          "residual_xy": [
+            4.895285303421701,
+            -0.7786879166751532
+          ],
+          "predicted_camera_z_m": 0.7660214486692255,
+          "raw_depth_minus_predicted_z_m": 0.010478551330774466,
+          "conditional_sensor_point_D405_reference": [
+            1.0496251487848771,
+            -0.0017068025761488165,
+            0.7280608117031491
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.007402334447357939,
+            0.00122657751696463,
+            0.010320260785073754
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01275957798469825
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 1011,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0090973919856465,
+        -0.014745248382302569,
+        0.7155448586797325
+      ],
+      "L515_uv_native": [
+        351.15910546577516,
+        451.3331490934777
+      ],
+      "L515_uv_undistorted": [
+        354.57025146484375,
+        450.5391540527344
+      ],
+      "raw_depth_centre_count": 3096,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3095.0,
+        3097.0
+      ],
+      "patch_median_count": 3096.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 11.762993890831485,
+          "residual_xy": [
+            -11.667979907739266,
+            -1.492069082962189
+          ],
+          "predicted_camera_z_m": 0.7742350894331558,
+          "raw_depth_minus_predicted_z_m": -0.00023508943315575515,
+          "conditional_sensor_point_D405_reference": [
+            1.019195654341988,
+            -0.013210932688150392,
+            0.7156456038237808
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.01009826235634148,
+            0.0015343156941521763,
+            0.000100745144048342
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01021465500400647
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.408442536974473,
+          "residual_xy": [
+            -11.078072277546426,
+            2.7255963994887225
+          ],
+          "predicted_camera_z_m": 0.7617980102841132,
+          "raw_depth_minus_predicted_z_m": 0.012201989715886818,
+          "conditional_sensor_point_D405_reference": [
+            1.0140225070796216,
+            -0.01622565268478237,
+            0.727856039455899
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.004925115093975085,
+            -0.001480404302479801,
+            0.012311180776166553
+          ],
+          "conditional_sensor_landmark_distance_m": 0.013342171026154431
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.4970330040505075,
+          "residual_xy": [
+            5.483726214385911,
+            -0.3822546968675624
+          ],
+          "predicted_camera_z_m": 0.7659556054843744,
+          "raw_depth_minus_predicted_z_m": 0.008044394515625664,
+          "conditional_sensor_point_D405_reference": [
+            1.0014410113195171,
+            -0.014150692203551765,
+            0.7233869863993914
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.007656380666129392,
+            0.0005945561787508036,
+            0.007842127719658865
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010976002420089595
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 2216,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0425799617234763,
+        -0.004189469435102025,
+        0.7206821155805982
+      ],
+      "L515_uv_native": [
+        392.7845660572797,
+        462.4483107388534
+      ],
+      "L515_uv_undistorted": [
+        395.3469543457031,
+        461.6325378417969
+      ],
+      "raw_depth_centre_count": 3044,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3040.4,
+        3105.2
+      ],
+      "patch_median_count": 3044.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 11.93310649019581,
+          "residual_xy": [
+            -11.821667786261514,
+            -1.6270222056321586
+          ],
+          "predicted_camera_z_m": 0.7779770779856532,
+          "raw_depth_minus_predicted_z_m": -0.016977077985653177,
+          "conditional_sensor_point_D405_reference": [
+            1.0581824691592547,
+            -0.003540047165658769,
+            0.7041111133270239
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.015602507435778401,
+            0.0006494222694432561,
+            -0.01657100225357433
+          ],
+          "conditional_sensor_landmark_distance_m": 0.022769675080148478
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.007932214529239,
+          "residual_xy": [
+            -10.638030566041152,
+            2.82964261270655
+          ],
+          "predicted_camera_z_m": 0.7653284351417995,
+          "raw_depth_minus_predicted_z_m": -0.00432843514179948,
+          "conditional_sensor_point_D405_reference": [
+            1.0531046247169118,
+            -0.006647381214335092,
+            0.7165694534340681
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010524662993435463,
+            -0.002457911779233067,
+            -0.004112662146530166
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011563902947162117
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.634673421129525,
+          "residual_xy": [
+            5.625226276117644,
+            -0.32615012687278977
+          ],
+          "predicted_camera_z_m": 0.7694839312295587,
+          "raw_depth_minus_predicted_z_m": -0.008483931229558705,
+          "conditional_sensor_point_D405_reference": [
+            1.0405164128744435,
+            -0.00454656078682724,
+            0.7120991220993435
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.0020635488490328147,
+            -0.0003570913517252153,
+            -0.008582993481254797
+          ],
+          "conditional_sensor_landmark_distance_m": 0.008834790613539404
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 683,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0615409772694302,
+        0.0021864779412933562,
+        0.720493284104311
+      ],
+      "L515_uv_native": [
+        415.3412812490441,
+        469.6272810608391
+      ],
+      "L515_uv_undistorted": [
+        417.48394775390625,
+        468.81256103515625
+      ],
+      "raw_depth_centre_count": 3113,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3109.4,
+        3116.0
+      ],
+      "patch_median_count": 3113.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.361911127717063,
+          "residual_xy": [
+            -12.211640277119614,
+            -1.9216369250732441
+          ],
+          "predicted_camera_z_m": 0.7769830618771963,
+          "raw_depth_minus_predicted_z_m": 0.0012669381228036514,
+          "conditional_sensor_point_D405_reference": [
+            1.0716760079130807,
+            0.0042076549516098585,
+            0.7221238313184672
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010135030643650511,
+            0.0020211770103165023,
+            0.0016305472141562305
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010462441726115348
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.060855078631583,
+          "residual_xy": [
+            -10.724035653275223,
+            2.7087957430880465
+          ],
+          "predicted_camera_z_m": 0.7642156523071132,
+          "raw_depth_minus_predicted_z_m": 0.014034347692886806,
+          "conditional_sensor_point_D405_reference": [
+            1.0664906579810438,
+            0.001105247243446919,
+            0.734660096072884
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.004949680711613613,
+            -0.0010812306978464372,
+            0.014166811968572945
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01504549634680714
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.467367957336772,
+          "residual_xy": [
+            5.44484673632428,
+            -0.49573823622120017
+          ],
+          "predicted_camera_z_m": 0.7683695778765609,
+          "raw_depth_minus_predicted_z_m": 0.009880422123439092,
+          "conditional_sensor_point_D405_reference": [
+            1.0539071928060049,
+            0.0031844117426557267,
+            0.7301955184867758
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.0076337844634253305,
+            0.0009979338013623705,
+            0.009702234382464758
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012385632366505023
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 2828,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0444334783029412,
+        -0.009951130991832546,
+        0.7193225520477596
+      ],
+      "L515_uv_native": [
+        395.66308190518134,
+        456.2648592195042
+      ],
+      "L515_uv_undistorted": [
+        398.1495361328125,
+        455.5192565917969
+      ],
+      "raw_depth_centre_count": 3087,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3051.2,
+        3093.0
+      ],
+      "patch_median_count": 3086.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 13.26547136841989,
+          "residual_xy": [
+            -13.089465597108415,
+            -2.1537458086977495
+          ],
+          "predicted_camera_z_m": 0.7768610040383638,
+          "raw_depth_minus_predicted_z_m": -0.005361004038363815,
+          "conditional_sensor_point_D405_reference": [
+            1.0573839580252549,
+            -0.008084663075543154,
+            0.7143791188938518
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.012950479722313668,
+            0.0018664679162893917,
+            -0.0049434331539078835
+          ],
+          "conditional_sensor_landmark_distance_m": 0.013986999637797622
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 12.088665046628295,
+          "residual_xy": [
+            -11.885310330935283,
+            2.207990250643263
+          ],
+          "predicted_camera_z_m": 0.7641898786121778,
+          "raw_depth_minus_predicted_z_m": 0.007310121387822166,
+          "conditional_sensor_point_D405_reference": [
+            1.0522281155834088,
+            -0.01117322107215326,
+            0.7268393900181065
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.007794637280467587,
+            -0.001222090080320714,
+            0.007516837970346857
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010897372507669988
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 4.49079248557541,
+          "residual_xy": [
+            4.395661893782631,
+            -0.919442039526075
+          ],
+          "predicted_camera_z_m": 0.76835420710571,
+          "raw_depth_minus_predicted_z_m": 0.003145792894289956,
+          "conditional_sensor_point_D405_reference": [
+            1.039644921420606,
+            -0.009086894808185982,
+            0.7223630863305887
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.004788556882335149,
+            0.0008642361836465641,
+            0.0030405342828290216
+          ],
+          "conditional_sensor_landmark_distance_m": 0.005737772208927598
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 1173,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0983198497842717,
+        -0.0003881873977492705,
+        0.717314941749981
+      ],
+      "L515_uv_native": [
+        457.96138941655147,
+        465.39655610244535
+      ],
+      "L515_uv_undistorted": [
+        459.3485107421875,
+        464.77569580078125
+      ],
+      "raw_depth_centre_count": 3095,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3093.0,
+        3098.2
+      ],
+      "patch_median_count": 3095.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.935098877486004,
+          "residual_xy": [
+            -12.829425693412418,
+            -1.650036165527581
+          ],
+          "predicted_camera_z_m": 0.772996395126808,
+          "raw_depth_minus_predicted_z_m": 0.000753604873192093,
+          "conditional_sensor_point_D405_reference": [
+            1.1091247946341676,
+            0.001365802152422796,
+            0.7184351183789829
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010804944849895914,
+            0.0017539895501720664,
+            0.0011201766290018789
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011003549801385328
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.16329350382346,
+          "residual_xy": [
+            -10.737621484990484,
+            3.0532944007379683
+          ],
+          "predicted_camera_z_m": 0.759973130954044,
+          "raw_depth_minus_predicted_z_m": 0.013776869045956097,
+          "conditional_sensor_point_D405_reference": [
+            1.1039580982045123,
+            -0.0018131021702045697,
+            0.7312295688299855
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0056382484202406324,
+            -0.0014249147724552992,
+            0.01391462708000446
+          ],
+          "conditional_sensor_landmark_distance_m": 0.015081017012545963
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.301542611174436,
+          "residual_xy": [
+            5.2989120463998916,
+            -0.1669885703165619
+          ],
+          "predicted_camera_z_m": 0.7641450208924735,
+          "raw_depth_minus_predicted_z_m": 0.009604979107526557,
+          "conditional_sensor_point_D405_reference": [
+            1.0913741054908006,
+            0.00028059779429464443,
+            0.7267469425797101
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.006945744293471057,
+            0.0006687851920439149,
+            0.00943200082972906
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01173257333560684
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 1012,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0312661380785808,
+        0.0003952359789173491,
+        0.7206711538053729
+      ],
+      "L515_uv_native": [
+        380.19477076224763,
+        468.05740857608305
+      ],
+      "L515_uv_undistorted": [
+        383.0306701660156,
+        467.14752197265625
+      ],
+      "raw_depth_centre_count": 3119,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3111.2,
+        3126.6
+      ],
+      "patch_median_count": 3119.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.497295648004922,
+          "residual_xy": [
+            -12.406319626058234,
+            -1.5052015977021256
+          ],
+          "predicted_camera_z_m": 0.7780262137835972,
+          "raw_depth_minus_predicted_z_m": 0.0017237862164029005,
+          "conditional_sensor_point_D405_reference": [
+            1.0413931601790858,
+            0.002089981752265699,
+            0.7227426795257451
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010127022100504979,
+            0.0016947457733483497,
+            0.0020715257203721693
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010474729527322498
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.802786181435467,
+          "residual_xy": [
+            -11.412086403563421,
+            3.011651633620147
+          ],
+          "predicted_camera_z_m": 0.7654629381574561,
+          "raw_depth_minus_predicted_z_m": 0.014287061842543913,
+          "conditional_sensor_point_D405_reference": [
+            1.0362003722781812,
+            -0.0009545275599681033,
+            0.735077588062474
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.004934234199600374,
+            -0.0013497635388854525,
+            0.014406434257101086
+          ],
+          "conditional_sensor_landmark_distance_m": 0.015287703449229587
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 4.919264151117788,
+          "residual_xy": [
+            4.916325589764881,
+            -0.17000730541832354
+          ],
+          "predicted_camera_z_m": 0.7696076706613213,
+          "raw_depth_minus_predicted_z_m": 0.010142329338678757,
+          "conditional_sensor_point_D405_reference": [
+            1.0236176021653285,
+            0.0011161638100873686,
+            0.7306214634044425
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.007648535913252319,
+            0.0007209278311700194,
+            0.009950309599069507
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01257093869491856
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 128,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0546080135821037,
+        -0.03244042044316993,
+        0.7110302437515224
+      ],
+      "L515_uv_native": [
+        403.51241364484116,
+        429.25078522355204
+      ],
+      "L515_uv_undistorted": [
+        405.77484130859375,
+        428.7788391113281
+      ],
+      "raw_depth_centre_count": 3085,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3083.4,
+        3087.0
+      ],
+      "patch_median_count": 3085.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.487480619872631,
+          "residual_xy": [
+            -12.397590571433682,
+            -1.495633730160307
+          ],
+          "predicted_camera_z_m": 0.769448505795316,
+          "raw_depth_minus_predicted_z_m": 0.0018014942046840066,
+          "conditional_sensor_point_D405_reference": [
+            1.0646316467679318,
+            -0.03084195630591851,
+            0.7131721132281443
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010023633185828107,
+            0.0015984641372514194,
+            0.0021418694766219826
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010373809073671945
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.380351664952368,
+          "residual_xy": [
+            -11.098660865353509,
+            2.5163725904274656
+          ],
+          "predicted_camera_z_m": 0.7566698408481547,
+          "raw_depth_minus_predicted_z_m": 0.014580159151845296,
+          "conditional_sensor_point_D405_reference": [
+            1.059440806685355,
+            -0.03394607764438821,
+            0.7257194165499468
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.004832793103251243,
+            -0.0015056572012182787,
+            0.01468917279842441
+          ],
+          "conditional_sensor_landmark_distance_m": 0.015536881614030044
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.331400027892538,
+          "residual_xy": [
+            5.306433670391584,
+            -0.5153522670436814
+          ],
+          "predicted_camera_z_m": 0.7608699466802271,
+          "raw_depth_minus_predicted_z_m": 0.010380053319772875,
+          "conditional_sensor_point_D405_reference": [
+            1.0468631168293605,
+            -0.031856292435696994,
+            0.7212087741187526
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.007744896752743147,
+            0.0005841280074729352,
+            0.010178530367230265
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012803402347672837
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 275,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0254365380109927,
+        -0.018186249450758453,
+        0.7134823941269886
+      ],
+      "L515_uv_native": [
+        369.6949547043151,
+        446.99441999412517
+      ],
+      "L515_uv_undistorted": [
+        372.7008972167969,
+        446.2808532714844
+      ],
+      "raw_depth_centre_count": 3089,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3087.0,
+        3093.0
+      ],
+      "patch_median_count": 3090.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.00515435499119,
+          "residual_xy": [
+            -11.899093556956586,
+            -1.5922636747593515
+          ],
+          "predicted_camera_z_m": 0.7719297124935998,
+          "raw_depth_minus_predicted_z_m": 0.0005702875064002022,
+          "conditional_sensor_point_D405_reference": [
+            1.0354196623919047,
+            -0.016530155322756312,
+            0.7143929549521767
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.00998312438091209,
+            0.0016560941280021405,
+            0.0009105608251881447
+          ],
+          "conditional_sensor_landmark_distance_m": 0.0101604400092679
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.376513315393789,
+          "residual_xy": [
+            -11.071826712720053,
+            2.615283628754412
+          ],
+          "predicted_camera_z_m": 0.7593750763570614,
+          "raw_depth_minus_predicted_z_m": 0.013124923642938602,
+          "conditional_sensor_point_D405_reference": [
+            1.0302483170027483,
+            -0.019577428742899812,
+            0.7267187202869034
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.004811778991755666,
+            -0.001391179292141359,
+            0.01323632615991488
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014152347052698754
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.469718122214485,
+          "residual_xy": [
+            5.44793088727431,
+            -0.48771444920578233
+          ],
+          "predicted_camera_z_m": 0.7635438947187041,
+          "raw_depth_minus_predicted_z_m": 0.008956105281295867,
+          "conditional_sensor_point_D405_reference": [
+            1.0176672661655377,
+            -0.017496655379537672,
+            0.7222389492073511
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.00776927184545495,
+            0.000689594071220781,
+            0.00875655508036255
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011726652628395921
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 1577,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.104475976560517,
+        0.00213606169924228,
+        0.7157337451458076
+      ],
+      "L515_uv_native": [
+        464.3314698684479,
+        468.77290422742743
+      ],
+      "L515_uv_undistorted": [
+        465.6338806152344,
+        468.1482238769531
+      ],
+      "raw_depth_centre_count": 3098,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3097.4,
+        3099.0
+      ],
+      "patch_median_count": 3098.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.60490134295793,
+          "residual_xy": [
+            -12.426550185321048,
+            -2.1129099264758224
+          ],
+          "predicted_camera_z_m": 0.7711334211897773,
+          "raw_depth_minus_predicted_z_m": 0.00336657881022262,
+          "conditional_sensor_point_D405_reference": [
+            1.1142740642333409,
+            0.004458249809329733,
+            0.7194737342653903
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.009798087672823863,
+            0.002322188110087453,
+            0.0037399891195827317
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010741629218957974
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 10.586841598509928,
+          "residual_xy": [
+            -10.243874341170681,
+            2.6728736435239853
+          ],
+          "predicted_camera_z_m": 0.758072554116971,
+          "raw_depth_minus_predicted_z_m": 0.016427445883028913,
+          "conditional_sensor_point_D405_reference": [
+            1.1091060581635428,
+            0.0012714148443093362,
+            0.7322978365504418
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.004630081603025804,
+            -0.0008646468549329436,
+            0.016564091404634218
+          ],
+          "conditional_sensor_landmark_distance_m": 0.017220754742330563
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.825170160070053,
+          "residual_xy": [
+            5.796598620315649,
+            -0.5762393849133218
+          ],
+          "predicted_camera_z_m": 0.7622433857145433,
+          "raw_depth_minus_predicted_z_m": 0.012256614285456657,
+          "conditional_sensor_point_D405_reference": [
+            1.0965216620101992,
+            0.0033649691537650933,
+            0.7278175723344119
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.00795431455031781,
+            0.0012289074545228135,
+            0.012083827188604346
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014518960466274194
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 1956,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0184766190445653,
+        -0.008356822316433343,
+        0.7170528942571112
+      ],
+      "L515_uv_native": [
+        363.04570338670305,
+        458.10352913927125
+      ],
+      "L515_uv_undistorted": [
+        366.2160949707031,
+        457.25811767578125
+      ],
+      "raw_depth_centre_count": 3107,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3099.0,
+        3112.0
+      ],
+      "patch_median_count": 3107.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 11.884332432413142,
+          "residual_xy": [
+            -11.82929993081899,
+            -1.1423749431918964
+          ],
+          "predicted_camera_z_m": 0.7751801498399222,
+          "raw_depth_minus_predicted_z_m": 0.0015698501600778236,
+          "conditional_sensor_point_D405_reference": [
+            1.02809786533575,
+            -0.007021500841985905,
+            0.7189392123396728
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.00962124629118466,
+            0.0013353214744474384,
+            0.0018863180825616777
+          ],
+          "conditional_sensor_landmark_distance_m": 0.009894931002505991
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.532516573138315,
+          "residual_xy": [
+            -11.077489668248234,
+            3.2075163537484173
+          ],
+          "predicted_camera_z_m": 0.7626897245635128,
+          "raw_depth_minus_predicted_z_m": 0.014060275436487246,
+          "conditional_sensor_point_D405_reference": [
+            1.0229139163835275,
+            -0.010047415782861599,
+            0.7311994678738392
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.004437297338962143,
+            -0.001690593466428256,
+            0.014146573616727998
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014922240416123682
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.40136017514847,
+          "residual_xy": [
+            5.4009785036798235,
+            0.06421015860723855
+          ],
+          "predicted_camera_z_m": 0.7668419389738194,
+          "raw_depth_minus_predicted_z_m": 0.009908061026180692,
+          "conditional_sensor_point_D405_reference": [
+            1.0103320627958623,
+            -0.007974789698001548,
+            0.7267356751127004
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.008144556248703028,
+            0.0003820326184317945,
+            0.009682780855589268
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012658435547381022
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 1006,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0412797424323124,
+        0.006271288462970963,
+        0.7261611099587613
+      ],
+      "L515_uv_native": [
+        393.987062331952,
+        474.67160613087714
+      ],
+      "L515_uv_undistorted": [
+        396.5628967285156,
+        473.7336730957031
+      ],
+      "raw_depth_centre_count": 3116,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3110.0,
+        3119.0
+      ],
+      "patch_median_count": 3115.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.484105733720618,
+          "residual_xy": [
+            -12.313829113157112,
+            -2.054874337442641
+          ],
+          "predicted_camera_z_m": 0.7829563087982498,
+          "raw_depth_minus_predicted_z_m": -0.0042063087982497915,
+          "conditional_sensor_point_D405_reference": [
+            1.0532909555781043,
+            0.008027975600953696,
+            0.7223445881106605
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0120112131457919,
+            0.0017566871379827336,
+            -0.0038165218481007734
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012724819446712344
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.384667813819334,
+          "residual_xy": [
+            -11.095884895329107,
+            2.5479402702224547
+          ],
+          "predicted_camera_z_m": 0.7703340058623594,
+          "raw_depth_minus_predicted_z_m": 0.008415994137640603,
+          "conditional_sensor_point_D405_reference": [
+            1.0481117813162248,
+            0.00496044193046722,
+            0.7347500919031693
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0068320388839124835,
+            -0.0013108465325037425,
+            0.008588981944408047
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011052858670246203
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.093945074612198,
+          "residual_xy": [
+            5.053557477266452,
+            -0.6401821983859008
+          ],
+          "predicted_camera_z_m": 0.7744740937880716,
+          "raw_depth_minus_predicted_z_m": 0.004275906211928415,
+          "conditional_sensor_point_D405_reference": [
+            1.0355273488573045,
+            0.007034687124834606,
+            0.7302977373095859
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.005752393575007897,
+            0.0007633986618636431,
+            0.004136627350824651
+          ],
+          "conditional_sensor_landmark_distance_m": 0.007126324101408657
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 190,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0637611572071524,
+        0.007639257613657361,
+        0.7228280010834107
+      ],
+      "L515_uv_native": [
+        418.98427492433325,
+        475.8231120030223
+      ],
+      "L515_uv_undistorted": [
+        421.0809020996094,
+        474.96075439453125
+      ],
+      "raw_depth_centre_count": 3126,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3122.4,
+        3129.0
+      ],
+      "patch_median_count": 3126.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.532211095125248,
+          "residual_xy": [
+            -12.369487318732524,
+            -2.012982465024379
+          ],
+          "predicted_camera_z_m": 0.7789838412035094,
+          "raw_depth_minus_predicted_z_m": 0.0025161587964905863,
+          "conditional_sensor_point_D405_reference": [
+            1.0736997272824362,
+            0.009851565924631774,
+            0.7257143077765235
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.00993857007528387,
+            0.0022123083109744125,
+            0.002886306693112739
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010583017033475941
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.157507096870733,
+          "residual_xy": [
+            -10.824130445671244,
+            2.707058313338223
+          ],
+          "predicted_camera_z_m": 0.7662103831020046,
+          "raw_depth_minus_predicted_z_m": 0.01528961689799535,
+          "conditional_sensor_point_D405_reference": [
+            1.0685007074064854,
+            0.00675137738008548,
+            0.7382547599153846
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.004739550199333031,
+            -0.0008878802335718812,
+            0.015426758831973864
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01616281397099679
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.30781794536518,
+          "residual_xy": [
+            5.282427340519575,
+            -0.5185486797514045
+          ],
+          "predicted_camera_z_m": 0.7703574245766094,
+          "raw_depth_minus_predicted_z_m": 0.011142575423390588,
+          "conditional_sensor_point_D405_reference": [
+            1.05591711747936,
+            0.00882606531261415,
+            0.7337972736363065
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.007844039727792351,
+            0.0011868076989567898,
+            0.010969272552895815
+          ],
+          "conditional_sensor_landmark_distance_m": 0.013537444814484057
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 584,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0204363920977926,
+        -0.02768411809004653,
+        0.7131662886888309
+      ],
+      "L515_uv_native": [
+        363.774275524986,
+        435.750569426791
+      ],
+      "L515_uv_undistorted": [
+        366.887939453125,
+        435.1440734863281
+      ],
+      "raw_depth_centre_count": 3103,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3100.0,
+        3103.0
+      ],
+      "patch_median_count": 3101.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.165553060789083,
+          "residual_xy": [
+            -12.086748747018135,
+            -1.3824565097427808
+          ],
+          "predicted_camera_z_m": 0.7722183553367713,
+          "raw_depth_minus_predicted_z_m": 0.003031644663228694,
+          "conditional_sensor_point_D405_reference": [
+            1.0297254331616836,
+            -0.02613646475383776,
+            0.7165188583403079
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.009289041063891057,
+            0.0015476533362087687,
+            0.003352569651477011
+          ],
+          "conditional_sensor_landmark_distance_m": 0.009996061124449826
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.634309094617699,
+          "residual_xy": [
+            -11.332914051765783,
+            2.6310087807519267
+          ],
+          "predicted_camera_z_m": 0.7596815829953548,
+          "raw_depth_minus_predicted_z_m": 0.015568417004645174,
+          "conditional_sensor_point_D405_reference": [
+            1.0245217091658043,
+            -0.029169443590645196,
+            0.7288220762886632
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.00408531706801174,
+            -0.0014853255005986658,
+            0.015655787599832327
+          ],
+          "conditional_sensor_landmark_distance_m": 0.016248067354611144
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.23133587146912,
+          "residual_xy": [
+            5.215283906138609,
+            -0.4094982032819985
+          ],
+          "predicted_camera_z_m": 0.7638617444995007,
+          "raw_depth_minus_predicted_z_m": 0.011388255500499267,
+          "conditional_sensor_point_D405_reference": [
+            1.0119439405913913,
+            -0.027093075909387483,
+            0.7243311131622684
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.008492451506401322,
+            0.0005910421806590467,
+            0.011164824473437474
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01404009860971655
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 78,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.051143978857876,
+        -0.03432501379535198,
+        0.7109246140788356
+      ],
+      "L515_uv_native": [
+        399.35640250259945,
+        427.38965146835426
+      ],
+      "L515_uv_undistorted": [
+        401.69989013671875,
+        426.9265441894531
+      ],
+      "raw_depth_centre_count": 3080,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3075.8,
+        3083.0
+      ],
+      "patch_median_count": 3081.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.520154620805078,
+          "residual_xy": [
+            -12.398199940838595,
+            -1.7432469577935876
+          ],
+          "predicted_camera_z_m": 0.7695262804181865,
+          "raw_depth_minus_predicted_z_m": 0.0007237195818134978,
+          "conditional_sensor_point_D405_reference": [
+            1.0614901356985755,
+            -0.03254220221540167,
+            0.712004530285168
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010346156840699505,
+            0.0017828115799503122,
+            0.0010799162063324097
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010554032286981952
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.376729610339748,
+          "residual_xy": [
+            -11.157141526938915,
+            2.224448150583953
+          ],
+          "predicted_camera_z_m": 0.7567680863548907,
+          "raw_depth_minus_predicted_z_m": 0.013481913645109311,
+          "conditional_sensor_point_D405_reference": [
+            1.056304057282245,
+            -0.035642383401018524,
+            0.7245334452845091
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.005160078424369052,
+            -0.0013173696056665435,
+            0.013608831205673577
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014613766072032493
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.328138081857114,
+          "residual_xy": [
+            5.26861608908041,
+            -0.7941913656160295
+          ],
+          "predicted_camera_z_m": 0.7609694914466153,
+          "raw_depth_minus_predicted_z_m": 0.009280508553384692,
+          "conditional_sensor_point_D405_reference": [
+            1.0437263655313929,
+            -0.03355176615750987,
+            0.7200216186808797
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.007417613326483163,
+            0.0007732476378421102,
+            0.009097004602044101
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011763264517142364
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 438,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.021893130487271,
+        -0.01466972261493611,
+        0.713670449412225
+      ],
+      "L515_uv_native": [
+        365.89389697026763,
+        451.0568447315513
+      ],
+      "L515_uv_undistorted": [
+        368.9891357421875,
+        450.2928466796875
+      ],
+      "raw_depth_centre_count": 3086,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3084.0,
+        3092.2
+      ],
+      "patch_median_count": 3088.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.237504214720985,
+          "residual_xy": [
+            -12.15646382504957,
+            -1.4060215772082074
+          ],
+          "predicted_camera_z_m": 0.7720319855761122,
+          "raw_depth_minus_predicted_z_m": -3.198557611217012e-05,
+          "conditional_sensor_point_D405_reference": [
+            1.0323099873102297,
+            -0.01319318968520189,
+            0.7139798965596721
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010416856822958787,
+            0.001476532929734221,
+            0.0003094471474470728
+          ],
+          "conditional_sensor_landmark_distance_m": 0.0105255314877528
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.742122245300832,
+          "residual_xy": [
+            -11.38847387661798,
+            2.860086989092906
+          ],
+          "predicted_camera_z_m": 0.7595076568346806,
+          "raw_depth_minus_predicted_z_m": 0.012492343165319442,
+          "conditional_sensor_point_D405_reference": [
+            1.0271478141825816,
+            -0.016235330210238888,
+            0.7262790662461509
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.00525468369531068,
+            -0.0015656075953027777,
+            0.01260861683392589
+          ],
+          "conditional_sensor_landmark_distance_m": 0.013749183479210428
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.155623712195939,
+          "residual_xy": [
+            5.148869338779036,
+            -0.26381886577377145
+          ],
+          "predicted_camera_z_m": 0.7636701897055455,
+          "raw_depth_minus_predicted_z_m": 0.008329810294454565,
+          "conditional_sensor_point_D405_reference": [
+            1.014565729892175,
+            -0.014154757418271213,
+            0.7218050981074038
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.007327400595095845,
+            0.0005149651966648971,
+            0.00813464869517877
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010960314686575415
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 2280,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0995586805619506,
+        -0.01879698466463967,
+        0.7125778190107892
+      ],
+      "L515_uv_native": [
+        457.4171806868652,
+        443.8836858621355
+      ],
+      "L515_uv_undistorted": [
+        458.74053955078125,
+        443.4288635253906
+      ],
+      "raw_depth_centre_count": 3093,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3088.0,
+        3096.2
+      ],
+      "patch_median_count": 3091.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.625443150615046,
+          "residual_xy": [
+            -12.529777363948199,
+            -1.5512878389595244
+          ],
+          "predicted_camera_z_m": 0.7691578622980504,
+          "raw_depth_minus_predicted_z_m": 0.0035921377019496603,
+          "conditional_sensor_point_D405_reference": [
+            1.109351897532735,
+            -0.017041488634168003,
+            0.716515147302483
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.00979321697078439,
+            0.0017554960304716656,
+            0.003937328291693798
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010700066309440964
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 10.816862412887952,
+          "residual_xy": [
+            -10.44156854437557,
+            2.82456346936209
+          ],
+          "predicted_camera_z_m": 0.7560948692740631,
+          "raw_depth_minus_predicted_z_m": 0.01665513072593694,
+          "conditional_sensor_point_D405_reference": [
+            1.1041634134449339,
+            -0.020223988705716685,
+            0.7293418926417068
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.004604732882983242,
+            -0.0014270040410770159,
+            0.016764073630917586
+          ],
+          "conditional_sensor_landmark_distance_m": 0.017443453504386783
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.6904986629993415,
+          "residual_xy": [
+            5.682406228728723,
+            -0.30337185977327863
+          ],
+          "predicted_camera_z_m": 0.7602931940415376,
+          "raw_depth_minus_predicted_z_m": 0.012456805958462436,
+          "conditional_sensor_point_D405_reference": [
+            1.0915835040242574,
+            -0.018127593873949507,
+            0.7248336076580045
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.007975176537693196,
+            0.0006693907906901615,
+            0.012255788647215327
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014637482030842768
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 1599,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.1011573459445334,
+        0.0047221699970302015,
+        0.7143143509928295
+      ],
+      "L515_uv_native": [
+        461.55462094690495,
+        472.5031345979563
+      ],
+      "L515_uv_undistorted": [
+        462.91357421875,
+        471.8363342285156
+      ],
+      "raw_depth_centre_count": 3098,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3098.0,
+        3100.0
+      ],
+      "patch_median_count": 3099.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 14.160498695560618,
+          "residual_xy": [
+            -13.928546514113123,
+            -2.5525115692511804
+          ],
+          "predicted_camera_z_m": 0.7696716758253154,
+          "raw_depth_minus_predicted_z_m": 0.0050783241746846786,
+          "conditional_sensor_point_D405_reference": [
+            1.111782762743062,
+            0.007589313737505432,
+            0.719817399716396
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010625416798528686,
+            0.0028671437404752306,
+            0.00550304872356655
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012304614606924889
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 12.043507277965364,
+          "residual_xy": [
+            -11.823456187827333,
+            2.291713622801126
+          ],
+          "predicted_camera_z_m": 0.7566381539687032,
+          "raw_depth_minus_predicted_z_m": 0.018111846031296897,
+          "conditional_sensor_point_D405_reference": [
+            1.1066184076881442,
+            0.004407723624649328,
+            0.7326194150425924
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.005461061743610829,
+            -0.0003144463723808739,
+            0.018305064049762954
+          ],
+          "conditional_sensor_landmark_distance_m": 0.019104906222082257
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 4.382399412692252,
+          "residual_xy": [
+            4.270835028151396,
+            -0.9825440319295922
+          ],
+          "predicted_camera_z_m": 0.7608041755586101,
+          "raw_depth_minus_predicted_z_m": 0.01394582444138992,
+          "conditional_sensor_point_D405_reference": [
+            1.094033316201387,
+            0.0065001795628592055,
+            0.7281444380659857
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.0071240297431462984,
+            0.001778009565829004,
+            0.01383008707315625
+          ],
+          "conditional_sensor_landmark_distance_m": 0.015658366014642017
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 499,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0844749682093064,
+        -0.01553490513329867,
+        0.7152317167019949
+      ],
+      "L515_uv_native": [
+        440.572765394765,
+        448.64845209897703
+      ],
+      "L515_uv_undistorted": [
+        442.1882019042969,
+        448.1055908203125
+      ],
+      "raw_depth_centre_count": 3094,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3092.0,
+        3096.6
+      ],
+      "patch_median_count": 3094.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.73460769278319,
+          "residual_xy": [
+            -12.55588340010081,
+            -2.1260350731269
+          ],
+          "predicted_camera_z_m": 0.7720305339940093,
+          "raw_depth_minus_predicted_z_m": 0.0014694660059906273,
+          "conditional_sensor_point_D405_reference": [
+            1.0948155082319473,
+            -0.013361824616778532,
+            0.7170780148368254
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010340540022640843,
+            0.0021730805165201383,
+            0.001846298134830504
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010726502864111635
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 10.947193155586387,
+          "residual_xy": [
+            -10.711950167028704,
+            2.2572464652339477
+          ],
+          "predicted_camera_z_m": 0.7590761274895017,
+          "raw_depth_minus_predicted_z_m": 0.014423872510498259,
+          "conditional_sensor_point_D405_reference": [
+            1.089630525875741,
+            -0.016516100305594084,
+            0.7298002631900462
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.005155557666434607,
+            -0.000981195172295413,
+            0.014568546488051282
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01548499485284318
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.507730802958868,
+          "residual_xy": [
+            5.438355066561087,
+            -0.8714314476029017
+          ],
+          "predicted_camera_z_m": 0.7632639300392582,
+          "raw_depth_minus_predicted_z_m": 0.010236069960741778,
+          "conditional_sensor_point_D405_reference": [
+            1.0770498248389497,
+            -0.014424134047445802,
+            0.7253025593593304
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.007425143370356713,
+            0.0011107710858528682,
+            0.010070842657335488
+          ],
+          "conditional_sensor_landmark_distance_m": 0.012561386798611334
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 714,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0332645147095563,
+        -0.007759299845259339,
+        0.7210648589295756
+      ],
+      "L515_uv_native": [
+        381.8010879424256,
+        459.1214403088652
+      ],
+      "L515_uv_undistorted": [
+        384.5797424316406,
+        458.3095397949219
+      ],
+      "raw_depth_centre_count": 3104,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3100.0,
+        3106.6
+      ],
+      "patch_median_count": 3104.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 11.817332772444956,
+          "residual_xy": [
+            -11.609203005684265,
+            -2.2081121863512863
+          ],
+          "predicted_camera_z_m": 0.7787768690166069,
+          "raw_depth_minus_predicted_z_m": -0.0027768690166068977,
+          "conditional_sensor_point_D405_reference": [
+            1.0441862352798077,
+            -0.005742957410652165,
+            0.7186651228341404
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010921720570251425,
+            0.002016342434607174,
+            -0.002399736095435201
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011362585548896223
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 10.784608294875635,
+          "residual_xy": [
+            -10.56747074982485,
+            2.153215740583505
+          ],
+          "predicted_camera_z_m": 0.7661857873619649,
+          "raw_depth_minus_predicted_z_m": 0.009814212638035169,
+          "conditional_sensor_point_D405_reference": [
+            1.0390061579859584,
+            -0.008799540584481562,
+            0.7310320954807554
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.005741643276402142,
+            -0.001040240739222223,
+            0.009967236551179814
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011549648166769688
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.816893622660287,
+          "residual_xy": [
+            5.734750195578329,
+            -0.9741106773155934
+          ],
+          "predicted_camera_z_m": 0.7703426491177828,
+          "raw_depth_minus_predicted_z_m": 0.005657350882217194,
+          "conditional_sensor_point_D405_reference": [
+            1.0264239155353096,
+            -0.00672248878353178,
+            0.7265640253201942
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.00684059917424662,
+            0.0010368110617275592,
+            0.005499166390618537
+          ],
+          "conditional_sensor_landmark_distance_m": 0.008837963862345935
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 40,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0868583171072583,
+        -0.018822762985905118,
+        0.7124046496382718
+      ],
+      "L515_uv_native": [
+        442.0721112036757,
+        444.39366501657037
+      ],
+      "L515_uv_undistorted": [
+        443.6490173339844,
+        443.8895568847656
+      ],
+      "raw_depth_centre_count": 3089,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3087.0,
+        3092.0
+      ],
+      "patch_median_count": 3090.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.336890215387406,
+          "residual_xy": [
+            -12.224200480204786,
+            -1.6636654730692158
+          ],
+          "predicted_camera_z_m": 0.7693116973232936,
+          "raw_depth_minus_predicted_z_m": 0.003188302676706334,
+          "conditional_sensor_point_D405_reference": [
+            1.0964360300389007,
+            -0.016994383917226706,
+            0.7159356298681815
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.009577712931642335,
+            0.0018283790686784117,
+            0.0035309802299097193
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010370312261631442
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 10.706984248742478,
+          "residual_xy": [
+            -10.365170335551738,
+            2.6837950029422473
+          ],
+          "predicted_camera_z_m": 0.7563356202392625,
+          "raw_depth_minus_predicted_z_m": 0.01616437976073748,
+          "conditional_sensor_point_D405_reference": [
+            1.0912518720791988,
+            -0.02015361091940189,
+            0.7286749301559463
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.004393554971940494,
+            -0.0013308479334967725,
+            0.01627028051767454
+          ],
+          "conditional_sensor_landmark_distance_m": 0.016905517136052817
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.851880235954193,
+          "residual_xy": [
+            5.835239051199835,
+            -0.4410073823687526
+          ],
+          "predicted_camera_z_m": 0.7605290897159446,
+          "raw_depth_minus_predicted_z_m": 0.011970910284055392,
+          "conditional_sensor_point_D405_reference": [
+            1.0786716962900078,
+            -0.018059654760196088,
+            0.7241715670701993
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.008186620817250523,
+            0.0007631082257090298,
+            0.011766917431927482
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014354909976011108
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 1178,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0771052036315238,
+        -0.022764605494565156,
+        0.7120557834594354
+      ],
+      "L515_uv_native": [
+        431.4185471335205,
+        439.7603902506121
+      ],
+      "L515_uv_undistorted": [
+        433.16998291015625,
+        439.26373291015625
+      ],
+      "raw_depth_centre_count": 3108,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3105.0,
+        3109.0
+      ],
+      "patch_median_count": 3107.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 13.29681958594114,
+          "residual_xy": [
+            -13.22770199760896,
+            -1.3539981401463592
+          ],
+          "predicted_camera_z_m": 0.769410902786143,
+          "raw_depth_minus_predicted_z_m": 0.00733909721385706,
+          "conditional_sensor_point_D405_reference": [
+            1.0863679278429101,
+            -0.02104409299056901,
+            0.7197306519419123
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.009262724211386297,
+            0.0017205125039961473,
+            0.007674868482476893
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01215161838258288
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.897076299256465,
+          "residual_xy": [
+            -11.539685784636788,
+            2.8941452040596687
+          ],
+          "predicted_camera_z_m": 0.7564948239337279,
+          "raw_depth_minus_predicted_z_m": 0.02025517606627214,
+          "conditional_sensor_point_D405_reference": [
+            1.0811507067394546,
+            -0.024178025680335467,
+            0.7324085025148079
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.004045503107930726,
+            -0.001413420185770311,
+            0.020352719055372503
+          ],
+          "conditional_sensor_landmark_distance_m": 0.020798966920612744
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 4.7255289550555375,
+          "residual_xy": [
+            4.721153806330221,
+            -0.20329939016619392
+          ],
+          "predicted_camera_z_m": 0.7606900504439923,
+          "raw_depth_minus_predicted_z_m": 0.016059949556007758,
+          "conditional_sensor_point_D405_reference": [
+            1.0685729749749062,
+            -0.02209188619251702,
+            0.7279033167166573
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.008532228656617624,
+            0.0006727193020481352,
+            0.01584753325722188
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01801099074029268
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 1172,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.1025031558304654,
+        0.008637317824745085,
+        0.714144094262884
+      ],
+      "L515_uv_native": [
+        461.7586374868189,
+        476.80087964653677
+      ],
+      "L515_uv_undistorted": [
+        463.1317138671875,
+        476.0977783203125
+      ],
+      "raw_depth_centre_count": 3101,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3100.0,
+        3102.0
+      ],
+      "patch_median_count": 3101.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.768435324303233,
+          "residual_xy": [
+            -12.57015420662674,
+            -2.2414646668057685
+          ],
+          "predicted_camera_z_m": 0.769270939973049,
+          "raw_depth_minus_predicted_z_m": 0.005979060026951033,
+          "conditional_sensor_point_D405_reference": [
+            1.1117483666318113,
+            0.011301648534011902,
+            0.7205037037248131
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.009245210801345882,
+            0.0026643307092668166,
+            0.006359609461929039
+          ],
+          "conditional_sensor_landmark_distance_m": 0.011533308865972598
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 10.787807492736636,
+          "residual_xy": [
+            -10.447557714014863,
+            2.687997081968888
+          ],
+          "predicted_camera_z_m": 0.7562349853959678,
+          "raw_depth_minus_predicted_z_m": 0.01901501460403221,
+          "conditional_sensor_point_D405_reference": [
+            1.106586382870605,
+            0.008121265018578024,
+            0.7332992758021828
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0040832270401396364,
+            -0.0005160528061670614,
+            0.019155181539298738
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01959234629551988
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.679642825267697,
+          "residual_xy": [
+            5.646384821578749,
+            -0.6137434881609352
+          ],
+          "predicted_camera_z_m": 0.7603960720360156,
+          "raw_depth_minus_predicted_z_m": 0.014853927963984437,
+          "conditional_sensor_point_D405_reference": [
+            1.0940005796158239,
+            0.010212764222053389,
+            0.7288294704667326
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.008502576214641566,
+            0.0015754463973083038,
+            0.014685376203848577
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01704218612400247
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 1886,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.1037403126964764,
+        -0.014758095841281302,
+        0.7148700623244824
+      ],
+      "L515_uv_native": [
+        462.41459586225255,
+        448.47191141478555
+      ],
+      "L515_uv_undistorted": [
+        463.6747741699219,
+        447.9986877441406
+      ],
+      "raw_depth_centre_count": 3093,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3089.0,
+        3099.6
+      ],
+      "patch_median_count": 3094.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 11.97616737950741,
+          "residual_xy": [
+            -11.862627983586378,
+            -1.645187656472899
+          ],
+          "predicted_camera_z_m": 0.7711368519609836,
+          "raw_depth_minus_predicted_z_m": 0.002363148039016383,
+          "conditional_sensor_point_D405_reference": [
+            1.1133036488687726,
+            -0.012972080670542056,
+            0.7175720810872164
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.00956333617229621,
+            0.0017860151707392458,
+            0.0027020187627340153
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010096937868909887
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 10.07796263935578,
+          "residual_xy": [
+            -9.680485827509756,
+            2.8024141563362264
+          ],
+          "predicted_camera_z_m": 0.7580519465654441,
+          "raw_depth_minus_predicted_z_m": 0.015448053434555908,
+          "conditional_sensor_point_D405_reference": [
+            1.1081156059433594,
+            -0.016160235539273392,
+            0.7304187461504157
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.004375293246883016,
+            -0.0014021396979920896,
+            0.01554868382593333
+          ],
+          "conditional_sensor_landmark_distance_m": 0.016213289470300166
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 6.378896091891598,
+          "residual_xy": [
+            6.369838950836879,
+            -0.3398044901869639
+          ],
+          "predicted_camera_z_m": 0.7622461197156485,
+          "raw_depth_minus_predicted_z_m": 0.01125388028435148,
+          "conditional_sensor_point_D405_reference": [
+            1.0955350416911065,
+            -0.014064310944591644,
+            0.7259146306573296
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.00820527100536994,
+            0.0006937848966896577,
+            0.011044568332847282
+          ],
+          "conditional_sensor_landmark_distance_m": 0.013776440012331644
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 4330,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0429945012554276,
+        -0.019850220681676144,
+        0.7124668017350775
+      ],
+      "L515_uv_native": [
+        390.2860618886162,
+        443.869425458168
+      ],
+      "L515_uv_undistorted": [
+        392.8511047363281,
+        443.2319030761719
+      ],
+      "raw_depth_centre_count": 3025,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3021.0,
+        3048.0
+      ],
+      "patch_median_count": 3032.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.238973658711762,
+          "residual_xy": [
+            -12.202878170109443,
+            -0.9392766281063132
+          ],
+          "predicted_camera_z_m": 0.7705492347151577,
+          "raw_depth_minus_predicted_z_m": -0.012549234715157676,
+          "conditional_sensor_point_D405_reference": [
+            1.0574589531390715,
+            -0.01927265752322374,
+            0.7002978604844081
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.01446445188364387,
+            0.0005775631584524037,
+            -0.012168941250669363
+          ],
+          "conditional_sensor_landmark_distance_m": 0.018911295002153942
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.573700201067801,
+          "residual_xy": [
+            -11.097628612807227,
+            3.2852968688383726
+          ],
+          "predicted_camera_z_m": 0.7578716474095029,
+          "raw_depth_minus_predicted_z_m": 0.00012835259049714942,
+          "conditional_sensor_point_D405_reference": [
+            1.0523771988258215,
+            -0.022384994157169325,
+            0.7127776475621057
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.009382697570393894,
+            -0.00253477347549318,
+            0.0003108458270282277
+          ],
+          "conditional_sensor_landmark_distance_m": 0.00972402773534301
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.3509233147107045,
+          "residual_xy": [
+            5.347840964538079,
+            0.18159663521942093
+          ],
+          "predicted_camera_z_m": 0.7620496205050257,
+          "raw_depth_minus_predicted_z_m": -0.004049620505025664,
+          "conditional_sensor_point_D405_reference": [
+            1.0397916629590744,
+            -0.020279078834229754,
+            0.7082857227254952
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.00320283829635315,
+            -0.00042885815255360935,
+            -0.004181079009582311
+          ],
+          "conditional_sensor_landmark_distance_m": 0.0052842704465203
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 777,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.0558477115987732,
+        -0.011641712716794561,
+        0.7166183662809197
+      ],
+      "L515_uv_native": [
+        406.32956181162876,
+        453.7303844518453
+      ],
+      "L515_uv_undistorted": [
+        408.5955810546875,
+        453.0396423339844
+      ],
+      "raw_depth_centre_count": 3111,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3104.0,
+        3114.0
+      ],
+      "patch_median_count": 3109.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 11.586342561101239,
+          "residual_xy": [
+            -11.448238695782436,
+            -1.7835819879040287
+          ],
+          "predicted_camera_z_m": 0.7739533735908725,
+          "raw_depth_minus_predicted_z_m": 0.0032966264091275344,
+          "conditional_sensor_point_D405_reference": [
+            1.064659398724794,
+            -0.009682681213909486,
+            0.7202447422147967
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.008811687126020873,
+            0.0019590315028850756,
+            0.0036263759338770463
+          ],
+          "conditional_sensor_landmark_distance_m": 0.009728012995981285
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 10.41448304777037,
+          "residual_xy": [
+            -10.08551555200495,
+            2.5968891394441016
+          ],
+          "predicted_camera_z_m": 0.7612015005604312,
+          "raw_depth_minus_predicted_z_m": 0.016048499439568764,
+          "conditional_sensor_point_D405_reference": [
+            1.0594606942608407,
+            -0.012775031357781345,
+            0.7327567581636496
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0036129826620674432,
+            -0.001133318640986784,
+            0.01613839188272992
+          ],
+          "conditional_sensor_landmark_distance_m": 0.016576662734669213
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 6.218784316636956,
+          "residual_xy": [
+            6.195313388217983,
+            -0.5397873642618833
+          ],
+          "predicted_camera_z_m": 0.7653727449358556,
+          "raw_depth_minus_predicted_z_m": 0.011877255064144387,
+          "conditional_sensor_point_D405_reference": [
+            1.0468801287359977,
+            -0.010695040611526374,
+            0.728275520555574
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.008967582862775547,
+            0.0009466721052681874,
+            0.011657154274654302
+          ],
+          "conditional_sensor_landmark_distance_m": 0.014737807715489087
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 432,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.100060916495694,
+        -0.0223662890254743,
+        0.7096862074631507
+      ],
+      "L515_uv_native": [
+        456.64040464272534,
+        440.1055597877891
+      ],
+      "L515_uv_undistorted": [
+        457.96502685546875,
+        439.676025390625
+      ],
+      "raw_depth_centre_count": 3086,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3081.0,
+        3089.0
+      ],
+      "patch_median_count": 3086.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.251982019981078,
+          "residual_xy": [
+            -12.110987970654605,
+            -1.8533844157645945
+          ],
+          "predicted_camera_z_m": 0.7664368943795248,
+          "raw_depth_minus_predicted_z_m": 0.005063105620475183,
+          "conditional_sensor_point_D405_reference": [
+            1.1090841481587679,
+            -0.020328111948038456,
+            0.7150912718583107
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.009023231663073839,
+            0.0020381770774358446,
+            0.005405064395159975
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010713897356252266
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 10.34021257180376,
+          "residual_xy": [
+            -10.03944598497435,
+            2.475786813292075
+          ],
+          "predicted_camera_z_m": 0.7533646293461352,
+          "raw_depth_minus_predicted_z_m": 0.018135370653864724,
+          "conditional_sensor_point_D405_reference": [
+            1.1038990918652671,
+            -0.023512492741424633,
+            0.7279217239458442
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.0038381753695730936,
+            -0.0011462037159503322,
+            0.018235516482693503
+          ],
+          "conditional_sensor_landmark_distance_m": 0.018670282122042033
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 6.180169711078639,
+          "residual_xy": [
+            6.1463246308351245,
+            -0.6459033907042908
+          ],
+          "predicted_camera_z_m": 0.7575682915332402,
+          "raw_depth_minus_predicted_z_m": 0.013931708466759729,
+          "conditional_sensor_point_D405_reference": [
+            1.0913195068520474,
+            -0.021414190172837598,
+            0.7234089694315576
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.00874140964364667,
+            0.0009520988526367027,
+            0.013722761968406938
+          ],
+          "conditional_sensor_landmark_distance_m": 0.016298249317788307
+        }
+      }
+    },
+    {
+      "frame": 1243159,
+      "point_id": 990,
+      "specimen": "P4",
+      "D405_point_reference": [
+        1.080098651833725,
+        0.007803211603079069,
+        0.7207627753526555
+      ],
+      "L515_uv_native": [
+        437.7762654891019,
+        475.519336444168
+      ],
+      "L515_uv_undistorted": [
+        439.53436279296875,
+        474.7317199707031
+      ],
+      "raw_depth_centre_count": 3116,
+      "patch_valid": 25,
+      "patch_p10p90_count": [
+        3112.4,
+        3120.0
+      ],
+      "patch_median_count": 3116.0,
+      "methods": {
+        "board_rigid": {
+          "reprojection_px": 12.918677481139051,
+          "residual_xy": [
+            -12.785083469101664,
+            -1.8530700336988275
+          ],
+          "predicted_camera_z_m": 0.7764950357745274,
+          "raw_depth_minus_predicted_z_m": 0.002504964225472639,
+          "conditional_sensor_point_D405_reference": [
+            1.0904205321838074,
+            0.009880302470627565,
+            0.7236409182103986
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.010321880350082413,
+            0.002077090867548496,
+            0.0028781428577430157
+          ],
+          "conditional_sensor_landmark_distance_m": 0.010915091696502047
+        },
+        "joint_rigid_failed": {
+          "reprojection_px": 11.370739010966313,
+          "residual_xy": [
+            -10.98585661009895,
+            2.9333701092525644
+          ],
+          "predicted_camera_z_m": 0.7636102573249764,
+          "raw_depth_minus_predicted_z_m": 0.015389742675023577,
+          "conditional_sensor_point_D405_reference": [
+            1.0852351751478702,
+            0.006745237386753769,
+            0.7362944950494181
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            0.005136523314145158,
+            -0.0010579742163253003,
+            0.015531719696762591
+          ],
+          "conditional_sensor_landmark_distance_m": 0.01639321499700315
+        },
+        "far_static_linear_camera_correction": {
+          "reprojection_px": 5.0887118132314475,
+          "residual_xy": [
+            5.0791305231081765,
+            -0.31212344889826227
+          ],
+          "predicted_camera_z_m": 0.7677634905216544,
+          "raw_depth_minus_predicted_z_m": 0.011236509478345647,
+          "conditional_sensor_point_D405_reference": [
+            1.0726508520695042,
+            0.008827010933237456,
+            0.7318307507139586
+          ],
+          "conditional_sensor_minus_landmark_3d_m": [
+            -0.0074477997642208305,
+            0.0010237993301583865,
+            0.011067975361303106
+          ],
+          "conditional_sensor_landmark_distance_m": 0.0133797595267917
+        }
+      }
+    }
+  ],
+  "source_sha256": "aca959da42749d5e7d1416e01e3abdff6a06a2fb43275aca439103eb402ffb5b"
+}

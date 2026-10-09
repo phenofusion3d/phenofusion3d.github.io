@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "sensor": "fx10",
+      "controls": 102,
+      "full_fit_and_all_sheet_holdout_predictions_rederived": true,
+      "all_six_permutations_present": true
+    },
+    {
+      "sensor": "fx17",
+      "controls": 103,
+      "full_fit_and_all_sheet_holdout_predictions_rederived": true,
+      "all_six_permutations_present": true
+    }
+  ],
+  "source_hashes_unchanged": true,
+  "csv_controls": 205,
+  "scientific_scope": "metric calibration-plane observations and diagnostics only"
+}

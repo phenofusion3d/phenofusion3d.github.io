@@ -1,0 +1,46 @@
+{
+  "identity": {
+    "P1": "Single cereal stem and ear, three green blade nodes and a ring of dry basal blades; first pot beside the board.",
+    "P2": "Bent exposed basal stem, compact puckered blue-green crown, dry curled tips and hanging flowering branch; between cereal and P3.",
+    "P3": "Six broad lobed leaves around a purple petiole junction and a long arcing flowering stalk; between compact P2 and sparse P4.",
+    "P4": "Sparse branched flowering plant with yellow flowers and narrow pod-like structures; adjacent to P3 and red-brown P5.",
+    "P5": "Broad green leaves interspersed with distinctive rust-brown damaged lobed blades, small central leaf and radial petioles; last pot."
+  },
+  "base": {
+    "P1": [459309, [476,411], 8, "Dry blades overlap narrow stems at the soil junction; the measured stem origin cannot be isolated."],
+    "P2": [459309, [695,401], 7, "Exposed curved green basal stem is visible against soil, but its precise emergence and measurement zero are unresolved."],
+    "P3": [824869, [616,427], 12, "Purple/green petiole junction is visible, but the soil-level stem origin is beneath overlapping tissue. Branch-junction region only."],
+    "P4": [1003470, [677,409], 13, "Pot-centre origin is obscured by leaves and crossing flowering stems. Region candidate only; no visible stem-base endpoint."],
+    "P5": [1445026, [511,440], 11, "Radial petiole junction and lower curved stem are visible; actual soil-emergence point is hidden by the stem/leaf cluster."]
+  },
+  "tip": {
+    "P1": "Highest retained surface projects to the upper green blade tip. Cereal ear awns extend beyond the dense ear body and are incompletely reconstructed; the very highest biological tip is not certified.",
+    "P2": "Highest retained points project to a curled yellowing edge and nearby overlapping tissue. Small terminal buds and curled margins are not a unique certified top endpoint.",
+    "P3": "Highest retained points lie in overlapping distal stalk/leaf tissue near the lower image edge. Long flowering-stem extremities and true terminal point are not fully resolved.",
+    "P4": "Highest retained surface projects to a terminal pale bud/flower cluster, but its exact outermost endpoint and complete depth support remain uncertain.",
+    "P5": "Highest retained points project to the terminal margin of the left-facing lobed green O05 leaf candidate, a plausible top surface. This does not establish all-terminal completeness or the stem origin."
+  },
+  "organs": {
+    "P1.O01": [459309, [[453,427],[500,427],[510,554],[482,555]], "unresolved", "Dry lower blades overlap; the source overview blade attachment cannot be traced uniquely."],
+    "P1.O02": [459309, [[332,413],[414,376],[426,386],[349,423]], "candidate_medium", "Green blade near the middle stem node is plausible, but attachment and dry terminal part are superposed."],
+    "P1.O03": [459309, [[145,376],[238,398],[240,405],[152,384]], "source_identity_supported_high", "Upper narrow green blade attaches beside the sole cereal ear; relative attachment and pointed form match the overview."],
+    "P1.O04": [459309, [[151,462],[178,433],[229,405],[236,414],[200,449],[161,474]], "source_identity_supported_high", "The sole cereal ear is distinctive; ear body and awns remain different endpoint definitions."],
+    "P2.O01": [459309, [[897,595],[935,602],[978,648],[978,673],[934,654],[901,633]], "candidate_medium", "Puckered blade beside the curled dry margin is plausible after reversing overview orientation; overlapping crown prevents a unique blade-base trace."],
+    "P2.O02": [459309, [[913,515],[947,518],[952,554],[931,582],[903,566]], "unresolved", "Several puckered leaves overlap at the node; the smaller source leaf cannot be isolated confidently."],
+    "P3.O01": [824869, [[627,466],[671,454],[701,467],[712,491],[694,502],[647,483]], "source_identity_supported_high", "Narrow lateral lobed blade at raw-image right matches overview left-middle leaf after 180-degree orientation reversal."],
+    "P3.O02": [824869, [[640,390],[644,350],[679,329],[707,333],[711,365],[696,402],[658,419]], "source_identity_supported_high", "Deeply lobed leaf above dry brown patch with conspicuous basal hole matches overview lower-left leaf."],
+    "P3.O03": [824869, [[576,411],[569,384],[572,353],[589,332],[611,351],[627,379],[612,403],[593,418]], "source_identity_supported_high", "Central oval terminal blade with small basal lobes and serrated edge matches overview bottom-centre leaf; neighbouring petiole topology agrees."],
+    "P3.O04": [824869, [[499,330],[532,315],[552,319],[548,343],[544,364],[522,378],[500,364]], "source_identity_supported_high", "Upper-left strongly lobed leaf with exposed petiole matches overview lower-right leaf after orientation reversal."],
+    "P3.O05": [824869, [[455,460],[484,445],[501,448],[520,461],[536,485],[519,511],[493,508],[468,486]], "source_identity_supported_high", "Lower-left broad lobed leaf matches overview upper-right leaf; outline and attachment side agree."],
+    "P3.O06": [824869, [[586,520],[610,519],[619,540],[639,563],[622,582],[581,571]], "candidate_medium", "Lower-centre lobed leaf plausibly matches overview upper-centre leaf, but a crossing flowering stalk obscures its attachment."],
+    "P4.O01": [1003470, [[615,344],[757,344],[757,591],[615,591]], "unresolved", "Overview arrows and similar pod-like organs are interleaved. Organ type and branch-to-organ correspondence remain unresolved; broad review region only."],
+    "P4.O02": [1003470, [[615,344],[757,344],[757,591],[615,591]], "unresolved", "Similar narrow pod-like structures cannot be uniquely traced from held photo to branching scene."],
+    "P4.O03": [1003470, [[615,344],[757,344],[757,591],[615,591]], "unresolved", "Similar narrow pod-like structures cannot be uniquely traced from held photo to branching scene."],
+    "P4.O04": [1003470, [[615,344],[757,344],[757,591],[615,591]], "unresolved", "Similar narrow pod-like structures cannot be uniquely traced from held photo to branching scene."],
+    "P5.O01": [1445026, [[486,227],[517,212],[561,211],[573,247],[561,271],[572,298],[552,325],[520,326],[477,299],[476,273]], "source_identity_supported_high", "Green lobed blade with pale/brown damaged upper margin matches overview left-side leaf after rotating row orientation."],
+    "P5.O02": [1445026, [[537,377],[558,379],[585,397],[589,414],[573,431],[545,432],[532,413]], "source_identity_supported_high", "Only small central green blade beside rust-brown leaf and radial fork matches overview small-central arrow."],
+    "P5.O03": [1445026, [[600,382],[629,365],[660,363],[679,391],[695,393],[709,430],[692,456],[661,464],[655,493],[627,492],[611,465],[604,433]], "source_identity_supported_high", "Rust-brown deeply lobed blade with rolled pale right edge matches distinctive source top-centre damaged leaf and radial attachment."],
+    "P5.O04": [1445026, [[533,464],[570,471],[591,497],[590,535],[569,565],[546,582],[518,571],[498,548],[496,515],[508,484]], "source_identity_supported_high", "Broad green terminal blade with shallow basal side lobes and reticulate veins matches overview right-side leaf and same petiole."],
+    "P5.O05": [1445026, [[350,386],[382,369],[404,345],[429,347],[440,373],[473,372],[491,397],[470,414],[455,447],[433,438],[414,415],[376,431],[343,438]], "source_identity_supported_high", "Left-facing green blade with elongated central lobe and basal side lobes matches overview bottom-left leaf and attachment."]
+  }
+}

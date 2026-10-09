@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "dataset_label": "20260928 fx10: partial upper-leaf projection hypothesis",
+  "header": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\20260928\\003-specim-fx10.hdr",
+  "data": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\20260928\\003-specim-fx10.bil",
+  "suspected_clipping_dn": 65520,
+  "sampling": {
+    "line_step": 1,
+    "column_step": 1
+  },
+  "selection": {
+    "review_status": "assistant_reviewed",
+    "provenance": "PARTIAL EXPLORATORY FUSION: measured spectra projected onto parts of two upper leaves of Plant 5. Local image alignment is approximate; point-wise physical correspondence is not validated. This is not complete five-plant fusion. Native FX10 and FX17 measurements remain separate. Outside the measured white-reference columns, normalized values and indices are unavailable; raw DN remains inspectable. The dark reference and panel reflectance are unconfirmed, so valid Q/Q0 values are exploratory signals, not calibrated reflectance. Coordinates selected by frozen learned maps plus geometric and overlap-band checks; not independently surveyed correspondence.",
+    "label_mask_npy": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_fusion_rescue_20261008\\partial_surface\\result\\inputs\\fx10_pixels.npy",
+    "label_names": {
+      "1": "P5 upper green partial hypothesis",
+      "2": "P5 upper red partial hypothesis"
+    }
+  },
+  "normalization": {
+    "white_roi": [
+      20,
+      140,
+      180,
+      850
+    ],
+    "dark_roi": [
+      2080,
+      2127,
+      0,
+      1024
+    ],
+    "white_identity": "User-confirmed white board at scan start; spectral reflectance unknown",
+    "settings_assumption": "User confirmed fixed exposure; gain and source export packing not independently established",
+    "dark_status": "assumed_tail",
+    "dark_provenance": "Abrupt final low-signal tail; shutter closure unconfirmed. This is an explicit assumed offset, not certified dark calibration."
+  },
+  "indices": [
+    "NDVI_800_680",
+    "NDRE_790_720",
+    "GNDVI_800_550",
+    "PRI_531_570",
+    "PSRI_678_500_750",
+    "SIPI_800_445_680"
+  ],
+  "max_band_error_nm": 3
+}

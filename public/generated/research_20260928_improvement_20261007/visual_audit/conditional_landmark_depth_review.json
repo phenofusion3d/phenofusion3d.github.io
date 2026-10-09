@@ -1,0 +1,1002 @@
+{
+  "schema_version": 1,
+  "frozen_utc": "2026-10-07T04:34:43.402677+00:00",
+  "annotation_origin": "assistant visual source-image review; operator confirmation pending",
+  "pose_file": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_20260928_processing_20261007\\scene_rgb_v1\\bundle\\poses.json",
+  "pose_sha256": "0fe0988eb8eb27460018747328aa7747e32828573397e7aba5ef790d48b84949",
+  "coordinate_system": "native distorted RGB pixel annotations; 3D in source reference camera frame 0",
+  "method": "All-three-view reprojection least squares for central point; leave-one-view-out uses two frames only and projects into unseen third. Pixel-only intervals use 2000 uniform +/-3px perturbations and linear triangulation with fixed cameras.",
+  "ground_truth_status": "Conditional geometric corroboration, not independent ground truth. Shares camera model/poses/scale with reconstruction and does not assess their systematic error.",
+  "manual_dimensions_used": false,
+  "camera_poses_or_scale_tuned": false,
+  "reconstruction_output_used_to_choose_landmarks": false,
+  "landmarks": [
+    {
+      "id": "P1_pale_ear_grain_candidate",
+      "frames": [
+        197108,
+        222952,
+        249551
+      ],
+      "xy": [
+        [
+          814,
+          432
+        ],
+        [
+          755,
+          434
+        ],
+        [
+          692,
+          435
+        ]
+      ],
+      "pixel_uncertainty_uniform_halfwidth": 3,
+      "description": "Centre of conspicuous pale grain patch in ear body. Repeated grains and blur make exact material-point matching less secure.",
+      "identity_confidence": "ambiguous_repeated_structure",
+      "eligible_for_depth_aware_scoring": false,
+      "source_rgb_sha256": {
+        "197108": "5b8410c123f925180467e14774a8f7dca28c20b4bec174b3d14bea09a38bb186",
+        "222952": "a0f66a009e2375982a88f9908144fe34d3d770404295486de68e808e338e67b4",
+        "249551": "edb4b734f39ed4e2e9293fdb2e6a4792e9d153649d86aaa152b1d47de1938e84"
+      },
+      "camera_model": "factory colour K/dist; exact accepted RGB bundle camera-to-reference poses; no ICP correction, pose fitting or ruler scale adjustment",
+      "xyz_reference_camera_m": [
+        0.2705632164562166,
+        0.026461417595385353,
+        0.27444282185941765
+      ],
+      "all_three_view_reprojection_error_px": [
+        0.25547296093158767,
+        0.4670692596760362,
+        0.2135029223872079
+      ],
+      "holdout_reprojection": [
+        {
+          "held_out_frame": 197108,
+          "training_frames": [
+            222952,
+            249551
+          ],
+          "prediction_xy": [
+            815.0898964913487,
+            432.22913295683395
+          ],
+          "observed_xy": [
+            814.0,
+            432.0
+          ],
+          "reprojection_error_px": 1.113721811657474,
+          "predicted_camera_z_m": 0.27176155010393227
+        },
+        {
+          "held_out_frame": 222952,
+          "training_frames": [
+            197108,
+            249551
+          ],
+          "prediction_xy": [
+            754.4350085659074,
+            433.5851521155784
+          ],
+          "observed_xy": [
+            755.0,
+            434.0
+          ],
+          "reprojection_error_px": 0.7009380056802847,
+          "predicted_camera_z_m": 0.27420689270053933
+        },
+        {
+          "held_out_frame": 249551,
+          "training_frames": [
+            197108,
+            222952
+          ],
+          "prediction_xy": [
+            693.138993006718,
+            435.1468819377047
+          ],
+          "observed_xy": [
+            692.0,
+            435.0
+          ],
+          "reprojection_error_px": 1.1484247354426036,
+          "predicted_camera_z_m": 0.2767237076989785
+        }
+      ],
+      "cheirality_pass": true,
+      "holdout_consistency_threshold_px": 9,
+      "holdout_consistency_pass": true,
+      "accepted_as_conditional_evaluation_landmark": false,
+      "accepted_as_metric_ground_truth": false,
+      "accepted_reason": "Excluded from primary depth-aware scoring: repeated structure, partial occlusion, and/or leave-one-view-out inconsistency; see identity_confidence",
+      "pixel_noise_only_xyz_m_p2p5_p97p5": [
+        [
+          0.26857733957656393,
+          0.025018364583239867,
+          0.26384648894800317
+        ],
+        [
+          0.27262310311250426,
+          0.02801137917515727,
+          0.2852296407873143
+        ]
+      ],
+      "pixel_noise_only_xyz_m_sample_min_max": [
+        [
+          0.26784702435005625,
+          0.024394895121449142,
+          0.26128244803600986
+        ],
+        [
+          0.27338857927834587,
+          0.028738226751336367,
+          0.28797472395316487
+        ]
+      ],
+      "camera_depths": [
+        {
+          "frame": 197108,
+          "central_z_m": 0.27416284921035305,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.2635676008289543,
+            0.2849485571472511
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.2610037579929272,
+            0.28769321594826563
+          ]
+        },
+        {
+          "frame": 222952,
+          "central_z_m": 0.2741805438771472,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.2635855319824601,
+            0.2849659785210564
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.26102180309113937,
+            0.2877104930786548
+          ]
+        },
+        {
+          "frame": 249551,
+          "central_z_m": 0.27413599790368415,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.263541070461677,
+            0.28492136700071136
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.260977309228597,
+            0.2876658834948531
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P4_upper_side_leaf_tip",
+      "frames": [
+        1003470,
+        1030829,
+        1055904
+      ],
+      "xy": [
+        [
+          797,
+          318
+        ],
+        [
+          724,
+          317
+        ],
+        [
+          656,
+          314
+        ]
+      ],
+      "pixel_uncertainty_uniform_halfwidth": 3,
+      "description": "Tip of the single upper side leaf pointing up-right from the prominent flower stalk, below the curved bud-bearing apex.",
+      "identity_confidence": "overlap_with_upper_branch_in_last_view",
+      "eligible_for_depth_aware_scoring": false,
+      "source_rgb_sha256": {
+        "1003470": "76da08b943df68c8a1e6a99e0cf5c5cb9b67122670e58218a60052e77c4cfc88",
+        "1030829": "457b2da5706924f223e27e33b88f23d1f0aa46baf02163ab5178575262f5bb73",
+        "1055904": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494"
+      },
+      "camera_model": "factory colour K/dist; exact accepted RGB bundle camera-to-reference poses; no ICP correction, pose fitting or ruler scale adjustment",
+      "xyz_reference_camera_m": [
+        1.0639528991837233,
+        -0.03860869495755945,
+        0.24619758914605397
+      ],
+      "all_three_view_reprojection_error_px": [
+        3.162071619923365,
+        0.9140259875348771,
+        3.885303589715993
+      ],
+      "holdout_reprojection": [
+        {
+          "held_out_frame": 1003470,
+          "training_frames": [
+            1030829,
+            1055904
+          ],
+          "prediction_xy": [
+            798.594533409463,
+            313.2496356557014
+          ],
+          "observed_xy": [
+            797.0,
+            318.0
+          ],
+          "reprojection_error_px": 5.0108380733642806,
+          "predicted_camera_z_m": 0.24116184289518625
+        },
+        {
+          "held_out_frame": 1030829,
+          "training_frames": [
+            1003470,
+            1055904
+          ],
+          "prediction_xy": [
+            723.1597049038223,
+            315.9148662180062
+          ],
+          "observed_xy": [
+            724.0,
+            317.0
+          ],
+          "reprojection_error_px": 1.372447147792747,
+          "predicted_camera_z_m": 0.24395668395714845
+        },
+        {
+          "held_out_frame": 1055904,
+          "training_frames": [
+            1003470,
+            1030829
+          ],
+          "prediction_xy": [
+            657.679688347836,
+            319.78403918896146
+          ],
+          "observed_xy": [
+            656.0,
+            314.0
+          ],
+          "reprojection_error_px": 6.022994461669198,
+          "predicted_camera_z_m": 0.2466322577201319
+        }
+      ],
+      "cheirality_pass": true,
+      "holdout_consistency_threshold_px": 9,
+      "holdout_consistency_pass": true,
+      "accepted_as_conditional_evaluation_landmark": false,
+      "accepted_as_metric_ground_truth": false,
+      "accepted_reason": "Excluded from primary depth-aware scoring: repeated structure, partial occlusion, and/or leave-one-view-out inconsistency; see identity_confidence",
+      "pixel_noise_only_xyz_m_p2p5_p97p5": [
+        [
+          1.0625460620428007,
+          -0.03945383187774086,
+          0.2377337909002746
+        ],
+        [
+          1.0651280054510426,
+          -0.03763027545162124,
+          0.25379037339461913
+        ]
+      ],
+      "pixel_noise_only_xyz_m_sample_min_max": [
+        [
+          1.0622122176905038,
+          -0.040154643266661745,
+          0.2353860973003905
+        ],
+        [
+          1.0656399959396494,
+          -0.03717046086093602,
+          0.2561872707374977
+        ]
+      ],
+      "camera_depths": [
+        {
+          "frame": 1003470,
+          "central_z_m": 0.24411118333292472,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.2356488809598656,
+            0.2517063946854079
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.2333001558684244,
+            0.2541015460215604
+          ]
+        },
+        {
+          "frame": 1030829,
+          "central_z_m": 0.2440010120139999,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.2355388350593193,
+            0.2515962546714434
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.2331901531123497,
+            0.25399129667348663
+          ]
+        },
+        {
+          "frame": 1055904,
+          "central_z_m": 0.24396228229357902,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.235500105620837,
+            0.2515574638994115
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.23315142278247783,
+            0.2539525437822674
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P4_upper_side_leaf_junction",
+      "frames": [
+        1003470,
+        1030829,
+        1055904
+      ],
+      "xy": [
+        [
+          779,
+          337
+        ],
+        [
+          708,
+          337
+        ],
+        [
+          642,
+          336
+        ]
+      ],
+      "pixel_uncertainty_uniform_halfwidth": 3,
+      "description": "Visible junction where that upper side leaf joins the main stalk; blurred local width creates pixel uncertainty.",
+      "identity_confidence": "junction_partially_overlapped_by_hanging_bud_in_last_view",
+      "eligible_for_depth_aware_scoring": false,
+      "source_rgb_sha256": {
+        "1003470": "76da08b943df68c8a1e6a99e0cf5c5cb9b67122670e58218a60052e77c4cfc88",
+        "1030829": "457b2da5706924f223e27e33b88f23d1f0aa46baf02163ab5178575262f5bb73",
+        "1055904": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494"
+      },
+      "camera_model": "factory colour K/dist; exact accepted RGB bundle camera-to-reference poses; no ICP correction, pose fitting or ruler scale adjustment",
+      "xyz_reference_camera_m": [
+        1.0587240277727872,
+        -0.031179713620983228,
+        0.2535108637271287
+      ],
+      "all_three_view_reprojection_error_px": [
+        1.839115728064733,
+        0.6380492813782171,
+        2.2192357830448484
+      ],
+      "holdout_reprojection": [
+        {
+          "held_out_frame": 1003470,
+          "training_frames": [
+            1030829,
+            1055904
+          ],
+          "prediction_xy": [
+            780.5311754684112,
+            334.2377252857794
+          ],
+          "observed_xy": [
+            779.0,
+            337.0
+          ],
+          "reprojection_error_px": 3.1582684990175975,
+          "predicted_camera_z_m": 0.24847814936418092
+        },
+        {
+          "held_out_frame": 1030829,
+          "training_frames": [
+            1003470,
+            1055904
+          ],
+          "prediction_xy": [
+            707.2234700222436,
+            336.43824304342036
+          ],
+          "observed_xy": [
+            708.0,
+            337.0
+          ],
+          "reprojection_error_px": 0.958420411207893,
+          "predicted_camera_z_m": 0.2512600476119221
+        },
+        {
+          "held_out_frame": 1055904,
+          "training_frames": [
+            1003470,
+            1030829
+          ],
+          "prediction_xy": [
+            643.5263936945519,
+            339.27443099304753
+          ],
+          "observed_xy": [
+            642.0,
+            336.0
+          ],
+          "reprojection_error_px": 3.6127241852925818,
+          "predicted_camera_z_m": 0.25390919698901254
+        }
+      ],
+      "cheirality_pass": true,
+      "holdout_consistency_threshold_px": 9,
+      "holdout_consistency_pass": true,
+      "accepted_as_conditional_evaluation_landmark": false,
+      "accepted_as_metric_ground_truth": false,
+      "accepted_reason": "Excluded from primary depth-aware scoring: repeated structure, partial occlusion, and/or leave-one-view-out inconsistency; see identity_confidence",
+      "pixel_noise_only_xyz_m_p2p5_p97p5": [
+        [
+          1.057575794239913,
+          -0.032045225504662274,
+          0.2451681776833561
+        ],
+        [
+          1.0598771595439738,
+          -0.030373872759087327,
+          0.26195013726489474
+        ]
+      ],
+      "pixel_noise_only_xyz_m_sample_min_max": [
+        [
+          1.057190826888377,
+          -0.03260560088908495,
+          0.24282882152645607
+        ],
+        [
+          1.0603338222371106,
+          -0.029962720818799804,
+          0.26410123465227153
+        ]
+      ],
+      "camera_depths": [
+        {
+          "frame": 1003470,
+          "central_z_m": 0.25141299801510725,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.24307255473706071,
+            0.2598533032224451
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.24073268442415288,
+            0.2620017915633234
+          ]
+        },
+        {
+          "frame": 1030829,
+          "central_z_m": 0.25130270235133295,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.24296245971690072,
+            0.2597429553316594
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.24062259025354626,
+            0.2618913210067795
+          ]
+        },
+        {
+          "frame": 1055904,
+          "central_z_m": 0.2512642707972985,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.24292398266744888,
+            0.2597044930386396
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.24058412678425645,
+            0.2618529193616775
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P4_single_hanging_bud",
+      "frames": [
+        1003470,
+        1030829,
+        1055904
+      ],
+      "xy": [
+        [
+          814,
+          339
+        ],
+        [
+          723,
+          341
+        ],
+        [
+          637,
+          342
+        ]
+      ],
+      "pixel_uncertainty_uniform_halfwidth": 3,
+      "description": "Centre of isolated pale hanging bud below the upper curved bud-bearing branch; clearly separated from top bud cluster.",
+      "identity_confidence": "clear_unique_local_structure",
+      "eligible_for_depth_aware_scoring": true,
+      "source_rgb_sha256": {
+        "1003470": "76da08b943df68c8a1e6a99e0cf5c5cb9b67122670e58218a60052e77c4cfc88",
+        "1030829": "457b2da5706924f223e27e33b88f23d1f0aa46baf02163ab5178575262f5bb73",
+        "1055904": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494"
+      },
+      "camera_model": "factory colour K/dist; exact accepted RGB bundle camera-to-reference poses; no ICP correction, pose fitting or ruler scale adjustment",
+      "xyz_reference_camera_m": [
+        1.0566793367896437,
+        -0.027765441865135146,
+        0.19643063015372086
+      ],
+      "all_three_view_reprojection_error_px": [
+        0.5775044391858435,
+        1.1761977570091862,
+        0.875760738255415
+      ],
+      "holdout_reprojection": [
+        {
+          "held_out_frame": 1003470,
+          "training_frames": [
+            1030829,
+            1055904
+          ],
+          "prediction_xy": [
+            817.4349666639787,
+            338.56991077076754
+          ],
+          "observed_xy": [
+            814.0,
+            339.0
+          ],
+          "reprojection_error_px": 3.4617875047071607,
+          "predicted_camera_z_m": 0.19054985818975084
+        },
+        {
+          "held_out_frame": 1030829,
+          "training_frames": [
+            1003470,
+            1055904
+          ],
+          "prediction_xy": [
+            721.3354236036794,
+            340.40349425108855
+          ],
+          "observed_xy": [
+            723.0,
+            341.0
+          ],
+          "reprojection_error_px": 1.76822896924357,
+          "predicted_camera_z_m": 0.1941676375966444
+        },
+        {
+          "held_out_frame": 1055904,
+          "training_frames": [
+            1003470,
+            1030829
+          ],
+          "prediction_xy": [
+            640.1745648069809,
+            342.9189238721785
+          ],
+          "observed_xy": [
+            637.0,
+            342.0
+          ],
+          "reprojection_error_px": 3.3048877131577905,
+          "predicted_camera_z_m": 0.19763767192775206
+        }
+      ],
+      "cheirality_pass": true,
+      "holdout_consistency_threshold_px": 9,
+      "holdout_consistency_pass": true,
+      "accepted_as_conditional_evaluation_landmark": true,
+      "accepted_as_metric_ground_truth": false,
+      "accepted_reason": "Unique local RGB identity and leave-one-view-out consistency under frozen poses",
+      "pixel_noise_only_xyz_m_p2p5_p97p5": [
+        [
+          1.0558356834595257,
+          -0.028379272923999308,
+          0.19136559305394263
+        ],
+        [
+          1.0575528803766618,
+          -0.027156326259671293,
+          0.20166581831526428
+        ]
+      ],
+      "pixel_noise_only_xyz_m_sample_min_max": [
+        [
+          1.0555438189303574,
+          -0.02872564842131347,
+          0.18998576083324292
+        ],
+        [
+          1.057791738851594,
+          -0.026871851329103563,
+          0.202855920978898
+        ]
+      ],
+      "camera_depths": [
+        {
+          "frame": 1003470,
+          "central_z_m": 0.1943272701174604,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.18926342020258724,
+            0.19956309782529258
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.1878821188463344,
+            0.20075182795227345
+          ]
+        },
+        {
+          "frame": 1030829,
+          "central_z_m": 0.19421689520512628,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.1891531769726954,
+            0.1994527192599194
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.18777178281750323,
+            0.20064132630324427
+          ]
+        },
+        {
+          "frame": 1055904,
+          "central_z_m": 0.19417859841364238,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.18911485799488864,
+            0.19941440563198476
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.18773349587196514,
+            0.2006030400638546
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P4_left_yellow_flower_junction",
+      "frames": [
+        1003470,
+        1030829,
+        1055904
+      ],
+      "xy": [
+        [
+          650,
+          461
+        ],
+        [
+          563,
+          461
+        ],
+        [
+          483,
+          464
+        ]
+      ],
+      "pixel_uncertainty_uniform_halfwidth": 3,
+      "description": "Junction of bright petals in the distinct left yellow flower, below its upright green pedicel. A visual material-region landmark rather than an exact botanical centre.",
+      "identity_confidence": "clear_unique_flower_local_region",
+      "eligible_for_depth_aware_scoring": true,
+      "source_rgb_sha256": {
+        "1003470": "76da08b943df68c8a1e6a99e0cf5c5cb9b67122670e58218a60052e77c4cfc88",
+        "1030829": "457b2da5706924f223e27e33b88f23d1f0aa46baf02163ab5178575262f5bb73",
+        "1055904": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494"
+      },
+      "camera_model": "factory colour K/dist; exact accepted RGB bundle camera-to-reference poses; no ICP correction, pose fitting or ruler scale adjustment",
+      "xyz_reference_camera_m": [
+        1.0073550940052534,
+        0.01067533248268516,
+        0.20807403630365928
+      ],
+      "all_three_view_reprojection_error_px": [
+        0.8424477574320747,
+        1.1721713462107086,
+        0.38027777260375345
+      ],
+      "holdout_reprojection": [
+        {
+          "held_out_frame": 1003470,
+          "training_frames": [
+            1030829,
+            1055904
+          ],
+          "prediction_xy": [
+            651.8559860897549,
+            459.7661262053826
+          ],
+          "observed_xy": [
+            650.0,
+            461.0
+          ],
+          "reprojection_error_px": 2.2287056571936925,
+          "predicted_camera_z_m": 0.20361268392311502
+        },
+        {
+          "held_out_frame": 1030829,
+          "training_frames": [
+            1003470,
+            1055904
+          ],
+          "prediction_xy": [
+            562.1419992389724,
+            462.53657640545
+          ],
+          "observed_xy": [
+            563.0,
+            461.0
+          ],
+          "reprojection_error_px": 1.7598955525000652,
+          "predicted_camera_z_m": 0.2057874155405769
+        },
+        {
+          "held_out_frame": 1055904,
+          "training_frames": [
+            1003470,
+            1030829
+          ],
+          "prediction_xy": [
+            484.67247882008314,
+            463.64000027540953
+          ],
+          "observed_xy": [
+            483.0,
+            464.0
+          ],
+          "reprojection_error_px": 1.7107849675899987,
+          "predicted_camera_z_m": 0.20785404691638765
+        }
+      ],
+      "cheirality_pass": true,
+      "holdout_consistency_threshold_px": 9,
+      "holdout_consistency_pass": true,
+      "accepted_as_conditional_evaluation_landmark": true,
+      "accepted_as_metric_ground_truth": false,
+      "accepted_reason": "Unique local RGB identity and leave-one-view-out consistency under frozen poses",
+      "pixel_noise_only_xyz_m_p2p5_p97p5": [
+        [
+          1.0065254249038122,
+          0.009617528362840747,
+          0.20245396660493073
+        ],
+        [
+          1.0081742724531244,
+          0.011787545680808535,
+          0.21382159460845712
+        ]
+      ],
+      "pixel_noise_only_xyz_m_sample_min_max": [
+        [
+          1.0062731742099669,
+          0.009029597522673155,
+          0.20113009753302216
+        ],
+        [
+          1.0084098344134216,
+          0.012557215012366507,
+          0.2156119590711739
+        ]
+      ],
+      "camera_depths": [
+        {
+          "frame": 1003470,
+          "central_z_m": 0.20593974117701977,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.20032050099108922,
+            0.21168656380939588
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.19899716823840327,
+            0.2134751130491272
+          ]
+        },
+        {
+          "frame": 1030829,
+          "central_z_m": 0.20583192442204756,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.20021268440084772,
+            0.21157878642092406
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.1988893596827011,
+            0.21336724426219356
+          ]
+        },
+        {
+          "frame": 1055904,
+          "central_z_m": 0.20579465514352385,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.20017539229661108,
+            0.21154154052207041
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.19885205368737188,
+            0.2133300401233049
+          ]
+        }
+      ]
+    },
+    {
+      "id": "P4_right_yellow_flower_junction",
+      "frames": [
+        1003470,
+        1030829,
+        1055904
+      ],
+      "xy": [
+        [
+          797,
+          482
+        ],
+        [
+          726,
+          482
+        ],
+        [
+          661,
+          485
+        ]
+      ],
+      "pixel_uncertainty_uniform_halfwidth": 3,
+      "description": "Junction of bright lower and side petals in the separate right yellow flower, below its folded upper petals.",
+      "identity_confidence": "clear_unique_flower_local_region",
+      "eligible_for_depth_aware_scoring": true,
+      "source_rgb_sha256": {
+        "1003470": "76da08b943df68c8a1e6a99e0cf5c5cb9b67122670e58218a60052e77c4cfc88",
+        "1030829": "457b2da5706924f223e27e33b88f23d1f0aa46baf02163ab5178575262f5bb73",
+        "1055904": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494"
+      },
+      "camera_model": "factory colour K/dist; exact accepted RGB bundle camera-to-reference poses; no ICP correction, pose fitting or ruler scale adjustment",
+      "xyz_reference_camera_m": [
+        1.0661029410560663,
+        0.026163190146241827,
+        0.25475271481384015
+      ],
+      "all_three_view_reprojection_error_px": [
+        0.7456373874051313,
+        1.042203083918934,
+        0.3021819576273172
+      ],
+      "holdout_reprojection": [
+        {
+          "held_out_frame": 1003470,
+          "training_frames": [
+            1030829,
+            1055904
+          ],
+          "prediction_xy": [
+            797.5488944417094,
+            480.8765058958529
+          ],
+          "observed_xy": [
+            797.0,
+            482.0
+          ],
+          "reprojection_error_px": 1.2504095769757837,
+          "predicted_camera_z_m": 0.251423957280331
+        },
+        {
+          "held_out_frame": 1030829,
+          "training_frames": [
+            1003470,
+            1055904
+          ],
+          "prediction_xy": [
+            725.7644047227349,
+            483.54622637890316
+          ],
+          "observed_xy": [
+            726.0,
+            482.0
+          ],
+          "reprojection_error_px": 1.5640719770795728,
+          "predicted_camera_z_m": 0.25237150626550675
+        },
+        {
+          "held_out_frame": 1055904,
+          "training_frames": [
+            1003470,
+            1030829
+          ],
+          "prediction_xy": [
+            661.5077358846853,
+            484.5567315920657
+          ],
+          "observed_xy": [
+            661.0,
+            485.0
+          ],
+          "reprojection_error_px": 0.6740049035947451,
+          "predicted_camera_z_m": 0.25330218761052514
+        }
+      ],
+      "cheirality_pass": true,
+      "holdout_consistency_threshold_px": 9,
+      "holdout_consistency_pass": true,
+      "accepted_as_conditional_evaluation_landmark": true,
+      "accepted_as_metric_ground_truth": false,
+      "accepted_reason": "Unique local RGB identity and leave-one-view-out consistency under frozen poses",
+      "pixel_noise_only_xyz_m_p2p5_p97p5": [
+        [
+          1.0647063709478684,
+          0.024396069341743702,
+          0.24620685718232607
+        ],
+        [
+          1.0674522358233989,
+          0.028048792230594276,
+          0.2638008926299772
+        ]
+      ],
+      "pixel_noise_only_xyz_m_sample_min_max": [
+        [
+          1.0642764130141857,
+          0.023798021952879975,
+          0.24429233675840675
+        ],
+        [
+          1.0680433534521172,
+          0.028980049627686275,
+          0.2659635881469226
+        ]
+      ],
+      "camera_depths": [
+        {
+          "frame": 1003470,
+          "central_z_m": 0.2525060036095583,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.24396645002602682,
+            0.2615484962480495
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.24205234631094907,
+            0.2637106204582296
+          ]
+        },
+        {
+          "frame": 1030829,
+          "central_z_m": 0.2523879382111721,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.24384881520616009,
+            0.26143005135723135
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.24193472489074605,
+            0.26359211217738016
+          ]
+        },
+        {
+          "frame": 1055904,
+          "central_z_m": 0.25235289361854507,
+          "pixel_noise_only_z_m_p2p5_p97p5": [
+            0.24381363407091253,
+            0.2613951307315172
+          ],
+          "pixel_noise_only_z_m_sample_min_max": [
+            0.2418995334176586,
+            0.26355720219648404
+          ]
+        }
+      ]
+    }
+  ],
+  "accepted_conditional_count": 3,
+  "excluded_count": 3,
+  "limits": [
+    "RGB surface identity and apparent centroid can shift slightly under viewpoint/blur; intervals exclude pose, distortion, motion and scale uncertainty.",
+    "These points do not define hidden plant surfaces, complete organ extents or whole-plant ownership.",
+    "A depth comparison requires projection into the same evaluated view and nearby matched surface; do not assign one landmark depth to the whole ROI.",
+    "P1 grain candidate is deliberately excluded from primary scoring because repeated grains are not unambiguous enough despite possible reprojection consistency.",
+    "The upper side-leaf tip and junction were excluded following source-only magnified panel review because the final view partly overlaps other branch/bud structures; matching consistency alone did not overrule visible ambiguity."
+  ]
+}

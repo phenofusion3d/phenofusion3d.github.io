@@ -1,0 +1,16 @@
+{
+  "static_links_checked": 45,
+  "missing_links": [],
+  "manual_rows": 47,
+  "conditional_rows": 13,
+  "fusion_status": "rejected_dense_registration_diagnostic",
+  "presentation_exports": [
+    "Presenter_Notes_and_Demo_Guide_v2.txt",
+    "PhenoFusion3D_Final_Sprint_Review_v2.pptx",
+    "PhenoFusion3D_Final_Sprint_Review.pdf",
+    "Presenter_Notes_and_Demo_Guide.txt",
+    "PhenoFusion3D_Final_Sprint_Review.pptx",
+    "PhenoFusion3D_Final_Sprint_Review_v2.pdf"
+  ],
+  "scope": "Bundle consistency and relative links only; no new physical validation or publication claim"
+}

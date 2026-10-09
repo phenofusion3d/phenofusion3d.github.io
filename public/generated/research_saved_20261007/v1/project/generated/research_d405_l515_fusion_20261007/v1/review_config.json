@@ -1,0 +1,211 @@
+{
+  "output": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_d405_l515_fusion_20261007\\v1\\review",
+  "title": "D405 + L515 \u2014 fusion candidate",
+  "subtitle": "Separate source results preserved | Empirical surface alignment | Conditional scale",
+  "bounds_min": [
+    0,
+    -0.4,
+    -0.79
+  ],
+  "bounds_max": [
+    1.8,
+    0.4,
+    -0.1
+  ],
+  "photo": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_816080.png",
+  "report": "../FUSION_REPORT.md",
+  "models": [
+    {
+      "source": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_d405_l515_fusion_20261007\\v1\\fused_review_reference.ply",
+      "transform": [
+        [
+          0.9997320091584629,
+          -0.022989551247924105,
+          0.002718528536188047,
+          0.0
+        ],
+        [
+          -0.023027275267776585,
+          -0.9996256969203645,
+          0.014771954854300693,
+          0.0
+        ],
+        [
+          0.0023779103694299077,
+          -0.014830596410614249,
+          -0.9998871931134934,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "label": "D405 + L515: fusion candidate",
+      "description": "D405 preserved plus 13,489 L515 points passing conflict checks. Of these, 5,159 have fewer than two D405 agreement votes and remain sensor-only complementary candidates.",
+      "download": "fused_review_upright.ply"
+    },
+    {
+      "source": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_d405_l515_fusion_20261007\\v1\\d405_review_reference.ply",
+      "transform": [
+        [
+          0.9997320091584629,
+          -0.022989551247924105,
+          0.002718528536188047,
+          0.0
+        ],
+        [
+          -0.023027275267776585,
+          -0.9996256969203645,
+          0.014771954854300693,
+          0.0
+        ],
+        [
+          0.0023779103694299077,
+          -0.014830596410614249,
+          -0.9998871931134934,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "label": "D405 only: preserved result",
+      "description": "The existing 64-view RGB-stereo reconstruction, unchanged. Same inspection bounds and viewing angle as the fusion.",
+      "download": "d405_review_upright.ply"
+    },
+    {
+      "source": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_d405_l515_fusion_20261007\\v1\\l515_aligned_review_reference.ply",
+      "transform": [
+        [
+          0.9997320091584629,
+          -0.022989551247924105,
+          0.002718528536188047,
+          0.0
+        ],
+        [
+          -0.023027275267776585,
+          -0.9996256969203645,
+          0.014771954854300693,
+          0.0
+        ],
+        [
+          0.0023779103694299077,
+          -0.014830596410614249,
+          -0.9998871931134934,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "label": "L515 only: aligned result",
+      "description": "Recorded L515 depth, registered with the empirical rigid surface transform. This transform is not a verified physical camera extrinsic.",
+      "download": "l515_aligned_review_upright.ply"
+    },
+    {
+      "source": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_d405_l515_fusion_20261007\\v1\\fused_source_colours_reference.ply",
+      "transform": [
+        [
+          0.9997320091584629,
+          -0.022989551247924105,
+          0.002718528536188047,
+          0.0
+        ],
+        [
+          -0.023027275267776585,
+          -0.9996256969203645,
+          0.014771954854300693,
+          0.0
+        ],
+        [
+          0.0023779103694299077,
+          -0.014830596410614249,
+          -0.9998871931134934,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "label": "Fusion: camera sources",
+      "description": "Blue: preserved D405 geometry. Amber: additional L515 geometry. Original coordinates are preserved; these colours are an inspection overlay.",
+      "download": "fused_source_colours_upright.ply"
+    },
+    {
+      "source": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_d405_l515_fusion_20261007\\v1\\l515_additions_reference.ply",
+      "transform": [
+        [
+          0.9997320091584629,
+          -0.022989551247924105,
+          0.002718528536188047,
+          0.0
+        ],
+        [
+          -0.023027275267776585,
+          -0.9996256969203645,
+          0.014771954854300693,
+          0.0
+        ],
+        [
+          0.0023779103694299077,
+          -0.014830596410614249,
+          -0.9998871931134934,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "label": "L515 additions only",
+      "description": "Only the 13,489 accepted additions. These are recorded surfaces, not invented gap filling. Source evidence distinguishes cross-view agreement from L515-only candidates.",
+      "download": "l515_additions_upright.ply"
+    },
+    {
+      "source": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_d405_l515_fusion_20261007\\v1\\l515_excluded_reference.ply",
+      "transform": [
+        [
+          0.9997320091584629,
+          -0.022989551247924105,
+          0.002718528536188047,
+          0.0
+        ],
+        [
+          -0.023027275267776585,
+          -0.9996256969203645,
+          0.014771954854300693,
+          0.0
+        ],
+        [
+          0.0023779103694299077,
+          -0.014830596410614249,
+          -0.9998871931134934,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "label": "L515 withheld overlaps",
+      "description": "21,785 nonduplicate L515 points withheld because of uncertain overlap or D405 free-space contradiction. They are preserved here for inspection and are absent from the fusion.",
+      "download": "l515_excluded_upright.ply"
+    }
+  ]
+}

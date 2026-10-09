@@ -1,0 +1,111 @@
+{
+  "models": [
+    {
+      "id": "P1",
+      "label": "Plant 1 \u2014 cleaned observed tissue",
+      "context": false,
+      "sha256": "83260a35fc2885ca60daf9e7d69d55c29b8131f263eb63d5f5a4c64ab2f45aae",
+      "count": 21891,
+      "original_count": 21891,
+      "span": 1.0,
+      "display_stride": 1,
+      "centre": [
+        0.23996544548620705,
+        -0.10763534226280538,
+        -0.4794498740110469
+      ],
+      "scale": 0.46733408012839606,
+      "download": "../../../research_plant_cleanup_20261007/v1/result/P1_reference.ply"
+    },
+    {
+      "id": "P2",
+      "label": "Plant 2 \u2014 cleaned observed tissue",
+      "context": false,
+      "sha256": "bb19b09daa8a122b4fd855ce3b866cd05060e2a20769afc1cba3456df30dd742",
+      "count": 74306,
+      "original_count": 74306,
+      "span": 1.0,
+      "display_stride": 1,
+      "centre": [
+        0.6124914233604483,
+        -0.10431043947961957,
+        -0.4456209576655602
+      ],
+      "scale": 0.498438992525309,
+      "download": "../../../research_plant_cleanup_20261007/v1/result/P2_reference.ply"
+    },
+    {
+      "id": "P3",
+      "label": "Plant 3 \u2014 cleaned observed tissue",
+      "context": false,
+      "sha256": "1fa8e16b42ebf598eb67fbd1e301f02845bc753213ab45a31eeb68ca596866aa",
+      "count": 113901,
+      "original_count": 113901,
+      "span": 1.0,
+      "display_stride": 1,
+      "centre": [
+        0.7804818497472027,
+        -0.054606309938509255,
+        -0.4615581841852726
+      ],
+      "scale": 0.49003776292070494,
+      "download": "../../../research_plant_cleanup_20261007/v1/result/P3_reference.ply"
+    },
+    {
+      "id": "P4",
+      "label": "Plant 4 \u2014 cleaned observed tissue",
+      "context": false,
+      "sha256": "a0fb7091556524eeb4b9faea079dd1ab267d6f047e7bdf2640ba2691b5acb1b8",
+      "count": 69634,
+      "original_count": 69634,
+      "span": 1.0,
+      "display_stride": 1,
+      "centre": [
+        1.0386139739889186,
+        -0.0667635329725928,
+        -0.40774984380899226
+      ],
+      "scale": 0.4355300420756314,
+      "download": "../../../research_plant_cleanup_20261007/v1/result/P4_reference.ply"
+    },
+    {
+      "id": "P5",
+      "label": "Plant 5 \u2014 cleaned observed tissue",
+      "context": false,
+      "sha256": "2d236b5d5c6387e211718e2f6b03f4bc7131f557c805228be3f57a4a25eab39f",
+      "count": 156185,
+      "original_count": 156185,
+      "span": 1.0,
+      "display_stride": 1,
+      "centre": [
+        1.3514437868024194,
+        -0.02978324115734715,
+        -0.5593446424172799
+      ],
+      "scale": 0.3523269133678708,
+      "download": "../../../research_plant_cleanup_20261007/v1/result/P5_reference.ply"
+    },
+    {
+      "id": "fusion_context",
+      "label": "Original fused scene \u2014 base and organ context",
+      "context": true,
+      "sha256": "9caee0edcc1fb5f66a9cdd490a0054e2ab45872302a32a81cd24788dee01ab10",
+      "count": 577497,
+      "original_count": 1732490,
+      "span": 1.0,
+      "display_stride": 3,
+      "centre": [
+        0.7590304441541046,
+        -0.08491525158048992,
+        -0.4899923955268041
+      ],
+      "scale": 1.5180587974478612,
+      "download": "../../../research_d405_l515_fusion_20261007/v1/fused_review_reference.ply"
+    }
+  ],
+  "display_only": true,
+  "endpoint_status": "unreviewed source point candidates",
+  "geometry_created": false,
+  "source_files_modified": false,
+  "coordinate_unit": "conditional_m"
+}

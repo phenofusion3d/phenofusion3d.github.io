@@ -1,0 +1,23 @@
+{
+  "root_head": "920a577958a22e10998d24935265c77e2296d867",
+  "root_diff_paths": [
+    "tests/test_gantry_offline.py"
+  ],
+  "snapshot_file_count": 208,
+  "other_snapshot_files_unchanged": 207,
+  "modified_snapshot_paths": [
+    "tests/test_gantry_offline.py"
+  ],
+  "snapshot_mismatches": [],
+  "old_windows_snapshot_mismatches": [],
+  "old_native_snapshot_mismatches": [],
+  "new_native_snapshot_mismatches": [],
+  "protected_file_count": 26,
+  "current_protected_baseline_mismatches": [],
+  "full_selection_case_names_identical_to_first_run": true,
+  "modified_test_lf_matches_windows_evidence": true,
+  "patch_sha256_verified": true,
+  "current_test_raw_sha256": "de9449470f674ad7281f47bebc97693473517b89c58957342b94dc1c0f01604d",
+  "current_test_lf_sha256": "34788b6168d98a45d307480457efa4958f1636960d565f99ebe218f9b3272e1b",
+  "source_line_endings": "207 files preserve committed archive bytes. Only the modified test is normalized to LF; its raw Windows identity is recorded separately."
+}

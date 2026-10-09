@@ -1,0 +1,33 @@
+[
+  {
+    "specimen_id": "prior_109_candidate",
+    "source_sha256": "e872fb8065c9cff2464a4ec0ac72ab87ab6fee749470391a021bc0da6c8da8a9",
+    "points": 1266476,
+    "coordinate_unit": "unknown",
+    "observed_extent_xyz": [
+      0.519408062610622,
+      0.42879726490432724,
+      0.3693349559951129
+    ],
+    "observed_p99_extent_xyz": [
+      0.48220987808459637,
+      0.39191624999999997,
+      0.35703458811453254
+    ],
+    "minimum_xyz": [
+      -0.266799849289184,
+      -0.334514375,
+      0.0
+    ],
+    "maximum_xyz": [
+      0.252608213321438,
+      0.09428288990432729,
+      0.3693349559951129
+    ],
+    "anatomical_height": null,
+    "whole_leaf_area": null,
+    "whole_plant_volume": null,
+    "status": "observed_cloud_distribution_only",
+    "limitation": "Retained point range is not stem-base height, complete canopy extent, tissue surface area or volume."
+  }
+]

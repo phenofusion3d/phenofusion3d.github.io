@@ -1,0 +1,1571 @@
+{
+  "created_date": "2026-10-07",
+  "purpose": "Concrete measurement handoff and hypothetical scale scenarios derived from frozen review; no new physical validation",
+  "policy": {
+    "status": "saved measurement handoff; requested physical evidence has not been collected",
+    "retrospective_limit": "New photographs of a grown, moved, wilted or re-positioned specimen cannot independently validate the 28 September reconstruction. If the original unchanged state is unavailable, keep historical gaps unresolved and acquire a new paired scan/reference dataset with new capture IDs.",
+    "scale_gap": "Physical ChArUco dimensions and original recording-unit facts remain unavailable. A new measured scale reference may support a new capture; it does not retroactively certify historical scale.",
+    "height_definition": "User requested stem base to very tip. Record whether this means gravity-vertical height, a straight 3D endpoint chord or path length along a stem; the existing display-Z span supplies none of these automatically.",
+    "two_ruler_formula": "(lower reading at join - lower reading at stem base) + (upper reading at tip - upper reading at join)",
+    "minimum_recipe_limit": "Photo counts below are practical starting sets, not guarantees. Combine views only if all stated features are sharp and visible. Geometry requires calibrated overlapping views of the same unchanged endpoints; a ruler-only image cannot create missing reconstructed surfaces.",
+    "global_record": [
+      "Record specimen and organ IDs, capture date/time, endpoint definitions, units, instrument resolution, pose and any handling/flattening.",
+      "Take the reference independently of reconstruction tuning. Repeated readings quantify repeatability separately; no one-shot photo becomes exact ground truth.",
+      "Use a measured in-plane scale with visible endpoint offsets; retain the full image and original files. For two rulers, retain their common join readings."
+    ],
+    "no_new_physical_measurement_claim": true,
+    "new_endpoint_clicking_performed": false,
+    "earlier_outputs_modified": false
+  },
+  "plants": [
+    {
+      "specimen_id": "P1",
+      "identity_evidence": "Single cereal stem and ear, three green blade nodes and a ring of dry basal blades; first pot beside the board.",
+      "observed_point_count": 21891,
+      "observed_span_xyz_conditional_cm": [
+        17.01782723593456,
+        33.06295415389997,
+        46.733408012839604
+      ],
+      "observed_p01_p99_span_xyz_conditional_cm": [
+        16.297676575920853,
+        29.284238551910484,
+        44.604516399300635
+      ],
+      "observed_z_span_is_height": false,
+      "observed_chords": [
+        {
+          "id": "P1.O03.observed_blade_extent",
+          "distance_conditional_cm": 5.642877354066358,
+          "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+          "base_fused_index": 49071,
+          "tip_fused_index": 158296,
+          "physical_accuracy_validated": false
+        }
+      ],
+      "anatomical_height_cm": null,
+      "absent_measurements": "No accepted stem-base-to-very-tip height, no validated full-leaf length/width, no validated maximum-width section.",
+      "height_gap": "Dry blades overlap narrow stems at the soil junction; the measured stem origin cannot be isolated. Highest retained surface projects to the upper green blade tip. Cereal ear awns extend beyond the dense ear body and are incompletely reconstructed; the very highest biological tip is not certified.",
+      "reference_dimension_counts": {
+        "operator_annotation_only": 3,
+        "photo_supported_approximate": 6
+      },
+      "definitions_to_resolve": [
+        "Height: choose the actual soil-emergence point of the measured cereal stem, and explicitly decide whether the very tip includes awns and dry terminal tissue. Keep vertical height distinct from stem-path length and 3D endpoint chord.",
+        "O01/O02: fix which lower/middle blade is meant by attachment-node identity, not length. O03: include or exclude its fine dry terminal continuation consistently.",
+        "O04 is a cereal ear. Define body base and distal body boundary separately from awns; keep it outside leaf statistics. Width means the photographed section unless a maximum-width search is explicitly performed."
+      ],
+      "existing_photos_can_establish": "Overview and raw frames support the cereal specimen, upper blade O03 and ear O04. Six dimensions have approximate photo-readable candidates: O01 width; O02 length/width; O03 length/width; O04 body length.",
+      "existing_photos_cannot_establish": "There is no supporting whole-height ruler photograph. O01 length and O04 width are operator-only; O01 identity is unresolved and O02 is tentative. O03 has a photographed width around 0.8 cm (0.6\u20131.0 interval), while the original 9 cm annotation remains unchanged. The fine dry O03 tip and distal ear-body endpoint lack selected 3D support in the reviewed 4px disks.",
+      "first_priority": "First label O01/O02 by node, then capture the fine O03 dry tip and O04 body boundary; these cannot be recovered by scaling the shorter observed chord.",
+      "action_ids": [
+        "P1-A1",
+        "P1-A2",
+        "P1-A3",
+        "P1-A4"
+      ]
+    },
+    {
+      "specimen_id": "P2",
+      "identity_evidence": "Bent exposed basal stem, compact puckered blue-green crown, dry curled tips and hanging flowering branch; between cereal and P3.",
+      "observed_point_count": 74306,
+      "observed_span_xyz_conditional_cm": [
+        33.133937806305376,
+        19.031735825552744,
+        49.843899252530896
+      ],
+      "observed_p01_p99_span_xyz_conditional_cm": [
+        16.334108530935882,
+        17.189096805619005,
+        46.549289468236964
+      ],
+      "observed_z_span_is_height": false,
+      "observed_chords": [],
+      "anatomical_height_cm": null,
+      "absent_measurements": "No accepted stem-base-to-very-tip height, no validated full-leaf length/width, no validated maximum-width section.",
+      "height_gap": "Exposed curved green basal stem is visible against soil, but its precise emergence and measurement zero are unresolved. Highest retained points project to a curled yellowing edge and nearby overlapping tissue. Small terminal buds and curled margins are not a unique certified top endpoint.",
+      "reference_dimension_counts": {
+        "operator_annotation_only": 3,
+        "photo_supported_approximate": 2
+      },
+      "definitions_to_resolve": [
+        "Height origin is the actual soil-emergence point of the bent stem, not the upper bend. Record the highest living/dry/bud structure policy and vertical versus along-stem convention.",
+        "O01 and O02 need unique attachment-node identity through the puckered overlapping crown. Specify lamina-only base versus petiole inclusion and straight chord versus along-curved-midrib length.",
+        "The width section in each ruler photo must be identified on the in-situ leaf; curled leaves measured held flat are a different pose."
+      ],
+      "existing_photos_can_establish": "The bent basal stem and compact puckered crown establish specimen identity. O02 length (3.6\u20134.2 cm) and photographed width (3.2\u20133.8 cm) have approximate readable photo candidates.",
+      "existing_photos_cannot_establish": "O01 is only tentative and O02 unresolved in the reconstructed crown. O01 length/width are operator-only. Height photos obscure the lower zero/joining offset and the curled top changes pose; they do not independently reconstruct 51.7 cm.",
+      "first_priority": "Resolve the two leaf attachment identities before making any 3D leaf comparison.",
+      "action_ids": [
+        "P2-A1",
+        "P2-A2",
+        "P2-A3"
+      ]
+    },
+    {
+      "specimen_id": "P3",
+      "identity_evidence": "Six broad lobed leaves around a purple petiole junction and a long arcing flowering stalk; between compact P2 and sparse P4.",
+      "observed_point_count": 113901,
+      "observed_span_xyz_conditional_cm": [
+        24.806796925301477,
+        24.126645121046984,
+        49.0037762920705
+      ],
+      "observed_p01_p99_span_xyz_conditional_cm": [
+        22.96126406145975,
+        21.610758680704762,
+        41.817861578311245
+      ],
+      "observed_z_span_is_height": false,
+      "observed_chords": [
+        {
+          "id": "P3.O03.blade_chord",
+          "distance_conditional_cm": 7.475255446013435,
+          "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+          "base_fused_index": 1221511,
+          "tip_fused_index": 944608,
+          "physical_accuracy_validated": false
+        }
+      ],
+      "anatomical_height_cm": null,
+      "absent_measurements": "No accepted stem-base-to-very-tip height, no validated full-leaf length/width, no validated maximum-width section.",
+      "height_gap": "Purple/green petiole junction is visible, but the soil-level stem origin is beneath overlapping tissue. Branch-junction region only. Highest retained points lie in overlapping distal stalk/leaf tissue near the lower image edge. Long flowering-stem extremities and true terminal point are not fully resolved.",
+      "reference_dimension_counts": {
+        "operator_annotation_only": 8,
+        "photo_supported_approximate": 5
+      },
+      "definitions_to_resolve": [
+        "The visible purple petiole junction is not the soil-level stem base. Identify the latter and the end of the long flowering stalk before height.",
+        "For O03 define whether the base is the lowest visible basal lamina, inclusion of small basal lobes, or the petiole junction. Existing observed chord uses basal lamina to apex and is not along-midrib length.",
+        "O01/O02/O04/O05 require complete basal boundaries around lobes/crossing stalks; O06 attachment identity remains tentative. Specify photographed width section and whether any maximum is being claimed."
+      ],
+      "existing_photos_can_establish": "Five leaf IDs (O01\u2013O05) have strong overview-to-scan support. Five dimensions have approximate photo candidates: O01 width, O04 length/width and O05 length/width. O03 has a 7.475 cm observed chord and an operator-only 7.5 cm annotation.",
+      "existing_photos_cannot_establish": "The O03 numerical closeness is not validation: its 4px endpoint-pair range is 6.71\u20138.42 cm, base convention remains tentative and units are unconfirmed. O01/O02/O03/O06 lengths and O02/O03/O06 widths are not independently photo-readable. The hand hides the two-ruler join in height photos; Media (2) and Media (3) are duplicates, not repeats.",
+      "first_priority": "Resolve O03 base convention and take one independent matching length reference first; this is the smallest route to improving the existing complete candidate chord.",
+      "action_ids": [
+        "P3-A1",
+        "P3-A2",
+        "P3-A3",
+        "P3-A4"
+      ]
+    },
+    {
+      "specimen_id": "P4",
+      "identity_evidence": "Sparse branched flowering plant with yellow flowers and narrow pod-like structures; adjacent to P3 and red-brown P5.",
+      "observed_point_count": 69634,
+      "observed_span_xyz_conditional_cm": [
+        17.46443407906064,
+        17.154955703374636,
+        43.55300420756314
+      ],
+      "observed_p01_p99_span_xyz_conditional_cm": [
+        15.609678238652346,
+        15.201475735894881,
+        40.83498796096716
+      ],
+      "observed_z_span_is_height": false,
+      "observed_chords": [],
+      "anatomical_height_cm": null,
+      "absent_measurements": "No accepted stem-base-to-very-tip height, no validated full-leaf length/width, no validated maximum-width section.",
+      "height_gap": "Pot-centre origin is obscured by leaves and crossing flowering stems. Region candidate only; no visible stem-base endpoint. Highest retained surface projects to a terminal pale bud/flower cluster, but its exact outermost endpoint and complete depth support remain uncertain.",
+      "reference_dimension_counts": {
+        "operator_annotation_only": 1,
+        "unusable_for_leaf_validation_pending_organ_type": 8
+      },
+      "definitions_to_resolve": [
+        "Confirm whether O01\u2013O04 are leaves, pods or other reproductive structures before defining leaf statistics.",
+        "For each identified organ, specify body-versus-stalk/pedicel endpoints and whether a curved organ is measured as straight chord or body path. Width needs a chosen section or separately established maximum.",
+        "Height needs actual soil emergence and a declared terminal bud/flower tip; the observed pale cluster is not a certified outer endpoint."
+      ],
+      "existing_photos_can_establish": "Yellow flowers, sparse branching and narrow pod-like structures establish specimen identity and provide organ-type/context evidence.",
+      "existing_photos_cannot_establish": "All eight O01\u2013O04 dimensions are unusable for leaf validation pending organ type. Similar narrow structures cannot be uniquely traced between held photos and the branching scene. The ruler base/join offsets for height are not simultaneously legible.",
+      "first_priority": "Resolve organ type and identity first. Re-measuring widths before that does not create usable leaf references.",
+      "action_ids": [
+        "P4-A1",
+        "P4-A2",
+        "P4-A3"
+      ]
+    },
+    {
+      "specimen_id": "P5",
+      "identity_evidence": "Broad green leaves interspersed with distinctive rust-brown damaged lobed blades, small central leaf and radial petioles; last pot.",
+      "observed_point_count": 156185,
+      "observed_span_xyz_conditional_cm": [
+        33.32321121512316,
+        35.232691336787084,
+        24.387250568490753
+      ],
+      "observed_p01_p99_span_xyz_conditional_cm": [
+        30.20350481918177,
+        32.4569261129433,
+        15.227615041841835
+      ],
+      "observed_z_span_is_height": false,
+      "observed_chords": [
+        {
+          "id": "P5.O04.terminal_lamina_chord",
+          "distance_conditional_cm": 12.148629537473008,
+          "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+          "base_fused_index": 135290,
+          "tip_fused_index": 657710,
+          "physical_accuracy_validated": false
+        }
+      ],
+      "anatomical_height_cm": null,
+      "absent_measurements": "No accepted stem-base-to-very-tip height, no validated full-leaf length/width, no validated maximum-width section.",
+      "height_gap": "Radial petiole junction and lower curved stem are visible; actual soil-emergence point is hidden by the stem/leaf cluster. Highest retained points project to the terminal margin of the left-facing lobed green O05 leaf candidate, a plausible top surface. This does not establish all-terminal completeness or the stem origin.",
+      "reference_dimension_counts": {
+        "operator_annotation_only": 6,
+        "photo_supported_approximate": 5
+      },
+      "definitions_to_resolve": [
+        "Height origin is the soil-emergence point under the radial petiole cluster, not the visible fork. Decide which tip and damaged/dry structures count.",
+        "O04 existing chord covers the terminal lamina only. Define the lower basal-lobe/lamina origin used in the ruler photo before comparing full length. O05 also has unresolved petiole inclusion.",
+        "For O01/O03 curled necrotic margins, specify whether folded dry tissue is included and whether measurements use in-situ or flattened pose. O02 needs an explicit base at the crowded fork.",
+        "All width references are photographed sections, not established global maxima."
+      ],
+      "existing_photos_can_establish": "All five organ IDs have strong overview-to-scan support from shape, damage and radial topology. Five dimensions have approximate photo candidates: O01/O03/O05 widths and O04 length/width. O04 has a 12.149 cm observed terminal-lamina chord.",
+      "existing_photos_cannot_establish": "The O04 terminal-lamina base differs from the ruler origin near lower basal lobes, so 12.149 versus 12.9 cm is not a full-leaf residual. The saved height ruler ends before the highest leaf and base alignment is hidden; 31.8 cm cannot be extrapolated. O01/O02/O03/O05 lengths and O02 width remain operator-only.",
+      "first_priority": "Show O04 terminal lamina and its lower basal origin together before any full-length comparison; retain the existing partial chord as partial.",
+      "action_ids": [
+        "P5-A1",
+        "P5-A2",
+        "P5-A3"
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "P1-A1",
+      "specimen_id": "P1",
+      "kind": "definition_and_identity",
+      "instruction": "Mark O01\u2013O04 on one unobstructed context image showing the cereal stem nodes. Record awn/dry-tip policy and separate ear from blades.",
+      "minimum_new_evidence": "One context photograph plus written endpoint decisions; no ruler needed.",
+      "resolves": "O01/O02 identity; O03 dry-tip and O04 ear-body definition",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P1-A2",
+      "specimen_id": "P1",
+      "kind": "new_height_evidence",
+      "instruction": "Expose the soil-emergence junction without changing the pose being measured. Photograph full stem with scale zero and the declared highest terminal structure; add an oblique view that also sees both.",
+      "minimum_new_evidence": "Start with two calibrated oblique/full-plant views, one with a readable in-plane scale. Add close-ups only where base or fine terminal pixels are not legible.",
+      "resolves": "Height endpoints and scale reference; no saved P1 height-ruler image exists",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P1-A3",
+      "specimen_id": "P1",
+      "kind": "new_terminal_geometry",
+      "instruction": "Capture sharp overlapping close-ups of the O03 dry tip and O04 distal body/awn junction, linked to the context view.",
+      "minimum_new_evidence": "Two calibrated overlapping close-ups; combine both structures in a pair if visible sharply.",
+      "resolves": "Missing fine-tip/body endpoint geometry",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P1-A4",
+      "specimen_id": "P1",
+      "kind": "targeted_ruler_repeat",
+      "instruction": "With organ identity retained, show both ruler endpoint offsets for O01 blade length and O04 ear-body width. For other widths mark the photographed section on the organ.",
+      "minimum_new_evidence": "One readable length image for O01 and one width image for O04; existing readable ruler values need not be repeated merely to fit the reconstruction.",
+      "resolves": "Operator-only organ references and section identity",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P2-A1",
+      "specimen_id": "P2",
+      "kind": "identity",
+      "instruction": "Label the two measured leaves at their attachment nodes, with an oblique view showing each node and full blade through the crown.",
+      "minimum_new_evidence": "One labelled context image and a second oblique view if either node is hidden.",
+      "resolves": "O01 tentative and O02 unresolved correspondence",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P2-A2",
+      "specimen_id": "P2",
+      "kind": "new_height_evidence",
+      "instruction": "Show the actual soil junction, curved stem and declared highest structure with a readable scale zero and tip. If using two rulers, show both readings at their common join.",
+      "minimum_new_evidence": "Start with two calibrated oblique views; include a full-range ruler in one, or add one join close-up if the ruler overlap cannot be read.",
+      "resolves": "Height origin, very tip and ruler-offset evidence",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P2-A3",
+      "specimen_id": "P2",
+      "kind": "targeted_ruler_repeat",
+      "instruction": "Measure labelled O01 with both length endpoint readings and both edges at the chosen width section visible. Keep the held/flattened versus in-situ pose documented.",
+      "minimum_new_evidence": "One length and one section-width close-up; if O02 can be unambiguously linked to its existing photos, retain those approximate references.",
+      "resolves": "O01 operator-only dimensions; explicit pose/section definition",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P3-A1",
+      "specimen_id": "P3",
+      "kind": "definition_and_reference",
+      "instruction": "On O03, mark the lowest lamina boundary and apex used for the existing chord, state petiole/small-lobe inclusion, and photograph both ruler readings unobscured.",
+      "minimum_new_evidence": "One labelled blade context/length image if both boundaries are visible; retain unflattened pose or record pose change.",
+      "resolves": "One existing candidate chord with only operator-reported reference",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P3-A2",
+      "specimen_id": "P3",
+      "kind": "identity_and_boundaries",
+      "instruction": "Show O06 attachment and the basal lobes of O01/O02/O04/O05 without crossing stems hiding them. Link each to its stable O ID.",
+      "minimum_new_evidence": "Start with two opposing oblique crown views that expose the relevant nodes; add a node close-up only where a boundary remains hidden.",
+      "resolves": "O06 identity and complete source-supported blade origins",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P3-A3",
+      "specimen_id": "P3",
+      "kind": "new_height_evidence",
+      "instruction": "Show soil-level stem origin and terminal flowering-stalk point with a readable full-range scale. Record two-ruler overlap if used.",
+      "minimum_new_evidence": "Two calibrated oblique/full-plant views; one in-plane readable height reference or an extra join close-up.",
+      "resolves": "Actual height endpoint pair and independent ruler sum",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P3-A4",
+      "specimen_id": "P3",
+      "kind": "targeted_ruler_repeat",
+      "instruction": "After identities/definitions, collect readable length endpoints for O01/O02/O06 and section-width edges for O02/O03/O06; retain existing approximate O01-width/O04/O05 references only if their sections and endpoints can be linked.",
+      "minimum_new_evidence": "Three length and three width close-ups at most; combine views where both measurements are independently readable. O03 length is covered by A1.",
+      "resolves": "Remaining operator-only organ dimensions, not a repeat of every readable photo",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P4-A1",
+      "specimen_id": "P4",
+      "kind": "organ_type_and_identity",
+      "instruction": "Label O01\u2013O04 at their branch attachments and record organ type. Photograph each intact connection, body and distal end.",
+      "minimum_new_evidence": "One labelled context plus close-up views sufficient to trace all four connections; start with two opposite oblique branch views.",
+      "resolves": "Leaf-versus-pod decision and all four unresolved identities",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P4-A2",
+      "specimen_id": "P4",
+      "kind": "new_height_evidence",
+      "instruction": "Expose soil emergence and terminal bud/flower in the same unchanged pose; show zero and tip against a full-range scale.",
+      "minimum_new_evidence": "Two calibrated oblique/full-plant views, one readable scale reference; add join close-up only if using two rulers.",
+      "resolves": "Height origin and certified terminal endpoint",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P4-A3",
+      "specimen_id": "P4",
+      "kind": "organ_specific_reference",
+      "instruction": "After A1, measure each defined organ body length and chosen width section with both endpoint offsets visible. Use a scale legible at the narrow width; record instrument resolution.",
+      "minimum_new_evidence": "One length and one width view per organ (up to eight); combine only when all relevant endpoints remain independently readable.",
+      "resolves": "New organ-appropriate reference set; never silently promote pod widths to leaf widths",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P5-A1",
+      "specimen_id": "P5",
+      "kind": "definition_and_boundaries",
+      "instruction": "Photograph O04 from its lowest declared lamina/lobe origin to apex, connected to the radial fork; mark the old terminal-lamina chord separately. State petiole inclusion for O05 and dry-margin handling for O01/O03.",
+      "minimum_new_evidence": "One labelled O04 context close-up plus an oblique view if the lower origin is hidden; definitions recorded in writing.",
+      "resolves": "Partial-versus-full O04 distinction and explicit damaged/basal tissue rules",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P5-A2",
+      "specimen_id": "P5",
+      "kind": "new_height_evidence",
+      "instruction": "Show the actual soil-emergence point and declared highest leaf/tip against a ruler spanning the whole plant.",
+      "minimum_new_evidence": "Two calibrated oblique/full-plant views, one readable full-height scale reference; avoid extrapolating beyond a ruler end.",
+      "resolves": "Hidden base and unobserved upper calibrated graduation",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    },
+    {
+      "action_id": "P5-A3",
+      "specimen_id": "P5",
+      "kind": "targeted_ruler_repeat",
+      "instruction": "After definitions, show length offsets for O01/O02/O03/O05 and both width-section edges of small central O02. Preserve a labelled unflattened context before holding any blade.",
+      "minimum_new_evidence": "Four length and one width close-up at most; O04 can reuse its approximate reference only after the same basal origin is linked.",
+      "resolves": "Operator-only dimensions and explicit held-versus-in-situ pose",
+      "status": "not_collected; requires unchanged historical state or a new paired dataset"
+    }
+  ],
+  "dimensions": [
+    {
+      "measurement_id": "P1.H01.height",
+      "specimen_id": "P1",
+      "dimension": "height",
+      "annotation_cm": 53.5,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [],
+      "photo_evidence_limit": "No supporting height-ruler photograph is present. The annotated overview supplies 53.5 cm only; the board in shared image.jpeg is not a height-ruler observation.",
+      "geometry_or_definition_gap": "Dry blades overlap narrow stems at the soil junction; the measured stem origin cannot be isolated. Highest retained surface projects to the upper green blade tip. Cereal ear awns extend beyond the dense ear body and are incompletely reconstructed; the very highest biological tip is not certified.",
+      "minimum_resolution_action": "Apply the plant height action: actual soil-emergence and declared terminal endpoint visible in calibrated overlapping views, with readable zero/tip and ruler join if present.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P1.O01.length",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "annotation_cm": 12.5,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-1/Media (3).jpeg"
+      ],
+      "photo_evidence_limit": "Ruler and long blade diverge. Dry tip and basal endpoint are not both located against the same ruler axis clearly enough to recover 12.5 cm independently.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment.",
+      "minimum_resolution_action": "Identify this organ and declare lamina/petiole/dry-tip and chord/path rules; collect both ruler endpoint offsets unobscured, linked to unchanged-pose calibrated views.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P1.O01.width",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "annotation_cm": 1,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 1.1,
+      "photo_interval_cm": [
+        0.9,
+        1.3
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-1/Media (4).jpeg"
+      ],
+      "photo_evidence_limit": "Visible blade margins span roughly 0.0 to 1.1 cm on the reversed scale. This is the photographed section, not demonstrated maximum blade width.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Retain the existing approximate photo reference only if that same section can be linked.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P1.O02.length",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "annotation_cm": 10.9,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 10.9,
+      "photo_interval_cm": [
+        10.6,
+        11.2
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-1/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Tip is close to the ruler zero and blade attachment is near 10.9 cm. Approximate straight projected length; curved midrib length is not established.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment.",
+      "minimum_resolution_action": "Retain the existing approximate ruler candidate, but establish the same organ, complete base/tip and pose/convention in calibrated source views before a comparison.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P1.O02.width",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "annotation_cm": 1,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 1.0,
+      "photo_interval_cm": [
+        0.8,
+        1.2
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-1/Media (2).jpeg"
+      ],
+      "photo_evidence_limit": "Two visible blade margins bracket roughly one centimetre interval. Zero alignment and slight blade angle limit precision.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Retain the existing approximate photo reference only if that same section can be linked.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P1.O03.length",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "annotation_cm": 7.3,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 7.3,
+      "photo_interval_cm": [
+        7.0,
+        7.6
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-1/Media (5).jpeg"
+      ],
+      "photo_evidence_limit": "Transparent ruler shows the blade base close to zero and tip near 7.3 cm. Approximate projected blade length.",
+      "geometry_or_definition_gap": "The true fine dry tip has zero supported cleaned points inside a 4px source disk at frame143152 [983,354]. The measured 5.643 cm chord ends inside the blade and is only partial observed extent.",
+      "minimum_resolution_action": "P1-A3: obtain overlapping sharp geometry of the fine dry tip. Existing partial 5.643 cm extent cannot become full length through scale adjustment.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P1.O03.width",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "annotation_cm": 9,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 0.8,
+      "photo_interval_cm": [
+        0.6,
+        1.0
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-1/Media (6).jpeg"
+      ],
+      "photo_evidence_limit": "Enlarged original crop shows left blade edge near 0.2 cm and right edge near 1.0 cm. Subtracting endpoints gives approximately 0.8 cm. The original annotation explicitly says 9 cm and is retained. Earlier 0.9 cm proposal lies within the photo reading interval but is not imposed as exact ground truth.",
+      "geometry_or_definition_gap": "The true fine dry tip has zero supported cleaned points inside a 4px source disk at frame143152 [983,354]. The measured 5.643 cm chord ends inside the blade and is only partial observed extent. Exact ruler cross-section correspondence is not established; no maximum-width claim.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Retain the existing approximate photo reference only if that same section can be linked.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P1.O04.length",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "annotation_cm": 6.5,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 6.4,
+      "photo_interval_cm": [
+        6.1,
+        6.7
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-1/Media (7).jpeg"
+      ],
+      "photo_evidence_limit": "Ear body begins about 0.3 cm and ends about 6.7 cm along ruler: approximately 6.4 cm excluding projecting awns. Ear body versus awns must be defined for 3D comparison.",
+      "geometry_or_definition_gap": "The distal ear-body endpoint has zero supported cleaned points in the 4px source disk at frame459309 [157,469]. No farther nearest point is substituted. Ear body and awns also need a shared boundary rule.",
+      "minimum_resolution_action": "P1-A3: recover the distal ear-body endpoint and define body-versus-awn boundary. Keep ear outside leaf statistics.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P1.O04.width",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "annotation_cm": 1.6,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-1/Media (8).jpeg"
+      ],
+      "photo_evidence_limit": "Glumes and awns overlap the ruler and outer edges. The 1.6 cm annotation may include projecting structures; no defensible single body or maximum-width reading is recoverable.",
+      "geometry_or_definition_gap": "The distal ear-body endpoint has zero supported cleaned points in the 4px source disk at frame459309 [157,469]. No farther nearest point is substituted. Ear body and awns also need a shared boundary rule. Exact ruler cross-section correspondence is not established; no maximum-width claim.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Obtain a new readable width record; the existing source is operator-only.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P2.H01.height",
+      "specimen_id": "P2",
+      "dimension": "height",
+      "annotation_cm": 51.7,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-2/Media (1).jpeg",
+        "manual_validation_5-plants_28-09/plant-2/Media (2).jpeg",
+        "manual_validation_5-plants_28-09/plant-2/Media (3).jpeg"
+      ],
+      "photo_evidence_limit": "Two-ruler setup is visible, but hand/plant obscures an unambiguous lower ruler zero or joining offset. Highest curled tip also changes pose between photographs. Cannot independently recompute 51.7 cm to 0.1 cm.",
+      "geometry_or_definition_gap": "Exposed curved green basal stem is visible against soil, but its precise emergence and measurement zero are unresolved. Highest retained points project to a curled yellowing edge and nearby overlapping tissue. Small terminal buds and curled margins are not a unique certified top endpoint.",
+      "minimum_resolution_action": "Apply the plant height action: actual soil-emergence and declared terminal endpoint visible in calibrated overlapping views, with readable zero/tip and ruler join if present.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P2.O01.length",
+      "specimen_id": "P2",
+      "dimension": "length",
+      "annotation_cm": 5,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-1/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Tip is near the 5 cm region but ruler zero/basal blade endpoint lies among overlapping curled tissue. Do not equate a tip graduation with blade length without a visible base.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment.",
+      "minimum_resolution_action": "Identify this organ and declare lamina/petiole/dry-tip and chord/path rules; collect both ruler endpoint offsets unobscured, linked to unchanged-pose calibrated views.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P2.O01.width",
+      "specimen_id": "P2",
+      "dimension": "width",
+      "annotation_cm": 2.7,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-1/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Opaque ruler hides the full width section and blade is curled. The visible margins near the ruler do not prove the maximum width or the exact 2.7 cm annotation.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Obtain a new readable width record; the existing source is operator-only.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P2.O02.length",
+      "specimen_id": "P2",
+      "dimension": "length",
+      "annotation_cm": 3.9,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 3.9,
+      "photo_interval_cm": [
+        3.6,
+        4.2
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-2/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Held blade extends approximately from 0.1 to 4.0 cm; attachment/terminal margins are visible beside ruler but do not support millimetre precision.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment.",
+      "minimum_resolution_action": "Retain the existing approximate ruler candidate, but establish the same organ, complete base/tip and pose/convention in calibrated source views before a comparison.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P2.O02.width",
+      "specimen_id": "P2",
+      "dimension": "width",
+      "annotation_cm": 3.4,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 3.5,
+      "photo_interval_cm": [
+        3.2,
+        3.8
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-2/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Upper leaf margin is around 0.4 cm and opposite margin around 3.9 cm. Endpoint subtraction gives about 3.5 cm, consistent with but not copied from source 3.4 cm.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Retain the existing approximate photo reference only if that same section can be linked.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P3.H01.height",
+      "specimen_id": "P3",
+      "dimension": "height",
+      "annotation_cm": 52.8,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-3/Media (1).jpeg",
+        "manual_validation_5-plants_28-09/plant-3/Media (2).jpeg",
+        "manual_validation_5-plants_28-09/plant-3/Media (3).jpeg"
+      ],
+      "photo_evidence_limit": "Hand covers the ruler junction; the whole-plant frame does not show an unambiguous stem-base zero. Media (2).jpeg and Media (3).jpeg are byte-identical. No independent 52.8 cm sum can be justified.",
+      "geometry_or_definition_gap": "Purple/green petiole junction is visible, but the soil-level stem origin is beneath overlapping tissue. Branch-junction region only. Highest retained points lie in overlapping distal stalk/leaf tissue near the lower image edge. Long flowering-stem extremities and true terminal point are not fully resolved.",
+      "minimum_resolution_action": "Apply the plant height action: actual soil-emergence and declared terminal endpoint visible in calibrated overlapping views, with readable zero/tip and ruler join if present.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P3.O01.length",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "annotation_cm": 7.4,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-5/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Tip lies near 7.4 cm but basal lobes/petiole boundary is not unambiguously at zero. No numerical length is inferred from the tip mark alone.",
+      "geometry_or_definition_gap": "The lateral blade attachment is crossed by neighbouring petiole/stalk tissue. Its complete basal boundary and lobed width section have not been frozen; the saved pool is interior tissue.",
+      "minimum_resolution_action": "Identify this organ and declare lamina/petiole/dry-tip and chord/path rules; collect both ruler endpoint offsets unobscured, linked to unchanged-pose calibrated views.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P3.O01.width",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "annotation_cm": 5.5,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 5.4,
+      "photo_interval_cm": [
+        5.1,
+        5.7
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-5/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Upper blade edge near 5.5 cm and lower edge near 0.1 cm give about 5.4 cm. Lobed margins and ruler angle justify a broad visual interval.",
+      "geometry_or_definition_gap": "The lateral blade attachment is crossed by neighbouring petiole/stalk tissue. Its complete basal boundary and lobed width section have not been frozen; the saved pool is interior tissue. Exact ruler cross-section correspondence is not established; no maximum-width claim.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Retain the existing approximate photo reference only if that same section can be linked.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P3.O02.length",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "annotation_cm": 9.8,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-4/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Tip is near the 9.8-10.0 cm region, but hand/leaf obscures the exact base and zero alignment. Source 9.8 cm is not independently verified.",
+      "geometry_or_definition_gap": "Basal lobes and hole boundaries overlap a dry underlying blade; complete blade origin and the same ruler section are not frozen in 3D.",
+      "minimum_resolution_action": "Identify this organ and declare lamina/petiole/dry-tip and chord/path rules; collect both ruler endpoint offsets unobscured, linked to unchanged-pose calibrated views.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P3.O02.width",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "annotation_cm": 7.6,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-4/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "One margin lies near 7.5-7.6 cm; the opposite edge/zero alignment is obscured. Do not treat that endpoint as a width.",
+      "geometry_or_definition_gap": "Basal lobes and hole boundaries overlap a dry underlying blade; complete blade origin and the same ruler section are not frozen in 3D. Exact ruler cross-section correspondence is not established; no maximum-width claim.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Obtain a new readable width record; the existing source is operator-only.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P3.O03.length",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "annotation_cm": 7.5,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-3/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Tip is around the 7.5 cm region; ruler zero and the chosen blade-base endpoint are obscured by hand and basal tissue.",
+      "geometry_or_definition_gap": "Provisional chord arithmetic is available, but the operator 7.5 cm is not independently photo-readable, basal-lobe/petiole convention is tentative, and physical scale is unconfirmed. Excluded from validated accuracy statistics.",
+      "minimum_resolution_action": "P3-A1: independently photograph the declared lowest basal lamina and apex with readable ruler offsets; retain the existing chord and its endpoint-disk sensitivity separately.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P3.O03.width",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "annotation_cm": 5.7,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-3/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Lobed margins cross opposite sides of a broad opaque ruler at different positions. The exact lower offset and maximum section are not unambiguous; no 5.7 cm value is imputed.",
+      "geometry_or_definition_gap": "One provisional source-endpoint chord is available separately. The operator reference is not independently photo-readable and basal-lobe/petiole convention remains tentative. Exact ruler cross-section correspondence is not established; no maximum-width claim.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Obtain a new readable width record; the existing source is operator-only.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P3.O04.length",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "annotation_cm": 11,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 11.0,
+      "photo_interval_cm": [
+        10.7,
+        11.3
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-2/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Attachment-side blade origin is near zero and opposite tip near 11.0 cm; both are visible beside the ruler. Straight projected length.",
+      "geometry_or_definition_gap": "The petiole-to-lobed-blade origin and complete lobe contour have not been frozen across source views. The interior pool omits terminal margins.",
+      "minimum_resolution_action": "Retain the existing approximate ruler candidate, but establish the same organ, complete base/tip and pose/convention in calibrated source views before a comparison.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P3.O04.width",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "annotation_cm": 8.7,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 8.7,
+      "photo_interval_cm": [
+        8.4,
+        9.0
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-2/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Bottom margin is close to zero and top margin near 8.7 cm. Thumb covers intermediate graduations, but the end regions are visible.",
+      "geometry_or_definition_gap": "The petiole-to-lobed-blade origin and complete lobe contour have not been frozen across source views. The interior pool omits terminal margins. Exact ruler cross-section correspondence is not established; no maximum-width claim.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Retain the existing approximate photo reference only if that same section can be linked.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P3.O05.length",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "annotation_cm": 9.2,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 9.2,
+      "photo_interval_cm": [
+        8.9,
+        9.5
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-1/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Transparent ruler shows blade-base region at zero and tip about 9.2 cm. Blade is held flat; this is an approximate chord/projection length.",
+      "geometry_or_definition_gap": "The lobed blade attachment is next to a crossing stalk; a complete blade origin and photographed width-section edges are not yet isolated in 3D.",
+      "minimum_resolution_action": "Retain the existing approximate ruler candidate, but establish the same organ, complete base/tip and pose/convention in calibrated source views before a comparison.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P3.O05.width",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "annotation_cm": 7.7,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 7.7,
+      "photo_interval_cm": [
+        7.4,
+        8.0
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-1/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Transparent ruler shows left margin near zero and right margin near 7.7 cm. Both leaf edges are visible through/along ruler.",
+      "geometry_or_definition_gap": "The lobed blade attachment is next to a crossing stalk; a complete blade origin and photographed width-section edges are not yet isolated in 3D. Exact ruler cross-section correspondence is not established; no maximum-width claim.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Retain the existing approximate photo reference only if that same section can be linked.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P3.O06.length",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "annotation_cm": 7.5,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-6/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Blade base/zero is hidden by tissue and hand. The approximately 7.5 cm tip location alone cannot establish length.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment.",
+      "minimum_resolution_action": "Identify this organ and declare lamina/petiole/dry-tip and chord/path rules; collect both ruler endpoint offsets unobscured, linked to unchanged-pose calibrated views.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P3.O06.width",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "annotation_cm": 6.3,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-6/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Ruler traverses lobed blade; lower margin and adjacent foreground blade overlap the scale. Exact corresponding endpoints/maximum width remain ambiguous.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Obtain a new readable width record; the existing source is operator-only.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P4.H01.height",
+      "specimen_id": "P4",
+      "dimension": "height",
+      "annotation_cm": 52.3,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-4/Media (1).jpeg",
+        "manual_validation_5-plants_28-09/plant-4/Media (2).jpeg"
+      ],
+      "photo_evidence_limit": "Two rulers are visible; their joining/overlap point and exact stem-base zero are not simultaneously readable. Top inflorescence is visible, but adding a nominal 30 cm to its upper-ruler reading is unjustified.",
+      "geometry_or_definition_gap": "Pot-centre origin is obscured by leaves and crossing flowering stems. Region candidate only; no visible stem-base endpoint. Highest retained surface projects to a terminal pale bud/flower cluster, but its exact outermost endpoint and complete depth support remain uncertain.",
+      "minimum_resolution_action": "Apply the plant height action: actual soil-emergence and declared terminal endpoint visible in calibrated overlapping views, with readable zero/tip and ruler join if present.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P4.O01.length",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "annotation_cm": 3,
+      "reference_class": "unusable_for_leaf_validation_pending_organ_type",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-1/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Organ runs along roughly the first 3 cm; distinguishing organ-body base from stalk is unresolved. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved.",
+      "minimum_resolution_action": "Resolve organ type and branch identity first (P4-A1); then body/stalk convention and an organ-appropriate readable ruler record (P4-A3).",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P4.O01.width",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "annotation_cm": 0.2,
+      "reference_class": "unusable_for_leaf_validation_pending_organ_type",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-1/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Very narrow organ and ruler/hand obscure both exact width endpoints; 0.2 cm cannot be independently certified. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved. Photographed section is not demonstrated to be maximum width.",
+      "minimum_resolution_action": "Resolve organ type and branch identity first (P4-A1); then body/stalk convention and an organ-appropriate readable ruler record (P4-A3).",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P4.O02.length",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "annotation_cm": 2.8,
+      "reference_class": "unusable_for_leaf_validation_pending_organ_type",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-2/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Curved narrow organ follows roughly 2.8 cm of ruler, but straight chord versus curved body and basal endpoint are unresolved. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved.",
+      "minimum_resolution_action": "Resolve organ type and branch identity first (P4-A1); then body/stalk convention and an organ-appropriate readable ruler record (P4-A3).",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P4.O02.width",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "annotation_cm": 0.5,
+      "reference_class": "unusable_for_leaf_validation_pending_organ_type",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-2/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Organ lies partly beneath ruler end; both boundaries are not visible on a common graduated section. Source 0.5 cm remains unverified. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved. Photographed section is not demonstrated to be maximum width.",
+      "minimum_resolution_action": "Resolve organ type and branch identity first (P4-A1); then body/stalk convention and an organ-appropriate readable ruler record (P4-A3).",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P4.O03.length",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "annotation_cm": 2.9,
+      "reference_class": "unusable_for_leaf_validation_pending_organ_type",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-3/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Narrow body is near the first 2.9 cm, but body/stalk endpoint and alignment are not clear enough for a direct accepted reading. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved.",
+      "minimum_resolution_action": "Resolve organ type and branch identity first (P4-A1); then body/stalk convention and an organ-appropriate readable ruler record (P4-A3).",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P4.O03.width",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "annotation_cm": 0.3,
+      "reference_class": "unusable_for_leaf_validation_pending_organ_type",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-3/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Organ is above ruler end without both width edges located against graduations. Source 0.3 cm remains unverified. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved. Photographed section is not demonstrated to be maximum width.",
+      "minimum_resolution_action": "Resolve organ type and branch identity first (P4-A1); then body/stalk convention and an organ-appropriate readable ruler record (P4-A3).",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P4.O04.length",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "annotation_cm": 2.9,
+      "reference_class": "unusable_for_leaf_validation_pending_organ_type",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-4/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Elongated organ spans roughly the first 2.9 cm; the body-to-pedicel junction and organ kind are unresolved. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved.",
+      "minimum_resolution_action": "Resolve organ type and branch identity first (P4-A1); then body/stalk convention and an organ-appropriate readable ruler record (P4-A3).",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P4.O04.width",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "annotation_cm": 0.4,
+      "reference_class": "unusable_for_leaf_validation_pending_organ_type",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-4/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "A narrow green structure spans roughly the first few millimetres, but exact margins/body convention are uncertain. Source 0.4 cm remains unverified. Closeups appear pod-like; user has not confirmed leaf versus reproductive organ.",
+      "geometry_or_definition_gap": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved. Photographed section is not demonstrated to be maximum width.",
+      "minimum_resolution_action": "Resolve organ type and branch identity first (P4-A1); then body/stalk convention and an organ-appropriate readable ruler record (P4-A3).",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P5.H01.height",
+      "specimen_id": "P5",
+      "dimension": "height",
+      "annotation_cm": 31.8,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-5/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "The saved height photo shows a 30 cm ruler and the highest leaf extends beyond the visible calibrated end. Base alignment is partly hidden. Do not extrapolate an unseen 31.8 cm graduation.",
+      "geometry_or_definition_gap": "Radial petiole junction and lower curved stem are visible; actual soil-emergence point is hidden by the stem/leaf cluster. Highest retained points project to the terminal margin of the left-facing lobed green O05 leaf candidate, a plausible top surface. This does not establish all-terminal completeness or the stem origin.",
+      "minimum_resolution_action": "Apply the plant height action: actual soil-emergence and declared terminal endpoint visible in calibrated overlapping views, with readable zero/tip and ruler join if present.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P5.O01.length",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "annotation_cm": 12,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-4/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Opaque ruler and thumb hide the length tip/base alignment. Blade damage and lobes make source 12 cm not independently recoverable.",
+      "geometry_or_definition_gap": "The blade has curled damaged/necrotic margins; the rule for including folded dry tissue and full basal boundary is not frozen. Source ruler length was not independently readable.",
+      "minimum_resolution_action": "Identify this organ and declare lamina/petiole/dry-tip and chord/path rules; collect both ruler endpoint offsets unobscured, linked to unchanged-pose calibrated views.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P5.O01.width",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "annotation_cm": 9.9,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 9.8,
+      "photo_interval_cm": [
+        9.4,
+        10.2
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-4/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Opposite lobed margins lie near 0.3 and 10.1 cm, giving about 9.8 cm. Hand-held damaged blade and ruler plane limit precision.",
+      "geometry_or_definition_gap": "The blade has curled damaged/necrotic margins; the rule for including folded dry tissue and full basal boundary is not frozen. Source ruler length was not independently readable. Exact ruler cross-section correspondence is not established; no maximum-width claim.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Retain the existing approximate photo reference only if that same section can be linked.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P5.O02.length",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "annotation_cm": 8,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-3/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Small central blade lies behind ruler and hand; one endpoint is occluded. The 8 cm annotation is retained but no unseen tip/base is inferred.",
+      "geometry_or_definition_gap": "The small central blade base is adjacent to the crowded petiole fork; its exact lamina origin and obscured ruler endpoints are unresolved.",
+      "minimum_resolution_action": "Identify this organ and declare lamina/petiole/dry-tip and chord/path rules; collect both ruler endpoint offsets unobscured, linked to unchanged-pose calibrated views.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P5.O02.width",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "annotation_cm": 4.8,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-3/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Ruler and thumb overlap the small central blade. One width margin is hidden; a visible end near 5 cm does not independently establish source 4.8 cm.",
+      "geometry_or_definition_gap": "The small central blade base is adjacent to the crowded petiole fork; its exact lamina origin and obscured ruler endpoints are unresolved. Exact ruler cross-section correspondence is not established; no maximum-width claim.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Obtain a new readable width record; the existing source is operator-only.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P5.O03.length",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "annotation_cm": 11.9,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-2/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Brown curled leaf has a projecting papery tip away from ruler axis, with zero/body base obscured by neighboring tissue. Source 11.9 cm cannot be independently recovered.",
+      "geometry_or_definition_gap": "The rust-brown blade has rolled papery margins and lobes that change pose in the held ruler photo. Complete homologous tip/base and section edges are not frozen.",
+      "minimum_resolution_action": "Identify this organ and declare lamina/petiole/dry-tip and chord/path rules; collect both ruler endpoint offsets unobscured, linked to unchanged-pose calibrated views.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P5.O03.width",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "annotation_cm": 11.7,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 11.7,
+      "photo_interval_cm": [
+        11.2,
+        12.2
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-2/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Brown blade lower margin is close to zero and upper lobe near 11.7 cm. Both silhouette endpoints are visible but curling and plane mismatch warrant a broad interval.",
+      "geometry_or_definition_gap": "The rust-brown blade has rolled papery margins and lobes that change pose in the held ruler photo. Complete homologous tip/base and section edges are not frozen. Exact ruler cross-section correspondence is not established; no maximum-width claim.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Retain the existing approximate photo reference only if that same section can be linked.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P5.O04.length",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "annotation_cm": 12.9,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 12.9,
+      "photo_interval_cm": [
+        12.6,
+        13.2
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-1/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Green blade base is near zero and upper tip near 12.9 cm beside the ruler. Approximate straight, hand-held length.",
+      "geometry_or_definition_gap": "A 12.149 cm terminal-lamina chord is available, but the ruler includes basal lobes toward a lower zero. The raw terminal-lamina origin is not homologous to that ruler origin; no residual is computed.",
+      "minimum_resolution_action": "P5-A1: link the lower basal-lobe origin in the ruler photograph to the in-situ organ; existing 12.149 cm terminal-lamina chord is partial.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P5.O04.width",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "annotation_cm": 9,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 9.0,
+      "photo_interval_cm": [
+        8.7,
+        9.3
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-1/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Visible margins span approximately zero to 9.0 cm at the photographed cross-section.",
+      "geometry_or_definition_gap": "A 12.149 cm terminal-lamina chord is available, but the ruler includes basal lobes toward a lower zero. The raw terminal-lamina origin is not homologous to that ruler origin; no residual is computed. Exact ruler cross-section correspondence is not established; no maximum-width claim.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Retain the existing approximate photo reference only if that same section can be linked.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P5.O05.length",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "annotation_cm": 13.2,
+      "reference_class": "operator_annotation_only",
+      "photo_candidate_cm": null,
+      "photo_interval_cm": null,
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-5/Media.jpeg"
+      ],
+      "photo_evidence_limit": "Ruler extends from petiole-side tissue to tip near 13 cm, but blade-only base versus petiole inclusion is unresolved. Do not assume source 13.2 cm uses the same 3D leaf endpoint.",
+      "geometry_or_definition_gap": "The ruler length base-versus-petiole inclusion is unresolved, and the in-situ leaf is lobed/curved. The full homologous origin and photographed width section are not frozen.",
+      "minimum_resolution_action": "Identify this organ and declare lamina/petiole/dry-tip and chord/path rules; collect both ruler endpoint offsets unobscured, linked to unchanged-pose calibrated views.",
+      "validated_comparison_eligible": false
+    },
+    {
+      "measurement_id": "P5.O05.width",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "annotation_cm": 7.8,
+      "reference_class": "photo_supported_approximate",
+      "photo_candidate_cm": 7.6,
+      "photo_interval_cm": [
+        7.2,
+        8.0
+      ],
+      "existing_photo_paths": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-5/Media (1).jpeg"
+      ],
+      "photo_evidence_limit": "Visible margins along diagonal ruler are approximately 0.1 and 7.7 cm, giving about 7.6 cm. Lobes/curl and perspective make source 7.8 cm indistinguishable within the broad reading interval.",
+      "geometry_or_definition_gap": "The ruler length base-versus-petiole inclusion is unresolved, and the in-situ leaf is lobed/curved. The full homologous origin and photographed width section are not frozen. Exact ruler cross-section correspondence is not established; no maximum-width claim.",
+      "minimum_resolution_action": "Identify the exact width cross-section on the organ and show both edges with both ruler offsets. If maximum width is desired, explicitly search/record that section rather than reusing an arbitrary photographed section. Retain the existing approximate photo reference only if that same section can be linked.",
+      "validated_comparison_eligible": false
+    }
+  ],
+  "scale_sensitivity": {
+    "formula": "scenario_distance = saved_observed_chord \u00d7 (1 + hypothetical_percent/100)",
+    "assumptions": "Uniform multiplicative distance scale only. No inference that actual error is uniform, bounded by these percentages or independent of endpoint uncertainty. No reference fitting, new point selection, or cloud rescaling.",
+    "scenarios": [
+      {
+        "chord_id": "P1.O03.observed_blade_extent",
+        "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+        "baseline_conditional_cm": 5.642877354066358,
+        "hypothetical_scale_change_percent": -5,
+        "uniform_scale_factor": 0.95,
+        "scenario_distance_cm": 5.360733486363039,
+        "change_from_baseline_cm": -0.2821438677033182,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P1.O03.observed_blade_extent",
+        "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+        "baseline_conditional_cm": 5.642877354066358,
+        "hypothetical_scale_change_percent": -2,
+        "uniform_scale_factor": 0.98,
+        "scenario_distance_cm": 5.530019806985031,
+        "change_from_baseline_cm": -0.11285754708132725,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P1.O03.observed_blade_extent",
+        "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+        "baseline_conditional_cm": 5.642877354066358,
+        "hypothetical_scale_change_percent": -1,
+        "uniform_scale_factor": 0.99,
+        "scenario_distance_cm": 5.586448580525694,
+        "change_from_baseline_cm": -0.056428773540663626,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P1.O03.observed_blade_extent",
+        "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+        "baseline_conditional_cm": 5.642877354066358,
+        "hypothetical_scale_change_percent": 0,
+        "uniform_scale_factor": 1.0,
+        "scenario_distance_cm": 5.642877354066358,
+        "change_from_baseline_cm": 0.0,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P1.O03.observed_blade_extent",
+        "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+        "baseline_conditional_cm": 5.642877354066358,
+        "hypothetical_scale_change_percent": 1,
+        "uniform_scale_factor": 1.01,
+        "scenario_distance_cm": 5.699306127607022,
+        "change_from_baseline_cm": 0.056428773540663626,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P1.O03.observed_blade_extent",
+        "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+        "baseline_conditional_cm": 5.642877354066358,
+        "hypothetical_scale_change_percent": 2,
+        "uniform_scale_factor": 1.02,
+        "scenario_distance_cm": 5.755734901147685,
+        "change_from_baseline_cm": 0.11285754708132725,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P1.O03.observed_blade_extent",
+        "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+        "baseline_conditional_cm": 5.642877354066358,
+        "hypothetical_scale_change_percent": 5,
+        "uniform_scale_factor": 1.05,
+        "scenario_distance_cm": 5.9250212217696765,
+        "change_from_baseline_cm": 0.2821438677033182,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P3.O03.blade_chord",
+        "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+        "baseline_conditional_cm": 7.475255446013435,
+        "hypothetical_scale_change_percent": -5,
+        "uniform_scale_factor": 0.95,
+        "scenario_distance_cm": 7.101492673712762,
+        "change_from_baseline_cm": -0.37376277230067206,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P3.O03.blade_chord",
+        "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+        "baseline_conditional_cm": 7.475255446013435,
+        "hypothetical_scale_change_percent": -2,
+        "uniform_scale_factor": 0.98,
+        "scenario_distance_cm": 7.325750337093166,
+        "change_from_baseline_cm": -0.14950510892026883,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P3.O03.blade_chord",
+        "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+        "baseline_conditional_cm": 7.475255446013435,
+        "hypothetical_scale_change_percent": -1,
+        "uniform_scale_factor": 0.99,
+        "scenario_distance_cm": 7.4005028915533,
+        "change_from_baseline_cm": -0.07475255446013442,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P3.O03.blade_chord",
+        "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+        "baseline_conditional_cm": 7.475255446013435,
+        "hypothetical_scale_change_percent": 0,
+        "uniform_scale_factor": 1.0,
+        "scenario_distance_cm": 7.475255446013435,
+        "change_from_baseline_cm": 0.0,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P3.O03.blade_chord",
+        "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+        "baseline_conditional_cm": 7.475255446013435,
+        "hypothetical_scale_change_percent": 1,
+        "uniform_scale_factor": 1.01,
+        "scenario_distance_cm": 7.55000800047357,
+        "change_from_baseline_cm": 0.07475255446013442,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P3.O03.blade_chord",
+        "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+        "baseline_conditional_cm": 7.475255446013435,
+        "hypothetical_scale_change_percent": 2,
+        "uniform_scale_factor": 1.02,
+        "scenario_distance_cm": 7.624760554933704,
+        "change_from_baseline_cm": 0.14950510892026883,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P3.O03.blade_chord",
+        "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+        "baseline_conditional_cm": 7.475255446013435,
+        "hypothetical_scale_change_percent": 5,
+        "uniform_scale_factor": 1.05,
+        "scenario_distance_cm": 7.849018218314107,
+        "change_from_baseline_cm": 0.37376277230067206,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P5.O04.terminal_lamina_chord",
+        "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+        "baseline_conditional_cm": 12.148629537473008,
+        "hypothetical_scale_change_percent": -5,
+        "uniform_scale_factor": 0.95,
+        "scenario_distance_cm": 11.541198060599356,
+        "change_from_baseline_cm": -0.607431476873651,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P5.O04.terminal_lamina_chord",
+        "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+        "baseline_conditional_cm": 12.148629537473008,
+        "hypothetical_scale_change_percent": -2,
+        "uniform_scale_factor": 0.98,
+        "scenario_distance_cm": 11.905656946723548,
+        "change_from_baseline_cm": -0.24297259074946037,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P5.O04.terminal_lamina_chord",
+        "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+        "baseline_conditional_cm": 12.148629537473008,
+        "hypothetical_scale_change_percent": -1,
+        "uniform_scale_factor": 0.99,
+        "scenario_distance_cm": 12.027143242098278,
+        "change_from_baseline_cm": -0.12148629537473019,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P5.O04.terminal_lamina_chord",
+        "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+        "baseline_conditional_cm": 12.148629537473008,
+        "hypothetical_scale_change_percent": 0,
+        "uniform_scale_factor": 1.0,
+        "scenario_distance_cm": 12.148629537473008,
+        "change_from_baseline_cm": 0.0,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P5.O04.terminal_lamina_chord",
+        "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+        "baseline_conditional_cm": 12.148629537473008,
+        "hypothetical_scale_change_percent": 1,
+        "uniform_scale_factor": 1.01,
+        "scenario_distance_cm": 12.270115832847738,
+        "change_from_baseline_cm": 0.12148629537473019,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P5.O04.terminal_lamina_chord",
+        "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+        "baseline_conditional_cm": 12.148629537473008,
+        "hypothetical_scale_change_percent": 2,
+        "uniform_scale_factor": 1.02,
+        "scenario_distance_cm": 12.391602128222468,
+        "change_from_baseline_cm": 0.24297259074946037,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      },
+      {
+        "chord_id": "P5.O04.terminal_lamina_chord",
+        "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+        "baseline_conditional_cm": 12.148629537473008,
+        "hypothetical_scale_change_percent": 5,
+        "uniform_scale_factor": 1.05,
+        "scenario_distance_cm": 12.75606101434666,
+        "change_from_baseline_cm": 0.607431476873651,
+        "scenario_kind": "hypothetical only; not inferred uncertainty",
+        "physical_accuracy_validated": false
+      }
+    ],
+    "bands": [
+      {
+        "chord_id": "P1.O03.observed_blade_extent",
+        "hypothetical_plus_minus_percent": 1,
+        "baseline_conditional_cm": 5.642877354066358,
+        "lower_scenario_cm": 5.586448580525694,
+        "upper_scenario_cm": 5.699306127607022,
+        "half_range_cm": 0.05642877354066358,
+        "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+      },
+      {
+        "chord_id": "P1.O03.observed_blade_extent",
+        "hypothetical_plus_minus_percent": 2,
+        "baseline_conditional_cm": 5.642877354066358,
+        "lower_scenario_cm": 5.530019806985031,
+        "upper_scenario_cm": 5.755734901147685,
+        "half_range_cm": 0.11285754708132716,
+        "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+      },
+      {
+        "chord_id": "P1.O03.observed_blade_extent",
+        "hypothetical_plus_minus_percent": 5,
+        "baseline_conditional_cm": 5.642877354066358,
+        "lower_scenario_cm": 5.360733486363039,
+        "upper_scenario_cm": 5.9250212217696765,
+        "half_range_cm": 0.2821438677033179,
+        "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+      },
+      {
+        "chord_id": "P3.O03.blade_chord",
+        "hypothetical_plus_minus_percent": 1,
+        "baseline_conditional_cm": 7.475255446013435,
+        "lower_scenario_cm": 7.4005028915533,
+        "upper_scenario_cm": 7.55000800047357,
+        "half_range_cm": 0.07475255446013435,
+        "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+      },
+      {
+        "chord_id": "P3.O03.blade_chord",
+        "hypothetical_plus_minus_percent": 2,
+        "baseline_conditional_cm": 7.475255446013435,
+        "lower_scenario_cm": 7.325750337093166,
+        "upper_scenario_cm": 7.624760554933704,
+        "half_range_cm": 0.1495051089202687,
+        "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+      },
+      {
+        "chord_id": "P3.O03.blade_chord",
+        "hypothetical_plus_minus_percent": 5,
+        "baseline_conditional_cm": 7.475255446013435,
+        "lower_scenario_cm": 7.101492673712762,
+        "upper_scenario_cm": 7.849018218314107,
+        "half_range_cm": 0.37376277230067173,
+        "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+      },
+      {
+        "chord_id": "P5.O04.terminal_lamina_chord",
+        "hypothetical_plus_minus_percent": 1,
+        "baseline_conditional_cm": 12.148629537473008,
+        "lower_scenario_cm": 12.027143242098278,
+        "upper_scenario_cm": 12.270115832847738,
+        "half_range_cm": 0.12148629537473007,
+        "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+      },
+      {
+        "chord_id": "P5.O04.terminal_lamina_chord",
+        "hypothetical_plus_minus_percent": 2,
+        "baseline_conditional_cm": 12.148629537473008,
+        "lower_scenario_cm": 11.905656946723548,
+        "upper_scenario_cm": 12.391602128222468,
+        "half_range_cm": 0.24297259074946015,
+        "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+      },
+      {
+        "chord_id": "P5.O04.terminal_lamina_chord",
+        "hypothetical_plus_minus_percent": 5,
+        "baseline_conditional_cm": 12.148629537473008,
+        "lower_scenario_cm": 11.541198060599356,
+        "upper_scenario_cm": 12.75606101434666,
+        "half_range_cm": 0.6074314768736504,
+        "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+      }
+    ],
+    "endpoint_sensitivity_separate": [
+      {
+        "chord_id": "P1.O03.observed_blade_extent",
+        "baseline_conditional_cm": 5.642877354066358,
+        "endpoint_disk_range_cm": [
+          4.976776262496502,
+          6.670808387156944
+        ],
+        "endpoint_disk_definition": "Full min/max of all endpoint-pair distances within independently clicked 4px source disks; not a confidence interval or calibrated physical uncertainty.",
+        "scale_scenarios_are_separate": true,
+        "combined_uncertainty_interval_computed": false
+      },
+      {
+        "chord_id": "P3.O03.blade_chord",
+        "baseline_conditional_cm": 7.475255446013435,
+        "endpoint_disk_range_cm": [
+          6.706684147069889,
+          8.419306985087646
+        ],
+        "endpoint_disk_definition": "Full min/max of all endpoint-pair distances within independently clicked 4px source disks; not a confidence interval or calibrated physical uncertainty.",
+        "scale_scenarios_are_separate": true,
+        "combined_uncertainty_interval_computed": false
+      },
+      {
+        "chord_id": "P5.O04.terminal_lamina_chord",
+        "baseline_conditional_cm": 12.148629537473008,
+        "endpoint_disk_range_cm": [
+          10.711865475651088,
+          13.761444924819703
+        ],
+        "endpoint_disk_definition": "Full min/max of all endpoint-pair distances within independently clicked 4px source disks; not a confidence interval or calibrated physical uncertainty.",
+        "scale_scenarios_are_separate": true,
+        "combined_uncertainty_interval_computed": false
+      }
+    ]
+  },
+  "source_sha256": {
+    "generated/research_followthrough_20261007/traits/traits_review.json": "b0c5205808d46375cb90a6bdd1bbd929911ae67b32e17725cf027db1d99ed588",
+    "generated/research_followthrough_20261007/traits/provisional_chords.json": "3d584e52653cbfdded616c0d3fb8ac6c4d1d5921e5fe2e7ef50517f73ef6e127",
+    "generated/research_followthrough_20261007/traits/canopy_descriptors.csv": "1828565c60ed5be208bed5465276109e2184ad072b31218edf44d7285309728a",
+    "generated/research_followthrough_20261007/traits/verification.json": "b0db6dfeade272ba70b44e982678315ea5ede317b8c052a0377b4e8db2d85dd8",
+    "generated/research_20260928_readiness_20261007/ruler_photo_review.json": "326acd2d5b0541ef8be18cdeff795c44b10d2ecfb99d483175025ca2740e879b",
+    "generated/research_20260928_readiness_20261007/manual_reference_inventory.json": "18bff51a79ccc9a9403b7575c919f0ce8cd9800b65a9591485be64cf1939d879",
+    "generated/research_followthrough_20261007/traits/assets/P1_source_review.jpg": "a5edc951407713da3b20584563763bd4248a8b040dee75c06cbd61783aad3186",
+    "generated/research_followthrough_20261007/traits/assets/P2_source_review.jpg": "2f0017d65a7f5c39ef6ad46b6f0d03e98d2a75068695f6388043e2b0c8956ce8",
+    "generated/research_followthrough_20261007/traits/assets/P3_source_review.jpg": "3c040b58d10e1c8197df7ba7315a85961c1a1ad9eb1889b6d176f451848a39d8",
+    "generated/research_followthrough_20261007/traits/assets/P4_source_review.jpg": "591b26f818b91b29d715b44988a4cba911886110da3f82be0f193706f529b78e",
+    "generated/research_followthrough_20261007/traits/assets/P5_source_review.jpg": "b3877c233383597fd62d849c225dc06be42ae4966a8a12e8162f9b56ef5fe4b5"
+  }
+}

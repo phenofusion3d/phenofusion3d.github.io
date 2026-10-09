@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "status": "complete_measured_camera_space_extraction",
+  "warning": "Measured camera-space DN; any Q/Q0 is provisional reference-relative signal. No calibrated reflectance, physiological interpretation, or 3D fusion.",
+  "physical_fusion": null,
+  "calibrated_reflectance": false,
+  "physiological_claims": false,
+  "automatic_segmentation": false,
+  "cross_camera_concatenation": false,
+  "source_header": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\20260928\\003-specim-fx10.hdr",
+  "source_data": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\20260928\\003-specim-fx10.bil",
+  "source_config": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_spectral_fusion_20261007\\inputs\\sparse_fx10_extraction.json",
+  "header_sha256": "6aaf169bc24b22abfd7cf8aed1d22517f5a956a99cb58698ec50d258b2dd048a",
+  "config_sha256": "fd8b067c2f14ca7b63deafc8c9de2e9c8c4e0b4e194996cf109690f159b7e5b7",
+  "source_data_size_bytes": 975765504,
+  "source_data_mtime_ns": 1791339722284996900,
+  "source_data_identity_check": "size, mtime_ns and inode before/after; weaker than full-content hashing",
+  "full_source_data_sha256": null,
+  "raw_source_shape_line_band_column": [
+    2127,
+    224,
+    1024
+  ],
+  "source_dtype": "<u2",
+  "header_offset": 0,
+  "sample_count": 3,
+  "band_count": 224,
+  "source_sample_sha256_uint16_little_endian_sample_band": "871693db99aac708a4089099217683007fcfac0e755bb19749248716e5d895e9",
+  "selection": {
+    "review_status": "assistant_reviewed",
+    "provenance": "Exact three native spectral pixels from visually reviewed material-feature candidates; identities remain provisional, not independently validated. No neighbouring pixels selected or spectra propagated. See registration_probe/localized_candidate_associations.json.",
+    "label_mask_npy": "sparse_feature_mask.npy",
+    "label_names": {
+      "1": "red_upper_2",
+      "2": "red_upper_6",
+      "3": "green_lower_0"
+    }
+  },
+  "sampling": {
+    "line_step": 1,
+    "column_step": 1,
+    "origin_line_column": [
+      0,
+      0
+    ]
+  },
+  "patches": [
+    {
+      "patch_id": 1,
+      "name": "red_upper_2",
+      "mask_pixels": 1,
+      "sample_pixels": 1,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 0,
+      "samples_without_reference_support": 1,
+      "samples_all_bands_Q_valid": 0
+    },
+    {
+      "patch_id": 2,
+      "name": "red_upper_6",
+      "mask_pixels": 1,
+      "sample_pixels": 1,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 1,
+      "samples_without_reference_support": 1,
+      "samples_all_bands_Q_valid": 0
+    },
+    {
+      "patch_id": 3,
+      "name": "green_lower_0",
+      "mask_pixels": 1,
+      "sample_pixels": 1,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 0,
+      "samples_without_reference_support": 0,
+      "samples_all_bands_Q_valid": 1
+    }
+  ],
+  "normalization": {
+    "white_roi": [
+      20,
+      140,
+      180,
+      850
+    ],
+    "dark_roi": [
+      2080,
+      2127,
+      0,
+      1024
+    ],
+    "white_identity": "User-confirmed white board at scan start; spectral reflectance unknown",
+    "settings_assumption": "User confirmed fixed exposure; gain and source export packing not independently established",
+    "dark_status": "assumed_tail",
+    "dark_provenance": "Abrupt final low-signal tail; shutter closure unconfirmed. This is an explicit assumed offset, not certified dark calibration."
+  },
+  "normalization_produced": true,
+  "suspected_clipping_dn": 65520,
+  "clipping_evaluated": true,
+  "band_flags": {
+    "outside_reviewed_reference_support": 1,
+    "sample_suspected_clipping": 2,
+    "reference_suspected_clipping": 4,
+    "weak_white_minus_dark": 8,
+    "raw_zero": 16,
+    "low_signal_above_dark_advisory": 32
+  },
+  "Q_invalid_bit_mask": 31,
+  "low_signal_bit_32_policy": "Advisory for Q; any downstream index must independently exclude required low-signal bands.",
+  "reference_formula": "Q=(DN-D)/(W-D); Q0=DN/W, same conservative support",
+  "reference_support_policy": "Intersection of reviewed white/dark columns; no extrapolation",
+  "reference_contrast_guard": "W-D > max(64 DN,5*sqrt(white_MAD_sigma^2+dark_MAD_sigma^2))",
+  "signal_guard": "DN-D > max(32 DN,3*dark_MAD_sigma)",
+  "guard_limit": "Exploratory guards inherited from reviewed workflow, not calibrated noise confidence bounds.",
+  "array_axes": "Spectral arrays: sample,source_band; index arrays: sample,index_names. Coordinates: zero-based source scan_line and detector_column.",
+  "invalid_floating_values": "NaN, never zero filled",
+  "summary_limit": "Medians omit invalid Q separately per band; valid pixel sets may change with wavelength. Patch samples are spatially correlated and not whole-plant traits.",
+  "products": {
+    "spectra": "measured_spectra.npz",
+    "csv": "patch_spectral_summary.csv",
+    "mask": "reviewed_patch_mask.npz",
+    "reference_profiles": "reference_profiles.npz",
+    "indices_csv": "patch_index_summary.csv"
+  },
+  "software_sha256": "a01459dfab001296d69afa10d8ca44e78ba7ccf4b8754ca970d1e15fb4b77339",
+  "label_mask_sha256": "02f4a90b900b549af9c31af7ab4f6f10aeb68f3d8ab7a2c98db1b6d2b8ad4219",
+  "index_specs_applied": {
+    "NDVI_800_680": {
+      "bands": [
+        800,
+        680
+      ],
+      "formula": "(Q800-Q680)/(Q800+Q680)",
+      "operation": "nd",
+      "source_bands_zero_based": [
+        150,
+        106
+      ],
+      "actual_wavelengths_nm": [
+        800.34,
+        680.07
+      ]
+    },
+    "NDRE_790_720": {
+      "bands": [
+        790,
+        720
+      ],
+      "formula": "(Q790-Q720)/(Q790+Q720)",
+      "operation": "nd",
+      "source_bands_zero_based": [
+        146,
+        121
+      ],
+      "actual_wavelengths_nm": [
+        789.33,
+        720.87
+      ]
+    },
+    "GNDVI_800_550": {
+      "bands": [
+        800,
+        550
+      ],
+      "formula": "(Q800-Q550)/(Q800+Q550)",
+      "operation": "nd",
+      "source_bands_zero_based": [
+        150,
+        58
+      ],
+      "actual_wavelengths_nm": [
+        800.34,
+        550.91
+      ]
+    },
+    "PRI_531_570": {
+      "bands": [
+        531,
+        570
+      ],
+      "formula": "(Q531-Q570)/(Q531+Q570)",
+      "operation": "nd",
+      "source_bands_zero_based": [
+        51,
+        65
+      ],
+      "actual_wavelengths_nm": [
+        532.25,
+        569.61
+      ]
+    },
+    "PSRI_678_500_750": {
+      "bands": [
+        678,
+        500,
+        750
+      ],
+      "formula": "(Q678-Q500)/Q750",
+      "operation": "psri",
+      "source_bands_zero_based": [
+        105,
+        39,
+        132
+      ],
+      "actual_wavelengths_nm": [
+        677.36,
+        500.37,
+        750.93
+      ]
+    },
+    "SIPI_800_445_680": {
+      "bands": [
+        800,
+        445,
+        680
+      ],
+      "formula": "(Q800-Q445)/(Q800-Q680)",
+      "operation": "sipi",
+      "source_bands_zero_based": [
+        150,
+        18,
+        106
+      ],
+      "actual_wavelengths_nm": [
+        800.34,
+        444.89,
+        680.07
+      ]
+    }
+  },
+  "indices_unavailable": {},
+  "index_quality_flags": {
+    "invalid_required_band": 1,
+    "low_signal_required_band": 2,
+    "weak_or_wrong_sign_denominator": 4,
+    "reference_scan_line": 8,
+    "nonfinite_index": 16
+  },
+  "index_denominator_floor_Q_units": 0.01,
+  "source_fingerprints_stable_before_after": true
+}

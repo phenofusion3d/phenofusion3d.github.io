@@ -1,0 +1,36 @@
+{
+  "scope": "Hashes of actual saved inputs and new investigation products; no full raw-cube hash recomputation.",
+  "source_files_sha256": {
+    "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1055904.png": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494",
+    "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1055904.npz": "6f390f935b5e9227b07b3d11146fc0b081b654b06d26600d6feb67d93b5c2eff",
+    "generated\\research_20260928_improvement_20261007\\short_dense_v3\\profile.json": "101f44a9b1329cae37431151bedeeedbf01c84a1e09bc6e91002ed2834910db9",
+    "generated\\research_20260928_improvement_20261007\\short_dense_v3\\result\\icp_diagnostics.json": "420fc50e1808d285d1835802f361a29372421e122a02ee0e52222c2fb0d38f77",
+    "generated\\research_followthrough_20261007\\spectral\\fx10_display_rgb.npy": "d8c55904d2d347cc7a4cac24a2f2274b38ae917caff3ca34e827b21a9d4153c3",
+    "generated\\research_20260928_processing_20261007\\spectral_geometry\\raw_calibration_marker_observations.json": "70331b2a1b7a32cff50de7a69de4bb87b05c4ee6127edf70f87389474fd8dc45",
+    "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_824869.png": "0a03b8a36dfbad1ef078e8e7a6d44784ce5fb1774cc757f8ff196b600ca33ba2",
+    "generated\\research_followthrough_20261007\\spectral\\fx17_display_rgb.npy": "f4676eb60549e43245707e208c86ff167a6d05b73e02bef64a8f076aade7bed8",
+    "generated\\research_followthrough_20261007\\spectral\\inspect_regions.py": "2c71dc8c781061bd9d92463c245b76f32aa419749afa6401ea567435a35ade41",
+    "generated\\research_20260928_processing_20261007\\spectral_geometry\\pushbroom_planar_diagnostics.json": "767c585773ff2a60d6920428203154ae04484d22221dbbd33876a5ee7cf4cda3",
+    "generated\\research_20260928_processing_20261007\\spectral_geometry\\pushbroom_feasibility_and_holdout.md": "3c9631d65b881f390a09342fbfd36dc25545c25f6d9f1f5a1a5a21aeecc06e7c",
+    "generated\\research_plant_cleanup_20261007\\source_review\\p3_p4\\source_review_p3_p4.json": "c3f8e021fcf3624c6709bcc18dc4716ff9e5ebd8e00aa9304a5f12cd9ef0a260",
+    "generated\\research_plant_cleanup_20261007\\source_review\\p5\\P5_source_review.json": "bbc41661c7bee57f1bd4711e670bd301439fb5f5ce4cd06af41486a1abd38961"
+  },
+  "new_outputs_sha256": {
+    "audit_candidate_controls.py": "7d94e253ac65c75e32153884895f9685210e22e2a88c8eec3d9c7efe97eeb4b9",
+    "calibration_capture_specification.json": "5518093b1c510ec138fc2c228373d7c6c04273f265fd416495e37fafd64a9027",
+    "calibration_capture_specification.md": "f9b45d5816f8bd172c6d89c193b8975f5f513f78ebb73cc2038b9e8b0f0678cb",
+    "candidate_availability.csv": "3caa24a1ea410ad2cc092058cd46f4fa84ae0e9363344f5ecf8f0d50f7126152",
+    "candidate_control_audit.json": "dab51ac646df892a4ed71a8f9da9ca63fd6a0f69615ad1d99f49a268450e1c2e",
+    "index.html": "4ba254d683427580892ead4ed8c229cbe5c95c89f94f84171abd86d97cf9a0a6",
+    "inspect_controls.py": "b51d779b9e4bc6f9cba7e463ca1c804dc22dab856af031f54be1e2a8e0068640",
+    "P5_candidate_landmark_windows.png": "08c1e1c0bb8a467e9247c412e8ce75c2c3b2f877abebe41b0cbdd3e4ddc60206",
+    "R3_candidate_comparison.png": "aa4b704d2f147ae06e5fc2b1d43253935024365d75e33f0ca6e154e155368350",
+    "R5_candidate_comparison.png": "921e23c898fe0b8183718ea96693ba39800ba76629c78a9b4bc9b3a538cd6c75",
+    "R5_three_sensor_appearance.png": "57081ed2aef16507aaecb213b356870678c7e138d46780fd828430c96f2d6de7",
+    "REPORT.md": "5af4c80c0a0a6a86e80659a155803ce93a7dac350debc7fda700e0eba035e20f",
+    "save_investigation.py": "90b5f7b9698cccfd0894c12b256d862f484be3a8906c3327fd0ca134767f8353",
+    "summary.json": "29ac3142d1a210f2d5bb084c39dff87c5e5124ebd838e022073ec32b19b8345a",
+    "validate_investigation.py": "0a79d8a1ea2d5a9769494a7ce0ecf44f464a3698c2242e2f6000fedae4c751eb"
+  },
+  "prior_results_modified": false
+}

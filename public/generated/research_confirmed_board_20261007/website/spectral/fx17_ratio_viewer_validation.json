@@ -1,0 +1,64 @@
+{
+  "status": "pass",
+  "source_full_csv_sha256": "044ed4deefc93ae6a505fa7ca5876111c2c3e00f5fd1cec1692d451326004fef",
+  "source_full_npz_sha256": "aa5b0a6ce5a1ff5b132f575c2f5806d3dc505efd1b9cf1080633c438e1387d6b",
+  "source_methods_sha256": "7bf38c53d5b56244930d3a25d232bfb8bad15fa5afca40ebfbb4abb875aa3bc1",
+  "full_sample_ids_verified": 5361,
+  "full_ratios_and_flags_exactly_match_saved_diagnostics": true,
+  "sparse_pixel_ratios_computed_from_their_own_exact_spectra": {
+    "q": [
+      null,
+      null,
+      4.8306622675896245
+    ],
+    "flags_q": [
+      21,
+      21,
+      0
+    ],
+    "q0": [
+      null,
+      null,
+      4.06867485395179
+    ],
+    "flags_q0": [
+      21,
+      21,
+      0
+    ],
+    "sample_id": [
+      0,
+      1,
+      2
+    ],
+    "scan_line": [
+      1509,
+      1562,
+      1718
+    ],
+    "detector_column": [
+      587,
+      604,
+      235
+    ],
+    "patch_id": [
+      1,
+      2,
+      3
+    ],
+    "name": "SR_1301.56_1449.68_signal_ratio",
+    "formula": "Q1301.56/Q1449.68; Q0 separately",
+    "source_band_zero_based": [
+      105,
+      147
+    ],
+    "actual_wavelength_nm": [
+      1301.56,
+      1449.68
+    ],
+    "source_measured_npz_sha256": "30bb919ab907d1372aecced4166c70ce04f59c3a396f4b466b2618f733406eee",
+    "scope": "Exploratory reference-relative signal ratio. Not calibrated reflectance, water content, stress or health. Both bands require zero quality flags; denominator must exceed 0.01 Q units."
+  },
+  "underlying_raw_and_Q_arrays_modified": false,
+  "script_sha256": "04f37b1a1f013ac836bc1816766c2ebda06a8b108d0578b754013fa1816abc4d"
+}

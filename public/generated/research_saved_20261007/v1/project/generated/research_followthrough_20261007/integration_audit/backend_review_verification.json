@@ -1,0 +1,44 @@
+{
+  "review_scope": [
+    "processing/research_workspace/workflow.py",
+    "processing/research_workspace/viewer.py",
+    "processing/research_workspace/spectral_mapping.py"
+  ],
+  "regression_test_file": "tests/test_research_workspace_review.py",
+  "reported_and_fixed": [
+    "Rejected endpoint measurements from unrelated specimen clouds; context clouds remain eligible for explicitly reviewed bases.",
+    "Compared loaded-cloud fingerprint to final input snapshot.",
+    "Captured setup/annotation hashes before parsing and checked final input snapshot.",
+    "Rejected duplicate elevated control coordinates with distinct IDs.",
+    "Rejected malformed serialized empirical model hull/scale."
+  ],
+  "tests": {
+    "files": [
+      "tests/test_research_workspace_review.py",
+      "tests/test_research_spectral_mapping.py"
+    ],
+    "passed": 16,
+    "failed": 0,
+    "elapsed_seconds": 2.21
+  },
+  "viewer_checks": [
+    "Sampled source index preservation for 600001 points",
+    "Preview Float32 coordinates separated from original source indices",
+    "Cloud hash retained",
+    "Local JavaScript assets resolve",
+    "Unsafe label characters escaped"
+  ],
+  "remaining_boundaries": [
+    "Point picking is an unreviewed candidate operation.",
+    "Physical calibration/accuracy flags remain false.",
+    "Physical fusion remains null and surface mapping eligibility remains false.",
+    "External artifact/cloud links require the original local files; this is not a self-contained portable artifact bundle."
+  ],
+  "protected_sources": {
+    "checked": 26,
+    "changed": 0,
+    "paths": [
+      null
+    ]
+  }
+}

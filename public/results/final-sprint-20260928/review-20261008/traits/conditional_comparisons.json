@@ -1,0 +1,977 @@
+[
+  {
+    "id": "P3.O01.width",
+    "specimen_id": "P3",
+    "trait": "width",
+    "reference_cm": 5.5,
+    "reference_source": "operator_annotation_cm",
+    "photo_reading_cm": 5.4,
+    "estimate_cm": 3.9358752315052756,
+    "difference_cm": -1.5641247684947244,
+    "relative_difference_percent": -28.438632154449532,
+    "absolute_relative_difference_percent": 28.438632154449532,
+    "endpoint_disk_min_cm": 3.767484221610795,
+    "endpoint_disk_max_cm": 4.217815971476773,
+    "status": "conditional_same_organ_chord_comparison",
+    "caveat": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional.",
+    "scope": "Lateral lobed blade; selected basal junction and terminal margin, plus opposite lateral lobes.",
+    "source_frame": 824869,
+    "source_point_ids": [
+      5433712,
+      3034267
+    ],
+    "fused_point_indices": [
+      1108783,
+      575328
+    ],
+    "camera_ids": [
+      0,
+      0
+    ],
+    "endpoint_evidence": "P3.O01.width_candidate",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            684.846521682636,
+            454.4416849110481
+          ],
+          [
+            682.9176460502287,
+            504.63482717275593
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            964.9682748950311,
+            447.661525171506
+          ],
+          [
+            960.0720844615709,
+            497.4830839662096
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            367.8638533484743,
+            460.7052494786847
+          ],
+          [
+            369.49248541386714,
+            510.57838742708225
+          ]
+        ]
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "fully_automatic": false,
+    "manual_used_to_fit_scale_or_geometry": false
+  },
+  {
+    "id": "P3.O02.length",
+    "specimen_id": "P3",
+    "trait": "length",
+    "reference_cm": 9.8,
+    "reference_source": "operator_annotation_cm",
+    "photo_reading_cm": null,
+    "estimate_cm": 9.12092539833513,
+    "difference_cm": -0.6790746016648708,
+    "relative_difference_percent": -6.9293326700497015,
+    "absolute_relative_difference_percent": 6.9293326700497015,
+    "endpoint_disk_min_cm": 8.630309715539951,
+    "endpoint_disk_max_cm": 9.377936839069578,
+    "status": "conditional_same_organ_chord_comparison",
+    "caveat": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional.",
+    "scope": "Lobed blade with basal hole; basal margin and terminal lobe, plus opposite lateral margins.",
+    "source_frame": 824869,
+    "source_point_ids": [
+      6150271,
+      5959325
+    ],
+    "fused_point_indices": [
+      1309202,
+      1252860
+    ],
+    "camera_ids": [
+      0,
+      0
+    ],
+    "endpoint_evidence": "P3.O02.length_candidate",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            649.83927819306,
+            414.5879171738724
+          ],
+          [
+            698.744894968894,
+            323.07494743896945
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            895.0439449637831,
+            409.05266248558905
+          ],
+          [
+            938.2537421747854,
+            318.48861250862205
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            373.72338443339135,
+            420.25125595502277
+          ],
+          [
+            427.07550871798435,
+            329.12536022535414
+          ]
+        ]
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "fully_automatic": false,
+    "manual_used_to_fit_scale_or_geometry": false
+  },
+  {
+    "id": "P3.O02.width",
+    "specimen_id": "P3",
+    "trait": "width",
+    "reference_cm": 7.6,
+    "reference_source": "operator_annotation_cm",
+    "photo_reading_cm": null,
+    "estimate_cm": 9.265520307458768,
+    "difference_cm": 1.6655203074587686,
+    "relative_difference_percent": 21.914740887615377,
+    "absolute_relative_difference_percent": 21.914740887615377,
+    "endpoint_disk_min_cm": 8.27662930500362,
+    "endpoint_disk_max_cm": 9.364213342637083,
+    "status": "conditional_same_organ_chord_comparison",
+    "caveat": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional.",
+    "scope": "Lobed blade with basal hole; basal margin and terminal lobe, plus opposite lateral margins.",
+    "source_frame": 824869,
+    "source_point_ids": [
+      1498216,
+      1996453
+    ],
+    "fused_point_indices": [
+      238009,
+      323091
+    ],
+    "camera_ids": [
+      0,
+      0
+    ],
+    "endpoint_evidence": "P3.O02.width_candidate",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            635.5226063659263,
+            364.2331984525647
+          ],
+          [
+            722.7145977492106,
+            365.09245859918053
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            884.8885922323898,
+            359.0289900177321
+          ],
+          [
+            951.094292720283,
+            360.30884443686904
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            355.3540936239825,
+            370.3226765018096
+          ],
+          [
+            462.82358268496625,
+            370.7396375918063
+          ]
+        ]
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "fully_automatic": false,
+    "manual_used_to_fit_scale_or_geometry": false
+  },
+  {
+    "id": "P3.O03.length",
+    "specimen_id": "P3",
+    "trait": "length",
+    "reference_cm": 7.5,
+    "reference_source": "operator_annotation_cm",
+    "photo_reading_cm": null,
+    "estimate_cm": 7.691100957059331,
+    "difference_cm": 0.19110095705933094,
+    "relative_difference_percent": 2.5480127607910794,
+    "absolute_relative_difference_percent": 2.5480127607910794,
+    "endpoint_disk_min_cm": 6.9003374178647645,
+    "endpoint_disk_max_cm": 8.652943037308903,
+    "status": "conditional_same_organ_chord_comparison",
+    "caveat": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional.",
+    "scope": "Oval terminal blade including small basal lobes; base convention tentative; width is visible opposing side margins.",
+    "source_frame": 824869,
+    "source_point_ids": [
+      5799835,
+      4949838
+    ],
+    "fused_point_indices": [
+      1221511,
+      944608
+    ],
+    "camera_ids": [
+      0,
+      0
+    ],
+    "endpoint_evidence": "P3.O03.length_candidate",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            594.2204964846067,
+            424.12699211786963
+          ],
+          [
+            589.7748229163919,
+            325.7844029666501
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            877.9358204034024,
+            417.80515002887194
+          ],
+          [
+            890.0954695770747,
+            319.8849959153212
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            277.5218422926226,
+            430.36175610206186
+          ],
+          [
+            254.85076744370463,
+            333.50214654733804
+          ]
+        ]
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "fully_automatic": false,
+    "manual_used_to_fit_scale_or_geometry": false
+  },
+  {
+    "id": "P3.O03.width",
+    "specimen_id": "P3",
+    "trait": "width",
+    "reference_cm": 5.7,
+    "reference_source": "operator_annotation_cm",
+    "photo_reading_cm": null,
+    "estimate_cm": 5.036529578582992,
+    "difference_cm": -0.6634704214170082,
+    "relative_difference_percent": -11.639831954684356,
+    "absolute_relative_difference_percent": 11.639831954684356,
+    "endpoint_disk_min_cm": 4.553862986287698,
+    "endpoint_disk_max_cm": 14.964917225214574,
+    "status": "conditional_same_organ_chord_comparison",
+    "caveat": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional.",
+    "scope": "Oval terminal blade including small basal lobes; base convention tentative; width is visible opposing side margins.",
+    "source_frame": 824869,
+    "source_point_ids": [
+      5158967,
+      5970438
+    ],
+    "fused_point_indices": [
+      1020036,
+      1257128
+    ],
+    "camera_ids": [
+      0,
+      0
+    ],
+    "endpoint_evidence": "P3.O03.width_candidate",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            563.0376846940885,
+            372.1485094895626
+          ],
+          [
+            631.2244291540867,
+            375.2995479715119
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            856.4337176863477,
+            366.01577934738526
+          ],
+          [
+            929.4790327807333,
+            369.03336013906625
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            237.03828258754044,
+            379.1484465750794
+          ],
+          [
+            296.5022017938347,
+            382.41655491473483
+          ]
+        ]
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "fully_automatic": false,
+    "manual_used_to_fit_scale_or_geometry": false
+  },
+  {
+    "id": "P3.O04.length",
+    "specimen_id": "P3",
+    "trait": "length",
+    "reference_cm": 11.0,
+    "reference_source": "operator_annotation_cm",
+    "photo_reading_cm": 11.0,
+    "estimate_cm": 11.500610903923318,
+    "difference_cm": 0.5006109039233184,
+    "relative_difference_percent": 4.551008217484713,
+    "absolute_relative_difference_percent": 4.551008217484713,
+    "endpoint_disk_min_cm": 10.166677580605636,
+    "endpoint_disk_max_cm": 12.45773698723483,
+    "status": "conditional_same_organ_chord_comparison",
+    "caveat": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional.",
+    "scope": "Lobed blade; basal lobe boundary and terminal lamina candidate; opposite lateral lobes.",
+    "source_frame": 824869,
+    "source_point_ids": [
+      3135038,
+      2422495
+    ],
+    "fused_point_indices": [
+      593225,
+      426718
+    ],
+    "camera_ids": [
+      0,
+      0
+    ],
+    "endpoint_evidence": "P3.O04.length_candidate",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            550.4665677124583,
+            388.10420876119946
+          ],
+          [
+            505.79693842629047,
+            317.8783168431697
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            784.8987855392911,
+            383.1003910312405
+          ],
+          [
+            713.9942336053099,
+            313.40186625127575
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            290.093850072595,
+            393.5872235446219
+          ],
+          [
+            275.30079466406477,
+            323.4281074781397
+          ]
+        ]
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "fully_automatic": false,
+    "manual_used_to_fit_scale_or_geometry": false
+  },
+  {
+    "id": "P3.O04.width",
+    "specimen_id": "P3",
+    "trait": "width",
+    "reference_cm": 8.7,
+    "reference_source": "operator_annotation_cm",
+    "photo_reading_cm": 8.7,
+    "estimate_cm": 7.081279655122308,
+    "difference_cm": -1.6187203448776915,
+    "relative_difference_percent": -18.60598097560565,
+    "absolute_relative_difference_percent": 18.60598097560565,
+    "endpoint_disk_min_cm": 6.3305343600431305,
+    "endpoint_disk_max_cm": 7.608741679423971,
+    "status": "conditional_same_organ_chord_comparison",
+    "caveat": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional.",
+    "scope": "Lobed blade; basal lobe boundary and terminal lamina candidate; opposite lateral lobes.",
+    "source_frame": 824869,
+    "source_point_ids": [
+      5226412,
+      5386636
+    ],
+    "fused_point_indices": [
+      1034031,
+      1092160
+    ],
+    "camera_ids": [
+      0,
+      0
+    ],
+    "endpoint_evidence": "P3.O04.width_candidate",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            492.86370804041576,
+            365.22330228630153
+          ],
+          [
+            562.9947947073734,
+            345.804352917985
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            714.6280948595156,
+            360.5051775021667
+          ],
+          [
+            786.6508244694235,
+            341.1326086221044
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            247.7644072378564,
+            370.6439308918468
+          ],
+          [
+            314.1446337464689,
+            351.4414291048036
+          ]
+        ]
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "fully_automatic": false,
+    "manual_used_to_fit_scale_or_geometry": false
+  },
+  {
+    "id": "P5.O01.length",
+    "specimen_id": "P5",
+    "trait": "length",
+    "reference_cm": 12.0,
+    "reference_source": "operator_annotation_cm",
+    "photo_reading_cm": null,
+    "estimate_cm": 11.679115200213703,
+    "difference_cm": -0.32088479978629714,
+    "relative_difference_percent": -2.674039998219143,
+    "absolute_relative_difference_percent": 2.674039998219143,
+    "endpoint_disk_min_cm": 11.399234926474783,
+    "endpoint_disk_max_cm": 11.764271861386101,
+    "status": "conditional_same_organ_chord_comparison",
+    "caveat": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional.",
+    "scope": "Green damaged lobed blade; lowest basal-lamina lobe extent to terminal margin; widest opposing basal lobes.",
+    "source_frame": 1445026,
+    "source_point_ids": [
+      6987732,
+      4093658
+    ],
+    "fused_point_indices": [
+      1584692,
+      771882
+    ],
+    "camera_ids": [
+      0,
+      0
+    ],
+    "endpoint_evidence": "P5.O01.length_candidate",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            524.9188288013175,
+            332.82872350463447
+          ],
+          [
+            547.7662583111191,
+            203.28337067854
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            1009.9105573457384,
+            322.3419360538772
+          ],
+          [
+            1080.3686357690206,
+            193.252082752202
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            297.9424932983752,
+            338.73681709569126
+          ],
+          [
+            297.7731844677609,
+            210.73815815001305
+          ]
+        ]
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "fully_automatic": false,
+    "manual_used_to_fit_scale_or_geometry": false
+  },
+  {
+    "id": "P5.O01.width",
+    "specimen_id": "P5",
+    "trait": "width",
+    "reference_cm": 9.9,
+    "reference_source": "operator_annotation_cm",
+    "photo_reading_cm": 9.8,
+    "estimate_cm": 9.758400367366564,
+    "difference_cm": -0.14159963263343656,
+    "relative_difference_percent": -1.430299319529662,
+    "absolute_relative_difference_percent": 1.430299319529662,
+    "endpoint_disk_min_cm": 9.003869057133485,
+    "endpoint_disk_max_cm": 11.10645941168916,
+    "status": "conditional_same_organ_chord_comparison",
+    "caveat": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional.",
+    "scope": "Green damaged lobed blade; lowest basal-lamina lobe extent to terminal margin; widest opposing basal lobes.",
+    "source_frame": 1445026,
+    "source_point_ids": [
+      3128493,
+      7176814
+    ],
+    "fused_point_indices": [
+      591837,
+      1648528
+    ],
+    "camera_ids": [
+      0,
+      0
+    ],
+    "endpoint_evidence": "P5.O01.width_candidate",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            473.28530754792814,
+            290.46633036273147
+          ],
+          [
+            574.6710988107411,
+            303.8467983612274
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            968.211769386694,
+            279.9036372775291
+          ],
+          [
+            1099.2568591455174,
+            293.1195689733854
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            243.0708945173193,
+            296.89739560381145
+          ],
+          [
+            327.51869497638955,
+            310.4086920878645
+          ]
+        ]
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "fully_automatic": false,
+    "manual_used_to_fit_scale_or_geometry": false
+  },
+  {
+    "id": "P5.O02.length",
+    "specimen_id": "P5",
+    "trait": "length",
+    "reference_cm": 8.0,
+    "reference_source": "operator_annotation_cm",
+    "photo_reading_cm": null,
+    "estimate_cm": 6.4682762513886995,
+    "difference_cm": -1.5317237486113005,
+    "relative_difference_percent": -19.146546857641255,
+    "absolute_relative_difference_percent": 19.146546857641255,
+    "endpoint_disk_min_cm": 5.546943010983704,
+    "endpoint_disk_max_cm": 7.310616188273479,
+    "status": "conditional_same_organ_chord_comparison",
+    "caveat": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional. Axis corrected after venation review; previous mislabeled transverse attempt retained as rejected history.",
+    "scope": "Three-view venation review showed the first batch axes were reversed; this is basal lamina to true terminal margin.",
+    "source_frame": 1445026,
+    "source_point_ids": [
+      7195261,
+      7123641
+    ],
+    "fused_point_indices": [
+      1649599,
+      1631429
+    ],
+    "camera_ids": [
+      0,
+      0
+    ],
+    "endpoint_evidence": "P5.O02.length_revision",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            532.7883394019,
+            403.56583696710567
+          ],
+          [
+            588.6949912595132,
+            412.91862053240465
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            981.572004062003,
+            393.1172191313374
+          ],
+          [
+            1061.522505858639,
+            401.7449136625879
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            322.55489640839846,
+            408.49124266327715
+          ],
+          [
+            365.41380883844704,
+            418.0745073639608
+          ]
+        ]
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "fully_automatic": false,
+    "manual_used_to_fit_scale_or_geometry": false
+  },
+  {
+    "id": "P5.O03.length",
+    "specimen_id": "P5",
+    "trait": "length",
+    "reference_cm": 11.9,
+    "reference_source": "operator_annotation_cm",
+    "photo_reading_cm": null,
+    "estimate_cm": 9.797323277103388,
+    "difference_cm": -2.1026767228966126,
+    "relative_difference_percent": -17.669552293248845,
+    "absolute_relative_difference_percent": 17.669552293248845,
+    "endpoint_disk_min_cm": 8.780198474804921,
+    "endpoint_disk_max_cm": 10.46117890389455,
+    "status": "conditional_same_organ_chord_comparison",
+    "caveat": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional. Distinctive damaged curled leaf; flattening especially affects length.",
+    "scope": "Rust-brown damaged blade; lamina base to distal curled terminal margin; side lobes. Curl differs from held ruler pose.",
+    "source_frame": 1445026,
+    "source_point_ids": [
+      7127164,
+      7353727
+    ],
+    "fused_point_indices": [
+      1633411,
+      1692937
+    ],
+    "camera_ids": [
+      0,
+      0
+    ],
+    "endpoint_evidence": "P5.O03.length_candidate",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            602.9123675154285,
+            420.1680782595114
+          ],
+          [
+            707.7807457015924,
+            432.5429068463945
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            1069.6716705822023,
+            409.00577681910534
+          ],
+          [
+            1203.395413514785,
+            420.6565132493114
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            382.0732408390048,
+            425.24528785860207
+          ],
+          [
+            471.0607882481331,
+            438.1346761750158
+          ]
+        ]
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "fully_automatic": false,
+    "manual_used_to_fit_scale_or_geometry": false
+  },
+  {
+    "id": "P5.O03.width",
+    "specimen_id": "P5",
+    "trait": "width",
+    "reference_cm": 11.7,
+    "reference_source": "operator_annotation_cm",
+    "photo_reading_cm": 11.7,
+    "estimate_cm": 11.571735824370721,
+    "difference_cm": -0.12826417562927794,
+    "relative_difference_percent": -1.096275005378444,
+    "absolute_relative_difference_percent": 1.096275005378444,
+    "endpoint_disk_min_cm": 11.02187252611406,
+    "endpoint_disk_max_cm": 11.729386192543291,
+    "status": "conditional_same_organ_chord_comparison",
+    "caveat": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional. Distinctive damaged curled leaf; flattening especially affects length.",
+    "scope": "Rust-brown damaged blade; lamina base to distal curled terminal margin; side lobes. Curl differs from held ruler pose.",
+    "source_frame": 1445026,
+    "source_point_ids": [
+      3987177,
+      7326351
+    ],
+    "fused_point_indices": [
+      751635,
+      1686591
+    ],
+    "camera_ids": [
+      0,
+      0
+    ],
+    "endpoint_evidence": "P5.O03.width_candidate",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            658.8623225043392,
+            364.67596235251864
+          ],
+          [
+            639.4473204635825,
+            496.1492016884366
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            1152.0575037872686,
+            353.7760585850622
+          ],
+          [
+            1125.6348986788612,
+            483.62918062627784
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            424.0033090533797,
+            370.38805416780474
+          ],
+          [
+            408.68625668964285,
+            501.1492705266258
+          ]
+        ]
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "fully_automatic": false,
+    "manual_used_to_fit_scale_or_geometry": false
+  },
+  {
+    "id": "P5.O05.length",
+    "specimen_id": "P5",
+    "trait": "length",
+    "reference_cm": 13.2,
+    "reference_source": "operator_annotation_cm",
+    "photo_reading_cm": null,
+    "estimate_cm": 11.97660275005639,
+    "difference_cm": -1.2233972499436092,
+    "relative_difference_percent": -9.268160984421282,
+    "absolute_relative_difference_percent": 9.268160984421282,
+    "endpoint_disk_min_cm": 11.176026550935477,
+    "endpoint_disk_max_cm": 11.977380288682319,
+    "status": "conditional_same_organ_chord_comparison",
+    "caveat": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional.",
+    "scope": "Left-facing green lobed blade; basal lamina to distal tip; opposite side lobes.",
+    "source_frame": 1445026,
+    "source_point_ids": [
+      7799774,
+      6955016
+    ],
+    "fused_point_indices": [
+      1711285,
+      1566755
+    ],
+    "camera_ids": [
+      0,
+      0
+    ],
+    "endpoint_evidence": "P5.O05.length_candidate",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            473.7807638397876,
+            406.6700473523282
+          ],
+          [
+            342.4027578729099,
+            436.4966562573849
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            974.2182964709738,
+            395.23646020580395
+          ],
+          [
+            949.4819938973844,
+            423.14873798819906
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            241.00448048168215,
+            412.07210450241274
+          ],
+          [
+            60.49202698140027,
+            443.13346008186346
+          ]
+        ]
+      }
+    ],
+    "physical_accuracy_validated": false,
+    "fully_automatic": false,
+    "manual_used_to_fit_scale_or_geometry": false
+  }
+]

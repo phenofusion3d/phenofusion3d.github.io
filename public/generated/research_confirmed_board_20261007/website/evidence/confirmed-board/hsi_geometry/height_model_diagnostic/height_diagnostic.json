@@ -1,0 +1,3134 @@
+{
+  "status": "three_P5_control_conditional_height_model_diagnostic_not_accepted_camera_calibration",
+  "equations": {
+    "signed_h": "normal dot (calibration_xyz-plane_origin); negative toward camera above table",
+    "line": "L_plane(X,Y)+k*h",
+    "column": "(N_plane(X,Y)+a*h)/(D_plane(X,Y)+b*h)",
+    "unknowns": [
+      "k",
+      "a",
+      "b"
+    ]
+  },
+  "source_3D_coordinates": "Existing independently localized D405 RGB feature positions multiplied by confirmed scale factor, then inverse provisional RGB paper bridge. Not remapped cleanup vertices or independently surveyed control locations.",
+  "heldout_policy": "For each fold, exactly two existing P5 feature correspondences estimate the three height terms; the third observation is used only to score the prediction. Planar coefficients remain fixed. No spectral values are assigned by this model.",
+  "parameter_count": 3,
+  "per_sensor": {
+    "fx10": {
+      "controls": [
+        {
+          "id": "red_upper_2",
+          "original_D405_localization": [
+            1.2097780789508619,
+            -0.10838186816932295,
+            0.539720768400543
+          ],
+          "metric_plant_xyz": [
+            1.244710018011557,
+            -0.11151135851143458,
+            0.5553050258107196
+          ],
+          "plane_XYh": [
+            0.3804974846455239,
+            -0.1918145615507171,
+            -0.34985313529956863
+          ],
+          "source_003_column_line": [
+            965.163122177124,
+            1614.6909942626953
+          ]
+        },
+        {
+          "id": "red_upper_6",
+          "original_D405_localization": [
+            1.243028720791474,
+            -0.12337009599846702,
+            0.5396296069974759
+          ],
+          "metric_plant_xyz": [
+            1.2789207610597497,
+            -0.12693236642666642,
+            0.5552112321525042
+          ],
+          "plane_XYh": [
+            0.4150754242544449,
+            -0.20639163748576672,
+            -0.35011037422947194
+          ],
+          "source_003_column_line": [
+            992.1574348722186,
+            1668.2689918518067
+          ]
+        },
+        {
+          "id": "green_lower_0",
+          "original_D405_localization": [
+            1.3745219366547117,
+            0.09470475147007894,
+            0.4976685690886683
+          ],
+          "metric_plant_xyz": [
+            1.414210799731525,
+            0.09743931962325626,
+            0.5120385832510218
+          ],
+          "plane_XYh": [
+            0.5447767881678299,
+            0.021574925480120365,
+            -0.39156791933761886
+          ],
+          "source_003_column_line": [
+            411.8931819370814,
+            1826.8903121948242
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "held_out_id": "red_upper_2",
+          "training_ids": [
+            "red_upper_6",
+            "green_lower_0"
+          ],
+          "observed_003_column_line": [
+            965.163122177124,
+            1614.6909942626953
+          ],
+          "predicted_003_column_line": [
+            955.4636514437747,
+            1617.4178086612621
+          ],
+          "held_out_residual_column_line": [
+            -9.699470733349358,
+            2.7268143985668303
+          ],
+          "held_out_vector_error_px": 10.075477620010483,
+          "training_residuals_column_line": [
+            [
+              0.0,
+              -6.160926528280243
+            ],
+            [
+              5.684341886080802e-14,
+              5.508633843306825
+            ]
+          ],
+          "fit": {
+            "line_height_coefficient_px_per_m": -6.151504605407799,
+            "column_numerator_height_coefficient_px_per_m": 540.8446186862707,
+            "column_denominator_height_coefficient_per_m": 1.0008610746059377,
+            "column_height_fit_normalized_singular_values": [
+              1.3850981136823801,
+              0.2854876800730867
+            ],
+            "column_height_fit_normalized_condition_number": 4.8516913701067095,
+            "rank": 2,
+            "denominator_at_three_points": [
+              0.6509174498075649,
+              0.6507464877199765,
+              0.6084977682218426
+            ],
+            "input_height_m": [
+              -0.34985313529956863,
+              -0.35011037422947194,
+              -0.39156791933761886
+            ],
+            "input_cross_plane_xy_m": [
+              [
+                0.3804974846455239,
+                -0.1918145615507171
+              ],
+              [
+                0.4150754242544449,
+                -0.20639163748576672
+              ],
+              [
+                0.5447767881678299,
+                0.021574925480120365
+              ]
+            ]
+          },
+          "sensitivity_scenarios": [
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 0,
+              "prediction_003_column_line": [
+                955.2482345886154,
+                1617.240347277649
+              ],
+              "change_from_baseline_px": 0.2791002761742472,
+              "held_error_px": 10.237392084296442
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 328592,
+              "prediction_003_column_line": [
+                955.5762559458245,
+                1617.3892072972096
+              ],
+              "change_from_baseline_px": 0.11618008395401601,
+              "held_error_px": 9.9593352045432
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 670589,
+              "prediction_003_column_line": [
+                955.3280227035139,
+                1617.0674388348796
+              ],
+              "change_from_baseline_px": 0.3757048980570937,
+              "held_error_px": 10.118135720599476
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1003470,
+              "prediction_003_column_line": [
+                955.3977566725517,
+                1617.4600184144608
+              ],
+              "change_from_baseline_px": 0.07825461097989918,
+              "held_error_px": 10.150362465988643
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1318110,
+              "prediction_003_column_line": [
+                955.5074893196899,
+                1617.4521514121059
+              ],
+              "change_from_baseline_px": 0.05568827435169981,
+              "held_error_px": 10.04267069465605
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1639585,
+              "prediction_003_column_line": [
+                955.4265964834934,
+                1617.502980405506
+              ],
+              "change_from_baseline_px": 0.09288323906374125,
+              "held_error_px": 10.134456011552256
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "top",
+              "prediction_003_column_line": [
+                955.5415843377376,
+                1617.4219431810416
+              ],
+              "change_from_baseline_px": 0.0780424898068176,
+              "held_error_px": 10.001603490908897
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "middle_rotated",
+              "prediction_003_column_line": [
+                955.4252142164464,
+                1617.4118537540842
+              ],
+              "change_from_baseline_px": 0.03889577565985006,
+              "held_error_px": 10.110881654065045
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "bottom",
+              "prediction_003_column_line": [
+                955.2620312522428,
+                1617.4197489195462
+              ],
+              "change_from_baseline_px": 0.20162952719175253,
+              "held_error_px": 10.27023385712573
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                955.5246140565097,
+                1616.1219853190723
+              ],
+              "change_from_baseline_px": 1.297256556859682,
+              "held_error_px": 9.74415589954203
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                955.4026887835203,
+                1618.713632003452
+              ],
+              "change_from_baseline_px": 1.297256559092785,
+              "held_error_px": 10.556878062397761
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                957.973997044921,
+                1617.4410721153502
+              ],
+              "change_from_baseline_px": 2.510453390423921,
+              "held_error_px": 7.697171452042335
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                952.9533400590553,
+                1617.3945452071737
+              ],
+              "change_from_baseline_px": 2.5104191754660428,
+              "held_error_px": 12.505517465506966
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                956.0822074032517,
+                1617.4224076622538
+              ],
+              "change_from_baseline_px": 0.6185730561660924,
+              "held_error_px": 9.482807194582236
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                954.8469947628712,
+                1617.4132096602707
+              ],
+              "change_from_baseline_px": 0.6166738302482191,
+              "held_error_px": 10.669252152700082
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                955.4066050232938,
+                1617.993082000065
+              ],
+              "change_from_baseline_px": 0.5780948956936536,
+              "held_error_px": 10.30016555198368
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                955.5207094983499,
+                1616.842534937959
+              ],
+              "change_from_baseline_px": 0.5780964264851673,
+              "held_error_px": 9.879536909445617
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                953.1237323855044,
+                1617.4075454146912
+              ],
+              "change_from_baseline_px": 2.3399415662547636,
+              "held_error_px": 12.342064524056177
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                957.8240028388508,
+                1617.4280718507437
+              ],
+              "change_from_baseline_px": 2.360373707974255,
+              "held_error_px": 7.832896423700031
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                954.8352368476568,
+                1617.423558460152
+              ],
+              "change_from_baseline_px": 0.6284409000067162,
+              "held_error_px": 10.683263662001714
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                956.0971349247573,
+                1617.412017911532
+              ],
+              "change_from_baseline_px": 0.6335099474043455,
+              "held_error_px": 9.465521356882867
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                955.4601947749695,
+                1618.0612186309081
+              ],
+              "change_from_baseline_px": 0.6434192549178643,
+              "held_error_px": 10.27157302770983
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                955.4671074429161,
+                1616.7743990761162
+              ],
+              "change_from_baseline_px": 0.6434188668260702,
+              "held_error_px": 9.917322085248712
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                955.3214824884406,
+                1617.406200146256
+              ],
+              "change_from_baseline_px": 0.1426421027657747,
+              "held_error_px": 10.20931999459279
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                955.604733148042,
+                1617.429417233358
+              ],
+              "change_from_baseline_px": 0.141558490473289,
+              "held_error_px": 9.942925183140462
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                955.4759439060496,
+                1617.4085607406496
+              ],
+              "change_from_baseline_px": 0.01538273917206851,
+              "held_error_px": 10.061142600007116
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                955.451287732162,
+                1617.4270975326965
+              ],
+              "change_from_baseline_px": 0.015464297506385095,
+              "held_error_px": 10.089895410283626
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_6",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                954.5278203011997,
+                1617.4178086612621
+              ],
+              "change_from_baseline_px": 0.9358311425750117,
+              "held_error_px": 10.979306114517064
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_6",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                956.399479369879,
+                1617.4178086612621
+              ],
+              "change_from_baseline_px": 0.9358279261043663,
+              "held_error_px": 9.178069078908061
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_6",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                955.4636514437747,
+                1616.9738579211487
+              ],
+              "change_from_baseline_px": 0.4439507401134506,
+              "held_error_px": 9.964496926096565
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_6",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                955.4636514437747,
+                1617.8617594013756
+              ],
+              "change_from_baseline_px": 0.4439507401134506,
+              "held_error_px": 10.204581523598648
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "green_lower_0",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                955.4108488661456,
+                1617.4178086612621
+              ],
+              "change_from_baseline_px": 0.05280257762910878,
+              "held_error_px": 10.126319740964844
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "green_lower_0",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                955.5164840152453,
+                1617.4178086612621
+              ],
+              "change_from_baseline_px": 0.05283257147061704,
+              "held_error_px": 10.024626905299101
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "green_lower_0",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                955.4636514437747,
+                1616.9212884767999
+              ],
+              "change_from_baseline_px": 0.49652018446226975,
+              "held_error_px": 9.952584829508815
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "green_lower_0",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                955.4636514437747,
+                1617.9143288457244
+              ],
+              "change_from_baseline_px": 0.49652018446226975,
+              "held_error_px": 10.221038026602391
+            }
+          ],
+          "max_prediction_shift_by_scenario": {
+            "RGB_bridge_leave_frame_out": 0.3757048980570937,
+            "calibration_plane_leave_sheet_out": 0.20162952719175253,
+            "single_coordinate_1mm_stress": 2.510453390423921,
+            "training_correspondence_1px_stress": 0.9358311425750117
+          }
+        },
+        {
+          "held_out_id": "red_upper_6",
+          "training_ids": [
+            "red_upper_2",
+            "green_lower_0"
+          ],
+          "observed_003_column_line": [
+            992.1574348722186,
+            1668.2689918518067
+          ],
+          "predicted_003_column_line": [
+            1002.5221895033545,
+            1658.157757045087
+          ],
+          "held_out_residual_column_line": [
+            10.364754631135952,
+            -10.111234806719722
+          ],
+          "held_out_vector_error_px": 14.47982071298794,
+          "training_residuals_column_line": [
+            [
+              -1.1368683772161603e-13,
+              -1.220591443529429
+            ],
+            [
+              5.684341886080802e-14,
+              1.0905585528073516
+            ]
+          ],
+          "fit": {
+            "line_height_coefficient_px_per_m": 5.131532314402147,
+            "column_numerator_height_coefficient_px_per_m": 554.2804121575111,
+            "column_denominator_height_coefficient_per_m": 1.0334786072544555,
+            "column_height_fit_normalized_singular_values": [
+              1.3865848447504168,
+              0.278177044898502
+            ],
+            "column_height_fit_normalized_condition_number": 4.984540853312817,
+            "rank": 2,
+            "denominator_at_three_points": [
+              0.6395061037447449,
+              0.6393267511579618,
+              0.5957257888287357
+            ],
+            "input_height_m": [
+              -0.34985313529956863,
+              -0.35011037422947194,
+              -0.39156791933761886
+            ],
+            "input_cross_plane_xy_m": [
+              [
+                0.3804974846455239,
+                -0.1918145615507171
+              ],
+              [
+                0.4150754242544449,
+                -0.20639163748576672
+              ],
+              [
+                0.5447767881678299,
+                0.021574925480120365
+              ]
+            ]
+          },
+          "sensitivity_scenarios": [
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 0,
+              "prediction_003_column_line": [
+                1002.7639768319378,
+                1657.9413751618451
+              ],
+              "change_from_baseline_px": 0.3244722355745584,
+              "held_error_px": 14.803999420361327
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 328592,
+              "prediction_003_column_line": [
+                1002.394662141921,
+                1658.1595574521677
+              ],
+              "change_from_baseline_px": 0.12754006970302512,
+              "held_error_px": 14.387546213727452
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 670589,
+              "prediction_003_column_line": [
+                1002.6705154051284,
+                1657.8052276549104
+              ],
+              "change_from_baseline_px": 0.38246247407471473,
+              "held_error_px": 14.83291014803562
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1003470,
+              "prediction_003_column_line": [
+                1002.5983828915248,
+                1658.180139493804
+              ],
+              "change_from_baseline_px": 0.07941288567631032,
+              "held_error_px": 14.518895875493795
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1318110,
+              "prediction_003_column_line": [
+                1002.4724290007101,
+                1658.2027781422973
+              ],
+              "change_from_baseline_px": 0.06710444707652666,
+              "held_error_px": 14.412763868055627
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1639585,
+              "prediction_003_column_line": [
+                1002.5642430508697,
+                1658.221184611048
+              ],
+              "change_from_baseline_px": 0.07610227974480581,
+              "held_error_px": 14.46582478860714
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "top",
+              "prediction_003_column_line": [
+                1002.4369208943567,
+                1658.1694320650822
+              ],
+              "change_from_baseline_px": 0.08606417240820699,
+              "held_error_px": 14.410723117351063
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "middle_rotated",
+              "prediction_003_column_line": [
+                1002.564751499953,
+                1658.1510615770749
+              ],
+              "change_from_baseline_px": 0.043085413382597915,
+              "held_error_px": 14.51498372146014
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "bottom",
+              "prediction_003_column_line": [
+                1002.7445977932856,
+                1658.154852671678
+              ],
+              "change_from_baseline_px": 0.22242725286026982,
+              "held_error_px": 14.641852002811316
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                1002.4559248489726,
+                1658.7334073763805
+              ],
+              "change_from_baseline_px": 0.5794517308099195,
+              "held_error_px": 14.035179624404295
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                1002.588468632196,
+                1657.5821063262904
+              ],
+              "change_from_baseline_px": 0.579453771211355,
+              "held_error_px": 14.933719815815506
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                999.8040730020953,
+                1658.1474767174357
+              ],
+              "change_from_baseline_px": 2.71813594206664,
+              "held_error_px": 12.685272693347457
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                1005.2656866497867,
+                1658.1680373176125
+              ],
+              "change_from_baseline_px": 2.7435164071834754,
+              "held_error_px": 16.54858142458071
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                1001.806972980863,
+                1658.162273044849
+              ],
+              "change_from_baseline_px": 0.7152307797479,
+              "held_error_px": 13.973523204728824
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                1003.2432576172594,
+                1658.1532350834314
+              ],
+              "change_from_baseline_px": 0.7210822928262008,
+              "held_error_px": 15.007464840251863
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                1002.5842070314776,
+                1656.8619455470655
+              ],
+              "change_from_baseline_px": 1.2972947283479095,
+              "held_error_px": 15.454393649043954
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                1002.4601719193704,
+                1659.4535685431083
+              ],
+              "change_from_baseline_px": 1.2972947310181364,
+              "held_error_px": 13.5594276713399
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                1005.0786236427557,
+                1658.1809271850402
+              ],
+              "change_from_baseline_px": 2.5565391380695277,
+              "held_error_px": 16.392869424378326
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                999.9657929975747,
+                1658.1345869051333
+              ],
+              "change_from_baseline_px": 2.556501505993859,
+              "held_error_px": 12.793616386189353
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                1003.2559790423278,
+                1658.15107340125
+              ],
+              "change_from_baseline_px": 0.7338199769708806,
+              "held_error_px": 15.018320694005125
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                1001.7907684855121,
+                1658.1644406889234
+              ],
+              "change_from_baseline_px": 0.7314515544016403,
+              "held_error_px": 13.96076898699847
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                1002.5259502588347,
+                1658.8020488036436
+              ],
+              "change_from_baseline_px": 0.6443027342994614,
+              "held_error_px": 14.040267874925256
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                1002.5184295250343,
+                1657.5134656740333
+              ],
+              "change_from_baseline_px": 0.6443023422673431,
+              "held_error_px": 14.93424097691092
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                1002.6769053225717,
+                1658.1462252005854
+              ],
+              "change_from_baseline_px": 0.15514499074619775,
+              "held_error_px": 14.59896103258485
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                1002.3687381573227,
+                1658.1692889447145
+              ],
+              "change_from_baseline_px": 0.1538840482571157,
+              "held_error_px": 14.362267007401927
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                1002.5088160543602,
+                1658.1596984492523
+              ],
+              "change_from_baseline_px": 0.013513629717344407,
+              "held_error_px": 14.468894411008916
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                1002.5356410872299,
+                1658.1558216029478
+              ],
+              "change_from_baseline_px": 0.013590108352444164,
+              "held_error_px": 14.490803177315827
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_2",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                1001.4535827207033,
+                1658.157757045087
+              ],
+              "change_from_baseline_px": 1.0686067826512726,
+              "held_error_px": 13.73518962874218
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_2",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                1003.5908002107603,
+                1658.157757045087
+              ],
+              "change_from_baseline_px": 1.06861070740581,
+              "held_error_px": 15.262991590156517
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_2",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                1002.5221895033545,
+                1657.713516387473
+              ],
+              "change_from_baseline_px": 0.44424065761404563,
+              "held_error_px": 14.79345128230077
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_2",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                1002.5221895033545,
+                1658.6019977027008
+              ],
+              "change_from_baseline_px": 0.44424065761381826,
+              "held_error_px": 14.173175877075042
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "green_lower_0",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                1002.5784300323892,
+                1658.157757045087
+              ],
+              "change_from_baseline_px": 0.056240529034653264,
+              "held_error_px": 14.520131178640211
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "green_lower_0",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                1002.4659150423945,
+                1658.157757045087
+              ],
+              "change_from_baseline_px": 0.05627446096002586,
+              "held_error_px": 14.43959254049541
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "green_lower_0",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                1002.5221895033545,
+                1657.6605472949495
+              ],
+              "change_from_baseline_px": 0.49720975013747193,
+              "held_error_px": 14.831292407594397
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "green_lower_0",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                1002.5221895033545,
+                1658.6549667952243
+              ],
+              "change_from_baseline_px": 0.49720975013724455,
+              "held_error_px": 14.137100705316131
+            }
+          ],
+          "max_prediction_shift_by_scenario": {
+            "RGB_bridge_leave_frame_out": 0.38246247407471473,
+            "calibration_plane_leave_sheet_out": 0.22242725286026982,
+            "single_coordinate_1mm_stress": 2.7435164071834754,
+            "training_correspondence_1px_stress": 1.06861070740581
+          }
+        },
+        {
+          "held_out_id": "green_lower_0",
+          "training_ids": [
+            "red_upper_2",
+            "red_upper_6"
+          ],
+          "observed_003_column_line": [
+            411.8931819370814,
+            1826.8903121948242
+          ],
+          "predicted_003_column_line": [
+            586.4331869662975,
+            1834.3218561750277
+          ],
+          "held_out_residual_column_line": [
+            174.54000502921605,
+            7.431543980203514
+          ],
+          "held_out_vector_error_px": 174.6981430969673,
+          "training_residuals_column_line": [
+            [
+              -1.1368683772161603e-13,
+              4.444871744609372
+            ],
+            [
+              0.0,
+              -4.441605934352765
+            ]
+          ],
+          "fit": {
+            "line_height_coefficient_px_per_m": -11.062300515730113,
+            "column_numerator_height_coefficient_px_per_m": -122.45227046723637,
+            "column_denominator_height_coefficient_per_m": 0.3323387624041328,
+            "column_height_fit_normalized_singular_values": [
+              1.4141799455566861,
+              0.009750978683616844
+            ],
+            "column_height_fit_normalized_condition_number": 145.02953923309542,
+            "rank": 2,
+            "denominator_at_three_points": [
+              0.8848020767490834,
+              0.8848030846257022,
+              0.8702696590414775
+            ],
+            "input_height_m": [
+              -0.34985313529956863,
+              -0.35011037422947194,
+              -0.39156791933761886
+            ],
+            "input_cross_plane_xy_m": [
+              [
+                0.3804974846455239,
+                -0.1918145615507171
+              ],
+              [
+                0.4150754242544449,
+                -0.20639163748576672
+              ],
+              [
+                0.5447767881678299,
+                0.021574925480120365
+              ]
+            ]
+          },
+          "sensitivity_scenarios": [
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 0,
+              "prediction_003_column_line": [
+                588.6466509186287,
+                1834.7161924110137
+              ],
+              "change_from_baseline_px": 2.248315755244587,
+              "held_error_px": 176.92663224672796
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 328592,
+              "prediction_003_column_line": [
+                586.1529056063924,
+                1834.3536982546168
+              ],
+              "change_from_baseline_px": 0.28208431140847734,
+              "held_error_px": 174.4194754744496
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 670589,
+              "prediction_003_column_line": [
+                590.493699511002,
+                1835.0405345995666
+              ],
+              "change_from_baseline_px": 4.123622291578126,
+              "held_error_px": 178.78638371788568
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1003470,
+              "prediction_003_column_line": [
+                586.1521956535042,
+                1834.252432047566
+              ],
+              "change_from_baseline_px": 0.28944054197559627,
+              "held_error_px": 174.4144623308129
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1318110,
+              "prediction_003_column_line": [
+                586.2651841759039,
+                1834.2435662207397
+              ],
+              "change_from_baseline_px": 0.18534900734148446,
+              "held_error_px": 174.52697645219644
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1639585,
+              "prediction_003_column_line": [
+                585.8470908340087,
+                1834.1681024016214
+              ],
+              "change_from_baseline_px": 0.6059281303262315,
+              "held_error_px": 174.10608447384772
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "top",
+              "prediction_003_column_line": [
+                585.0158448449405,
+                1834.3059465716105
+              ],
+              "change_from_baseline_px": 1.4174314108462958,
+              "held_error_px": 173.28141286796563
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "middle_rotated",
+              "prediction_003_column_line": [
+                586.7919266750033,
+                1834.3345863996274
+              ],
+              "change_from_baseline_px": 0.3589655097926233,
+              "held_error_px": 175.05709962562798
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "bottom",
+              "prediction_003_column_line": [
+                588.9546335542565,
+                1834.3228265736536
+              ],
+              "change_from_baseline_px": 2.5214467746917415,
+              "held_error_px": 177.21738040827913
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                585.6651109575512,
+                1835.0464990161456
+              ],
+              "change_from_baseline_px": 1.0559583336453657,
+              "held_error_px": 173.96323375632986
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                587.1983612737052,
+                1833.5972133307582
+              ],
+              "change_from_baseline_px": 1.053849596701498,
+              "held_error_px": 175.43343018106046
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                552.1781235438009,
+                1834.3087656379882
+              ],
+              "change_from_baseline_px": 34.25506592376412,
+              "held_error_px": 140.48095348868142
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                615.7408884286158,
+                1834.3349467143905
+              ],
+              "change_from_baseline_px": 29.307704385819672,
+              "held_error_px": 203.98360234339583
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                577.9770009664969,
+                1834.3094541568357
+              ],
+              "change_from_baseline_px": 8.456195094324565,
+              "held_error_px": 166.2494469489992
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_2",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                594.5965892571065,
+                1834.3342987533813
+              ],
+              "change_from_baseline_px": 8.16341177323195,
+              "held_error_px": 182.85499167983073
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                587.1471491725383,
+                1835.0470169163814
+              ],
+              "change_from_baseline_px": 1.0176444038763315,
+              "held_error_px": 175.44368003345477
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                585.7165270285245,
+                1833.5966954368255
+              ],
+              "change_from_baseline_px": 1.0195388970700496,
+              "held_error_px": 173.95266849050492
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                613.7706338579741,
+                1834.308873526498
+              ],
+              "change_from_baseline_px": 27.337449974428843,
+              "held_error_px": 202.01371400552023
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                554.4817016128233,
+                1834.3348388212346
+              ],
+              "change_from_baseline_px": 31.95148799105266,
+              "held_error_px": 142.78272626620748
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                594.1602943650456,
+                1834.32361342188
+              ],
+              "change_from_baseline_px": 7.727107598558737,
+              "held_error_px": 182.41862361053015
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "red_upper_6",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                578.3302221494414,
+                1834.320058367765
+              ],
+              "change_from_baseline_px": 8.102965016296135,
+              "held_error_px": 166.60278954100693
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                586.4785643484267,
+                1833.026027677817
+              ],
+              "change_from_baseline_px": 1.2966227674202102,
+              "held_error_px": 174.69316745712726
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                586.3878096308957,
+                1835.6176846722385
+              ],
+              "change_from_baseline_px": 1.2966227657849094,
+              "held_error_px": 174.71274173443211
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                588.3114791733007,
+                1834.3451602428865
+              ],
+              "change_from_baseline_px": 1.8784367688233483,
+              "held_error_px": 176.57573547672592
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                584.5548900421546,
+                1834.2985521071687
+              ],
+              "change_from_baseline_px": 1.8784414856000733,
+              "held_error_px": 172.82056435609837
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                586.7825094317313,
+                1834.331365801277
+              ],
+              "change_from_baseline_px": 0.34945188202121247,
+              "held_error_px": 175.0475539683574
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "green_lower_0",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                586.0841312145844,
+                1834.3123465487788
+              ],
+              "change_from_baseline_px": 0.3491852671510904,
+              "held_error_px": 174.34899886190598
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_2",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                569.242351277592,
+                1834.3218561750277
+              ],
+              "change_from_baseline_px": 17.190835688705533,
+              "held_error_px": 157.52456614153346
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_2",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                603.4492456711075,
+                1834.3218561750277
+              ],
+              "change_from_baseline_px": 17.016058704810007,
+              "held_error_px": 191.70016536039805
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_2",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                586.4331869662975,
+                1833.7626499326675
+              ],
+              "change_from_baseline_px": 0.5592062423602329,
+              "held_error_px": 174.67524833696888
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_2",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                586.4331869662975,
+                1834.8810624173877
+              ],
+              "change_from_baseline_px": 0.5592062423600055,
+              "held_error_px": 174.72282462436945
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_6",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                602.3059412192591,
+                1834.3218561750277
+              ],
+              "change_from_baseline_px": 15.872754252961613,
+              "held_error_px": 190.55772548858323
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_6",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                570.3983907341966,
+                1834.3218561750277
+              ],
+              "change_from_baseline_px": 16.034796232100916,
+              "held_error_px": 158.67932777065437
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_6",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                586.4331869662975,
+                1833.7622387612334
+              ],
+              "change_from_baseline_px": 0.5596174137942853,
+              "held_error_px": 174.6752321605238
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "red_upper_6",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                586.4331869662975,
+                1834.881473588822
+              ],
+              "change_from_baseline_px": 0.5596174137942853,
+              "held_error_px": 174.72284342931147
+            }
+          ],
+          "max_prediction_shift_by_scenario": {
+            "RGB_bridge_leave_frame_out": 4.123622291578126,
+            "calibration_plane_leave_sheet_out": 2.5214467746917415,
+            "single_coordinate_1mm_stress": 34.25506592376412,
+            "training_correspondence_1px_stress": 17.190835688705533
+          }
+        }
+      ],
+      "all_three_fit_for_diagnostics_only": {
+        "fit": {
+          "line_height_coefficient_px_per_m": -3.756363394624406,
+          "column_numerator_height_coefficient_px_per_m": 546.6319064031619,
+          "column_denominator_height_coefficient_per_m": 1.0157626726000948,
+          "column_height_fit_normalized_singular_values": [
+            1.392844944763116,
+            0.24491418874338844
+          ],
+          "column_height_fit_normalized_condition_number": 5.68707330477486,
+          "rank": 2,
+          "denominator_at_three_points": [
+            0.6457040790283353,
+            0.6455292836696249,
+            0.602662780500465
+          ],
+          "input_height_m": [
+            -0.34985313529956863,
+            -0.35011037422947194,
+            -0.39156791933761886
+          ],
+          "input_cross_plane_xy_m": [
+            [
+              0.3804974846455239,
+              -0.1918145615507171
+            ],
+            [
+              0.4150754242544449,
+              -0.20639163748576672
+            ],
+            [
+              0.5447767881678299,
+              0.021574925480120365
+            ]
+          ]
+        },
+        "residual_column_line": [
+          [
+            -5.12055889431133,
+            1.8888667364890352
+          ],
+          [
+            4.880080614626877,
+            -6.999490313919978
+          ],
+          [
+            0.22803507304899995,
+            4.5707733828805885
+          ]
+        ]
+      },
+      "worst_held_out_error_px": 174.6981430969673
+    },
+    "fx17": {
+      "controls": [
+        {
+          "id": "fx17_track_red_upper_2",
+          "original_D405_localization": [
+            1.2097780789508619,
+            -0.10838186816932295,
+            0.539720768400543
+          ],
+          "metric_plant_xyz": [
+            1.244710018011557,
+            -0.11151135851143458,
+            0.5553050258107196
+          ],
+          "plane_XYh": [
+            0.3804974846455239,
+            -0.1918145615507171,
+            -0.34985313529956863
+          ],
+          "source_003_column_line": [
+            587.4865264892578,
+            1508.8011627197266
+          ]
+        },
+        {
+          "id": "fx17_track_red_upper_6",
+          "original_D405_localization": [
+            1.243028720791474,
+            -0.12337009599846702,
+            0.5396296069974759
+          ],
+          "metric_plant_xyz": [
+            1.2789207610597497,
+            -0.12693236642666642,
+            0.5552112321525042
+          ],
+          "plane_XYh": [
+            0.4150754242544449,
+            -0.20639163748576672,
+            -0.35011037422947194
+          ],
+          "source_003_column_line": [
+            604.085506439209,
+            1561.5630493164062
+          ]
+        },
+        {
+          "id": "fx17_track_green_lower_0",
+          "original_D405_localization": [
+            1.3745219366547117,
+            0.09470475147007894,
+            0.4976685690886683
+          ],
+          "metric_plant_xyz": [
+            1.414210799731525,
+            0.09743931962325626,
+            0.5120385832510218
+          ],
+          "plane_XYh": [
+            0.5447767881678299,
+            0.021574925480120365,
+            -0.39156791933761886
+          ],
+          "source_003_column_line": [
+            234.6998748779297,
+            1718.3388214111328
+          ]
+        }
+      ],
+      "folds": [
+        {
+          "held_out_id": "fx17_track_red_upper_2",
+          "training_ids": [
+            "fx17_track_red_upper_6",
+            "fx17_track_green_lower_0"
+          ],
+          "observed_003_column_line": [
+            587.4865264892578,
+            1508.8011627197266
+          ],
+          "predicted_003_column_line": [
+            580.4800132264251,
+            1510.6168946729886
+          ],
+          "held_out_residual_column_line": [
+            -7.006513262832755,
+            1.8157319532620022
+          ],
+          "held_out_vector_error_px": 7.237963154669132,
+          "training_residuals_column_line": [
+            [
+              1.1368683772161603e-13,
+              -6.174064869636368
+            ],
+            [
+              1.4210854715202004e-13,
+              5.520381152986147
+            ]
+          ],
+          "fit": {
+            "line_height_coefficient_px_per_m": 3.122047020070329,
+            "column_numerator_height_coefficient_px_per_m": 314.98748727934554,
+            "column_denominator_height_coefficient_per_m": 0.9957233184349323,
+            "column_height_fit_normalized_singular_values": [
+              1.381446004308746,
+              0.30266637933440854
+            ],
+            "column_height_fit_normalized_condition_number": 4.564253245922702,
+            "rank": 2,
+            "denominator_at_three_points": [
+              0.6464916335433728,
+              0.645842556645273,
+              0.6105355485461947
+            ],
+            "input_height_m": [
+              -0.34985313529956863,
+              -0.35011037422947194,
+              -0.39156791933761886
+            ],
+            "input_cross_plane_xy_m": [
+              [
+                0.3804974846455239,
+                -0.1918145615507171
+              ],
+              [
+                0.4150754242544449,
+                -0.20639163748576672
+              ],
+              [
+                0.5447767881678299,
+                0.021574925480120365
+              ]
+            ]
+          },
+          "sensitivity_scenarios": [
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 0,
+              "prediction_003_column_line": [
+                580.3421200545256,
+                1510.4352029461127
+              ],
+              "change_from_baseline_px": 0.22809298645868223,
+              "held_error_px": 7.328890145587604
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 328592,
+              "prediction_003_column_line": [
+                580.5520242337726,
+                1510.5983866554402
+              ],
+              "change_from_baseline_px": 0.07435140814254916,
+              "held_error_px": 7.163611896692293
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 670589,
+              "prediction_003_column_line": [
+                580.3930076707302,
+                1510.2872615319966
+              ],
+              "change_from_baseline_px": 0.34092224093186935,
+              "held_error_px": 7.247516740831716
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1003470,
+              "prediction_003_column_line": [
+                580.4379666386966,
+                1510.6496553325305
+              ],
+              "change_from_baseline_px": 0.05330268617276148,
+              "held_error_px": 7.286914361136298
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1318110,
+              "prediction_003_column_line": [
+                580.5080378847487,
+                1510.6545388226293
+              ],
+              "change_from_baseline_px": 0.046930410996817475,
+              "held_error_px": 7.2204090037943915
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1639585,
+              "prediction_003_column_line": [
+                580.4563001404512,
+                1510.6927397319737
+              ],
+              "change_from_baseline_px": 0.0794656115490357,
+              "held_error_px": 7.280257283140276
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "top",
+              "prediction_003_column_line": [
+                580.4887378992476,
+                1510.65778102754
+              ],
+              "change_from_baseline_px": 0.04180686432119516,
+              "held_error_px": 7.239894798364549
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "middle_rotated",
+              "prediction_003_column_line": [
+                580.4657239292495,
+                1510.5756487699396
+              ],
+              "change_from_baseline_px": 0.04365098546537689,
+              "held_error_px": 7.2415792013220095
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "bottom",
+              "prediction_003_column_line": [
+                580.4248435575618,
+                1510.6186879529173
+              ],
+              "change_from_baseline_px": 0.05519880628590607,
+              "held_error_px": 7.291828563610943
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                580.51878678836,
+                1509.3214105494314
+              ],
+              "change_from_baseline_px": 1.2960642358670624,
+              "held_error_px": 6.987134916672235
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                580.4412395858011,
+                1511.9123787965457
+              ],
+              "change_from_baseline_px": 1.2960642382211565,
+              "held_error_px": 7.701670794618297
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                582.0929228965167,
+                1510.64627397728
+              ],
+              "change_from_baseline_px": 1.6131772213231317,
+              "held_error_px": 5.700473249510121
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                578.8672760942435,
+                1510.5875153686964
+              ],
+              "change_from_baseline_px": 1.6130047120321473,
+              "held_error_px": 8.802416324989174
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                580.8740866036821,
+                1510.6121695744912
+              ],
+              "change_from_baseline_px": 0.39410170415593987,
+              "held_error_px": 6.85595413260302
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                580.0871515758806,
+                1510.621619771486
+              ],
+              "change_from_baseline_px": 0.3928900648073271,
+              "held_error_px": 7.620027098771768
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                580.443770206379,
+                1511.1920173979902
+              ],
+              "change_from_baseline_px": 0.5762635727818903,
+              "held_error_px": 7.4375131699113135
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                580.5162636283019,
+                1510.0417715635872
+              ],
+              "change_from_baseline_px": 0.5762644207338651,
+              "held_error_px": 7.079807529466229
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                578.9767843464148,
+                1510.603916420825
+              ],
+              "change_from_baseline_px": 1.5032849033786613,
+              "held_error_px": 8.698599441548225
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                581.9964988395499,
+                1510.6298728537608
+              ],
+              "change_from_baseline_px": 1.5165411461581588,
+              "held_error_px": 5.786586588730645
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                580.0795709123166,
+                1510.6268018290577
+              ],
+              "change_from_baseline_px": 0.4005648495186452,
+              "held_error_px": 7.628626945676376
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                580.8836871879058,
+                1510.606949116813
+              ],
+              "change_from_baseline_px": 0.4037964601940118,
+              "held_error_px": 6.845316015450333
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                580.477779126912,
+                1511.260136229323
+              ],
+              "change_from_baseline_px": 0.6432454360477408,
+              "held_error_px": 7.427589804915663
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                580.4822468911584,
+                1509.9736535010536
+              ],
+              "change_from_baseline_px": 0.6432450501406148,
+              "held_error_px": 7.101736922799127
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                580.3886317451141,
+                1510.6022493988685
+              ],
+              "change_from_baseline_px": 0.09254760494270042,
+              "held_error_px": 7.322842550862666
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                580.5706964481464,
+                1510.6315400184997
+              ],
+              "change_from_baseline_px": 0.09185822144420452,
+              "held_error_px": 7.153948994325001
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                580.4879249617685,
+                1510.6122601721527
+              ],
+              "change_from_baseline_px": 0.009169195937623645,
+              "held_error_px": 7.2291422259324865
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                580.4720556306153,
+                1510.6215675740793
+              ],
+              "change_from_baseline_px": 0.009228181601812737,
+              "held_error_px": 7.24683898403273
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                579.5455405025018,
+                1510.6168946729886
+              ],
+              "change_from_baseline_px": 0.9344727239232498,
+              "held_error_px": 8.145927876427086
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                581.4144771568064,
+                1510.6168946729886
+              ],
+              "change_from_baseline_px": 0.9344639303812983,
+              "held_error_px": 6.33771769817975
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                580.4800132264251,
+                1510.1729439328751
+              ],
+              "change_from_baseline_px": 0.4439507401134506,
+              "held_error_px": 7.139538626479908
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                580.4800132264251,
+                1511.0608454131018
+              ],
+              "change_from_baseline_px": 0.4439507401132232,
+              "held_error_px": 7.361887935644687
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                580.4261147912347,
+                1510.6168946729886
+              ],
+              "change_from_baseline_px": 0.053898435190376404,
+              "held_error_px": 7.290150606927028
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                580.5339572716158,
+                1510.6168946729886
+              ],
+              "change_from_baseline_px": 0.05394404519074669,
+              "held_error_px": 7.185756832248072
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                580.4800132264251,
+                1510.1203744885263
+              ],
+              "change_from_baseline_px": 0.49652018446226975,
+              "held_error_px": 7.129624660049855
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                580.4800132264251,
+                1511.1134148574508
+              ],
+              "change_from_baseline_px": 0.49652018446226975,
+              "held_error_px": 7.378193413747145
+            }
+          ],
+          "max_prediction_shift_by_scenario": {
+            "RGB_bridge_leave_frame_out": 0.34092224093186935,
+            "calibration_plane_leave_sheet_out": 0.05519880628590607,
+            "single_coordinate_1mm_stress": 1.6131772213231317,
+            "training_correspondence_1px_stress": 0.9344727239232498
+          }
+        },
+        {
+          "held_out_id": "fx17_track_red_upper_6",
+          "training_ids": [
+            "fx17_track_red_upper_2",
+            "fx17_track_green_lower_0"
+          ],
+          "observed_003_column_line": [
+            604.085506439209,
+            1561.5630493164062
+          ],
+          "predicted_003_column_line": [
+            611.583631571334,
+            1551.8375751560627
+          ],
+          "held_out_residual_column_line": [
+            7.498125132124983,
+            -9.725474160343538
+          ],
+          "held_out_vector_error_px": 12.280339088987493,
+          "training_residuals_column_line": [
+            [
+              -1.1368683772161603e-13,
+              -1.7330679868152856
+            ],
+            [
+              -2.842170943040401e-14,
+              1.5484395910173134
+            ]
+          ],
+          "fit": {
+            "line_height_coefficient_px_per_m": 13.265731846671832,
+            "column_numerator_height_coefficient_px_per_m": 323.5991824338197,
+            "column_denominator_height_coefficient_per_m": 1.032423392664962,
+            "column_height_fit_normalized_singular_values": [
+              1.382970057203121,
+              0.2956244592038974
+            ],
+            "column_height_fit_normalized_condition_number": 4.678131372916143,
+            "rank": 2,
+            "denominator_at_three_points": [
+              0.6336519975082701,
+              0.6329934799223479,
+              0.5961649768404059
+            ],
+            "input_height_m": [
+              -0.34985313529956863,
+              -0.35011037422947194,
+              -0.39156791933761886
+            ],
+            "input_cross_plane_xy_m": [
+              [
+                0.3804974846455239,
+                -0.1918145615507171
+              ],
+              [
+                0.4150754242544449,
+                -0.20639163748576672
+              ],
+              [
+                0.5447767881678299,
+                0.021574925480120365
+              ]
+            ]
+          },
+          "sensitivity_scenarios": [
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 0,
+              "prediction_003_column_line": [
+                611.7396218162679,
+                1551.6164402725108
+              ],
+              "change_from_baseline_px": 0.27061706013864434,
+              "held_error_px": 12.550717655872642
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 328592,
+              "prediction_003_column_line": [
+                611.5013261476332,
+                1551.8482323604069
+              ],
+              "change_from_baseline_px": 0.08299252240408549,
+              "held_error_px": 12.22178589390381
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 670589,
+              "prediction_003_column_line": [
+                611.6792299207906,
+                1551.500993801239
+              ],
+              "change_from_baseline_px": 0.34989434524407964,
+              "held_error_px": 12.605935011137854
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1003470,
+              "prediction_003_column_line": [
+                611.6328198590996,
+                1551.8517204234809
+              ],
+              "change_from_baseline_px": 0.05118179601820852,
+              "held_error_px": 12.299262121144876
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1318110,
+              "prediction_003_column_line": [
+                611.5515199262157,
+                1551.8855727656737
+              ],
+              "change_from_baseline_px": 0.05774883791530971,
+              "held_error_px": 12.22272104640145
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1639585,
+              "prediction_003_column_line": [
+                611.6107945927237,
+                1551.8935284487122
+              ],
+              "change_from_baseline_px": 0.062198076251118076,
+              "held_error_px": 12.252738290039433
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "top",
+              "prediction_003_column_line": [
+                611.5743917751388,
+                1551.8565878805096
+              ],
+              "change_from_baseline_px": 0.021139004816210637,
+              "held_error_px": 12.259640989085051
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "middle_rotated",
+              "prediction_003_column_line": [
+                611.5995432632975,
+                1551.7896342479662
+              ],
+              "change_from_baseline_px": 0.0505124995447686,
+              "held_error_px": 12.328032750352719
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "bottom",
+              "prediction_003_column_line": [
+                611.6447739137828,
+                1551.8646184275337
+              ],
+              "change_from_baseline_px": 0.06685599877341812,
+              "held_error_px": 12.296425759479321
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                611.5413304742808,
+                1552.4130746409135
+              ],
+              "change_from_baseline_px": 0.5770520252762151,
+              "held_error_px": 11.803022858747418
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                611.625941912261,
+                1551.262075283806
+              ],
+              "change_from_baseline_px": 0.5770530893399201,
+              "held_error_px": 12.765901188069906
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                609.8302557349472,
+                1551.8245791075874
+              ],
+              "change_from_baseline_px": 1.7534239991801936,
+              "held_error_px": 11.306632853282922
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                613.3535591602246,
+                1551.8505711347555
+              ],
+              "change_from_baseline_px": 1.7699753007819798,
+              "held_error_px": 13.42494073240426
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                611.1222494304092,
+                1551.846377387103
+              ],
+              "change_from_baseline_px": 0.4614660976015873,
+              "held_error_px": 11.997060694433166
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                612.048800944848,
+                1551.8287659921627
+              ],
+              "change_from_baseline_px": 0.46525277798643094,
+              "held_error_px": 12.576578677056267
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                611.6231767772399,
+                1550.542101680659
+              ],
+              "change_from_baseline_px": 1.2960769069714475,
+              "held_error_px": 13.352069536768962
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                611.5440862786485,
+                1553.1330486314657
+              ],
+              "change_from_baseline_px": 1.2960769096185398,
+              "held_error_px": 11.255901775041881
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                613.2328181185067,
+                1551.8668705690068
+              ],
+              "change_from_baseline_px": 1.649446721963138,
+              "held_error_px": 13.33001099998559
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                609.9346267859188,
+                1551.8082797431184
+              ],
+              "change_from_baseline_px": 1.6492649888788993,
+              "held_error_px": 11.37399394488307
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                612.0570257277063,
+                1551.822706725237
+              ],
+              "change_from_baseline_px": 0.4736275937091551,
+              "held_error_px": 12.586476614217048
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                611.1117787509035,
+                1551.8524435868878
+              ],
+              "change_from_baseline_px": 0.47208701992686825,
+              "held_error_px": 11.986007101292753
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                611.5860722349436,
+                1552.4816994567577
+              ],
+              "change_from_baseline_px": 0.6441289246608113,
+              "held_error_px": 11.778344643008284
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                611.5811914151092,
+                1551.1934512427729
+              ],
+              "change_from_baseline_px": 0.6441285353360835,
+              "held_error_px": 12.795071608499763
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                611.6834886144233,
+                1551.8229929649701
+              ],
+              "change_from_baseline_px": 0.10091615010292652,
+              "held_error_px": 12.35305755123099
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                611.4845911630548,
+                1551.8521574169379
+              ],
+              "change_from_baseline_px": 0.1001081655227734,
+              "held_error_px": 12.208516545174893
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                611.57498858023,
+                1551.8430051942482
+              ],
+              "change_from_baseline_px": 0.010207184230739389,
+              "held_error_px": 12.270762016980472
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                611.5923250716999,
+                1551.8321520510212
+              ],
+              "change_from_baseline_px": 0.010246317236092251,
+              "held_error_px": 12.289942537318458
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                610.5134342242849,
+                1551.8375751560627
+              ],
+              "change_from_baseline_px": 1.0701973470490884,
+              "held_error_px": 11.657748635721244
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                612.6538396958341,
+                1551.8375751560627
+              ],
+              "change_from_baseline_px": 1.070208124500141,
+              "held_error_px": 12.96152701035252
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                611.583631571334,
+                1551.3933344984487
+              ],
+              "change_from_baseline_px": 0.44424065761404563,
+              "held_error_px": 12.635069448783822
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                611.583631571334,
+                1552.2818158136765
+              ],
+              "change_from_baseline_px": 0.44424065761381826,
+              "held_error_px": 11.931604076116374
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                611.6411256992969,
+                1551.8375751560627
+              ],
+              "change_from_baseline_px": 0.05749412796296838,
+              "held_error_px": 12.315528005202287
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                611.5260859548687,
+                1551.8375751560627
+              ],
+              "change_from_baseline_px": 0.05754561646529055,
+              "held_error_px": 12.245287712927144
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                611.583631571334,
+                1551.3403654059252
+              ],
+              "change_from_baseline_px": 0.49720975013747193,
+              "held_error_px": 12.677742181895466
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                611.583631571334,
+                1552.3347849062
+              ],
+              "change_from_baseline_px": 0.49720975013724455,
+              "held_error_px": 11.890447616540111
+            }
+          ],
+          "max_prediction_shift_by_scenario": {
+            "RGB_bridge_leave_frame_out": 0.34989434524407964,
+            "calibration_plane_leave_sheet_out": 0.06685599877341812,
+            "single_coordinate_1mm_stress": 1.7699753007819798,
+            "training_correspondence_1px_stress": 1.070208124500141
+          }
+        },
+        {
+          "held_out_id": "fx17_track_green_lower_0",
+          "training_ids": [
+            "fx17_track_red_upper_2",
+            "fx17_track_red_upper_6"
+          ],
+          "observed_003_column_line": [
+            234.6998748779297,
+            1718.3388214111328
+          ],
+          "predicted_003_column_line": [
+            357.8707282881347,
+            1726.298948136346
+          ],
+          "held_out_residual_column_line": [
+            123.17085341020507,
+            7.960126725213286
+          ],
+          "held_out_vector_error_px": 123.42780378536953,
+          "training_residuals_column_line": [
+            [
+              0.0,
+              3.9955648650611693
+            ],
+            [
+              0.0,
+              -3.9926291770441367
+            ]
+          ],
+          "fit": {
+            "line_height_coefficient_px_per_m": -3.1086615026151287,
+            "column_numerator_height_coefficient_px_per_m": -156.16413427603723,
+            "column_denominator_height_coefficient_per_m": 0.21571777950797466,
+            "column_height_fit_normalized_singular_values": [
+              1.414179257805602,
+              0.009850217885714501
+            ],
+            "column_height_fit_normalized_condition_number": 143.56832246894226,
+            "rank": 2,
+            "denominator_at_three_points": [
+              0.9193790168879987,
+              0.9189305877800511,
+              0.9159606944956417
+            ],
+            "input_height_m": [
+              -0.34985313529956863,
+              -0.35011037422947194,
+              -0.39156791933761886
+            ],
+            "input_cross_plane_xy_m": [
+              [
+                0.3804974846455239,
+                -0.1918145615507171
+              ],
+              [
+                0.4150754242544449,
+                -0.20639163748576672
+              ],
+              [
+                0.5447767881678299,
+                0.021574925480120365
+              ]
+            ]
+          },
+          "sensitivity_scenarios": [
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 0,
+              "prediction_003_column_line": [
+                359.15564178105257,
+                1726.7021363750794
+              ],
+              "change_from_baseline_px": 1.3466860956195952,
+              "held_error_px": 124.73645398451343
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 328592,
+              "prediction_003_column_line": [
+                357.7905687380506,
+                1726.3120894435876
+              ],
+              "change_from_baseline_px": 0.08122959698108476,
+              "held_error_px": 123.34865997684521
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 670589,
+              "prediction_003_column_line": [
+                360.4676130976125,
+                1726.9813808611711
+              ],
+              "change_from_baseline_px": 2.685055890965515,
+              "held_error_px": 126.06433996472643
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1003470,
+              "prediction_003_column_line": [
+                357.6189843798352,
+                1726.2469651799058
+              ],
+              "change_from_baseline_px": 0.2570549029413771,
+              "held_error_px": 123.17323661660038
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1318110,
+              "prediction_003_column_line": [
+                357.7998345814899,
+                1726.2144672472095
+              ],
+              "change_from_baseline_px": 0.11028571199908764,
+              "held_error_px": 123.35163507774621
+            },
+            {
+              "kind": "RGB_bridge_leave_frame_out",
+              "held_RGB_frame": 1639585,
+              "prediction_003_column_line": [
+                357.442536420409,
+                1726.1617768024846
+              ],
+              "change_from_baseline_px": 0.4496267901491063,
+              "held_error_px": 122.99170538530929
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "top",
+              "prediction_003_column_line": [
+                357.4884170015091,
+                1726.2386720226689
+              ],
+              "change_from_baseline_px": 0.3870337579092653,
+              "held_error_px": 123.04240617168794
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "middle_rotated",
+              "prediction_003_column_line": [
+                357.99025225532876,
+                1726.3886979572935
+              ],
+              "change_from_baseline_px": 0.14946909076425283,
+              "held_error_px": 123.55289420434437
+            },
+            {
+              "kind": "calibration_plane_leave_sheet_out",
+              "held_sheet": "bottom",
+              "prediction_003_column_line": [
+                358.62873721889713,
+                1726.269928593816
+              ],
+              "change_from_baseline_px": 0.7585642180884951,
+              "held_error_px": 124.18238756872762
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                357.4158827949268,
+                1727.0234013052063
+              ],
+              "change_from_baseline_px": 0.855404475416864,
+              "held_error_px": 123.02292683488331
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                358.323896733105,
+                1725.5744949643306
+              ],
+              "change_from_baseline_px": 0.8545139191143173,
+              "held_error_px": 123.83559161815039
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                337.3941704293921,
+                1726.2824374126697
+              ],
+              "change_from_baseline_px": 20.47656451523134,
+              "held_error_px": 103.00106491678127
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                375.4278878036203,
+                1726.3154588619464
+              ],
+              "change_from_baseline_px": 17.557167278814248,
+              "held_error_px": 140.95389447274977
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                352.81145358087866,
+                1726.2917382264538
+              ],
+              "change_from_baseline_px": 5.059279844630222,
+              "held_error_px": 118.37902647671307
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                362.7575985519614,
+                1726.3061945230436
+              ],
+              "change_from_baseline_px": 4.886875636395249,
+              "held_error_px": 128.30533748398415
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                358.2930836860218,
+                1727.0239205737644
+              ],
+              "change_from_baseline_px": 0.8390286748023293,
+              "held_error_px": 123.8979911497576
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                357.4468159384916,
+                1725.5739757020833
+              ],
+              "change_from_baseline_px": 0.8398134975224201,
+              "held_error_px": 122.95998941663476
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                374.2391537992807,
+                1726.2825309077684
+              ],
+              "change_from_baseline_px": 16.368433744232476,
+              "held_error_px": 139.76520626557078
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                338.7795990695516,
+                1726.3153653630006
+              ],
+              "change_from_baseline_px": 19.091136277497217,
+              "held_error_px": 104.38493301822906
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                362.45729897289425,
+                1726.304469091037
+              ],
+              "change_from_baseline_px": 4.586574007604819,
+              "held_error_px": 128.0055114217392
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                353.0653585636759,
+                1726.2933907048107
+              ],
+              "change_from_baseline_px": 4.805372938054956,
+              "held_error_px": 118.6324698419812
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                357.8980343152169,
+                1725.003457472213
+              ],
+              "change_from_baseline_px": 1.2957784069704223,
+              "held_error_px": 123.37829575157006
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                357.84342227075825,
+                1727.5944388004793
+              ],
+              "change_from_baseline_px": 1.2957784067661213,
+              "held_error_px": 123.49088920947892
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                359.00243519036957,
+                1726.3283789704856
+              ],
+              "change_from_baseline_px": 1.1320895223276828,
+              "held_error_px": 124.55906040999977
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                356.7390908942263,
+                1726.2695173022062
+              ],
+              "change_from_baseline_px": 1.1320200374949256,
+              "held_error_px": 122.29663193722469
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 2,
+              "sign": -1,
+              "prediction_003_column_line": [
+                358.1162266320277,
+                1726.3004535298512
+              ],
+              "change_from_baseline_px": 0.24550295937888833,
+              "held_error_px": 123.67288897040072
+            },
+            {
+              "kind": "single_coordinate_1mm_stress",
+              "control": "fx17_track_green_lower_0",
+              "axis": 2,
+              "sign": 1,
+              "prediction_003_column_line": [
+                357.6253454310357,
+                1726.2974427428412
+              ],
+              "change_from_baseline_px": 0.24538747475711573,
+              "held_error_px": 123.1828355096767
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                341.0821930610133,
+                1726.298948136346
+              ],
+              "change_from_baseline_px": 16.78853522712143,
+              "held_error_px": 106.67971334554805
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                374.4114631090596,
+                1726.298948136346
+              ],
+              "change_from_baseline_px": 16.540734820924854,
+              "held_error_px": 139.93817028797488
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                357.8707282881347,
+                1725.739741893986
+              ],
+              "change_from_baseline_px": 0.5592062423600055,
+              "held_error_px": 123.39300123504471
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_2",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                357.8707282881347,
+                1726.8581543787063
+              ],
+              "change_from_baseline_px": 0.5592062423602329,
+              "held_error_px": 123.46512934432383
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 0,
+              "sign": -1,
+              "prediction_003_column_line": [
+                373.2787548121407,
+                1726.298948136346
+              ],
+              "change_from_baseline_px": 15.408026524005948,
+              "held_error_px": 138.80731097929217
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 0,
+              "sign": 1,
+              "prediction_003_column_line": [
+                342.2344577213226,
+                1726.298948136346
+              ],
+              "change_from_baseline_px": 15.63627056681213,
+              "held_error_px": 107.82880007114979
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 1,
+              "sign": -1,
+              "prediction_003_column_line": [
+                357.8707282881347,
+                1725.7393307225518
+              ],
+              "change_from_baseline_px": 0.5596174137942853,
+              "held_error_px": 123.39297657430356
+            },
+            {
+              "kind": "training_correspondence_1px_stress",
+              "control": "fx17_track_red_upper_6",
+              "axis": 1,
+              "sign": 1,
+              "prediction_003_column_line": [
+                357.8707282881347,
+                1726.8585655501404
+              ],
+              "change_from_baseline_px": 0.5596174137942853,
+              "held_error_px": 123.46515771663024
+            }
+          ],
+          "max_prediction_shift_by_scenario": {
+            "RGB_bridge_leave_frame_out": 2.685055890965515,
+            "calibration_plane_leave_sheet_out": 0.7585642180884951,
+            "single_coordinate_1mm_stress": 20.47656451523134,
+            "training_correspondence_1px_stress": 16.78853522712143
+          }
+        }
+      ],
+      "all_three_fit_for_diagnostics_only": {
+        "fit": {
+          "line_height_coefficient_px_per_m": 4.7169243359887085,
+          "column_numerator_height_coefficient_px_per_m": 318.69174845208124,
+          "column_denominator_height_coefficient_per_m": 1.0125445850132557,
+          "column_height_fit_normalized_singular_values": [
+            1.3904104081427093,
+            0.2583774311514538
+          ],
+          "column_height_fit_normalized_condition_number": 5.381315240833433,
+          "rank": 2,
+          "denominator_at_three_points": [
+            0.6406066606912365,
+            0.6399532567085224,
+            0.6039488801914973
+          ],
+          "input_height_m": [
+            -0.34985313529956863,
+            -0.35011037422947194,
+            -0.39156791933761886
+          ],
+          "input_cross_plane_xy_m": [
+            [
+              0.3804974846455239,
+              -0.1918145615507171
+            ],
+            [
+              0.4150754242544449,
+              -0.20639163748576672
+            ],
+            [
+              0.5447767881678299,
+              0.021574925480120365
+            ]
+          ]
+        },
+        "residual_column_line": [
+          [
+            -3.697350249981241,
+            1.2577591238696186
+          ],
+          [
+            3.532211714147479,
+            -6.732447963562663
+          ],
+          [
+            0.157456985225906,
+            4.895878360793404
+          ]
+        ]
+      },
+      "worst_held_out_error_px": 123.42780378536953
+    }
+  },
+  "source_hashes": {
+    "generated\\research_confirmed_board_20261007\\hsi_geometry\\shared_plane_calibration.json": "dd9295c1b514817d0e10c53aec0ff3474ee52ee9860c0a518408e22ef15a1c5f",
+    "generated\\research_confirmed_board_20261007\\hsi_geometry\\scan_transfer_v1\\scan_transfer.json": "1c7b87a41416fd51b5bd0184a7075bb74d6dcf4342e2bc06d737a296e3879991",
+    "generated\\research_confirmed_board_20261007\\hsi_geometry\\rgb_bridge_review\\independent_review.json": "a6037c49a855f25d21c29b42506ba69f07c0cb7355344bf2a38c33e14a78fb46",
+    "generated\\research_confirmed_board_20261007\\d405_metric_calibration.json": "4875f09593b49966f1f191296de8b055a68b61f8626f6cd1a3eda269b8d0c3cf",
+    "generated\\research_spectral_extension_20261007\\result\\associations.json": "df49717dc505a14eee41ac677e284cc9aaf51a5faa213a82c19850211d56e112",
+    "generated\\research_confirmed_board_20261007\\hsi_geometry\\height_model_diagnostic\\fit_height_terms.py": "4fefdfa90294aa1deb772b3a7c7471f6f9d732fc6284efc1cd1d6b0df0f653cc"
+  },
+  "limitations": [
+    "Three points on one plant do not establish a general 3D camera model.",
+    "Column terms are exactly solvable from two distinct columns and nonzero heights; exact training fit is algebraic, not validation.",
+    "The two red controls have very similar heights and nearby columns, making extrapolation to green potentially unstable.",
+    "The RGB frame bridge uses a narrow paper strip and has material fold variation; it is approximate.",
+    "Source correspondence centroids and D405 depth localization have no independent physical ground truth.",
+    "Perturbations are explicit sensitivity scenarios, not calibrated confidence intervals.",
+    "FX17 correspondences were composed through FX10 and are not independent validation of the FX10 material identities.",
+    "No dense surface propagation, occlusion interpretation, plant-health score or calibrated reflectance is produced."
+  ]
+}

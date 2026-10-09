@@ -1,0 +1,13 @@
+{
+  "app/analysis_dialog.py": "60af17d997e0786436a7b3890b4ea59a479f3e33adb432336e72997b6e9c6b2c",
+  "app/research_report.py": "2d87f85e61df9b12899afe7cb32f921b0b75c888adbdc2eebdc6b5498ed1e9c0",
+  "main.py": "9f3b051f5b784732c4124fb84db4aa62b5566677e816cc1cdc7f000d7a382afc",
+  "processing/research_workspace/__init__.py": "ad8b954b5ace4146e8946868ffa837d9267df5d6e56ec92a3fa84cb20e9de8f5",
+  "processing/research_workspace/__main__.py": "d3ff98427f1033f7e952014e0eba6122afe696844409caf95b5d6adf480d0198",
+  "processing/research_workspace/spectral_extract.py": "a01459dfab001296d69afa10d8ca44e78ba7ccf4b8754ca970d1e15fb4b77339",
+  "processing/research_workspace/spectral_mapping.py": "16ab2657a1600a1ef10654f0bc06639c4d517fa11f39143466f21612dd38c8e1",
+  "processing/research_workspace/viewer.py": "fe99bedeb54d8266d728bd0a287bde1aad5fd66d374f50281d164d39958c1415",
+  "processing/research_workspace/workflow.py": "b6062c4de7545211a94368eb056846f24d0490f727df6f6f2d7351c10c464493",
+  "processing/rgb_recovery/viewer.py": "b6893fdd69a6709e644ac375a19ca22d87f770c35a40c037bff3d2f9da7c1aee",
+  "pyproject.toml": "9a65d780b1c87749280fccbc07d1d767470d1bbe77ff1a0d3c9529af939056a6"
+}

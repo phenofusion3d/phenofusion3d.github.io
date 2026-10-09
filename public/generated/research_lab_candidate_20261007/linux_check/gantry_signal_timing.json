@@ -1,0 +1,244 @@
+{
+  "status": "pass_mocked_event_delivery_diagnostic",
+  "iterations": 20,
+  "immediate_assertion_would_fail": 10,
+  "eventual_delivery_all_pass": true,
+  "nonblocking_all_pass": true,
+  "retryable_all_pass": true,
+  "actual_ros_start_called": false,
+  "hardware_contacted": false,
+  "source_changed": false,
+  "interpretation": "Thread sentinel is updated before error emission; queued Qt delivery requires a separate bounded wait in the test.",
+  "observations": [
+    {
+      "iteration": 0,
+      "start_seconds": 0.0006403570005204529,
+      "error_delivered_at_thread_sentinel": false,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready."
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 1,
+      "start_seconds": 0.0006199809995450778,
+      "error_delivered_at_thread_sentinel": false,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready."
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 2,
+      "start_seconds": 0.0006606429997191299,
+      "error_delivered_at_thread_sentinel": true,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready.",
+        "No existing Python/ROS environment can import rospy"
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 3,
+      "start_seconds": 0.0006475449990830384,
+      "error_delivered_at_thread_sentinel": false,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready."
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 4,
+      "start_seconds": 0.0005124380004417617,
+      "error_delivered_at_thread_sentinel": false,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready."
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 5,
+      "start_seconds": 0.0007718659999227384,
+      "error_delivered_at_thread_sentinel": false,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready."
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 6,
+      "start_seconds": 0.00032932400063145906,
+      "error_delivered_at_thread_sentinel": true,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready.",
+        "No existing Python/ROS environment can import rospy"
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 7,
+      "start_seconds": 0.0004939699992974056,
+      "error_delivered_at_thread_sentinel": true,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready.",
+        "No existing Python/ROS environment can import rospy"
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 8,
+      "start_seconds": 0.0004556280000542756,
+      "error_delivered_at_thread_sentinel": false,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready."
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 9,
+      "start_seconds": 0.000533244001417188,
+      "error_delivered_at_thread_sentinel": true,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready.",
+        "No existing Python/ROS environment can import rospy"
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 10,
+      "start_seconds": 0.0007363620006799465,
+      "error_delivered_at_thread_sentinel": true,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready.",
+        "No existing Python/ROS environment can import rospy"
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 11,
+      "start_seconds": 0.0005772759996034438,
+      "error_delivered_at_thread_sentinel": false,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready."
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 12,
+      "start_seconds": 0.0005450449989439221,
+      "error_delivered_at_thread_sentinel": false,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready."
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 13,
+      "start_seconds": 0.000612382000326761,
+      "error_delivered_at_thread_sentinel": false,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready."
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 14,
+      "start_seconds": 0.0005755790007242467,
+      "error_delivered_at_thread_sentinel": true,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready.",
+        "No existing Python/ROS environment can import rospy"
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 15,
+      "start_seconds": 0.0009073979999811854,
+      "error_delivered_at_thread_sentinel": true,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready.",
+        "No existing Python/ROS environment can import rospy"
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 16,
+      "start_seconds": 0.0003324249992147088,
+      "error_delivered_at_thread_sentinel": true,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready.",
+        "No existing Python/ROS environment can import rospy"
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 17,
+      "start_seconds": 0.0004224679996696068,
+      "error_delivered_at_thread_sentinel": false,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready."
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 18,
+      "start_seconds": 0.00038983800004643854,
+      "error_delivered_at_thread_sentinel": true,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready.",
+        "No existing Python/ROS environment can import rospy"
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    },
+    {
+      "iteration": 19,
+      "start_seconds": 0.0006736750001437031,
+      "error_delivered_at_thread_sentinel": true,
+      "errors_at_thread_sentinel": [
+        "Connecting to the gantry; the command is queued until ROS is ready.",
+        "No existing Python/ROS environment can import rospy"
+      ],
+      "stored_start_error": "No existing Python/ROS environment can import rospy",
+      "error_delivered_after_bounded_event_wait": true,
+      "retryable": true
+    }
+  ]
+}

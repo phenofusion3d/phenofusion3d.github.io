@@ -1,0 +1,38 @@
+{
+  "measurements": [],
+  "error_summaries": {
+    "observed_chord": {
+      "n": 0,
+      "mean_signed_error": null,
+      "mae": null,
+      "rmse": null,
+      "status": "no_eligible_pairs",
+      "physical_accuracy_validated": false
+    },
+    "height": {
+      "n": 0,
+      "mean_signed_error": null,
+      "mae": null,
+      "rmse": null,
+      "status": "no_eligible_pairs",
+      "physical_accuracy_validated": false
+    },
+    "leaf_chord_length": {
+      "n": 0,
+      "mean_signed_error": null,
+      "mae": null,
+      "rmse": null,
+      "status": "no_eligible_pairs",
+      "physical_accuracy_validated": false
+    },
+    "leaf_section_width": {
+      "n": 0,
+      "mean_signed_error": null,
+      "mae": null,
+      "rmse": null,
+      "status": "no_eligible_pairs",
+      "physical_accuracy_validated": false
+    }
+  },
+  "physical_accuracy_validated": false
+}

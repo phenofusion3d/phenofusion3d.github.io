@@ -1,0 +1,127 @@
+{
+  "status": "rejected_dense_registration_diagnostic",
+  "accepted_for_measurement": false,
+  "registration_check_passed": false,
+  "reviewed_anchor_max_error_rgb_px": 8.245,
+  "title": "Exploratory local-warp overlay \u2014 failed registration gate",
+  "warning": "REJECTED FOR MEASUREMENT: this local image warp failed its registration check (maximum reviewed-point error about 8.25 RGB pixels). This is a diagnostic overlay of one visible green-leaf patch on Plant 5, provided to inspect the failure, not an accepted spectral fusion result. Colours use measured native spectral pixels; geometry uses unchanged existing source points. Local image registration is provisional; this is not complete five-plant spectral coverage, independently validated physical registration, calibrated reflectance or plant-health diagnosis.",
+  "coordinate_unit": "m",
+  "sensor_counts": {
+    "fx10": 1613,
+    "fx17": 643
+  },
+  "unique_geometry_points": 1613,
+  "context_points": 154648,
+  "mapping_input_rows": 1613,
+  "fx10_duplicate_rows_removed": 0,
+  "fx17_tracking_intersections_before_dedup": 690,
+  "fx17_duplicate_pixels_removed": 47,
+  "dedup_policy": "FX10: smallest supplied vertex distance then input order. FX17: smallest cross-band tracking radius then input order. One source pixel and one original P5 vertex per sensor. No averaging.",
+  "one_green_leaf_only": true,
+  "all_five_plants_spectral_mapping": false,
+  "full_leaf_coverage_claimed": false,
+  "physical_registration_validated": false,
+  "calibrated_reflectance": false,
+  "cross_sensor_spectrum_concatenation": false,
+  "spectral_interpolation": false,
+  "geometry_positions_modified": false,
+  "upright_R": [
+    [
+      0.9997320091584629,
+      -0.022989551247924105,
+      0.002718528536188047
+    ],
+    [
+      -0.023027275267776585,
+      -0.9996256969203645,
+      0.014771954854300693
+    ],
+    [
+      0.0023779103694299077,
+      -0.014830596410614249,
+      -0.9998871931134934
+    ]
+  ],
+  "sensor_products": {
+    "fx10": "assigned_spectra_fx10.npz",
+    "fx17": "assigned_spectra_fx17.npz"
+  },
+  "evidence": [
+    {
+      "id": "Supplied local mapping review",
+      "packaged_path": "evidence/mapping_review.json"
+    },
+    {
+      "id": "Supplied exact pixel-to-point mapping",
+      "packaged_path": "evidence/mapping_input.npz"
+    },
+    {
+      "id": "Local FX10-to-FX17 image registration",
+      "packaged_path": "evidence/fx10_fx17_green_registration.json"
+    }
+  ],
+  "input_sha256": {
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_sprint_review_20261008\\multiview_probe\\projection_demo\\projection_hypothesis.npz": "b696a57a6036df024284c526d31f60a8fd1d9f27ae5ac6f56b34d116017ff27d",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_sprint_review_20261008\\multiview_probe\\projection_demo\\evidence.json": "58d8f6d6cc0b3ac3e8dde47c37cb1027240caf6a24cd5ff4a9ba08bad23cc1fc",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_confirmed_board_20261007\\cleanup_v1\\result\\P5_reference.ply": "ebba027f13ed2d927f3d547e94ad5833925bd73b6e7774a8fa97548ce14a9b9f",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_confirmed_board_20261007\\cleanup_v1\\result\\P5_provenance.npz": "c6730bd9fdfd17634da0ac199c07345208c4a8a3be0329fe5ec2cc87299131d0",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_sprint_review_20261008\\fusion_candidates\\dense_fx10_fx17_green_tracks.npz": "acfdf7ed91ec02247f6e31ec55e895cd7b9295211ecd9db5a495dd78623ae645",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_sprint_review_20261008\\fusion_candidates\\fx10_fx17_green_registration.json": "77d4dbdf4d087c05a47ea978741911231434916913d47f65f981438b0624ebb9",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_sprint_review_20261008\\fusion_candidates\\dense_fx10_fx17_green_tracks_summary.json": "4e50ef00a5f5423a5402eace2d826ea804918596bb82e8532ed46f60ddb5be68",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_sprint_review_20261008\\fusion_candidates\\dense_tracking_array_validation.json": "f89b410a778936ef48b48fffea60d083ffa96d194f9e1b1f797ddb082a7c93db",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_spectral_extension_20261007\\full_spectral_review\\sensors\\fx10\\input_config.json": "2d3ecd286764928ce0c230dd5181595d09579923737eb38d59b1824dfe2c7665",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_spectral_extension_20261007\\full_spectral_review\\sensors\\fx17\\input_config.json": "8643be0183997c59b6219a61414547893e033e1a37faece5d13bfbcb5e1b024d"
+  },
+  "normalization": {
+    "fx10": {
+      "white_roi": [
+        20,
+        140,
+        180,
+        850
+      ],
+      "dark_roi": [
+        2080,
+        2127,
+        0,
+        1024
+      ],
+      "white_identity": "User-confirmed white board at scan start; spectral reflectance unknown",
+      "settings_assumption": "User confirmed fixed exposure; gain and source export packing not independently established",
+      "dark_status": "assumed_tail",
+      "dark_provenance": "Abrupt final low-signal tail; shutter closure unconfirmed. This is an explicit assumed offset, not certified dark calibration."
+    },
+    "fx17": {
+      "white_roi": [
+        8,
+        45,
+        90,
+        520
+      ],
+      "dark_roi": [
+        2080,
+        2127,
+        0,
+        640
+      ],
+      "white_identity": "User-confirmed white board at scan start; spectral reflectance unknown",
+      "settings_assumption": "User confirmed fixed exposure; gain and source export packing not independently established",
+      "dark_status": "assumed_tail",
+      "dark_provenance": "Abrupt final low-signal tail; shutter closure unconfirmed. This is an explicit assumed offset, not certified dark calibration."
+    }
+  },
+  "checks": {
+    "fx10": {
+      "samples": 1613,
+      "bands": 224,
+      "all_band_Q_valid": 1142,
+      "source_identity_check": "size, mtime_ns and inode before/after; weaker than full-content hashing"
+    },
+    "fx17": {
+      "samples": 643,
+      "bands": 224,
+      "all_band_Q_valid": 631,
+      "source_identity_check": "size, mtime_ns and inode before/after; weaker than full-content hashing"
+    }
+  }
+}

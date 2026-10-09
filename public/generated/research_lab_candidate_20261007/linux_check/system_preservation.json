@@ -1,0 +1,17 @@
+{
+  "system_python": "/usr/bin/python3",
+  "module_presence": {
+    "numpy": true,
+    "scipy": true,
+    "open3d": false,
+    "cv2": false,
+    "PyQt5": false,
+    "pytest": false,
+    "natsort": false
+  },
+  "system_numpy": "2.4.6",
+  "system_scipy": "1.17.1",
+  "libusb_policy": "libusb-1.0-0:\n  Installed: (none)\n  Candidate: 2:1.0.27-1\n  Version table:\n     2:1.0.27-1 500\n        500 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages\n",
+  "environment_was_modified": false,
+  "system_packages_installed": false
+}

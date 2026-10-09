@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "offline_source_index_point_review",
+  "review_status": "unreviewed_endpoint_candidates",
+  "measurements": [
+    {
+      "specimen_id": "P1",
+      "trait": "observed_chord",
+      "definition": "straight_distance_between_observed_points",
+      "points": [
+        {
+          "cloud_id": "P1",
+          "source_sha256": "83260a35fc2885ca60daf9e7d69d55c29b8131f263eb63d5f5a4c64ab2f45aae",
+          "point_index": 9535
+        },
+        {
+          "cloud_id": "P1",
+          "source_sha256": "83260a35fc2885ca60daf9e7d69d55c29b8131f263eb63d5f5a4c64ab2f45aae",
+          "point_index": 13373
+        }
+      ],
+      "landmarks_reviewed": false,
+      "organ_match_confirmed": false,
+      "reference_id": null
+    }
+  ]
+}

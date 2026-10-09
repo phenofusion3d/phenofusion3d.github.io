@@ -1,0 +1,8 @@
+{
+  "tests": 9,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "script_sha256": "19735a9fe78163730332d30eed9d49cd84258e0e409d5cdb0af160134bb766a0",
+  "scope": "Metadata preflight guards only; no physical hardware or laboratory acceptance."
+}

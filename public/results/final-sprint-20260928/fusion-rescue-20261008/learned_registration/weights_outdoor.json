@@ -1,0 +1,6 @@
+{
+  "url": "https://huggingface.co/kornia/loftr/resolve/0fb3b456cf176746709c38fa9cf80695a1c82dac/loftr_outdoor.ckpt",
+  "sha256": "21f5bec5968178e8bc8b7633441836fe5de4f47d861dd2cd7dc38e271b0479ec",
+  "bytes": 46341978,
+  "torch": "2.11.0+cpu"
+}

@@ -1,0 +1,7 @@
+candidate_id,source_rgb_frame,native_rgb_review_centre_xy,candidate_fx10_review_centre_column_line,measured_depth_at_review_pixel,pair_votes_at_review_pixel,supported_depth_pixels_in_7x7,cross_sensor_point_identity,accepted_for_fit
+P5_red_upper,1055904,"[860.0, 265.0]","[905, 1660]",0.543144941329956,6,49,"NOT_ESTABLISHED; approximate same-leaf review windows, not a physical-point correspondence",False
+P5_green_upper,1055904,"[1018.0, 272.0]","[873, 1807]",0.5197547674179077,3,49,"NOT_ESTABLISHED; approximate same-leaf review windows, not a physical-point correspondence",False
+P5_green_lower,1055904,"[1018.0, 501.0]","[430, 1816]",0.5045544505119324,3,49,"NOT_ESTABLISHED; approximate same-leaf review windows, not a physical-point correspondence",False
+P5_red_lower,1055904,"[897.0, 541.0]","[355, 1672]",0.5308235287666321,5,49,"NOT_ESTABLISHED; approximate same-leaf review windows, not a physical-point correspondence",False
+P5_variegated_right,1055904,"[1110.0, 410.0]","[622, 1935]",0.5857841372489929,1,0,"NOT_ESTABLISHED; approximate same-leaf review windows, not a physical-point correspondence",False
+P5_green_central,1055904,"[937.0, 396.0]","[696, 1720]",0.47602397203445435,5,49,"NOT_ESTABLISHED; approximate same-leaf review windows, not a physical-point correspondence",False

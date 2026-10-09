@@ -1,0 +1,239 @@
+OFFLINE RESEARCH WORKSPACE INTEGRATION AUDIT
+Date: 7 October 2026
+Repository HEAD inspected: 3b15fdf15c0b2668a1e5c890507c9b9362c2ca42
+Scope: read-only source/output audit. No application edits, hardware activity,
+tests or physical calibration were performed by this audit.
+
+Recommended implementation
+
+Add a new processing/research_workspace package and a sixth tab in
+app/analysis_dialog.py. Reuse its existing QProcess launcher, cancellation,
+log and result-opening lifecycle. This is the smallest useful complete extension
+that can expose new research outputs without touching acquisition, the controller,
+main.py, the legacy hyperspectral snapshot, or the existing reconstruction route.
+
+The new package should accept a user-selected JSON run configuration, resolve
+paths relative to that configuration, inspect/validate evidence, process supported
+offline products, and generate a self-contained HTML report plus JSON/CSV outputs.
+An example configuration may point at this reviewed dataset, but no fixed 2026
+paths, plant coordinates, frames or masks belong in the reusable algorithm.
+
+Minimum useful end-to-end feature set
+
+1. Inspect configuration and evidence, produce an explicit gap ledger, and open
+   the report even if scientific calibration requirements remain unmet.
+2. Read a configured list of specimen candidates with independent source IDs,
+   PLY/mask/provenance paths, hashes, review status and orientation. Load the five
+   current P1-P5 candidates as supplied reviewed research input; do not call this
+   automatic general plant segmentation. Preserve candidate and uncertainty
+   outputs and all supplied source masks.
+3. Compute candidate geometry descriptors and export units/definitions plus
+   assumptions. Physical height requires an explicit verified stem/base datum;
+   do not silently substitute the lowest remaining cleaned-cloud point.
+   Distinguish point-cloud vertical extent, canopy projection, convex-hull
+   envelope, mesh area and physical traits. Missing validation must be null or
+   blocked, never zero or silently omitted.
+4. Show matched physical measurements only through explicit one-to-one specimen
+   mapping and compatible quantity definitions. Report unverified identity,
+   undefined base and unverified scale as barriers to physical validation.
+5. Run or import configured spectral-only products with sensor/band/line/column
+   provenance, DN/radiometric status, clipping/invalid/reference masks and saved
+   band coordinates. Preserve each sensor's native data. Planar registration and
+   provisional normalization must remain labelled as such.
+6. Write calibrated_fusion readiness separately. Missing pushbroom geometry,
+   cross-sensor extrinsics, line timing/displacement/start correspondence,
+   traceable scale, radiometric reference or held-out elevated-target validation
+   must leave the calibrated-fusion action blocked. Boolean acknowledgements are
+   not substitutes for numeric configuration and supporting evidence. Merely
+   receiving a syntactically valid configuration is not physical validation.
+7. Preserve all raw data and previous output directories. Use an empty output
+   directory outside every input tree and record inputs, assumptions, stage
+   completion, software version and source hashes. A failed or cancelled run may
+   retain partial artifacts but cannot be reported as completed fusion.
+
+Recommended files
+
+- processing/research_workspace/__init__.py: lightweight metadata only.
+- processing/research_workspace/__main__.py: CLI with inspect/run mode, config
+  and output paths; emits RESULT: <report path> for the desktop log.
+- processing/research_workspace/workflow.py: config/path validation, conservative
+  status/evidence gates, orchestration and output-preservation checks.
+- processing/research_workspace/traits.py: explicit candidate geometry and
+  conditional trait adapter, distinct from current lab post-processing.
+- processing/research_workspace/spectral.py: new configured products, independent
+  of the 28-Aug historical recipe and its immutable legacy source.
+- processing/research_workspace/report.py: escaped portable HTML with gap ledger,
+  links, specimen candidates, conditional descriptors and spectral result status.
+- app/analysis_dialog.py: sixth Research workspace tab; configuration file,
+  output parent, Inspect / Run supported offline stages / Open saved report;
+  route through existing launch(); add research_report.html to finished() lookup.
+- tests/test_research_workspace.py and focused additions to test_analysis_ui.py.
+- RESEARCH_WORKFLOW.md / accompanying example JSON, explicitly separating this
+  dataset's assistant-reviewed inputs from reusable processing software.
+
+Current desktop architecture and integration points
+
+main.py:5 create_application() creates QApplication before importing MainWindow,
+protecting Qt initialization against OpenCV bundled-plugin conflicts. Keep intact.
+
+app/main_window.py:115-154 builds the Analysis menu, lazily imports the lightweight
+AnalysisDialog and connects capture_started to its cancel(). It also prefills the
+dataset, reference and leaf fields from the capture data panel. No modification
+here is needed for a new tab. MainWindow.closeEvent() stops capture and shutdown
+before closing the optional dialog; do not alter its shutdown sequence.
+
+app/analysis_dialog.py:14-39 owns QProcess for analysis and a separate report
+process, five tabs, log, cancel and result buttons. Methods page(), path(),
+number(), button() provide reusable widgets. launch() at 177 checks that capture,
+reconstruction, quality and postprocess workers are idle; starts sys.executable
+with module arguments in repository cwd; bounds BLAS/OpenMP threads; writes
+a sibling log; disables action buttons. cancel() at 260 kills both processes.
+finished() at 239 marks cancelled outputs, rejects failed jobs and searches known
+result files. A new report must be added to that result list. open_latest() at
+265 uses the historical HSI viewer only for 20260828_showcase; all other artifacts
+open with the system handler. show_hyperspectral_report() can display arbitrary
+existing HTML but uses a historically named viewer and caption.
+
+Do not reuse PostProcessWorker for the new research workflow. It calls legacy
+scripts from a QThread and subprocess.run() without the AnalysisDialog's direct
+child cancellation lifecycle. Existing controller API slots on_clean_ply_requested,
+on_segment_requested, on_traits_requested and on_pipeline_requested are acquisition
+window features and need not be changed.
+
+Current reusable processing APIs and limits
+
+processing/analysis_workflow.py:
+- mapping(text): explicit unique positive reference:model specimen IDs.
+- fresh_output(path): rejects nonempty directories, but does not reject output
+  ancestry overlap with inputs; use stronger checking in the new workspace.
+- measure_landmarks(dataset, config, output): marked leaf length/width using
+  aligned depth and calibrated rays; exports local-depth/search evidence. These
+  are image-derived projected dimensions/3D chords, not automatically segmented
+  reconstructed-leaf dimensions or full leaf area.
+- CLI: traits, references, compare, leaves. Its traits mode marks unvalidated
+  model descriptors and minimum-point height base. Preserve its existing behavior.
+
+processing/pointcloud_post.py:412 extract_traits(input_ply, output_dir,
+height_axis='z') writes TraitResult and hull/traits outputs. It uses min point as
+height base, top-percent means, 5-mm projected occupancy and convex hull envelope.
+That is inappropriate as an unqualified physical height for the new cleanup
+candidates, because basal tissue is intentionally absent or uncertain. Reusing
+the numeric calculation is possible only with accurate descriptor naming and
+separate base/scale/coverage status; do not certify whole-plant or leaf area.
+
+processing/reference_traits.py offers discover_frame_pairs, load_intrinsics,
+inspect_candidates, select_plant_candidates/select_candidates_by_frame,
+extract_candidate_traits and extract_dataset_reference_traits. Its foreground
+and visible-leaf segmentation is colour-based and diagnostic. It is not a
+replacement for the current reviewed source masks.
+
+processing/trait_validation.py:
+- compare_manual_to_3d(manual_csv, traits_dir, output_dir, plant_mapping=...) reads
+  plant_N/traits.json and writes JSON/CSV physical/model comparison rows.
+- compare_reference_to_3d(...) compares image-derived references with model
+  descriptors. These functions must only be used with compatible definitions;
+  existing height pairing is physical_plant_height_m -> height_top_1_pct_m.
+- API mapping defaults to identity; the desktop CLI adds explicit-mapping checks.
+  The new workspace should retain explicit confirmation rather than relying on
+  the low-level default.
+
+processing/hyperspectral/workflow.py:
+- check_inputs(), verify_files(), spectral_inputs() enforce reviewed 28-Aug input
+  sizes and SHA-256 hashes, including the prior spectral integration manifest.
+- fresh_output(output, inputs) rejects equality and ancestry overlap, and rejects
+  nonempty prior runs; this is a useful preservation contract to mirror.
+- run(spectral|fusion|all, output, hsi, rgbd, spectral, inspect_only=False) stages
+  immutable legacy scripts and reports complete_experimental, never calibrated.
+- Manual workspace supports exploration but does not lift the automatic recipe
+  restriction. New 28-Sept spectral products must not be made to pass this hash
+  guard or be inserted into profile_20260828.json.
+
+Scientific evidence boundaries observed in the current dataset
+
+generated/research_plant_cleanup_20261007/v1/result/summary.json records 1,732,490
+input points partitioned into 435,917 retained candidates, 603,740 uncertain and
+692,833 scene context. P1/P2/P3/P4/P5 counts are 21,891 / 74,306 / 113,901 /
+69,634 / 156,185. Retained candidates use at least two visible source masks or
+one-view edges within 4 mm of a core. The summary explicitly says source polygons
+are approximate and dataset-specific, not accepted ground truth; metric scale
+is conditional; missing or previously cropped surfaces cannot be recovered.
+The upright view is a shared rigid frame and the subset operation did not create
+or move source vertices in the original reference frame.
+
+The basal exclusion uses approximate reviewed soil seeds plus 15 mm, except P1
+plus 25 mm. The summary says this is not measured stem-base height; source-positive
+points below the band remain uncertain. Do not let a convenience trait extraction
+erase that distinction.
+
+generated/research_20260928_readiness_20261007/calibration_readiness.md records:
+candidate depth unit 0.0001 m/count supported by a conditional motion check;
+unknown saved depth-unit setting and exact exporter/gantry provenance;
+unknown physical ChArUco square size and print scaling; same rig/settings
+reported by user; flat/low-diversity calibration geometry; factory intrinsics
+retained. It expressly rejects treating nominal 25 mm or recalled 127/76 mm as
+measured target dimensions. The board is unavailable, so the gap is unavailable
+evidence rather than an invitation to infer a convenient size.
+
+generated/research_20260928_processing_20261007/spectral_geometry/
+pushbroom_feasibility_and_holdout.md separates held-out planar FX10/FX17 mapping
+from missing leaf-height geometry. Flat-table controls leave height-dependent
+pushbroom coefficients unobserved. D405-to-HSI optical centres, common board
+identity, start correspondence, spectral chromatic geometry and independent
+elevated-target checks remain needed. These are named ledger entries, not reasons
+to withhold legitimate spectral-only or conditional geometry products.
+
+Packaging
+
+pyproject.toml already includes processing* and app*, so Python modules in the
+new package will be installed automatically. If runtime templates/example JSON
+are loaded as package resources, add explicit package-data patterns. Prefer no
+new mandatory acquisition dependencies. NumPy/OpenCV/Open3D already exist;
+SciPy is optional analysis; spectral/scikit-image/sklearn/pandas are optional HSI.
+Use lazy imports so opening the new tab does not import scientific dependencies.
+Keep exact pyrealsense2 2.54.2.5684 pins and existing lab setup unchanged.
+
+Verification recommended for implementation
+
+1. Record and compare SHA-256 hashes of main.py, capture/**, acquisition UI and
+   worker/controller modules, setup/install paths and existing reconstruction.
+   protected_source_hashes.json in this audit directory is a live pre-integration
+   snapshot. Source equality is not hardware acceptance.
+2. New meaningful tests: output/input overlap and nonempty-output rejection;
+   missing files, duplicate specimen IDs and mismatched mappings; no physical
+   height without a base; nonfinite scale/base rejection; missing calibration
+   stays blocked; all mask/source paths and hashes recorded; rendered report
+   retains uncertainty and contains no escaping/missing local references;
+   no calibrated claim produced by a bare Boolean; numerical geometry on a
+   small synthetic cloud with explicit conditional status.
+3. Keep actual Qt/QProcess lifecycle checks: tab wiring, startup with no capture,
+   busy capture rejection, active-job cancellation when capture starts, failure
+   handling and close termination. tests/test_analysis_ui.py currently asserts
+   exactly five tabs at line 25; update it for the added sixth tab. Preserve
+   the current fifth HSI tab index or adjust its assertions intentionally.
+4. Focused test command, using the existing compatible analysis interpreter:
+   python -m pytest tests/test_research_workspace.py tests/test_analysis_ui.py
+       tests/test_analysis_workflow.py tests/test_hyperspectral.py
+       tests/test_reference_traits.py tests/test_realsense_runtime.py
+       tests/test_ros_runtime.py tests/test_gantry_offline.py -q
+   Set QT_QPA_PLATFORM=offscreen for headless Qt checks. Do not run hardware probes.
+5. Broad regression command should explicitly target tests/, not plain pytest
+   at repository root, because research/legacy folders have incidental test files.
+   Existing docs report 159 passed with five pre-existing cases deselected and
+   test_e2e.py excluded for a missing processing.canopy baseline import. Recheck
+   rather than quoting that historical count as this integration's result.
+   The three known TSDF names are test_tsdf_depth_gate_rejects_empty_frame,
+   test_tsdf_depth_gate_warns_borderline_frame and
+   test_tsdf_depth_gate_accepts_good_frame. Two setup cases are Windows/Linux
+   compatibility issues; do not blanket-exclude new failures as baseline.
+6. Run an actual configured local research bundle and check report links/counts,
+   inspect interactive report at desktop width, and verify that physical and
+   calibrated-fusion blockers remain visible. This establishes local software
+   behavior, not generalized segmentation, independent calibration, physical
+   accuracy, lab operation or publication.
+
+Prior context used
+
+Memory registry MEMORY.md lines 810 and 821-822 guided the separation of reviewed
+historical HSI work and acquisition. Current source and generated evidence were
+read directly to confirm the findings above. Previous rollout id:
+01a07203-1500-7c01-8ea3-1155c24f6421.

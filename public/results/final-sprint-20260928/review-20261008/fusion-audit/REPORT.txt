@@ -1,0 +1,133 @@
+FUSION AUDIT AND NEW LOCAL REGISTRATION EXPERIMENTS
+8 October 2026
+
+This report distinguishes the saved confirmed-board v1 checkpoint from the new
+experiments in ../fusion_candidates. Additional work by the main task may produce
+a later candidate export. The three-marker result is not the requested completed
+dense five-plant spectral surface model.
+
+WHAT THE THREE MARKERS MEAN
+
+The v1 inspector shows three original reconstructed Plant 5 locations. Each has
+one FX10 observation and one separately recorded FX17 observation: six spectra at
+three unique locations, each sensor retaining its own 224 bands. A wavelength
+change selects a different measured value at those locations and changes their
+display colour. The other 430,057 of the 430,060 context points have no assigned
+spectral observation. They cannot be described as a spectrally fused whole plant.
+
+13,343 sampled camera-space spectra exist (7,982 FX10 and 5,361 FX17), but a
+measured spectrum's existence does not determine which reconstructed material
+point it belongs to. Image-space analysis and 3D material-point association are
+separate deliverables. Camera data identify FX10, not FX15.
+
+WHY THE OLDER PICTURE IS DENSER
+
+The experimental website reports a different three-plant acquisition from
+28 August. Reading the website's actual saved assets gives 5,560 Coleus, 2,539
+fuzzy kalanchoe and 2,386 succulent/jade projected spectral points: 10,485 total.
+The later local replay gives different counts, so it must not substitute for the
+published historical result when describing that image.
+
+Its method is an image-registration prototype:
+1. White/dark ROI normalization and spatial stride 4; FX17 gain/offset adjustment.
+2. Resize and affine-warp FX17 onto FX10 in image space. The merged 427-band
+   product uses FX10 <=1000 nm and registered FX17 >1000 nm. FX17 values in this
+   merged product have been spatially resampled; it is not an untouched 427-band
+   detector observation at one native pixel.
+3. Register FX10 image features to a selected RGB view using SIFT and RANSAC.
+   Coleus uses a plant-local homography with 16 training inliers and 4.028 px RMS;
+   fuzzy kalanchoe uses 8 with 1.824 px RMS. These are fit residuals.
+   Jade's saved model says board plus ECC, but ECC correlation is null and its
+   residual matrix is identity: no successful nonidentity ECC refinement is
+   demonstrated by that saved record.
+4. Round mapped RGB pixels, search up to four pixels for valid depth, backproject
+   with RGB-D intrinsics, remove duplicated depth pixels and background layers,
+   and retain points within 20 mm of the existing cleaned specimen surface.
+5. Recover a per-plant rigid transform against the legacy ICP scene and display
+   the spectral points on the grey geometry. The legacy acquisition had omitted
+   the full saved pose trajectory, so this was dataset-specific pose recovery.
+
+Those coloured dots carry processed measured spectra. Their assignment to a
+particular leaf location is an approximate image warp, not independently
+calibrated pushbroom material-point truth. Zero distance to a specimen surface
+built from the same RGB-D view is expected for overlapping source pixels and
+does not independently validate the hyperspectral match. This limitation does
+not invalidate the prototype, but its visual density is not proof of accuracy.
+
+HOW D405 AND L515 WERE FUSED IN THE NEW STUDY
+
+Both geometries were placed into a metric reference using the confirmed 25 mm
+board and an empirical rigid alignment. The union preserved the selected
+1,719,001 D405 points and added 21,672 L515 points. Near duplicates were suppressed,
+cross-view free-space contradictions rejected, and uncertain overlaps excluded.
+Of the additions, 14,220 have at least two agreeing D405 stereo views and 7,452
+are complementary L515-only candidates. Positions were not averaged into new
+surfaces and missing leaf shapes were not invented. The 1,740,673-point union was
+then separated into plant, uncertain and scene-context selections; the retained
+plant subset has 430,060 points. This geometry fusion is separate from attaching
+hyperspectral observations.
+
+WHAT THE BOARD FIXED, AND WHAT IT DID NOT
+
+The recorded calibration is used: 205 sheet-qualified HSI controls share the
+metric D405 table frame. Whole-sheet affine holdouts are 0.905-1.385 px RMS for
+FX10 and 0.475-0.679 px for FX17. Static calibration-to-plant scan transfer is also
+supported by recorded features. These controls lie essentially on one table
+plane; they do not uniquely determine how rays meet raised leaves.
+
+A bounded height-extension test fitted two of the three P5 points and predicted
+the third. It failed: FX10 errors 10.08, 14.48, 174.70 px; FX17 7.24, 12.28,
+123.43 px. That specific model was properly rejected. It does not prove that all
+local leaf methods must fail.
+
+NEW WORK ON 8 OCTOBER: LOCAL LEAF METHODS
+
+A new feature sweep tested affine and homography candidates on two recognizable
+P5 leaves in RGB frame 1055904. Reviewed point anchors and all nearby descriptors
+were excluded from fitting. Across eight fits, no model met the declared screen.
+The best red affine predicted the two excluded anchors with 16.11 and 37.08 px
+errors; the best green affine missed its excluded anchor by 8.02 px. Training
+RANSAC inliers alone would have concealed these problems. Results and annotated
+panels are in ../fusion_candidates/local_warp_probe.json.
+
+The FX10-to-FX17 leg is more promising. A new lower-green-leaf fit used nearby
+measured wavelengths around 945, 970, 990 and 1001 nm with exact pixel-centre
+conversion. Of 66 repeatable matches outside the excluded anchor neighborhood,
+54 support a local affine model. It predicts the existing green FX17 anchor with
+0.589 px error. Leave-out source-column thirds have median errors 0.699, 0.914,
+1.029 px, but the untrimmed first group's RMS is 21.01 px because one gross
+false/background match has 98.26 px error. This false match is preserved, not
+silently discarded to advertise a small RMS. Other two groups' RMS are 1.18 and
+1.22 px. These are image consistency checks, not physical calibration.
+
+Pixelwise forward/backward tracking was then tested across all four overlap
+bands. 11,023 of 37,570 queried native FX10 pixels pass the declared tracking
+gates, corresponding to 6,984 unique rounded FX17 pixels. This is a registration
+support mask, not a plant mask or a dense 3D export. It must be intersected with
+reviewed same-leaf masks, an independently checked FX10-to-RGB domain, supported
+depth/pose and exact original reconstructed point identities. The main task is
+testing that missing HSI-to-RGB leg separately. No spectra or prior results were
+changed by these tests.
+
+DATA STILL TO RECOVER IF LOCAL MAPPING IS INSUFFICIENT
+
+All current paired calibration 002 and plant 003 HSI cubes are accounted for.
+Their headers have dimensions, wavelengths/FWHM and a run timestamp, but no
+spatial lens/ray calibration, rig extrinsics or per-line motion/timing. No omitted
+current HSI cube was found. Recovering those applicable rig records, or recording
+measured elevated controls across plant heights with reserved holdouts, would
+support a stronger physical model. The board dimension is now resolved and
+should not be repeated as a present blocker.
+
+White-panel reflectance and dark-reference confirmation remain separate gaps.
+They limit calibrated reflectance, not the ability to demonstrate geometry with
+raw measured DN. Local candidate maps should retain both sensors separately,
+missing values explicitly, and original integer spectral pixel identities.
+
+FILES
+evidence.json: exact saved metrics, source hashes and historical website metrics.
+fusion_process.png/.svg: explanation of the two distinct fusion steps at v1.
+../fusion_candidates/local_warp_probe.json: new failed HSI-to-RGB screens.
+../fusion_candidates/fx10_fx17_green_registration.json: new local sensor map.
+../fusion_candidates/dense_fx10_fx17_green_tracks.npz: per-pixel candidate transfer.
+../fusion_candidates/dense_fx10_fx17_green_tracks_summary.json: gates and scope.

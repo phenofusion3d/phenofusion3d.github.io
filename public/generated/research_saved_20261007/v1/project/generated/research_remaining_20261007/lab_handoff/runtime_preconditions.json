@@ -1,0 +1,26 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Adithya Rama\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "dependency_overlay": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\venv\\Lib\\site-packages",
+  "dependency_presence": {
+    "numpy": true,
+    "open3d": true,
+    "scipy": true,
+    "cv2": true,
+    "PyQt5": true,
+    "PyQt5.QtWebEngineWidgets": false,
+    "pyrealsense2": true,
+    "rospy": false
+  },
+  "versions": {
+    "numpy": "1.26.4",
+    "open3d": "0.19.0",
+    "scipy": "1.17.1",
+    "opencv-python": "4.13.0.92",
+    "PyQt5": "5.15.11",
+    "setuptools": "81.0.0",
+    "wheel": "0.48.0"
+  },
+  "imports_do_not_validate_device_access": true,
+  "fresh_environment_install_tested": false
+}

@@ -1,0 +1,36 @@
+{
+  "archive": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_lab_candidate_20261007\\PhenoFusion3D_lab_test_kit_v2.zip",
+  "bytes": 3231081,
+  "sha256": "c829b887087933031a32260f8a7bb0451ab8b1654dcef84dfa85d4b00101a2a6",
+  "members": 230,
+  "crc_check": "passed",
+  "every_member_sha256_matches_kit": true,
+  "missing_or_extra_members": false,
+  "checksum_entries": 229,
+  "source_files": 208,
+  "source_tree_sha256": "e7991bede31f3f8e93a67529553dcc0c909c0e0324864521bbf0f9ed8d5e36e3",
+  "source_manifest_exact": true,
+  "base_commit": "920a577958a22e10998d24935265c77e2296d867",
+  "exact_commit_snapshot": false,
+  "modified_paths": [
+    "tests/test_gantry_offline.py"
+  ],
+  "unchanged_source_files": 207,
+  "protected_source_files_unchanged": 26,
+  "original_kit_and_zip_preserved": true,
+  "guard_tests": 9,
+  "guard_tests_passed": true,
+  "windows_metadata_preflight_completed": true,
+  "linux_offline_regression": {
+    "passed": 141,
+    "skipped": 1,
+    "collected": 142,
+    "failures": 0,
+    "errors": 0,
+    "changed_test_repeated_passes": 20
+  },
+  "windows_targeted_tests_passed": 18,
+  "hardware_accepted": false,
+  "physical_calibration_validated": false,
+  "saved_utc": "2026-10-07T10:22:04.653388+00:00"
+}

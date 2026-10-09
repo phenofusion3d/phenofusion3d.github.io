@@ -1,0 +1,55 @@
+{
+  "status": "EXPLORATORY_PARTIAL_UPPER_LEAF_SURFACE",
+  "accepted_for_measurement": false,
+  "physical_registration_validated": false,
+  "dense_fusion_complete": false,
+  "calibrated_reflectance": false,
+  "regions": [
+    {
+      "region": "green_upper",
+      "region_id": 1,
+      "model_id": "green_upper_lightglue_outdoor_projective",
+      "learned_hull_pixels_after_1px_erosion": 6147,
+      "both_images_colour_mask_pixels": 3819,
+      "geometry_supported_before_dedup": 2972,
+      "model": "frozen\\green_upper_lightglue_outdoor_projective.npz",
+      "retained_unique_vertices": 1050
+    },
+    {
+      "region": "red_upper",
+      "region_id": 2,
+      "model_id": "red_upper_lightglue_outdoor_projective",
+      "learned_hull_pixels_after_1px_erosion": 12763,
+      "both_images_colour_mask_pixels": 4636,
+      "geometry_supported_before_dedup": 3809,
+      "model": "frozen\\red_upper_lightglue_outdoor_projective.npz",
+      "retained_unique_vertices": 1288
+    }
+  ],
+  "total_geometry_supported_before_dedup": 6781,
+  "retained_source_vertices": 2338,
+  "geometry_method": "Frozen learned image map inside its eroded inlier convex hull, same colour-class tissue in both images; integer native FX10 pixel -> native RGB -> undistorted >=2-vote recovered depth -> unchanged P5 vertex within3mm and1.5px; >=2 of3 supporting stereo views within12mm. Geometry support is not verification of spectral material identity.",
+  "model_selection": "Previously frozen base affine/projective candidate ranked only by learned inlier count, spatial spread and fit residual. Upper red/green regions selected for this exploratory illustration after validation evidence was available. No map refitted to checks; demonstration-region selection is post hoc.",
+  "mask_policy": "Heuristic green/red colour masks omit pale tissue and leaf boundaries; no full-leaf coverage claim.",
+  "rgb_frames": [
+    1055904,
+    1215512,
+    1445026
+  ],
+  "mapping_error_per_point": "Unknown. Annotation disagreements are sparse, uncertain and not per-point error bounds.",
+  "spectral_method": "Read exact native measured pixel; no filled, averaged or interpolated spectrum. Upper leaves may lie outside reference-panel detector columns, so normalized values must remain invalid there.",
+  "source_geometry_modified": false,
+  "inputs_sha256": {
+    "generated\\research_fusion_rescue_20261008\\learned_registration\\frozen_candidates.json": "3e923f72a3d9ac53f7b8f297c1a2e1121e701f5398844932cf37a7543e220859",
+    "generated\\research_confirmed_board_20261007\\cleanup_v1\\result\\P5_reference.ply": "ebba027f13ed2d927f3d547e94ad5833925bd73b6e7774a8fa97548ce14a9b9f",
+    "generated\\research_20260928_improvement_20261007\\short_dense_v3\\profile.json": "101f44a9b1329cae37431151bedeeedbf01c84a1e09bc6e91002ed2834910db9",
+    "generated\\research_20260928_improvement_20261007\\short_dense_v3\\result\\icp_diagnostics.json": "420fc50e1808d285d1835802f361a29372421e122a02ee0e52222c2fb0d38f77",
+    "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1055904.npz": "6f390f935b5e9227b07b3d11146fc0b081b654b06d26600d6feb67d93b5c2eff",
+    "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1215512.npz": "e76d29e2620ae0c50f1dab28f59bc756ae38076f8a36cd7ee778d7afc751c8f4",
+    "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1445026.npz": "16aa167fd6d7aadb7df9aa73230320491e8b6f1c5d8d2d74194ba297d45eed8e",
+    "generated\\research_followthrough_20261007\\spectral\\fx10_display_rgb.npy": "d8c55904d2d347cc7a4cac24a2f2274b38ae917caff3ca34e827b21a9d4153c3",
+    "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1055904.png": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494",
+    "generated\\research_fusion_rescue_20261008\\learned_registration\\frozen\\green_upper_lightglue_outdoor_projective.npz": "9b11adf7a9d9c0d08aa853c2f1be23b16dcb506c0c1e352723e8f38b3f9a8c75",
+    "generated\\research_fusion_rescue_20261008\\learned_registration\\frozen\\red_upper_lightglue_outdoor_projective.npz": "d094e9bfeb5fa346735314539ad45d3b545bc39ce8e86be134fc8bcb22d76833"
+  }
+}

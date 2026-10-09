@@ -1,0 +1,626 @@
+[
+  {
+    "id": "P1.O03.length_candidate",
+    "manual_dimension_id": "P1.O03.length",
+    "plant": 1,
+    "frame": 459309,
+    "points": [
+      [
+        240,
+        401
+      ],
+      [
+        149,
+        379
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      143152,
+      302754
+    ],
+    "scope": "Upper narrow blade; length excludes fine dry tip so partial only; width is visible green-blade section.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P1.O03.width_candidate",
+    "manual_dimension_id": "P1.O03.width",
+    "plant": 1,
+    "frame": 459309,
+    "points": [
+      [
+        193,
+        386
+      ],
+      [
+        191,
+        394
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      143152,
+      302754
+    ],
+    "scope": "Upper narrow blade; length excludes fine dry tip so partial only; width is visible green-blade section.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P1.O04.length_candidate",
+    "manual_dimension_id": "P1.O04.length",
+    "plant": 1,
+    "frame": 459309,
+    "points": [
+      [
+        232,
+        412
+      ],
+      [
+        157,
+        469
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      143152,
+      302754
+    ],
+    "scope": "Ear body excluding awns; not a leaf.",
+    "organ_kind": "ear"
+  },
+  {
+    "id": "P1.O04.width_candidate",
+    "manual_dimension_id": "P1.O04.width",
+    "plant": 1,
+    "frame": 459309,
+    "points": [
+      [
+        201,
+        430
+      ],
+      [
+        211,
+        440
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      143152,
+      302754
+    ],
+    "scope": "Ear body excluding awns; not a leaf.",
+    "organ_kind": "ear"
+  },
+  {
+    "id": "P3.O01.length_candidate",
+    "manual_dimension_id": "P3.O01.length",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        639,
+        471
+      ],
+      [
+        717,
+        499
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lateral lobed blade; selected basal junction and terminal margin, plus opposite lateral lobes.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P3.O01.width_candidate",
+    "manual_dimension_id": "P3.O01.width",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        686,
+        451
+      ],
+      [
+        682,
+        507
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lateral lobed blade; selected basal junction and terminal margin, plus opposite lateral lobes.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P3.O02.length_candidate",
+    "manual_dimension_id": "P3.O02.length",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        651,
+        416
+      ],
+      [
+        698,
+        324
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lobed blade with basal hole; basal margin and terminal lobe, plus opposite lateral margins.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P3.O02.width_candidate",
+    "manual_dimension_id": "P3.O02.width",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        636,
+        364
+      ],
+      [
+        723,
+        365
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lobed blade with basal hole; basal margin and terminal lobe, plus opposite lateral margins.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P3.O03.length_candidate",
+    "manual_dimension_id": "P3.O03.length",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        594,
+        424
+      ],
+      [
+        590,
+        326
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Oval terminal blade including small basal lobes; base convention tentative; width is visible opposing side margins.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P3.O03.width_candidate",
+    "manual_dimension_id": "P3.O03.width",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        563,
+        372
+      ],
+      [
+        633,
+        375
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Oval terminal blade including small basal lobes; base convention tentative; width is visible opposing side margins.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P3.O04.length_candidate",
+    "manual_dimension_id": "P3.O04.length",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        550,
+        388
+      ],
+      [
+        506,
+        318
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lobed blade; basal lobe boundary and terminal lamina candidate; opposite lateral lobes.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P3.O04.width_candidate",
+    "manual_dimension_id": "P3.O04.width",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        492,
+        365
+      ],
+      [
+        563,
+        346
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lobed blade; basal lobe boundary and terminal lamina candidate; opposite lateral lobes.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P3.O05.length_candidate",
+    "manual_dimension_id": "P3.O05.length",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        540,
+        485
+      ],
+      [
+        431,
+        479
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lobed blade; basal lamina margin revised from visibly crossing-stem candidate, not adjusted to reference; visible terminal and side lobes.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P3.O05.width_candidate",
+    "manual_dimension_id": "P3.O05.width",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        510,
+        431
+      ],
+      [
+        516,
+        521
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Lobed blade; basal lamina margin revised from visibly crossing-stem candidate, not adjusted to reference; visible terminal and side lobes.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P5.O01.length_candidate",
+    "manual_dimension_id": "P5.O01.length",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        523,
+        334
+      ],
+      [
+        548,
+        202
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Green damaged lobed blade; lowest basal-lamina lobe extent to terminal margin; widest opposing basal lobes.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P5.O01.width_candidate",
+    "manual_dimension_id": "P5.O01.width",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        473,
+        290
+      ],
+      [
+        574,
+        304
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Green damaged lobed blade; lowest basal-lamina lobe extent to terminal margin; widest opposing basal lobes.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P5.O02.length_candidate",
+    "manual_dimension_id": "P5.O02.length",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        532,
+        416
+      ],
+      [
+        547,
+        378
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Small central green blade; basal lamina to terminal tip; side-margin chord. Ruler mapping conditional.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P5.O02.width_candidate",
+    "manual_dimension_id": "P5.O02.width",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        533,
+        404
+      ],
+      [
+        590,
+        411
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Small central green blade; basal lamina to terminal tip; side-margin chord. Ruler mapping conditional.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P5.O03.length_candidate",
+    "manual_dimension_id": "P5.O03.length",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        603,
+        420
+      ],
+      [
+        708,
+        433
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Rust-brown damaged blade; lamina base to distal curled terminal margin; side lobes. Curl differs from held ruler pose.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P5.O03.width_candidate",
+    "manual_dimension_id": "P5.O03.width",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        659,
+        363
+      ],
+      [
+        639,
+        496
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Rust-brown damaged blade; lamina base to distal curled terminal margin; side lobes. Curl differs from held ruler pose.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P5.O04.length_candidate",
+    "manual_dimension_id": "P5.O04.length",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        529,
+        449
+      ],
+      [
+        548,
+        583
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Green broad blade; lowest basal side-lobe origin candidate to distal margin; terminal-lamina side margins, possibly different ruler section.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P5.O04.width_candidate",
+    "manual_dimension_id": "P5.O04.width",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        493,
+        514
+      ],
+      [
+        596,
+        509
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Green broad blade; lowest basal side-lobe origin candidate to distal margin; terminal-lamina side margins, possibly different ruler section.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P5.O05.length_candidate",
+    "manual_dimension_id": "P5.O05.length",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        476,
+        407
+      ],
+      [
+        343,
+        437
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Left-facing green lobed blade; basal lamina to distal tip; opposite side lobes.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P5.O05.width_candidate",
+    "manual_dimension_id": "P5.O05.width",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        430,
+        344
+      ],
+      [
+        448,
+        451
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Left-facing green lobed blade; basal lamina to distal tip; opposite side lobes.",
+    "organ_kind": "leaf"
+  }
+]

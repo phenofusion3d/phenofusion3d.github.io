@@ -1,0 +1,234 @@
+{
+  "status": "audited_preserved_data_site_adaptation",
+  "sensors": {
+    "fx10": {
+      "samples": 7982,
+      "bands": 224,
+      "patches": 12,
+      "wavelength_range_nm": [
+        397.66,
+        1003.81
+      ],
+      "scan_regions": {
+        "R1": 346,
+        "R2": 1390,
+        "R3": 1916,
+        "R4": 792,
+        "R5": 3538
+      },
+      "descriptors": [
+        {
+          "name": "NDVI_800_680",
+          "finite_Q": 6190,
+          "finite_Q0": 6190
+        },
+        {
+          "name": "NDRE_790_720",
+          "finite_Q": 5999,
+          "finite_Q0": 5999
+        },
+        {
+          "name": "GNDVI_800_550",
+          "finite_Q": 6190,
+          "finite_Q0": 6190
+        },
+        {
+          "name": "PRI_531_570",
+          "finite_Q": 7289,
+          "finite_Q0": 7289
+        },
+        {
+          "name": "PSRI_678_500_750",
+          "finite_Q": 5935,
+          "finite_Q0": 5935
+        },
+        {
+          "name": "SIPI_800_445_680",
+          "finite_Q": 6190,
+          "finite_Q0": 6190
+        }
+      ],
+      "index_specs": {
+        "NDVI_800_680": {
+          "bands": [
+            800,
+            680
+          ],
+          "formula": "(Q800-Q680)/(Q800+Q680)",
+          "operation": "nd",
+          "source_bands_zero_based": [
+            150,
+            106
+          ],
+          "actual_wavelengths_nm": [
+            800.34,
+            680.07
+          ]
+        },
+        "NDRE_790_720": {
+          "bands": [
+            790,
+            720
+          ],
+          "formula": "(Q790-Q720)/(Q790+Q720)",
+          "operation": "nd",
+          "source_bands_zero_based": [
+            146,
+            121
+          ],
+          "actual_wavelengths_nm": [
+            789.33,
+            720.87
+          ]
+        },
+        "GNDVI_800_550": {
+          "bands": [
+            800,
+            550
+          ],
+          "formula": "(Q800-Q550)/(Q800+Q550)",
+          "operation": "nd",
+          "source_bands_zero_based": [
+            150,
+            58
+          ],
+          "actual_wavelengths_nm": [
+            800.34,
+            550.91
+          ]
+        },
+        "PRI_531_570": {
+          "bands": [
+            531,
+            570
+          ],
+          "formula": "(Q531-Q570)/(Q531+Q570)",
+          "operation": "nd",
+          "source_bands_zero_based": [
+            51,
+            65
+          ],
+          "actual_wavelengths_nm": [
+            532.25,
+            569.61
+          ]
+        },
+        "PSRI_678_500_750": {
+          "bands": [
+            678,
+            500,
+            750
+          ],
+          "formula": "(Q678-Q500)/Q750",
+          "operation": "psri",
+          "source_bands_zero_based": [
+            105,
+            39,
+            132
+          ],
+          "actual_wavelengths_nm": [
+            677.36,
+            500.37,
+            750.93
+          ]
+        },
+        "SIPI_800_445_680": {
+          "bands": [
+            800,
+            445,
+            680
+          ],
+          "formula": "(Q800-Q445)/(Q800-Q680)",
+          "operation": "sipi",
+          "source_bands_zero_based": [
+            150,
+            18,
+            106
+          ],
+          "actual_wavelengths_nm": [
+            800.34,
+            444.89,
+            680.07
+          ]
+        }
+      },
+      "source_array_sha256": "a824a2f8a7f5fbc43eb9f86f5fe4e7314d93b89e39b96cbffcfe954ab479f9b6"
+    },
+    "fx17": {
+      "samples": 5361,
+      "bands": 224,
+      "patches": 12,
+      "wavelength_range_nm": [
+        935.61,
+        1720.23
+      ],
+      "scan_regions": {
+        "R1": 131,
+        "R2": 806,
+        "R3": 1317,
+        "R4": 528,
+        "R5": 2579
+      },
+      "descriptors": [],
+      "index_specs": {},
+      "source_array_sha256": "b44115f387ae0c15f1d094bcdda877b240c4aa6f6472e5a3597cf8f2f224da7f",
+      "additional_separately_derived_descriptors": [
+        {
+          "name": "SR_1301.56_1449.68_signal_ratio",
+          "finite_Q": 4455,
+          "finite_Q0": 4455,
+          "formula": "Q1301.56/Q1449.68; Q0 separately",
+          "actual_wavelength_nm": [
+            1301.56,
+            1449.68
+          ],
+          "scope": "Exploratory reference-relative signal ratio. Not calibrated reflectance, water content, stress or health. Both bands require zero quality flags; denominator must exceed 0.01 Q units."
+        }
+      ]
+    }
+  },
+  "sparse_associations": 6,
+  "unique_3D_locations": 3,
+  "3D_plant_ids": [
+    "P5"
+  ],
+  "full_samples": 13343,
+  "patches": 24,
+  "limitations": [
+    "No accepted dense spectral surface mapping for five plants.",
+    "R1-R5 are scan-order regions, not verified 3D specimen identities.",
+    "Unknown panel reflectance and unconfirmed dark tail prevent calibrated reflectance claims.",
+    "Current associations are provisional compound source-feature correspondences without independent physical validation.",
+    "Confirmed 25 mm board supplies metric scale; independent print dimension uncertainty is not provided.",
+    "The three-point height-dependent model failed held-out prediction and is not used for dense spectral mapping.",
+    "FX17 has one separately derived exploratory Q/Q0 signal ratio; it is not a physiological measurement. The original visible/NIR descriptor set is unavailable."
+  ],
+  "unique_existing_vertices": [
+    {
+      "cloud": "P5",
+      "vertex": 6128
+    },
+    {
+      "cloud": "P5",
+      "vertex": 65318
+    },
+    {
+      "cloud": "P5",
+      "vertex": 71560
+    }
+  ],
+  "geometry_context_count": 430060,
+  "fx17_additional_signal_ratio": {
+    "name": "SR_1301.56_1449.68_signal_ratio",
+    "formula": "Q1301.56/Q1449.68; Q0 separately",
+    "source_band_zero_based": [
+      105,
+      147
+    ],
+    "actual_wavelength_nm": [
+      1301.56,
+      1449.68
+    ],
+    "scope": "Exploratory reference-relative signal ratio. Not calibrated reflectance, water content, stress or health. Both bands require zero quality flags; denominator must exceed 0.01 Q units."
+  }
+}

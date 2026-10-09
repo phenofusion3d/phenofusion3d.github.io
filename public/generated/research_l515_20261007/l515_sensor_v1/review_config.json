@@ -1,0 +1,83 @@
+{
+  "output": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_l515_20261007\\l515_sensor_v1\\review",
+  "title": "L515 \u2014 separate reconstruction",
+  "subtitle": "28 September 2026 | Recorded sensor depth | Conditional scale",
+  "bounds_min": [
+    -0.04,
+    -0.4,
+    -0.85
+  ],
+  "bounds_max": [
+    1.85,
+    0.46,
+    -0.1
+  ],
+  "photo": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_816080.png",
+  "report": "../RECONSTRUCTION_REPORT.md",
+  "models": [
+    {
+      "source": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_l515_20261007\\l515_sensor_v1\\result\\l515_supported_reference.ply",
+      "transform": [
+        [
+          0.9982134793870803,
+          -0.04953150648721843,
+          -0.03341376116281363,
+          0.0
+        ],
+        [
+          -0.047538350360202264,
+          -0.9971831104914554,
+          0.05801680270074003,
+          0.0
+        ],
+        [
+          -0.03619329792889247,
+          -0.05632471940180952,
+          -0.9977562684189651,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "label": "L515: supported surfaces",
+      "description": "64 registered sensor views; at least 3 distinct depth views support each retained point. Fine fragments are preserved. This is a plants-and-pots review crop, not a trait mask.",
+      "download": "l515_supported_review.ply"
+    },
+    {
+      "source": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_l515_20261007\\l515_sensor_v1\\result\\l515_filtered_reference.ply",
+      "transform": [
+        [
+          0.9982134793870803,
+          -0.04953150648721843,
+          -0.03341376116281363,
+          0.0
+        ],
+        [
+          -0.047538350360202264,
+          -0.9971831104914554,
+          0.05801680270074003,
+          0.0
+        ],
+        [
+          -0.03619329792889247,
+          -0.05632471940180952,
+          -0.9977562684189651,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "label": "L515: optional cleanup",
+      "description": "The same supported reconstruction after statistical cleanup. Small real structures and noise can both be removed; compare with the supported version.",
+      "download": "l515_filtered_review.ply"
+    }
+  ]
+}

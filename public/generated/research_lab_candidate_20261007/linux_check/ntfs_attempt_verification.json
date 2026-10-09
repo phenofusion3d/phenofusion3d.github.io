@@ -1,0 +1,36 @@
+{
+  "status": "incomplete_or_failed_linux_compatibility_check",
+  "commit": "920a577958a22e10998d24935265c77e2296d867",
+  "source": "/mnt/c/Personal/My_DEGREE's/Master_of_Computing_(Advanced)/Australian_National_University/Technical Team Project - COMP8715/PhenoFusion3D/generated/research_lab_candidate_20261007/linux_check/source_snapshot",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "existing_environment_changed": false,
+  "existing_checkouts_changed": false,
+  "hardware_contacted": false,
+  "system_packages_changed": false,
+  "new_environment": "/mnt/c/Personal/My_DEGREE's/Master_of_Computing_(Advanced)/Australian_National_University/Technical Team Project - COMP8715/PhenoFusion3D/generated/research_lab_candidate_20261007/linux_check/isolated_linux_env",
+  "full_offline_selection": [
+    "test_analysis_ui.py",
+    "test_analysis_workflow.py",
+    "test_gantry_offline.py",
+    "test_hyperspectral.py",
+    "test_realsense_runtime.py",
+    "test_reference_traits.py",
+    "test_research_spectral_extract.py",
+    "test_research_spectral_mapping.py",
+    "test_research_workspace.py",
+    "test_research_workspace_review.py",
+    "test_ros_runtime.py"
+  ],
+  "missing_existing_dependencies": [
+    "open3d",
+    "cv2",
+    "PyQt5",
+    "pytest",
+    "natsort"
+  ],
+  "error": "TimeoutExpired: Command '['/usr/bin/python3', '-m', 'venv', \"/mnt/c/Personal/My_DEGREE's/Master_of_Computing_(Advanced)/Australian_National_University/Technical Team Project - COMP8715/PhenoFusion3D/generated/research_lab_candidate_20261007/linux_check/isolated_linux_env\"]' timed out after 59.99994732699997 seconds",
+  "source_snapshot_files_changed": [],
+  "finished_utc": "2026-10-07T09:56:31Z"
+}

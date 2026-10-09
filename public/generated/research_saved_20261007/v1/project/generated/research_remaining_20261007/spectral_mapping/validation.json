@@ -1,0 +1,11 @@
+{
+  "status": "PASSED",
+  "report_links_checked": 13,
+  "source_hashes_rechecked": 13,
+  "output_hashes_rechecked": 15,
+  "utf8_text_files_checked": 13,
+  "accepted_controls": 0,
+  "fit_attempted": false,
+  "physical_fusion": null,
+  "script_sha256": "0a79d8a1ea2d5a9769494a7ce0ecf44f464a3698c2242e2f6000fedae4c751eb"
+}

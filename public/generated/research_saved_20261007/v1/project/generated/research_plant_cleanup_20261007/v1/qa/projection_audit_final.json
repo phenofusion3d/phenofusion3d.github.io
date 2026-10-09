@@ -1,0 +1,425 @@
+{
+  "status": "pass",
+  "sample_points": 29596,
+  "input_points": 1732490,
+  "classification_sha256": "ca2af9922994117cc8068169ac8bdf91b0b84d7792b7f75bb6dc0df628789fcb",
+  "checks": {
+    "positive_views": true,
+    "uncertain_views": true,
+    "nonplant_views": true,
+    "visible_review_views": true,
+    "all_exact_icp_rotations_are_rigid": true
+  },
+  "vote_mismatch_point_counts": {
+    "positive_views": 0,
+    "uncertain_views": 0,
+    "nonplant_views": 0,
+    "visible_review_views": 0
+  },
+  "sampling_seed": 7102026,
+  "strata": [
+    {
+      "camera": 0,
+      "reason": 0,
+      "plant": 0,
+      "population": 543147,
+      "sample": 1800
+    },
+    {
+      "camera": 0,
+      "reason": 1,
+      "plant": 1,
+      "population": 12089,
+      "sample": 1800
+    },
+    {
+      "camera": 0,
+      "reason": 1,
+      "plant": 2,
+      "population": 50201,
+      "sample": 1800
+    },
+    {
+      "camera": 0,
+      "reason": 1,
+      "plant": 3,
+      "population": 84298,
+      "sample": 1800
+    },
+    {
+      "camera": 0,
+      "reason": 1,
+      "plant": 4,
+      "population": 41074,
+      "sample": 1800
+    },
+    {
+      "camera": 0,
+      "reason": 1,
+      "plant": 5,
+      "population": 120850,
+      "sample": 1800
+    },
+    {
+      "camera": 0,
+      "reason": 2,
+      "plant": 1,
+      "population": 9802,
+      "sample": 1800
+    },
+    {
+      "camera": 0,
+      "reason": 2,
+      "plant": 2,
+      "population": 24039,
+      "sample": 1800
+    },
+    {
+      "camera": 0,
+      "reason": 2,
+      "plant": 3,
+      "population": 28763,
+      "sample": 1800
+    },
+    {
+      "camera": 0,
+      "reason": 2,
+      "plant": 4,
+      "population": 28486,
+      "sample": 1800
+    },
+    {
+      "camera": 0,
+      "reason": 2,
+      "plant": 5,
+      "population": 34141,
+      "sample": 1800
+    },
+    {
+      "camera": 0,
+      "reason": 3,
+      "plant": 0,
+      "population": 601018,
+      "sample": 1800
+    },
+    {
+      "camera": 0,
+      "reason": 4,
+      "plant": 0,
+      "population": 141093,
+      "sample": 1800
+    },
+    {
+      "camera": 1,
+      "reason": 0,
+      "plant": 0,
+      "population": 8171,
+      "sample": 1800
+    },
+    {
+      "camera": 1,
+      "reason": 1,
+      "plant": 2,
+      "population": 51,
+      "sample": 51
+    },
+    {
+      "camera": 1,
+      "reason": 1,
+      "plant": 3,
+      "population": 757,
+      "sample": 757
+    },
+    {
+      "camera": 1,
+      "reason": 1,
+      "plant": 4,
+      "population": 63,
+      "sample": 63
+    },
+    {
+      "camera": 1,
+      "reason": 1,
+      "plant": 5,
+      "population": 960,
+      "sample": 960
+    },
+    {
+      "camera": 1,
+      "reason": 2,
+      "plant": 2,
+      "population": 15,
+      "sample": 15
+    },
+    {
+      "camera": 1,
+      "reason": 2,
+      "plant": 3,
+      "population": 83,
+      "sample": 83
+    },
+    {
+      "camera": 1,
+      "reason": 2,
+      "plant": 4,
+      "population": 11,
+      "sample": 11
+    },
+    {
+      "camera": 1,
+      "reason": 2,
+      "plant": 5,
+      "population": 234,
+      "sample": 234
+    },
+    {
+      "camera": 1,
+      "reason": 3,
+      "plant": 0,
+      "population": 2722,
+      "sample": 1800
+    },
+    {
+      "camera": 1,
+      "reason": 4,
+      "plant": 0,
+      "population": 422,
+      "sample": 422
+    }
+  ],
+  "observations": [
+    {
+      "plant": "P1",
+      "frame": 143152,
+      "sample_in_view": 11476,
+      "sample_visible": 8611,
+      "sample_stereo_occluded": 909,
+      "sample_positive": 2270,
+      "sample_positive_without_stereo_agreement": 528,
+      "sample_negative": 1195
+    },
+    {
+      "plant": "P1",
+      "frame": 302754,
+      "sample_in_view": 15222,
+      "sample_visible": 9694,
+      "sample_stereo_occluded": 1786,
+      "sample_positive": 1291,
+      "sample_positive_without_stereo_agreement": 291,
+      "sample_negative": 865
+    },
+    {
+      "plant": "P1",
+      "frame": 459309,
+      "sample_in_view": 18390,
+      "sample_visible": 11159,
+      "sample_stereo_occluded": 3612,
+      "sample_positive": 2823,
+      "sample_positive_without_stereo_agreement": 643,
+      "sample_negative": 290
+    },
+    {
+      "plant": "P2",
+      "frame": 249551,
+      "sample_in_view": 13698,
+      "sample_visible": 8788,
+      "sample_stereo_occluded": 1324,
+      "sample_positive": 2321,
+      "sample_positive_without_stereo_agreement": 850,
+      "sample_negative": 176
+    },
+    {
+      "plant": "P2",
+      "frame": 459309,
+      "sample_in_view": 18390,
+      "sample_visible": 11159,
+      "sample_stereo_occluded": 3612,
+      "sample_positive": 1981,
+      "sample_positive_without_stereo_agreement": 663,
+      "sample_negative": 238
+    },
+    {
+      "plant": "P2",
+      "frame": 670589,
+      "sample_in_view": 21758,
+      "sample_visible": 12534,
+      "sample_stereo_occluded": 5109,
+      "sample_positive": 1901,
+      "sample_positive_without_stereo_agreement": 524,
+      "sample_negative": 174
+    },
+    {
+      "plant": "P3",
+      "frame": 618150,
+      "sample_in_view": 20835,
+      "sample_visible": 12617,
+      "sample_stereo_occluded": 4877,
+      "sample_positive": 3019,
+      "sample_positive_without_stereo_agreement": 393,
+      "sample_negative": 167
+    },
+    {
+      "plant": "P3",
+      "frame": 824869,
+      "sample_in_view": 24719,
+      "sample_visible": 12346,
+      "sample_stereo_occluded": 4412,
+      "sample_positive": 2989,
+      "sample_positive_without_stereo_agreement": 394,
+      "sample_negative": 30
+    },
+    {
+      "plant": "P3",
+      "frame": 1055904,
+      "sample_in_view": 20456,
+      "sample_visible": 10856,
+      "sample_stereo_occluded": 5405,
+      "sample_positive": 2189,
+      "sample_positive_without_stereo_agreement": 663,
+      "sample_negative": 50
+    },
+    {
+      "plant": "P4",
+      "frame": 851470,
+      "sample_in_view": 24640,
+      "sample_visible": 12583,
+      "sample_stereo_occluded": 4600,
+      "sample_positive": 2624,
+      "sample_positive_without_stereo_agreement": 900,
+      "sample_negative": 72
+    },
+    {
+      "plant": "P4",
+      "frame": 1003470,
+      "sample_in_view": 21633,
+      "sample_visible": 11419,
+      "sample_stereo_occluded": 5905,
+      "sample_positive": 1881,
+      "sample_positive_without_stereo_agreement": 779,
+      "sample_negative": 58
+    },
+    {
+      "plant": "P4",
+      "frame": 1160788,
+      "sample_in_view": 19243,
+      "sample_visible": 10439,
+      "sample_stereo_occluded": 4428,
+      "sample_positive": 1859,
+      "sample_positive_without_stereo_agreement": 642,
+      "sample_negative": 63
+    },
+    {
+      "plant": "P5",
+      "frame": 1030829,
+      "sample_in_view": 21088,
+      "sample_visible": 11220,
+      "sample_stereo_occluded": 5609,
+      "sample_positive": 3545,
+      "sample_positive_without_stereo_agreement": 891,
+      "sample_negative": 81
+    },
+    {
+      "plant": "P5",
+      "frame": 1445026,
+      "sample_in_view": 12342,
+      "sample_visible": 7135,
+      "sample_stereo_occluded": 2618,
+      "sample_positive": 3268,
+      "sample_positive_without_stereo_agreement": 117,
+      "sample_negative": 224
+    },
+    {
+      "plant": "P5",
+      "frame": 1639585,
+      "sample_in_view": 9023,
+      "sample_visible": 5031,
+      "sample_stereo_occluded": 1676,
+      "sample_positive": 3114,
+      "sample_positive_without_stereo_agreement": 1675,
+      "sample_negative": 223
+    }
+  ],
+  "pose_checks": [
+    {
+      "frame": 143152,
+      "determinant": 0.9999999999999999,
+      "orthonormal_max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "frame": 302754,
+      "determinant": 0.9999999999999997,
+      "orthonormal_max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "frame": 459309,
+      "determinant": 0.9999999999999997,
+      "orthonormal_max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "frame": 249551,
+      "determinant": 1.0,
+      "orthonormal_max_abs_error": 6.661338147750939e-16
+    },
+    {
+      "frame": 459309,
+      "determinant": 0.9999999999999997,
+      "orthonormal_max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "frame": 670589,
+      "determinant": 0.9999999999999996,
+      "orthonormal_max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "frame": 618150,
+      "determinant": 0.9999999999999997,
+      "orthonormal_max_abs_error": 7.771561172376096e-16
+    },
+    {
+      "frame": 824869,
+      "determinant": 1.0000000000000004,
+      "orthonormal_max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "frame": 1055904,
+      "determinant": 0.9999999999999997,
+      "orthonormal_max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "frame": 851470,
+      "determinant": 0.9999999999999997,
+      "orthonormal_max_abs_error": 7.771561172376096e-16
+    },
+    {
+      "frame": 1003470,
+      "determinant": 1.0,
+      "orthonormal_max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "frame": 1160788,
+      "determinant": 1.0000000000000002,
+      "orthonormal_max_abs_error": 4.440892098500626e-16
+    },
+    {
+      "frame": 1030829,
+      "determinant": 0.9999999999999998,
+      "orthonormal_max_abs_error": 3.3306690738754696e-16
+    },
+    {
+      "frame": 1445026,
+      "determinant": 0.9999999999999992,
+      "orthonormal_max_abs_error": 5.551115123125783e-16
+    },
+    {
+      "frame": 1639585,
+      "determinant": 0.9999999999999998,
+      "orthonormal_max_abs_error": 6.661338147750939e-16
+    }
+  ],
+  "method": "Inverse world-to-camera matrices and direct native distorted OpenCV projection independently replay all saved vote totals for a fixed sensor/reason/plant stratified sample. Full cloud used for per-view z-buffer. Ideal pinhole coordinates separately query undistorted stereo depth.",
+  "limits": [
+    "Sampled vote comparison verifies implementation conventions, not semantic correctness of all mask pixels.",
+    "Missing stereo support abstains from negative evidence but can retain a positive z-buffer-visible point; source envelopes do not prove material identity.",
+    "Broad source uncertainty can be resolved by other clear views. Explicit cross-plant clear positives must remain in the uncertain output pool."
+  ]
+}

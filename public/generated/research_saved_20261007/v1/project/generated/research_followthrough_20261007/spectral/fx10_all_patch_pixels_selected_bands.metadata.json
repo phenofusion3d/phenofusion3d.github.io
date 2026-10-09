@@ -1,0 +1,136 @@
+{
+  "warning": "PROVISIONAL board-relative signal; unknown panel spectrum; tail shutter unconfirmed. Not calibrated reflectance or plant health.",
+  "camera": "fx10",
+  "coordinate_convention": "zero-based source scan_line and detector_column",
+  "array_axes": "pixel,selected_band_or_index",
+  "mask": "All pixels inside reviewed polygons; spectrum package separately samples even lines/columns",
+  "selected_bands": [
+    {
+      "target_nm": 445,
+      "source_band_zero_based": 18,
+      "actual_nm": 444.89,
+      "difference_from_target_nm": -0.11000000000001364
+    },
+    {
+      "target_nm": 470,
+      "source_band_zero_based": 28,
+      "actual_nm": 471.26,
+      "difference_from_target_nm": 1.259999999999991
+    },
+    {
+      "target_nm": 500,
+      "source_band_zero_based": 39,
+      "actual_nm": 500.37,
+      "difference_from_target_nm": 0.37000000000000455
+    },
+    {
+      "target_nm": 531,
+      "source_band_zero_based": 51,
+      "actual_nm": 532.25,
+      "difference_from_target_nm": 1.25
+    },
+    {
+      "target_nm": 550,
+      "source_band_zero_based": 58,
+      "actual_nm": 550.91,
+      "difference_from_target_nm": 0.9099999999999682
+    },
+    {
+      "target_nm": 570,
+      "source_band_zero_based": 65,
+      "actual_nm": 569.61,
+      "difference_from_target_nm": -0.38999999999998636
+    },
+    {
+      "target_nm": 660,
+      "source_band_zero_based": 99,
+      "actual_nm": 661.1,
+      "difference_from_target_nm": 1.1000000000000227
+    },
+    {
+      "target_nm": 678,
+      "source_band_zero_based": 105,
+      "actual_nm": 677.36,
+      "difference_from_target_nm": -0.6399999999999864
+    },
+    {
+      "target_nm": 680,
+      "source_band_zero_based": 106,
+      "actual_nm": 680.07,
+      "difference_from_target_nm": 0.07000000000005002
+    },
+    {
+      "target_nm": 720,
+      "source_band_zero_based": 121,
+      "actual_nm": 720.87,
+      "difference_from_target_nm": 0.8700000000000045
+    },
+    {
+      "target_nm": 750,
+      "source_band_zero_based": 132,
+      "actual_nm": 750.93,
+      "difference_from_target_nm": 0.92999999999995
+    },
+    {
+      "target_nm": 790,
+      "source_band_zero_based": 146,
+      "actual_nm": 789.33,
+      "difference_from_target_nm": -0.6699999999999591
+    },
+    {
+      "target_nm": 800,
+      "source_band_zero_based": 150,
+      "actual_nm": 800.34,
+      "difference_from_target_nm": 0.34000000000003183
+    }
+  ],
+  "indices_in_order": [
+    "NDVI_800_680",
+    "NDRE_790_720",
+    "GNDVI_800_550",
+    "PRI_531_570",
+    "PSRI_678_500_750",
+    "SIPI_800_445_680"
+  ],
+  "source_summary_sha256": "95d18870829fa0e39c53469e082ee2fda29d283e76d41638296abd307c233603",
+  "source_product_directory": "generated\\research_20260928_processing_20261007\\spectral_provisional_v1\\products",
+  "array_shapes": {
+    "scan_line": [
+      31925
+    ],
+    "detector_column": [
+      31925
+    ],
+    "patch_id": [
+      31925
+    ],
+    "raw_selected_DN": [
+      31925,
+      13
+    ],
+    "white_board_relative": [
+      31925,
+      13
+    ],
+    "band_quality_flags": [
+      31925,
+      13
+    ],
+    "indices_assumed_tail": [
+      31925,
+      6
+    ],
+    "indices_zero_offset_sensitivity": [
+      31925,
+      6
+    ],
+    "index_flags_assumed_tail": [
+      31925,
+      6
+    ],
+    "index_flags_zero_offset": [
+      31925,
+      6
+    ]
+  }
+}

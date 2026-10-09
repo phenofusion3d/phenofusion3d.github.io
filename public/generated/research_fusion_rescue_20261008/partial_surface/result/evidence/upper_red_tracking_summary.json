@@ -1,0 +1,32 @@
+{
+  "region": "upper_red",
+  "status": "provisional_per_leaf_cross_sensor_tracks_no_3D_accuracy_claim",
+  "native_FX10_queries": 41000,
+  "passes_numeric_tracking": 12482,
+  "inside_inlier_hull": 23517,
+  "valid_tracking": 8044,
+  "unique_native_FX17_pixels_after_rounding": 5244,
+  "gate": "At least3of4overlap bands: FB<=0.5scaledpixel,11x11NCC>=0.85,source/targetstd>=5displayunits,target inside bounded ROI and6pximage margin; maxacceptedcrossbandradius<=1nativeFX17pixel; within affineinliersourceconvexhull.",
+  "registration_model": "Per-leaf affine selected for simplicity, independently fitted from its own local overlap features. No lower-green warp reused.",
+  "remaining_required_intersections": [
+    "reviewed corresponding leaf/tissue masks in both native sensor images",
+    "supported mapping of that material patch into RGB-D geometry",
+    "visibility/depth consistency and unique source-pixel/source-vertex assignment"
+  ],
+  "existing_excluded_red_anchor_check": [
+    {
+      "id": "red_upper_2",
+      "error_native_fx17_px": 0.9097341458821158
+    },
+    {
+      "id": "red_upper_6",
+      "error_native_fx17_px": 0.3816453547788818
+    }
+  ],
+  "spectra_interpolated": false,
+  "raw_spectra_read_or_changed": false,
+  "geometry_assigned": false,
+  "tracking_accuracy_certified": false,
+  "warning": "Image consistency and repeated bands are correlated; points can include background or mixtures. Tracks are not a whole-leaf segmentation and do not establish per-band physical footprints.",
+  "npz_sha256": "f7f3dc13f740ca2e024d0e455784a1d5044c394820e8f9575647cd69bb611a21"
+}

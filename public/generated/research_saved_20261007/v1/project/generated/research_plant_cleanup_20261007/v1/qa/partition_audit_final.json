@@ -1,0 +1,529 @@
+{
+  "status": "pass",
+  "input_points": 1732490,
+  "result_relative_to_repo": "generated/research_plant_cleanup_20261007/v1/result",
+  "classification_sha256": "ca2af9922994117cc8068169ac8bdf91b0b84d7792b7f75bb6dc0df628789fcb",
+  "checks": {
+    "classification_length": true,
+    "fused_indices_exact_sequence": true,
+    "plant_id_domain": true,
+    "reason_domain": true,
+    "camera_id_preserved": true,
+    "original_point_index_preserved": true,
+    "source_count_matches_summary": true,
+    "uncertain_not_assigned": true,
+    "assigned_reason_is_core_or_extension": true,
+    "every_input_in_exactly_one_output_pool": true,
+    "no_duplicate_plant_ownership": true,
+    "per_plant_union_equals_cleaned": true,
+    "P1:all_original_binary_vertex_records_identical": true,
+    "P1:fused_index_exact": true,
+    "P1:camera_id_exact": true,
+    "P1:original_point_index_exact": true,
+    "P1:summary_count_exact": true,
+    "P2:all_original_binary_vertex_records_identical": true,
+    "P2:fused_index_exact": true,
+    "P2:camera_id_exact": true,
+    "P2:original_point_index_exact": true,
+    "P2:summary_count_exact": true,
+    "P3:all_original_binary_vertex_records_identical": true,
+    "P3:fused_index_exact": true,
+    "P3:camera_id_exact": true,
+    "P3:original_point_index_exact": true,
+    "P3:summary_count_exact": true,
+    "P4:all_original_binary_vertex_records_identical": true,
+    "P4:fused_index_exact": true,
+    "P4:camera_id_exact": true,
+    "P4:original_point_index_exact": true,
+    "P4:summary_count_exact": true,
+    "P5:all_original_binary_vertex_records_identical": true,
+    "P5:fused_index_exact": true,
+    "P5:camera_id_exact": true,
+    "P5:original_point_index_exact": true,
+    "P5:summary_count_exact": true,
+    "plants_cleaned:all_original_binary_vertex_records_identical": true,
+    "plants_cleaned:fused_index_exact": true,
+    "plants_cleaned:camera_id_exact": true,
+    "plants_cleaned:original_point_index_exact": true,
+    "plants_cleaned:summary_count_exact": true,
+    "uncertain:all_original_binary_vertex_records_identical": true,
+    "uncertain:fused_index_exact": true,
+    "uncertain:camera_id_exact": true,
+    "uncertain:original_point_index_exact": true,
+    "uncertain:summary_count_exact": true,
+    "scene_context:all_original_binary_vertex_records_identical": true,
+    "scene_context:fused_index_exact": true,
+    "scene_context:camera_id_exact": true,
+    "scene_context:original_point_index_exact": true,
+    "scene_context:summary_count_exact": true,
+    "all_assigned_above_own_floor": true,
+    "no_assigned_negative_evidence": true,
+    "no_assigned_competing_clear_plant_evidence": true,
+    "all_assigned_have_positive_source_evidence": true,
+    "core_has_two_positive_views": true,
+    "core_has_unique_two_view_core": true,
+    "P1:extension_within_reported_core_radius": true,
+    "P2:extension_within_reported_core_radius": true,
+    "P3:extension_within_reported_core_radius": true,
+    "P4:extension_within_reported_core_radius": true,
+    "P5:extension_within_reported_core_radius": true,
+    "no_extension_resolves_multiple_core_conflict": true,
+    "input_manifest_matches_current_sources": true,
+    "output_manifest_matches_current_files": true,
+    "all_reviewed_frame_hashes_match": true
+  },
+  "record_checks": [
+    {
+      "output": "P1",
+      "points": 21891,
+      "all_original_binary_vertex_records_identical": true,
+      "fused_index_exact": true,
+      "camera_id_exact": true,
+      "original_point_index_exact": true,
+      "summary_count_exact": true
+    },
+    {
+      "output": "P2",
+      "points": 74306,
+      "all_original_binary_vertex_records_identical": true,
+      "fused_index_exact": true,
+      "camera_id_exact": true,
+      "original_point_index_exact": true,
+      "summary_count_exact": true
+    },
+    {
+      "output": "P3",
+      "points": 113901,
+      "all_original_binary_vertex_records_identical": true,
+      "fused_index_exact": true,
+      "camera_id_exact": true,
+      "original_point_index_exact": true,
+      "summary_count_exact": true
+    },
+    {
+      "output": "P4",
+      "points": 69634,
+      "all_original_binary_vertex_records_identical": true,
+      "fused_index_exact": true,
+      "camera_id_exact": true,
+      "original_point_index_exact": true,
+      "summary_count_exact": true
+    },
+    {
+      "output": "P5",
+      "points": 156185,
+      "all_original_binary_vertex_records_identical": true,
+      "fused_index_exact": true,
+      "camera_id_exact": true,
+      "original_point_index_exact": true,
+      "summary_count_exact": true
+    },
+    {
+      "output": "plants_cleaned",
+      "points": 435917,
+      "all_original_binary_vertex_records_identical": true,
+      "fused_index_exact": true,
+      "camera_id_exact": true,
+      "original_point_index_exact": true,
+      "summary_count_exact": true
+    },
+    {
+      "output": "uncertain",
+      "points": 603740,
+      "all_original_binary_vertex_records_identical": true,
+      "fused_index_exact": true,
+      "camera_id_exact": true,
+      "original_point_index_exact": true,
+      "summary_count_exact": true
+    },
+    {
+      "output": "scene_context",
+      "points": 692833,
+      "all_original_binary_vertex_records_identical": true,
+      "fused_index_exact": true,
+      "camera_id_exact": true,
+      "original_point_index_exact": true,
+      "summary_count_exact": true
+    }
+  ],
+  "extension_distances": {
+    "P1": {
+      "extensions": 9802,
+      "max_distance_m": 0.003998237576109369
+    },
+    "P2": {
+      "extensions": 24054,
+      "max_distance_m": 0.003999483168047105
+    },
+    "P3": {
+      "extensions": 28846,
+      "max_distance_m": 0.003999954741013402
+    },
+    "P4": {
+      "extensions": 28497,
+      "max_distance_m": 0.003999859816578218
+    },
+    "P5": {
+      "extensions": 34375,
+      "max_distance_m": 0.003999983621333275
+    }
+  },
+  "ownership_ambiguity_diagnostics": {
+    "P1": {
+      "assigned_with_other_plant_positive": 0,
+      "assigned_with_other_plant_uncertain": 2487,
+      "assigned_with_own_uncertain_views": 10774,
+      "extensions_from_multiple_two_view_cores": 0,
+      "extensions_with_other_plant_positive": 0
+    },
+    "P2": {
+      "assigned_with_other_plant_positive": 0,
+      "assigned_with_other_plant_uncertain": 7172,
+      "assigned_with_own_uncertain_views": 6233,
+      "extensions_from_multiple_two_view_cores": 0,
+      "extensions_with_other_plant_positive": 0
+    },
+    "P3": {
+      "assigned_with_other_plant_positive": 0,
+      "assigned_with_other_plant_uncertain": 51693,
+      "assigned_with_own_uncertain_views": 19377,
+      "extensions_from_multiple_two_view_cores": 0,
+      "extensions_with_other_plant_positive": 0
+    },
+    "P4": {
+      "assigned_with_other_plant_positive": 0,
+      "assigned_with_other_plant_uncertain": 4431,
+      "assigned_with_own_uncertain_views": 11826,
+      "extensions_from_multiple_two_view_cores": 0,
+      "extensions_with_other_plant_positive": 0
+    },
+    "P5": {
+      "assigned_with_other_plant_positive": 0,
+      "assigned_with_other_plant_uncertain": 23818,
+      "assigned_with_own_uncertain_views": 21815,
+      "extensions_from_multiple_two_view_cores": 0,
+      "extensions_with_other_plant_positive": 0
+    }
+  },
+  "input_manifest_checks": [
+    {
+      "path": "generated\\research_d405_l515_fusion_20261007\\v1\\fused_review_reference.ply",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_d405_l515_fusion_20261007\\v1\\fused_point_provenance.npz",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_d405_l515_fusion_20261007\\v1\\summary.json",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\profile.json",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\result\\icp_diagnostics.json",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_l515_20261007\\cross_camera\\pot_rigid_probe\\inputs.json",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_plant_cleanup_20261007\\source_review\\p1_p2\\P1_P2_basal_nonplant_depth_support.json",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_plant_cleanup_20261007\\source_review\\p1_p2\\P1_P2_multiview_polygon_review.json",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_plant_cleanup_20261007\\source_review\\p3_p4\\source_review_p3_p4.json",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_plant_cleanup_20261007\\source_review\\p5\\P5_source_review.json",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_plant_cleanup_20261007\\cleanup.py",
+      "matches": true
+    },
+    {
+      "path": "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_143152.png",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_143152.npz",
+      "matches": true
+    },
+    {
+      "path": "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_302754.png",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_302754.npz",
+      "matches": true
+    },
+    {
+      "path": "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_459309.png",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_459309.npz",
+      "matches": true
+    },
+    {
+      "path": "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_249551.png",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_249551.npz",
+      "matches": true
+    },
+    {
+      "path": "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_670589.png",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_670589.npz",
+      "matches": true
+    },
+    {
+      "path": "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_618150.png",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_618150.npz",
+      "matches": true
+    },
+    {
+      "path": "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_824869.png",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_824869.npz",
+      "matches": true
+    },
+    {
+      "path": "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1055904.png",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1055904.npz",
+      "matches": true
+    },
+    {
+      "path": "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_851470.png",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_851470.npz",
+      "matches": true
+    },
+    {
+      "path": "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1003470.png",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1003470.npz",
+      "matches": true
+    },
+    {
+      "path": "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1160788.png",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1160788.npz",
+      "matches": true
+    },
+    {
+      "path": "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1030829.png",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1030829.npz",
+      "matches": true
+    },
+    {
+      "path": "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1445026.png",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1445026.npz",
+      "matches": true
+    },
+    {
+      "path": "data\\main\\test_plant_10-7\\test_plant_20260928162354\\rgb_1639585.png",
+      "matches": true
+    },
+    {
+      "path": "generated\\research_20260928_improvement_20261007\\short_dense_v3\\rgb\\depth_1639585.npz",
+      "matches": true
+    }
+  ],
+  "output_manifest_checks": [
+    {
+      "path": "input_hashes.json",
+      "matches": true
+    },
+    {
+      "path": "P1_provenance.npz",
+      "matches": true
+    },
+    {
+      "path": "P1_reference.ply",
+      "matches": true
+    },
+    {
+      "path": "P2_provenance.npz",
+      "matches": true
+    },
+    {
+      "path": "P2_reference.ply",
+      "matches": true
+    },
+    {
+      "path": "P3_provenance.npz",
+      "matches": true
+    },
+    {
+      "path": "P3_reference.ply",
+      "matches": true
+    },
+    {
+      "path": "P4_provenance.npz",
+      "matches": true
+    },
+    {
+      "path": "P4_reference.ply",
+      "matches": true
+    },
+    {
+      "path": "P5_provenance.npz",
+      "matches": true
+    },
+    {
+      "path": "P5_reference.ply",
+      "matches": true
+    },
+    {
+      "path": "plants_cleaned_provenance.npz",
+      "matches": true
+    },
+    {
+      "path": "plants_cleaned_reference.ply",
+      "matches": true
+    },
+    {
+      "path": "point_classification.npz",
+      "matches": true
+    },
+    {
+      "path": "scene_context_provenance.npz",
+      "matches": true
+    },
+    {
+      "path": "scene_context_reference.ply",
+      "matches": true
+    },
+    {
+      "path": "summary.json",
+      "matches": true
+    },
+    {
+      "path": "uncertain_provenance.npz",
+      "matches": true
+    },
+    {
+      "path": "uncertain_reference.ply",
+      "matches": true
+    }
+  ],
+  "reviewed_source_hash_checks": [
+    {
+      "plant": "P1",
+      "frame": 143152,
+      "matches": true
+    },
+    {
+      "plant": "P1",
+      "frame": 302754,
+      "matches": true
+    },
+    {
+      "plant": "P1",
+      "frame": 459309,
+      "matches": true
+    },
+    {
+      "plant": "P2",
+      "frame": 249551,
+      "matches": true
+    },
+    {
+      "plant": "P2",
+      "frame": 459309,
+      "matches": true
+    },
+    {
+      "plant": "P2",
+      "frame": 670589,
+      "matches": true
+    },
+    {
+      "plant": "P3",
+      "frame": 618150,
+      "matches": true
+    },
+    {
+      "plant": "P3",
+      "frame": 824869,
+      "matches": true
+    },
+    {
+      "plant": "P3",
+      "frame": 1055904,
+      "matches": true
+    },
+    {
+      "plant": "P4",
+      "frame": 851470,
+      "matches": true
+    },
+    {
+      "plant": "P4",
+      "frame": 1003470,
+      "matches": true
+    },
+    {
+      "plant": "P4",
+      "frame": 1160788,
+      "matches": true
+    },
+    {
+      "plant": "P5",
+      "frame": 1030829,
+      "matches": true
+    },
+    {
+      "plant": "P5",
+      "frame": 1445026,
+      "matches": true
+    },
+    {
+      "plant": "P5",
+      "frame": 1639585,
+      "matches": true
+    }
+  ],
+  "scope": "Complete original binary vertex records including position/normal/colour compared. Entire partition and provenance arrays checked, no random sample.",
+  "logic_review_limits": [
+    "Positive votes currently can arise from a source envelope without stereo-depth agreement; z-buffer plus stereo occlusion veto is visibility evidence, not tissue proof.",
+    "Occluded/out-of-frame pixels abstain. A 1-pixel nearest-depth neighbourhood may conservatively suppress thin tissue.",
+    "Broad envelopes can contain unknown background; basal floors and negative samples are approximate.",
+    "The updated classifier withholds every point having clear positives for multiple plants. Broad uncertain-envelope hits may be resolved by clear observations in other views.",
+    "Close geometry alone cannot decide which plant owns a point; extension requires source-positive evidence with no competing plant positives."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "prepared_utc": "2026-10-07T10:22:36.262463+00:00",
+  "status": "OFFLINE_LAB_CANDIDATE_PREPARED_PHYSICAL_OPERATOR_ACCEPTANCE_PENDING",
+  "base_commit": "920a577958a22e10998d24935265c77e2296d867",
+  "uncommitted_source_changes": [
+    "tests/test_gantry_offline.py"
+  ],
+  "source_change_purpose": "Bounded wait for cross-thread Qt error delivery in a test; no production code change.",
+  "candidate_source_manifest": "lab_test_kit_v2/SOURCE_MANIFEST.json",
+  "linux_tests": {
+    "tests": 142,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 1,
+    "passed": 141
+  },
+  "windows_targeted_gantry_tests": {
+    "tests": 18,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 18
+  },
+  "preflight_guard_tests": {
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "passed": true,
+    "script_sha256": "19735a9fe78163730332d30eed9d49cd84258e0e409d5cdb0af160134bb766a0",
+    "scope": "Metadata preflight guards only; no physical hardware or laboratory acceptance."
+  },
+  "protected_files_unchanged": 26,
+  "lab_kit_archive": "PhenoFusion3D_lab_test_kit_v2.zip",
+  "lab_kit_sha256": "c829b887087933031a32260f8a7bb0451ab8b1654dcef84dfa85d4b00101a2a6",
+  "prior_kit_and_research_archive_preserved": true,
+  "hardware_accessed": false,
+  "physical_lab_acceptance": null,
+  "metric_scale_verified": false,
+  "new_applicable_calibration_recovered": false,
+  "spectral_3d_physical_fusion": null,
+  "new_research_data_processed": false,
+  "pushed": false,
+  "next_action": "Run the portable metadata preflight on the actual lab interpreter against the working lab checkout; record operator checks and recover original September calibration records.",
+  "runtime_limit": "Linux checks ran on WSL2 in an isolated fresh environment, using an extracted official libusb only for test processes. This is not the physical lab environment.",
+  "independent_kit_review": "v2_independent_source_check.json",
+  "browser_report_check": "page_validation.json"
+}

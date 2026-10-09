@@ -1,0 +1,355 @@
+{
+  "formula": "scenario_distance = saved_observed_chord \u00d7 (1 + hypothetical_percent/100)",
+  "assumptions": "Uniform multiplicative distance scale only. No inference that actual error is uniform, bounded by these percentages or independent of endpoint uncertainty. No reference fitting, new point selection, or cloud rescaling.",
+  "scenarios": [
+    {
+      "chord_id": "P1.O03.observed_blade_extent",
+      "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+      "baseline_conditional_cm": 5.642877354066358,
+      "hypothetical_scale_change_percent": -5,
+      "uniform_scale_factor": 0.95,
+      "scenario_distance_cm": 5.360733486363039,
+      "change_from_baseline_cm": -0.2821438677033182,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P1.O03.observed_blade_extent",
+      "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+      "baseline_conditional_cm": 5.642877354066358,
+      "hypothetical_scale_change_percent": -2,
+      "uniform_scale_factor": 0.98,
+      "scenario_distance_cm": 5.530019806985031,
+      "change_from_baseline_cm": -0.11285754708132725,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P1.O03.observed_blade_extent",
+      "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+      "baseline_conditional_cm": 5.642877354066358,
+      "hypothetical_scale_change_percent": -1,
+      "uniform_scale_factor": 0.99,
+      "scenario_distance_cm": 5.586448580525694,
+      "change_from_baseline_cm": -0.056428773540663626,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P1.O03.observed_blade_extent",
+      "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+      "baseline_conditional_cm": 5.642877354066358,
+      "hypothetical_scale_change_percent": 0,
+      "uniform_scale_factor": 1.0,
+      "scenario_distance_cm": 5.642877354066358,
+      "change_from_baseline_cm": 0.0,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P1.O03.observed_blade_extent",
+      "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+      "baseline_conditional_cm": 5.642877354066358,
+      "hypothetical_scale_change_percent": 1,
+      "uniform_scale_factor": 1.01,
+      "scenario_distance_cm": 5.699306127607022,
+      "change_from_baseline_cm": 0.056428773540663626,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P1.O03.observed_blade_extent",
+      "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+      "baseline_conditional_cm": 5.642877354066358,
+      "hypothetical_scale_change_percent": 2,
+      "uniform_scale_factor": 1.02,
+      "scenario_distance_cm": 5.755734901147685,
+      "change_from_baseline_cm": 0.11285754708132725,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P1.O03.observed_blade_extent",
+      "scope": "Reconstructed upper narrow blade portion; the thin dry terminal tip is not included.",
+      "baseline_conditional_cm": 5.642877354066358,
+      "hypothetical_scale_change_percent": 5,
+      "uniform_scale_factor": 1.05,
+      "scenario_distance_cm": 5.9250212217696765,
+      "change_from_baseline_cm": 0.2821438677033182,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P3.O03.blade_chord",
+      "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+      "baseline_conditional_cm": 7.475255446013435,
+      "hypothetical_scale_change_percent": -5,
+      "uniform_scale_factor": 0.95,
+      "scenario_distance_cm": 7.101492673712762,
+      "change_from_baseline_cm": -0.37376277230067206,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P3.O03.blade_chord",
+      "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+      "baseline_conditional_cm": 7.475255446013435,
+      "hypothetical_scale_change_percent": -2,
+      "uniform_scale_factor": 0.98,
+      "scenario_distance_cm": 7.325750337093166,
+      "change_from_baseline_cm": -0.14950510892026883,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P3.O03.blade_chord",
+      "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+      "baseline_conditional_cm": 7.475255446013435,
+      "hypothetical_scale_change_percent": -1,
+      "uniform_scale_factor": 0.99,
+      "scenario_distance_cm": 7.4005028915533,
+      "change_from_baseline_cm": -0.07475255446013442,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P3.O03.blade_chord",
+      "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+      "baseline_conditional_cm": 7.475255446013435,
+      "hypothetical_scale_change_percent": 0,
+      "uniform_scale_factor": 1.0,
+      "scenario_distance_cm": 7.475255446013435,
+      "change_from_baseline_cm": 0.0,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P3.O03.blade_chord",
+      "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+      "baseline_conditional_cm": 7.475255446013435,
+      "hypothetical_scale_change_percent": 1,
+      "uniform_scale_factor": 1.01,
+      "scenario_distance_cm": 7.55000800047357,
+      "change_from_baseline_cm": 0.07475255446013442,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P3.O03.blade_chord",
+      "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+      "baseline_conditional_cm": 7.475255446013435,
+      "hypothetical_scale_change_percent": 2,
+      "uniform_scale_factor": 1.02,
+      "scenario_distance_cm": 7.624760554933704,
+      "change_from_baseline_cm": 0.14950510892026883,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P3.O03.blade_chord",
+      "scope": "Oval blade lowest visible basal-lamina junction to terminal margin straight chord candidate.",
+      "baseline_conditional_cm": 7.475255446013435,
+      "hypothetical_scale_change_percent": 5,
+      "uniform_scale_factor": 1.05,
+      "scenario_distance_cm": 7.849018218314107,
+      "change_from_baseline_cm": 0.37376277230067206,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P5.O04.terminal_lamina_chord",
+      "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+      "baseline_conditional_cm": 12.148629537473008,
+      "hypothetical_scale_change_percent": -5,
+      "uniform_scale_factor": 0.95,
+      "scenario_distance_cm": 11.541198060599356,
+      "change_from_baseline_cm": -0.607431476873651,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P5.O04.terminal_lamina_chord",
+      "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+      "baseline_conditional_cm": 12.148629537473008,
+      "hypothetical_scale_change_percent": -2,
+      "uniform_scale_factor": 0.98,
+      "scenario_distance_cm": 11.905656946723548,
+      "change_from_baseline_cm": -0.24297259074946037,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P5.O04.terminal_lamina_chord",
+      "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+      "baseline_conditional_cm": 12.148629537473008,
+      "hypothetical_scale_change_percent": -1,
+      "uniform_scale_factor": 0.99,
+      "scenario_distance_cm": 12.027143242098278,
+      "change_from_baseline_cm": -0.12148629537473019,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P5.O04.terminal_lamina_chord",
+      "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+      "baseline_conditional_cm": 12.148629537473008,
+      "hypothetical_scale_change_percent": 0,
+      "uniform_scale_factor": 1.0,
+      "scenario_distance_cm": 12.148629537473008,
+      "change_from_baseline_cm": 0.0,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P5.O04.terminal_lamina_chord",
+      "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+      "baseline_conditional_cm": 12.148629537473008,
+      "hypothetical_scale_change_percent": 1,
+      "uniform_scale_factor": 1.01,
+      "scenario_distance_cm": 12.270115832847738,
+      "change_from_baseline_cm": 0.12148629537473019,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P5.O04.terminal_lamina_chord",
+      "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+      "baseline_conditional_cm": 12.148629537473008,
+      "hypothetical_scale_change_percent": 2,
+      "uniform_scale_factor": 1.02,
+      "scenario_distance_cm": 12.391602128222468,
+      "change_from_baseline_cm": 0.24297259074946037,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    },
+    {
+      "chord_id": "P5.O04.terminal_lamina_chord",
+      "scope": "Visible terminal lamina portion only; basal lobes/petiole-side origin are not included.",
+      "baseline_conditional_cm": 12.148629537473008,
+      "hypothetical_scale_change_percent": 5,
+      "uniform_scale_factor": 1.05,
+      "scenario_distance_cm": 12.75606101434666,
+      "change_from_baseline_cm": 0.607431476873651,
+      "scenario_kind": "hypothetical only; not inferred uncertainty",
+      "physical_accuracy_validated": false
+    }
+  ],
+  "bands": [
+    {
+      "chord_id": "P1.O03.observed_blade_extent",
+      "hypothetical_plus_minus_percent": 1,
+      "baseline_conditional_cm": 5.642877354066358,
+      "lower_scenario_cm": 5.586448580525694,
+      "upper_scenario_cm": 5.699306127607022,
+      "half_range_cm": 0.05642877354066358,
+      "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+    },
+    {
+      "chord_id": "P1.O03.observed_blade_extent",
+      "hypothetical_plus_minus_percent": 2,
+      "baseline_conditional_cm": 5.642877354066358,
+      "lower_scenario_cm": 5.530019806985031,
+      "upper_scenario_cm": 5.755734901147685,
+      "half_range_cm": 0.11285754708132716,
+      "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+    },
+    {
+      "chord_id": "P1.O03.observed_blade_extent",
+      "hypothetical_plus_minus_percent": 5,
+      "baseline_conditional_cm": 5.642877354066358,
+      "lower_scenario_cm": 5.360733486363039,
+      "upper_scenario_cm": 5.9250212217696765,
+      "half_range_cm": 0.2821438677033179,
+      "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+    },
+    {
+      "chord_id": "P3.O03.blade_chord",
+      "hypothetical_plus_minus_percent": 1,
+      "baseline_conditional_cm": 7.475255446013435,
+      "lower_scenario_cm": 7.4005028915533,
+      "upper_scenario_cm": 7.55000800047357,
+      "half_range_cm": 0.07475255446013435,
+      "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+    },
+    {
+      "chord_id": "P3.O03.blade_chord",
+      "hypothetical_plus_minus_percent": 2,
+      "baseline_conditional_cm": 7.475255446013435,
+      "lower_scenario_cm": 7.325750337093166,
+      "upper_scenario_cm": 7.624760554933704,
+      "half_range_cm": 0.1495051089202687,
+      "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+    },
+    {
+      "chord_id": "P3.O03.blade_chord",
+      "hypothetical_plus_minus_percent": 5,
+      "baseline_conditional_cm": 7.475255446013435,
+      "lower_scenario_cm": 7.101492673712762,
+      "upper_scenario_cm": 7.849018218314107,
+      "half_range_cm": 0.37376277230067173,
+      "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+    },
+    {
+      "chord_id": "P5.O04.terminal_lamina_chord",
+      "hypothetical_plus_minus_percent": 1,
+      "baseline_conditional_cm": 12.148629537473008,
+      "lower_scenario_cm": 12.027143242098278,
+      "upper_scenario_cm": 12.270115832847738,
+      "half_range_cm": 0.12148629537473007,
+      "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+    },
+    {
+      "chord_id": "P5.O04.terminal_lamina_chord",
+      "hypothetical_plus_minus_percent": 2,
+      "baseline_conditional_cm": 12.148629537473008,
+      "lower_scenario_cm": 11.905656946723548,
+      "upper_scenario_cm": 12.391602128222468,
+      "half_range_cm": 0.24297259074946015,
+      "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+    },
+    {
+      "chord_id": "P5.O04.terminal_lamina_chord",
+      "hypothetical_plus_minus_percent": 5,
+      "baseline_conditional_cm": 12.148629537473008,
+      "lower_scenario_cm": 11.541198060599356,
+      "upper_scenario_cm": 12.75606101434666,
+      "half_range_cm": 0.6074314768736504,
+      "interpretation": "Uniform-scale scenario only; not a confidence interval, not an estimated scale error."
+    }
+  ],
+  "endpoint_sensitivity_separate": [
+    {
+      "chord_id": "P1.O03.observed_blade_extent",
+      "baseline_conditional_cm": 5.642877354066358,
+      "endpoint_disk_range_cm": [
+        4.976776262496502,
+        6.670808387156944
+      ],
+      "endpoint_disk_definition": "Full min/max of all endpoint-pair distances within independently clicked 4px source disks; not a confidence interval or calibrated physical uncertainty.",
+      "scale_scenarios_are_separate": true,
+      "combined_uncertainty_interval_computed": false
+    },
+    {
+      "chord_id": "P3.O03.blade_chord",
+      "baseline_conditional_cm": 7.475255446013435,
+      "endpoint_disk_range_cm": [
+        6.706684147069889,
+        8.419306985087646
+      ],
+      "endpoint_disk_definition": "Full min/max of all endpoint-pair distances within independently clicked 4px source disks; not a confidence interval or calibrated physical uncertainty.",
+      "scale_scenarios_are_separate": true,
+      "combined_uncertainty_interval_computed": false
+    },
+    {
+      "chord_id": "P5.O04.terminal_lamina_chord",
+      "baseline_conditional_cm": 12.148629537473008,
+      "endpoint_disk_range_cm": [
+        10.711865475651088,
+        13.761444924819703
+      ],
+      "endpoint_disk_definition": "Full min/max of all endpoint-pair distances within independently clicked 4px source disks; not a confidence interval or calibrated physical uncertainty.",
+      "scale_scenarios_are_separate": true,
+      "combined_uncertainty_interval_computed": false
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+PHYSICAL SCAN-CAMERA RESCUE: 8 OCTOBER 2026
+
+Scope
+-----
+These are new camera-model experiments. Original calibration, reconstructions,
+spectra, earlier results and hardware/software capture paths were not changed.
+No spectra have been assigned or interpolated by these experiments. Both FX10
+and FX17 were tested; additional independently reviewed training landmarks were
+available only for FX10. None of the new reserved landmark coordinates or scores
+were consumed while fitting or selecting the frozen models.
+
+Coordinate audit
+----------------
+The old metric conversion multiplies old reference XYZ exactly once by
+1.0288746669066682. Board XYZ and bridge translation are already metric. The row-
+vector inverse bridge is (P_plant - t) @ R, which is correct. The metric board
+basis and bridge rotation are orthonormal within floating-point precision.
+There is no demonstrated scale, inversion, normal-sign or axis-swap bug here.
+The camera-to-plant bridge is small but provisional; it is separately tested
+below using the original recorded paper matches.
+
+Physical model
+--------------
+For a fixed-orientation line camera moving as C(t)=C0+v*t, the sensor-line plane
+condition is e_y dot (P-C(t))=0. Thus scan time/line is affine in XYZ. At that
+time, the detector column is a ratio of two affine functions. Translating P in
+the known gantry direction changes scan line but leaves detector column fixed.
+
+We therefore use X parallel to the measured FULL 3D gantry direction, with Y,Z
+transverse, and fit:
+
+  column = (ay*Y + ah*Z + a0) / (1 + by*Y + bh*Z)
+  line   = lx*X + ly*Y + lh*Z + l0
+
+This removes spurious along-motion detector-column terms allowed by the older
+unconstrained planar rational fit. All board coordinates and exposed elevated
+controls are fitted jointly. Bounds retain a positive denominator at the actual
+leaves and avoid implausibly near-parallel scan-plane configurations. Optical
+centre priors are broad hypotheses, not manufacturer-calibrated intrinsics.
+Reported focal/height interpretations assume approximately orthogonal scanning;
+they are diagnostic interpretations, not an independently recovered full rig.
+
+Identifiability
+---------------
+With truly planar Z=0 observations, three of nine coefficients (ah,bh,lh) are
+unobservable. The nominal board surfaces depart from their mean plane by only
+about +/-0.35 mm, including pose and paper uncertainty, whereas these plant
+features are about 350-392 mm above it. That tiny apparent non-planarity cannot
+be treated as accurate elevated control evidence. Image-plane fits can therefore
+be excellent while many different elevated projections remain plausible.
+
+Exposed-control experiments
+--------------------------
+Four camera prior configurations were fitted per sensor, preserving all results.
+Each includes leave-one-old-feature and whole-board-sheet removal. These are
+selection diagnostics: the three old P5 correspondences and old sheet controls
+were already inspected in earlier work. They are not fresh final validation.
+
+Unregularized translating-camera joint fits have table RMS 0.633 px FX10 and
+0.337 px FX17, but exposed elevated RMS 6.392 and 5.670 px respectively. The
+stronger near-nadir prior reduces the worst FX10 leave-one-old-feature error from
+129.94 to 35.84 px. For FX17 the weak optical prior gives the best worst error,
+12.24 px, compared with 89.44 px without it. No tested prior makes these three
+uncertain observed centres mutually precise while retaining the table fit.
+
+The red feature pair has native line separation 53.578 px FX10 / 52.762 px FX17,
+but the corresponding table-calibrated geometry predicts approximately 44.689 /
+44.773 px. The 8.889 / 7.989 px discrepancies cannot be explained by the tiny
+0.241 mm difference in their motion-frame heights using a sensible constant
+scan-plane tilt. If every other coefficient is held fixed, that would require
+about 88 degrees. This is a conflict of the current observations with that
+specific model; it does NOT identify camera height as the sole error source.
+
+Independent visual audit judged the same red neighbourhoods plausible, but the
+automatic feature centres are not surveyed physical points. Approximate HSI
+localization uncertainty is 3-4 px and native RGB uncertainty 2-3 px, subjectively
+assessed. Thus the former 3-pixel screen is not physical ground truth and should
+not be applied as though these centres were exact.
+
+Alternative explanations actually tested
+---------------------------------------
+1. Scan-speed/transfer drift: linear and quadratic fits to previously exposed
+   static 002-to-003 controls predict only 0.003-0.011 px differential line shift
+   over this red pair. Smooth drift supported by those controls cannot explain
+   the approximately 8-9 px discrepancy. Previously exposed static controls
+   and leave-one-feature errors are retained.
+2. RGB run bridge: two scan cameras and the six-DOF bridge were jointly optimized
+   against the original 386 unique recorded paper correspondences, board points
+   and old elevated correspondences. HSI uncertainty was relaxed to 4 px.
+   RGB support sigma 1,2,5 px was tested; 5 px is explicitly a stress relaxation.
+   Full fits retain paper RMS about 1.27 px but elevated RMS about 6.38-6.44 FX10
+   and 5.65-5.71 FX17. The joint bridge does not remove the discrepancy.
+3. Newly audited material features: two FX10 features were added BEFORE any
+   reserved-point scores were available. Three optical priors were tested with
+   direct depth-lift XYZ and with nearest original cloud XYZ: six frozen models.
+   Primary: weak optical prior + direct depth lift, avoiding a nearest-vertex
+   shift. Board RMS 0.632 px; five-feature training RMS 5.651 px.
+4. Rendered-geometry colour/silhouette search: 18,215 existing red/green P5 points
+   were projected into the saved native FX10 pseudoRGB image. Three height/ray
+   coefficients were optimized against same-colour-region distance, not reserved
+   point labels. Three starting values were retained. A first implementation
+   wrongly penalized genuinely out-of-FOV geometry and favoured shrunken leaves;
+   that failed variant remains saved. Version 2 censors out-of-FOV points and
+   applies an explicit minimum-visibility sensitivity penalty.
+
+The final colour-objective minimum has 90.85% of projected green-class points
+and 98.41% of red-class points within 3 native pixels of the same observed colour
+class. This is broad region agreement, NOT a 3-pixel material-point error, a
+visibility proof, or a dense fusion accuracy score. It has a near-orthogonal
+camera-height interpretation of 1.028 m and principal column 527.65 px.
+
+The two distinct primary models disagree by median 5.52 px and 95th percentile
+13.47 px over 145,459 existing P5 points that project inside FX10 in both models.
+This demonstrates why a convincing leaf silhouette still needs independent
+material-point checks. This spread is model disagreement, not a calibrated
+uncertainty interval. The colour-class objective does not explicitly recover
+per-point occlusions; it cannot certify which overlapping surface was observed.
+
+Frozen-model independent checks
+-------------------------------
+The control-audit agent received frozen_candidates.json and
+frozen_silhouette_candidates_v2.json with the complete parameters, bridge,
+coordinate basis, pixel translation and evaluation recipe. It withheld five
+new material-point labels and their scores during all fitting. Scores are saved
+separately in control_audit, with subjective localization radii and sensitivity
+to direct depth-lift versus nearest original vertex. These remain image-based
+checks on this recording, not independently surveyed physical targets.
+
+After freezing, the agent released the following native FX10 HSI residuals:
+
+  Reserved feature           Physical primary     Colour-objective primary
+  Red right notch                 4.865 px               5.354 px
+  Red distal tip                  8.842 px               6.520 px
+  Green basal notch               8.833 px               8.618 px
+  Green basal vein (LOW identity) 26.839 px              35.749 px
+  Green distal vein               5.945 px              19.845 px
+
+The last green vein's prediction also moves by 5.60 px when direct depth lift
+is replaced with the nearest original vertex, illustrating source localization
+sensitivity. The low-identity green basal vein was labelled low before scoring;
+it is retained but must not alone decide acceptance. No landmark is eligible for
+a strict physical-accuracy gate: their subjective uncertainty is about 4-5 HSI
+pixels and 3 RGB pixels, plus 3D localization/model uncertainty. No calibrated
+confidence intervals are available.
+
+The independently reserved checks support a useful coarse projection but do not
+establish precise dense material-point mapping. Optimizing broad colour overlap
+does not reliably improve the checks, particularly on the green distal vein.
+No fit was changed after these scores were released. The saved outputs are model
+experiments, not a newly validated dense spectral fusion product. A limited
+approximate overlay, if shown separately, must state these measured image-space
+residuals and the limits of the control identities, rather than calling the
+registration perfect or the manually assigned control centres exact.
+
+Reproduction and evidence
+-------------------------
+fit_physical_models.py -> physical_model_results.json, summary.json
+joint_bridge_fit.py -> joint_bridge_results.json
+freeze_new_training.py -> frozen_candidates.json
+silhouette_camera_search.py -> frozen_silhouette_candidates_v2.json
+silhouette_projection_comparison_v2.jpg -> original geometry over native HSI
+model_disagreement.json -> explicitly conditional model sensitivity
+
+Run with the existing bundled Python and repository venv packages, OMP threads 2.
+All parameters, bounds, weighting, losses, per-control residuals and original
+source hashes are retained in the JSON evidence. Frozen outputs must not be
+retrained on their reserved evaluation results.

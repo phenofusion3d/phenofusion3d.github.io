@@ -1,0 +1,248 @@
+PRESENTATION GUIDE
+
+Use the main slides for the research narrative. The appendix provides all 13 conditional leaf comparisons, detailed evidence, software boundaries and questions to expect.
+
+Core outcome: the metric geometry and measured spectral review are available, and this follow-through adds twelve leaf comparisons to the previous one. The new dense projection diagnostic fails its registration check and is rejected for measurement. Do not present its coloured points as an accepted fusion improvement.
+
+Demonstration: start at http://127.0.0.1:8877/research_sprint_review_20261008/index.html. This consolidates the new comparisons and diagnostics with the earlier result pages. The public final-sprint route returned 404 during the 8 October check, so verify deployment before relying on the public URL in class. Open the new trait comparison report and the rejected projection diagnostic separately from the earlier September result page.
+
+Numbers record software outputs rather than certified physical precision. The original operator references remain visible.
+
+SLIDE 1: PhenoFusion3D final sprint review
+
+Our final sprint brings together two RGB-D cameras, five plants, manual measurements and two hyperspectral sensors. I will show what the software now produces, how each fusion stage works, the comparison we can support, and what still needs stronger geometric or radiometric evidence. The dataset is the September five-plant recording. Earlier dense examples used different data.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\README.md
+
+========================================================================
+
+SLIDE 2: Study scope and current evidence
+
+The camera names in the saved spectral data are FX10 and FX17. The workflow has several distinct outputs. Geometry fusion combines observed 3D points from D405 and L515. Spectral fusion assigns a measured spectrum to the matching 3D surface. Those are separate problems. All numbers on this slide describe the confirmed-board September recheck, not the previous August showcase.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\README.md
+
+========================================================================
+
+SLIDE 3: The known board size fixes the metric scale
+
+Saswat confirmed a 7 by 10 ChArUco target with 25 mm cells, 18 mm markers and the DICT_4X4_50 dictionary. The D405 geometry was re-expressed at scale 1.0288746669, giving a 2.8875 percent change in lengths. This transformation preserves the source point identity, colour and image projections. It does not reconstruct a missing tip or add hidden leaf surfaces. The L515 experiment replays raw depth at both the nominal candidate conversion and an empirical board-derived conversion. The latter is a research calibration candidate, because session device metadata does not independently certify that conversion.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\board_confirmation.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\d405_metric_calibration.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\cross_camera\selection.json
+
+========================================================================
+
+SLIDE 4: D405 and L515 geometry fusion
+
+First, the board provides metric camera geometry. We align L515 rigidly to the D405 reference using selected pot and scene regions, with bounded ICP refinements. Fixed matched soil features compare two L515 conversion candidates. The board-derived candidate has 6.289 mm median disagreement versus 11.160 mm for the newly metric nominal candidate. This is measured alignment disagreement, and the checking data helped select the variant. It is not an untouched final accuracy result. We retain D405 as the reference and add supported L515 observations where they contribute, while filtering duplicates and inconsistent overlap. The union retains an exact source-camera and source-point identity for every point.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\cross_camera\selection.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\fusion_v1\summary.json
+
+========================================================================
+
+SLIDE 5: Five cleaned plant candidates
+
+Cleanup projects points back into reviewed source-image masks. Multiple positive views support the core, and a limited neighbourhood admits one-view edge observations. Ambiguous and scene points remain recoverable in separate files. The five tissue candidates contain 430,060 observed points. Missing thin stems, tips and undersides remain visible. This figure shows the same upright metric frame across the five plants. Point count is an output size, not a direct measure of accuracy or complete coverage.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\cleanup_v1\result\summary.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\website\geometry\figures\stages_front.provenance.json
+
+========================================================================
+
+SLIDE 6: Manual heights and observed vertical spans
+
+The original manual measurements are retained. An operator measurement can be a usable reference without external certification, provided we compare the same specimen, organ, endpoints and physical definition. Here the estimated values are observed cloud vertical spans. They are completeness diagnostics rather than valid stem-base-to-tip heights, because the actual stem base and highest biological tip are not supported for every plant. We show the comparison rather than leave it blank, and label exactly what the numbers mean. In particular, a small numerical difference does not prove anatomical accuracy.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\website\traits\website_tables.json
+
+========================================================================
+
+SLIDE 7: Thirteen conditional leaf comparisons
+
+The earlier report left extraction incomplete after correspondence review. The new review tested both dimensions of all twelve strongly identified organs and now provides thirteen conditional comparisons, twelve more than the previous report. These cover seven lengths and six widths across eight organs in P3 and P5. The measured values come from existing metric points, with source endpoint disks, at least two-view stereo support and three-view anatomical review. No manual dimension altered scale or chosen distance. The table includes large differences as well as close matches. Natural-pose straight chords can differ from a leaf held against a ruler, and basal or width-section definitions remain conditional. All thirteen rows appear in the appendix and the full forty-seven-dimension ledger retains unavailable results and reasons.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_sprint_review_20261008\traits_audit\conditional_comparisons.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_sprint_review_20261008\traits_audit\README.md
+
+========================================================================
+
+SLIDE 8: The comparison retains its source evidence
+
+This is P5 O01. The selected length endpoints project onto the same reconstructed leaf in the source frame, while the manual photograph identifies that organ against a ruler. The natural-pose 3D length chord is 11.679 cm against the operator measurement of 12.0 cm. Its width chord is 9.758 cm against 9.9 cm. The measurement is traceable to exact source point identities and has multiview support. This is a useful conditional comparison. It does not prove all leaf dimensions are this close or resolve flattening and endpoint-convention differences.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_sprint_review_20261008\traits_audit\P5_O01_comparison_evidence.png
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_sprint_review_20261008\traits_audit\conditional_comparisons.json
+
+========================================================================
+
+SLIDE 9: FX10 and FX17 measured spectra
+
+The recordings support both FX10 and FX17. The wavelength ranges differ. FX10 spans visible through near infrared, while FX17 covers near infrared and short-wave infrared. We store measured spectral samples and masks rather than fabricate values for unobserved surfaces. A white panel was present and exposure remained fixed, but the panel reflectance and shutter-dark conditions remain unverified. Therefore these are relative exploratory signals and descriptors rather than calibrated reflectance or physiological measurements. FX17 lacks the visible red band required for conventional NDVI.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\README.md
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\website\spectral\index.html
+
+========================================================================
+
+SLIDE 10: Three locations with measured spectra
+
+The current inspector contains three source locations on Plant 5. Each location links one measured FX10 spectrum and one measured FX17 spectrum, making six spectra in total. The selected wavelength chooses a measured band value and changes the marker colour. The enlarged marker is an annotation for inspection rather than a measured footprint or a region of densely assigned spectra. The remaining plant points provide RGB geometry context. Switching sensors changes which spectrum belongs to the same reviewed location. This is a traceable sparse result and not completion of dense surface fusion.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\spectral_metric_v1\identity_remap_validation.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\website\evidence\spectral_browser\fusion_fx17_green.jpg
+
+========================================================================
+
+SLIDE 11: The earlier dense projection method
+
+The dense model shown in the earlier experimental page belongs to the August dataset. Its prototype projects many hyperspectral pixels using local two-dimensional image registration, samples nearby raw depth and applies per-plant ICP placement with geometric filters. That produces a useful dense visual demonstration, but its pixel-to-surface correspondence was not independently validated as a calibrated pushbroom camera model. The September data use different viewpoint and coverage conditions. The current sparse height model fails held-out leaf predictions, so we did not propagate it over the full surface. New local mapping experiments should be labelled as candidates and assessed for boundary, visibility and held-out correspondence errors.
+
+Evidence:
+User-provided earlier dense screenshot
+Historical experimental route: https://phenofusion3d.github.io/results/experimental/
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\hsi_geometry\height_model_diagnostic\height_diagnostic.json
+
+========================================================================
+
+SLIDE 12: Dense projection diagnostic
+
+The new experiment explicitly tests whether a dense visualisation can be recovered from the September data. It assigns 1,613 measured FX10 spectra and 643 FX17 spectra to a diagnostic hypothesis across 1,613 unchanged P5 vertices. Each sensor keeps all 224 native bands. Source DN rereading and normalisation recalculation pass, so the values remain traceable. However, the spectral-to-RGB alignment fails: an affine model with six manually proposed landmarks has a training RMS of 5.496 RGB pixels and predicts excluded features with errors of 7.035 and 8.245 pixels, beyond the declared 3 pixel gate. Geometry support does not rescue a wrong material correspondence. We therefore reject this projection for measurement. The coloured patch demonstrates the failure mode rather than an accepted improvement. The new dense accepted assignment count remains zero. Further calibrated views or a better independently tested mapping may still improve the outcome.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_sprint_review_20261008\fusion_candidates\candidate_result\evidence\mapping_review.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_sprint_review_20261008\fusion_candidates\candidate_result\numeric_validation.json
+
+========================================================================
+
+SLIDE 13: What the final sprint delivers
+
+We can demonstrate the metric geometry pipeline, source-preserving fusion and cleanup, thirteen conditional leaf comparisons, measured spectral analysis from both sensors, and explicit comparison and quality reports. The new dense projection diagnostic fails registration and is rejected for measurement. The retained reviewed sparse result remains six provisional spectra at three locations. The app adds offline review and processing capabilities. Protected capture and gantry files were unchanged by hash, and 101 targeted tests passed. These checks establish software preservation and local functionality rather than a new physical laboratory hardware test. The scientific tasks still open are a complete anatomical accuracy set, dense spectral surface assignment with independent correspondence tests and reliable radiometric reference capture.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\SPECTRAL_FUSION_WORKFLOW.md
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\final_verification.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_sprint_review_20261008\traits_audit\conditional_comparisons.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_sprint_review_20261008\fusion_candidates\candidate_result\evidence\mapping_review.json
+
+========================================================================
+
+SLIDE 14: Next evidence needed for stronger results
+
+The proposed next recording should address the specific missing evidence. For geometry, include views that resolve thin stems, tips, undersides and a visible stem origin. For traits, label the measured organ, use the same endpoint definition in the photograph and 3D selection, and record a ruler close to the organ plane. For hyperspectral correspondence, record shared features at several heights across the scan range and retain camera timing and gantry motion metadata. For radiometry, record a characterised white reference and a confirmed shutter-dark capture under the same exposure. These are experiments to reduce known failure modes, not a guarantee of perfect reconstruction.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\README.md
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\hsi_geometry\height_model_diagnostic\height_diagnostic.json
+
+========================================================================
+
+SLIDE 15: Appendix: plane and leaf correspondence checks
+
+The shared plane calibration generalises across held-out sheets with residuals below about 1.4 pixels. The scan transfer of static controls between calibration and plant scans is below 0.46 pixels at the checked matches. Those results are encouraging for the reference plane. The leaf height model fails leave-one-out tests at actual elevated leaf locations, with some errors over one hundred pixels. Planar fit quality cannot therefore justify assigning spectra across the plant surface.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\hsi_geometry\shared_plane_calibration.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\hsi_geometry\scan_transfer_v1\scan_transfer.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\hsi_geometry\height_model_diagnostic\height_diagnostic.json
+
+========================================================================
+
+SLIDE 16: Appendix: demonstration order
+
+Use the local saved results if the remote site has not completed deployment. Open the final September results page, select the full D405 geometry and then the D405 plus L515 union to explain the additions. Select the cleaned plants and rotate them to expose coverage gaps. Open the manual trait review to explain the operator measurements and definitions. Open both hyperspectral sample inspectors, then the 3D inspector, switching FX10 and FX17 and selecting the same P5 marker. Show the selected wavelength value and its source. Finally show the dense projection diagnostic with its failed correspondence checks and visible REJECTED FOR MEASUREMENT label. Do not present the older experimental model as the current dataset.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\final_verification.json
+
+========================================================================
+
+SLIDE 17: Appendix: questions to expect
+
+Q: Is the reconstruction perfect? A: It preserves observed surfaces, but missing views and weak depth leave gaps. We have not established complete coverage or independent physical accuracy. Q: Why do we have manual measurements but no full accuracy score? A: We must compare the same organ and endpoints. The operator references are retained, and conditional comparisons are useful, but missing or mismatched anatomy can invalidate a pooled score. Q: Why only three spectral markers? A: These are six measured spectra at three provisional 3D source locations. The dense extension has a separate correspondence problem. Q: Does a low plane-calibration error solve leaf mapping? A: No. Elevated leaf tests currently fail. Q: Can the software run offline? A: Processing and review are local. Generalisation and a laboratory hardware run still need separate testing. Q: What is the main contribution? A: A reproducible local workflow with metric geometry, source identities, both spectral sensors and explicit failure diagnostics, plus a concrete route to stronger validation.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\README.md
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\final_verification.json
+
+========================================================================
+
+SLIDE 18: Appendix: all P3 conditional comparisons
+
+These rows report every retained conditional comparison for this plant, including the larger differences. The error-like values are signed differences between natural-pose straight chords and operator ruler annotations. They should not be described as a generalised physical-accuracy score, because this is a manually reviewed, available-endpoint subset and the measurement conventions remain conditional. The complete ledger contains all forty-seven original dimensions, including dimensions without a usable estimate.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_sprint_review_20261008\traits_audit\conditional_comparisons.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_sprint_review_20261008\traits_audit\dimension_ledger_47.csv
+
+========================================================================
+
+SLIDE 19: Appendix: all P5 conditional comparisons
+
+These rows report every retained conditional comparison for this plant, including the larger differences. The error-like values are signed differences between natural-pose straight chords and operator ruler annotations. They should not be described as a generalised physical-accuracy score, because this is a manually reviewed, available-endpoint subset and the measurement conventions remain conditional. The complete ledger contains all forty-seven original dimensions, including dimensions without a usable estimate.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_sprint_review_20261008\traits_audit\conditional_comparisons.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_sprint_review_20261008\traits_audit\dimension_ledger_47.csv
+
+========================================================================
+
+SLIDE 20: Appendix: signal normalisation and quality
+
+Raw DN is the recorded camera value. W denotes the observed white-board signal and D the assumed scan-tail offset. Q subtracts that assumed offset from the sample and reference, while Q0 tests a zero-offset alternative. The real dark acquisition and white reflectance were not independently confirmed, so neither is calibrated reflectance. Missing reference support keeps normalised values missing. Both red source locations lack valid normalised reference coverage. The green source location supports finite values in both sensors. We preserve those masks rather than fill missing spectra or copy a value onto adjacent geometry.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\website\spectral\diagnostics\methods_and_sources.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\website\spectral\index.html
+
+========================================================================
+
+SLIDE 21: Appendix: L515 additions and filtering
+
+The aligned L515 review region contains 199,811 points. Of these, 139,922 are within the duplicate criterion and are suppressed. Another 38,217 nonduplicate points have conflicting or uncertain overlap, leaving 21,672 additions to the D405 scene. Of the additions, 14,220 have at least two D405 depth-view agreement votes and 7,452 remain L515-only complementary candidates. After the tissue cleanup, 4,722 L515 observations remain within the five plant candidates. These counts explain why adding a second camera does not automatically create a gap-free model. Most input points repeat existing geometry or represent scene context.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\fusion_v1\summary.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\cleanup_v1\result\summary.json
+
+========================================================================
+
+SLIDE 22: Appendix: retained points by plant
+
+The table describes the source camera composition of the retained tissue candidates. The original reviewed source masks and physical cleanup thresholds support this selection. Uncertain points remain separately recoverable. The number of points depends on image overlap, camera support and sampling. It is not a measure of plant size, biological completeness or accuracy.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_confirmed_board_20261007\cleanup_v1\result\summary.json
+
+========================================================================
+
+SLIDE 23: Appendix: offline operation and automation
+
+The software does not need an AI service to run the added extraction and review actions. However, accepting a new compatible input file is different from automatically solving every scientific correspondence. The current research workflow still uses reviewed regions, organ identities, endpoint selections and spectral associations. The new thirteen leaf comparisons are manually reviewed research outputs. New local dense experiments also need their own supplied leaf regions and fitting evidence. We should demonstrate that boundary clearly. Reproducibility means a saved setup can replay the procedure. Generalisation requires new datasets and an evaluation with less or no bespoke setup.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\SPECTRAL_FUSION_WORKFLOW.md
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\docs\RESEARCH_WORKSPACE.md
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_sprint_review_20261008\traits_audit\README.md
+
+========================================================================
+
+SLIDE 24: Appendix: local FX10 and FX17 tracking
+
+The new green-leaf overlap experiment supplies a useful part of the pipeline. An affine image model has 54 training inliers, and one excluded known green feature has 0.589 native FX17 pixel error. A multiband tracking diagnostic yields 11,023 image tracks, mapping to 6,984 distinct rounded FX17 pixels before the final leaf, depth and identity intersection. These are image tracks rather than accepted 3D assignments. Other cross-validation diagnostics retain failure evidence, including a large false background match. Since the spectral-to-RGB-to-geometry link fails, this positive local camera-to-camera result cannot validate a dense 3D map.
+
+Evidence:
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_sprint_review_20261008\fusion_candidates\fx10_fx17_green_registration.json
+C:\Personal\My_DEGREE's\Master_of_Computing_(Advanced)\Australian_National_University\Technical Team Project - COMP8715\PhenoFusion3D\generated\research_sprint_review_20261008\fusion_candidates\dense_fx10_fx17_green_tracks_summary.json

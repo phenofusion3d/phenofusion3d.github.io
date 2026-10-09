@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "candidate_commit": "920a577958a22e10998d24935265c77e2296d867 + test-only Qt signal wait patch (uncommitted)",
+  "status": "not_started_on_physical_lab_machine",
+  "operator": null,
+  "performed_at": null,
+  "machine": null,
+  "existing_lab_checkout": null,
+  "existing_lab_revision": null,
+  "existing_lab_python": null,
+  "preflight_report": null,
+  "protected_comparison_reviewed": false,
+  "saved_data_analysis_tested": false,
+  "desktop_report_tested": false,
+  "realsense_d405_tested": false,
+  "realsense_l515_tested": false,
+  "ROS_bridge_tested": false,
+  "gantry_tested_under_existing_lab_procedure": false,
+  "capture_analysis_priority_tested": false,
+  "evidence_files": [],
+  "failures_or_differences": [],
+  "acceptance_decision": null,
+  "physical_calibration_validated": false,
+  "note": "Fill from actual operator evidence. These fields do not themselves run, prove or certify a test. Software acceptance does not resolve scientific calibration gaps.",
+  "base_commit": "920a577958a22e10998d24935265c77e2296d867",
+  "exact_commit_snapshot": false,
+  "modified_paths": [
+    "tests/test_gantry_offline.py"
+  ],
+  "candidate_source_tree_sha256": "e7991bede31f3f8e93a67529553dcc0c909c0e0324864521bbf0f9ed8d5e36e3",
+  "candidate_patch": "test_only_qt_signal_wait.patch",
+  "patch_status": "uncommitted_test_only"
+}

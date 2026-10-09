@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "unique_fx10_tracks": 11023,
+  "unique_fx17_integer_pixels": 6984,
+  "integer_fx10_bounds": [
+    [
+      302,
+      1766
+    ],
+    [
+      513,
+      1891
+    ]
+  ],
+  "integer_fx17_bounds": [
+    [
+      166,
+      1660
+    ],
+    [
+      297,
+      1783
+    ]
+  ],
+  "scope": "Array identity/range/gate validation only, no physical mapping acceptance"
+}

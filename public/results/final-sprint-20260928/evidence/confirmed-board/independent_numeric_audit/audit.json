@@ -1,0 +1,350 @@
+{
+  "status": "numeric_consistency_passed_with_recorded_scope_limits",
+  "date": "2026-10-07",
+  "source_hashes": {
+    "generated\\research_confirmed_board_20261007\\calibrate_d405_metric.py": "4c70ab02aa297e538cb0d76a3c6b4abccd5f870314f450a4c68e15c878c14c1d",
+    "generated\\research_confirmed_board_20261007\\reexpress_d405_metric.py": "b45c1e428a0ee19b0df663e688f3915f56d92d1116989aedc86e5f71f8ebd554",
+    "generated\\research_confirmed_board_20261007\\board_confirmation.json": "55abeaa4321131141a2ebfa8998aca8a07e55f273c1ca160a7a84d6bf8256e5f",
+    "generated\\research_confirmed_board_20261007\\d405_metric_calibration.json": "4875f09593b49966f1f191296de8b055a68b61f8626f6cd1a3eda269b8d0c3cf",
+    "generated\\research_confirmed_board_20261007\\d405_board_poses_metres.json": "0b81d33abd3f9065b58b0b9b7bd5935f5bbba50f49e4161fb4f2d7fb7c0193de",
+    "generated\\research_confirmed_board_20261007\\d405_metric\\summary.json": "c19d34912a5bb7a06e78f87a352a60bb552579d0f450a53312c2080ef045f0d2",
+    "generated\\research_followthrough_20261007\\traits\\provisional_chords.json": "3d584e52653cbfdded616c0d3fb8ac6c4d1d5921e5fe2e7ef50517f73ef6e127",
+    "generated\\research_followthrough_20261007\\traits\\chord_endpoint_indices.npz": "094bf9b639bbb2bc32fd42edcde53c162c24188684c212c6525d36fd8fd0d752",
+    "generated\\research_d405_l515_fusion_20261007\\v1\\fused_point_provenance.npz": "36fb7b66dc1730a74294e9e38058ab995f1d9396398c9eac45ae6e7c65bf2b41"
+  },
+  "old_conditional_unit": "frame_id/1e6",
+  "new_coordinate_unit": "metres referenced to supplied 25 mm checker pitch",
+  "scale_factor": 1.0288746669066682,
+  "independent_factor_from_within_sheet_centered_regression": 1.028874666906669,
+  "unweighted_fit_factor_sensitivity": 1.0288396333622873,
+  "factor_absolute_difference": 8.881784197001252e-16,
+  "integer_checker_corner_grid_confirmed": true,
+  "board_observations": 57,
+  "board_unique_frames": 32,
+  "checker_corners": 3067,
+  "recomputed_reprojection_rms_px": 0.2204020810704392,
+  "no_frame_leakage_across_reported_holdout_folds": true,
+  "independent_translation_fit_rms_m": 0.0011624960861386813,
+  "exports": [
+    {
+      "file": "full_scene_reference.ply",
+      "points": 8265080,
+      "every_coordinate_exactly_scaled": true,
+      "all_non_coordinate_fields_exactly_preserved": true,
+      "source_sha256": "9f832f84560d4cb8af9d2c1cefa8d789b1da6f97e79bc5d035fcd5475e175338",
+      "output_sha256": "c44d00f53535928dd806211a609b6fdaa52956683d7f1ad51dc7d0cb82de33d5"
+    },
+    {
+      "file": "inspection_region_reference.ply",
+      "points": 1719001,
+      "every_coordinate_exactly_scaled": true,
+      "all_non_coordinate_fields_exactly_preserved": true,
+      "source_sha256": "dfadbd5949fb359d1a24ba4e77abed43afd9f0b85f0996b95f29c783cacb4eb7",
+      "output_sha256": "2a2929aba132d1c92ce934de8473082f791fb45f3a69cf0bf009ed52ff3d22c5"
+    }
+  ],
+  "pose_checks": [
+    {
+      "type": "bundle",
+      "transforms": 64,
+      "rotations_unchanged": true,
+      "translations_exactly_scaled": true
+    },
+    {
+      "type": "final_icp",
+      "transforms": 64,
+      "rotations_unchanged": true,
+      "translations_exactly_scaled": true
+    }
+  ],
+  "support_evidence_unchanged": true,
+  "support_evidence_fields": {
+    "support_views": {
+      "shape": [
+        8265080
+      ],
+      "dtype": "uint16"
+    },
+    "contradicting_views": {
+      "shape": [
+        8265080
+      ],
+      "dtype": "uint16"
+    }
+  },
+  "independent_final_ICP_distorted_reprojection_check": {
+    "in_frame_comparisons": 86310,
+    "max_pixel_change": 1.08129570830467e-11
+  },
+  "provisional_chord_updates": [
+    {
+      "id": "P1.O03.observed_blade_extent",
+      "endpoints": [
+        {
+          "role": "base",
+          "fused_index": 49071,
+          "camera_id": 0,
+          "D405_original_index": 300697,
+          "old_xyz": [
+            0.2696336641831242,
+            0.009500000000000001,
+            0.30250000000000005
+          ],
+          "board_scaled_xyz_m": [
+            0.2774192464232363,
+            0.00977430933561335,
+            0.3112345867392672
+          ],
+          "candidate_count": 56,
+          "candidate_camera_counts": {
+            "0": 56
+          },
+          "all_candidates_D405": true
+        },
+        {
+          "role": "tip",
+          "fused_index": 158296,
+          "camera_id": 0,
+          "D405_original_index": 1029316,
+          "old_xyz": [
+            0.2675,
+            -0.0029359945503824357,
+            0.2475
+          ],
+          "board_scaled_xyz_m": [
+            0.27522397339753374,
+            -0.0030207704150645217,
+            0.2546464800594004
+          ],
+          "candidate_count": 14,
+          "candidate_camera_counts": {
+            "0": 14
+          },
+          "all_candidates_D405": true
+        }
+      ],
+      "old_conditional_chord_cm": 5.642877354066358,
+      "board_scaled_chord_cm": 5.805813558060206,
+      "scale_factor": 1.0288746669066682,
+      "reference_annotation_cm": 7.3,
+      "eligible_for_physical_accuracy_statistics": false,
+      "geometry_or_manual_definition_exclusions": "Magnified source review shows the thin dry terminal tip extends beyond this reconstructed endpoint. This is partial observed extent, not whole-leaf length, so no reference residual is computed.",
+      "original_result_preserved": true,
+      "endpoint_disk_range_can_be_scaled_without_mixing_cameras": true,
+      "board_scaled_endpoint_disk_sensitivity_cm": [
+        5.120479019345101,
+        6.863425757334309
+      ],
+      "provisional_difference_from_operator_cm": null,
+      "comparison_status": "Partial extent; not homologous to whole-organ ruler length. No residual."
+    },
+    {
+      "id": "P1.O03.true_tip_attempt",
+      "endpoints": [
+        {
+          "role": "base",
+          "fused_index": 48904,
+          "camera_id": 0,
+          "D405_original_index": 300530,
+          "old_xyz": [
+            0.2680354867147755,
+            0.009500000000000001,
+            0.30050000000000004
+          ],
+          "board_scaled_xyz_m": [
+            0.27577492211283133,
+            0.00977430933561335,
+            0.3091768374054538
+          ],
+          "candidate_count": 74,
+          "candidate_camera_counts": {
+            "0": 74
+          },
+          "all_candidates_D405": true
+        },
+        {
+          "role": "tip",
+          "status": "no_supported_endpoint"
+        }
+      ],
+      "old_conditional_chord_cm": null,
+      "board_scaled_chord_cm": null,
+      "scale_factor": 1.0288746669066682,
+      "reference_annotation_cm": 7.3,
+      "eligible_for_physical_accuracy_statistics": false,
+      "geometry_or_manual_definition_exclusions": "True dry terminal tip is selected from the source silhouette; no farther nearest point is substituted if this disk lacks reconstructed support.",
+      "original_result_preserved": true
+    },
+    {
+      "id": "P1.O04.ear_body_chord",
+      "endpoints": [
+        {
+          "role": "base",
+          "fused_index": 49084,
+          "camera_id": 0,
+          "D405_original_index": 300710,
+          "old_xyz": [
+            0.2695,
+            0.013084643452923898,
+            0.29650000000000004
+          ],
+          "board_scaled_xyz_m": [
+            0.2772817227313471,
+            0.013462458174219592,
+            0.30506133873782715
+          ],
+          "candidate_count": 9,
+          "candidate_camera_counts": {
+            "0": 9
+          },
+          "all_candidates_D405": true
+        },
+        {
+          "role": "tip",
+          "status": "no_supported_endpoint"
+        }
+      ],
+      "old_conditional_chord_cm": null,
+      "board_scaled_chord_cm": null,
+      "scale_factor": 1.0288746669066682,
+      "reference_annotation_cm": 6.5,
+      "eligible_for_physical_accuracy_statistics": false,
+      "geometry_or_manual_definition_exclusions": "Body-to-awn transition is a source-visible candidate; exact distal glume boundary has pixel-scale ambiguity. This is an ear, never a leaf.",
+      "original_result_preserved": true
+    },
+    {
+      "id": "P3.O03.blade_chord",
+      "endpoints": [
+        {
+          "role": "base",
+          "fused_index": 1221511,
+          "camera_id": 0,
+          "D405_original_index": 5799835,
+          "old_xyz": [
+            0.7935,
+            0.0285,
+            0.4696911997379415
+          ],
+          "board_scaled_xyz_m": [
+            0.8164120481904412,
+            0.029322928006840044,
+            0.4832533766793679
+          ],
+          "candidate_count": 158,
+          "candidate_camera_counts": {
+            "0": 158
+          },
+          "all_candidates_D405": true
+        },
+        {
+          "role": "tip",
+          "fused_index": 944608,
+          "camera_id": 0,
+          "D405_original_index": 4949838,
+          "old_xyz": [
+            0.7920980532811104,
+            -0.0415,
+            0.4435
+          ],
+          "board_scaled_xyz_m": [
+            0.8149696207270227,
+            -0.04269829867662673,
+            0.45630591477310734
+          ],
+          "candidate_count": 79,
+          "candidate_camera_counts": {
+            "0": 79
+          },
+          "all_candidates_D405": true
+        }
+      ],
+      "old_conditional_chord_cm": 7.475255446013435,
+      "board_scaled_chord_cm": 7.691100957059331,
+      "scale_factor": 1.0288746669066682,
+      "reference_annotation_cm": 7.5,
+      "eligible_for_physical_accuracy_statistics": false,
+      "geometry_or_manual_definition_exclusions": "Basal small-lobe/petiole convention remains tentative. The operator length is not independently photo-readable; this explicitly conditional comparison does not establish the measurement definition or physical accuracy.",
+      "original_result_preserved": true,
+      "endpoint_disk_range_can_be_scaled_without_mixing_cameras": true,
+      "board_scaled_endpoint_disk_sensitivity_cm": [
+        6.900337417864763,
+        8.662411669867037
+      ],
+      "provisional_difference_from_operator_cm": 0.19110095705933094,
+      "comparison_status": "Board-referenced metric chord; operator-only comparison still provisional. No MAE/MAPE or physical accuracy claim."
+    },
+    {
+      "id": "P5.O04.terminal_lamina_chord",
+      "endpoints": [
+        {
+          "role": "base",
+          "fused_index": 135290,
+          "camera_id": 0,
+          "D405_original_index": 890216,
+          "old_xyz": [
+            1.3575000000000002,
+            0.05742938022102854,
+            0.5645
+          ],
+          "board_scaled_xyz_m": [
+            1.3966973603258022,
+            0.05908763444556713,
+            0.5807997494688142
+          ],
+          "candidate_count": 181,
+          "candidate_camera_counts": {
+            "0": 181
+          },
+          "all_candidates_D405": true
+        },
+        {
+          "role": "tip",
+          "fused_index": 657710,
+          "camera_id": 0,
+          "D405_original_index": 3532313,
+          "old_xyz": [
+            1.3815000000000002,
+            0.1275,
+            0.4682034361585681
+          ],
+          "board_scaled_xyz_m": [
+            1.4213903523315623,
+            0.13118152003060018,
+            0.4817226544222042
+          ],
+          "candidate_count": 74,
+          "candidate_camera_counts": {
+            "0": 73,
+            "1": 1
+          },
+          "all_candidates_D405": false
+        }
+      ],
+      "old_conditional_chord_cm": 12.148629537473008,
+      "board_scaled_chord_cm": 12.499417168740054,
+      "scale_factor": 1.0288746669066682,
+      "reference_annotation_cm": 12.9,
+      "eligible_for_physical_accuracy_statistics": false,
+      "geometry_or_manual_definition_exclusions": "Ruler image includes basal lobes down toward a small low lobe at its zero. This raw terminal-lamina origin cannot be substituted for that ruler origin; no residual is meaningful.",
+      "original_result_preserved": true,
+      "endpoint_disk_range_can_be_scaled_without_mixing_cameras": false,
+      "provisional_difference_from_operator_cm": null,
+      "comparison_status": "Partial extent; not homologous to whole-organ ruler length. No residual."
+    }
+  ],
+  "caveats": [
+    "The supplied 25 mm square and 18 mm marker resolve the formerly unknown design dimensions. Printed-size measurement uncertainty was not supplied.",
+    "The scalar is metres per old frame_id/1e6 coordinate unit. It follows a fixed-mount linear-motion model, retained factory RGB intrinsics and user-confirmed unchanged settings between scans.",
+    "Small pose residuals and reprojection invariance are internal consistency checks, not independently measured physical accuracy or reconstructed surface completeness.",
+    "This is uniform scale re-expression of an existing RGB reconstruction. No new stereo, bundle, ICP, filtering or 1 mm-threshold run took place; inherited thresholds are multiplied by the factor.",
+    "The new best-fit motion direction differs by about 0.0097 degrees. The export intentionally retains existing rotations and direction; it applies the scalar only.",
+    "D405 input depth PNGs and cached synthetic depth arrays are not re-expressed by this script. Consumers must not mix them with scaled cloud/poses without explicit corresponding unit handling.",
+    "The full mixed D405/L515 cloud cannot be multiplied by this D405 factor. L515 depth/rig registration and any mixed-cloud descriptors require separate recomputation.",
+    "The 128,000 comparison root check used bundle poses and an inspection subset despite a full-scene comment. This audit additionally tests original and scaled points with final accepted ICP transforms and lens distortion.",
+    "Correcting board scale does not recover anatomical bases/tips, match ruler sections, resolve leaf-versus-pod identity, or make manual photos independent ground truth.",
+    "The existing marker-edge image ratio is approximately 0.670 rather than 0.720; low-resolution edge localization is not independent physical verification of marker width. Metric scaling here is based on checker-corner pitch, not fitted marker-edge width."
+  ],
+  "new_physical_accuracy_claim": false,
+  "source_geometry_or_manual_evidence_modified": false,
+  "source_hashes_unchanged_after_audit": true
+}

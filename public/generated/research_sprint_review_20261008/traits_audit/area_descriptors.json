@@ -1,0 +1,90 @@
+{
+  "status": "saved_observed_xy_area_descriptors_restored",
+  "units": "cm2",
+  "m2_to_cm2": 10000,
+  "source_files_sha256": {
+    "generated\\research_confirmed_board_20261007\\traits_metric\\canopy_descriptors.csv": "bcb294e371b80705ebd72b5cc489770d4c2b303b25a6a19ed593c04c2f9a410c",
+    "generated\\research_confirmed_board_20261007\\traits_metric\\traits_review.json": "6d9b0fc75648338fc4f975b923e633030e9731877b3e75d9cfb7b379d510e3ad"
+  },
+  "axis_definition": "X follows gantry row; Y perpendicular in display plane; Z fitted-board display normal, not independently verified gravity.",
+  "manual_dimension_counts": {
+    "height": 5,
+    "length": 21,
+    "width": 21
+  },
+  "manual_area_reference_count": 0,
+  "leaf_surface_area_computed": false,
+  "physical_area_accuracy_validated": false,
+  "plants": [
+    {
+      "specimen_id": "P1",
+      "observed_xy_hull_cm2": 368.2927069775509,
+      "multi_view_core_xy_hull_cm2": 361.8680987156256,
+      "observed_xy_occupancy_1mm_cm2": 37.88,
+      "observed_xy_occupancy_2mm_cm2": 47.2,
+      "observed_xy_occupancy_5mm_cm2": 72.5,
+      "leaf_surface_area_cm2": null,
+      "leaf_surface_area_status": "not_computed_complete_leaf_surfaces_not_established",
+      "manual_area_cm2": null,
+      "area_validation_status": "no_manual_area_reference",
+      "descriptor_status": "provisional_observed_subset_not_leaf_area"
+    },
+    {
+      "specimen_id": "P2",
+      "observed_xy_hull_cm2": 378.82214294675344,
+      "multi_view_core_xy_hull_cm2": 371.6841942467456,
+      "observed_xy_occupancy_1mm_cm2": 137.47,
+      "observed_xy_occupancy_2mm_cm2": 148.56,
+      "observed_xy_occupancy_5mm_cm2": 172.50000000000003,
+      "leaf_surface_area_cm2": null,
+      "leaf_surface_area_status": "not_computed_complete_leaf_surfaces_not_established",
+      "manual_area_cm2": null,
+      "area_validation_status": "no_manual_area_reference",
+      "descriptor_status": "provisional_observed_subset_not_leaf_area"
+    },
+    {
+      "specimen_id": "P3",
+      "observed_xy_hull_cm2": 478.30003910652795,
+      "multi_view_core_xy_hull_cm2": 470.794263007603,
+      "observed_xy_occupancy_1mm_cm2": 286.96000000000004,
+      "observed_xy_occupancy_2mm_cm2": 309.56,
+      "observed_xy_occupancy_5mm_cm2": 350.75,
+      "leaf_surface_area_cm2": null,
+      "leaf_surface_area_status": "not_computed_complete_leaf_surfaces_not_established",
+      "manual_area_cm2": null,
+      "area_validation_status": "no_manual_area_reference",
+      "descriptor_status": "provisional_observed_subset_not_leaf_area"
+    },
+    {
+      "specimen_id": "P4",
+      "observed_xy_hull_cm2": 235.53845978594921,
+      "multi_view_core_xy_hull_cm2": 233.27469844616687,
+      "observed_xy_occupancy_1mm_cm2": 130.97,
+      "observed_xy_occupancy_2mm_cm2": 145.96,
+      "observed_xy_occupancy_5mm_cm2": 175.50000000000003,
+      "leaf_surface_area_cm2": null,
+      "leaf_surface_area_status": "not_computed_complete_leaf_surfaces_not_established",
+      "manual_area_cm2": null,
+      "area_validation_status": "no_manual_area_reference",
+      "descriptor_status": "provisional_observed_subset_not_leaf_area"
+    },
+    {
+      "specimen_id": "P5",
+      "observed_xy_hull_cm2": 895.1240926505645,
+      "multi_view_core_xy_hull_cm2": 875.0398146952334,
+      "observed_xy_occupancy_1mm_cm2": 469.22,
+      "observed_xy_occupancy_2mm_cm2": 501.88000000000005,
+      "observed_xy_occupancy_5mm_cm2": 555.5,
+      "leaf_surface_area_cm2": null,
+      "leaf_surface_area_status": "not_computed_complete_leaf_surfaces_not_established",
+      "manual_area_cm2": null,
+      "area_validation_status": "no_manual_area_reference",
+      "descriptor_status": "provisional_observed_subset_not_leaf_area"
+    }
+  ],
+  "definitions": {
+    "xy_hull": "Smallest convex boundary enclosing the retained plant points projected into the saved XY plane; includes gaps between organs.",
+    "xy_occupancy": "Area of grid cells containing at least one projected retained point; depends on grid size, sampling, overlap and missing geometry.",
+    "leaf_surface_area": "Surface area of the leaf blades. Not established by a canopy hull, point occupancy, endpoint chords or length times width."
+  }
+}

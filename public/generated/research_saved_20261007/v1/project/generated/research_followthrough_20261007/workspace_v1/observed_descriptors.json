@@ -1,0 +1,157 @@
+[
+  {
+    "specimen_id": "P1",
+    "source_sha256": "83260a35fc2885ca60daf9e7d69d55c29b8131f263eb63d5f5a4c64ab2f45aae",
+    "points": 21891,
+    "coordinate_unit": "conditional_m",
+    "observed_extent_xyz": [
+      0.17017827235934563,
+      0.33062954153899976,
+      0.46733408012839606
+    ],
+    "observed_p99_extent_xyz": [
+      0.16460407665643875,
+      0.320017996150772,
+      0.4537580577288426
+    ],
+    "minimum_xyz": [
+      0.15487630930653423,
+      -0.27295011303230526,
+      -0.7131169140752449
+    ],
+    "maximum_xyz": [
+      0.32505458166587986,
+      0.0576794285066945,
+      -0.24578283394684883
+    ],
+    "anatomical_height": null,
+    "whole_leaf_area": null,
+    "whole_plant_volume": null,
+    "status": "observed_cloud_distribution_only",
+    "limitation": "Retained point range is not stem-base height, complete canopy extent, tissue surface area or volume."
+  },
+  {
+    "specimen_id": "P2",
+    "source_sha256": "bb19b09daa8a122b4fd855ce3b866cd05060e2a20769afc1cba3456df30dd742",
+    "points": 74306,
+    "coordinate_unit": "conditional_m",
+    "observed_extent_xyz": [
+      0.33133937806305375,
+      0.19031735825552742,
+      0.498438992525309
+    ],
+    "observed_p99_extent_xyz": [
+      0.1717298575145375,
+      0.17934738810327144,
+      0.47546482281822444
+    ],
+    "minimum_xyz": [
+      0.4468217343289214,
+      -0.19946911860738328,
+      -0.6948404539282147
+    ],
+    "maximum_xyz": [
+      0.7781611123919752,
+      -0.00915176035185586,
+      -0.19640146140290574
+    ],
+    "anatomical_height": null,
+    "whole_leaf_area": null,
+    "whole_plant_volume": null,
+    "status": "observed_cloud_distribution_only",
+    "limitation": "Retained point range is not stem-base height, complete canopy extent, tissue surface area or volume."
+  },
+  {
+    "specimen_id": "P3",
+    "source_sha256": "1fa8e16b42ebf598eb67fbd1e301f02845bc753213ab45a31eeb68ca596866aa",
+    "points": 113901,
+    "coordinate_unit": "conditional_m",
+    "observed_extent_xyz": [
+      0.24806796925301478,
+      0.24126645121046986,
+      0.49003776292070494
+    ],
+    "observed_p99_extent_xyz": [
+      0.23549213118438994,
+      0.22467140933771512,
+      0.4288503429863578
+    ],
+    "minimum_xyz": [
+      0.6564478651206953,
+      -0.1752395355437442,
+      -0.7065770656456251
+    ],
+    "maximum_xyz": [
+      0.9045158343737101,
+      0.06602691566672568,
+      -0.2165393027249201
+    ],
+    "anatomical_height": null,
+    "whole_leaf_area": null,
+    "whole_plant_volume": null,
+    "status": "observed_cloud_distribution_only",
+    "limitation": "Retained point range is not stem-base height, complete canopy extent, tissue surface area or volume."
+  },
+  {
+    "specimen_id": "P4",
+    "source_sha256": "a0fb7091556524eeb4b9faea079dd1ab267d6f047e7bdf2640ba2691b5acb1b8",
+    "points": 69634,
+    "coordinate_unit": "conditional_m",
+    "observed_extent_xyz": [
+      0.17464434079060642,
+      0.17154955703374636,
+      0.4355300420756314
+    ],
+    "observed_p99_extent_xyz": [
+      0.16066115100915512,
+      0.1606297626741674,
+      0.41860787716342307
+    ],
+    "minimum_xyz": [
+      0.9512918035936153,
+      -0.15253831148946598,
+      -0.625514864846808
+    ],
+    "maximum_xyz": [
+      1.1259361443842217,
+      0.019011245544280395,
+      -0.1899848227711766
+    ],
+    "anatomical_height": null,
+    "whole_leaf_area": null,
+    "whole_plant_volume": null,
+    "status": "observed_cloud_distribution_only",
+    "limitation": "Retained point range is not stem-base height, complete canopy extent, tissue surface area or volume."
+  },
+  {
+    "specimen_id": "P5",
+    "source_sha256": "2d236b5d5c6387e211718e2f6b03f4bc7131f557c805228be3f57a4a25eab39f",
+    "points": 156185,
+    "coordinate_unit": "conditional_m",
+    "observed_extent_xyz": [
+      0.3332321121512316,
+      0.3523269133678708,
+      0.24387250568490754
+    ],
+    "observed_p99_extent_xyz": [
+      0.31204840254822397,
+      0.3318725703695115,
+      0.19387717690997086
+    ],
+    "minimum_xyz": [
+      1.1848277307268036,
+      -0.20594669784128256,
+      -0.6812808952597337
+    ],
+    "maximum_xyz": [
+      1.5180598428780352,
+      0.14638021552658825,
+      -0.43740838957482614
+    ],
+    "anatomical_height": null,
+    "whole_leaf_area": null,
+    "whole_plant_volume": null,
+    "status": "observed_cloud_distribution_only",
+    "limitation": "Retained point range is not stem-base height, complete canopy extent, tissue surface area or volume."
+  }
+]

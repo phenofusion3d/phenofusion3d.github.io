@@ -1,0 +1,353 @@
+{
+  "model_freeze_sha256": "41b3c427fe280c8ce7cedc1ae9350152da3614ed45b253bb142ec95e54e52881",
+  "results": [
+    {
+      "id": "colour_class_geometry_seed_+0",
+      "primary_candidate": false,
+      "checks": [
+        {
+          "id": "reserved_red_right_notch",
+          "confidence": "medium",
+          "preferred_3D_field": "depth_lift_reference_xyz_m",
+          "localization_sensitivity": {
+            "depth_lift_reference_xyz_m": {
+              "predicted_column_line": [
+                969.4627903156999,
+                1706.443282675315
+              ],
+              "error_HSI_px": 3.7515305744947876
+            },
+            "reference_xyz_m": {
+              "predicted_column_line": [
+                969.0603124876999,
+                1706.1475709997171
+              ],
+              "error_HSI_px": 3.268398953886081
+            }
+          },
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "reserved_red_distal_tip",
+          "confidence": "medium",
+          "preferred_3D_field": "depth_lift_reference_xyz_m",
+          "localization_sensitivity": {
+            "depth_lift_reference_xyz_m": {
+              "predicted_column_line": [
+                805.1958874940925,
+                1666.6953968765793
+              ],
+              "error_HSI_px": 4.112271879314824
+            },
+            "reference_xyz_m": {
+              "predicted_column_line": [
+                806.2965539980661,
+                1666.3531653592677
+              ],
+              "error_HSI_px": 3.4261573525203914
+            }
+          },
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "reserved_green_basal_notch",
+          "confidence": "low-medium",
+          "preferred_3D_field": "depth_lift_reference_xyz_m",
+          "localization_sensitivity": {
+            "depth_lift_reference_xyz_m": {
+              "predicted_column_line": [
+                512.2113488045337,
+                1813.7816194872726
+              ],
+              "error_HSI_px": 8.678614736347823
+            },
+            "reference_xyz_m": {
+              "predicted_column_line": [
+                513.2221194529811,
+                1813.985242748825
+              ],
+              "error_HSI_px": 8.209579345784501
+            }
+          },
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "reserved_green_basal_vein",
+          "confidence": "low",
+          "preferred_3D_field": "depth_lift_reference_xyz_m",
+          "localization_sensitivity": {
+            "depth_lift_reference_xyz_m": {
+              "predicted_column_line": [
+                478.6877439049686,
+                1820.6938578659
+              ],
+              "error_HSI_px": 31.32898106533962
+            },
+            "reference_xyz_m": {
+              "predicted_column_line": [
+                480.39613404855714,
+                1820.2336075894493
+              ],
+              "error_HSI_px": 33.095219708375424
+            }
+          },
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "reserved_green_distal_vein",
+          "confidence": "low-medium",
+          "preferred_3D_field": "depth_lift_reference_xyz_m",
+          "localization_sensitivity": {
+            "depth_lift_reference_xyz_m": {
+              "predicted_column_line": [
+                327.54225938422644,
+                1837.120575614002
+              ],
+              "error_HSI_px": 8.615444567409206
+            },
+            "reference_xyz_m": {
+              "predicted_column_line": [
+                321.88641896059056,
+                1837.166430780148
+              ],
+              "error_HSI_px": 3.11319372685563
+            }
+          },
+          "eligible_for_strict_accuracy_gate": false
+        }
+      ]
+    },
+    {
+      "id": "colour_class_geometry_seed_-0.2",
+      "primary_candidate": false,
+      "checks": [
+        {
+          "id": "reserved_red_right_notch",
+          "confidence": "medium",
+          "preferred_3D_field": "depth_lift_reference_xyz_m",
+          "localization_sensitivity": {
+            "depth_lift_reference_xyz_m": {
+              "predicted_column_line": [
+                935.0710950160004,
+                1707.6678361150896
+              ],
+              "error_HSI_px": 31.0437515942621
+            },
+            "reference_xyz_m": {
+              "predicted_column_line": [
+                934.7807872392003,
+                1707.370186568425
+              ],
+              "error_HSI_px": 31.309056673320892
+            }
+          },
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "reserved_red_distal_tip",
+          "confidence": "medium",
+          "preferred_3D_field": "depth_lift_reference_xyz_m",
+          "localization_sensitivity": {
+            "depth_lift_reference_xyz_m": {
+              "predicted_column_line": [
+                787.9908657496026,
+                1667.8028799458605
+              ],
+              "error_HSI_px": 19.606499961083863
+            },
+            "reference_xyz_m": {
+              "predicted_column_line": [
+                789.0931418634625,
+                1667.4565231037936
+              ],
+              "error_HSI_px": 18.453080135758515
+            }
+          },
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "reserved_green_basal_notch",
+          "confidence": "low-medium",
+          "preferred_3D_field": "depth_lift_reference_xyz_m",
+          "localization_sensitivity": {
+            "depth_lift_reference_xyz_m": {
+              "predicted_column_line": [
+                518.4588962569676,
+                1814.9919024898138
+              ],
+              "error_HSI_px": 7.815202750328509
+            },
+            "reference_xyz_m": {
+              "predicted_column_line": [
+                519.3941550370042,
+                1815.1973701637858
+              ],
+              "error_HSI_px": 8.098417819412736
+            }
+          },
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "reserved_green_basal_vein",
+          "confidence": "low",
+          "preferred_3D_field": "depth_lift_reference_xyz_m",
+          "localization_sensitivity": {
+            "depth_lift_reference_xyz_m": {
+              "predicted_column_line": [
+                488.5221180061726,
+                1821.9638818930835
+              ],
+              "error_HSI_px": 40.833865030057964
+            },
+            "reference_xyz_m": {
+              "predicted_column_line": [
+                490.07270630173775,
+                1821.5038690076417
+              ],
+              "error_HSI_px": 42.43017878158711
+            }
+          },
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "reserved_green_distal_vein",
+          "confidence": "low-medium",
+          "preferred_3D_field": "depth_lift_reference_xyz_m",
+          "localization_sensitivity": {
+            "depth_lift_reference_xyz_m": {
+              "predicted_column_line": [
+                358.34095526970066,
+                1838.6221316267022
+              ],
+              "error_HSI_px": 39.42824286980514
+            },
+            "reference_xyz_m": {
+              "predicted_column_line": [
+                353.25160247765973,
+                1838.6644538222988
+              ],
+              "error_HSI_px": 34.35508094094364
+            }
+          },
+          "eligible_for_strict_accuracy_gate": false
+        }
+      ]
+    },
+    {
+      "id": "colour_class_geometry_seed_+0.2",
+      "primary_candidate": true,
+      "checks": [
+        {
+          "id": "reserved_red_right_notch",
+          "confidence": "medium",
+          "preferred_3D_field": "depth_lift_reference_xyz_m",
+          "localization_sensitivity": {
+            "depth_lift_reference_xyz_m": {
+              "predicted_column_line": [
+                960.7500627494295,
+                1706.0518471110963
+              ],
+              "error_HSI_px": 5.354271517214026
+            },
+            "reference_xyz_m": {
+              "predicted_column_line": [
+                960.3788212891259,
+                1705.756754887153
+              ],
+              "error_HSI_px": 5.67188928478107
+            }
+          },
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "reserved_red_distal_tip",
+          "confidence": "medium",
+          "preferred_3D_field": "depth_lift_reference_xyz_m",
+          "localization_sensitivity": {
+            "depth_lift_reference_xyz_m": {
+              "predicted_column_line": [
+                801.4016433610633,
+                1666.3413835309743
+              ],
+              "error_HSI_px": 6.519696385399643
+            },
+            "reference_xyz_m": {
+              "predicted_column_line": [
+                802.4976985586874,
+                1666.000470697495
+              ],
+              "error_HSI_px": 5.410502996484922
+            }
+          },
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "reserved_green_basal_notch",
+          "confidence": "low-medium",
+          "preferred_3D_field": "depth_lift_reference_xyz_m",
+          "localization_sensitivity": {
+            "depth_lift_reference_xyz_m": {
+              "predicted_column_line": [
+                515.4599536682327,
+                1813.394745550557
+              ],
+              "error_HSI_px": 8.617538019444966
+            },
+            "reference_xyz_m": {
+              "predicted_column_line": [
+                516.4519407987563,
+                1813.59777923505
+              ],
+              "error_HSI_px": 8.526748845020016
+            }
+          },
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "reserved_green_basal_vein",
+          "confidence": "low",
+          "preferred_3D_field": "depth_lift_reference_xyz_m",
+          "localization_sensitivity": {
+            "depth_lift_reference_xyz_m": {
+              "predicted_column_line": [
+                483.1135063914371,
+                1820.2878873663656
+              ],
+              "error_HSI_px": 35.74927673545424
+            },
+            "reference_xyz_m": {
+              "predicted_column_line": [
+                484.7756620334033,
+                1819.8275612065106
+              ],
+              "error_HSI_px": 37.46856277256245
+            }
+          },
+          "eligible_for_strict_accuracy_gate": false
+        },
+        {
+          "id": "reserved_green_distal_vein",
+          "confidence": "low-medium",
+          "preferred_3D_field": "depth_lift_reference_xyz_m",
+          "localization_sensitivity": {
+            "depth_lift_reference_xyz_m": {
+              "predicted_column_line": [
+                338.83427713346634,
+                1836.6405945809606
+              ],
+              "error_HSI_px": 19.844619190710162
+            },
+            "reference_xyz_m": {
+              "predicted_column_line": [
+                333.33852266696243,
+                1836.6875790815034
+              ],
+              "error_HSI_px": 14.354999033936453
+            }
+          },
+          "eligible_for_strict_accuracy_gate": false
+        }
+      ]
+    }
+  ]
+}

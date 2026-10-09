@@ -1,0 +1,44 @@
+[
+  {
+    "gap": "printed_board_scale",
+    "records": "Original ChArUco design/PDF with dictionary, rows/columns, square and marker dimensions; print settings and a dated ruler/caliper check of the actual three September28 sheets.",
+    "why": "The available 600px four-marker design does not specify the physical September28 board pitch.",
+    "closed": false
+  },
+  {
+    "gap": "D405_and_L515_depth_units",
+    "records": "September28 camera/session export or original .bag/device-settings record containing camera serial, firmware, depth_units/get_depth_scale value, stream formats/resolutions, alignment/filter settings and acquisition time for all four named RGB-D folders.",
+    "why": "K/dist/dimensions were saved, but the queried depth scale was not serialized. Present device defaults are not proof of past settings.",
+    "closed": false
+  },
+  {
+    "gap": "gantry_units_and_exporter",
+    "records": "Exact executed September28 capture script/commit and ROS driver config; joint-state position unit/conversion; dated encoder calibration or independent travel check; associated ROS bag/position log.",
+    "why": "Filename=position*1e6 is recoverable source convention. Current driver scale and exact executed version are not preserved.",
+    "closed": false
+  },
+  {
+    "gap": "HSI_line_timing_and_start",
+    "records": "Acquisition-computer sidecars 002-specim-fx10.json, 002-specim-fx17.json, 003-specim-fx10.json and 003-specim-fx17.json if retained; matching SCM/hypercam session/event logs, timestamp units/timebase, dropped-frame counters, per-line encoder/trigger relationship and run-start fiducial observations.",
+    "why": "August28 sidecars show frame IDs/timestamp/system_time fields and one FX17 missing frame. September28 headers alone cannot supply these records; acquisition time must not be assumed to mean first line.",
+    "closed": false
+  },
+  {
+    "gap": "HSI_spatial_geometry",
+    "records": "Per-sensor serial and lens/focus identifier; spatial column-to-ray/lens/keystone calibration; measured fixed rig transforms in a stated shared frame; applicability/change log proving the geometry applies to September28.",
+    "why": "Historical homographies and specimen ICP transforms are not calibrated camera intrinsics/extrinsics.",
+    "closed": false
+  },
+  {
+    "gap": "independent_offplane_validation",
+    "records": "Exact noncoplanar shared XYZ-to-HSI control records and independently reserved elevated holdouts, repeat-localization evidence and numeric residual thresholds; otherwise follow the saved multi-height capture specification.",
+    "why": "Metadata recovery alone cannot certify raised-leaf mapping or visibility.",
+    "closed": false
+  },
+  {
+    "gap": "radiometric_reference",
+    "records": "Matching white-panel spectral reflectance/certificate and exposure/gain records; confirmed shutter-closed dark capture and timing; usable reference spatial support.",
+    "why": "Fixed exposure/intended white use are recorded but panel reflectance and shutter-tail state remain unknown.",
+    "closed": false
+  }
+]

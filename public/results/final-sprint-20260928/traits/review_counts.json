@@ -1,0 +1,12 @@
+{
+  "specimens": 5,
+  "organs": 21,
+  "source_identity_supported_high": 12,
+  "candidate_medium": 3,
+  "unresolved": 6,
+  "manual_dimensions": 47,
+  "eligible_for_accuracy_statistics": 0,
+  "height_estimates": 0,
+  "endpoint_candidates": 10,
+  "output_point_index_arrays": 36
+}

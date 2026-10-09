@@ -1,0 +1,21 @@
+{
+  "input_hashes.json": "8cf4c7ad46b2b39dea8e7f9cd6b6708e42941f443021e2babb59b2486141a72b",
+  "P1_provenance.npz": "23600841a8043282ba1c7532779485e5c0c6788aa63ab24e6a209051b18637f6",
+  "P1_reference.ply": "83260a35fc2885ca60daf9e7d69d55c29b8131f263eb63d5f5a4c64ab2f45aae",
+  "P2_provenance.npz": "f62fc7f18298a7c95bf4f24fe40684d8e46fa60ba8a04c44f0ec64426db6a7f7",
+  "P2_reference.ply": "bb19b09daa8a122b4fd855ce3b866cd05060e2a20769afc1cba3456df30dd742",
+  "P3_provenance.npz": "6d8f90e5608c829b7eaa7e00bfeb4427679a30fa4e1bb57f99e5b5172824e2dd",
+  "P3_reference.ply": "1fa8e16b42ebf598eb67fbd1e301f02845bc753213ab45a31eeb68ca596866aa",
+  "P4_provenance.npz": "473868123ddb9a2c7124565efd49bfd629e7d44b76aca3f2d2f364def94d5da8",
+  "P4_reference.ply": "a0fb7091556524eeb4b9faea079dd1ab267d6f047e7bdf2640ba2691b5acb1b8",
+  "P5_provenance.npz": "92d784bc4fd253e4508e147d8379800c8c753a8256606f65b17474643e0d5164",
+  "P5_reference.ply": "2d236b5d5c6387e211718e2f6b03f4bc7131f557c805228be3f57a4a25eab39f",
+  "plants_cleaned_provenance.npz": "8f83b0523a9e3a3528616465e8fb16b97e0e6223a56fd8e988ad5a41e41c60f8",
+  "plants_cleaned_reference.ply": "b6b97e65df7ce0f57dca0a93896a7d746ffb951c691a5b9e0477ad4d50b80b3e",
+  "point_classification.npz": "ca2af9922994117cc8068169ac8bdf91b0b84d7792b7f75bb6dc0df628789fcb",
+  "scene_context_provenance.npz": "291684bddcd83e6409dbf981794286f67b1da31b378eaa60c1e58ecb6b5c91e3",
+  "scene_context_reference.ply": "0124b3f54c3119ea5990ce07235339f5db60cff9df417e152f1e1b1ffeb902d7",
+  "summary.json": "642b6b0be164aa37e3b0c64449a489f7bc261e7ec053e06a34c5c0b8b4a6f54e",
+  "uncertain_provenance.npz": "964ae68075757fa03a2790274e60c63fed5455e7bee90de18c90df71a3900a2c",
+  "uncertain_reference.ply": "9c533266733ac6e5cfe2f316f9e339560452ecc0e1c21f3cee5c2f92656d663e"
+}

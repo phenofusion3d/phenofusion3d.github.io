@@ -1,0 +1,284 @@
+{
+  "method": "Fused reference cloud transformed by recorded upright_R. Within 0.10 m horizontal distance from original soil seed and seed Z minus 0.065 to plus 0.070 m. Native RGB polygons projected with exact poses/K/dist; depth agreement within 0.015 m. This correspondence remains conditional, not independently calibrated. No source masks or original clouds edited.",
+  "results": [
+    {
+      "plant": "P1",
+      "original_soil_seed_upright_xyz_m": [
+        0.29650678610528536,
+        0.010007538545112526,
+        -0.7381293730096167
+      ],
+      "local_point_count": 70394,
+      "source_labelled_nonplant": [
+        {
+          "frame": 143152,
+          "label": "bare soil left of basal strands",
+          "count": 1544,
+          "upright_z_percentiles_m": {
+            "min": -0.7575611147955984,
+            "p01": -0.755300435471193,
+            "p10": -0.7465201340685693,
+            "p50": -0.7397549497892972,
+            "p90": -0.7316737134915444,
+            "p99": -0.7296309149528494,
+            "max": -0.7285770375426486
+          },
+          "above_seed_plus_15mm": 0
+        },
+        {
+          "frame": 143152,
+          "label": "bare soil upper-left patch",
+          "count": 3200,
+          "upright_z_percentiles_m": {
+            "min": -0.7489307408693131,
+            "p01": -0.7439132227073123,
+            "p10": -0.7390504640029222,
+            "p50": -0.7330277521227624,
+            "p90": -0.72749781928777,
+            "p99": -0.7226354422344707,
+            "max": -0.7216769424834887
+          },
+          "above_seed_plus_15mm": 98
+        },
+        {
+          "frame": 143152,
+          "label": "bare soil right of basal crossing",
+          "count": 3219,
+          "upright_z_percentiles_m": {
+            "min": -0.7474404333807663,
+            "p01": -0.7459068475991901,
+            "p10": -0.7440153367446015,
+            "p50": -0.7388000251036926,
+            "p90": -0.7314356358967422,
+            "p99": -0.7303480117981777,
+            "max": -0.7299534228916094
+          },
+          "above_seed_plus_15mm": 0
+        },
+        {
+          "frame": 302754,
+          "label": "bare soil right of straw core",
+          "count": 5371,
+          "upright_z_percentiles_m": {
+            "min": -0.7563766802391274,
+            "p01": -0.748457700766115,
+            "p10": -0.7444482589055069,
+            "p50": -0.7384540194699843,
+            "p90": -0.7312689860492186,
+            "p99": -0.7297981675013304,
+            "max": -0.7268246672430554
+          },
+          "above_seed_plus_15mm": 0
+        },
+        {
+          "frame": 302754,
+          "label": "bare soil lower-left small patch",
+          "count": 26,
+          "upright_z_percentiles_m": {
+            "min": -0.7454334035777046,
+            "p01": -0.7454059011957603,
+            "p10": -0.745204784886323,
+            "p50": -0.7440796990094387,
+            "p90": -0.744018702709589,
+            "p99": -0.7435708115093504,
+            "max": -0.7434235161548999
+          },
+          "above_seed_plus_15mm": 0
+        },
+        {
+          "frame": 459309,
+          "label": "bare soil right side of dry core",
+          "count": 3756,
+          "upright_z_percentiles_m": {
+            "min": -0.750537193296527,
+            "p01": -0.7492340972236,
+            "p10": -0.7447389714986163,
+            "p50": -0.7386298079358135,
+            "p90": -0.7313499361879683,
+            "p99": -0.7303437803947868,
+            "max": -0.7299534228916094
+          },
+          "above_seed_plus_15mm": 0
+        },
+        {
+          "frame": 459309,
+          "label": "bare soil left lower patch",
+          "count": 273,
+          "upright_z_percentiles_m": {
+            "min": -0.7489763702013068,
+            "p01": -0.7479709160492067,
+            "p10": -0.7419824354128616,
+            "p50": -0.7367308109144296,
+            "p90": -0.7314780630806942,
+            "p99": -0.730215405616032,
+            "max": -0.7292746901963547
+          },
+          "above_seed_plus_15mm": 0
+        }
+      ],
+      "union_soil_count": 10707,
+      "union_pot_count": 0
+    },
+    {
+      "plant": "P2",
+      "original_soil_seed_upright_xyz_m": [
+        0.48457271090127796,
+        -0.00738490439431416,
+        -0.7098604582294198
+      ],
+      "local_point_count": 70684,
+      "source_labelled_nonplant": [
+        {
+          "frame": 249551,
+          "label": "bare soil upper half of second pot",
+          "count": 14168,
+          "upright_z_percentiles_m": {
+            "min": -0.7395292312175925,
+            "p01": -0.7343260883542349,
+            "p10": -0.7255495207378272,
+            "p50": -0.7165222611427751,
+            "p90": -0.7094034786591997,
+            "p99": -0.7067866418769011,
+            "max": -0.7052852992623407
+          },
+          "above_seed_plus_15mm": 0
+        },
+        {
+          "frame": 249551,
+          "label": "bare soil lower-left of basal stem",
+          "count": 4951,
+          "upright_z_percentiles_m": {
+            "min": -0.7283708333749762,
+            "p01": -0.7224250812875697,
+            "p10": -0.7184761037008106,
+            "p50": -0.711302273684042,
+            "p90": -0.7083593366789968,
+            "p99": -0.7066625681367973,
+            "max": -0.7057994885672804
+          },
+          "above_seed_plus_15mm": 0
+        },
+        {
+          "frame": 249551,
+          "label": "pot outer left wall",
+          "count": 727,
+          "upright_z_percentiles_m": {
+            "min": -0.7564986422121095,
+            "p01": -0.7547018849372233,
+            "p10": -0.7359465985280996,
+            "p50": -0.723612126068325,
+            "p90": -0.7187968195866772,
+            "p99": -0.7097070395360764,
+            "max": -0.7086581873003475
+          },
+          "above_seed_plus_15mm": 0
+        },
+        {
+          "frame": 459309,
+          "label": "bare soil upper-left of P2 base",
+          "count": 11713,
+          "upright_z_percentiles_m": {
+            "min": -0.7393417923379318,
+            "p01": -0.7327259506971149,
+            "p10": -0.7260207909648867,
+            "p50": -0.7167369075249901,
+            "p90": -0.7094642877219453,
+            "p99": -0.7070838852545084,
+            "max": -0.7058260263491247
+          },
+          "above_seed_plus_15mm": 0
+        },
+        {
+          "frame": 459309,
+          "label": "bare soil lower-left second pot",
+          "count": 4543,
+          "upright_z_percentiles_m": {
+            "min": -0.7235026265247513,
+            "p01": -0.7217663668429785,
+            "p10": -0.7181848195364767,
+            "p50": -0.7105825023250008,
+            "p90": -0.7071851728515524,
+            "p99": -0.705173087206109,
+            "max": -0.7045047176310058
+          },
+          "above_seed_plus_15mm": 0
+        },
+        {
+          "frame": 459309,
+          "label": "pot wall along left arc",
+          "count": 5915,
+          "upright_z_percentiles_m": {
+            "min": -0.7332377213135567,
+            "p01": -0.7250445347656754,
+            "p10": -0.721345321687454,
+            "p50": -0.7150507505632563,
+            "p90": -0.7086268493169642,
+            "p99": -0.7052340445239719,
+            "max": -0.7043654472377052
+          },
+          "above_seed_plus_15mm": 0
+        },
+        {
+          "frame": 670589,
+          "label": "bare soil upper-left second pot",
+          "count": 13671,
+          "upright_z_percentiles_m": {
+            "min": -0.73909350443118,
+            "p01": -0.7352618691343267,
+            "p10": -0.7260063434356889,
+            "p50": -0.7166355110096411,
+            "p90": -0.7096454220997536,
+            "p99": -0.7070664372039634,
+            "max": -0.7058260263491247
+          },
+          "above_seed_plus_15mm": 0
+        },
+        {
+          "frame": 670589,
+          "label": "bare soil right of bent base",
+          "count": 1962,
+          "upright_z_percentiles_m": {
+            "min": -0.731820365507554,
+            "p01": -0.7259586889696158,
+            "p10": -0.7208439244468625,
+            "p50": -0.713881042978661,
+            "p90": -0.7105262783251837,
+            "p99": -0.7095941828616429,
+            "max": -0.7091482542207534
+          },
+          "above_seed_plus_15mm": 0
+        },
+        {
+          "frame": 670589,
+          "label": "pot left wall above overlap",
+          "count": 722,
+          "upright_z_percentiles_m": {
+            "min": -0.7148932807940584,
+            "p01": -0.7138636695885721,
+            "p10": -0.7118376248789684,
+            "p50": -0.7091968558985845,
+            "p90": -0.7057930383899422,
+            "p99": -0.7048222534545571,
+            "max": -0.7043654472377052
+          },
+          "above_seed_plus_15mm": 0
+        }
+      ],
+      "union_soil_count": 23894,
+      "union_pot_count": 6318
+    }
+  ],
+  "recommendation": {
+    "P1": {
+      "primary_above_upright_z_m": -0.7131293730096167,
+      "seed_offset_m": 0.025,
+      "reason": "The +0.015 m threshold retains 98 source-labelled soil points; +0.025 m gives roughly 0.0085 m clearance above the highest labelled support. This is a conservative candidate-primary cut only."
+    },
+    "P2": {
+      "primary_above_upright_z_m": -0.6948604582294198,
+      "seed_offset_m": 0.015,
+      "reason": "The +0.015 m threshold is about 0.0095 m above the highest labelled pot/soil support; lowest real stem remains below it."
+    },
+    "preservation": "Retain all source-plausible basal/low tissue separately, including below these thresholds; never delete by Z alone. These source-derived conditional thresholds are not measured stem origins, trait height origins, or guarantees of complete pot removal."
+  }
+}

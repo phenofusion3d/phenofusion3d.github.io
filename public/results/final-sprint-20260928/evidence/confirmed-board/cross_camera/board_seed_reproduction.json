@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "method": "Unweighted proper rigid Kabsch fit, 54 actual-size inner corners for each of three separately identified sheets; no scale fit.",
+  "supplied_square_m": 0.025,
+  "corner_pairs": 162,
+  "max_seed_transform_difference": 2.220446049250313e-16,
+  "whole_sheet_holdouts": [
+    {
+      "sheet": "left_sheet",
+      "max_transform_difference": 5.551115123125783e-16
+    },
+    {
+      "sheet": "middle_sheet",
+      "max_transform_difference": 5.551115123125783e-16
+    },
+    {
+      "sheet": "right_sheet",
+      "max_transform_difference": 2.220446049250313e-16
+    }
+  ],
+  "seed_unchanged": true,
+  "source_hashes": {
+    "generated\\research_confirmed_board_20261007\\d405_metric_calibration.json": "4875f09593b49966f1f191296de8b055a68b61f8626f6cd1a3eda269b8d0c3cf",
+    "generated\\research_confirmed_board_20261007\\l515\\board_models_metric.json": "6239e87ce5ac81a86df2ef6d18f1ff4d9f56a7ab8c9cfd187f66fda014e108ff",
+    "generated\\research_confirmed_board_20261007\\cross_camera\\board_seed.json": "42e2906520f77a6adc06de67812703983c8ea66346f8ec8e7d69faacb7bfa93b",
+    "generated\\research_confirmed_board_20261007\\cross_camera\\reproduce_board_seed.py": "668e892c8c0cfb86dafd984de58fcaaa9fdb238922ee17a0ef8b90690e4689a9"
+  },
+  "physical_accuracy": false
+}

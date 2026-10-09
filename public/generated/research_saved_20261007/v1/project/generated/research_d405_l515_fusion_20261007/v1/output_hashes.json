@@ -1,0 +1,12 @@
+{
+  "d405_review_reference.ply": "dfadbd5949fb359d1a24ba4e77abed43afd9f0b85f0996b95f29c783cacb4eb7",
+  "fused_point_provenance.npz": "36fb7b66dc1730a74294e9e38058ab995f1d9396398c9eac45ae6e7c65bf2b41",
+  "fused_review_reference.ply": "9caee0edcc1fb5f66a9cdd490a0054e2ab45872302a32a81cd24788dee01ab10",
+  "fused_source_colours_reference.ply": "7f96f5d122a355c1b79b6c57fd53dbda257cf6ef49d75b69d74b3f0d2a2b3265",
+  "input_hashes.json": "4744f0cd8e3338ec15d02faf35e734be35d76e79589c4283f283bdf00d7f7a3d",
+  "l515_additions_reference.ply": "acdf0a1275022db2f32f90d0cffe0d28ab61ad5b94f552f106b19383701c6b81",
+  "l515_aligned_review_reference.ply": "4ac62fb5876afdfb49b81bf721cb6878c64386936edfcf8acd5673c71f0721c2",
+  "l515_excluded_reference.ply": "cee8ea1918d22cf7f81b10cf84a8e1ff191cf6d1590e8781895bce46c1e15fc2",
+  "l515_fusion_decisions.npz": "900b486417de836df409d6bc0d0701a577745f01598912bfdcddb25c61bf2080",
+  "summary.json": "6834fdacc9a96edb39638c0aae7a7321aa4b38e46fc107dd21cead3dfb58afe8"
+}

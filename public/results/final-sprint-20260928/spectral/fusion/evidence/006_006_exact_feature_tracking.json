@@ -1,0 +1,1412 @@
+{
+  "status": "PRECISE_LOCAL_TRACK_CANDIDATES_PENDING_INDEPENDENT_VISUAL_REVIEW",
+  "elapsed_seconds": 1.3910808000073303,
+  "candidates": [
+    {
+      "id": "fx17_track_red_upper_2",
+      "prior_fx10_id": "red_upper_2",
+      "native_fx10_anchor_column_line": [
+        965.163122177124,
+        1614.6909942626953
+      ],
+      "scaled_fx10_tracking_xy": [
+        164.6909942626953,
+        35.960548400878906
+      ],
+      "initialization_policy": "Median displacement from twelve nearest same-leaf cross-sensor SIFT candidates; initialization only, no candidate substituted for exact anchor.",
+      "initial_fx17_column_line": [
+        586.4949125963099,
+        1508.637229322183
+      ],
+      "trials": [
+        {
+          "overlap_band": 0,
+          "contrast": "display",
+          "window": 15,
+          "fx17_column_line": [
+            586.4805335998535,
+            1508.640625
+          ],
+          "forward_backward_scaled_pixels": 0.6902835965156555,
+          "forward_backward_native_fx10_column_line": [
+            -0.835870361328125,
+            -0.4511871337890625
+          ],
+          "patch_NCC": 0.949492576253482,
+          "lk_photometric_error": 9.717778205871582,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 0,
+          "contrast": "display",
+          "window": 25,
+          "fx17_column_line": [
+            586.5254783630371,
+            1508.7339935302734
+          ],
+          "forward_backward_scaled_pixels": 0.34372249245643616,
+          "forward_backward_native_fx10_column_line": [
+            -0.433209228515625,
+            -0.2117462158203125
+          ],
+          "patch_NCC": 0.9473244800305823,
+          "lk_photometric_error": 9.241900444030762,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 0,
+          "contrast": "display",
+          "window": 35,
+          "fx17_column_line": [
+            586.4095230102539,
+            1508.7554321289062
+          ],
+          "forward_backward_scaled_pixels": 0.09439688920974731,
+          "forward_backward_native_fx10_column_line": [
+            0.030963134765625,
+            0.0923919677734375
+          ],
+          "patch_NCC": 0.9364750550416694,
+          "lk_photometric_error": 9.824745178222656,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 0,
+          "contrast": "clahe",
+          "window": 15,
+          "fx17_column_line": [
+            588.9008750915527,
+            1509.309799194336
+          ],
+          "forward_backward_scaled_pixels": 0.45795273780822754,
+          "forward_backward_native_fx10_column_line": [
+            -0.5453369140625,
+            -0.3058624267578125
+          ],
+          "patch_NCC": 0.9502345583277333,
+          "lk_photometric_error": 11.079166412353516,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 0,
+          "contrast": "clahe",
+          "window": 25,
+          "fx17_column_line": [
+            589.0936737060547,
+            1509.6190643310547
+          ],
+          "forward_backward_scaled_pixels": 0.13507725298404694,
+          "forward_backward_native_fx10_column_line": [
+            0.136090087890625,
+            0.1049346923828125
+          ],
+          "patch_NCC": 0.9471276001997982,
+          "lk_photometric_error": 15.167400360107422,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 0,
+          "contrast": "clahe",
+          "window": 35,
+          "fx17_column_line": [
+            588.6676940917969,
+            1509.8328704833984
+          ],
+          "forward_backward_scaled_pixels": 0.4324929416179657,
+          "forward_backward_native_fx10_column_line": [
+            0.53056640625,
+            0.27764892578125
+          ],
+          "patch_NCC": 0.9502326400200104,
+          "lk_photometric_error": 16.349693298339844,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "display",
+          "window": 15,
+          "fx17_column_line": [
+            587.6527252197266,
+            1508.7755279541016
+          ],
+          "forward_backward_scaled_pixels": 0.027149617671966553,
+          "forward_backward_native_fx10_column_line": [
+            -0.037933349609375,
+            -0.0132293701171875
+          ],
+          "patch_NCC": 0.9843974978044843,
+          "lk_photometric_error": 2.828611135482788,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "display",
+          "window": 25,
+          "fx17_column_line": [
+            587.4865264892578,
+            1508.8011627197266
+          ],
+          "forward_backward_scaled_pixels": 0.0828157514333725,
+          "forward_backward_native_fx10_column_line": [
+            -0.11109619140625,
+            -0.045135498046875
+          ],
+          "patch_NCC": 0.9811255159419595,
+          "lk_photometric_error": 4.157350063323975,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "display",
+          "window": 35,
+          "fx17_column_line": [
+            587.1916313171387,
+            1508.8018798828125
+          ],
+          "forward_backward_scaled_pixels": 0.08771933615207672,
+          "forward_backward_native_fx10_column_line": [
+            0.07327880859375,
+            0.0748138427734375
+          ],
+          "patch_NCC": 0.9693881941011961,
+          "lk_photometric_error": 5.881887912750244,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "clahe",
+          "window": 15,
+          "fx17_column_line": [
+            589.7757797241211,
+            1509.694808959961
+          ],
+          "forward_backward_scaled_pixels": 2.1701793670654297,
+          "forward_backward_native_fx10_column_line": [
+            -2.434576416015625,
+            -1.5473785400390625
+          ],
+          "patch_NCC": 0.9297043299898051,
+          "lk_photometric_error": 15.074305534362793,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "clahe",
+          "window": 25,
+          "fx17_column_line": [
+            589.6227493286133,
+            1509.7720489501953
+          ],
+          "forward_backward_scaled_pixels": 0.08027274906635284,
+          "forward_backward_native_fx10_column_line": [
+            0.06314697265625,
+            0.0699005126953125
+          ],
+          "patch_NCC": 0.9381029352160418,
+          "lk_photometric_error": 19.885900497436523,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "clahe",
+          "window": 35,
+          "fx17_column_line": [
+            588.9950752258301,
+            1509.8842468261719
+          ],
+          "forward_backward_scaled_pixels": 0.544520378112793,
+          "forward_backward_native_fx10_column_line": [
+            0.691290283203125,
+            0.3314056396484375
+          ],
+          "patch_NCC": 0.9485758127157227,
+          "lk_photometric_error": 20.190841674804688,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "display",
+          "window": 15,
+          "fx17_column_line": [
+            587.1137466430664,
+            1508.6635131835938
+          ],
+          "forward_backward_scaled_pixels": 0.19629018008708954,
+          "forward_backward_native_fx10_column_line": [
+            -0.23792724609375,
+            -0.1281280517578125
+          ],
+          "patch_NCC": 0.9755712233236578,
+          "lk_photometric_error": 4.180139064788818,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "display",
+          "window": 25,
+          "fx17_column_line": [
+            587.0189628601074,
+            1508.7044677734375
+          ],
+          "forward_backward_scaled_pixels": 0.19802336394786835,
+          "forward_backward_native_fx10_column_line": [
+            -0.25289306640625,
+            -0.119293212890625
+          ],
+          "patch_NCC": 0.9696785007484162,
+          "lk_photometric_error": 5.114099979400635,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "display",
+          "window": 35,
+          "fx17_column_line": [
+            586.7853698730469,
+            1508.717041015625
+          ],
+          "forward_backward_scaled_pixels": 0.13497339189052582,
+          "forward_backward_native_fx10_column_line": [
+            0.11898193359375,
+            0.112640380859375
+          ],
+          "patch_NCC": 0.9556869321271712,
+          "lk_photometric_error": 6.885178565979004,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "clahe",
+          "window": 15,
+          "fx17_column_line": [
+            589.405403137207,
+            1509.5845947265625
+          ],
+          "forward_backward_scaled_pixels": 0.9796234369277954,
+          "forward_backward_native_fx10_column_line": [
+            -1.140869140625,
+            -0.6717376708984375
+          ],
+          "patch_NCC": 0.9411609454760909,
+          "lk_photometric_error": 13.935694694519043,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "clahe",
+          "window": 25,
+          "fx17_column_line": [
+            589.2814064025879,
+            1509.6815185546875
+          ],
+          "forward_backward_scaled_pixels": 0.15429449081420898,
+          "forward_backward_native_fx10_column_line": [
+            0.151495361328125,
+            0.121826171875
+          ],
+          "patch_NCC": 0.9474318509919802,
+          "lk_photometric_error": 18.680349349975586,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "clahe",
+          "window": 35,
+          "fx17_column_line": [
+            588.746021270752,
+            1509.8237915039062
+          ],
+          "forward_backward_scaled_pixels": 0.49277982115745544,
+          "forward_backward_native_fx10_column_line": [
+            0.6215087890625,
+            0.30322265625
+          ],
+          "patch_NCC": 0.953408172723693,
+          "lk_photometric_error": 18.9818115234375,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "display",
+          "window": 15,
+          "fx17_column_line": [
+            587.4679832458496,
+            1508.8009185791016
+          ],
+          "forward_backward_scaled_pixels": 0.07837548106908798,
+          "forward_backward_native_fx10_column_line": [
+            -0.098284912109375,
+            -0.048675537109375
+          ],
+          "patch_NCC": 0.9810648289335205,
+          "lk_photometric_error": 2.972916603088379,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "display",
+          "window": 25,
+          "fx17_column_line": [
+            587.3008651733398,
+            1508.7862243652344
+          ],
+          "forward_backward_scaled_pixels": 0.10889240354299545,
+          "forward_backward_native_fx10_column_line": [
+            -0.142138671875,
+            -0.0629730224609375
+          ],
+          "patch_NCC": 0.9770018796185652,
+          "lk_photometric_error": 4.375649929046631,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "display",
+          "window": 35,
+          "fx17_column_line": [
+            587.0071220397949,
+            1508.7747344970703
+          ],
+          "forward_backward_scaled_pixels": 0.10868196934461594,
+          "forward_backward_native_fx10_column_line": [
+            0.09859619140625,
+            0.0895233154296875
+          ],
+          "patch_NCC": 0.9619202166642136,
+          "lk_photometric_error": 6.3998212814331055,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "clahe",
+          "window": 15,
+          "fx17_column_line": [
+            589.7800979614258,
+            1509.7773895263672
+          ],
+          "forward_backward_scaled_pixels": 10.195855140686035,
+          "forward_backward_native_fx10_column_line": [
+            -11.944537353515624,
+            -6.944366455078125
+          ],
+          "patch_NCC": 0.9275625702773451,
+          "lk_photometric_error": 14.463472366333008,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "clahe",
+          "window": 25,
+          "fx17_column_line": [
+            589.4730796813965,
+            1509.760269165039
+          ],
+          "forward_backward_scaled_pixels": 0.05085089057683945,
+          "forward_backward_native_fx10_column_line": [
+            0.00924072265625,
+            0.0505218505859375
+          ],
+          "patch_NCC": 0.9411393972450903,
+          "lk_photometric_error": 19.273700714111328,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "clahe",
+          "window": 35,
+          "fx17_column_line": [
+            588.8889007568359,
+            1509.9047241210938
+          ],
+          "forward_backward_scaled_pixels": 0.5507157444953918,
+          "forward_backward_native_fx10_column_line": [
+            0.70361328125,
+            0.331512451171875
+          ],
+          "patch_NCC": 0.9479604477661647,
+          "lk_photometric_error": 19.507627487182617,
+          "reverse_success": true
+        }
+      ],
+      "diagnostic_trial_gate": "reverse_success AND FB<=0.75 rescaled-image pixels AND local15x15NCC>=0.8; analyst exploratory consistency checks, not independent accuracy criteria.",
+      "consistent_trials": 21,
+      "consistent_bands": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "native_fx17_subpixel_column_line": [
+        587.4865264892578,
+        1508.8011627197266
+      ],
+      "native_fx17_rounded_column_line": [
+        587,
+        1509
+      ],
+      "trial_coordinate_p05_p95": [
+        [
+          586.4805335998535,
+          1508.6635131835938
+        ],
+        [
+          589.4730796813965,
+          1509.8842468261719
+        ]
+      ],
+      "trial_max_radius_about_median": 2.3465012448106135,
+      "source_point_index": 66518,
+      "xyz_reference": [
+        1.2096543079737163,
+        -0.1085,
+        0.5395
+      ],
+      "independent_visual_review": "PENDING",
+      "recommended_for_exploratory_join": false,
+      "physical_registration_validated": false,
+      "physical_localization_uncertainty": null
+    },
+    {
+      "id": "fx17_track_red_upper_6",
+      "prior_fx10_id": "red_upper_6",
+      "native_fx10_anchor_column_line": [
+        992.1574348722186,
+        1668.2689918518067
+      ],
+      "scaled_fx10_tracking_xy": [
+        218.2689971923828,
+        19.08910369873047
+      ],
+      "initialization_policy": "Median displacement from twelve nearest same-leaf cross-sensor SIFT candidates; initialization only, no candidate substituted for exact anchor.",
+      "initial_fx17_column_line": [
+        603.4544365967021,
+        1561.6031036376953
+      ],
+      "trials": [
+        {
+          "overlap_band": 0,
+          "contrast": "display",
+          "window": 15,
+          "fx17_column_line": [
+            603.4107933044434,
+            1563.6200714111328
+          ],
+          "forward_backward_scaled_pixels": 58.2951545715332,
+          "forward_backward_native_fx10_column_line": [
+            91.973046875,
+            -9.69598388671875
+          ],
+          "patch_NCC": 0.8447131112744627,
+          "lk_photometric_error": 7.597499847412109,
+          "reverse_success": false
+        },
+        {
+          "overlap_band": 0,
+          "contrast": "display",
+          "window": 25,
+          "fx17_column_line": [
+            603.8033027648926,
+            1562.7875366210938
+          ],
+          "forward_backward_scaled_pixels": 45.68461227416992,
+          "forward_backward_native_fx10_column_line": [
+            72.30554809570313,
+            -6.697784423828125
+          ],
+          "patch_NCC": 0.9220679530694983,
+          "lk_photometric_error": 12.157699584960938,
+          "reverse_success": false
+        },
+        {
+          "overlap_band": 0,
+          "contrast": "display",
+          "window": 35,
+          "fx17_column_line": [
+            603.5717353820801,
+            1562.2817840576172
+          ],
+          "forward_backward_scaled_pixels": 59.846168518066406,
+          "forward_backward_native_fx10_column_line": [
+            95.00513916015625,
+            -7.4694061279296875
+          ],
+          "patch_NCC": 0.917590991827991,
+          "lk_photometric_error": 13.715842247009277,
+          "reverse_success": false
+        },
+        {
+          "overlap_band": 0,
+          "contrast": "clahe",
+          "window": 15,
+          "fx17_column_line": [
+            605.0111389160156,
+            1561.6088409423828
+          ],
+          "forward_backward_scaled_pixels": 0.0739506259560585,
+          "forward_backward_native_fx10_column_line": [
+            0.1180755615234375,
+            0.0047607421875
+          ],
+          "patch_NCC": 0.9231281803272822,
+          "lk_photometric_error": 16.902639389038086,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 0,
+          "contrast": "clahe",
+          "window": 25,
+          "fx17_column_line": [
+            604.1221351623535,
+            1561.8033294677734
+          ],
+          "forward_backward_scaled_pixels": 0.13218294084072113,
+          "forward_backward_native_fx10_column_line": [
+            0.209185791015625,
+            -0.01947021484375
+          ],
+          "patch_NCC": 0.9178443872946731,
+          "lk_photometric_error": 15.297900199890137,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 0,
+          "contrast": "clahe",
+          "window": 35,
+          "fx17_column_line": [
+            604.1644058227539,
+            1561.8805694580078
+          ],
+          "forward_backward_scaled_pixels": 0.05816326662898064,
+          "forward_backward_native_fx10_column_line": [
+            0.09273681640625,
+            -0.004852294921875
+          ],
+          "patch_NCC": 0.9225729994011757,
+          "lk_photometric_error": 14.25487232208252,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "display",
+          "window": 15,
+          "fx17_column_line": [
+            604.0522079467773,
+            1562.0919494628906
+          ],
+          "forward_backward_scaled_pixels": 55.1834602355957,
+          "forward_backward_native_fx10_column_line": [
+            87.38948974609374,
+            -7.8766326904296875
+          ],
+          "patch_NCC": 0.9392717008310297,
+          "lk_photometric_error": 7.4159722328186035,
+          "reverse_success": false
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "display",
+          "window": 25,
+          "fx17_column_line": [
+            603.8979034423828,
+            1561.8622283935547
+          ],
+          "forward_backward_scaled_pixels": 0.02851458452641964,
+          "forward_backward_native_fx10_column_line": [
+            -0.0455291748046875,
+            0.0018310546875
+          ],
+          "patch_NCC": 0.9384878933461069,
+          "lk_photometric_error": 6.85515022277832,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "display",
+          "window": 35,
+          "fx17_column_line": [
+            603.8919219970703,
+            1561.7320251464844
+          ],
+          "forward_backward_scaled_pixels": 58.2286262512207,
+          "forward_backward_native_fx10_column_line": [
+            92.3169189453125,
+            -7.842498779296875
+          ],
+          "patch_NCC": 0.9372857618331902,
+          "lk_photometric_error": 7.144821643829346,
+          "reverse_success": false
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "clahe",
+          "window": 15,
+          "fx17_column_line": [
+            604.8731231689453,
+            1560.9705200195312
+          ],
+          "forward_backward_scaled_pixels": 0.06606292724609375,
+          "forward_backward_native_fx10_column_line": [
+            -0.085687255859375,
+            0.0386810302734375
+          ],
+          "patch_NCC": 0.9123182217735392,
+          "lk_photometric_error": 21.18055534362793,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "clahe",
+          "window": 25,
+          "fx17_column_line": [
+            604.085506439209,
+            1561.3536529541016
+          ],
+          "forward_backward_scaled_pixels": 0.12037769705057144,
+          "forward_backward_native_fx10_column_line": [
+            0.1845611572265625,
+            -0.034423828125
+          ],
+          "patch_NCC": 0.922930471331646,
+          "lk_photometric_error": 18.20210075378418,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "clahe",
+          "window": 35,
+          "fx17_column_line": [
+            604.1880683898926,
+            1561.5276947021484
+          ],
+          "forward_backward_scaled_pixels": 0.0841761901974678,
+          "forward_backward_native_fx10_column_line": [
+            0.1326995849609375,
+            -0.0143890380859375
+          ],
+          "patch_NCC": 0.9346748466487819,
+          "lk_photometric_error": 16.269643783569336,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "display",
+          "window": 15,
+          "fx17_column_line": [
+            603.2790412902832,
+            1562.8638458251953
+          ],
+          "forward_backward_scaled_pixels": 52.250057220458984,
+          "forward_backward_native_fx10_column_line": [
+            82.33406982421874,
+            -9.058761596679688
+          ],
+          "patch_NCC": 0.9008922154657538,
+          "lk_photometric_error": 7.324999809265137,
+          "reverse_success": false
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "display",
+          "window": 25,
+          "fx17_column_line": [
+            603.6051445007324,
+            1562.2430725097656
+          ],
+          "forward_backward_scaled_pixels": 0.2023993283510208,
+          "forward_backward_native_fx10_column_line": [
+            -0.26148681640625,
+            0.1194000244140625
+          ],
+          "patch_NCC": 0.9326742905172111,
+          "lk_photometric_error": 9.818400382995605,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "display",
+          "window": 35,
+          "fx17_column_line": [
+            603.5804481506348,
+            1561.851303100586
+          ],
+          "forward_backward_scaled_pixels": 56.9105224609375,
+          "forward_backward_native_fx10_column_line": [
+            90.2302978515625,
+            -7.6505889892578125
+          ],
+          "patch_NCC": 0.9276429265868319,
+          "lk_photometric_error": 11.072066307067871,
+          "reverse_success": false
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "clahe",
+          "window": 15,
+          "fx17_column_line": [
+            604.5378570556641,
+            1561.261978149414
+          ],
+          "forward_backward_scaled_pixels": 0.21427063643932343,
+          "forward_backward_native_fx10_column_line": [
+            -0.310650634765625,
+            0.09063720703125
+          ],
+          "patch_NCC": 0.9245980521605954,
+          "lk_photometric_error": 18.376249313354492,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "clahe",
+          "window": 25,
+          "fx17_column_line": [
+            603.8904113769531,
+            1561.4682312011719
+          ],
+          "forward_backward_scaled_pixels": 0.09063348919153214,
+          "forward_backward_native_fx10_column_line": [
+            0.1374847412109375,
+            -0.0288238525390625
+          ],
+          "patch_NCC": 0.922996899741993,
+          "lk_photometric_error": 15.47189998626709,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "clahe",
+          "window": 35,
+          "fx17_column_line": [
+            604.0034675598145,
+            1561.5630493164062
+          ],
+          "forward_backward_scaled_pixels": 0.06797733157873154,
+          "forward_backward_native_fx10_column_line": [
+            0.107574462890625,
+            -0.0100250244140625
+          ],
+          "patch_NCC": 0.9295135261470934,
+          "lk_photometric_error": 14.186453819274902,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "display",
+          "window": 15,
+          "fx17_column_line": [
+            603.4999008178711,
+            1562.5953216552734
+          ],
+          "forward_backward_scaled_pixels": 52.688968658447266,
+          "forward_backward_native_fx10_column_line": [
+            83.221875,
+            -8.408645629882812
+          ],
+          "patch_NCC": 0.9294514073514261,
+          "lk_photometric_error": 6.419305324554443,
+          "reverse_success": false
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "display",
+          "window": 25,
+          "fx17_column_line": [
+            603.6661529541016,
+            1562.1065063476562
+          ],
+          "forward_backward_scaled_pixels": 0.12125906348228455,
+          "forward_backward_native_fx10_column_line": [
+            -0.17584228515625,
+            0.051239013671875
+          ],
+          "patch_NCC": 0.9371008993410703,
+          "lk_photometric_error": 7.899050235748291,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "display",
+          "window": 35,
+          "fx17_column_line": [
+            603.6735954284668,
+            1561.8339538574219
+          ],
+          "forward_backward_scaled_pixels": 55.8265495300293,
+          "forward_backward_native_fx10_column_line": [
+            88.58153076171875,
+            -7.175750732421875
+          ],
+          "patch_NCC": 0.9347103085231694,
+          "lk_photometric_error": 8.801709175109863,
+          "reverse_success": false
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "clahe",
+          "window": 15,
+          "fx17_column_line": [
+            604.3823204040527,
+            1561.3846282958984
+          ],
+          "forward_backward_scaled_pixels": 0.3233301639556885,
+          "forward_backward_native_fx10_column_line": [
+            -0.4625701904296875,
+            0.144775390625
+          ],
+          "patch_NCC": 0.9322283277208394,
+          "lk_photometric_error": 17.627639770507812,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "clahe",
+          "window": 25,
+          "fx17_column_line": [
+            603.8469200134277,
+            1561.5028076171875
+          ],
+          "forward_backward_scaled_pixels": 0.08479159325361252,
+          "forward_backward_native_fx10_column_line": [
+            0.129248046875,
+            -0.0257720947265625
+          ],
+          "patch_NCC": 0.9271243835570308,
+          "lk_photometric_error": 15.520500183105469,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "clahe",
+          "window": 35,
+          "fx17_column_line": [
+            603.9872055053711,
+            1561.5912170410156
+          ],
+          "forward_backward_scaled_pixels": 0.06999119371175766,
+          "forward_backward_native_fx10_column_line": [
+            0.110321044921875,
+            -0.01202392578125
+          ],
+          "patch_NCC": 0.9339824000341723,
+          "lk_photometric_error": 14.30538272857666,
+          "reverse_success": true
+        }
+      ],
+      "diagnostic_trial_gate": "reverse_success AND FB<=0.75 rescaled-image pixels AND local15x15NCC>=0.8; analyst exploratory consistency checks, not independent accuracy criteria.",
+      "consistent_trials": 15,
+      "consistent_bands": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "native_fx17_subpixel_column_line": [
+        604.085506439209,
+        1561.5630493164062
+      ],
+      "native_fx17_rounded_column_line": [
+        604,
+        1562
+      ],
+      "trial_coordinate_p05_p95": [
+        [
+          603.6478504180908,
+          1561.1745407104493
+        ],
+        [
+          604.9145278930664,
+          1562.147476196289
+        ]
+      ],
+      "trial_max_radius_about_median": 0.9856120335181232,
+      "source_point_index": 72896,
+      "xyz_reference": [
+        1.2435,
+        -0.1235,
+        0.5403231714199674
+      ],
+      "independent_visual_review": "PENDING",
+      "recommended_for_exploratory_join": false,
+      "physical_registration_validated": false,
+      "physical_localization_uncertainty": null
+    },
+    {
+      "id": "fx17_track_green_lower_0",
+      "prior_fx10_id": "green_lower_0",
+      "native_fx10_anchor_column_line": [
+        411.8931819370814,
+        1826.8903121948242
+      ],
+      "scaled_fx10_tracking_xy": [
+        376.89031982421875,
+        381.7542724609375
+      ],
+      "initialization_policy": "Median displacement from twelve nearest same-leaf cross-sensor SIFT candidates; initialization only, no candidate substituted for exact anchor.",
+      "initial_fx17_column_line": [
+        235.03804198555326,
+        1718.702783488264
+      ],
+      "trials": [
+        {
+          "overlap_band": 0,
+          "contrast": "display",
+          "window": 15,
+          "fx17_column_line": [
+            234.88153076171875,
+            1718.8781433105469
+          ],
+          "forward_backward_scaled_pixels": 0.7405721545219421,
+          "forward_backward_native_fx10_column_line": [
+            -1.016796875,
+            -0.3802490234375
+          ],
+          "patch_NCC": 0.941045157951715,
+          "lk_photometric_error": 4.8577775955200195,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 0,
+          "contrast": "display",
+          "window": 25,
+          "fx17_column_line": [
+            234.37185668945312,
+            1718.1039123535156
+          ],
+          "forward_backward_scaled_pixels": 0.09176786243915558,
+          "forward_backward_native_fx10_column_line": [
+            0.106640625,
+            0.063079833984375
+          ],
+          "patch_NCC": 0.9330857340890782,
+          "lk_photometric_error": 5.568950176239014,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 0,
+          "contrast": "display",
+          "window": 35,
+          "fx17_column_line": [
+            234.7705078125,
+            1718.3343505859375
+          ],
+          "forward_backward_scaled_pixels": 0.4672418534755707,
+          "forward_backward_native_fx10_column_line": [
+            0.522509765625,
+            0.33416748046875
+          ],
+          "patch_NCC": 0.9324852714052282,
+          "lk_photometric_error": 6.439693927764893,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 0,
+          "contrast": "clahe",
+          "window": 15,
+          "fx17_column_line": [
+            234.70315551757812,
+            1718.7072143554688
+          ],
+          "forward_backward_scaled_pixels": 0.26426205039024353,
+          "forward_backward_native_fx10_column_line": [
+            -0.347265625,
+            -0.1507568359375
+          ],
+          "patch_NCC": 0.950663315504899,
+          "lk_photometric_error": 8.632499694824219,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 0,
+          "contrast": "clahe",
+          "window": 25,
+          "fx17_column_line": [
+            234.66635131835938,
+            1718.3584899902344
+          ],
+          "forward_backward_scaled_pixels": 0.2440614104270935,
+          "forward_backward_native_fx10_column_line": [
+            0.357275390625,
+            0.0985107421875
+          ],
+          "patch_NCC": 0.9453033070351837,
+          "lk_photometric_error": 9.635250091552734,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 0,
+          "contrast": "clahe",
+          "window": 35,
+          "fx17_column_line": [
+            234.79586791992188,
+            1718.4194641113281
+          ],
+          "forward_backward_scaled_pixels": 0.5157678127288818,
+          "forward_backward_native_fx10_column_line": [
+            0.65732421875,
+            0.31182861328125
+          ],
+          "patch_NCC": 0.9435869542537308,
+          "lk_photometric_error": 10.72698974609375,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "display",
+          "window": 15,
+          "fx17_column_line": [
+            235.21871948242188,
+            1719.0528259277344
+          ],
+          "forward_backward_scaled_pixels": 0.38607147336006165,
+          "forward_backward_native_fx10_column_line": [
+            -0.530322265625,
+            -0.197967529296875
+          ],
+          "patch_NCC": 0.9500495364494405,
+          "lk_photometric_error": 5.425416469573975,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "display",
+          "window": 25,
+          "fx17_column_line": [
+            234.44354248046875,
+            1718.0878601074219
+          ],
+          "forward_backward_scaled_pixels": 0.22078253328800201,
+          "forward_backward_native_fx10_column_line": [
+            0.273291015625,
+            0.139892578125
+          ],
+          "patch_NCC": 0.9389427783110312,
+          "lk_photometric_error": 6.220200061798096,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "display",
+          "window": 35,
+          "fx17_column_line": [
+            234.57321166992188,
+            1718.1650085449219
+          ],
+          "forward_backward_scaled_pixels": 0.5712879300117493,
+          "forward_backward_native_fx10_column_line": [
+            0.640625,
+            0.407501220703125
+          ],
+          "patch_NCC": 0.9398253962923133,
+          "lk_photometric_error": 6.835943698883057,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "clahe",
+          "window": 15,
+          "fx17_column_line": [
+            234.8721923828125,
+            1718.7692565917969
+          ],
+          "forward_backward_scaled_pixels": 0.03130841627717018,
+          "forward_backward_native_fx10_column_line": [
+            0.0498046875,
+            0.00335693359375
+          ],
+          "patch_NCC": 0.956006475503111,
+          "lk_photometric_error": 7.993472099304199,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "clahe",
+          "window": 25,
+          "fx17_column_line": [
+            234.69659423828125,
+            1718.3333740234375
+          ],
+          "forward_backward_scaled_pixels": 0.21838164329528809,
+          "forward_backward_native_fx10_column_line": [
+            0.3150390625,
+            0.094451904296875
+          ],
+          "patch_NCC": 0.9512613959329207,
+          "lk_photometric_error": 9.38895034790039,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 1,
+          "contrast": "clahe",
+          "window": 35,
+          "fx17_column_line": [
+            234.57675170898438,
+            1718.2030029296875
+          ],
+          "forward_backward_scaled_pixels": 0.42827191948890686,
+          "forward_backward_native_fx10_column_line": [
+            0.548779296875,
+            0.2564697265625
+          ],
+          "patch_NCC": 0.9488180071697946,
+          "lk_photometric_error": 10.307372093200684,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "display",
+          "window": 15,
+          "fx17_column_line": [
+            235.69338989257812,
+            1719.30322265625
+          ],
+          "forward_backward_scaled_pixels": 0.47213801741600037,
+          "forward_backward_native_fx10_column_line": [
+            0.616943359375,
+            0.2724609375
+          ],
+          "patch_NCC": 0.9403667954623881,
+          "lk_photometric_error": 4.796805381774902,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "display",
+          "window": 25,
+          "fx17_column_line": [
+            234.55654907226562,
+            1718.1770935058594
+          ],
+          "forward_backward_scaled_pixels": 0.147391676902771,
+          "forward_backward_native_fx10_column_line": [
+            0.18046875,
+            0.094879150390625
+          ],
+          "patch_NCC": 0.9233650204684392,
+          "lk_photometric_error": 5.6219000816345215,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "display",
+          "window": 35,
+          "fx17_column_line": [
+            234.66671752929688,
+            1718.2466735839844
+          ],
+          "forward_backward_scaled_pixels": 0.46807563304901123,
+          "forward_backward_native_fx10_column_line": [
+            0.52822265625,
+            0.331817626953125
+          ],
+          "patch_NCC": 0.9246491718606852,
+          "lk_photometric_error": 6.1414794921875,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "clahe",
+          "window": 15,
+          "fx17_column_line": [
+            235.37646484375,
+            1719.0447387695312
+          ],
+          "forward_backward_scaled_pixels": 0.413316547870636,
+          "forward_backward_native_fx10_column_line": [
+            0.5619140625,
+            0.217926025390625
+          ],
+          "patch_NCC": 0.9437771233558692,
+          "lk_photometric_error": 8.367500305175781,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "clahe",
+          "window": 25,
+          "fx17_column_line": [
+            234.779296875,
+            1718.3672790527344
+          ],
+          "forward_backward_scaled_pixels": 0.13595296442508698,
+          "forward_backward_native_fx10_column_line": [
+            0.1966796875,
+            0.058074951171875
+          ],
+          "patch_NCC": 0.9343753040011777,
+          "lk_photometric_error": 9.584549903869629,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 2,
+          "contrast": "clahe",
+          "window": 35,
+          "fx17_column_line": [
+            234.66928100585938,
+            1718.2637939453125
+          ],
+          "forward_backward_scaled_pixels": 0.3880741000175476,
+          "forward_backward_native_fx10_column_line": [
+            0.498876953125,
+            0.231048583984375
+          ],
+          "patch_NCC": 0.9321145776913914,
+          "lk_photometric_error": 10.258877754211426,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "display",
+          "window": 15,
+          "fx17_column_line": [
+            235.45169067382812,
+            1719.1477661132812
+          ],
+          "forward_backward_scaled_pixels": 0.12003641575574875,
+          "forward_backward_native_fx10_column_line": [
+            -0.18173828125,
+            -0.038818359375
+          ],
+          "patch_NCC": 0.9437173422196236,
+          "lk_photometric_error": 4.9859724044799805,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "display",
+          "window": 25,
+          "fx17_column_line": [
+            234.58612060546875,
+            1718.1318969726562
+          ],
+          "forward_backward_scaled_pixels": 0.24311640858650208,
+          "forward_backward_native_fx10_column_line": [
+            0.3119140625,
+            0.145263671875
+          ],
+          "patch_NCC": 0.925227641957189,
+          "lk_photometric_error": 5.830900192260742,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "display",
+          "window": 35,
+          "fx17_column_line": [
+            234.60012817382812,
+            1718.1624450683594
+          ],
+          "forward_backward_scaled_pixels": 0.467793345451355,
+          "forward_backward_native_fx10_column_line": [
+            0.512939453125,
+            0.340667724609375
+          ],
+          "patch_NCC": 0.9275997699161561,
+          "lk_photometric_error": 6.389132499694824,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "clahe",
+          "window": 15,
+          "fx17_column_line": [
+            235.243896484375,
+            1718.9479370117188
+          ],
+          "forward_backward_scaled_pixels": 0.10984619706869125,
+          "forward_backward_native_fx10_column_line": [
+            0.148876953125,
+            0.058380126953125
+          ],
+          "patch_NCC": 0.9465918211828599,
+          "lk_photometric_error": 7.949166774749756,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "clahe",
+          "window": 25,
+          "fx17_column_line": [
+            234.81341552734375,
+            1718.3432922363281
+          ],
+          "forward_backward_scaled_pixels": 0.202542245388031,
+          "forward_backward_native_fx10_column_line": [
+            0.29111328125,
+            0.0889892578125
+          ],
+          "patch_NCC": 0.9375237831602579,
+          "lk_photometric_error": 9.462849617004395,
+          "reverse_success": true
+        },
+        {
+          "overlap_band": 3,
+          "contrast": "clahe",
+          "window": 35,
+          "fx17_column_line": [
+            234.5672607421875,
+            1718.1748046875
+          ],
+          "forward_backward_scaled_pixels": 0.37744101881980896,
+          "forward_backward_native_fx10_column_line": [
+            0.47900390625,
+            0.2298583984375
+          ],
+          "patch_NCC": 0.9349141436080048,
+          "lk_photometric_error": 10.291836738586426,
+          "reverse_success": true
+        }
+      ],
+      "diagnostic_trial_gate": "reverse_success AND FB<=0.75 rescaled-image pixels AND local15x15NCC>=0.8; analyst exploratory consistency checks, not independent accuracy criteria.",
+      "consistent_trials": 24,
+      "consistent_bands": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "native_fx17_subpixel_column_line": [
+        234.6998748779297,
+        1718.3388214111328
+      ],
+      "native_fx17_rounded_column_line": [
+        235,
+        1718
+      ],
+      "trial_coordinate_p05_p95": [
+        [
+          234.4604934692383,
+          1718.1081100463866
+        ],
+        [
+          235.4404067993164,
+          1719.1335250854493
+        ]
+      ],
+      "trial_max_radius_about_median": 1.3846089144287157,
+      "source_point_index": 6213,
+      "xyz_reference": [
+        1.3745,
+        0.09412128256159691,
+        0.4975
+      ],
+      "independent_visual_review": "PENDING",
+      "recommended_for_exploratory_join": false,
+      "physical_registration_validated": false,
+      "physical_localization_uncertainty": null
+    }
+  ],
+  "coordinate_resampling": "FX10 matching-display y uses OpenCV exact pixel-centre convention: (y+0.5)*0.625-0.5. FX17 coordinates remain native. Resampling only for registration images; spectra will use integer measured pixels, no interpolation.",
+  "limitations": [
+    "FB/photometric checks and four nearby bands are correlated internal diagnostics, not held-out physical validation.",
+    "Any join composes the prior provisional RGB\u2194FX10 identity with this local FX10\u2194FX17 track; errors are not independently quantified.",
+    "Single-sided recorded visibility only; no whole-leaf or unseen-surface spectra, no ray calibration."
+  ],
+  "source_hashes": {
+    "generated\\research_spectral_fusion_20261007\\registration_probe\\localized_candidate_associations.json": "183d0d0195b18f21730edb9411185333191bcdb0875fc17e9c971b29db4c64d5",
+    "generated\\research_spectral_extension_20261007\\fx17_probe\\overlap_feature_candidates.json": "39a64abd53a1f4eeb73b21be987b6c1b5af586a6da07b6b824470d4f7ebe7db5",
+    "generated\\research_spectral_extension_20261007\\fx17_probe\\fx10_overlap_display.npy": "c92ae67d9b30a301cdf154b652254dd8cde67588802e2e6a35de8ae6d477dace",
+    "generated\\research_spectral_extension_20261007\\fx17_probe\\fx17_overlap_display.npy": "5e7524025ab5de840c7e38cc63eb9d50d2845eca418d6c13da3c7ee0e8cd5526",
+    "generated\\research_spectral_extension_20261007\\fx17_probe\\overlap_sources.json": "f00afadc877e5ab91b4ea2be26817a19e49886f5a8f31da2e23b9324d7021892"
+  },
+  "script_sha256": "16468a93502276d41c0861fd3069b82dec15c95ff25d88f7798c4a4ccdde9f05"
+}

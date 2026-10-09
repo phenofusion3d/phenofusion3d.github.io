@@ -1,0 +1,112 @@
+{
+  "name": "pyramid_mind_foreground",
+  "status": "FROZEN_FOR_BLIND_AUDIT",
+  "method": "Three-scale MIND 4/2/1 + bounded coarse translation grid chosen by training loss + residual affine + regularized5x7bicubic displacement",
+  "training_pixels": 2340,
+  "training_loss": 0.2010103315114975,
+  "training_objective": 0.20472335815429688,
+  "history": [
+    {
+      "scale": 4,
+      "training_translation_grid_best": [
+        [
+          0.13317793607711792,
+          6,
+          0
+        ],
+        [
+          0.13622158765792847,
+          9,
+          0
+        ],
+        [
+          0.1363377422094345,
+          3,
+          0
+        ],
+        [
+          0.13814447820186615,
+          9,
+          3
+        ],
+        [
+          0.14036566019058228,
+          6,
+          3
+        ],
+        [
+          0.14077742397785187,
+          12,
+          3
+        ],
+        [
+          0.14278893172740936,
+          3,
+          -3
+        ],
+        [
+          0.14419999718666077,
+          6,
+          -3
+        ]
+      ]
+    },
+    {
+      "scale": 4,
+      "training_loss": 0.13108836114406586,
+      "affine_residual": [
+        [
+          0.5266403555870056,
+          -0.8584363460540771,
+          6.431956768035889
+        ],
+        [
+          -0.06966186314821243,
+          3.342069387435913,
+          0.911221981048584
+        ]
+      ]
+    },
+    {
+      "scale": 2,
+      "training_loss": 0.17081956565380096,
+      "affine_residual": [
+        [
+          -13.248833656311035,
+          -9.109739303588867,
+          -5.421464920043945
+        ],
+        [
+          -5.267634868621826,
+          -0.05759000778198242,
+          -1.512460470199585
+        ]
+      ]
+    },
+    {
+      "scale": 1,
+      "training_loss": 0.21061809360980988,
+      "affine_residual": [
+        [
+          -11.972302436828613,
+          -9.648155212402344,
+          -3.860666275024414
+        ],
+        [
+          -7.311256408691406,
+          4.485145568847656,
+          -1.5410168170928955
+        ]
+      ]
+    }
+  ],
+  "holdout_policy": "30px exclusion disks; no holdout errors inspected before freezing",
+  "source_foreground_only": true,
+  "jacobian_min": 0.7544482350349426,
+  "jacobian_max": 1.0019447803497314,
+  "folded_training_pixels": 0,
+  "maximum_training_displacement_rgb_px": 14.687911033630371,
+  "artifact": "pyramid_mind_foreground.npz",
+  "sha256": "29f75f69c731295bb832a3b0bdb076f773d5986092b6442442cdf9fa9739ce81",
+  "scope": "Single green P5 leaf in RGBframe1055904. Appearance hypothesis only; no metric surface assignments."
+}

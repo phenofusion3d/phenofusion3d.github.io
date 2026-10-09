@@ -1,0 +1,11 @@
+{
+  "local_references_checked": 21,
+  "missing": [],
+  "passed": true,
+  "browser_visual_check": "passed",
+  "browser": "Codex in-app browser",
+  "report_url": "http://127.0.0.1:8877/research_lab_candidate_20261007/index.html",
+  "linked_linux_report_navigation": "passed",
+  "archive_byte_verification": "CRC and every archive member checked; see lab_test_kit_v2_receipt.json",
+  "browser_archive_download_tested": false
+}

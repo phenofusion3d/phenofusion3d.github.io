@@ -1,0 +1,35 @@
+{
+  "scope": "Additive Research workspace desktop UI",
+  "changed_source_files": [
+    "app/analysis_dialog.py",
+    "tests/test_analysis_ui.py"
+  ],
+  "focused_tests": {
+    "files": [
+      "tests/test_analysis_ui.py",
+      "tests/test_hyperspectral.py"
+    ],
+    "passed": 23,
+    "failed": 0,
+    "elapsed_seconds": 9.83,
+    "first_attempt_environment_error": "Sandbox default pytest temporary folder was not writable; rerun used a fresh workspace-local --basetemp."
+  },
+  "protected_source": {
+    "files_checked": 26,
+    "changed_count": 0,
+    "changed_files": [
+      null
+    ]
+  },
+  "visual_check": {
+    "path": "research_workspace_ui.png",
+    "method": "Offscreen PyQt screenshot inspected at 1060x760; explicit Arial font loaded for screenshot runtime only.",
+    "checked": [
+      "Sixth Research workspace tab",
+      "Conditional-unit and dataset-specific-mask explanation",
+      "Template/build/saved report fields and actions",
+      "Existing five tabs retained"
+    ]
+  },
+  "hardware": "No hardware operated; offline source/lifecycle checks only."
+}

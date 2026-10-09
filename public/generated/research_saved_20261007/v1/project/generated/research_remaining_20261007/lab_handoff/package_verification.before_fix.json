@@ -1,0 +1,20 @@
+{
+  "method": "setuptools build_py module selection; no wheel built or installed",
+  "py_modules": null,
+  "main_discovered": false,
+  "research_modules": [
+    "app\\research_report.py",
+    "processing\\research_workspace\\spectral_extract.py",
+    "processing\\research_workspace\\spectral_mapping.py",
+    "processing\\research_workspace\\viewer.py",
+    "processing\\research_workspace\\workflow.py",
+    "processing\\research_workspace\\__init__.py",
+    "processing\\research_workspace\\__main__.py"
+  ],
+  "entry_points": {
+    "console_scripts": [
+      "phenofusion3d = main:main"
+    ]
+  },
+  "gui_entrypoint_complete": false
+}

@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "fx10": {
+      "source_DN_reread_exact": true,
+      "Q_and_Q0_independent_recalculation_exact": true,
+      "samples": 1613,
+      "bands": 224,
+      "all_band_Q_valid_samples": 1142,
+      "all_normalized_invalid_values_NaN": true
+    },
+    "fx17": {
+      "source_DN_reread_exact": true,
+      "Q_and_Q0_independent_recalculation_exact": true,
+      "samples": 643,
+      "bands": 224,
+      "all_band_Q_valid_samples": 631,
+      "all_normalized_invalid_values_NaN": true
+    }
+  },
+  "scope": "Measurement, source identity and arithmetic preservation only. Failed image registration is NOT accepted by these checks."
+}

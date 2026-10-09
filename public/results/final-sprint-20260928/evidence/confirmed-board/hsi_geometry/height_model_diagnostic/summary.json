@@ -1,0 +1,78 @@
+{
+  "fx10": {
+    "worst_held_out_error_px": 174.6981430969673,
+    "folds": [
+      {
+        "held_id": "red_upper_2",
+        "error_px": 10.075477620010483,
+        "condition": 4.8516913701067095,
+        "max_sensitivity": {
+          "RGB_bridge_leave_frame_out": 0.3757048980570937,
+          "calibration_plane_leave_sheet_out": 0.20162952719175253,
+          "single_coordinate_1mm_stress": 2.510453390423921,
+          "training_correspondence_1px_stress": 0.9358311425750117
+        }
+      },
+      {
+        "held_id": "red_upper_6",
+        "error_px": 14.47982071298794,
+        "condition": 4.984540853312817,
+        "max_sensitivity": {
+          "RGB_bridge_leave_frame_out": 0.38246247407471473,
+          "calibration_plane_leave_sheet_out": 0.22242725286026982,
+          "single_coordinate_1mm_stress": 2.7435164071834754,
+          "training_correspondence_1px_stress": 1.06861070740581
+        }
+      },
+      {
+        "held_id": "green_lower_0",
+        "error_px": 174.6981430969673,
+        "condition": 145.02953923309542,
+        "max_sensitivity": {
+          "RGB_bridge_leave_frame_out": 4.123622291578126,
+          "calibration_plane_leave_sheet_out": 2.5214467746917415,
+          "single_coordinate_1mm_stress": 34.25506592376412,
+          "training_correspondence_1px_stress": 17.190835688705533
+        }
+      }
+    ]
+  },
+  "fx17": {
+    "worst_held_out_error_px": 123.42780378536953,
+    "folds": [
+      {
+        "held_id": "fx17_track_red_upper_2",
+        "error_px": 7.237963154669132,
+        "condition": 4.564253245922702,
+        "max_sensitivity": {
+          "RGB_bridge_leave_frame_out": 0.34092224093186935,
+          "calibration_plane_leave_sheet_out": 0.05519880628590607,
+          "single_coordinate_1mm_stress": 1.6131772213231317,
+          "training_correspondence_1px_stress": 0.9344727239232498
+        }
+      },
+      {
+        "held_id": "fx17_track_red_upper_6",
+        "error_px": 12.280339088987493,
+        "condition": 4.678131372916143,
+        "max_sensitivity": {
+          "RGB_bridge_leave_frame_out": 0.34989434524407964,
+          "calibration_plane_leave_sheet_out": 0.06685599877341812,
+          "single_coordinate_1mm_stress": 1.7699753007819798,
+          "training_correspondence_1px_stress": 1.070208124500141
+        }
+      },
+      {
+        "held_id": "fx17_track_green_lower_0",
+        "error_px": 123.42780378536953,
+        "condition": 143.56832246894226,
+        "max_sensitivity": {
+          "RGB_bridge_leave_frame_out": 2.685055890965515,
+          "calibration_plane_leave_sheet_out": 0.7585642180884951,
+          "single_coordinate_1mm_stress": 20.47656451523134,
+          "training_correspondence_1px_stress": 16.78853522712143
+        }
+      }
+    ]
+  }
+}

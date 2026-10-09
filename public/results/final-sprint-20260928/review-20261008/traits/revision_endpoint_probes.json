@@ -1,0 +1,306 @@
+[
+  {
+    "id": "P5.O02.length_revision",
+    "manual_dimension_id": "P5.O02.length",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        533,
+        404
+      ],
+      [
+        589,
+        413
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Three-view venation review showed the first batch axes were reversed; this is basal lamina to true terminal margin.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "basal margin candidate",
+        "source_pixel_xy": [
+          533,
+          404
+        ],
+        "candidate_count": 52,
+        "fused_point_index": 1649599,
+        "camera_id": 0,
+        "original_point_index": 7195261,
+        "xyz_m": [
+          1.3907540310660962,
+          0.0077165600018000114,
+          0.6126948641429208
+        ],
+        "reprojection_pixel_xy": [
+          532.7883394019,
+          403.56583696710567
+        ],
+        "source_click_distance_px": 0.4830090557329805,
+        "candidate_key": "P5_O02_length_revision_0"
+      },
+      {
+        "role": "terminal margin candidate",
+        "source_pixel_xy": [
+          589,
+          413
+        ],
+        "candidate_count": 109,
+        "fused_point_index": 1631429,
+        "camera_id": 0,
+        "original_point_index": 7123641,
+        "xyz_m": [
+          1.4460833443373222,
+          0.01392444089911695,
+          0.5797708748019075
+        ],
+        "reprojection_pixel_xy": [
+          588.6949912595132,
+          412.91862053240465
+        ],
+        "source_click_distance_px": 0.3156785541011937,
+        "candidate_key": "P5_O02_length_revision_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 6.4682762513886995,
+    "four_pixel_disk_sensitivity_cm": [
+      5.546943010983704,
+      7.310616188273479
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 1445026,
+        "pixel_xy": [
+          [
+            532.7883394019,
+            403.56583696710567
+          ],
+          [
+            588.6949912595132,
+            412.91862053240465
+          ]
+        ]
+      },
+      {
+        "frame": 1030829,
+        "pixel_xy": [
+          [
+            981.572004062003,
+            393.1172191313374
+          ],
+          [
+            1061.522505858639,
+            401.7449136625879
+          ]
+        ]
+      },
+      {
+        "frame": 1639585,
+        "pixel_xy": [
+          [
+            322.55489640839846,
+            408.49124266327715
+          ],
+          [
+            365.41380883844704,
+            418.0745073639608
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P5.O02.width_revision",
+    "manual_dimension_id": "P5.O02.width",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        545,
+        378
+      ],
+      [
+        549,
+        432
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Three-view venation review showed the first batch axes were reversed; this is the opposing side-margin chord across the midrib.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "first opposite margin candidate",
+        "source_pixel_xy": [
+          545,
+          378
+        ],
+        "candidate_count": 0
+      },
+      {
+        "role": "second opposite margin candidate",
+        "source_pixel_xy": [
+          549,
+          432
+        ],
+        "candidate_count": 73,
+        "fused_point_index": 4842,
+        "camera_id": 0,
+        "original_point_index": 20844,
+        "xyz_m": [
+          1.4078249573517132,
+          0.03343842667446672,
+          0.6044638668076676
+        ],
+        "reprojection_pixel_xy": [
+          549.6375418871405,
+          431.70290920838477
+        ],
+        "source_click_distance_px": 0.703365194135489,
+        "candidate_key": "P5_O02_width_revision_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": null,
+    "status": "No current source-supported endpoint within 4px disk."
+  },
+  {
+    "id": "P3.O01.length_revision",
+    "manual_dimension_id": "P3.O01.length",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        655,
+        477
+      ],
+      [
+        717,
+        499
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Original basal click lay on the crossing flowering stalk; new frozen click is at first visible lamina junction on the correct leaf. This may omit hidden basal tissue.",
+    "organ_kind": "leaf",
+    "endpoints": [
+      {
+        "role": "basal margin candidate",
+        "source_pixel_xy": [
+          655,
+          477
+        ],
+        "candidate_count": 53,
+        "fused_point_index": 1270686,
+        "camera_id": 0,
+        "original_point_index": 6002680,
+        "xyz_m": [
+          0.8616825335343347,
+          0.06941873340849744,
+          0.48614328011340074
+        ],
+        "reprojection_pixel_xy": [
+          654.7126302988332,
+          477.0411681464509
+        ],
+        "source_click_distance_px": 0.290303567719861,
+        "candidate_key": "P3_O01_length_revision_0"
+      },
+      {
+        "role": "terminal margin candidate",
+        "source_pixel_xy": [
+          717,
+          499
+        ],
+        "candidate_count": 36,
+        "fused_point_index": 1316108,
+        "camera_id": 0,
+        "original_point_index": 6163804,
+        "xyz_m": [
+          0.910039642878948,
+          0.08878880058808199,
+          0.4984897761162807
+        ],
+        "reprojection_pixel_xy": [
+          716.8925019117721,
+          499.16255856101986
+        ],
+        "source_click_distance_px": 0.19488746684561079,
+        "candidate_key": "P3_O01_length_revision_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 5.353546011997693,
+    "four_pixel_disk_sensitivity_cm": [
+      4.567547072693634,
+      5.657203061761441
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            654.7126302988332,
+            477.0411681464509
+          ],
+          [
+            716.8925019117721,
+            499.16255856101986
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            935.4574163350569,
+            470.140414910871
+          ],
+          [
+            989.3613313339956,
+            492.0665397492238
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            338.4509291672687,
+            483.00703216990235
+          ],
+          [
+            407.3864454973395,
+            505.3176441063648
+          ]
+        ]
+      }
+    ]
+  }
+]

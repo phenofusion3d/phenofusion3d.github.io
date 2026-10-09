@@ -1,0 +1,886 @@
+{
+  "audit_date": "2026-10-08",
+  "scope": "Historical dense prototype versus current sparse September result; new local-warp experiment only. Other concurrent experiments saved separately.",
+  "historical_site": {
+    "url": "https://phenofusion3d.github.io/results/experimental/",
+    "dataset": "20260828",
+    "total_points": 10485,
+    "bands_in_processed_merged_product": 427,
+    "spatial_stride": 4,
+    "plants": [
+      {
+        "plant": "coleus",
+        "source": "/home/adithyarama/projects/PhenoFusion3D/phenofusion3d.github.io/public/experimental-results/viewer/fusion/coleus/fusion_metrics.json",
+        "sha256": "6e96829aa866860275f1f19c02e244e873f277d520a258ddcfa8c8b70ade9877",
+        "mapped_points": 5560,
+        "registration_model": "plant-local SIFT/RANSAC homography",
+        "plant_training_inliers": 16,
+        "plant_training_rmse_rgb_px": 4.027978897094727,
+        "ecc_correlation": null,
+        "ecc_residual_affine": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "depth_search_radius_px": 4,
+        "surface_filter_mm": 20
+      },
+      {
+        "plant": "fuzzy_kalanchoe",
+        "source": "/home/adithyarama/projects/PhenoFusion3D/phenofusion3d.github.io/public/experimental-results/viewer/fusion/fuzzy_kalanchoe/fusion_metrics.json",
+        "sha256": "26174188ba9ca8c457f48724ecd56539ae81c47b5717ce2a1e7d44e7e0c64b33",
+        "mapped_points": 2539,
+        "registration_model": "plant-local SIFT/RANSAC homography",
+        "plant_training_inliers": 8,
+        "plant_training_rmse_rgb_px": 1.8240530490875244,
+        "ecc_correlation": null,
+        "ecc_residual_affine": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "depth_search_radius_px": 4,
+        "surface_filter_mm": 20
+      },
+      {
+        "plant": "succulent_jade",
+        "source": "/home/adithyarama/projects/PhenoFusion3D/phenofusion3d.github.io/public/experimental-results/viewer/fusion/succulent_jade/fusion_metrics.json",
+        "sha256": "ef50c0263d4cc29fc0033562a95b70faeea392d4dcd1a933da1a09a5eca167e9",
+        "mapped_points": 2386,
+        "registration_model": "board homography plus plant-masked ECC",
+        "plant_training_inliers": 6,
+        "plant_training_rmse_rgb_px": 4.517419815063477,
+        "ecc_correlation": null,
+        "ecc_residual_affine": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ],
+        "depth_search_radius_px": 4,
+        "surface_filter_mm": 20
+      }
+    ],
+    "caveat": "427-band product uses spatially resampled/registered FX17 after gain/offset correction, not 427 untouched same-pixel detector bands. Training image residuals and geometry overlap are not independent HSI material-point accuracy."
+  },
+  "current_sparse": {
+    "unique_geometry_locations": 3,
+    "spectral_observations": 6,
+    "sensor_counts": {
+      "fx10": 3,
+      "fx17": 3
+    },
+    "all_in_plant": "P5",
+    "context_points": 430060,
+    "unassigned_context_count": 430057,
+    "arrays": [
+      {
+        "sensor": "fx10",
+        "array_shapes": {
+          "raw_DN": [
+            3,
+            224
+          ],
+          "band_quality_flags": [
+            3,
+            224
+          ],
+          "scan_line": [
+            3
+          ],
+          "detector_column": [
+            3
+          ],
+          "patch_id": [
+            3
+          ],
+          "source_band_zero_based": [
+            224
+          ],
+          "wavelength_nm": [
+            224
+          ],
+          "Q_assumed_or_confirmed_dark": [
+            3,
+            224
+          ],
+          "Q_zero_offset": [
+            3,
+            224
+          ],
+          "indices_dark": [
+            3,
+            6
+          ],
+          "index_flags_dark": [
+            3,
+            6
+          ],
+          "indices_zero": [
+            3,
+            6
+          ],
+          "index_flags_zero": [
+            3,
+            6
+          ],
+          "index_names": [
+            6
+          ],
+          "source_sample_index": [
+            3
+          ],
+          "association_id": [
+            3
+          ],
+          "cloud_id": [
+            3
+          ],
+          "source_point_index": [
+            3
+          ],
+          "xyz_reference": [
+            3,
+            3
+          ],
+          "xyz_upright": [
+            3,
+            3
+          ],
+          "WARNING": []
+        },
+        "sha256": "c73b83025c9d79c06bfc8f1745111c555c077f022441e36c18c9bc5fa78c82b8"
+      },
+      {
+        "sensor": "fx17",
+        "array_shapes": {
+          "raw_DN": [
+            3,
+            224
+          ],
+          "band_quality_flags": [
+            3,
+            224
+          ],
+          "scan_line": [
+            3
+          ],
+          "detector_column": [
+            3
+          ],
+          "patch_id": [
+            3
+          ],
+          "source_band_zero_based": [
+            224
+          ],
+          "wavelength_nm": [
+            224
+          ],
+          "Q_assumed_or_confirmed_dark": [
+            3,
+            224
+          ],
+          "Q_zero_offset": [
+            3,
+            224
+          ],
+          "source_sample_index": [
+            3
+          ],
+          "association_id": [
+            3
+          ],
+          "cloud_id": [
+            3
+          ],
+          "source_point_index": [
+            3
+          ],
+          "xyz_reference": [
+            3,
+            3
+          ],
+          "xyz_upright": [
+            3,
+            3
+          ],
+          "WARNING": []
+        },
+        "sha256": "3cdde45e3827561f17a6ffa792c33b7f070857c0c3677ea3ce4d25858ae9b5dc"
+      }
+    ],
+    "physical_registration_validated": false,
+    "dense_surface_fusion": false
+  },
+  "geometry_fusion": {
+    "d405_points": 1719001,
+    "l515_added_points": 21672,
+    "fused_points": 1740673,
+    "decision_counts": {
+      "0": 139922,
+      "1": 16861,
+      "2": 21356,
+      "3": 14220,
+      "4": 7452
+    },
+    "method": "Observed-point union; preserve D405, suppress near-duplicates, add supported L515 surfaces after cross-view conflict/overlap checks.",
+    "duplicate_distance_m": 0.004,
+    "uncertain_overlap_distance_m": 0.012,
+    "cross_view_agreement_m": 0.008,
+    "free_space_margin_m": 0.016,
+    "geometry_averaged_between_cameras": false,
+    "shape_completion": false
+  },
+  "current_plane_holdouts": {
+    "fx10": {
+      "model": "affine",
+      "fit_rms": 0.6242062075963671,
+      "pooled_holdout_rms": 1.2191059206292327,
+      "heldouts": [
+        {
+          "held_sheet": "top",
+          "held_out": {
+            "n": 34,
+            "rms_px": 1.3122901371345472,
+            "median_px": 1.2818160833963916,
+            "p95_px": 1.8038862221606842,
+            "max_px": 2.2384847177036313,
+            "rms_column_px": 1.25174433320578,
+            "rms_line_px": 0.39400701555660894
+          }
+        },
+        {
+          "held_sheet": "middle_rotated",
+          "held_out": {
+            "n": 34,
+            "rms_px": 0.9050427995052381,
+            "median_px": 0.734691674654341,
+            "p95_px": 1.5690701347741682,
+            "max_px": 1.9851533842569493,
+            "rms_column_px": 0.8233026704175858,
+            "rms_line_px": 0.37586590936070613
+          }
+        },
+        {
+          "held_sheet": "bottom",
+          "held_out": {
+            "n": 34,
+            "rms_px": 1.3847201392999453,
+            "median_px": 1.333923362293361,
+            "p95_px": 1.9387597687897442,
+            "max_px": 2.23775353874657,
+            "rms_column_px": 1.3480818527259908,
+            "rms_line_px": 0.3164256350767424
+          }
+        }
+      ]
+    },
+    "fx17": {
+      "model": "affine",
+      "fit_rms": 0.3553173895377291,
+      "pooled_holdout_rms": 0.6109129409972002,
+      "heldouts": [
+        {
+          "held_sheet": "top",
+          "held_out": {
+            "n": 34,
+            "rms_px": 0.6792334783183017,
+            "median_px": 0.6167961080301033,
+            "p95_px": 0.9671093834428638,
+            "max_px": 0.9984251778883217,
+            "rms_column_px": 0.4642563876640319,
+            "rms_line_px": 0.49580653947030906
+          }
+        },
+        {
+          "held_sheet": "middle_rotated",
+          "held_out": {
+            "n": 34,
+            "rms_px": 0.4753988828563522,
+            "median_px": 0.41994164465721173,
+            "p95_px": 0.7542683930693724,
+            "max_px": 0.8879268127894518,
+            "rms_column_px": 0.32746103327419657,
+            "rms_line_px": 0.3446351251803321
+          }
+        },
+        {
+          "held_sheet": "bottom",
+          "held_out": {
+            "n": 35,
+            "rms_px": 0.6561966315056403,
+            "median_px": 0.6335697041044437,
+            "p95_px": 0.9974617394568203,
+            "max_px": 1.0235894532221443,
+            "rms_column_px": 0.4669973812287755,
+            "rms_line_px": 0.460985319858252
+          }
+        }
+      ]
+    }
+  },
+  "rejected_height_model": {
+    "fx10": {
+      "worst_held_out_error_px": 174.6981430969673,
+      "folds": [
+        {
+          "held_id": "red_upper_2",
+          "error_px": 10.075477620010483,
+          "condition": 4.8516913701067095,
+          "max_sensitivity": {
+            "RGB_bridge_leave_frame_out": 0.3757048980570937,
+            "calibration_plane_leave_sheet_out": 0.20162952719175253,
+            "single_coordinate_1mm_stress": 2.510453390423921,
+            "training_correspondence_1px_stress": 0.9358311425750117
+          }
+        },
+        {
+          "held_id": "red_upper_6",
+          "error_px": 14.47982071298794,
+          "condition": 4.984540853312817,
+          "max_sensitivity": {
+            "RGB_bridge_leave_frame_out": 0.38246247407471473,
+            "calibration_plane_leave_sheet_out": 0.22242725286026982,
+            "single_coordinate_1mm_stress": 2.7435164071834754,
+            "training_correspondence_1px_stress": 1.06861070740581
+          }
+        },
+        {
+          "held_id": "green_lower_0",
+          "error_px": 174.6981430969673,
+          "condition": 145.02953923309542,
+          "max_sensitivity": {
+            "RGB_bridge_leave_frame_out": 4.123622291578126,
+            "calibration_plane_leave_sheet_out": 2.5214467746917415,
+            "single_coordinate_1mm_stress": 34.25506592376412,
+            "training_correspondence_1px_stress": 17.190835688705533
+          }
+        }
+      ]
+    },
+    "fx17": {
+      "worst_held_out_error_px": 123.42780378536953,
+      "folds": [
+        {
+          "held_id": "fx17_track_red_upper_2",
+          "error_px": 7.237963154669132,
+          "condition": 4.564253245922702,
+          "max_sensitivity": {
+            "RGB_bridge_leave_frame_out": 0.34092224093186935,
+            "calibration_plane_leave_sheet_out": 0.05519880628590607,
+            "single_coordinate_1mm_stress": 1.6131772213231317,
+            "training_correspondence_1px_stress": 0.9344727239232498
+          }
+        },
+        {
+          "held_id": "fx17_track_red_upper_6",
+          "error_px": 12.280339088987493,
+          "condition": 4.678131372916143,
+          "max_sensitivity": {
+            "RGB_bridge_leave_frame_out": 0.34989434524407964,
+            "calibration_plane_leave_sheet_out": 0.06685599877341812,
+            "single_coordinate_1mm_stress": 1.7699753007819798,
+            "training_correspondence_1px_stress": 1.070208124500141
+          }
+        },
+        {
+          "held_id": "fx17_track_green_lower_0",
+          "error_px": 123.42780378536953,
+          "condition": 143.56832246894226,
+          "max_sensitivity": {
+            "RGB_bridge_leave_frame_out": 2.685055890965515,
+            "calibration_plane_leave_sheet_out": 0.7585642180884951,
+            "single_coordinate_1mm_stress": 20.47656451523134,
+            "training_correspondence_1px_stress": 16.78853522712143
+          }
+        }
+      ]
+    }
+  },
+  "new_local_warp_screen": {
+    "source": "../fusion_candidates/local_warp_probe.json",
+    "passes": 0,
+    "candidate_models": 8,
+    "regions": [
+      {
+        "region": "red_upper",
+        "raw_matches": 251,
+        "clusters": 102,
+        "models": [
+          {
+            "kind": "affine",
+            "ransac_threshold_rgb_px": 2.0,
+            "training_inliers": 4,
+            "inlier_indices": [
+              1,
+              11,
+              15,
+              19
+            ],
+            "training_hull_roi_fraction": 0.10008614198470533,
+            "H_rotated_HSI_to_native_RGB": [
+              [
+                0.5041627782341119,
+                0.678026061317451,
+                -80.3969417870059
+              ],
+              [
+                0.14116035427481696,
+                0.5061814566735198,
+                -11.74625169592744
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "heldout_prediction": [
+              [
+                772.8850663392183,
+                245.46005616438285
+              ],
+              [
+                781.5942509413387,
+                239.35912476349364
+              ]
+            ],
+            "heldout_errors_rgb_px": [
+              47.955520507909384,
+              76.59023735281716
+            ],
+            "passes_screen": false
+          },
+          {
+            "kind": "affine",
+            "ransac_threshold_rgb_px": 3.0,
+            "training_inliers": 5,
+            "inlier_indices": [
+              0,
+              10,
+              14,
+              22,
+              29
+            ],
+            "training_hull_roi_fraction": 0.17272602749562527,
+            "H_rotated_HSI_to_native_RGB": [
+              [
+                0.38681614602631637,
+                -0.02565429598075234,
+                194.91332100994305
+              ],
+              [
+                0.102467030284849,
+                0.27929141789902817,
+                92.97729216673619
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "heldout_prediction": [
+              [
+                818.0181040517691,
+                274.58322679052867
+              ],
+              [
+                839.4354586786734,
+                272.533925224271
+              ]
+            ],
+            "heldout_errors_rgb_px": [
+              16.112196041183772,
+              37.08213760575344
+            ],
+            "passes_screen": false
+          },
+          {
+            "kind": "homography",
+            "ransac_threshold_rgb_px": 2.0,
+            "training_inliers": 6,
+            "inlier_indices": [
+              1,
+              2,
+              5,
+              10,
+              13,
+              14
+            ],
+            "training_hull_roi_fraction": 0.0737005427352539,
+            "H_rotated_HSI_to_native_RGB": [
+              [
+                -0.47294782210620506,
+                -0.1011743511164855,
+                805.0837423399137
+              ],
+              [
+                -0.18331467735662582,
+                -0.0398928555333208,
+                311.99344500426633
+              ],
+              [
+                -0.0005874195068621636,
+                -0.00012802038708876326,
+                1.0
+              ]
+            ],
+            "heldout_prediction": [
+              [
+                806.6169906169118,
+                310.4591738934739
+              ],
+              [
+                806.024462547175,
+                307.5584288750409
+              ]
+            ],
+            "heldout_errors_rgb_px": [
+              53.419049816865794,
+              84.92228975636469
+            ],
+            "passes_screen": false
+          },
+          {
+            "kind": "homography",
+            "ransac_threshold_rgb_px": 3.0,
+            "training_inliers": 7,
+            "inlier_indices": [
+              1,
+              2,
+              5,
+              10,
+              13,
+              14,
+              24
+            ],
+            "training_hull_roi_fraction": 0.08891498920093177,
+            "H_rotated_HSI_to_native_RGB": [
+              [
+                -0.473607590260258,
+                -0.08463735339382282,
+                803.6518836573164
+              ],
+              [
+                -0.18382584270135297,
+                -0.03477687743204334,
+                312.06557091224977
+              ],
+              [
+                -0.0005891141810486304,
+                -0.00010958707941034972,
+                1.0
+              ]
+            ],
+            "heldout_prediction": [
+              [
+                802.0564169838837,
+                311.9014672714068
+              ],
+              [
+                791.4095523608935,
+                312.7554886052194
+              ]
+            ],
+            "heldout_errors_rgb_px": [
+              56.032065746221505,
+              98.35348733969364
+            ],
+            "passes_screen": false
+          }
+        ]
+      },
+      {
+        "region": "green_lower",
+        "raw_matches": 307,
+        "clusters": 105,
+        "models": [
+          {
+            "kind": "affine",
+            "ransac_threshold_rgb_px": 2.0,
+            "training_inliers": 6,
+            "inlier_indices": [
+              0,
+              11,
+              20,
+              27,
+              28,
+              45
+            ],
+            "training_hull_roi_fraction": 0.24768200810062374,
+            "H_rotated_HSI_to_native_RGB": [
+              [
+                -0.8972505758194326,
+                0.1163973294373858,
+                2607.113589313324
+              ],
+              [
+                0.24698152531121237,
+                0.17573351174083574,
+                -50.588283785680744
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "heldout_prediction": [
+              [
+                1039.0664063610773,
+                508.01181928343857
+              ]
+            ],
+            "heldout_errors_rgb_px": [
+              8.015383605720622
+            ],
+            "passes_screen": false
+          },
+          {
+            "kind": "affine",
+            "ransac_threshold_rgb_px": 3.0,
+            "training_inliers": 6,
+            "inlier_indices": [
+              5,
+              11,
+              20,
+              27,
+              28,
+              44
+            ],
+            "training_hull_roi_fraction": 0.3362376450496243,
+            "H_rotated_HSI_to_native_RGB": [
+              [
+                -0.6248084486583312,
+                0.21594908751363,
+                2073.1535603267976
+              ],
+              [
+                0.3967171776362061,
+                0.18246164946477686,
+                -316.93537219149846
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ],
+            "heldout_prediction": [
+              [
+                1063.6650182294602,
+                519.3269543362911
+              ]
+            ],
+            "heldout_errors_rgb_px": [
+              19.167490194154542
+            ],
+            "passes_screen": false
+          },
+          {
+            "kind": "homography",
+            "ransac_threshold_rgb_px": 2.0,
+            "training_inliers": 6,
+            "inlier_indices": [
+              14,
+              20,
+              25,
+              27,
+              28,
+              36
+            ],
+            "training_hull_roi_fraction": 0.12892935486689688,
+            "H_rotated_HSI_to_native_RGB": [
+              [
+                -1.2781621705086152,
+                2.1325510942756587,
+                1142.7560628762815
+              ],
+              [
+                -0.5321913367215277,
+                0.9325860062173584,
+                452.81447322421076
+              ],
+              [
+                -0.0011274231916307304,
+                0.0019000529766436285,
+                1.0
+              ]
+            ],
+            "heldout_prediction": [
+              [
+                1093.1792201186327,
+                497.4425739130702
+              ]
+            ],
+            "heldout_errors_rgb_px": [
+              49.64078474875138
+            ],
+            "passes_screen": false
+          },
+          {
+            "kind": "homography",
+            "ransac_threshold_rgb_px": 3.0,
+            "training_inliers": 7,
+            "inlier_indices": [
+              9,
+              20,
+              25,
+              28,
+              32,
+              37,
+              44
+            ],
+            "training_hull_roi_fraction": 0.3036911481170651,
+            "H_rotated_HSI_to_native_RGB": [
+              [
+                -0.8122815229629723,
+                0.6911980265165207,
+                1100.5946689174884
+              ],
+              [
+                -0.3748223258663309,
+                0.3588201126413483,
+                483.7461204225436
+              ],
+              [
+                -0.0007472913007520071,
+                0.0006567240871818658,
+                1.0
+              ]
+            ],
+            "heldout_prediction": [
+              [
+                1081.1956628330802,
+                505.80451182909945
+              ]
+            ],
+            "heldout_errors_rgb_px": [
+              35.969692560278126
+            ],
+            "passes_screen": false
+          }
+        ]
+      }
+    ]
+  },
+  "raw_header_inventory": [
+    {
+      "file": "data\\main\\test_plant_10-7\\20260928\\002-specim-fx10.hdr",
+      "metadata_keys": [
+        "acquisition time",
+        "bands",
+        "byte order",
+        "data type",
+        "description",
+        "file type",
+        "fwhm",
+        "header offset",
+        "interleave",
+        "lines",
+        "samples",
+        "wavelength",
+        "wavelength units"
+      ],
+      "recorded_spatial_intrinsics": false,
+      "per_line_timing_or_encoder": false
+    },
+    {
+      "file": "data\\main\\test_plant_10-7\\20260928\\002-specim-fx17.hdr",
+      "metadata_keys": [
+        "acquisition time",
+        "bands",
+        "byte order",
+        "data type",
+        "description",
+        "file type",
+        "fwhm",
+        "header offset",
+        "interleave",
+        "lines",
+        "samples",
+        "wavelength",
+        "wavelength units"
+      ],
+      "recorded_spatial_intrinsics": false,
+      "per_line_timing_or_encoder": false
+    },
+    {
+      "file": "data\\main\\test_plant_10-7\\20260928\\003-specim-fx10.hdr",
+      "metadata_keys": [
+        "acquisition time",
+        "bands",
+        "byte order",
+        "data type",
+        "description",
+        "file type",
+        "fwhm",
+        "header offset",
+        "interleave",
+        "lines",
+        "samples",
+        "wavelength",
+        "wavelength units"
+      ],
+      "recorded_spatial_intrinsics": false,
+      "per_line_timing_or_encoder": false
+    },
+    {
+      "file": "data\\main\\test_plant_10-7\\20260928\\003-specim-fx17.hdr",
+      "metadata_keys": [
+        "acquisition time",
+        "bands",
+        "byte order",
+        "data type",
+        "description",
+        "file type",
+        "fwhm",
+        "header offset",
+        "interleave",
+        "lines",
+        "samples",
+        "wavelength",
+        "wavelength units"
+      ],
+      "recorded_spatial_intrinsics": false,
+      "per_line_timing_or_encoder": false
+    }
+  ],
+  "remaining_gap": "No identified omitted current HSI cube or spatial lens/rig/timing sidecar; all 002 and 003 paired cubes were used. This is a current-record audit, not a proof that no additional lab records or image-feature evidence can be recovered.",
+  "source_checksums": {
+    "generated\\research_confirmed_board_20261007\\spectral_metric_v1\\identity_remap_validation.json": "f8c9938e38a26d5a507e0d8ee2c3c70255cd50be2d4d02ee728231c75aed05dd",
+    "generated\\research_confirmed_board_20261007\\fusion_v1\\summary.json": "2a223df08679c0eb92c69dd4032943e3c8ba283a628815182409570eb7d1c547",
+    "generated\\research_confirmed_board_20261007\\spectral_metric_v1\\result\\summary.json": "21f91cd71a65ab35a840761ae76e76b6d8e2e2754a467c819a1b84bfa9ec2d88",
+    "generated\\research_confirmed_board_20261007\\hsi_geometry\\summary.json": "0b7590084654993b79f574bfd424ce000ffa4bfad13cf3936fd3e960d4e273d7",
+    "generated\\research_confirmed_board_20261007\\hsi_geometry\\height_model_diagnostic\\summary.json": "e7d2fbb6c958b003a272af7ce9ca1ff2adc3eb6b9ef94631d02ec52685194bb7",
+    "generated\\research_sprint_review_20261008\\fusion_candidates\\local_warp_probe.json": "5eaf0ddbad95f06df34c3c4daf0205edac0b06c120ffe846eef66d76d2ed20fc",
+    "generated\\research_confirmed_board_20261007\\spectral_metric_v1\\result\\assigned_spectra_fx10.npz": "c73b83025c9d79c06bfc8f1745111c555c077f022441e36c18c9bc5fa78c82b8",
+    "generated\\research_confirmed_board_20261007\\spectral_metric_v1\\result\\assigned_spectra_fx17.npz": "3cdde45e3827561f17a6ffa792c33b7f070857c0c3677ea3ce4d25858ae9b5dc",
+    "data\\main\\test_plant_10-7\\20260928\\002-specim-fx10.hdr": "3cb228260d0e6a9a248ae2b5f3f3efb4d0dcbbf96d365cefb1603c993fc84bad",
+    "data\\main\\test_plant_10-7\\20260928\\002-specim-fx17.hdr": "8a91fd8d677f92c2935a6d1e6dc92c0b49b8b84a29c80f93c41438c57d47ab77",
+    "data\\main\\test_plant_10-7\\20260928\\003-specim-fx10.hdr": "6aaf169bc24b22abfd7cf8aed1d22517f5a956a99cb58698ec50d258b2dd048a",
+    "data\\main\\test_plant_10-7\\20260928\\003-specim-fx17.hdr": "762de08de4f6f2892aa0caf4dd69da81a4a283e4a83783a210d75664b3c64d4f"
+  }
+}

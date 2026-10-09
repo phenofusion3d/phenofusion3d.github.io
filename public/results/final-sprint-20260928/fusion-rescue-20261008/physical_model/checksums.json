@@ -1,0 +1,21 @@
+{
+  "fit_physical_models.py": "69de79e8017995054b724f54e7a49c035201ce56c43fcbca292d11f8d5f87a09",
+  "freeze_new_training.py": "63f704f40f2500cac0a2af08bd1d8224bda84c1bfb9696f731a0eb2605adfa5a",
+  "frozen_candidates.json": "251e009ad11d55846ec3fd382ff6e62290339682cc89cc12c4591600ae103042",
+  "frozen_silhouette_candidates.json": "f6c8d857e9411c8ba2cc661ca531c7df08709405f538e3b1556c8d14243fc675",
+  "frozen_silhouette_candidates_v2.json": "41b3c427fe280c8ce7cedc1ae9350152da3614ed45b253bb142ec95e54e52881",
+  "fx10_P5_native.png": "74c0244ecbb39e222eb4a26fcf1f6935162bb92af7e9b2d740f0411e42cfe379",
+  "joint_bridge_fit.py": "911fa6924c67052368952cd2fab32d3751e8fde98809ef2a6da217903df2703f",
+  "joint_bridge_results.json": "3c2b47dab9df4a944322434c22c3576a2eb267fb3823dfd85bbf665b5562285d",
+  "model_disagreement.json": "85e396f3e7d3d76244c31e9d50b406c8e3f0fbee7953f04639f00b93193aab95",
+  "physical_model_results.json": "b7ad2394402b2c7e19c451df98ea189ab032e523fc219de515fc3791d45539cc",
+  "REPORT.txt": "90c3552b8d962214d7125e6fa0c7aebf5058fbbf80f9972a06aef08c3f73e95b",
+  "reserved_control_errors.png": "bfdb36c54ed45dfd8b57142004b58e75a8b963429778d13fbf2c4e8c7a9d5570",
+  "reserved_control_errors.svg": "109a8f438998c8f75812b0d21e1c1ddc69a1ab095db8a3376cbd8e3145a95ee4",
+  "reserved_physical_evaluation.json": "72db606d470db91bb77a9c09414c80b30763f3995adda047c05406caf7cc293b",
+  "reserved_silhouette_evaluation.json": "77ea1c53b85c35e1c35bf9a0f7113ac861ecff5d9b3a4ea6a640b908cf9821b2",
+  "silhouette_camera_search.py": "6e716f9dde91bb7447915f0b744a01dabb2db2c0700768fe044fd4a3ed750103",
+  "silhouette_projection_comparison.jpg": "0663f32840682058014bb2717123117f6c9e888707c77bc5d91a50f630d5b7fb",
+  "silhouette_projection_comparison_v2.jpg": "499da72f37a6537a23c3db5005d57589dea00832a6464ed1e70ab9c24d38b242",
+  "summary.json": "3fdd0c53e784a3ab85f0955f8ee25d24897a414fdaddd0e9d8af662e2e8c1659"
+}

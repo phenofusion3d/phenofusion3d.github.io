@@ -1,0 +1,837 @@
+{
+  "status": "passed_counts_evidence_hashes_and_source_module_checks",
+  "conditional_landmarks_only": true,
+  "pose_scale_systematic_error_not_estimated": true,
+  "comparisons": [
+    {
+      "stage": "supported",
+      "landmark_id": "P4_single_hanging_bud",
+      "cloud_points": 4303406,
+      "within_radii_m": [
+        0.002,
+        0.005,
+        0.01
+      ],
+      "counts_within_radii": [
+        10,
+        10,
+        31
+      ],
+      "nearest_distance_m": 0.0004986432382394247,
+      "nearest10": [
+        {
+          "cloud_index": 34972,
+          "distance_m": 0.0004986432382394247,
+          "support_views": 5,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0565,
+            -0.0275,
+            0.19604849927148837
+          ]
+        },
+        {
+          "cloud_index": 34974,
+          "distance_m": 0.0008240646779475814,
+          "support_views": 4,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0575,
+            -0.027793411724546628,
+            0.1965
+          ]
+        },
+        {
+          "cloud_index": 34978,
+          "distance_m": 0.0009409829127206443,
+          "support_views": 4,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0575,
+            -0.0275,
+            0.1960544634972596
+          ]
+        },
+        {
+          "cloud_index": 34979,
+          "distance_m": 0.0011940156180342198,
+          "support_views": 4,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0575,
+            -0.02690093448187906,
+            0.1965
+          ]
+        },
+        {
+          "cloud_index": 34971,
+          "distance_m": 0.0014494492076184147,
+          "support_views": 4,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.05732569232945,
+            -0.0285,
+            0.1975
+          ]
+        },
+        {
+          "cloud_index": 34976,
+          "distance_m": 0.0014948536623240977,
+          "support_views": 4,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0575,
+            -0.028411621018930844,
+            0.1975
+          ]
+        },
+        {
+          "cloud_index": 34975,
+          "distance_m": 0.0015657877883957978,
+          "support_views": 4,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0575560145392542,
+            -0.0285,
+            0.1975
+          ]
+        },
+        {
+          "cloud_index": 34977,
+          "distance_m": 0.0016002276091729426,
+          "support_views": 4,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0575,
+            -0.0285,
+            0.19759151974486666
+          ]
+        },
+        {
+          "cloud_index": 34973,
+          "distance_m": 0.0017645105278178146,
+          "support_views": 3,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0582821810034433,
+            -0.0285,
+            0.1965
+          ]
+        },
+        {
+          "cloud_index": 34980,
+          "distance_m": 0.0018399117107096537,
+          "support_views": 3,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0585,
+            -0.0275,
+            0.19642953749868253
+          ]
+        }
+      ],
+      "coordinate_hash_verified": true
+    },
+    {
+      "stage": "supported",
+      "landmark_id": "P4_left_yellow_flower_junction",
+      "cloud_points": 4303406,
+      "within_radii_m": [
+        0.002,
+        0.005,
+        0.01
+      ],
+      "counts_within_radii": [
+        0,
+        69,
+        465
+      ],
+      "nearest_distance_m": 0.0037097256144849326,
+      "nearest10": [
+        {
+          "cloud_index": 3579198,
+          "distance_m": 0.0037097256144849326,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.005581765815499,
+            0.0085,
+            0.21050000000000002
+          ]
+        },
+        {
+          "cloud_index": 3579197,
+          "distance_m": 0.003719723526966009,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0055,
+            0.0085,
+            0.21045372072360083
+          ]
+        },
+        {
+          "cloud_index": 2457265,
+          "distance_m": 0.0037754982129977496,
+          "support_views": 5,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0053949581163837,
+            0.0075,
+            0.20750000000000002
+          ]
+        },
+        {
+          "cloud_index": 3579171,
+          "distance_m": 0.0037956171220794323,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.005408471784268,
+            0.0085,
+            0.21050000000000002
+          ]
+        },
+        {
+          "cloud_index": 3579196,
+          "distance_m": 0.0037991875903791283,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0055,
+            0.008415431440028464,
+            0.21050000000000002
+          ]
+        },
+        {
+          "cloud_index": 3579199,
+          "distance_m": 0.003843625328360458,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0055,
+            0.0085,
+            0.2106430848602775
+          ]
+        },
+        {
+          "cloud_index": 3579168,
+          "distance_m": 0.003859883516121089,
+          "support_views": 5,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0052023006310933,
+            0.0075,
+            0.20850000000000002
+          ]
+        },
+        {
+          "cloud_index": 3579169,
+          "distance_m": 0.0038883235515114584,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0045,
+            0.008070327071595875,
+            0.20850000000000002
+          ]
+        },
+        {
+          "cloud_index": 2457266,
+          "distance_m": 0.003922836869459472,
+          "support_views": 5,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0045,
+            0.008047106912526115,
+            0.20750000000000002
+          ]
+        },
+        {
+          "cloud_index": 2457292,
+          "distance_m": 0.003957989211408383,
+          "support_views": 5,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0055,
+            0.007226450467976678,
+            0.20750000000000002
+          ]
+        }
+      ],
+      "coordinate_hash_verified": true
+    },
+    {
+      "stage": "supported",
+      "landmark_id": "P4_right_yellow_flower_junction",
+      "cloud_points": 4303406,
+      "within_radii_m": [
+        0.002,
+        0.005,
+        0.01
+      ],
+      "counts_within_radii": [
+        20,
+        144,
+        402
+      ],
+      "nearest_distance_m": 0.0005404548249944229,
+      "nearest10": [
+        {
+          "cloud_index": 3645184,
+          "distance_m": 0.0005404548249944229,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0665,
+            0.02642884186516669,
+            0.2545
+          ]
+        },
+        {
+          "cloud_index": 3645189,
+          "distance_m": 0.0005699116948808488,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0665,
+            0.026500000000000003,
+            0.2545209764755886
+          ]
+        },
+        {
+          "cloud_index": 3645188,
+          "distance_m": 0.0006105094282936715,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0665,
+            0.026552036105386895,
+            0.2545
+          ]
+        },
+        {
+          "cloud_index": 3645187,
+          "distance_m": 0.0006748771584838357,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0666303436767655,
+            0.026500000000000003,
+            0.2545
+          ]
+        },
+        {
+          "cloud_index": 3645160,
+          "distance_m": 0.00070972404847053,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0661076609894222,
+            0.025500000000000002,
+            0.2545
+          ]
+        },
+        {
+          "cloud_index": 3645165,
+          "distance_m": 0.0007195348944224278,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0655000000000001,
+            0.026500000000000003,
+            0.2549545852416217
+          ]
+        },
+        {
+          "cloud_index": 3645183,
+          "distance_m": 0.0009051348171699227,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0665,
+            0.025500000000000002,
+            0.2542817667676363
+          ]
+        },
+        {
+          "cloud_index": 3645161,
+          "distance_m": 0.0009187375617325349,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0655000000000001,
+            0.025500000000000002,
+            0.2549545058447999
+          ]
+        },
+        {
+          "cloud_index": 3645164,
+          "distance_m": 0.0009836350773018588,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0655000000000001,
+            0.026898129103621403,
+            0.2545
+          ]
+        },
+        {
+          "cloud_index": 3645216,
+          "distance_m": 0.001489106162420775,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0675000000000001,
+            0.026500000000000003,
+            0.2543625576755671
+          ]
+        }
+      ],
+      "coordinate_hash_verified": true
+    },
+    {
+      "stage": "post_SOR",
+      "landmark_id": "P4_single_hanging_bud",
+      "cloud_points": 4159263,
+      "within_radii_m": [
+        0.002,
+        0.005,
+        0.01
+      ],
+      "counts_within_radii": [
+        0,
+        0,
+        15
+      ],
+      "nearest_distance_m": 0.00801436435063598,
+      "nearest10": [
+        {
+          "cloud_index": 33730,
+          "distance_m": 0.00801436435063598,
+          "support_views": 3,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0645,
+            -0.029500000000000002,
+            0.19667264455762637
+          ]
+        },
+        {
+          "cloud_index": 33726,
+          "distance_m": 0.008040305102733259,
+          "support_views": 3,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0641643315180287,
+            -0.0305,
+            0.1975
+          ]
+        },
+        {
+          "cloud_index": 33728,
+          "distance_m": 0.00828543242718998,
+          "support_views": 3,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0645,
+            -0.0305,
+            0.19651900018684543
+          ]
+        },
+        {
+          "cloud_index": 33727,
+          "distance_m": 0.008293432869154625,
+          "support_views": 3,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0645,
+            -0.03052468877865707,
+            0.1965
+          ]
+        },
+        {
+          "cloud_index": 33729,
+          "distance_m": 0.008394559282695016,
+          "support_views": 4,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0648924434766338,
+            -0.029500000000000002,
+            0.1965
+          ]
+        },
+        {
+          "cloud_index": 33738,
+          "distance_m": 0.00885362996853255,
+          "support_views": 4,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0655000000000001,
+            -0.0285,
+            0.1966382078395775
+          ]
+        },
+        {
+          "cloud_index": 33736,
+          "distance_m": 0.008898325368781362,
+          "support_views": 4,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0655000000000001,
+            -0.028936459679939523,
+            0.1965
+          ]
+        },
+        {
+          "cloud_index": 33735,
+          "distance_m": 0.008990338285457596,
+          "support_views": 4,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0655000000000001,
+            -0.029500000000000002,
+            0.1963149102625922
+          ]
+        },
+        {
+          "cloud_index": 33732,
+          "distance_m": 0.009013545663130515,
+          "support_views": 4,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0655000000000001,
+            -0.029618842462747593,
+            0.1965
+          ]
+        },
+        {
+          "cloud_index": 33733,
+          "distance_m": 0.009255244068739845,
+          "support_views": 3,
+          "conflict_views": 1,
+          "reference_xyz_m": [
+            1.0655000000000001,
+            -0.0305,
+            0.1970451503799564
+          ]
+        }
+      ],
+      "coordinate_hash_verified": true
+    },
+    {
+      "stage": "post_SOR",
+      "landmark_id": "P4_left_yellow_flower_junction",
+      "cloud_points": 4159263,
+      "within_radii_m": [
+        0.002,
+        0.005,
+        0.01
+      ],
+      "counts_within_radii": [
+        0,
+        66,
+        438
+      ],
+      "nearest_distance_m": 0.0037097256144849326,
+      "nearest10": [
+        {
+          "cloud_index": 3461869,
+          "distance_m": 0.0037097256144849326,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.005581765815499,
+            0.0085,
+            0.21050000000000002
+          ]
+        },
+        {
+          "cloud_index": 3461868,
+          "distance_m": 0.003719723526966009,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0055,
+            0.0085,
+            0.21045372072360083
+          ]
+        },
+        {
+          "cloud_index": 2381254,
+          "distance_m": 0.0037754982129977496,
+          "support_views": 5,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0053949581163837,
+            0.0075,
+            0.20750000000000002
+          ]
+        },
+        {
+          "cloud_index": 3461842,
+          "distance_m": 0.0037956171220794323,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.005408471784268,
+            0.0085,
+            0.21050000000000002
+          ]
+        },
+        {
+          "cloud_index": 3461867,
+          "distance_m": 0.0037991875903791283,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0055,
+            0.008415431440028464,
+            0.21050000000000002
+          ]
+        },
+        {
+          "cloud_index": 3461870,
+          "distance_m": 0.003843625328360458,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0055,
+            0.0085,
+            0.2106430848602775
+          ]
+        },
+        {
+          "cloud_index": 3461839,
+          "distance_m": 0.003859883516121089,
+          "support_views": 5,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0052023006310933,
+            0.0075,
+            0.20850000000000002
+          ]
+        },
+        {
+          "cloud_index": 3461840,
+          "distance_m": 0.0038883235515114584,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0045,
+            0.008070327071595875,
+            0.20850000000000002
+          ]
+        },
+        {
+          "cloud_index": 2381255,
+          "distance_m": 0.003922836869459472,
+          "support_views": 5,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0045,
+            0.008047106912526115,
+            0.20750000000000002
+          ]
+        },
+        {
+          "cloud_index": 2381279,
+          "distance_m": 0.003957989211408383,
+          "support_views": 5,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0055,
+            0.007226450467976678,
+            0.20750000000000002
+          ]
+        }
+      ],
+      "coordinate_hash_verified": true
+    },
+    {
+      "stage": "post_SOR",
+      "landmark_id": "P4_right_yellow_flower_junction",
+      "cloud_points": 4159263,
+      "within_radii_m": [
+        0.002,
+        0.005,
+        0.01
+      ],
+      "counts_within_radii": [
+        20,
+        144,
+        375
+      ],
+      "nearest_distance_m": 0.0005404548249944229,
+      "nearest10": [
+        {
+          "cloud_index": 3525283,
+          "distance_m": 0.0005404548249944229,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0665,
+            0.02642884186516669,
+            0.2545
+          ]
+        },
+        {
+          "cloud_index": 3525288,
+          "distance_m": 0.0005699116948808488,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0665,
+            0.026500000000000003,
+            0.2545209764755886
+          ]
+        },
+        {
+          "cloud_index": 3525287,
+          "distance_m": 0.0006105094282936715,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0665,
+            0.026552036105386895,
+            0.2545
+          ]
+        },
+        {
+          "cloud_index": 3525286,
+          "distance_m": 0.0006748771584838357,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0666303436767655,
+            0.026500000000000003,
+            0.2545
+          ]
+        },
+        {
+          "cloud_index": 3525259,
+          "distance_m": 0.00070972404847053,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0661076609894222,
+            0.025500000000000002,
+            0.2545
+          ]
+        },
+        {
+          "cloud_index": 3525264,
+          "distance_m": 0.0007195348944224278,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0655000000000001,
+            0.026500000000000003,
+            0.2549545852416217
+          ]
+        },
+        {
+          "cloud_index": 3525282,
+          "distance_m": 0.0009051348171699227,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0665,
+            0.025500000000000002,
+            0.2542817667676363
+          ]
+        },
+        {
+          "cloud_index": 3525260,
+          "distance_m": 0.0009187375617325349,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0655000000000001,
+            0.025500000000000002,
+            0.2549545058447999
+          ]
+        },
+        {
+          "cloud_index": 3525263,
+          "distance_m": 0.0009836350773018588,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0655000000000001,
+            0.026898129103621403,
+            0.2545
+          ]
+        },
+        {
+          "cloud_index": 3525315,
+          "distance_m": 0.001489106162420775,
+          "support_views": 6,
+          "conflict_views": 0,
+          "reference_xyz_m": [
+            1.0675000000000001,
+            0.026500000000000003,
+            0.2543625576755671
+          ]
+        }
+      ],
+      "coordinate_hash_verified": true
+    }
+  ],
+  "source_modules_unchanged": true,
+  "summary_counts": {
+    "points": 4159263,
+    "supported_points_before_statistical_filter": 4303406,
+    "statistical_rejected_points": 144143,
+    "minimum_support_views": 3,
+    "median_support_views": 5.0
+  },
+  "stage_seconds": {
+    "load_saved_stereo": 163.79699999999866,
+    "tsdf_replay": 31.843999999997322,
+    "bounded_visibility": 93.73400000000402,
+    "checkpoint_all_supported": 5.921999999998661,
+    "statistical_derivative_no_dbscan": 16.48399999999674,
+    "finalize_provenance": 1.687000000005355
+  },
+  "bud_filtering_confirmation": {
+    "conditional_bud_supported_cloud_indices_within_2mm": [
+      34972,
+      34974,
+      34978,
+      34979,
+      34971,
+      34976,
+      34975,
+      34977,
+      34973,
+      34980
+    ],
+    "all10_in_statistical_rejected_indices": true,
+    "none_in_final_supported_index_mapping": true,
+    "support_counts": [
+      5,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      3,
+      3
+    ],
+    "conflict_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "status": "conditional_visual_and_RGB_landmark_comparison_not_metric_truth",
+  "landmark_source": "generated\\research_20260928_improvement_20261007\\visual_audit\\conditional_landmark_depth_review.json",
+  "landmark_sha256": "97c0df94be714d5464e3ff62b7e4ad1b3a88c6a3bde2e310ffe7dc7316da502d",
+  "landmark_dependency": "Same factory intrinsics and RGB-derived pose system; pixel-only uncertainty is not full error. Landmarks were selected independently of the reconstructed sensor output.",
+  "station_bands": [
+    {
+      "review_station_band": "P1_region_not_segmentation",
+      "strict": 5979,
+      "strict_colour": 5974,
+      "strict_colour_gt6mm_previous_rgb": 1749
+    },
+    {
+      "review_station_band": "P2_region_not_segmentation",
+      "strict": 20006,
+      "strict_colour": 19914,
+      "strict_colour_gt6mm_previous_rgb": 4298
+    },
+    {
+      "review_station_band": "P3_region_not_segmentation",
+      "strict": 25778,
+      "strict_colour": 25720,
+      "strict_colour_gt6mm_previous_rgb": 2266
+    },
+    {
+      "review_station_band": "P4_region_not_segmentation",
+      "strict": 11011,
+      "strict_colour": 10902,
+      "strict_colour_gt6mm_previous_rgb": 1490
+    }
+  ],
+  "conditional_landmarks": [
+    {
+      "id": "P4_single_hanging_bud",
+      "status": "Conditional RGB-derived check, not metric ground truth",
+      "nearest_strict_sensor_m": 0.008536888495173752,
+      "nearest_sensor_source_frame": 1055904,
+      "nearest_sensor_source_pixel_undistorted_xy": [
+        665,
+        336
+      ],
+      "nearest_sensor_support_views": 7,
+      "strict_points_within_5_10_20mm": [
+        0,
+        11,
+        121
+      ],
+      "views": [
+        {
+          "frame": 1003470,
+          "native_xy": [
+            814,
+            339
+          ],
+          "native_depth_sha256": "c39d20ad5ea13ea879b4176d850572d41e5ae434db28b4165eece4d73f9fbc84",
+          "raw_centre_z_m": 0.0,
+          "nonzero_patch_pixels": 0,
+          "patch_pixels": 49,
+          "nonzero_patch_z_min_median_max_m": null,
+          "conditional_RGB_z_m": 0.1943272701174604,
+          "RGB_pixel_noise_only_95pct_z_interval_m": [
+            0.18926342020258724,
+            0.19956309782529258
+          ],
+          "patch_samples_inside_RGB_pixel_noise_interval_plus3mm": 0,
+          "limit": "Patch includes neighbouring surfaces and is not a filled substitute for the central pixel. Pixel-only interval excludes pose/calibration/identity uncertainty."
+        },
+        {
+          "frame": 1030829,
+          "native_xy": [
+            723,
+            341
+          ],
+          "native_depth_sha256": "7714bef889dade37b6ee0c03db597fa21ad17a1563a4861582e4b37d1d948e26",
+          "raw_centre_z_m": 0.0,
+          "nonzero_patch_pixels": 0,
+          "patch_pixels": 49,
+          "nonzero_patch_z_min_median_max_m": null,
+          "conditional_RGB_z_m": 0.19421689520512628,
+          "RGB_pixel_noise_only_95pct_z_interval_m": [
+            0.1891531769726954,
+            0.1994527192599194
+          ],
+          "patch_samples_inside_RGB_pixel_noise_interval_plus3mm": 0,
+          "limit": "Patch includes neighbouring surfaces and is not a filled substitute for the central pixel. Pixel-only interval excludes pose/calibration/identity uncertainty."
+        },
+        {
+          "frame": 1055904,
+          "native_xy": [
+            637,
+            342
+          ],
+          "native_depth_sha256": "263881bdb706021eb82599c86aae1937b7532043082ba926bdc49ab5351e0f63",
+          "raw_centre_z_m": 0.0,
+          "nonzero_patch_pixels": 13,
+          "patch_pixels": 49,
+          "nonzero_patch_z_min_median_max_m": [
+            0.1929,
+            0.1929,
+            0.193
+          ],
+          "conditional_RGB_z_m": 0.19417859841364238,
+          "RGB_pixel_noise_only_95pct_z_interval_m": [
+            0.18911485799488864,
+            0.19941440563198476
+          ],
+          "patch_samples_inside_RGB_pixel_noise_interval_plus3mm": 13,
+          "limit": "Patch includes neighbouring surfaces and is not a filled substitute for the central pixel. Pixel-only interval excludes pose/calibration/identity uncertainty.",
+          "source_candidate_pixels_in_undistorted_patch": 13,
+          "candidate_pixels_in_patch_with_RGB_compatible_depth": 13,
+          "strict_RGB_compatible_candidate_pixels": 0,
+          "strict_candidates_any_depth_in_patch": 0
+        }
+      ]
+    },
+    {
+      "id": "P4_left_yellow_flower_junction",
+      "status": "Conditional RGB-derived check, not metric ground truth",
+      "nearest_strict_sensor_m": 0.0025628456923647933,
+      "nearest_sensor_source_frame": 799028,
+      "nearest_sensor_source_pixel_undistorted_xy": [
+        1279,
+        442
+      ],
+      "nearest_sensor_support_views": 3,
+      "strict_points_within_5_10_20mm": [
+        14,
+        214,
+        435
+      ],
+      "views": [
+        {
+          "frame": 1003470,
+          "native_xy": [
+            650,
+            461
+          ],
+          "native_depth_sha256": "c39d20ad5ea13ea879b4176d850572d41e5ae434db28b4165eece4d73f9fbc84",
+          "raw_centre_z_m": 0.1982,
+          "nonzero_patch_pixels": 49,
+          "patch_pixels": 49,
+          "nonzero_patch_z_min_median_max_m": [
+            0.1969,
+            0.1982,
+            0.2006
+          ],
+          "conditional_RGB_z_m": 0.20593974117701977,
+          "RGB_pixel_noise_only_95pct_z_interval_m": [
+            0.20032050099108922,
+            0.21168656380939588
+          ],
+          "patch_samples_inside_RGB_pixel_noise_interval_plus3mm": 39,
+          "limit": "Patch includes neighbouring surfaces and is not a filled substitute for the central pixel. Pixel-only interval excludes pose/calibration/identity uncertainty."
+        },
+        {
+          "frame": 1030829,
+          "native_xy": [
+            563,
+            461
+          ],
+          "native_depth_sha256": "7714bef889dade37b6ee0c03db597fa21ad17a1563a4861582e4b37d1d948e26",
+          "raw_centre_z_m": 0.1971,
+          "nonzero_patch_pixels": 49,
+          "patch_pixels": 49,
+          "nonzero_patch_z_min_median_max_m": [
+            0.1964,
+            0.1972,
+            0.199
+          ],
+          "conditional_RGB_z_m": 0.20583192442204756,
+          "RGB_pixel_noise_only_95pct_z_interval_m": [
+            0.20021268440084772,
+            0.21157878642092406
+          ],
+          "patch_samples_inside_RGB_pixel_noise_interval_plus3mm": 22,
+          "limit": "Patch includes neighbouring surfaces and is not a filled substitute for the central pixel. Pixel-only interval excludes pose/calibration/identity uncertainty."
+        },
+        {
+          "frame": 1055904,
+          "native_xy": [
+            483,
+            464
+          ],
+          "native_depth_sha256": "263881bdb706021eb82599c86aae1937b7532043082ba926bdc49ab5351e0f63",
+          "raw_centre_z_m": 0.1967,
+          "nonzero_patch_pixels": 49,
+          "patch_pixels": 49,
+          "nonzero_patch_z_min_median_max_m": [
+            0.1964,
+            0.1968,
+            0.1979
+          ],
+          "conditional_RGB_z_m": 0.20579465514352385,
+          "RGB_pixel_noise_only_95pct_z_interval_m": [
+            0.20017539229661108,
+            0.21154154052207041
+          ],
+          "patch_samples_inside_RGB_pixel_noise_interval_plus3mm": 14,
+          "limit": "Patch includes neighbouring surfaces and is not a filled substitute for the central pixel. Pixel-only interval excludes pose/calibration/identity uncertainty.",
+          "source_candidate_pixels_in_undistorted_patch": 49,
+          "candidate_pixels_in_patch_with_RGB_compatible_depth": 14,
+          "strict_RGB_compatible_candidate_pixels": 13,
+          "strict_candidates_any_depth_in_patch": 48
+        }
+      ]
+    },
+    {
+      "id": "P4_right_yellow_flower_junction",
+      "status": "Conditional RGB-derived check, not metric ground truth",
+      "nearest_strict_sensor_m": 0.001775381067422519,
+      "nearest_sensor_source_frame": 952549,
+      "nearest_sensor_source_pixel_undistorted_xy": [
+        926,
+        478
+      ],
+      "nearest_sensor_support_views": 6,
+      "strict_points_within_5_10_20mm": [
+        54,
+        191,
+        275
+      ],
+      "views": [
+        {
+          "frame": 1003470,
+          "native_xy": [
+            797,
+            482
+          ],
+          "native_depth_sha256": "c39d20ad5ea13ea879b4176d850572d41e5ae434db28b4165eece4d73f9fbc84",
+          "raw_centre_z_m": 0.2509,
+          "nonzero_patch_pixels": 49,
+          "patch_pixels": 49,
+          "nonzero_patch_z_min_median_max_m": [
+            0.2502,
+            0.2509,
+            0.2516
+          ],
+          "conditional_RGB_z_m": 0.2525060036095583,
+          "RGB_pixel_noise_only_95pct_z_interval_m": [
+            0.24396645002602682,
+            0.2615484962480495
+          ],
+          "patch_samples_inside_RGB_pixel_noise_interval_plus3mm": 49,
+          "limit": "Patch includes neighbouring surfaces and is not a filled substitute for the central pixel. Pixel-only interval excludes pose/calibration/identity uncertainty."
+        },
+        {
+          "frame": 1030829,
+          "native_xy": [
+            726,
+            482
+          ],
+          "native_depth_sha256": "7714bef889dade37b6ee0c03db597fa21ad17a1563a4861582e4b37d1d948e26",
+          "raw_centre_z_m": 0.2504,
+          "nonzero_patch_pixels": 49,
+          "patch_pixels": 49,
+          "nonzero_patch_z_min_median_max_m": [
+            0.2495,
+            0.2504,
+            0.2507
+          ],
+          "conditional_RGB_z_m": 0.2523879382111721,
+          "RGB_pixel_noise_only_95pct_z_interval_m": [
+            0.24384881520616009,
+            0.26143005135723135
+          ],
+          "patch_samples_inside_RGB_pixel_noise_interval_plus3mm": 49,
+          "limit": "Patch includes neighbouring surfaces and is not a filled substitute for the central pixel. Pixel-only interval excludes pose/calibration/identity uncertainty."
+        },
+        {
+          "frame": 1055904,
+          "native_xy": [
+            661,
+            485
+          ],
+          "native_depth_sha256": "263881bdb706021eb82599c86aae1937b7532043082ba926bdc49ab5351e0f63",
+          "raw_centre_z_m": 0.2502,
+          "nonzero_patch_pixels": 49,
+          "patch_pixels": 49,
+          "nonzero_patch_z_min_median_max_m": [
+            0.249,
+            0.25,
+            0.2507
+          ],
+          "conditional_RGB_z_m": 0.25235289361854507,
+          "RGB_pixel_noise_only_95pct_z_interval_m": [
+            0.24381363407091253,
+            0.2613951307315172
+          ],
+          "patch_samples_inside_RGB_pixel_noise_interval_plus3mm": 49,
+          "limit": "Patch includes neighbouring surfaces and is not a filled substitute for the central pixel. Pixel-only interval excludes pose/calibration/identity uncertainty.",
+          "source_candidate_pixels_in_undistorted_patch": 49,
+          "candidate_pixels_in_patch_with_RGB_compatible_depth": 49,
+          "strict_RGB_compatible_candidate_pixels": 49,
+          "strict_candidates_any_depth_in_patch": 49
+        }
+      ]
+    }
+  ],
+  "mechanical_checks": {
+    "all_points_finite": true,
+    "minimum3_distinct_support_matches_bitmask": true,
+    "minimum6cm_baseline_span": true
+  },
+  "script_sha256": "605b9136ca02ddc5097813db06998c5d587cdcde76e58387c3f81e0bdbf65228"
+}

@@ -1,0 +1,50 @@
+{
+  "browser": "Codex in-app Chromium",
+  "export_file_sha256": "3cf90a298a7c20c5a0ff7eeaedae9eb45ca476f89b30eafc99a4f7888cdd341e",
+  "source_indices": [
+    9535,
+    13373
+  ],
+  "measurement": {
+    "specimen_id": "P1",
+    "trait": "observed_chord",
+    "definition": "straight_distance_between_observed_points",
+    "value": 0.0803601296205262,
+    "coordinate_unit": "conditional_m",
+    "status": "unreviewed_endpoint_candidate",
+    "source_points": [
+      {
+        "cloud_id": "P1",
+        "source_sha256": "83260a35fc2885ca60daf9e7d69d55c29b8131f263eb63d5f5a4c64ab2f45aae",
+        "point_index": 9535
+      },
+      {
+        "cloud_id": "P1",
+        "source_sha256": "83260a35fc2885ca60daf9e7d69d55c29b8131f263eb63d5f5a4c64ab2f45aae",
+        "point_index": 13373
+      }
+    ],
+    "endpoint_upright_xyz": [
+      [
+        0.27938811885359427,
+        -0.013320181751175261,
+        -0.4709903715070884
+      ],
+      [
+        0.2743035411143021,
+        -0.008666144454740052,
+        -0.3909264130820626
+      ]
+    ],
+    "physical_accuracy_validated": false,
+    "comparison_status": "no_eligible_reference",
+    "reference_id": null,
+    "signed_difference": null,
+    "absolute_difference": null,
+    "label": "",
+    "scope": ""
+  },
+  "original_source_hash_matched": true,
+  "error_scores_remained_null": true,
+  "note": "UI exercise only; arbitrary chosen points are not scientific trait evidence. Browser download-event notification timed out, but actual downloaded JSON was recovered and validated."
+}

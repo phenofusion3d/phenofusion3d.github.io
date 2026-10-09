@@ -1,0 +1,184 @@
+{
+  "records": [
+    {
+      "id": "round2_red_pale_island_upper_tip",
+      "region": "red_upper",
+      "hsi_rotated_xy": [
+        1609,
+        54
+      ],
+      "native_hsi_column_line": [
+        969,
+        1609
+      ],
+      "native_RGB_xy": [
+        812,
+        256
+      ],
+      "hsi_uncertainty_radius_px": 3,
+      "RGB_uncertainty_radius_px": 2,
+      "confidence": "medium",
+      "feature": "Upper narrow end of long pale island left of old red2; same material patch, nearby support is correlated with old training feature.",
+      "role": "second_round_reserved_evaluation",
+      "RGB_frame": 1055904,
+      "selection_policy": "Raw source grids only; no predicted point overlay or fitted warp was viewed to select/adjust coordinates. All7 attempts retained. Leaves chosen after first-round results, so this is adaptive second-round evidence; models unchanged.",
+      "independent_operator_ground_truth": false
+    },
+    {
+      "id": "round2_red_midvein_branch_middle",
+      "region": "red_upper",
+      "hsi_rotated_xy": [
+        1678,
+        69
+      ],
+      "native_hsi_column_line": [
+        954,
+        1678
+      ],
+      "native_RGB_xy": [
+        869,
+        259
+      ],
+      "hsi_uncertainty_radius_px": 4,
+      "RGB_uncertainty_radius_px": 3,
+      "confidence": "low-medium",
+      "feature": "Middle midrib branch, between prior red6 and lower training junction; broad vein crossing.",
+      "role": "second_round_reserved_evaluation",
+      "RGB_frame": 1055904,
+      "selection_policy": "Raw source grids only; no predicted point overlay or fitted warp was viewed to select/adjust coordinates. All7 attempts retained. Leaves chosen after first-round results, so this is adaptive second-round evidence; models unchanged.",
+      "independent_operator_ground_truth": false
+    },
+    {
+      "id": "round2_red_midvein_branch_lower",
+      "region": "red_upper",
+      "hsi_rotated_xy": [
+        1688,
+        115
+      ],
+      "native_hsi_column_line": [
+        908,
+        1688
+      ],
+      "native_RGB_xy": [
+        881,
+        281
+      ],
+      "hsi_uncertainty_radius_px": 4,
+      "RGB_uncertainty_radius_px": 3,
+      "confidence": "medium",
+      "feature": "Lower main-vein intersection with long leftward vein extending to rounded lower lobe.",
+      "role": "second_round_reserved_evaluation",
+      "RGB_frame": 1055904,
+      "selection_policy": "Raw source grids only; no predicted point overlay or fitted warp was viewed to select/adjust coordinates. All7 attempts retained. Leaves chosen after first-round results, so this is adaptive second-round evidence; models unchanged.",
+      "independent_operator_ground_truth": false
+    },
+    {
+      "id": "round2_red_midvein_bottom",
+      "region": "red_upper",
+      "hsi_rotated_xy": [
+        1689,
+        132
+      ],
+      "native_hsi_column_line": [
+        891,
+        1689
+      ],
+      "native_RGB_xy": [
+        883,
+        290
+      ],
+      "hsi_uncertainty_radius_px": 5,
+      "RGB_uncertainty_radius_px": 3,
+      "confidence": "low",
+      "feature": "Near lower branch subdivision; green/red spectral intensity boundary makes exact fork ambiguous.",
+      "role": "second_round_reserved_evaluation",
+      "RGB_frame": 1055904,
+      "selection_policy": "Raw source grids only; no predicted point overlay or fitted warp was viewed to select/adjust coordinates. All7 attempts retained. Leaves chosen after first-round results, so this is adaptive second-round evidence; models unchanged.",
+      "independent_operator_ground_truth": false
+    },
+    {
+      "id": "round2_upper_green_fork_high",
+      "region": "green_upper",
+      "hsi_rotated_xy": [
+        1811,
+        83
+      ],
+      "native_hsi_column_line": [
+        940,
+        1811
+      ],
+      "native_RGB_xy": [
+        1011,
+        265
+      ],
+      "hsi_uncertainty_radius_px": 4,
+      "RGB_uncertainty_radius_px": 3,
+      "confidence": "medium",
+      "feature": "Main-vein junction below upper lobe; small lateral branch leads left across dark region.",
+      "role": "second_round_reserved_evaluation",
+      "RGB_frame": 1055904,
+      "selection_policy": "Raw source grids only; no predicted point overlay or fitted warp was viewed to select/adjust coordinates. All7 attempts retained. Leaves chosen after first-round results, so this is adaptive second-round evidence; models unchanged.",
+      "independent_operator_ground_truth": false
+    },
+    {
+      "id": "round2_upper_green_fork_middle",
+      "region": "green_upper",
+      "hsi_rotated_xy": [
+        1808,
+        99
+      ],
+      "native_hsi_column_line": [
+        924,
+        1808
+      ],
+      "native_RGB_xy": [
+        1004,
+        276
+      ],
+      "hsi_uncertainty_radius_px": 4,
+      "RGB_uncertainty_radius_px": 3,
+      "confidence": "medium",
+      "feature": "Next main-vein branch below high junction and above already-frozen lower mainfork.",
+      "role": "second_round_reserved_evaluation",
+      "RGB_frame": 1055904,
+      "selection_policy": "Raw source grids only; no predicted point overlay or fitted warp was viewed to select/adjust coordinates. All7 attempts retained. Leaves chosen after first-round results, so this is adaptive second-round evidence; models unchanged.",
+      "independent_operator_ground_truth": false
+    },
+    {
+      "id": "round2_upper_green_fork_low",
+      "region": "green_upper",
+      "hsi_rotated_xy": [
+        1798,
+        153
+      ],
+      "native_hsi_column_line": [
+        870,
+        1798
+      ],
+      "native_RGB_xy": [
+        985,
+        300
+      ],
+      "hsi_uncertainty_radius_px": 5,
+      "RGB_uncertainty_radius_px": 3,
+      "confidence": "low-medium",
+      "feature": "Lower mainvein region before distal lobes divide; foreshortening and broad vein make exact centre uncertain.",
+      "role": "second_round_reserved_evaluation",
+      "RGB_frame": 1055904,
+      "selection_policy": "Raw source grids only; no predicted point overlay or fitted warp was viewed to select/adjust coordinates. All7 attempts retained. Leaves chosen after first-round results, so this is adaptive second-round evidence; models unchanged.",
+      "independent_operator_ground_truth": false
+    }
+  ],
+  "unselected_attempts": [
+    {
+      "region": "green_upper",
+      "feature": "pale lateral edge patches",
+      "reason": "not unique across spectral channels, no reliable material landmark identified"
+    },
+    {
+      "region": "red_upper",
+      "feature": "small red/pale interior islands to left of mainrib",
+      "reason": "several visually similar patches; no unique peak identity without tuning"
+    }
+  ]
+}

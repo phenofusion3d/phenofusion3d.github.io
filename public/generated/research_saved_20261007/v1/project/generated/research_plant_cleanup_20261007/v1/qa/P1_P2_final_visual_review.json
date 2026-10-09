@@ -1,0 +1,17 @@
+{
+  "status": "limited_visual_review_no_obvious_pot_disks_in_primary",
+  "reviewer": "independent P1/P2 source-review agent",
+  "images": {
+    "P1_front.jpg": "56ed56fdbe214d80d164b7e97224604d7e2150fbc33dfb6e45e949e451064a84",
+    "P2_front.jpg": "e656f3c39f5bd0be2bb4c6414c8a4656e50b5f5911b7aa12e8343e56db8ab3f1",
+    "plants_cleaned_front.jpg": "ca3459053160ff24ea22eb004d305ed5abca1b174a86f49c0ead33235f55a5a6",
+    "uncertainty_overlay_front.jpg": "027ab82266e1af02bf007389aa5ec4e0345d0b72575899a06310ca77bfb15367"
+  },
+  "P1": "The pale stem, ear and lower dry fragments remain visible in the primary front preview. No obvious circular pot rim or continuous soil slab is visible. Large gaps and incomplete low dry tissue remain; no completeness or ground-truth claim is made.",
+  "P2": "The primary front preview now retains the lower stem section added by narrow source-tissue review, alongside brown and green leaves and small disconnected fragments. No obvious circular pot rim or soil slab is visible. Some stem/foliage gaps remain; incomplete source coverage and preserved uncertainty still limit interpretation.",
+  "limits": [
+    "Front preview and actual source photographs/annotated masks were reviewed; this is not complete all-angle semantic verification.",
+    "Small fragments are not classified as noise from component size or colour.",
+    "Conditional scale, basal cut and point-identity checks do not establish physical trait accuracy."
+  ]
+}

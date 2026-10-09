@@ -1,0 +1,96 @@
+{
+  "reconstruction": "preserved_conditional_geometry",
+  "rgbd_fusion": "preserved_empirical_rigid_alignment",
+  "cleanup": "completed_with_uncertain_and_context_partitions",
+  "trait_review": "completed_with_unresolved_anatomical_landmarks",
+  "trait_accuracy": "no_eligible_final_pairs",
+  "spectral_analysis": "measured_DN_and_provisional_reference_normalization",
+  "spectral_surface_fusion": null,
+  "offline_workspace": "implemented_and_verified_locally",
+  "independent_generalization": "unverified",
+  "lab_hardware": "not_tested_here",
+  "gaps": [
+    {
+      "id": "board_pitch",
+      "status": "unresolved",
+      "title": "Printed ChArUco size unavailable",
+      "affects": [
+        "absolute scale",
+        "physical trait validation"
+      ],
+      "resolution": "Measured pitch across multiple cells or original target design with verified print scale"
+    },
+    {
+      "id": "recording_units",
+      "status": "unresolved",
+      "title": "Independent depth and gantry units unavailable",
+      "affects": [
+        "absolute scale",
+        "physical alignment accuracy"
+      ],
+      "resolution": "Saved device depth units and independently verified gantry displacement conversion"
+    },
+    {
+      "id": "measurement_landmarks",
+      "status": "reviewed_but_unresolved",
+      "title": "Five specimen identities reviewed; true bases/tips and full organ boundaries incomplete",
+      "affects": [
+        "height",
+        "leaf validation"
+      ],
+      "resolution": "Explicit source-supported point/organ identities and compatible measurement definitions"
+    },
+    {
+      "id": "manual_references",
+      "status": "partially_resolved",
+      "title": "Ruler evidence contains unreadable and conflicting dimensions",
+      "affects": [
+        "accepted validation pairs"
+      ],
+      "resolution": "Retain annotation and photo evidence separately; exclude unresolved dimensions"
+    },
+    {
+      "id": "hsi_radiometry",
+      "status": "unresolved",
+      "title": "White spectral reflectance and confirmed dark reference unavailable",
+      "affects": [
+        "calibrated reflectance",
+        "physiological interpretation"
+      ],
+      "resolution": "Documented panel spectrum and shutter-closed reference at matching acquisition settings"
+    },
+    {
+      "id": "hsi_spatial",
+      "status": "unresolved",
+      "title": "Plant-height HSI spatial model and line/start linkage unavailable",
+      "affects": [
+        "validated 3D spectral mapping"
+      ],
+      "resolution": "Independent spatial/rig calibration or multi-height controls with off-plane validation and scan-position linkage"
+    },
+    {
+      "id": "surface_coverage",
+      "status": "unresolved",
+      "title": "Unobserved and incomplete plant surfaces",
+      "affects": [
+        "whole-plant completeness",
+        "whole-leaf area and volume"
+      ],
+      "resolution": "Additional overlapping views of hidden surfaces or explicit observed-only reporting"
+    },
+    {
+      "id": "external_generalization",
+      "status": "unverified",
+      "title": "Additional datasets and lab hardware tests unavailable",
+      "affects": [
+        "arbitrary-plant automation",
+        "physical lab readiness"
+      ],
+      "resolution": "Independent dataset tests and lab regression checks after local software verification"
+    }
+  ],
+  "latest_report": "index.html",
+  "spectral_software": "tracked_offline_extractor_verified_for_both_cameras",
+  "tests_passed": 141,
+  "software_source_files_unchanged_since_replay": true
+}

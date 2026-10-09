@@ -1,0 +1,13 @@
+patch_id,patch_name,descriptor,valid_dark_n,dark_median,valid_zero_n,zero_median,joint_valid_n,mean_absolute_offset_effect
+1,P5 upper green partial hypothesis,NDVI_800_680,0,,0,,0,
+1,P5 upper green partial hypothesis,NDRE_790_720,0,,0,,0,
+1,P5 upper green partial hypothesis,GNDVI_800_550,0,,0,,0,
+1,P5 upper green partial hypothesis,PRI_531_570,0,,0,,0,
+1,P5 upper green partial hypothesis,PSRI_678_500_750,0,,0,,0,
+1,P5 upper green partial hypothesis,SIPI_800_445_680,0,,0,,0,
+2,P5 upper red partial hypothesis,NDVI_800_680,0,,0,,0,
+2,P5 upper red partial hypothesis,NDRE_790_720,0,,0,,0,
+2,P5 upper red partial hypothesis,GNDVI_800_550,0,,0,,0,
+2,P5 upper red partial hypothesis,PRI_531_570,0,,0,,0,
+2,P5 upper red partial hypothesis,PSRI_678_500_750,0,,0,,0,
+2,P5 upper red partial hypothesis,SIPI_800_445_680,0,,0,,0,

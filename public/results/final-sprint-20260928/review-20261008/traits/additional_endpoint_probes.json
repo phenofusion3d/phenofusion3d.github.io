@@ -1,0 +1,183 @@
+[
+  {
+    "id": "P3.O05.length_probe",
+    "manual_dimension_id": "P3.O05.length",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        551,
+        467
+      ],
+      [
+        431,
+        479
+      ]
+    ],
+    "roles": [
+      "visible basal lamina/petiole junction candidate",
+      "terminal margin"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Full visible lobed blade base-to-tip straight chord candidate; held-flat reference convention and tissue pose remain conditional.",
+    "endpoints": [
+      {
+        "role": "visible basal lamina/petiole junction candidate",
+        "source_pixel_xy": [
+          551,
+          467
+        ],
+        "candidate_count": 125,
+        "fused_point_index": 43144,
+        "camera_id": 0,
+        "original_point_index": 255348,
+        "xyz_m": [
+          0.7931975148844194,
+          0.04990042134497341,
+          0.4130931787630273
+        ],
+        "reprojection_pixel_xy": [
+          550.9813010630567,
+          466.86557298071665
+        ],
+        "source_click_distance_px": 0.13572130914567992,
+        "candidate_key": "P3_O05_length_probe_0"
+      },
+      {
+        "role": "terminal margin",
+        "source_pixel_xy": [
+          431,
+          479
+        ],
+        "candidate_count": 130,
+        "fused_point_index": 744985,
+        "camera_id": 0,
+        "original_point_index": 3894967,
+        "xyz_m": [
+          0.6780432987419363,
+          0.07973778668526678,
+          0.531413765457294
+        ],
+        "reprojection_pixel_xy": [
+          430.7738203622649,
+          479.050601516534
+        ],
+        "source_click_distance_px": 0.2317708825575609,
+        "candidate_key": "P3_O05_length_probe_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": 16.778117624309154,
+    "four_pixel_disk_sensitivity_cm": [
+      14.773385074339554,
+      17.648084075091276
+    ],
+    "sensitivity_note": "All candidate endpoint pairs, not a confidence interval.",
+    "projections": [
+      {
+        "frame": 824869,
+        "pixel_xy": [
+          [
+            550.9813010630567,
+            466.86557298071665
+          ],
+          [
+            430.7738203622649,
+            479.050601516534
+          ]
+        ]
+      },
+      {
+        "frame": 618150,
+        "pixel_xy": [
+          [
+            883.0286530334658,
+            459.3360280059357
+          ],
+          [
+            688.8100477121985,
+            473.99768540914295
+          ]
+        ]
+      },
+      {
+        "frame": 1055904,
+        "pixel_xy": [
+          [
+            182.0942637699867,
+            473.6150932142082
+          ],
+          [
+            145.7276164726306,
+            484.3192223403512
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "P3.O05.width_probe",
+    "manual_dimension_id": "P3.O05.width",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        510,
+        431
+      ],
+      [
+        516,
+        521
+      ]
+    ],
+    "roles": [
+      "upper lateral lobe margin",
+      "opposite lower lateral lobe margin"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Opposing visible lobe-margin chord across the same blade; anatomical mapping of the ruler cross-section remains conditional, and chord is not a geodesic or certified maximum width.",
+    "endpoints": [
+      {
+        "role": "upper lateral lobe margin",
+        "source_pixel_xy": [
+          510,
+          431
+        ],
+        "candidate_count": 0
+      },
+      {
+        "role": "opposite lower lateral lobe margin",
+        "source_pixel_xy": [
+          516,
+          521
+        ],
+        "candidate_count": 7,
+        "fused_point_index": 1169337,
+        "camera_id": 0,
+        "original_point_index": 5650460,
+        "xyz_m": [
+          0.7474774455076943,
+          0.1116329013593735,
+          0.5280213045419023
+        ],
+        "reprojection_pixel_xy": [
+          513.7236135951692,
+          518.9703172172888
+        ],
+        "source_click_distance_px": 3.0498438095306994,
+        "candidate_key": "P3_O05_width_probe_1"
+      }
+    ],
+    "manual_used_for_scale_or_endpoint_selection": false,
+    "physical_accuracy_validated": false,
+    "chord_cm": null,
+    "status": "No current source-supported endpoint within 4px disk."
+  }
+]

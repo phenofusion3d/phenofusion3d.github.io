@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phenofusion3d"
+version = "0.2.0"
+description = "RGB-D capture, quality assessment, and 3D plant reconstruction for ANU plant phenotyping"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "ANU COMP8715 Plant Phenotyping Team" }
+]
+license = { text = "MIT" }
+
+dependencies = [
+    "open3d>=0.17.0",
+    "opencv-python>=4.8.0",
+    "numpy>=1.26.0",
+    "natsort>=8.4.0",
+    "tqdm>=4.66.0",
+    "PyQt5>=5.15.0",
+    "pyqtgraph>=0.13.0",
+    "matplotlib>=3.8.0",
+]
+
+[project.optional-dependencies]
+# Optional offline analysis; no camera/ROS dependencies or lab pins are changed.
+analysis = ["scipy>=1.10.0"]
+hyperspectral = ["spectral>=0.23", "scipy>=1.10", "scikit-image>=0.21", "scikit-learn>=1.3", "pandas>=2"]
+hyperspectral-viewer = ["PyQtWebEngine>=5.15.6"]
+# Complete Linux lab UI environment. The RealSense Python binding is isolated
+# inside the project venv. ROS itself and the gantry's catkin workspace remain
+# machine-managed and are used through capture/ros_agent.py; never pip-install
+# rospy into the GUI venv.
+lab = [
+    # Exact pin: every supported camera uses this L515/D405-compatible wheel.
+    "pyrealsense2==2.54.2.5684",
+]
+# Backward-compatible alias for older install instructions.
+ros = [
+    "pyrealsense2==2.54.2.5684",
+]
+# Windows / dev: camera-only capture, no gantry control
+windows = [
+    "pyrealsense2==2.54.2.5684",
+]
+# Developer tooling
+dev = [
+    "pytest>=7.4.0",
+    "ruff>=0.4.0",
+]
+
+[project.scripts]
+phenofusion3d = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
+
+[tool.setuptools.packages.find]
+include = ["app*", "capture*", "processing*", "file_io*", "visualiser*"]
+exclude = ["data*", "stakeholder_reference*", "tests*", "venv*"]
+
+[tool.setuptools.package-data]
+"processing.hyperspectral" = ["profile_20260828.json", "legacy/SOURCE_MANIFEST.json", "legacy/LICENSE", "legacy/README.md", "legacy/requirements.txt", "legacy/assets/*.js", "legacy/scripts/*.ps1", "legacy/notebooks/*.ipynb", "legacy/notebooks/**/*.ipynb"]

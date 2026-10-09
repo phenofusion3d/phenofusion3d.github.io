@@ -1,0 +1,15 @@
+{
+  "camera_count": 64,
+  "translation_principal_span_m": [
+    1.6419942438469217,
+    0.0010803501070165687,
+    0.00042939378838601026
+  ],
+  "trajectory_variance_fraction": [
+    0.9999996986177183,
+    2.846412359027753e-07,
+    1.6741045791739287e-08
+  ],
+  "max_pairwise_optical_axis_angle_degrees": 0.3257816374894876,
+  "note": "Pose-derived conditional geometry, not independent calibration. Optical axis direction is not the complete range of rays toward each object. Camera centres form an almost linear path, not an orbit around plants."
+}

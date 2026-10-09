@@ -1,0 +1,567 @@
+{
+  "schema": "cross_camera.camera_trajectory_correction.v1",
+  "status": "conditional_camera_trajectory_experiment_not_accepted_sensor_fusion",
+  "model": "T_Dcam(frame) = T_DfromL @ [R_Lcam(frame), t_Lcam(frame) + rail_axis_L * (frame_id/1e6) * slope]",
+  "model_parameters": 7,
+  "global_rigid_extrinsic": [
+    [
+      0.9984736695190775,
+      -0.025993645071761027,
+      -0.0487305006437596,
+      0.0646002131497908
+    ],
+    [
+      0.023768828574768554,
+      0.9986727595544299,
+      -0.04569203554365837,
+      -0.025772716119135758
+    ],
+    [
+      0.04985352610690046,
+      0.04446402748090851,
+      0.9977662933747989,
+      -0.04524718548169346
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "linear_translation_axis_L515_reference": [
+    0.9979202861572709,
+    -0.04994442408406413,
+    -0.04075115923138636
+  ],
+  "rail_slope_m_per_m": -0.014699660536797944,
+  "slope_bound_m_per_m": [
+    -0.03,
+    0.03
+  ],
+  "slope_at_bound": false,
+  "translation_correction_end_L515_reference_m": [
+    -0.024077814083895796,
+    0.001205058734955733,
+    0.000983243701212743
+  ],
+  "translation_correction_end_norm_m": 0.02412799340577907,
+  "training_frames": [
+    0,
+    417039,
+    828961,
+    1243159
+  ],
+  "entire_heldout_frames": [
+    211121,
+    622242,
+    1034161
+  ],
+  "landmark_holdout_rule": "point_id mod 5 == 0, frozen before this experiment",
+  "training_used_observations": 98,
+  "training_unique_landmarks": 85,
+  "training": {
+    "count": 98,
+    "median_px": 0.9436504383279849,
+    "p90_px": 1.6829846071107382,
+    "within_2px": 92,
+    "within_3px": 97
+  },
+  "entire_heldout_all": {
+    "count": 149,
+    "median_px": 1.1897452355805944,
+    "p90_px": 53.65421784910913,
+    "within_2px": 101,
+    "within_3px": 116
+  },
+  "entire_heldout_frozen_local_consistent": {
+    "count": 109,
+    "median_px": 0.9697716561474569,
+    "p90_px": 1.8628985013613673,
+    "within_2px": 100,
+    "within_3px": 107
+  },
+  "landmark_heldout_all": {
+    "count": 41,
+    "median_px": 1.254817245630281,
+    "p90_px": 3.728281862296514,
+    "within_2px": 29,
+    "within_3px": 32
+  },
+  "landmark_heldout_frozen_local_consistent": {
+    "count": 29,
+    "median_px": 1.0792048569991208,
+    "p90_px": 1.755745965061543,
+    "within_2px": 28,
+    "within_3px": 29
+  },
+  "untrimmed_rigid_training": {
+    "count": 98,
+    "median_px": 2.754156449771722,
+    "p90_px": 6.034748062637729,
+    "within_2px": 39,
+    "within_3px": 52
+  },
+  "untrimmed_rigid_entire_heldout_frozen_local_consistent": {
+    "count": 109,
+    "median_px": 3.005171302049718,
+    "p90_px": 7.29243364771825,
+    "within_2px": 22,
+    "within_3px": 54
+  },
+  "per_frame": [
+    {
+      "frame": 0,
+      "role": "training_view_with_landmark_holdouts",
+      "training_used": 28,
+      "all_candidates": {
+        "count": 50,
+        "median_px": 1.4656444367228767,
+        "p90_px": 102.52773098833683,
+        "within_2px": 32,
+        "within_3px": 36
+      },
+      "frozen_local_pnp_consistent": {
+        "count": 33,
+        "median_px": 0.9103705430078552,
+        "p90_px": 1.7397026668661286,
+        "within_2px": 31,
+        "within_3px": 33
+      },
+      "landmark_holdouts_all": {
+        "count": 8,
+        "median_px": 1.7266574005321251,
+        "p90_px": 30.294424471858367,
+        "within_2px": 5,
+        "within_3px": 6
+      },
+      "landmark_holdouts_local_consistent": {
+        "count": 5,
+        "median_px": 1.53591778991429,
+        "p90_px": 1.7581068853377306,
+        "within_2px": 5,
+        "within_3px": 5
+      },
+      "untrimmed_rigid_all": {
+        "count": 50,
+        "median_px": 3.3939826008500606,
+        "p90_px": 105.74647811365708,
+        "within_2px": 1,
+        "within_3px": 17
+      },
+      "untrimmed_rigid_local_consistent": {
+        "count": 33,
+        "median_px": 3.054681670715691,
+        "p90_px": 3.8661415754757353,
+        "within_2px": 1,
+        "within_3px": 15
+      },
+      "median_residual_xy_local": [
+        0.20842132113830303,
+        0.2162271451553579
+      ]
+    },
+    {
+      "frame": 211121,
+      "role": "entire_view_held_out",
+      "training_used": 0,
+      "all_candidates": {
+        "count": 59,
+        "median_px": 1.4507454756351261,
+        "p90_px": 17.476819959106066,
+        "within_2px": 38,
+        "within_3px": 44
+      },
+      "frozen_local_pnp_consistent": {
+        "count": 41,
+        "median_px": 0.959866107782185,
+        "p90_px": 1.9888243384768487,
+        "within_2px": 38,
+        "within_3px": 41
+      },
+      "landmark_holdouts_all": {
+        "count": 6,
+        "median_px": 2.480498712040257,
+        "p90_px": 3.6603452651889565,
+        "within_2px": 2,
+        "within_3px": 4
+      },
+      "landmark_holdouts_local_consistent": {
+        "count": 3,
+        "median_px": 1.3231568343523852,
+        "p90_px": 2.1637102771080925,
+        "within_2px": 2,
+        "within_3px": 3
+      },
+      "untrimmed_rigid_all": {
+        "count": 59,
+        "median_px": 3.0078789713707437,
+        "p90_px": 18.12973645708121,
+        "within_2px": 18,
+        "within_3px": 28
+      },
+      "untrimmed_rigid_local_consistent": {
+        "count": 41,
+        "median_px": 2.5783365574583783,
+        "p90_px": 3.8145409309674623,
+        "within_2px": 16,
+        "within_3px": 26
+      },
+      "median_residual_xy_local": [
+        0.3542381464964137,
+        0.03292542084057004
+      ]
+    },
+    {
+      "frame": 417039,
+      "role": "training_view_with_landmark_holdouts",
+      "training_used": 41,
+      "all_candidates": {
+        "count": 54,
+        "median_px": 1.160079764348044,
+        "p90_px": 7.2908567779564,
+        "within_2px": 43,
+        "within_3px": 46
+      },
+      "frozen_local_pnp_consistent": {
+        "count": 44,
+        "median_px": 0.9342141270312337,
+        "p90_px": 1.6583991935743068,
+        "within_2px": 43,
+        "within_3px": 44
+      },
+      "landmark_holdouts_all": {
+        "count": 4,
+        "median_px": 0.8773788052405154,
+        "p90_px": 2.5979547258734828,
+        "within_2px": 3,
+        "within_3px": 3
+      },
+      "landmark_holdouts_local_consistent": {
+        "count": 3,
+        "median_px": 0.5543475971625228,
+        "p90_px": 1.0711975300873111,
+        "within_2px": 3,
+        "within_3px": 3
+      },
+      "untrimmed_rigid_all": {
+        "count": 54,
+        "median_px": 0.9320593240448208,
+        "p90_px": 6.558382142191951,
+        "within_2px": 41,
+        "within_3px": 44
+      },
+      "untrimmed_rigid_local_consistent": {
+        "count": 44,
+        "median_px": 0.7434950399579443,
+        "p90_px": 1.7599911516636684,
+        "within_2px": 41,
+        "within_3px": 42
+      },
+      "median_residual_xy_local": [
+        0.3634699269136945,
+        -0.010545374412501474
+      ]
+    },
+    {
+      "frame": 622242,
+      "role": "entire_view_held_out",
+      "training_used": 0,
+      "all_candidates": {
+        "count": 49,
+        "median_px": 1.0738886473245364,
+        "p90_px": 50.42052842271193,
+        "within_2px": 36,
+        "within_3px": 40
+      },
+      "frozen_local_pnp_consistent": {
+        "count": 37,
+        "median_px": 0.9704144109125535,
+        "p90_px": 1.7253088576450155,
+        "within_2px": 35,
+        "within_3px": 37
+      },
+      "landmark_holdouts_all": {
+        "count": 4,
+        "median_px": 1.5738285663381388,
+        "p90_px": 2.928987184260158,
+        "within_2px": 3,
+        "within_3px": 3
+      },
+      "landmark_holdouts_local_consistent": {
+        "count": 3,
+        "median_px": 1.4108289368699731,
+        "p90_px": 1.6716283440190385,
+        "within_2px": 3,
+        "within_3px": 3
+      },
+      "untrimmed_rigid_all": {
+        "count": 49,
+        "median_px": 2.567850906107767,
+        "p90_px": 51.1788504879252,
+        "within_2px": 6,
+        "within_3px": 30
+      },
+      "untrimmed_rigid_local_consistent": {
+        "count": 37,
+        "median_px": 2.5197186578108948,
+        "p90_px": 3.7799725520360994,
+        "within_2px": 6,
+        "within_3px": 28
+      },
+      "median_residual_xy_local": [
+        -0.03795898006274001,
+        0.04124680911621681
+      ]
+    },
+    {
+      "frame": 828961,
+      "role": "training_view_with_landmark_holdouts",
+      "training_used": 20,
+      "all_candidates": {
+        "count": 31,
+        "median_px": 0.9533396130583592,
+        "p90_px": 93.05649165075178,
+        "within_2px": 26,
+        "within_3px": 27
+      },
+      "frozen_local_pnp_consistent": {
+        "count": 25,
+        "median_px": 0.8609563049396194,
+        "p90_px": 1.4769192217798317,
+        "within_2px": 24,
+        "within_3px": 25
+      },
+      "landmark_holdouts_all": {
+        "count": 6,
+        "median_px": 0.9102643452305232,
+        "p90_px": 1.444669416660334,
+        "within_2px": 6,
+        "within_3px": 6
+      },
+      "landmark_holdouts_local_consistent": {
+        "count": 5,
+        "median_px": 0.8671890774026871,
+        "p90_px": 1.0288587594228162,
+        "within_2px": 5,
+        "within_3px": 5
+      },
+      "untrimmed_rigid_all": {
+        "count": 31,
+        "median_px": 4.792788504793121,
+        "p90_px": 97.31621951414895,
+        "within_2px": 0,
+        "within_3px": 0
+      },
+      "untrimmed_rigid_local_consistent": {
+        "count": 25,
+        "median_px": 4.7924363488292405,
+        "p90_px": 5.3260056118019214,
+        "within_2px": 0,
+        "within_3px": 0
+      },
+      "median_residual_xy_local": [
+        -0.43939826110425884,
+        0.14556573330281708
+      ]
+    },
+    {
+      "frame": 1034161,
+      "role": "entire_view_held_out",
+      "training_used": 0,
+      "all_candidates": {
+        "count": 41,
+        "median_px": 1.1514973325579103,
+        "p90_px": 89.50664973481788,
+        "within_2px": 27,
+        "within_3px": 32
+      },
+      "frozen_local_pnp_consistent": {
+        "count": 31,
+        "median_px": 0.9645824835399492,
+        "p90_px": 2.321316032249517,
+        "within_2px": 27,
+        "within_3px": 29
+      },
+      "landmark_holdouts_all": {
+        "count": 7,
+        "median_px": 1.1514973325579103,
+        "p90_px": 38.03962901130509,
+        "within_2px": 5,
+        "within_3px": 5
+      },
+      "landmark_holdouts_local_consistent": {
+        "count": 5,
+        "median_px": 0.9822915260947037,
+        "p90_px": 1.559449158272662,
+        "within_2px": 5,
+        "within_3px": 5
+      },
+      "untrimmed_rigid_all": {
+        "count": 41,
+        "median_px": 7.23541987517395,
+        "p90_px": 84.22645141137016,
+        "within_2px": 0,
+        "within_3px": 0
+      },
+      "untrimmed_rigid_local_consistent": {
+        "count": 31,
+        "median_px": 7.20977413149924,
+        "p90_px": 7.937389942500425,
+        "within_2px": 0,
+        "within_3px": 0
+      },
+      "median_residual_xy_local": [
+        -0.7653514621410977,
+        0.34808672099410387
+      ]
+    },
+    {
+      "frame": 1243159,
+      "role": "training_view_with_landmark_holdouts",
+      "training_used": 9,
+      "all_candidates": {
+        "count": 20,
+        "median_px": 1.3382274123980222,
+        "p90_px": 390.47190955872355,
+        "within_2px": 13,
+        "within_3px": 14
+      },
+      "frozen_local_pnp_consistent": {
+        "count": 14,
+        "median_px": 1.2509621030081257,
+        "p90_px": 2.5386700666315685,
+        "within_2px": 12,
+        "within_3px": 13
+      },
+      "landmark_holdouts_all": {
+        "count": 6,
+        "median_px": 1.181245851566411,
+        "p90_px": 134.00101205044345,
+        "within_2px": 5,
+        "within_3px": 5
+      },
+      "landmark_holdouts_local_consistent": {
+        "count": 5,
+        "median_px": 1.1153847427468517,
+        "p90_px": 1.2517331315325568,
+        "within_2px": 5,
+        "within_3px": 5
+      },
+      "untrimmed_rigid_all": {
+        "count": 20,
+        "median_px": 9.821460912260356,
+        "p90_px": 380.2522711846209,
+        "within_2px": 0,
+        "within_3px": 0
+      },
+      "untrimmed_rigid_local_consistent": {
+        "count": 14,
+        "median_px": 9.405658904901742,
+        "p90_px": 12.590932762825483,
+        "within_2px": 0,
+        "within_3px": 0
+      },
+      "median_residual_xy_local": [
+        -0.1737253801279337,
+        0.0007643897190519056
+      ]
+    }
+  ],
+  "leave_one_training_frame_out": [
+    {
+      "omitted_training_frame": 0,
+      "rail_slope_m_per_m": -0.01721975209860854,
+      "held_view_local_consistent": {
+        "count": 33,
+        "median_px": 1.372088409664797,
+        "p90_px": 3.840267924395944,
+        "within_2px": 21,
+        "within_3px": 24
+      },
+      "extrinsic_translation_difference_m": 0.0051253509732867575,
+      "extrinsic_rotation_difference_deg": 0.14198005172859587
+    },
+    {
+      "omitted_training_frame": 417039,
+      "rail_slope_m_per_m": -0.014535030545347041,
+      "held_view_local_consistent": {
+        "count": 44,
+        "median_px": 0.9524272973559382,
+        "p90_px": 1.927524688746242,
+        "within_2px": 40,
+        "within_3px": 42
+      },
+      "extrinsic_translation_difference_m": 0.0055960490141826,
+      "extrinsic_rotation_difference_deg": 0.18981768986251688
+    },
+    {
+      "omitted_training_frame": 828961,
+      "rail_slope_m_per_m": -0.014131850766311151,
+      "held_view_local_consistent": {
+        "count": 25,
+        "median_px": 1.1055725089742041,
+        "p90_px": 1.636179898229727,
+        "within_2px": 24,
+        "within_3px": 25
+      },
+      "extrinsic_translation_difference_m": 0.0016665505627090039,
+      "extrinsic_rotation_difference_deg": 0.06382184380745275
+    },
+    {
+      "omitted_training_frame": 1243159,
+      "rail_slope_m_per_m": -0.015399269773786556,
+      "held_view_local_consistent": {
+        "count": 14,
+        "median_px": 1.384826507151759,
+        "p90_px": 3.096408759558472,
+        "within_2px": 10,
+        "within_3px": 12
+      },
+      "extrinsic_translation_difference_m": 0.006544403343962048,
+      "extrinsic_rotation_difference_deg": 0.26311854729268724
+    }
+  ],
+  "jacobian_singular_values_mixed_parameter_units": [
+    7856.154656867744,
+    7617.956774098934,
+    1916.473512043676,
+    1677.216410678891,
+    1136.9381352372864,
+    334.3658367998054,
+    204.2488822288521
+  ],
+  "observed_static_frame_range": [
+    0,
+    1243159
+  ],
+  "last_bundle_frame": 1641398,
+  "fixed_factory_intrinsics": true,
+  "fixed_bundle_rotations": true,
+  "D405_geometry_unchanged": true,
+  "L515_native_cloud_unchanged": true,
+  "raw_sensor_unit_fitted": false,
+  "plant_geometry_warped": false,
+  "manual_measurements_used": false,
+  "critical_limits": [
+    "Extrinsic and linear camera displacement are estimated from static rail/slat image observations, mainly narrow horizontal support.",
+    "This changes camera source poses only; applying the linear term directly to existing cloud points would be invalid. Re-fuse original sensor observations instead.",
+    "Conditional RGB correspondences do not certify raw-depth registration, axial bias, physical scale, or plant rigidity.",
+    "Entire held-out view candidates contain explicitly retained descriptor mismatches. The frozen PnP-consistent subset was selected before trajectory fitting, but is still a conditional correspondence subset.",
+    "No static correspondences were established for the final two sampled views; late-scan corrected poses extrapolate beyond frame1243159.",
+    "No fusion acceptance is implied by low RGB residuals."
+  ],
+  "source_hashes": {
+    "generated\\research_l515_20261007\\cross_camera\\static_correspondences_0.json": "7ac0f5220caad479f463000debb1e839954264badd6b02cf71da4954914f8086",
+    "generated\\research_l515_20261007\\cross_camera\\static_correspondences_1034161.json": "63841829bdf789978fc0e430f98bbdcbfcd1c7743bcb9a7ea0410555f13e5303",
+    "generated\\research_l515_20261007\\cross_camera\\static_correspondences_1243159.json": "e7d6f390e90e2ab2df02b6c27f6d4a2b5f392c6a06bc1e2010c83055a6d56fc3",
+    "generated\\research_l515_20261007\\cross_camera\\static_correspondences_211121.json": "3789a0d4e70e0ccd73b94a719507b9782a50b9cacac9f78c969a6ba7e7f36680",
+    "generated\\research_l515_20261007\\cross_camera\\static_correspondences_417039.json": "0bd860c816631adc0804b083053d0d6c8cf5cbca320ccda0c189eb569e1f4834",
+    "generated\\research_l515_20261007\\cross_camera\\static_correspondences_622242.json": "0de1494827e6967a3d756049120cf890a684ef22fc24d702b1764ae646e7d235",
+    "generated\\research_l515_20261007\\cross_camera\\static_correspondences_828961.json": "0874f2b1c969a29bb794a0e0287543f4b1250d64bd3a06affb0f2f72b9eac998",
+    "generated\\research_l515_20261007\\l515_sensor_v1\\bundle\\poses.json": "0bd38d6fb86dff02768b2f5943a431004fec2a66623e55403d5998d957b85a5f",
+    "generated\\research_l515_20261007\\calibration\\calibration_transfer.json": "20e2f4d9650029d46e597fec4cd69762e08e332a3032e0441b862ea8f517835c",
+    "generated\\research_l515_20261007\\cross_camera\\board_transfer_alignment_check.json": "f2f9b2d305ba6bcaadb8d625338f1487242b46f2b82b537f2d46fe88034ec820",
+    "generated\\research_l515_20261007\\cross_camera\\test_trajectory_correction.py": "76efbbf115f847ba5af55d44d65c8eb1c6e0543764b938e4f95e47eff611be2a"
+  }
+}

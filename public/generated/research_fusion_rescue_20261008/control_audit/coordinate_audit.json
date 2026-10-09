@@ -1,0 +1,233 @@
+{
+  "native_hsi_shape": [
+    2127,
+    1024,
+    3
+  ],
+  "rotated_hsi_shape": [
+    1024,
+    2127,
+    3
+  ],
+  "rotation_rule": "rotated_xy=[native_line, 1023-native_column], exact integer pixel-centre permutation; no half-pixel correction",
+  "roundtrip_checks": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "records": [
+    {
+      "id": "red_upper_2",
+      "role": "existing_exposed_selection_control_not_independent_validation",
+      "sensor": "fx10",
+      "native_hsi_column_line": [
+        965.163122177124,
+        1614.6909942626953
+      ],
+      "reference_xyz_m": [
+        1.2445826731886735,
+        -0.1116329013593735,
+        0.5550778827961474
+      ],
+      "reference_frame": "D405_short_dense_v3_metric_reference",
+      "source_original_index": 6706132,
+      "new_P5_row": 65318,
+      "native_RGB_mark_xy": [
+        819.0327987670898,
+        258.50301361083984
+      ],
+      "native_RGB_projection_xy": [
+        819.047471424558,
+        258.3762419262157
+      ],
+      "undistorted_RGB_projection_xy": [
+        819.9270019421073,
+        257.8155253427296
+      ],
+      "native_RGB_reprojection_error_px": 0.1276179724788872,
+      "distortion_displacement_px": 1.0430613684231624,
+      "old_to_new_reprojection_change_px": 1.1368683772161603e-13,
+      "metric_point_error_vs_old_scaled_m": 0.0,
+      "visual_note": "Distinct pale island boundary within upper red leaf. Matching island shape and adjacent dark region support local association; feature centroid is not an independently measured anatomical landmark.",
+      "point_localization_is_not_physical_correspondence_proof": true
+    },
+    {
+      "id": "red_upper_6",
+      "role": "existing_exposed_selection_control_not_independent_validation",
+      "sensor": "fx10",
+      "native_hsi_column_line": [
+        992.1574348722186,
+        1668.2689918518067
+      ],
+      "reference_xyz_m": [
+        1.279405648298442,
+        -0.1270660213629735,
+        0.5559248230166736
+      ],
+      "reference_frame": "D405_short_dense_v3_metric_reference",
+      "source_original_index": 6770251,
+      "new_P5_row": 71560,
+      "native_RGB_mark_xy": [
+        858.1754531860352,
+        240.53552627563477
+      ],
+      "native_RGB_projection_xy": [
+        858.7805545071394,
+        240.90571765540477
+      ],
+      "undistorted_RGB_projection_xy": [
+        860.2761844924407,
+        240.0013526288741
+      ],
+      "native_RGB_reprojection_error_px": 0.7093583484094186,
+      "distortion_displacement_px": 1.7477943683809811,
+      "old_to_new_reprojection_change_px": 0.0,
+      "metric_point_error_vs_old_scaled_m": 0.0,
+      "visual_note": "Major-vein/side-vein junction in upper red leaf, same branch topology and adjacent pale patch. Registration remains provisional.",
+      "point_localization_is_not_physical_correspondence_proof": true
+    },
+    {
+      "id": "green_lower_0",
+      "role": "existing_exposed_selection_control_not_independent_validation",
+      "sensor": "fx10",
+      "native_hsi_column_line": [
+        411.8931819370814,
+        1826.8903121948242
+      ],
+      "reference_xyz_m": [
+        1.4141882296632156,
+        0.09683900324439142,
+        0.5118651467860674
+      ],
+      "reference_frame": "D405_short_dense_v3_metric_reference",
+      "source_original_index": 669320,
+      "new_P5_row": 6128,
+      "native_RGB_mark_xy": [
+        1045.8220138549805,
+        512.3255348205566
+      ],
+      "native_RGB_projection_xy": [
+        1045.6354403161013,
+        511.4062528795512
+      ],
+      "undistorted_RGB_projection_xy": [
+        1051.1119838266352,
+        513.2900312385386
+      ],
+      "native_RGB_reprojection_error_px": 0.9380239722249559,
+      "distortion_displacement_px": 5.7914721555543,
+      "old_to_new_reprojection_change_px": 2.2737367544323206e-13,
+      "metric_point_error_vs_old_scaled_m": 0.0,
+      "visual_note": "Strongest candidate: interior secondary-vein junction on lower green leaf. Matching local branching repeats in 25 scale/channel configurations.",
+      "point_localization_is_not_physical_correspondence_proof": true
+    },
+    {
+      "id": "fx17_track_red_upper_2",
+      "role": "existing_exposed_selection_control_not_independent_validation",
+      "sensor": "fx17",
+      "native_hsi_column_line": [
+        587.4865264892578,
+        1508.8011627197266
+      ],
+      "reference_xyz_m": [
+        1.2445826731886735,
+        -0.1116329013593735,
+        0.5550778827961474
+      ],
+      "reference_frame": "D405_short_dense_v3_metric_reference",
+      "source_original_index": 6706132,
+      "new_P5_row": 65318,
+      "native_RGB_mark_xy": [
+        819.0327987670898,
+        258.50301361083984
+      ],
+      "native_RGB_projection_xy": [
+        819.047471424558,
+        258.3762419262157
+      ],
+      "undistorted_RGB_projection_xy": [
+        819.9270019421073,
+        257.8155253427296
+      ],
+      "native_RGB_reprojection_error_px": 0.1276179724788872,
+      "distortion_displacement_px": 1.0430613684231624,
+      "old_to_new_reprojection_change_px": 1.1368683772161603e-13,
+      "metric_point_error_vs_old_scaled_m": 0.0,
+      "visual_note": "Distinct pale island boundary within upper red leaf. Matching island shape and adjacent dark region support local association; feature centroid is not an independently measured anatomical landmark.",
+      "point_localization_is_not_physical_correspondence_proof": true
+    },
+    {
+      "id": "fx17_track_red_upper_6",
+      "role": "existing_exposed_selection_control_not_independent_validation",
+      "sensor": "fx17",
+      "native_hsi_column_line": [
+        604.085506439209,
+        1561.5630493164062
+      ],
+      "reference_xyz_m": [
+        1.279405648298442,
+        -0.1270660213629735,
+        0.5559248230166736
+      ],
+      "reference_frame": "D405_short_dense_v3_metric_reference",
+      "source_original_index": 6770251,
+      "new_P5_row": 71560,
+      "native_RGB_mark_xy": [
+        858.1754531860352,
+        240.53552627563477
+      ],
+      "native_RGB_projection_xy": [
+        858.7805545071394,
+        240.90571765540477
+      ],
+      "undistorted_RGB_projection_xy": [
+        860.2761844924407,
+        240.0013526288741
+      ],
+      "native_RGB_reprojection_error_px": 0.7093583484094186,
+      "distortion_displacement_px": 1.7477943683809811,
+      "old_to_new_reprojection_change_px": 0.0,
+      "metric_point_error_vs_old_scaled_m": 0.0,
+      "visual_note": "Major-vein/side-vein junction in upper red leaf, same branch topology and adjacent pale patch. Registration remains provisional.",
+      "point_localization_is_not_physical_correspondence_proof": true
+    },
+    {
+      "id": "fx17_track_green_lower_0",
+      "role": "existing_exposed_selection_control_not_independent_validation",
+      "sensor": "fx17",
+      "native_hsi_column_line": [
+        234.6998748779297,
+        1718.3388214111328
+      ],
+      "reference_xyz_m": [
+        1.4141882296632156,
+        0.09683900324439142,
+        0.5118651467860674
+      ],
+      "reference_frame": "D405_short_dense_v3_metric_reference",
+      "source_original_index": 669320,
+      "new_P5_row": 6128,
+      "native_RGB_mark_xy": [
+        1045.8220138549805,
+        512.3255348205566
+      ],
+      "native_RGB_projection_xy": [
+        1045.6354403161013,
+        511.4062528795512
+      ],
+      "undistorted_RGB_projection_xy": [
+        1051.1119838266352,
+        513.2900312385386
+      ],
+      "native_RGB_reprojection_error_px": 0.9380239722249559,
+      "distortion_displacement_px": 5.7914721555543,
+      "old_to_new_reprojection_change_px": 2.2737367544323206e-13,
+      "metric_point_error_vs_old_scaled_m": 0.0,
+      "visual_note": "Strongest candidate: interior secondary-vein junction on lower green leaf. Matching local branching repeats in 25 scale/channel configurations.",
+      "point_localization_is_not_physical_correspondence_proof": true
+    }
+  ],
+  "resize_note": "Historical feature detector inverted cv2 resize as dst/scale. Pixel-centre-aware inverse differs by 0.5/scale-0.5; at tested sy=0.4..0.7 this is +0.214..+0.75 source HSI px; sx=0.75..1.25 gives -0.1..+0.167 source HSI px. This cannot by itself explain several-pixel native RGB residuals. Re-running detection needed before altering any old coordinate.",
+  "training_status": "Previously exposed selections only; not fresh ground truth"
+}

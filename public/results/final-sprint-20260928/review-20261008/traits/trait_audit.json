@@ -1,0 +1,2500 @@
+{
+  "date": "2026-10-08",
+  "manual_dimensions": 47,
+  "manual_heights": 5,
+  "manual_organ_lengths": 21,
+  "manual_organ_widths": 21,
+  "new_batch_dimensions_attempted": 24,
+  "extra_axis_or_anatomy_revision_attempts": 3,
+  "conditional_comparisons": 13,
+  "conditional_comparisons_previously_available": 1,
+  "new_conditional_comparisons": 12,
+  "conditional_length_comparisons": 7,
+  "conditional_width_comparisons": 6,
+  "accepted_independent_physical_accuracy_pairs": 0,
+  "height_extent_diagnostics": 5,
+  "status_counts": {
+    "extent_completeness_diagnostic_not_height_accuracy": 5,
+    "organ_identity_unresolved": 10,
+    "partial_observed_length_definition_mismatch": 2,
+    "reference_discrepancy_and_partial_width": 1,
+    "attempted_missing_supported_endpoint": 5,
+    "source_point_anatomy_failed_multiview_check": 2,
+    "conditional_same_organ_chord_comparison": 13,
+    "organ_identity_and_type_unresolved": 8,
+    "different_cross_section_descriptive_only": 1
+  },
+  "scientific_scope": "Provisional same-organ metric chord comparisons, manually reviewed; not a completed independent accuracy evaluation or an automatic generalizable trait extractor.",
+  "policy_correction": "User-measured operator annotations are valid comparison references with stated uncertainty; independent certification is not required merely to display a conditional residual. Anatomical mismatch, missing geometry, deformation and uncertain section remain material.",
+  "method": [
+    "Source clicks frozen against photographs; no manual length or width used to select metric scale or point distances.",
+    "Only existing selected metric fused/cleaned vertices; 4 px source disk, full-cloud visibility and at least two of three stereo-depth checks within 12 mm with >=2 stereo votes.",
+    "Closest supported projected source point selected deterministically; every accepted endpoint visually inspected in three recorded views.",
+    "Bad anatomical matches retained as rejected attempts, including crossing stems; no arbitrary nearest point used when support absent.",
+    "Differences use user-annotated cm values. Straight natural-pose chord is not identical to flattened ruler length or a surface geodesic; width sections remain conditional.",
+    "Endpoint disk min/max range is sensitivity over candidate points, not a confidence interval.",
+    "No aggregate MAPE/MAE is presented as physical accuracy; selections are manual and provisional."
+  ],
+  "comparisons": [
+    {
+      "id": "P3.O01.width",
+      "specimen_id": "P3",
+      "trait": "width",
+      "reference_cm": 5.5,
+      "reference_source": "operator_annotation_cm",
+      "photo_reading_cm": 5.4,
+      "estimate_cm": 3.9358752315052756,
+      "difference_cm": -1.5641247684947244,
+      "relative_difference_percent": -28.438632154449532,
+      "absolute_relative_difference_percent": 28.438632154449532,
+      "endpoint_disk_min_cm": 3.767484221610795,
+      "endpoint_disk_max_cm": 4.217815971476773,
+      "status": "conditional_same_organ_chord_comparison",
+      "caveat": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional.",
+      "scope": "Lateral lobed blade; selected basal junction and terminal margin, plus opposite lateral lobes.",
+      "source_frame": 824869,
+      "source_point_ids": [
+        5433712,
+        3034267
+      ],
+      "fused_point_indices": [
+        1108783,
+        575328
+      ],
+      "camera_ids": [
+        0,
+        0
+      ],
+      "endpoint_evidence": "P3.O01.width_candidate",
+      "projections": [
+        {
+          "frame": 824869,
+          "pixel_xy": [
+            [
+              684.846521682636,
+              454.4416849110481
+            ],
+            [
+              682.9176460502287,
+              504.63482717275593
+            ]
+          ]
+        },
+        {
+          "frame": 618150,
+          "pixel_xy": [
+            [
+              964.9682748950311,
+              447.661525171506
+            ],
+            [
+              960.0720844615709,
+              497.4830839662096
+            ]
+          ]
+        },
+        {
+          "frame": 1055904,
+          "pixel_xy": [
+            [
+              367.8638533484743,
+              460.7052494786847
+            ],
+            [
+              369.49248541386714,
+              510.57838742708225
+            ]
+          ]
+        }
+      ],
+      "physical_accuracy_validated": false,
+      "fully_automatic": false,
+      "manual_used_to_fit_scale_or_geometry": false
+    },
+    {
+      "id": "P3.O02.length",
+      "specimen_id": "P3",
+      "trait": "length",
+      "reference_cm": 9.8,
+      "reference_source": "operator_annotation_cm",
+      "photo_reading_cm": null,
+      "estimate_cm": 9.12092539833513,
+      "difference_cm": -0.6790746016648708,
+      "relative_difference_percent": -6.9293326700497015,
+      "absolute_relative_difference_percent": 6.9293326700497015,
+      "endpoint_disk_min_cm": 8.630309715539951,
+      "endpoint_disk_max_cm": 9.377936839069578,
+      "status": "conditional_same_organ_chord_comparison",
+      "caveat": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional.",
+      "scope": "Lobed blade with basal hole; basal margin and terminal lobe, plus opposite lateral margins.",
+      "source_frame": 824869,
+      "source_point_ids": [
+        6150271,
+        5959325
+      ],
+      "fused_point_indices": [
+        1309202,
+        1252860
+      ],
+      "camera_ids": [
+        0,
+        0
+      ],
+      "endpoint_evidence": "P3.O02.length_candidate",
+      "projections": [
+        {
+          "frame": 824869,
+          "pixel_xy": [
+            [
+              649.83927819306,
+              414.5879171738724
+            ],
+            [
+              698.744894968894,
+              323.07494743896945
+            ]
+          ]
+        },
+        {
+          "frame": 618150,
+          "pixel_xy": [
+            [
+              895.0439449637831,
+              409.05266248558905
+            ],
+            [
+              938.2537421747854,
+              318.48861250862205
+            ]
+          ]
+        },
+        {
+          "frame": 1055904,
+          "pixel_xy": [
+            [
+              373.72338443339135,
+              420.25125595502277
+            ],
+            [
+              427.07550871798435,
+              329.12536022535414
+            ]
+          ]
+        }
+      ],
+      "physical_accuracy_validated": false,
+      "fully_automatic": false,
+      "manual_used_to_fit_scale_or_geometry": false
+    },
+    {
+      "id": "P3.O02.width",
+      "specimen_id": "P3",
+      "trait": "width",
+      "reference_cm": 7.6,
+      "reference_source": "operator_annotation_cm",
+      "photo_reading_cm": null,
+      "estimate_cm": 9.265520307458768,
+      "difference_cm": 1.6655203074587686,
+      "relative_difference_percent": 21.914740887615377,
+      "absolute_relative_difference_percent": 21.914740887615377,
+      "endpoint_disk_min_cm": 8.27662930500362,
+      "endpoint_disk_max_cm": 9.364213342637083,
+      "status": "conditional_same_organ_chord_comparison",
+      "caveat": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional.",
+      "scope": "Lobed blade with basal hole; basal margin and terminal lobe, plus opposite lateral margins.",
+      "source_frame": 824869,
+      "source_point_ids": [
+        1498216,
+        1996453
+      ],
+      "fused_point_indices": [
+        238009,
+        323091
+      ],
+      "camera_ids": [
+        0,
+        0
+      ],
+      "endpoint_evidence": "P3.O02.width_candidate",
+      "projections": [
+        {
+          "frame": 824869,
+          "pixel_xy": [
+            [
+              635.5226063659263,
+              364.2331984525647
+            ],
+            [
+              722.7145977492106,
+              365.09245859918053
+            ]
+          ]
+        },
+        {
+          "frame": 618150,
+          "pixel_xy": [
+            [
+              884.8885922323898,
+              359.0289900177321
+            ],
+            [
+              951.094292720283,
+              360.30884443686904
+            ]
+          ]
+        },
+        {
+          "frame": 1055904,
+          "pixel_xy": [
+            [
+              355.3540936239825,
+              370.3226765018096
+            ],
+            [
+              462.82358268496625,
+              370.7396375918063
+            ]
+          ]
+        }
+      ],
+      "physical_accuracy_validated": false,
+      "fully_automatic": false,
+      "manual_used_to_fit_scale_or_geometry": false
+    },
+    {
+      "id": "P3.O03.length",
+      "specimen_id": "P3",
+      "trait": "length",
+      "reference_cm": 7.5,
+      "reference_source": "operator_annotation_cm",
+      "photo_reading_cm": null,
+      "estimate_cm": 7.691100957059331,
+      "difference_cm": 0.19110095705933094,
+      "relative_difference_percent": 2.5480127607910794,
+      "absolute_relative_difference_percent": 2.5480127607910794,
+      "endpoint_disk_min_cm": 6.9003374178647645,
+      "endpoint_disk_max_cm": 8.652943037308903,
+      "status": "conditional_same_organ_chord_comparison",
+      "caveat": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional.",
+      "scope": "Oval terminal blade including small basal lobes; base convention tentative; width is visible opposing side margins.",
+      "source_frame": 824869,
+      "source_point_ids": [
+        5799835,
+        4949838
+      ],
+      "fused_point_indices": [
+        1221511,
+        944608
+      ],
+      "camera_ids": [
+        0,
+        0
+      ],
+      "endpoint_evidence": "P3.O03.length_candidate",
+      "projections": [
+        {
+          "frame": 824869,
+          "pixel_xy": [
+            [
+              594.2204964846067,
+              424.12699211786963
+            ],
+            [
+              589.7748229163919,
+              325.7844029666501
+            ]
+          ]
+        },
+        {
+          "frame": 618150,
+          "pixel_xy": [
+            [
+              877.9358204034024,
+              417.80515002887194
+            ],
+            [
+              890.0954695770747,
+              319.8849959153212
+            ]
+          ]
+        },
+        {
+          "frame": 1055904,
+          "pixel_xy": [
+            [
+              277.5218422926226,
+              430.36175610206186
+            ],
+            [
+              254.85076744370463,
+              333.50214654733804
+            ]
+          ]
+        }
+      ],
+      "physical_accuracy_validated": false,
+      "fully_automatic": false,
+      "manual_used_to_fit_scale_or_geometry": false
+    },
+    {
+      "id": "P3.O03.width",
+      "specimen_id": "P3",
+      "trait": "width",
+      "reference_cm": 5.7,
+      "reference_source": "operator_annotation_cm",
+      "photo_reading_cm": null,
+      "estimate_cm": 5.036529578582992,
+      "difference_cm": -0.6634704214170082,
+      "relative_difference_percent": -11.639831954684356,
+      "absolute_relative_difference_percent": 11.639831954684356,
+      "endpoint_disk_min_cm": 4.553862986287698,
+      "endpoint_disk_max_cm": 14.964917225214574,
+      "status": "conditional_same_organ_chord_comparison",
+      "caveat": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional.",
+      "scope": "Oval terminal blade including small basal lobes; base convention tentative; width is visible opposing side margins.",
+      "source_frame": 824869,
+      "source_point_ids": [
+        5158967,
+        5970438
+      ],
+      "fused_point_indices": [
+        1020036,
+        1257128
+      ],
+      "camera_ids": [
+        0,
+        0
+      ],
+      "endpoint_evidence": "P3.O03.width_candidate",
+      "projections": [
+        {
+          "frame": 824869,
+          "pixel_xy": [
+            [
+              563.0376846940885,
+              372.1485094895626
+            ],
+            [
+              631.2244291540867,
+              375.2995479715119
+            ]
+          ]
+        },
+        {
+          "frame": 618150,
+          "pixel_xy": [
+            [
+              856.4337176863477,
+              366.01577934738526
+            ],
+            [
+              929.4790327807333,
+              369.03336013906625
+            ]
+          ]
+        },
+        {
+          "frame": 1055904,
+          "pixel_xy": [
+            [
+              237.03828258754044,
+              379.1484465750794
+            ],
+            [
+              296.5022017938347,
+              382.41655491473483
+            ]
+          ]
+        }
+      ],
+      "physical_accuracy_validated": false,
+      "fully_automatic": false,
+      "manual_used_to_fit_scale_or_geometry": false
+    },
+    {
+      "id": "P3.O04.length",
+      "specimen_id": "P3",
+      "trait": "length",
+      "reference_cm": 11.0,
+      "reference_source": "operator_annotation_cm",
+      "photo_reading_cm": 11.0,
+      "estimate_cm": 11.500610903923318,
+      "difference_cm": 0.5006109039233184,
+      "relative_difference_percent": 4.551008217484713,
+      "absolute_relative_difference_percent": 4.551008217484713,
+      "endpoint_disk_min_cm": 10.166677580605636,
+      "endpoint_disk_max_cm": 12.45773698723483,
+      "status": "conditional_same_organ_chord_comparison",
+      "caveat": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional.",
+      "scope": "Lobed blade; basal lobe boundary and terminal lamina candidate; opposite lateral lobes.",
+      "source_frame": 824869,
+      "source_point_ids": [
+        3135038,
+        2422495
+      ],
+      "fused_point_indices": [
+        593225,
+        426718
+      ],
+      "camera_ids": [
+        0,
+        0
+      ],
+      "endpoint_evidence": "P3.O04.length_candidate",
+      "projections": [
+        {
+          "frame": 824869,
+          "pixel_xy": [
+            [
+              550.4665677124583,
+              388.10420876119946
+            ],
+            [
+              505.79693842629047,
+              317.8783168431697
+            ]
+          ]
+        },
+        {
+          "frame": 618150,
+          "pixel_xy": [
+            [
+              784.8987855392911,
+              383.1003910312405
+            ],
+            [
+              713.9942336053099,
+              313.40186625127575
+            ]
+          ]
+        },
+        {
+          "frame": 1055904,
+          "pixel_xy": [
+            [
+              290.093850072595,
+              393.5872235446219
+            ],
+            [
+              275.30079466406477,
+              323.4281074781397
+            ]
+          ]
+        }
+      ],
+      "physical_accuracy_validated": false,
+      "fully_automatic": false,
+      "manual_used_to_fit_scale_or_geometry": false
+    },
+    {
+      "id": "P3.O04.width",
+      "specimen_id": "P3",
+      "trait": "width",
+      "reference_cm": 8.7,
+      "reference_source": "operator_annotation_cm",
+      "photo_reading_cm": 8.7,
+      "estimate_cm": 7.081279655122308,
+      "difference_cm": -1.6187203448776915,
+      "relative_difference_percent": -18.60598097560565,
+      "absolute_relative_difference_percent": 18.60598097560565,
+      "endpoint_disk_min_cm": 6.3305343600431305,
+      "endpoint_disk_max_cm": 7.608741679423971,
+      "status": "conditional_same_organ_chord_comparison",
+      "caveat": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional.",
+      "scope": "Lobed blade; basal lobe boundary and terminal lamina candidate; opposite lateral lobes.",
+      "source_frame": 824869,
+      "source_point_ids": [
+        5226412,
+        5386636
+      ],
+      "fused_point_indices": [
+        1034031,
+        1092160
+      ],
+      "camera_ids": [
+        0,
+        0
+      ],
+      "endpoint_evidence": "P3.O04.width_candidate",
+      "projections": [
+        {
+          "frame": 824869,
+          "pixel_xy": [
+            [
+              492.86370804041576,
+              365.22330228630153
+            ],
+            [
+              562.9947947073734,
+              345.804352917985
+            ]
+          ]
+        },
+        {
+          "frame": 618150,
+          "pixel_xy": [
+            [
+              714.6280948595156,
+              360.5051775021667
+            ],
+            [
+              786.6508244694235,
+              341.1326086221044
+            ]
+          ]
+        },
+        {
+          "frame": 1055904,
+          "pixel_xy": [
+            [
+              247.7644072378564,
+              370.6439308918468
+            ],
+            [
+              314.1446337464689,
+              351.4414291048036
+            ]
+          ]
+        }
+      ],
+      "physical_accuracy_validated": false,
+      "fully_automatic": false,
+      "manual_used_to_fit_scale_or_geometry": false
+    },
+    {
+      "id": "P5.O01.length",
+      "specimen_id": "P5",
+      "trait": "length",
+      "reference_cm": 12.0,
+      "reference_source": "operator_annotation_cm",
+      "photo_reading_cm": null,
+      "estimate_cm": 11.679115200213703,
+      "difference_cm": -0.32088479978629714,
+      "relative_difference_percent": -2.674039998219143,
+      "absolute_relative_difference_percent": 2.674039998219143,
+      "endpoint_disk_min_cm": 11.399234926474783,
+      "endpoint_disk_max_cm": 11.764271861386101,
+      "status": "conditional_same_organ_chord_comparison",
+      "caveat": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional.",
+      "scope": "Green damaged lobed blade; lowest basal-lamina lobe extent to terminal margin; widest opposing basal lobes.",
+      "source_frame": 1445026,
+      "source_point_ids": [
+        6987732,
+        4093658
+      ],
+      "fused_point_indices": [
+        1584692,
+        771882
+      ],
+      "camera_ids": [
+        0,
+        0
+      ],
+      "endpoint_evidence": "P5.O01.length_candidate",
+      "projections": [
+        {
+          "frame": 1445026,
+          "pixel_xy": [
+            [
+              524.9188288013175,
+              332.82872350463447
+            ],
+            [
+              547.7662583111191,
+              203.28337067854
+            ]
+          ]
+        },
+        {
+          "frame": 1030829,
+          "pixel_xy": [
+            [
+              1009.9105573457384,
+              322.3419360538772
+            ],
+            [
+              1080.3686357690206,
+              193.252082752202
+            ]
+          ]
+        },
+        {
+          "frame": 1639585,
+          "pixel_xy": [
+            [
+              297.9424932983752,
+              338.73681709569126
+            ],
+            [
+              297.7731844677609,
+              210.73815815001305
+            ]
+          ]
+        }
+      ],
+      "physical_accuracy_validated": false,
+      "fully_automatic": false,
+      "manual_used_to_fit_scale_or_geometry": false
+    },
+    {
+      "id": "P5.O01.width",
+      "specimen_id": "P5",
+      "trait": "width",
+      "reference_cm": 9.9,
+      "reference_source": "operator_annotation_cm",
+      "photo_reading_cm": 9.8,
+      "estimate_cm": 9.758400367366564,
+      "difference_cm": -0.14159963263343656,
+      "relative_difference_percent": -1.430299319529662,
+      "absolute_relative_difference_percent": 1.430299319529662,
+      "endpoint_disk_min_cm": 9.003869057133485,
+      "endpoint_disk_max_cm": 11.10645941168916,
+      "status": "conditional_same_organ_chord_comparison",
+      "caveat": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional.",
+      "scope": "Green damaged lobed blade; lowest basal-lamina lobe extent to terminal margin; widest opposing basal lobes.",
+      "source_frame": 1445026,
+      "source_point_ids": [
+        3128493,
+        7176814
+      ],
+      "fused_point_indices": [
+        591837,
+        1648528
+      ],
+      "camera_ids": [
+        0,
+        0
+      ],
+      "endpoint_evidence": "P5.O01.width_candidate",
+      "projections": [
+        {
+          "frame": 1445026,
+          "pixel_xy": [
+            [
+              473.28530754792814,
+              290.46633036273147
+            ],
+            [
+              574.6710988107411,
+              303.8467983612274
+            ]
+          ]
+        },
+        {
+          "frame": 1030829,
+          "pixel_xy": [
+            [
+              968.211769386694,
+              279.9036372775291
+            ],
+            [
+              1099.2568591455174,
+              293.1195689733854
+            ]
+          ]
+        },
+        {
+          "frame": 1639585,
+          "pixel_xy": [
+            [
+              243.0708945173193,
+              296.89739560381145
+            ],
+            [
+              327.51869497638955,
+              310.4086920878645
+            ]
+          ]
+        }
+      ],
+      "physical_accuracy_validated": false,
+      "fully_automatic": false,
+      "manual_used_to_fit_scale_or_geometry": false
+    },
+    {
+      "id": "P5.O02.length",
+      "specimen_id": "P5",
+      "trait": "length",
+      "reference_cm": 8.0,
+      "reference_source": "operator_annotation_cm",
+      "photo_reading_cm": null,
+      "estimate_cm": 6.4682762513886995,
+      "difference_cm": -1.5317237486113005,
+      "relative_difference_percent": -19.146546857641255,
+      "absolute_relative_difference_percent": 19.146546857641255,
+      "endpoint_disk_min_cm": 5.546943010983704,
+      "endpoint_disk_max_cm": 7.310616188273479,
+      "status": "conditional_same_organ_chord_comparison",
+      "caveat": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional. Axis corrected after venation review; previous mislabeled transverse attempt retained as rejected history.",
+      "scope": "Three-view venation review showed the first batch axes were reversed; this is basal lamina to true terminal margin.",
+      "source_frame": 1445026,
+      "source_point_ids": [
+        7195261,
+        7123641
+      ],
+      "fused_point_indices": [
+        1649599,
+        1631429
+      ],
+      "camera_ids": [
+        0,
+        0
+      ],
+      "endpoint_evidence": "P5.O02.length_revision",
+      "projections": [
+        {
+          "frame": 1445026,
+          "pixel_xy": [
+            [
+              532.7883394019,
+              403.56583696710567
+            ],
+            [
+              588.6949912595132,
+              412.91862053240465
+            ]
+          ]
+        },
+        {
+          "frame": 1030829,
+          "pixel_xy": [
+            [
+              981.572004062003,
+              393.1172191313374
+            ],
+            [
+              1061.522505858639,
+              401.7449136625879
+            ]
+          ]
+        },
+        {
+          "frame": 1639585,
+          "pixel_xy": [
+            [
+              322.55489640839846,
+              408.49124266327715
+            ],
+            [
+              365.41380883844704,
+              418.0745073639608
+            ]
+          ]
+        }
+      ],
+      "physical_accuracy_validated": false,
+      "fully_automatic": false,
+      "manual_used_to_fit_scale_or_geometry": false
+    },
+    {
+      "id": "P5.O03.length",
+      "specimen_id": "P5",
+      "trait": "length",
+      "reference_cm": 11.9,
+      "reference_source": "operator_annotation_cm",
+      "photo_reading_cm": null,
+      "estimate_cm": 9.797323277103388,
+      "difference_cm": -2.1026767228966126,
+      "relative_difference_percent": -17.669552293248845,
+      "absolute_relative_difference_percent": 17.669552293248845,
+      "endpoint_disk_min_cm": 8.780198474804921,
+      "endpoint_disk_max_cm": 10.46117890389455,
+      "status": "conditional_same_organ_chord_comparison",
+      "caveat": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional. Distinctive damaged curled leaf; flattening especially affects length.",
+      "scope": "Rust-brown damaged blade; lamina base to distal curled terminal margin; side lobes. Curl differs from held ruler pose.",
+      "source_frame": 1445026,
+      "source_point_ids": [
+        7127164,
+        7353727
+      ],
+      "fused_point_indices": [
+        1633411,
+        1692937
+      ],
+      "camera_ids": [
+        0,
+        0
+      ],
+      "endpoint_evidence": "P5.O03.length_candidate",
+      "projections": [
+        {
+          "frame": 1445026,
+          "pixel_xy": [
+            [
+              602.9123675154285,
+              420.1680782595114
+            ],
+            [
+              707.7807457015924,
+              432.5429068463945
+            ]
+          ]
+        },
+        {
+          "frame": 1030829,
+          "pixel_xy": [
+            [
+              1069.6716705822023,
+              409.00577681910534
+            ],
+            [
+              1203.395413514785,
+              420.6565132493114
+            ]
+          ]
+        },
+        {
+          "frame": 1639585,
+          "pixel_xy": [
+            [
+              382.0732408390048,
+              425.24528785860207
+            ],
+            [
+              471.0607882481331,
+              438.1346761750158
+            ]
+          ]
+        }
+      ],
+      "physical_accuracy_validated": false,
+      "fully_automatic": false,
+      "manual_used_to_fit_scale_or_geometry": false
+    },
+    {
+      "id": "P5.O03.width",
+      "specimen_id": "P5",
+      "trait": "width",
+      "reference_cm": 11.7,
+      "reference_source": "operator_annotation_cm",
+      "photo_reading_cm": 11.7,
+      "estimate_cm": 11.571735824370721,
+      "difference_cm": -0.12826417562927794,
+      "relative_difference_percent": -1.096275005378444,
+      "absolute_relative_difference_percent": 1.096275005378444,
+      "endpoint_disk_min_cm": 11.02187252611406,
+      "endpoint_disk_max_cm": 11.729386192543291,
+      "status": "conditional_same_organ_chord_comparison",
+      "caveat": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional. Distinctive damaged curled leaf; flattening especially affects length.",
+      "scope": "Rust-brown damaged blade; lamina base to distal curled terminal margin; side lobes. Curl differs from held ruler pose.",
+      "source_frame": 1445026,
+      "source_point_ids": [
+        3987177,
+        7326351
+      ],
+      "fused_point_indices": [
+        751635,
+        1686591
+      ],
+      "camera_ids": [
+        0,
+        0
+      ],
+      "endpoint_evidence": "P5.O03.width_candidate",
+      "projections": [
+        {
+          "frame": 1445026,
+          "pixel_xy": [
+            [
+              658.8623225043392,
+              364.67596235251864
+            ],
+            [
+              639.4473204635825,
+              496.1492016884366
+            ]
+          ]
+        },
+        {
+          "frame": 1030829,
+          "pixel_xy": [
+            [
+              1152.0575037872686,
+              353.7760585850622
+            ],
+            [
+              1125.6348986788612,
+              483.62918062627784
+            ]
+          ]
+        },
+        {
+          "frame": 1639585,
+          "pixel_xy": [
+            [
+              424.0033090533797,
+              370.38805416780474
+            ],
+            [
+              408.68625668964285,
+              501.1492705266258
+            ]
+          ]
+        }
+      ],
+      "physical_accuracy_validated": false,
+      "fully_automatic": false,
+      "manual_used_to_fit_scale_or_geometry": false
+    },
+    {
+      "id": "P5.O05.length",
+      "specimen_id": "P5",
+      "trait": "length",
+      "reference_cm": 13.2,
+      "reference_source": "operator_annotation_cm",
+      "photo_reading_cm": null,
+      "estimate_cm": 11.97660275005639,
+      "difference_cm": -1.2233972499436092,
+      "relative_difference_percent": -9.268160984421282,
+      "absolute_relative_difference_percent": 9.268160984421282,
+      "endpoint_disk_min_cm": 11.176026550935477,
+      "endpoint_disk_max_cm": 11.977380288682319,
+      "status": "conditional_same_organ_chord_comparison",
+      "caveat": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional.",
+      "scope": "Left-facing green lobed blade; basal lamina to distal tip; opposite side lobes.",
+      "source_frame": 1445026,
+      "source_point_ids": [
+        7799774,
+        6955016
+      ],
+      "fused_point_indices": [
+        1711285,
+        1566755
+      ],
+      "camera_ids": [
+        0,
+        0
+      ],
+      "endpoint_evidence": "P5.O05.length_candidate",
+      "projections": [
+        {
+          "frame": 1445026,
+          "pixel_xy": [
+            [
+              473.7807638397876,
+              406.6700473523282
+            ],
+            [
+              342.4027578729099,
+              436.4966562573849
+            ]
+          ]
+        },
+        {
+          "frame": 1030829,
+          "pixel_xy": [
+            [
+              974.2182964709738,
+              395.23646020580395
+            ],
+            [
+              949.4819938973844,
+              423.14873798819906
+            ]
+          ]
+        },
+        {
+          "frame": 1639585,
+          "pixel_xy": [
+            [
+              241.00448048168215,
+              412.07210450241274
+            ],
+            [
+              60.49202698140027,
+              443.13346008186346
+            ]
+          ]
+        }
+      ],
+      "physical_accuracy_validated": false,
+      "fully_automatic": false,
+      "manual_used_to_fit_scale_or_geometry": false
+    }
+  ],
+  "height_diagnostics": [
+    {
+      "id": "P1.H01.height",
+      "specimen_id": "P1",
+      "manual_stem_base_to_tip_height_cm": 53.5,
+      "observed_retained_vertical_span_cm": 48.156094823814705,
+      "span_minus_manual_cm": -5.343905176185295,
+      "span_to_manual_percent": 90.01139219404617,
+      "status": "extent_completeness_diagnostic_not_height_accuracy",
+      "reason": "Dry blades overlap narrow stems at the soil junction; the measured stem origin cannot be isolated. Highest retained surface projects to the upper green blade tip. Cereal ear awns extend beyond the dense ear body and are incompletely reconstructed; the very highest biological tip is not certified.",
+      "axis_definition": "X follows gantry row; Y perpendicular in display plane; Z fitted-board display normal, not independently verified gravity.",
+      "caveat": "Span endpoints are retained geometry extrema, not identified biological stem base and tip; this is not a height estimate, error score or certified completeness percentage."
+    },
+    {
+      "id": "P2.H01.height",
+      "specimen_id": "P2",
+      "manual_stem_base_to_tip_height_cm": 51.7,
+      "observed_retained_vertical_span_cm": 51.32792412716801,
+      "span_minus_manual_cm": -0.37207587283199217,
+      "span_to_manual_percent": 99.28031746067312,
+      "status": "extent_completeness_diagnostic_not_height_accuracy",
+      "reason": "Exposed curved green basal stem is visible against soil, but its precise emergence and measurement zero are unresolved. Highest retained points project to a curled yellowing edge and nearby overlapping tissue. Small terminal buds and curled margins are not a unique certified top endpoint.",
+      "axis_definition": "X follows gantry row; Y perpendicular in display plane; Z fitted-board display normal, not independently verified gravity.",
+      "caveat": "Span endpoints are retained geometry extrema, not identified biological stem base and tip; this is not a height estimate, error score or certified completeness percentage."
+    },
+    {
+      "id": "P3.H01.height",
+      "specimen_id": "P3",
+      "manual_stem_base_to_tip_height_cm": 52.8,
+      "observed_retained_vertical_span_cm": 50.49421445257626,
+      "span_minus_manual_cm": -2.3057855474237385,
+      "span_to_manual_percent": 95.63298191775807,
+      "status": "extent_completeness_diagnostic_not_height_accuracy",
+      "reason": "Purple/green petiole junction is visible, but the soil-level stem origin is beneath overlapping tissue. Branch-junction region only. Highest retained points lie in overlapping distal stalk/leaf tissue near the lower image edge. Long flowering-stem extremities and true terminal point are not fully resolved.",
+      "axis_definition": "X follows gantry row; Y perpendicular in display plane; Z fitted-board display normal, not independently verified gravity.",
+      "caveat": "Span endpoints are retained geometry extrema, not identified biological stem base and tip; this is not a height estimate, error score or certified completeness percentage."
+    },
+    {
+      "id": "P4.H01.height",
+      "specimen_id": "P4",
+      "manual_stem_base_to_tip_height_cm": 52.3,
+      "observed_retained_vertical_span_cm": 44.81058269684123,
+      "span_minus_manual_cm": -7.489417303158767,
+      "span_to_manual_percent": 85.67989043373085,
+      "status": "extent_completeness_diagnostic_not_height_accuracy",
+      "reason": "Pot-centre origin is obscured by leaves and crossing flowering stems. Region candidate only; no visible stem-base endpoint. Highest retained surface projects to a terminal pale bud/flower cluster, but its exact outermost endpoint and complete depth support remain uncertain.",
+      "axis_definition": "X follows gantry row; Y perpendicular in display plane; Z fitted-board display normal, not independently verified gravity.",
+      "caveat": "Span endpoints are retained geometry extrema, not identified biological stem base and tip; this is not a height estimate, error score or certified completeness percentage."
+    },
+    {
+      "id": "P5.H01.height",
+      "specimen_id": "P5",
+      "manual_stem_base_to_tip_height_cm": 31.8,
+      "observed_retained_vertical_span_cm": 24.988223710532992,
+      "span_minus_manual_cm": -6.811776289467009,
+      "span_to_manual_percent": 78.57931984444338,
+      "status": "extent_completeness_diagnostic_not_height_accuracy",
+      "reason": "Radial petiole junction and lower curved stem are visible; actual soil-emergence point is hidden by the stem/leaf cluster. Highest retained points project to the terminal margin of the left-facing lobed green O05 leaf candidate, a plausible top surface. This does not establish all-terminal completeness or the stem origin.",
+      "axis_definition": "X follows gantry row; Y perpendicular in display plane; Z fitted-board display normal, not independently verified gravity.",
+      "caveat": "Span endpoints are retained geometry extrema, not identified biological stem base and tip; this is not a height estimate, error score or certified completeness percentage."
+    }
+  ],
+  "dimension_ledger": [
+    {
+      "measurement_id": "P1.H01.height",
+      "annotation_id": "P1.H01",
+      "specimen_id": "P1",
+      "dimension": "height",
+      "source_annotation_cm": 53.5,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "whole_plant",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "specimen_identity_supported_endpoint_pair_unresolved",
+      "exclusion_reason": "Dry blades overlap narrow stems at the soil junction; the measured stem origin cannot be isolated. Highest retained surface projects to the upper green blade tip. Cereal ear awns extend beyond the dense ear body and are incompletely reconstructed; the very highest biological tip is not certified.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "extent_completeness_diagnostic_not_height_accuracy",
+      "observed_vertical_span_cm": 48.156094823814705,
+      "current_reason": "Dry blades overlap narrow stems at the soil junction; the measured stem origin cannot be isolated. Highest retained surface projects to the upper green blade tip. Cereal ear awns extend beyond the dense ear body and are incompletely reconstructed; the very highest biological tip is not certified.",
+      "next_step": "Mark actual stem emergence and highest living/flower tip in retained source geometry; inspect missing fine tips and verify vertical reference."
+    },
+    {
+      "measurement_id": "P1.O01.length",
+      "annotation_id": "P1.O01",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "source_annotation_cm": 12.5,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (3).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_unresolved",
+      "current_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment.",
+      "next_step": "Resolve specific ruler-photo-to-scan organ association before calculating a size residual."
+    },
+    {
+      "measurement_id": "P1.O01.width",
+      "annotation_id": "P1.O01",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "source_annotation_cm": 1,
+      "direct_ruler_reading_cm": 1.1,
+      "approximate_reading_interval_cm": [
+        0.9,
+        1.3
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (4).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_unresolved",
+      "current_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width.",
+      "next_step": "Resolve specific ruler-photo-to-scan organ association before calculating a size residual."
+    },
+    {
+      "measurement_id": "P1.O02.length",
+      "annotation_id": "P1.O02",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "source_annotation_cm": 10.9,
+      "direct_ruler_reading_cm": 10.9,
+      "approximate_reading_interval_cm": [
+        10.6,
+        11.2
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "candidate_medium",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_unresolved",
+      "current_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment.",
+      "next_step": "Resolve specific ruler-photo-to-scan organ association before calculating a size residual."
+    },
+    {
+      "measurement_id": "P1.O02.width",
+      "annotation_id": "P1.O02",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "source_annotation_cm": 1,
+      "direct_ruler_reading_cm": 1.0,
+      "approximate_reading_interval_cm": [
+        0.8,
+        1.2
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (2).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "candidate_medium",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_unresolved",
+      "current_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width.",
+      "next_step": "Resolve specific ruler-photo-to-scan organ association before calculating a size residual."
+    },
+    {
+      "measurement_id": "P1.O03.length",
+      "annotation_id": "P1.O03",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "source_annotation_cm": 7.3,
+      "direct_ruler_reading_cm": 7.3,
+      "approximate_reading_interval_cm": [
+        7.0,
+        7.6
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (5).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "partial_observed_length_definition_mismatch",
+      "observed_partial_chord_cm": 5.805813558060206,
+      "current_reason": "Magnified source review shows the thin dry terminal tip extends beyond this reconstructed endpoint. This is partial observed extent, not whole-leaf length, so no reference residual is computed.",
+      "next_step": "Recover true terminal/base points without substituting farther nearest points."
+    },
+    {
+      "measurement_id": "P1.O03.width",
+      "annotation_id": "P1.O03",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "source_annotation_cm": 9,
+      "direct_ruler_reading_cm": 0.8,
+      "approximate_reading_interval_cm": [
+        0.6,
+        1.0
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (6).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "reference_discrepancy_and_partial_width",
+      "observed_section_chord_cm": 0.34477037243138364,
+      "current_reason": "Operator annotation is 9 cm but previous ruler-photo review estimates 0.8 cm (0.6-1.0); new retained-edge chord is only a local narrow section, not the photographed section. Do not silently change 9 cm to 9 mm.",
+      "next_step": "Review ruler source and confirm decimal/unit; choose the same physical blade section."
+    },
+    {
+      "measurement_id": "P1.O04.length",
+      "annotation_id": "P1.O04",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "source_annotation_cm": 6.5,
+      "direct_ruler_reading_cm": 6.4,
+      "approximate_reading_interval_cm": [
+        6.1,
+        6.7
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "ear",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (7).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Ear excluded from leaf statistics.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "attempted_missing_supported_endpoint",
+      "current_reason": "Frozen source margin lacked a retained same-plant point within 4 px with two-view stereo-depth support; no farther point substituted.",
+      "next_step": "Inspect alternative source views for the same margin; rerun local stereo recovery if supported, otherwise mark missing."
+    },
+    {
+      "measurement_id": "P1.O04.width",
+      "annotation_id": "P1.O04",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "source_annotation_cm": 1.6,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "ear",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (8).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Ear excluded from leaf statistics. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "attempted_missing_supported_endpoint",
+      "current_reason": "Frozen source margin lacked a retained same-plant point within 4 px with two-view stereo-depth support; no farther point substituted.",
+      "next_step": "Inspect alternative source views for the same margin; rerun local stereo recovery if supported, otherwise mark missing."
+    },
+    {
+      "measurement_id": "P2.H01.height",
+      "annotation_id": "P2.H01",
+      "specimen_id": "P2",
+      "dimension": "height",
+      "source_annotation_cm": 51.7,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "whole_plant",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-2_measurements_02.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-2/Media (1).jpeg",
+        "manual_validation_5-plants_28-09/plant-2/Media (2).jpeg",
+        "manual_validation_5-plants_28-09/plant-2/Media (3).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "specimen_identity_supported_endpoint_pair_unresolved",
+      "exclusion_reason": "Exposed curved green basal stem is visible against soil, but its precise emergence and measurement zero are unresolved. Highest retained points project to a curled yellowing edge and nearby overlapping tissue. Small terminal buds and curled margins are not a unique certified top endpoint.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "extent_completeness_diagnostic_not_height_accuracy",
+      "observed_vertical_span_cm": 51.32792412716801,
+      "current_reason": "Exposed curved green basal stem is visible against soil, but its precise emergence and measurement zero are unresolved. Highest retained points project to a curled yellowing edge and nearby overlapping tissue. Small terminal buds and curled margins are not a unique certified top endpoint.",
+      "next_step": "Mark actual stem emergence and highest living/flower tip in retained source geometry; inspect missing fine tips and verify vertical reference."
+    },
+    {
+      "measurement_id": "P2.O01.length",
+      "annotation_id": "P2.O01",
+      "specimen_id": "P2",
+      "dimension": "length",
+      "source_annotation_cm": 5,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-1/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "candidate_medium",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_unresolved",
+      "current_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment.",
+      "next_step": "Resolve specific ruler-photo-to-scan organ association before calculating a size residual."
+    },
+    {
+      "measurement_id": "P2.O01.width",
+      "annotation_id": "P2.O01",
+      "specimen_id": "P2",
+      "dimension": "width",
+      "source_annotation_cm": 2.7,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-1/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "candidate_medium",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_unresolved",
+      "current_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width.",
+      "next_step": "Resolve specific ruler-photo-to-scan organ association before calculating a size residual."
+    },
+    {
+      "measurement_id": "P2.O02.length",
+      "annotation_id": "P2.O02",
+      "specimen_id": "P2",
+      "dimension": "length",
+      "source_annotation_cm": 3.9,
+      "direct_ruler_reading_cm": 3.9,
+      "approximate_reading_interval_cm": [
+        3.6,
+        4.2
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-2/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_unresolved",
+      "current_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment.",
+      "next_step": "Resolve specific ruler-photo-to-scan organ association before calculating a size residual."
+    },
+    {
+      "measurement_id": "P2.O02.width",
+      "annotation_id": "P2.O02",
+      "specimen_id": "P2",
+      "dimension": "width",
+      "source_annotation_cm": 3.4,
+      "direct_ruler_reading_cm": 3.5,
+      "approximate_reading_interval_cm": [
+        3.2,
+        3.8
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-2/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_unresolved",
+      "current_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width.",
+      "next_step": "Resolve specific ruler-photo-to-scan organ association before calculating a size residual."
+    },
+    {
+      "measurement_id": "P3.H01.height",
+      "annotation_id": "P3.H01",
+      "specimen_id": "P3",
+      "dimension": "height",
+      "source_annotation_cm": 52.8,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "whole_plant",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_02.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Media (1).jpeg",
+        "manual_validation_5-plants_28-09/plant-3/Media (2).jpeg",
+        "manual_validation_5-plants_28-09/plant-3/Media (3).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "specimen_identity_supported_endpoint_pair_unresolved",
+      "exclusion_reason": "Purple/green petiole junction is visible, but the soil-level stem origin is beneath overlapping tissue. Branch-junction region only. Highest retained points lie in overlapping distal stalk/leaf tissue near the lower image edge. Long flowering-stem extremities and true terminal point are not fully resolved.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "extent_completeness_diagnostic_not_height_accuracy",
+      "observed_vertical_span_cm": 50.49421445257626,
+      "current_reason": "Purple/green petiole junction is visible, but the soil-level stem origin is beneath overlapping tissue. Branch-junction region only. Highest retained points lie in overlapping distal stalk/leaf tissue near the lower image edge. Long flowering-stem extremities and true terminal point are not fully resolved.",
+      "next_step": "Mark actual stem emergence and highest living/flower tip in retained source geometry; inspect missing fine tips and verify vertical reference."
+    },
+    {
+      "measurement_id": "P3.O01.length",
+      "annotation_id": "P3.O01",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 7.4,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-5/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "source_point_anatomy_failed_multiview_check",
+      "current_reason": "Closest projected basal point lay on a crossing stem in secondary views. A pixel match and depth support alone did not certify the correct anatomical endpoint; rejected before comparison.",
+      "next_step": "Pick the basal junction in another unoccluded frame with cross-view anatomical agreement."
+    },
+    {
+      "measurement_id": "P3.O01.width",
+      "annotation_id": "P3.O01",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 5.5,
+      "direct_ruler_reading_cm": 5.4,
+      "approximate_reading_interval_cm": [
+        5.1,
+        5.7
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-5/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": 3.9358752315052756,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "conditional_same_organ_chord_comparison",
+      "conditional_difference_cm": -1.5641247684947244,
+      "conditional_relative_difference_percent": -28.438632154449532,
+      "current_reason": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional.",
+      "endpoint_evidence": "P3.O01.width_candidate",
+      "next_step": "Operator review of displayed anatomical endpoints and ruler section; repeat uncertainty/pose characterization before publication as accuracy."
+    },
+    {
+      "measurement_id": "P3.O02.length",
+      "annotation_id": "P3.O02",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 9.8,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-4/Media.jpeg"
+      ],
+      "reconstructed_value_cm": 9.12092539833513,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "conditional_same_organ_chord_comparison",
+      "conditional_difference_cm": -0.6790746016648708,
+      "conditional_relative_difference_percent": -6.9293326700497015,
+      "current_reason": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional.",
+      "endpoint_evidence": "P3.O02.length_candidate",
+      "next_step": "Operator review of displayed anatomical endpoints and ruler section; repeat uncertainty/pose characterization before publication as accuracy."
+    },
+    {
+      "measurement_id": "P3.O02.width",
+      "annotation_id": "P3.O02",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 7.6,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-4/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": 9.265520307458768,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "conditional_same_organ_chord_comparison",
+      "conditional_difference_cm": 1.6655203074587686,
+      "conditional_relative_difference_percent": 21.914740887615377,
+      "current_reason": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional.",
+      "endpoint_evidence": "P3.O02.width_candidate",
+      "next_step": "Operator review of displayed anatomical endpoints and ruler section; repeat uncertainty/pose characterization before publication as accuracy."
+    },
+    {
+      "measurement_id": "P3.O03.length",
+      "annotation_id": "P3.O03",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 7.5,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-3/Media.jpeg"
+      ],
+      "reconstructed_value_cm": 7.691100957059331,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "conditional_same_organ_chord_comparison",
+      "conditional_difference_cm": 0.19110095705933094,
+      "conditional_relative_difference_percent": 2.5480127607910794,
+      "current_reason": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional.",
+      "endpoint_evidence": "P3.O03.length_candidate",
+      "next_step": "Operator review of displayed anatomical endpoints and ruler section; repeat uncertainty/pose characterization before publication as accuracy."
+    },
+    {
+      "measurement_id": "P3.O03.width",
+      "annotation_id": "P3.O03",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 5.7,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-3/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": 5.036529578582992,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "conditional_same_organ_chord_comparison",
+      "conditional_difference_cm": -0.6634704214170082,
+      "conditional_relative_difference_percent": -11.639831954684356,
+      "current_reason": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional.",
+      "endpoint_evidence": "P3.O03.width_candidate",
+      "next_step": "Operator review of displayed anatomical endpoints and ruler section; repeat uncertainty/pose characterization before publication as accuracy."
+    },
+    {
+      "measurement_id": "P3.O04.length",
+      "annotation_id": "P3.O04",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 11,
+      "direct_ruler_reading_cm": 11.0,
+      "approximate_reading_interval_cm": [
+        10.7,
+        11.3
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-2/Media.jpeg"
+      ],
+      "reconstructed_value_cm": 11.500610903923318,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "conditional_same_organ_chord_comparison",
+      "conditional_difference_cm": 0.5006109039233184,
+      "conditional_relative_difference_percent": 4.551008217484713,
+      "current_reason": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional.",
+      "endpoint_evidence": "P3.O04.length_candidate",
+      "next_step": "Operator review of displayed anatomical endpoints and ruler section; repeat uncertainty/pose characterization before publication as accuracy."
+    },
+    {
+      "measurement_id": "P3.O04.width",
+      "annotation_id": "P3.O04",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 8.7,
+      "direct_ruler_reading_cm": 8.7,
+      "approximate_reading_interval_cm": [
+        8.4,
+        9.0
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-2/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": 7.081279655122308,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "conditional_same_organ_chord_comparison",
+      "conditional_difference_cm": -1.6187203448776915,
+      "conditional_relative_difference_percent": -18.60598097560565,
+      "current_reason": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional.",
+      "endpoint_evidence": "P3.O04.width_candidate",
+      "next_step": "Operator review of displayed anatomical endpoints and ruler section; repeat uncertainty/pose characterization before publication as accuracy."
+    },
+    {
+      "measurement_id": "P3.O05.length",
+      "annotation_id": "P3.O05",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 9.2,
+      "direct_ruler_reading_cm": 9.2,
+      "approximate_reading_interval_cm": [
+        8.9,
+        9.5
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-1/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "source_point_anatomy_failed_multiview_check",
+      "current_reason": "Closest projected basal point lay on a crossing stem in secondary views. A pixel match and depth support alone did not certify the correct anatomical endpoint; rejected before comparison.",
+      "next_step": "Pick the basal junction in another unoccluded frame with cross-view anatomical agreement."
+    },
+    {
+      "measurement_id": "P3.O05.width",
+      "annotation_id": "P3.O05",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 7.7,
+      "direct_ruler_reading_cm": 7.7,
+      "approximate_reading_interval_cm": [
+        7.4,
+        8.0
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-1/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "attempted_missing_supported_endpoint",
+      "current_reason": "Frozen source margin lacked a retained same-plant point within 4 px with two-view stereo-depth support; no farther point substituted.",
+      "next_step": "Inspect alternative source views for the same margin; rerun local stereo recovery if supported, otherwise mark missing."
+    },
+    {
+      "measurement_id": "P3.O06.length",
+      "annotation_id": "P3.O06",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 7.5,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-6/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "candidate_medium",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_unresolved",
+      "current_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment.",
+      "next_step": "Resolve specific ruler-photo-to-scan organ association before calculating a size residual."
+    },
+    {
+      "measurement_id": "P3.O06.width",
+      "annotation_id": "P3.O06",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 6.3,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-6/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "candidate_medium",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_unresolved",
+      "current_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width.",
+      "next_step": "Resolve specific ruler-photo-to-scan organ association before calculating a size residual."
+    },
+    {
+      "measurement_id": "P4.H01.height",
+      "annotation_id": "P4.H01",
+      "specimen_id": "P4",
+      "dimension": "height",
+      "source_annotation_cm": 52.3,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "whole_plant",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_02.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Media (1).jpeg",
+        "manual_validation_5-plants_28-09/plant-4/Media (2).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "specimen_identity_supported_endpoint_pair_unresolved",
+      "exclusion_reason": "Pot-centre origin is obscured by leaves and crossing flowering stems. Region candidate only; no visible stem-base endpoint. Highest retained surface projects to a terminal pale bud/flower cluster, but its exact outermost endpoint and complete depth support remain uncertain.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "extent_completeness_diagnostic_not_height_accuracy",
+      "observed_vertical_span_cm": 44.81058269684123,
+      "current_reason": "Pot-centre origin is obscured by leaves and crossing flowering stems. Region candidate only; no visible stem-base endpoint. Highest retained surface projects to a terminal pale bud/flower cluster, but its exact outermost endpoint and complete depth support remain uncertain.",
+      "next_step": "Mark actual stem emergence and highest living/flower tip in retained source geometry; inspect missing fine tips and verify vertical reference."
+    },
+    {
+      "measurement_id": "P4.O01.length",
+      "annotation_id": "P4.O01",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "source_annotation_cm": 3,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-1/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_and_type_unresolved",
+      "current_reason": "Repeated similar narrow organs cannot be matched uniquely from ruler to scan; leaf versus pod identity unresolved.",
+      "next_step": "Confirm organ kind and annotated individual branch/object with operator."
+    },
+    {
+      "measurement_id": "P4.O01.width",
+      "annotation_id": "P4.O01",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "source_annotation_cm": 0.2,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-1/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_and_type_unresolved",
+      "current_reason": "Repeated similar narrow organs cannot be matched uniquely from ruler to scan; leaf versus pod identity unresolved.",
+      "next_step": "Confirm organ kind and annotated individual branch/object with operator."
+    },
+    {
+      "measurement_id": "P4.O02.length",
+      "annotation_id": "P4.O02",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "source_annotation_cm": 2.8,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-2/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_and_type_unresolved",
+      "current_reason": "Repeated similar narrow organs cannot be matched uniquely from ruler to scan; leaf versus pod identity unresolved.",
+      "next_step": "Confirm organ kind and annotated individual branch/object with operator."
+    },
+    {
+      "measurement_id": "P4.O02.width",
+      "annotation_id": "P4.O02",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "source_annotation_cm": 0.5,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-2/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_and_type_unresolved",
+      "current_reason": "Repeated similar narrow organs cannot be matched uniquely from ruler to scan; leaf versus pod identity unresolved.",
+      "next_step": "Confirm organ kind and annotated individual branch/object with operator."
+    },
+    {
+      "measurement_id": "P4.O03.length",
+      "annotation_id": "P4.O03",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "source_annotation_cm": 2.9,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-3/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_and_type_unresolved",
+      "current_reason": "Repeated similar narrow organs cannot be matched uniquely from ruler to scan; leaf versus pod identity unresolved.",
+      "next_step": "Confirm organ kind and annotated individual branch/object with operator."
+    },
+    {
+      "measurement_id": "P4.O03.width",
+      "annotation_id": "P4.O03",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "source_annotation_cm": 0.3,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-3/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_and_type_unresolved",
+      "current_reason": "Repeated similar narrow organs cannot be matched uniquely from ruler to scan; leaf versus pod identity unresolved.",
+      "next_step": "Confirm organ kind and annotated individual branch/object with operator."
+    },
+    {
+      "measurement_id": "P4.O04.length",
+      "annotation_id": "P4.O04",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "source_annotation_cm": 2.9,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-4/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_and_type_unresolved",
+      "current_reason": "Repeated similar narrow organs cannot be matched uniquely from ruler to scan; leaf versus pod identity unresolved.",
+      "next_step": "Confirm organ kind and annotated individual branch/object with operator."
+    },
+    {
+      "measurement_id": "P4.O04.width",
+      "annotation_id": "P4.O04",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "source_annotation_cm": 0.4,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-4/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "organ_identity_and_type_unresolved",
+      "current_reason": "Repeated similar narrow organs cannot be matched uniquely from ruler to scan; leaf versus pod identity unresolved.",
+      "next_step": "Confirm organ kind and annotated individual branch/object with operator."
+    },
+    {
+      "measurement_id": "P5.H01.height",
+      "annotation_id": "P5.H01",
+      "specimen_id": "P5",
+      "dimension": "height",
+      "source_annotation_cm": 31.8,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "whole_plant",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_02.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "specimen_identity_supported_endpoint_pair_unresolved",
+      "exclusion_reason": "Radial petiole junction and lower curved stem are visible; actual soil-emergence point is hidden by the stem/leaf cluster. Highest retained points project to the terminal margin of the left-facing lobed green O05 leaf candidate, a plausible top surface. This does not establish all-terminal completeness or the stem origin.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "extent_completeness_diagnostic_not_height_accuracy",
+      "observed_vertical_span_cm": 24.988223710532992,
+      "current_reason": "Radial petiole junction and lower curved stem are visible; actual soil-emergence point is hidden by the stem/leaf cluster. Highest retained points project to the terminal margin of the left-facing lobed green O05 leaf candidate, a plausible top surface. This does not establish all-terminal completeness or the stem origin.",
+      "next_step": "Mark actual stem emergence and highest living/flower tip in retained source geometry; inspect missing fine tips and verify vertical reference."
+    },
+    {
+      "measurement_id": "P5.O01.length",
+      "annotation_id": "P5.O01",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "source_annotation_cm": 12,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-4/Media.jpeg"
+      ],
+      "reconstructed_value_cm": 11.679115200213703,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "conditional_same_organ_chord_comparison",
+      "conditional_difference_cm": -0.32088479978629714,
+      "conditional_relative_difference_percent": -2.674039998219143,
+      "current_reason": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional.",
+      "endpoint_evidence": "P5.O01.length_candidate",
+      "next_step": "Operator review of displayed anatomical endpoints and ruler section; repeat uncertainty/pose characterization before publication as accuracy."
+    },
+    {
+      "measurement_id": "P5.O01.width",
+      "annotation_id": "P5.O01",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "source_annotation_cm": 9.9,
+      "direct_ruler_reading_cm": 9.8,
+      "approximate_reading_interval_cm": [
+        9.4,
+        10.2
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-4/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": 9.758400367366564,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "conditional_same_organ_chord_comparison",
+      "conditional_difference_cm": -0.14159963263343656,
+      "conditional_relative_difference_percent": -1.430299319529662,
+      "current_reason": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional.",
+      "endpoint_evidence": "P5.O01.width_candidate",
+      "next_step": "Operator review of displayed anatomical endpoints and ruler section; repeat uncertainty/pose characterization before publication as accuracy."
+    },
+    {
+      "measurement_id": "P5.O02.length",
+      "annotation_id": "P5.O02",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "source_annotation_cm": 8,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-3/Media.jpeg"
+      ],
+      "reconstructed_value_cm": 6.4682762513886995,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "conditional_same_organ_chord_comparison",
+      "conditional_difference_cm": -1.5317237486113005,
+      "conditional_relative_difference_percent": -19.146546857641255,
+      "current_reason": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional. Axis corrected after venation review; previous mislabeled transverse attempt retained as rejected history.",
+      "endpoint_evidence": "P5.O02.length_revision",
+      "next_step": "Operator review of displayed anatomical endpoints and ruler section; repeat uncertainty/pose characterization before publication as accuracy."
+    },
+    {
+      "measurement_id": "P5.O02.width",
+      "annotation_id": "P5.O02",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "source_annotation_cm": 4.8,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-3/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "attempted_missing_supported_endpoint",
+      "current_reason": "Frozen source margin lacked a retained same-plant point within 4 px with two-view stereo-depth support; no farther point substituted.",
+      "next_step": "Inspect alternative source views for the same margin; rerun local stereo recovery if supported, otherwise mark missing."
+    },
+    {
+      "measurement_id": "P5.O03.length",
+      "annotation_id": "P5.O03",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "source_annotation_cm": 11.9,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-2/Media.jpeg"
+      ],
+      "reconstructed_value_cm": 9.797323277103388,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "conditional_same_organ_chord_comparison",
+      "conditional_difference_cm": -2.1026767228966126,
+      "conditional_relative_difference_percent": -17.669552293248845,
+      "current_reason": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional. Distinctive damaged curled leaf; flattening especially affects length.",
+      "endpoint_evidence": "P5.O03.length_candidate",
+      "next_step": "Operator review of displayed anatomical endpoints and ruler section; repeat uncertainty/pose characterization before publication as accuracy."
+    },
+    {
+      "measurement_id": "P5.O03.width",
+      "annotation_id": "P5.O03",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "source_annotation_cm": 11.7,
+      "direct_ruler_reading_cm": 11.7,
+      "approximate_reading_interval_cm": [
+        11.2,
+        12.2
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-2/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": 11.571735824370721,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "conditional_same_organ_chord_comparison",
+      "conditional_difference_cm": -0.12826417562927794,
+      "conditional_relative_difference_percent": -1.096275005378444,
+      "current_reason": "Strong source-image organ identity; same-organ opposing margins reviewed in three views. Natural-pose straight chord compared with held-ruler annotation; exact ruler cross-section and maximum-width convention remain conditional. Distinctive damaged curled leaf; flattening especially affects length.",
+      "endpoint_evidence": "P5.O03.width_candidate",
+      "next_step": "Operator review of displayed anatomical endpoints and ruler section; repeat uncertainty/pose characterization before publication as accuracy."
+    },
+    {
+      "measurement_id": "P5.O04.length",
+      "annotation_id": "P5.O04",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "source_annotation_cm": 12.9,
+      "direct_ruler_reading_cm": 12.9,
+      "approximate_reading_interval_cm": [
+        12.6,
+        13.2
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-1/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "partial_observed_length_definition_mismatch",
+      "observed_partial_chord_cm": 12.499417168740054,
+      "current_reason": "Ruler image includes basal lobes down toward a small low lobe at its zero. This raw terminal-lamina origin cannot be substituted for that ruler origin; no residual is meaningful.",
+      "next_step": "Recover true terminal/base points without substituting farther nearest points."
+    },
+    {
+      "measurement_id": "P5.O04.width",
+      "annotation_id": "P5.O04",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "source_annotation_cm": 9,
+      "direct_ruler_reading_cm": 9.0,
+      "approximate_reading_interval_cm": [
+        8.7,
+        9.3
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-1/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "different_cross_section_descriptive_only",
+      "observed_section_chord_cm": 8.766063917654657,
+      "current_reason": "New terminal-lamina chord is supported in three views, but ruler spans basal lobes. Different anatomical width sections; no residual.",
+      "next_step": "Identify measured basal-lobe endpoints; use another view if occluded."
+    },
+    {
+      "measurement_id": "P5.O05.length",
+      "annotation_id": "P5.O05",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "source_annotation_cm": 13.2,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-5/Media.jpeg"
+      ],
+      "reconstructed_value_cm": 11.97660275005639,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "conditional_same_organ_chord_comparison",
+      "conditional_difference_cm": -1.2233972499436092,
+      "conditional_relative_difference_percent": -9.268160984421282,
+      "current_reason": "Strong source-image organ identity; basal/terminal candidates reviewed in three views. Natural-pose straight chord compared with operator held-ruler annotation; basal boundary, flattening and curve-length convention remain conditional.",
+      "endpoint_evidence": "P5.O05.length_candidate",
+      "next_step": "Operator review of displayed anatomical endpoints and ruler section; repeat uncertainty/pose characterization before publication as accuracy."
+    },
+    {
+      "measurement_id": "P5.O05.width",
+      "annotation_id": "P5.O05",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "source_annotation_cm": 7.8,
+      "direct_ruler_reading_cm": 7.6,
+      "approximate_reading_interval_cm": [
+        7.2,
+        8.0
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-5/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width.",
+      "operator_reference_available": true,
+      "manual_units_status": "Centimetres as reported by operators; no rescaling to force agreement",
+      "operator_annotation_independent_certification_required_for_conditional_comparison": false,
+      "comparison_status": "attempted_missing_supported_endpoint",
+      "current_reason": "Frozen source margin lacked a retained same-plant point within 4 px with two-view stereo-depth support; no farther point substituted.",
+      "next_step": "Inspect alternative source views for the same margin; rerun local stereo recovery if supported, otherwise mark missing."
+    }
+  ]
+}

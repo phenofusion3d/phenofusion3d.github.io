@@ -1,0 +1,14 @@
+{
+  "warning": "DISPLAY ONLY: percentile-stretched channels, not raw DN or reflectance",
+  "shape": [
+    2127,
+    640,
+    3
+  ],
+  "source": "inspect_regions.py",
+  "axes": [
+    "scan_line",
+    "detector_column",
+    "display_channel"
+  ]
+}

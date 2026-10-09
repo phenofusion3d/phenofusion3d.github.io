@@ -1,0 +1,22 @@
+{
+  "webgl_render_visually_inspected": true,
+  "all_six_selections_show_correct_count_label_and_download": true,
+  "front_and_back_buttons_operated": true,
+  "source_photo_dialog_opened_and_closed": true,
+  "default_and_final_selection": "Closer-view trial",
+  "browser_warning_or_error_logs": [],
+  "point_size": 2.0,
+  "brightness": 1.35,
+  "index_sha256": "876654c96e69e14d32f4ecbea1a0fa07e7a15a744ac4db192390e14b5c271947",
+  "packaging": "six local cloud script assets; no online dependencies",
+  "scope": "Operational browser checks, separate from scientific artifact verification.",
+  "report_http_status": 200,
+  "crop_download_http_status": {
+    "earlier.ply": 200,
+    "filter_fix.ply": 200,
+    "fine_fragments.ply": 200,
+    "reprocessed.ply": 200,
+    "combined.ply": 200,
+    "combined_fine.ply": 200
+  }
+}

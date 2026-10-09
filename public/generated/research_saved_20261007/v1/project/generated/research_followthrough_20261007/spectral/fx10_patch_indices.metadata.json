@@ -1,0 +1,262 @@
+{
+  "warning": "PROVISIONAL white-board-relative signal: panel spectral reflectance UNKNOWN; tail shutter UNCONFIRMED (assumed dark offset). NOT verified reflectance or plant health.",
+  "camera": "fx10",
+  "source_header": "data\\main\\test_plant_10-7\\20260928\\003-specim-fx10.hdr",
+  "header_sha256": "6aaf169bc24b22abfd7cf8aed1d22517f5a956a99cb58698ec50d258b2dd048a",
+  "source_bil_size": 975765504,
+  "raw_source_shape_line_band_column": [
+    2127,
+    224,
+    1024
+  ],
+  "coordinate_convention": "zero-based scan_line and detector_column; no 3D or cross-camera correspondence",
+  "axis_order": "sample,source_band",
+  "sampling": "even scan lines AND even columns inside assistant-reviewed visible-tissue polygons",
+  "region_identity": "R1-R5 are scan-order specimen-region candidates; not operator-verified P1-P5 or whole-plant segmentation",
+  "patch_method": "Selected from recorded three-band display before examining index values; tissue/organ and ownership remain review candidates",
+  "white_roi_y0_y1_x0_x1_exclusive": [
+    20,
+    140,
+    180,
+    850
+  ],
+  "assumed_dark_tail_roi": [
+    2080,
+    2127,
+    0,
+    1024
+  ],
+  "source_band_index_base": 0,
+  "band_flags": {
+    "outside_white_columns": 1,
+    "sample_suspected_clipping": 2,
+    "reference_suspected_clipping": 4,
+    "weak_white_minus_tail": 8,
+    "raw_zero": 16,
+    "low_signal_above_assumed_tail_advisory": 32
+  },
+  "normalization_invalid_bits": 31,
+  "low_signal_advisory_bit": 32,
+  "reference_formula": "Q=(DN-D_tail)/(W_board-D_tail)",
+  "zero_offset_formula": "Q0=DN/W_board",
+  "clipping_policy": "DN >= 65520 suspected clipping; never reconstructed",
+  "reference_extrapolation": false,
+  "cross_camera_concatenation": false,
+  "physical_3d_coordinates_produced": false,
+  "reference_hashes": [
+    {
+      "first_band": 0,
+      "stop_band": 16,
+      "white_selected_roi_sha256_float32": "849c75b122e89f16a0adb54c42d88525ef19b3bd9b5f945ee31435476111ae93",
+      "tail_selected_roi_sha256_float32": "145345d9b17ceea28cdb4843fbe3a856ad2bf8446d478f065cbe704d3119a369"
+    },
+    {
+      "first_band": 16,
+      "stop_band": 32,
+      "white_selected_roi_sha256_float32": "04e12294aa6bb7af8060bc78b1f344d8ef5fd0150d72a16830b8a49beb5759c7",
+      "tail_selected_roi_sha256_float32": "756bb63efc4025383c112b308bafef4a919ff6aae30247c4b7f230f8135bb860"
+    },
+    {
+      "first_band": 32,
+      "stop_band": 48,
+      "white_selected_roi_sha256_float32": "b428bdacc76484fcc2ea2620167021ba458545870c6fde6eeb015aea74d06a78",
+      "tail_selected_roi_sha256_float32": "128c766ebc11e89af4cda18c5be4824fbf52df46c8172946c1e4a442420965cd"
+    },
+    {
+      "first_band": 48,
+      "stop_band": 64,
+      "white_selected_roi_sha256_float32": "488307dbfe17f7e18916b7b384b43befe42280a0c1ca8e88e09046f0708b21e0",
+      "tail_selected_roi_sha256_float32": "7b14533dd7adbb30e660077e33799648647ad6f11614bdf5f6aa2ba8f4a1f855"
+    },
+    {
+      "first_band": 64,
+      "stop_band": 80,
+      "white_selected_roi_sha256_float32": "93ee5f65885a365f28245dbd31e4a897f08dc83db0ec2f3f92f8a484bbcf49da",
+      "tail_selected_roi_sha256_float32": "9e5b3f75ea4bd3ab9f9ac1737c9e9c1c5e3206e393a9a6c5e73b568431278795"
+    },
+    {
+      "first_band": 80,
+      "stop_band": 96,
+      "white_selected_roi_sha256_float32": "12463e423df30bd593c336b7f5cc1801d72db4ba1e054b1f965c1aacce0155a9",
+      "tail_selected_roi_sha256_float32": "0e3829c36fdd63e54e6d418ed6cae5cfc5dad71ae14bf08d49b0696db5c7ec28"
+    },
+    {
+      "first_band": 96,
+      "stop_band": 112,
+      "white_selected_roi_sha256_float32": "bcf241d1617569c76ec3311897a383e29b3285bba7b388b28b19d6220ec8711d",
+      "tail_selected_roi_sha256_float32": "228dd6d5c043c0c1baf6f162c782ef28c3a4d0783db6dd18c753a24936944649"
+    },
+    {
+      "first_band": 112,
+      "stop_band": 128,
+      "white_selected_roi_sha256_float32": "d6eb34cf6f97fbe619429f04544002dd2a2b1f10c1e69849c6adf07acc51cfbf",
+      "tail_selected_roi_sha256_float32": "7f490ab791c85c1c6700b289ca8d0faa09166b3ff6f915d4cef62e606cb7603b"
+    },
+    {
+      "first_band": 128,
+      "stop_band": 144,
+      "white_selected_roi_sha256_float32": "ea3f744246d5e5261b275abd6ce5de8ddc2f67b848a2e16b4bf3bdcfcd9c96c7",
+      "tail_selected_roi_sha256_float32": "02a0c279608c9919b0ef967ebe60ff68a3c8a6f30588e63b44dd2f3087f23efe"
+    },
+    {
+      "first_band": 144,
+      "stop_band": 160,
+      "white_selected_roi_sha256_float32": "24b035f1ad620d06abb3609fbcaa0e83beb644c102bb189d78d358f6a7ba04b3",
+      "tail_selected_roi_sha256_float32": "bbc7300b71100cc8a2f6a1bdfc93015d28b8913f2effaf36639dee78d324a2b1"
+    },
+    {
+      "first_band": 160,
+      "stop_band": 176,
+      "white_selected_roi_sha256_float32": "697dd0f2d19f6bbba83c24c99f39162043ac137105a6077b777ee53a9b0fc2fe",
+      "tail_selected_roi_sha256_float32": "f5f0ebe10fdd80c92565866da5ef27cfd7673e4ce481bfefabb70cb8da19569e"
+    },
+    {
+      "first_band": 176,
+      "stop_band": 192,
+      "white_selected_roi_sha256_float32": "f2c5f8596e3156302db1a13078ad739cf9858a1cb00e6a4fa628cc89db28873c",
+      "tail_selected_roi_sha256_float32": "f745f3a94d350cfe702c7c728fb3b9a03d5c5aaa49fd09d72ac8b7850c5f8a7e"
+    },
+    {
+      "first_band": 192,
+      "stop_band": 208,
+      "white_selected_roi_sha256_float32": "b93201900822706e1ba4b757a23d011d9e5c747ae287235d8dc17e91c25510f9",
+      "tail_selected_roi_sha256_float32": "07cb5aa4e6b331fbe82de3a39f4d683cc648f81b7bb00445378d2d2fe18a89e0"
+    },
+    {
+      "first_band": 208,
+      "stop_band": 224,
+      "white_selected_roi_sha256_float32": "cba2b84a9077b51f3037bff624fcf2fd519ca47a020ba45dda79e891800f5e5b",
+      "tail_selected_roi_sha256_float32": "e133a054588157cd2df561c8d2c72e1161483af600afb35a0521ce805eba953c"
+    }
+  ],
+  "prior_implementation_sha256": "52691162f3f15aa23477f862af7697fc78db94b12be5fc410c4fcf4ca1530d55",
+  "index_names": [
+    "NDVI_800_680",
+    "NDRE_790_720",
+    "GNDVI_800_550",
+    "PRI_531_570",
+    "PSRI_678_500_750",
+    "SIPI_800_445_680"
+  ],
+  "index_formulas": {
+    "NDVI_800_680": {
+      "bands": [
+        800,
+        680
+      ],
+      "formula": "(Q800-Q680)/(Q800+Q680)",
+      "operation": "nd"
+    },
+    "NDRE_790_720": {
+      "bands": [
+        790,
+        720
+      ],
+      "formula": "(Q790-Q720)/(Q790+Q720)",
+      "operation": "nd"
+    },
+    "GNDVI_800_550": {
+      "bands": [
+        800,
+        550
+      ],
+      "formula": "(Q800-Q550)/(Q800+Q550)",
+      "operation": "nd"
+    },
+    "PRI_531_570": {
+      "bands": [
+        531,
+        570
+      ],
+      "formula": "(Q531-Q570)/(Q531+Q570)",
+      "operation": "nd"
+    },
+    "PSRI_678_500_750": {
+      "bands": [
+        678,
+        500,
+        750
+      ],
+      "formula": "(Q678-Q500)/Q750",
+      "operation": "psri"
+    },
+    "SIPI_800_445_680": {
+      "bands": [
+        800,
+        445,
+        680
+      ],
+      "formula": "(Q800-Q445)/(Q800-Q680)",
+      "operation": "sipi"
+    }
+  },
+  "index_flags": {
+    "invalid_required_band": 1,
+    "low_signal_required_band": 2,
+    "weak_or_wrong_sign_index_denominator": 4,
+    "reference_or_tail_scan_lines_excluded": 8,
+    "nonfinite_index": 16
+  },
+  "arrays": {
+    "indices_assumed_tail": {
+      "shape": [
+        7982,
+        6
+      ],
+      "dtype": "float32"
+    },
+    "indices_zero_offset": {
+      "shape": [
+        7982,
+        6
+      ],
+      "dtype": "float32"
+    },
+    "indices_tail_minus_zero": {
+      "shape": [
+        7982,
+        6
+      ],
+      "dtype": "float32"
+    },
+    "quality_flags_tail": {
+      "shape": [
+        7982,
+        6
+      ],
+      "dtype": "uint8"
+    },
+    "quality_flags_zero": {
+      "shape": [
+        7982,
+        6
+      ],
+      "dtype": "uint8"
+    },
+    "scan_line": {
+      "shape": [
+        7982
+      ],
+      "dtype": "int32"
+    },
+    "detector_column": {
+      "shape": [
+        7982
+      ],
+      "dtype": "int32"
+    },
+    "patch_id": {
+      "shape": [
+        7982
+      ],
+      "dtype": "uint8"
+    },
+    "region_id": {
+      "shape": [
+        7982
+      ],
+      "dtype": "uint8"
+    }
+  },
+  "sha256": "3e2114d6cd05ec22b47fe797eeab0ac9ba32db7731c6d3acd1c311f24ab4479f"
+}

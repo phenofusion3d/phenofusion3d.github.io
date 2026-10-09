@@ -1,0 +1,45 @@
+{
+  "input_sha256": {
+    "generated\\research_20260928_improvement_20261007\\short_dense_v3\\result\\plant_rgb_icp.ply": "9f832f84560d4cb8af9d2c1cefa8d789b1da6f97e79bc5d035fcd5475e175338",
+    "generated\\research_l515_20261007\\l515_sensor_v1\\result\\l515_supported_reference.ply": "c2fc1b6a15e5703f4864e130b0cc76cc572aedb3292cddf97bc861207f830386",
+    "generated\\research_l515_20261007\\cross_camera\\board_transfer_alignment_check.json": "f2f9b2d305ba6bcaadb8d625338f1487242b46f2b82b537f2d46fe88034ec820",
+    "generated\\research_20260928_processing_20261007\\calibration_transfer.json": "bd325cb89f1285d0aabb87cea82eb27601cc67759cbf50dc47ace8ffb2072a65",
+    "generated\\research_20260928_processing_20261007\\input_review\\specimen_seed_review.json": "f75086152f54b9a074e49338d42ed201bd381f877bd166c901e803f4123d67d1"
+  },
+  "source_points": {
+    "D405": 8265080,
+    "L515": 1598977
+  },
+  "fixed_scene_crop_points": {
+    "D405": 1576037,
+    "L515": 163838
+  },
+  "seed_upright_xyz": [
+    [
+      0.29650678610528536,
+      0.010007538545112526,
+      -0.7381293730096166
+    ],
+    [
+      0.48457271090127796,
+      -0.007384904394314159,
+      -0.7098604582294198
+    ],
+    [
+      0.8340023570570687,
+      0.00037867726063603446,
+      -0.721911370643942
+    ],
+    [
+      1.0531096068406687,
+      0.0206749845087977,
+      -0.7096081615049181
+    ],
+    [
+      1.3405482355690064,
+      0.007171694468398274,
+      -0.7018902706037975
+    ]
+  ],
+  "purpose": "Soil patch seeds identify pot neighborhoods only; no plant measurements, target dimensions or heights are used."
+}

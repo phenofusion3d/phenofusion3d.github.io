@@ -1,0 +1,1111 @@
+{
+  "schema_version": 1,
+  "created_local_date": "2026-10-07",
+  "timezone": "Australia/Sydney",
+  "purpose": "Read-only transcription and research-readiness inventory of manual reference photographs",
+  "dataset_root_relative_to_repository": "data/main/test_plant_10-7",
+  "all_paths_relative_to": "dataset_root_relative_to_repository",
+  "source_snapshot_policy": "SHA256 and image dimensions identify exact source evidence. No source files were modified.",
+  "status": "transcribed_references_pending_definitions_identity_and_ambiguity_review",
+  "reference_use_policy": {
+    "held_out_from_camera_calibration": true,
+    "held_out_from_depth_scale_estimation": true,
+    "held_out_from_reconstruction_tuning": true,
+    "held_out_from_spectral_registration_tuning": true,
+    "allowed_use": "Independent trait comparison after calibration, reconstruction settings, physical specimen correspondence and measurement definitions are frozen.",
+    "report_exclusions": "Report missing visibility, unmatched identity, unresolved units and uncertain organs individually. Do not invent unobserved endpoints."
+  },
+  "inventory_summary": {
+    "source_images": 74,
+    "annotated_overviews": 9,
+    "supporting_photographs": 65,
+    "specimens": 5,
+    "annotated_heights": 5,
+    "annotated_organ_length_width_pairs": 21,
+    "numeric_measurements_transcribed": 47,
+    "no_spreadsheet_or_written_measurement_protocol_found": true
+  },
+  "specimens": [
+    {
+      "specimen_id": "P1",
+      "source_folder_label": "plant-1",
+      "species": "not_confirmed",
+      "height": {
+        "annotation_id": "P1.H01",
+        "height_cm": 53.5,
+        "source_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+        "source_text": "Height:53.5cm (Whole)",
+        "supporting_images": [],
+        "height_definition_status": "user_clarified_stem_base_to_highest_tip",
+        "bottom_endpoint": "stem base (interpreting user wording step base)",
+        "top_endpoint": "very tip of plant / highest plant tip",
+        "value_origin": "annotated source text, transcribed without correction",
+        "reference_use": "held_out_from_calibration_and_tuning",
+        "method": "two rulers used for height, per user clarification",
+        "units_status": "cm per source annotation and user clarification; original value unchanged",
+        "protocol_source": "user_protocol_clarification",
+        "uncertainty_status": "ruler joining/offset and repeated-measurement uncertainty not independently established"
+      },
+      "organ_annotations": [
+        {
+          "annotation_id": "P1.O01",
+          "source_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+          "source_annotation_location": "lower blade",
+          "length_cm": 12.5,
+          "width_cm": 1,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        },
+        {
+          "annotation_id": "P1.O02",
+          "source_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+          "source_annotation_location": "middle blade",
+          "length_cm": 10.9,
+          "width_cm": 1,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        },
+        {
+          "annotation_id": "P1.O03",
+          "source_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+          "source_annotation_location": "upper blade beside cereal ear",
+          "length_cm": 7.3,
+          "width_cm": 9,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "issues": [
+            {
+              "kind": "unresolved_source_annotation_vs_photograph_conflict",
+              "status": "needs_confirmation",
+              "source_width_cm": 9,
+              "proposed_width_cm": 0.9,
+              "supporting_image": "manual_validation_5-plants_28-09/plant-1/Media (6).jpeg",
+              "reason": "The overview explicitly says Width:9cm, and the user states the annotations are in centimetres. Reinspection of plant-1/Media (6).jpeg shows the blade spanning roughly one centimetre interval at the photographed ruler section, rather than nine labelled centimetre intervals. 0.9 cm is a proposed explanation only; exact correction and whether the photographed section represents maximum width remain unconfirmed.",
+              "ruler_reading_basis": "The ruler shows adjacent large labels 1, 2 and 3 for centimetres, each separated by ten smaller millimetre subdivisions. The visible blade above the ruler spans approximately one such major interval. This conflicts with a 9 cm width for that blade; it is not a reason to reinterpret all annotations as millimetres.",
+              "numeric_accuracy_use": "exclude_this_width_from_numeric_accuracy_statistics_until_resolved",
+              "proposed_width_cm_status": "not_accepted; do_not_substitute_for_source_value"
+            }
+          ],
+          "units_status": "cm per source annotation and user clarification; original value unchanged",
+          "validation_eligibility": {
+            "length": "pending_physical_matching_and_measurement_definition",
+            "width": "excluded_pending_source_value_photograph_conflict_resolution"
+          }
+        },
+        {
+          "annotation_id": "P1.O04",
+          "source_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+          "source_annotation_location": "cereal ear",
+          "length_cm": 6.5,
+          "width_cm": 1.6,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "ear",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "issues": [
+            {
+              "kind": "different_organ",
+              "status": "keep_separate_from_leaf_metrics",
+              "reason": "This annotation points to the cereal ear, not a leaf."
+            }
+          ],
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        }
+      ],
+      "individual_reference_folder": "manual_validation_5-plants_28-09/plant-1",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_0.png",
+        "sha256": "1f8a90e2d537cb5f9c0554e372819bfdafd9113c444b3f7c171c29b27a1b4ac8",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      }
+    },
+    {
+      "specimen_id": "P2",
+      "source_folder_label": "plant-2",
+      "species": "not_confirmed",
+      "height": {
+        "annotation_id": "P2.H01",
+        "height_cm": 51.7,
+        "source_image": "manual_validation_5-plants_28-09/plant-2_measurements_02.png",
+        "source_text": "Height:51.7cm (Whole)",
+        "supporting_images": [
+          "manual_validation_5-plants_28-09/plant-2/Media (1).jpeg",
+          "manual_validation_5-plants_28-09/plant-2/Media (2).jpeg",
+          "manual_validation_5-plants_28-09/plant-2/Media (3).jpeg"
+        ],
+        "height_definition_status": "user_clarified_stem_base_to_highest_tip",
+        "bottom_endpoint": "stem base (interpreting user wording step base)",
+        "top_endpoint": "very tip of plant / highest plant tip",
+        "value_origin": "annotated source text, transcribed without correction",
+        "reference_use": "held_out_from_calibration_and_tuning",
+        "method": "two rulers used for height, per user clarification",
+        "units_status": "cm per source annotation and user clarification; original value unchanged",
+        "protocol_source": "user_protocol_clarification",
+        "uncertainty_status": "ruler joining/offset and repeated-measurement uncertainty not independently established"
+      },
+      "organ_annotations": [
+        {
+          "annotation_id": "P2.O01",
+          "source_image": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+          "source_annotation_location": "upper-left arrow in overhead overview",
+          "length_cm": 5,
+          "width_cm": 2.7,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "supporting_images": [
+            "manual_validation_5-plants_28-09/plant-2/Leaf-1/Media.jpeg",
+            "manual_validation_5-plants_28-09/plant-2/Leaf-1/Media (1).jpeg"
+          ],
+          "supporting_image_match_status": "visual_match_to_annotated_overview; future_reconstruction_match_pending",
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        },
+        {
+          "annotation_id": "P2.O02",
+          "source_image": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+          "source_annotation_location": "lower-left arrow in overhead overview",
+          "length_cm": 3.9,
+          "width_cm": 3.4,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "supporting_images": [
+            "manual_validation_5-plants_28-09/plant-2/Leaf-2/Media.jpeg",
+            "manual_validation_5-plants_28-09/plant-2/Leaf-2/Media (1).jpeg"
+          ],
+          "supporting_image_match_status": "visual_match_to_annotated_overview; future_reconstruction_match_pending",
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        }
+      ],
+      "individual_reference_folder": "manual_validation_5-plants_28-09/plant-2",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_425109.png",
+        "sha256": "65060c65696a8dd74d272e9d39ab8db5d6d5f0a94320c775a405f38f77988e96",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      }
+    },
+    {
+      "specimen_id": "P3",
+      "source_folder_label": "plant-3",
+      "species": "not_confirmed",
+      "height": {
+        "annotation_id": "P3.H01",
+        "height_cm": 52.8,
+        "source_image": "manual_validation_5-plants_28-09/plant-3_measurements_02.png",
+        "source_text": "Height:52.8cm (Whole)",
+        "supporting_images": [
+          "manual_validation_5-plants_28-09/plant-3/Media (1).jpeg",
+          "manual_validation_5-plants_28-09/plant-3/Media (2).jpeg",
+          "manual_validation_5-plants_28-09/plant-3/Media (3).jpeg"
+        ],
+        "height_definition_status": "user_clarified_stem_base_to_highest_tip",
+        "bottom_endpoint": "stem base (interpreting user wording step base)",
+        "top_endpoint": "very tip of plant / highest plant tip",
+        "value_origin": "annotated source text, transcribed without correction",
+        "reference_use": "held_out_from_calibration_and_tuning",
+        "method": "two rulers used for height, per user clarification",
+        "units_status": "cm per source annotation and user clarification; original value unchanged",
+        "protocol_source": "user_protocol_clarification",
+        "uncertainty_status": "ruler joining/offset and repeated-measurement uncertainty not independently established"
+      },
+      "organ_annotations": [
+        {
+          "annotation_id": "P3.O01",
+          "source_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+          "source_annotation_location": "left-middle arrow",
+          "length_cm": 7.4,
+          "width_cm": 5.5,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        },
+        {
+          "annotation_id": "P3.O02",
+          "source_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+          "source_annotation_location": "lower-left arrow",
+          "length_cm": 9.8,
+          "width_cm": 7.6,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        },
+        {
+          "annotation_id": "P3.O03",
+          "source_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+          "source_annotation_location": "bottom-centre arrow",
+          "length_cm": 7.5,
+          "width_cm": 5.7,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        },
+        {
+          "annotation_id": "P3.O04",
+          "source_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+          "source_annotation_location": "lower-right arrow",
+          "length_cm": 11,
+          "width_cm": 8.7,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        },
+        {
+          "annotation_id": "P3.O05",
+          "source_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+          "source_annotation_location": "upper-right arrow",
+          "length_cm": 9.2,
+          "width_cm": 7.7,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        },
+        {
+          "annotation_id": "P3.O06",
+          "source_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+          "source_annotation_location": "upper-centre arrow",
+          "length_cm": 7.5,
+          "width_cm": 6.3,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        }
+      ],
+      "individual_reference_folder": "manual_validation_5-plants_28-09/plant-3",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_631832.png",
+        "sha256": "e1b48353219e2123b6e6f2b1667e67d48af540889f749010f3d18088bc44ddea",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      }
+    },
+    {
+      "specimen_id": "P4",
+      "source_folder_label": "plant-4",
+      "species": "not_confirmed",
+      "height": {
+        "annotation_id": "P4.H01",
+        "height_cm": 52.3,
+        "source_image": "manual_validation_5-plants_28-09/plant-4_measurements_02.png",
+        "source_text": "Height:52.3cm (Whole)",
+        "supporting_images": [
+          "manual_validation_5-plants_28-09/plant-4/Media (1).jpeg",
+          "manual_validation_5-plants_28-09/plant-4/Media (2).jpeg"
+        ],
+        "height_definition_status": "user_clarified_stem_base_to_highest_tip",
+        "bottom_endpoint": "stem base (interpreting user wording step base)",
+        "top_endpoint": "very tip of plant / highest plant tip",
+        "value_origin": "annotated source text, transcribed without correction",
+        "reference_use": "held_out_from_calibration_and_tuning",
+        "method": "two rulers used for height, per user clarification",
+        "units_status": "cm per source annotation and user clarification; original value unchanged",
+        "protocol_source": "user_protocol_clarification",
+        "uncertainty_status": "ruler joining/offset and repeated-measurement uncertainty not independently established"
+      },
+      "organ_annotations": [
+        {
+          "annotation_id": "P4.O01",
+          "source_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+          "source_annotation_location": "top-centre arrow",
+          "length_cm": 3,
+          "width_cm": 0.2,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "uncertain_leaf_or_pod",
+          "organ_kind_status": "visual_inference_needs_review",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "issues": [
+            {
+              "kind": "organ_identity_uncertain",
+              "status": "needs_confirmation",
+              "reason": "Folder names say Leaf, but the narrow measured structures occur among flowers and pods. Several resemble pods; no botanical identity is inferred solely from the folder name."
+            }
+          ],
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        },
+        {
+          "annotation_id": "P4.O02",
+          "source_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+          "source_annotation_location": "left-middle arrow",
+          "length_cm": 2.8,
+          "width_cm": 0.5,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "uncertain_leaf_or_pod",
+          "organ_kind_status": "visual_inference_needs_review",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "issues": [
+            {
+              "kind": "organ_identity_uncertain",
+              "status": "needs_confirmation",
+              "reason": "Folder names say Leaf, but the narrow measured structures occur among flowers and pods. Several resemble pods; no botanical identity is inferred solely from the folder name."
+            }
+          ],
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        },
+        {
+          "annotation_id": "P4.O03",
+          "source_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+          "source_annotation_location": "bottom-centre arrow",
+          "length_cm": 2.9,
+          "width_cm": 0.3,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "uncertain_leaf_or_pod",
+          "organ_kind_status": "visual_inference_needs_review",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "issues": [
+            {
+              "kind": "organ_identity_uncertain",
+              "status": "needs_confirmation",
+              "reason": "Folder names say Leaf, but the narrow measured structures occur among flowers and pods. Several resemble pods; no botanical identity is inferred solely from the folder name."
+            }
+          ],
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        },
+        {
+          "annotation_id": "P4.O04",
+          "source_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+          "source_annotation_location": "right-middle arrow",
+          "length_cm": 2.9,
+          "width_cm": 0.4,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "uncertain_leaf_or_pod",
+          "organ_kind_status": "visual_inference_needs_review",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "issues": [
+            {
+              "kind": "organ_identity_uncertain",
+              "status": "needs_confirmation",
+              "reason": "Folder names say Leaf, but the narrow measured structures occur among flowers and pods. Several resemble pods; no botanical identity is inferred solely from the folder name."
+            }
+          ],
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        }
+      ],
+      "individual_reference_folder": "manual_validation_5-plants_28-09/plant-4",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1034629.png",
+        "sha256": "5d4b86d534f241e5e68a16b1ccbbca511fc0fdc5426b167197cc37d2f37a104c",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      }
+    },
+    {
+      "specimen_id": "P5",
+      "source_folder_label": "plant-5",
+      "species": "not_confirmed",
+      "height": {
+        "annotation_id": "P5.H01",
+        "height_cm": 31.8,
+        "source_image": "manual_validation_5-plants_28-09/plant-5_measurements_02.png",
+        "source_text": "Height:31.8cm (Whole)",
+        "supporting_images": [
+          "manual_validation_5-plants_28-09/plant-5/Media (1).jpeg"
+        ],
+        "height_definition_status": "user_clarified_stem_base_to_highest_tip",
+        "bottom_endpoint": "stem base (interpreting user wording step base)",
+        "top_endpoint": "very tip of plant / highest plant tip",
+        "value_origin": "annotated source text, transcribed without correction",
+        "reference_use": "held_out_from_calibration_and_tuning",
+        "method": "two rulers used for height, per user clarification",
+        "units_status": "cm per source annotation and user clarification; original value unchanged",
+        "protocol_source": "user_protocol_clarification",
+        "uncertainty_status": "ruler joining/offset and repeated-measurement uncertainty not independently established"
+      },
+      "organ_annotations": [
+        {
+          "annotation_id": "P5.O01",
+          "source_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+          "source_annotation_location": "left-side arrow",
+          "length_cm": 12,
+          "width_cm": 9.9,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        },
+        {
+          "annotation_id": "P5.O02",
+          "source_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+          "source_annotation_location": "upper-left text pointing to small central leaf",
+          "length_cm": 8,
+          "width_cm": 4.8,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        },
+        {
+          "annotation_id": "P5.O03",
+          "source_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+          "source_annotation_location": "top-centre arrow",
+          "length_cm": 11.9,
+          "width_cm": 11.7,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        },
+        {
+          "annotation_id": "P5.O04",
+          "source_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+          "source_annotation_location": "right-side arrow",
+          "length_cm": 12.9,
+          "width_cm": 9,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        },
+        {
+          "annotation_id": "P5.O05",
+          "source_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+          "source_annotation_location": "bottom-left arrow",
+          "length_cm": 13.2,
+          "width_cm": 7.8,
+          "value_origin": "annotated source text, transcribed without correction",
+          "organ_kind": "leaf",
+          "organ_kind_status": "visually_identified",
+          "correspondence_status": "not_matched_to_reconstruction",
+          "reconstruction_component_id": null,
+          "measurement_definition_status": "unknown_straight_or_curved_length_and_width_convention",
+          "reference_use": "held_out_from_calibration_and_tuning",
+          "units_status": "cm per source annotation and user clarification; original value unchanged"
+        }
+      ],
+      "individual_reference_folder": "manual_validation_5-plants_28-09/plant-5",
+      "candidate_rgbd_frame": {
+        "path": "test_plant_20260928162354/rgb_1441230.png",
+        "sha256": "70f2ebd90663a44fd8536d9237df2fdfde9771c44c9f96ace0bc5efbd7665392",
+        "status": "tentative_visual_correspondence_only",
+        "basis": "Sampled D405 sequence contains the same distinctive specimen morphology; this is not an approved specimen or leaf match."
+      }
+    }
+  ],
+  "source_files": [
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (1).jpeg",
+      "bytes": 326065,
+      "sha256": "be68c0892a0b960f32bab7a6e424dda2674ffcb2e017d863ebc7b8f87943f8f1",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (2).jpeg",
+      "bytes": 296247,
+      "sha256": "7b662f116cc69339119b3fd13858d29c907e3b8eb977aabf1b434fe20847c692",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (3).jpeg",
+      "bytes": 279904,
+      "sha256": "48cef63537c9ac02944d47c4e1fa745e5168c1ada7b062c8345f4c63baa3af41",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (4).jpeg",
+      "bytes": 300912,
+      "sha256": "63e993553b534f6d6a2637cc1d611ea62ab3c7157e7ebb79a279c25217d18825",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (5).jpeg",
+      "bytes": 262980,
+      "sha256": "2a5ecda225bfd1c0ceb698dd674fb2e098bbf55af8de1634d6ff032d9d25410a",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (6).jpeg",
+      "bytes": 258476,
+      "sha256": "a39a15534cb12ebd4b8d00a9533eacb4ec9c90234e9d995348dd3028a9fe6649",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (7).jpeg",
+      "bytes": 328251,
+      "sha256": "363a3c6e8ce7438309e5250d6febb6dc2ec6d8d0966c6616d86fb1ba02af8448",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media (8).jpeg",
+      "bytes": 294923,
+      "sha256": "fb1dc0c102a9b66a36fe1261173b9d5117238f6f35143badbf0b4f420c45199a",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/Media.jpeg",
+      "bytes": 200140,
+      "sha256": "53c2beb1dbac65803aff2ee4f51cfd41e3b233fdc782c6bb5d1ca0e1b3cc45bd",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1/shared image.jpeg",
+      "bytes": 385640,
+      "sha256": "21db09b283ba1f54cf3274d49678298d95d2738ff9152286625655911fe41e2a",
+      "width_px": 2048,
+      "height_px": 1536
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "bytes": 182358,
+      "sha256": "93e2b424b2ca6cab312b1be454bf8b9e8f3ae7c101be7437eb8f20ab8698e40e",
+      "width_px": 1280,
+      "height_px": 1706
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Leaf-1/Media (1).jpeg",
+      "bytes": 222177,
+      "sha256": "97e6e374e4c0c48fd0ede7dcdd1ef030b4297d9850ee014163fa0ae4c1cd3600",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Leaf-1/Media.jpeg",
+      "bytes": 219625,
+      "sha256": "530f27ed2ad07e47bb9857b0056f972fa83e6f6fdc5dbe896e36ceeb494e6dc1",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Leaf-2/Media (1).jpeg",
+      "bytes": 266973,
+      "sha256": "c7ca263f76574fd9803e1b9a35ef48a24e4badf0a6cdacc381e45fcf40398e1e",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Leaf-2/Media.jpeg",
+      "bytes": 240798,
+      "sha256": "783fd9e43503236df278a2c79d37126a7be086f580cab4a21da9b2f191336b06",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Media (1).jpeg",
+      "bytes": 285944,
+      "sha256": "1ddfc6791fd52142d44e38d41d74c112dddeb3b3d5cfdf3decc2ee94e3974b98",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Media (2).jpeg",
+      "bytes": 246206,
+      "sha256": "f2e1ef9e842fe1f4a4bf685197b8d3da5ce5eee63b4c9fb7d9e4124a51314dfb",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Media (3).jpeg",
+      "bytes": 251420,
+      "sha256": "2b0391d54d8a8cbfc27dbeede8600a637a112baf77d6bb2db305395186eca61d",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Media (4).jpeg",
+      "bytes": 189371,
+      "sha256": "d8de7096302c4419be15831d03294a4751ce1b94b6a9a9390bcd8bc4df04b13a",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2/Media.jpeg",
+      "bytes": 254000,
+      "sha256": "15e22830e30027c1290d25d142c345937c94be932597e57415f3650e2ef4aaba",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+      "bytes": 751445,
+      "sha256": "e73a930058a018500c8a46f1ad860994abd343f9373e27cc0ed9428c28f5313a",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-2_measurements_02.png",
+      "bytes": 219560,
+      "sha256": "2082372b3e7d25d0fd891db905544a9ee190cfaea31470d6ead17adbe010d313",
+      "width_px": 600,
+      "height_px": 800
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-1/Media (1).jpeg",
+      "bytes": 253410,
+      "sha256": "0c6f9b6f2d78d94326d16a78dcf1bbf7e55a9311a5af100f6bbdb93ba956f1c8",
+      "width_px": 1770,
+      "height_px": 1328
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-1/Media.jpeg",
+      "bytes": 220929,
+      "sha256": "e6761c2d49941351dfac31ac2e6db46b61f4433a5f9f56d65808b57277e10441",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-2/Media (1).jpeg",
+      "bytes": 279634,
+      "sha256": "cad4dc33ca2e09f57a723de8a4c8fc415542608cb30295c5520b80fce3560d4f",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-2/Media.jpeg",
+      "bytes": 212299,
+      "sha256": "bf20e45bd488495db9eab008f56e3a1c96f55b3d37f089517cc941f717aa0107",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-3/Media (1).jpeg",
+      "bytes": 245916,
+      "sha256": "c850a1ff59277ed2b887fd1e47486eaf004129277459b7aa011ed26c27fc53bd",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-3/Media.jpeg",
+      "bytes": 223768,
+      "sha256": "07b9050ddf42f54bc1dccc5372d67380ab1aabc98a9375dfd1d9ca9e75fcd970",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-4/Media (1).jpeg",
+      "bytes": 206045,
+      "sha256": "08b736618578fbcb21d84f04fc4c112a2297c395d80c54650edd21f63b8991f1",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-4/Media.jpeg",
+      "bytes": 219212,
+      "sha256": "579fb396dcabcdaa057895ba2e482ee24b049b730713acdeebd33a94dcec373d",
+      "width_px": 1770,
+      "height_px": 1328
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-5/Media (1).jpeg",
+      "bytes": 212405,
+      "sha256": "e6590e321208f5e430a195c64ef889e3f1da66a2bcff5b70128f3c47746dbcd2",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-5/Media.jpeg",
+      "bytes": 228890,
+      "sha256": "8ee9e238b10179e71369f31510cfe2797a729a0f3edb96ba0528afa18d3626ab",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-6/Media (1).jpeg",
+      "bytes": 240860,
+      "sha256": "8c66679eac26174936ac99d6ef3225068ebc7741b2de566520d13b49939a8b68",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Leaf-6/Media.jpeg",
+      "bytes": 222840,
+      "sha256": "fe8c7e0eeae5de8632fa11134b261c011a7e4709ffd5c5e4d1cad517948afae6",
+      "width_px": 1770,
+      "height_px": 1328
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Media (1).jpeg",
+      "bytes": 176645,
+      "sha256": "cee3463ad95c6d08b6fad0a9cd560af67d47b51bcf185fc8a0a4d1dbcf350290",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Media (2).jpeg",
+      "bytes": 206426,
+      "sha256": "e765a00568e7f702b15ff431e82674ccefe0deb494df7e48c1c188588fecb053",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Media (3).jpeg",
+      "bytes": 206426,
+      "sha256": "e765a00568e7f702b15ff431e82674ccefe0deb494df7e48c1c188588fecb053",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Media (4).jpeg",
+      "bytes": 179887,
+      "sha256": "741b7bfb639adcd84244f6840cb10de35c81fc509c6a9e525001d323af7397ee",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Media (5).jpeg",
+      "bytes": 211944,
+      "sha256": "0feac7a8b7ad6b6155b2f500ddea58d716fdedefa447ca00f49a06ca1fe89593",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3/Media.jpeg",
+      "bytes": 236357,
+      "sha256": "7648df91ad33513d2a1a4b68079c15dfdfb3a3d0d3b26ac1f869bd6edf4a38d2",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "bytes": 839354,
+      "sha256": "11499eed550af48664b21972a28ee698bca0c6babd43ef5e21aa3f2a9943b8c6",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-3_measurements_02.png",
+      "bytes": 758955,
+      "sha256": "a90da0c4404b5642f1ff27b213d59d2b9f5f4b077dbb7bb822b09d523ec4a9b6",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-1/Media (1).jpeg",
+      "bytes": 162462,
+      "sha256": "b2f11e99f0a1b78734a069ee446c7a246ffdd03fea73bccbe0cd5bc799739370",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-1/Media.jpeg",
+      "bytes": 232290,
+      "sha256": "001a4d00387644361a6c59ea74526528bd74d1efedabdc4c50caf393f6bed236",
+      "width_px": 1770,
+      "height_px": 1328
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-2/Media (1).jpeg",
+      "bytes": 269381,
+      "sha256": "7e244fea59c786d178297c2a8cf15ee52a7863ba7ae80f28e783a87693c83253",
+      "width_px": 1770,
+      "height_px": 1328
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-2/Media.jpeg",
+      "bytes": 236163,
+      "sha256": "250370108e094f476e712e82ad115af8516c1c715e255e68f4aae4c4368e7696",
+      "width_px": 1770,
+      "height_px": 1328
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-3/Media (1).jpeg",
+      "bytes": 205736,
+      "sha256": "555a8781b5dc98c10e7b9277f04747e1f5c81bd5e434633e8eb0caf3b7d9044a",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-3/Media.jpeg",
+      "bytes": 201622,
+      "sha256": "9e5cfe9be0181faaa9405466f36c4012cc6287ca0e88059267912f8f75f01301",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-4/Media (1).jpeg",
+      "bytes": 223389,
+      "sha256": "7d6b6448015cb4dab365519db7e7f567f25da6336023d57a97b597591a5e3207",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Leaf-4/Media.jpeg",
+      "bytes": 259820,
+      "sha256": "5ff52deb5557894c10ef85e34f4ce0b5c44765797c391f64dbd1537c3a343e9d",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Media (1).jpeg",
+      "bytes": 271213,
+      "sha256": "782c49272021c50e11c9b4387bec62d8187dc9a3184ed1d4821410a14eacb1ab",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Media (2).jpeg",
+      "bytes": 271479,
+      "sha256": "79eab25cf57de1938f13a221e9e7d168ab3a0b84fadd12566eb72d731131e52c",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Media (3).jpeg",
+      "bytes": 233133,
+      "sha256": "0726b13f513e0f16f4788d8b024d70dedd008388e27822b3e44de950fbfd2a5f",
+      "width_px": 1770,
+      "height_px": 1328
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Media (4).jpeg",
+      "bytes": 181136,
+      "sha256": "abe0e1722c8596283312baae251ec6ed66b0df8ed8dc524c75cadfcd69ce2e6e",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Media (5).jpeg",
+      "bytes": 223225,
+      "sha256": "2fd56f2a0d90c50096b80eff06f08d4de5717888ee597ce1c11af624b7ddc2ba",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4/Media.jpeg",
+      "bytes": 247155,
+      "sha256": "324a665d801feb9e265c73df1f23c009168670eb9e7d0ec29ea6d39f31a77d4e",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "bytes": 832722,
+      "sha256": "2c8b0968d78690bf5ed916e9eeaf88334b020f8ba8ef7f9736322b64fe1a3292",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-4_measurements_02.png",
+      "bytes": 752689,
+      "sha256": "f83c4a5a98ca545cc1167e4bb19a178ae847593156af48120f7101408adb763f",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-1/Media (1).jpeg",
+      "bytes": 207700,
+      "sha256": "8a4aac05da4e83d17a7261024bea9a54e0b1911c7351012fa8c435a0e1b8a215",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-1/Media.jpeg",
+      "bytes": 227912,
+      "sha256": "d51a4e159a635bdeeda6ecccf1570d469e65a3709982be91ae5d9b345dbb72a2",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-2/Media (1).jpeg",
+      "bytes": 242387,
+      "sha256": "fa4db48926a9cd7e3d9fb30bd2a8e15148c5fa085063362c1ef5158830a7f4bc",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-2/Media.jpeg",
+      "bytes": 225783,
+      "sha256": "a96c81aa8005809e2a2326f2d99d9347504546292f924b21276312a0495579e8",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-3/Media (1).jpeg",
+      "bytes": 263596,
+      "sha256": "017554792f733af64c044f35572dd5c087b00ef630f5c11e744bbba50e2402c8",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-3/Media.jpeg",
+      "bytes": 257539,
+      "sha256": "13b5c8b55fce2e86dbf3c240dee3f140ba7deaac499071c6b6415de757c36eec",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-4/Media (1).jpeg",
+      "bytes": 314079,
+      "sha256": "ab7251a0647aae99faafde2cbf97a4d0d6ea5eab95d778739b3d789d3adc03cd",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-4/Media.jpeg",
+      "bytes": 271990,
+      "sha256": "a09d49ff3fa45fcb26f2db0718aa50d616b7b5ed3cc4f6673099f841eeba7fbf",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-5/Media (1).jpeg",
+      "bytes": 311447,
+      "sha256": "bd6f70e7cbfedbc122a1c5fb58844b3aa5e5a969a5cc4b04b0835959c85a8f7e",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/leaf-5/Media.jpeg",
+      "bytes": 247752,
+      "sha256": "9e4291d7d6e0c44258ff0ab0f972c7d205aaf7ef5fe32353e5c38a1f0f476e57",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/Media (1).jpeg",
+      "bytes": 215809,
+      "sha256": "e61eecb977dc1a0eb5c2b4f7d6d5ef67eec7e17cdd9060d1ffc16e43af81affc",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/Media (2).jpeg",
+      "bytes": 294761,
+      "sha256": "7ad930f02a575428a93cb562cab1bd7e5c02ca7bf23caf0798d81fb64aee1687",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/Media (3).jpeg",
+      "bytes": 251532,
+      "sha256": "0ca480cddd75569317f84df1e4015ca211fc5d56e891de03b6d1bc8fc2698cd2",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5/Media.jpeg",
+      "bytes": 252286,
+      "sha256": "d741f0a1a8fd00438c2c1da5bcfaa94bfae91ff3a43271c9828f2b0298fb38e1",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "bytes": 891074,
+      "sha256": "7eec6eba0fa90704dfdb08c623b09ba3c1d6ac39af8ea03d05a2151e84571a3b",
+      "width_px": 1328,
+      "height_px": 1770
+    },
+    {
+      "path": "manual_validation_5-plants_28-09/plant-5_measurements_02.png",
+      "bytes": 759304,
+      "sha256": "52a5bf1c008720ffce5262ec8fac081e6bee218594dd2b9846da46444c6a018f",
+      "width_px": 1328,
+      "height_px": 1770
+    }
+  ],
+  "limitations": [
+    "No machine-readable original specimen/leaf-to-frame correspondence is supplied. Stable annotation IDs in this transcription do not assert existing leaf folder indices except where explicitly documented.",
+    "User clarified whole height as stem base to the very tip, using two rulers. Height values remain in centimetres. Ruler joining/offset and uncertainty are not independently verified.",
+    "Leaf length may differ between straight base-to-tip, curved surface length and manually flattened geometry. Width convention is not documented.",
+    "Plant 1 upper-blade source width remains 9 cm, as annotated. User asserts centimetres. The ruler photograph appears inconsistent with that width; proposed 0.9 cm remains unconfirmed and this width is excluded from numerical accuracy use.",
+    "Plant 1 ear must be analysed separately from leaves. Plant 4 organ type requires review.",
+    "Photographs provide ruler evidence, but repeat measurements and a measurement-uncertainty protocol are absent.",
+    "Five specimens support descriptive validation of this batch, not an independent claim of generalisation across species or plants."
+  ],
+  "user_protocol_clarification": {
+    "recorded_local_date": "2026-10-07",
+    "source": "Direct user clarification relayed in the current research-readiness task",
+    "height_bottom_endpoint": "stem base",
+    "height_bottom_original_wording": "step base",
+    "height_bottom_interpretation": "step base interpreted as stem base",
+    "height_top_endpoint": "very tip of plant / highest plant tip",
+    "height_method": "two rulers used for height",
+    "annotation_units": "cm",
+    "annotation_units_status": "user asserts centimetres, not millimetres; no global conversion applied",
+    "remaining_uncertainty": "Ruler joining/offset and repeat-measurement uncertainty have not been independently reconstructed from photographs."
+  }
+}

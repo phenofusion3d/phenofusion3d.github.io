@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "platform": "Windows development environment",
+  "counts": {
+    "tests": 18,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "passed": 18,
+  "source_base_commit": "920a577958a22e10998d24935265c77e2296d867",
+  "modified_paths": [
+    "tests/test_gantry_offline.py"
+  ],
+  "modification": "Uncommitted test-only bounded wait for Qt error delivery. No acquisition implementation change.",
+  "modified_test_sha256": "de9449470f674ad7281f47bebc97693473517b89c58957342b94dc1c0f01604d",
+  "modified_test_lf_sha256": "34788b6168d98a45d307480457efa4958f1636960d565f99ebe218f9b3272e1b",
+  "hardware_accessed": false,
+  "xml": "windows_gantry_tests.xml",
+  "prior_release_evidence": "../research_followthrough_20261007/release_tests.xml",
+  "prior_release_scope": "Earlier 141-test Windows release; not rerun or relabelled as current after test-only change."
+}

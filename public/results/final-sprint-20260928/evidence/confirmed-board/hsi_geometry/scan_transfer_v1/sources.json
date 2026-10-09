@@ -1,0 +1,134 @@
+{
+  "selected_band_reads": [
+    {
+      "header_relative_path": "data\\main\\test_plant_10-7\\20260928\\002-specim-fx10.hdr",
+      "header_sha256": "3cb228260d0e6a9a248ae2b5f3f3efb4d0dcbbf96d365cefb1603c993fc84bad",
+      "bil_size_bytes": 975765504,
+      "selected_plane_sha256_little_endian_uint16_row_major": "25cb9692a8ac82a551978c0a30ddf5c4438fb3c86093ff2ded0a0f86ec8535e1",
+      "full_cube_sha256": "not recomputed: selected-band bounded inspection",
+      "shape_line_band_column": [
+        2127,
+        224,
+        1024
+      ],
+      "band_zero_based": 99,
+      "target_wavelength_nm": 661,
+      "actual_wavelength_nm": 661.1,
+      "acquisition_time_header": "2026-09-28T04:36:51Z"
+    },
+    {
+      "header_relative_path": "data\\main\\test_plant_10-7\\20260928\\003-specim-fx10.hdr",
+      "header_sha256": "6aaf169bc24b22abfd7cf8aed1d22517f5a956a99cb58698ec50d258b2dd048a",
+      "bil_size_bytes": 975765504,
+      "selected_plane_sha256_little_endian_uint16_row_major": "7781c8531aed5d538cf0aa411cefb00a0d02bd5a3086ceb0ceb0a19788df8c81",
+      "full_cube_sha256": "not recomputed: selected-band bounded inspection",
+      "shape_line_band_column": [
+        2127,
+        224,
+        1024
+      ],
+      "band_zero_based": 99,
+      "target_wavelength_nm": 661,
+      "actual_wavelength_nm": 661.1,
+      "acquisition_time_header": "2026-09-28T06:19:41Z"
+    },
+    {
+      "header_relative_path": "data\\main\\test_plant_10-7\\20260928\\002-specim-fx10.hdr",
+      "header_sha256": "3cb228260d0e6a9a248ae2b5f3f3efb4d0dcbbf96d365cefb1603c993fc84bad",
+      "bil_size_bytes": 975765504,
+      "selected_plane_sha256_little_endian_uint16_row_major": "b8adea654c13fc15988501d928521494e520cbb6014846112e2c78f7f5ecdfc0",
+      "full_cube_sha256": "not recomputed: selected-band bounded inspection",
+      "shape_line_band_column": [
+        2127,
+        224,
+        1024
+      ],
+      "band_zero_based": 211,
+      "target_wavelength_nm": 970,
+      "actual_wavelength_nm": 970.03,
+      "acquisition_time_header": "2026-09-28T04:36:51Z"
+    },
+    {
+      "header_relative_path": "data\\main\\test_plant_10-7\\20260928\\003-specim-fx10.hdr",
+      "header_sha256": "6aaf169bc24b22abfd7cf8aed1d22517f5a956a99cb58698ec50d258b2dd048a",
+      "bil_size_bytes": 975765504,
+      "selected_plane_sha256_little_endian_uint16_row_major": "5293272f3fd78f1d615124ab3273cd413914d1338363e58f73a2bdc87b5f2143",
+      "full_cube_sha256": "not recomputed: selected-band bounded inspection",
+      "shape_line_band_column": [
+        2127,
+        224,
+        1024
+      ],
+      "band_zero_based": 211,
+      "target_wavelength_nm": 970,
+      "actual_wavelength_nm": 970.03,
+      "acquisition_time_header": "2026-09-28T06:19:41Z"
+    },
+    {
+      "header_relative_path": "data\\main\\test_plant_10-7\\20260928\\002-specim-fx17.hdr",
+      "header_sha256": "8a91fd8d677f92c2935a6d1e6dc92c0b49b8b84a29c80f93c41438c57d47ab77",
+      "bil_size_bytes": 609853440,
+      "selected_plane_sha256_little_endian_uint16_row_major": "f02a76d8048d616c8d029d3ed6b14a464b9ced40a748b474fc4609ccb385e7c6",
+      "full_cube_sha256": "not recomputed: selected-band bounded inspection",
+      "shape_line_band_column": [
+        2127,
+        224,
+        640
+      ],
+      "band_zero_based": 105,
+      "target_wavelength_nm": 1301,
+      "actual_wavelength_nm": 1301.56,
+      "acquisition_time_header": "2026-09-28T04:36:51Z"
+    },
+    {
+      "header_relative_path": "data\\main\\test_plant_10-7\\20260928\\003-specim-fx17.hdr",
+      "header_sha256": "762de08de4f6f2892aa0caf4dd69da81a4a283e4a83783a210d75664b3c64d4f",
+      "bil_size_bytes": 609853440,
+      "selected_plane_sha256_little_endian_uint16_row_major": "e7574a37806afb8d9316344772b09bb712859aa53870e38af2f2ee405fd81e1d",
+      "full_cube_sha256": "not recomputed: selected-band bounded inspection",
+      "shape_line_band_column": [
+        2127,
+        224,
+        640
+      ],
+      "band_zero_based": 105,
+      "target_wavelength_nm": 1301,
+      "actual_wavelength_nm": 1301.56,
+      "acquisition_time_header": "2026-09-28T06:19:41Z"
+    },
+    {
+      "header_relative_path": "data\\main\\test_plant_10-7\\20260928\\002-specim-fx17.hdr",
+      "header_sha256": "8a91fd8d677f92c2935a6d1e6dc92c0b49b8b84a29c80f93c41438c57d47ab77",
+      "bil_size_bytes": 609853440,
+      "selected_plane_sha256_little_endian_uint16_row_major": "5ac6446b2b5be2e0d94e7d91b56861ebe5f0658a61d44ffffb9ef5ddb65538e8",
+      "full_cube_sha256": "not recomputed: selected-band bounded inspection",
+      "shape_line_band_column": [
+        2127,
+        224,
+        640
+      ],
+      "band_zero_based": 10,
+      "target_wavelength_nm": 970,
+      "actual_wavelength_nm": 970.19,
+      "acquisition_time_header": "2026-09-28T04:36:51Z"
+    },
+    {
+      "header_relative_path": "data\\main\\test_plant_10-7\\20260928\\003-specim-fx17.hdr",
+      "header_sha256": "762de08de4f6f2892aa0caf4dd69da81a4a283e4a83783a210d75664b3c64d4f",
+      "bil_size_bytes": 609853440,
+      "selected_plane_sha256_little_endian_uint16_row_major": "6709b2ee7826639b03c226792616bcaf053ca1cbd3f982a4d3f693d6719f4e71",
+      "full_cube_sha256": "not recomputed: selected-band bounded inspection",
+      "shape_line_band_column": [
+        2127,
+        224,
+        640
+      ],
+      "band_zero_based": 10,
+      "target_wavelength_nm": 970,
+      "actual_wavelength_nm": 970.19,
+      "acquisition_time_header": "2026-09-28T06:19:41Z"
+    }
+  ],
+  "source_reader_sha256": "fd771d4edd30bdfd2f235d24ab0c327d85d7295b47bc2f8c910a252a909d8d97",
+  "scope": "Two recorded bands per sensor and run; memory-map full selected planes only, save first 450 native raw lines. Display percentile scaling does not alter raw arrays."
+}

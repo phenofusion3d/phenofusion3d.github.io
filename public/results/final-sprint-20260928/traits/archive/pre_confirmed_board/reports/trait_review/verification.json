@@ -1,0 +1,20 @@
+{
+  "input_hashes_unchanged": true,
+  "point_indices_in_range": true,
+  "manual_dimension_count": 47,
+  "organ_count": 21,
+  "plant_count": 5,
+  "uses_final_icp_transforms": true,
+  "original_fused_points": 1732490,
+  "new_vertices": 0,
+  "modified_source_files": 0,
+  "manual_dimensions_used_for_tuning": false,
+  "validation_accuracy_claims": false,
+  "html_local_links_checked": true,
+  "html_missing_links": [],
+  "exact_chord_index_coordinate_distance_reproduction": true,
+  "measured_observed_chords": 3,
+  "provisional_operator_only_comparisons": 1,
+  "partial_observed_chords": 2,
+  "physical_accuracy_eligible_chords": 0
+}

@@ -1,0 +1,11 @@
+{
+  "source_hashes_stable": true,
+  "each_sensor_unique_source_pixels": true,
+  "each_sensor_unique_P5_point_ids": true,
+  "viewer_regular_point_size_device_pixels": 2.2,
+  "enlarged_selected_point_only_device_pixels": 4.5,
+  "depth_testing_default": true,
+  "raw_arrays_from_validated_extractor": true,
+  "measurement_arrays_contain_NaN_for_invalid_normalized_values": true,
+  "new_pixel_correspondence_accuracy_certified": false
+}

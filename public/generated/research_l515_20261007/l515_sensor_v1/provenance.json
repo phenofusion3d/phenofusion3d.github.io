@@ -1,0 +1,2106 @@
+{
+  "script_sha256": "6083a104873ef3ffbb872a5fc2dcaa3af7c70096e410ff2442bd368373a16aa4",
+  "original_bundle_sha256": "32f4fa717f2d593e1dc5553468d0cf79d76b548d843c276cc098dbedfc067328",
+  "research_bundle_sha256": "7a5986720145a40d7a6b26b7125d1ecc5a2b7ba38e1356368a378951fdfcbd1c",
+  "raw_manifest": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\l515_replacement_audit_20261007\\test_plant_20260928162111_L515_manifest.json",
+  "raw_manifest_sha256": "d5c26527ececd7ca6447f8ec9044d815531a8165efbd0a9daa02c584c7019b4a",
+  "bundle_changes": [
+    "Mask documented camera housing and undistorted footprint",
+    "Absolute helper import only"
+  ],
+  "settings": {
+    "dataset": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515",
+    "width": 1280,
+    "height": 720,
+    "K": [
+      [
+        898.4381103515625,
+        0,
+        655.9896240234375
+      ],
+      [
+        0,
+        898.5916137695312,
+        355.45782470703125
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "dist": [
+      0.14393945038318634,
+      -0.482932984828949,
+      -0.0023646382614970207,
+      -0.0005440952372737229,
+      0.4404349625110626
+    ],
+    "depth_scale": 4000.0,
+    "near": 0.2,
+    "far": 1.6,
+    "voxel": 0.002,
+    "trunc": 0.01,
+    "tolerance": 0.008,
+    "reference": 0,
+    "frames": [
+      {
+        "frame": 0,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_0.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_0.png"
+      },
+      {
+        "frame": 25635,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.025581686535641638
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.001280325311394984
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.001044655966896589
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_25635.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_25635.png"
+      },
+      {
+        "frame": 53042,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.05293168781835396
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.0026491521422669292
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.0021615229879511947
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_53042.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_53042.png"
+      },
+      {
+        "frame": 79603,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.07943744853897723
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.0039757259903637565
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.0032439145282960476
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_79603.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_79603.png"
+      },
+      {
+        "frame": 105440,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.10522071497242264
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.005266140075423721
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.004296802229357377
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_105440.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_105440.png"
+      },
+      {
+        "frame": 132080,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.13180531139565232
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.006596659533023189
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.005382413111281509
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_132080.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_132080.png"
+      },
+      {
+        "frame": 159402,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.1590704894540413
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.00796124108784799
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.0064958162838014465
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_159402.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_159402.png"
+      },
+      {
+        "frame": 185243,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.18485774756863133
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.009251854950604292
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.007548866989499702
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_185243.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_185243.png"
+      },
+      {
+        "frame": 211121,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.21068192873380917
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.010544316757051702
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.008603425488089516
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_211121.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_211121.png"
+      },
+      {
+        "frame": 236922,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2364292700369529
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.01183293284284464
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.009654846147418517
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_236922.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_236922.png"
+      },
+      {
+        "frame": 264320,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.26377029003708985
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.013201310173899831
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.01077134640804004
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_264320.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_264320.png"
+      },
+      {
+        "frame": 289358,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.28875621816189556
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.014451818664116626
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.011791673932875491
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_289358.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_289358.png"
+      },
+      {
+        "frame": 315242,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.3145863868487903
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.015744580137108544
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.012846476938420696
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_315242.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_315242.png"
+      },
+      {
+        "frame": 341079,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.3403696532822358
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.017034994222168507
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.013899364639482024
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_341079.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_341079.png"
+      },
+      {
+        "frame": 366880,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.3661169945853795
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.01832361030796145
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.014950785298811024
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_366880.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_366880.png"
+      },
+      {
+        "frame": 391965,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.39114982496363465
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.019576466186110197
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.01597302812813035
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_391965.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_391965.png"
+      },
+      {
+        "frame": 417039,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.41617167821874207
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.02082877267559402
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.016994822694698132
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_417039.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_417039.png"
+      },
+      {
+        "frame": 443639,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.44271635783052543
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.022157294356230123
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.01807880353025301
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_443639.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_443639.png"
+      },
+      {
+        "frame": 469483,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.46850660970597396
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.023448058052258677
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.019131976489428958
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_469483.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_469483.png"
+      },
+      {
+        "frame": 494597,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.49356837977252765
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.024702362318705866
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.020155401102365994
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_494597.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_494597.png"
+      },
+      {
+        "frame": 519642,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.5185612933393365
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.025953220419891253
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.021176013885316064
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_519642.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_519642.png"
+      },
+      {
+        "frame": 546243,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.545106970871406
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.027281792044951438
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.022260035472030173
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_546243.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_546243.png"
+      },
+      {
+        "frame": 572079,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.5708892393845653
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.028572156185587318
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.02331288242193227
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_572079.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_572079.png"
+      },
+      {
+        "frame": 597918,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.596674501658583
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.029862670159495452
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.024365851625312067
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_597918.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_597918.png"
+      },
+      {
+        "frame": 622242,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.6209479146990725
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.031077518330916227
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.025357082822456304
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_622242.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_622242.png"
+      },
+      {
+        "frame": 648839,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.6474896005499974
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.032405890178280085
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.02644094140453349
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_648839.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_648839.png"
+      },
+      {
+        "frame": 674679,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.6732758607443013
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.0336964540966123
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.02749395135907251
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_674679.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_674679.png"
+      },
+      {
+        "frame": 699763,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.6983076932022703
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.034949260030336965
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.028516153437232607
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_699763.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_699763.png"
+      },
+      {
+        "frame": 726357,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.7248463852923367
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.036277482044428565
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.029599889765832093
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_726357.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_726357.png"
+      },
+      {
+        "frame": 751441,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.7498782177503058
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.037530287978153234
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.030622091843992193
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_751441.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_751441.png"
+      },
+      {
+        "frame": 776522,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.7749070564474162
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.03878294407860564
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.03164417166867459
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_776522.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_776522.png"
+      },
+      {
+        "frame": 802358,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.8006893249605754
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.04007330821924152
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.032697018618576684
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_802358.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_802358.png"
+      },
+      {
+        "frame": 828961,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.8272369983332173
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.04140197973314988
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.03378112170760926
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_828961.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_828961.png"
+      },
+      {
+        "frame": 854039,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.8522628432694694
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.04265448600033004
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.034803079278813966
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_854039.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_854039.png"
+      },
+      {
+        "frame": 879162,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.8773335946185985
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.043909239766593985
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.03582687065218409
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_879162.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_879162.png"
+      },
+      {
+        "frame": 904962,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.9030799380014561
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.04519780590796284
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.036878250560353855
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_904962.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_904962.png"
+      },
+      {
+        "frame": 931562,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.9296246176132394
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.04652632758859894
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.037962231395908735
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_931562.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_931562.png"
+      },
+      {
+        "frame": 956640,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.9546504625494916
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.04777883385577911
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.038984188967113434
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_956640.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_956640.png"
+      },
+      {
+        "frame": 981721,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.9796793012466021
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.049031489956231515
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.04000626879179584
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_981721.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_981721.png"
+      },
+      {
+        "frame": 1008321,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.0062239808583855
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.050360011636867624
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.041090249627350715
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1008321.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1008321.png"
+      },
+      {
+        "frame": 1034161,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.0320102410526895
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.051650575555199835
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.04214325958188974
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1034161.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1034161.png"
+      },
+      {
+        "frame": 1059277,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.0570740069598152
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.052904979710495195
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.04316676569714524
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1059277.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1059277.png"
+      },
+      {
+        "frame": 1085082,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.0828253399441037
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.05419379557398447
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.044218349361111166
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1085082.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1085082.png"
+      },
+      {
+        "frame": 1111683,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.1093710174761733
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.05552236719904466
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.04530237094782527
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1111683.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1111683.png"
+      },
+      {
+        "frame": 1137559,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.135193202800779
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.056814729116643904
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.04635684794409663
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1137559.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1137559.png"
+      },
+      {
+        "frame": 1163360,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.1609405441039224
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.05810334520243684
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.047408268603425625
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1163360.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1163360.png"
+      },
+      {
+        "frame": 1189960,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.187485223715706
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.05943186688307294
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.0484922494389805
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1189960.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1189960.png"
+      },
+      {
+        "frame": 1217323,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.2147913165058273
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.06079849615928519
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.049607323409028924
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1217323.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1217323.png"
+      },
+      {
+        "frame": 1243159,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.2405735850189865
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.06208886029992107
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.05066017035893102
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1243159.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1243159.png"
+      },
+      {
+        "frame": 1269002,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.266362838974149
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.06337957405152554
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.05171330256694774
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1269002.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1269002.png"
+      },
+      {
+        "frame": 1295599,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.2929045248250737
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.0647079458988894
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.05279716114902492
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1295599.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1295599.png"
+      },
+      {
+        "frame": 1322961,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.3202096196949091
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.06607452523067757
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.05391219436791412
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1322961.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1322961.png"
+      },
+      {
+        "frame": 1348800,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.345994881968927
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.06736503920458568
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.05496516357129391
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1348800.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1348800.png"
+      },
+      {
+        "frame": 1374639,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.3717801442429447
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.06865555317849382
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.0560181327746737
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1374639.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1374639.png"
+      },
+      {
+        "frame": 1401999,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.3990832432722073
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.07002203262143382
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.05713308449124443
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1401999.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1401999.png"
+      },
+      {
+        "frame": 1427837,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.4248675076259392
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.07131249665091786
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.058186012943464996
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1427837.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1427837.png"
+      },
+      {
+        "frame": 1454440,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.451415180998581
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.07264116816482623
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.059270116032497565
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1454440.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1454440.png"
+      },
+      {
+        "frame": 1481040,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.4779598606103643
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.07396968984546233
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.06035409686805244
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1481040.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1481040.png"
+      },
+      {
+        "frame": 1508392,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.5052549762773382
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.07533576973300965
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.06146872257534932
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1508392.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1508392.png"
+      },
+      {
+        "frame": 1534239,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.531048221913645
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.07662668326231045
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.06252201778800295
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1534239.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1534239.png"
+      },
+      {
+        "frame": 1560842,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.557595895286287
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.07795535477621882
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.06360612087703553
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1560842.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1560842.png"
+      },
+      {
+        "frame": 1586672,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.5833721762777293
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.0792454192503102
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.06465872331998225
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1586672.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1586672.png"
+      },
+      {
+        "frame": 1614796,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.6114376864056164
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.08065005623325042
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.06580480892220575
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1614796.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1614796.png"
+      },
+      {
+        "frame": 1641398,
+        "accepted": true,
+        "transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.637984361857972
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.08197867780273468
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.06688887126007909
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "rgb": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\rgb_1641398.png",
+        "depth": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\test_plant_20260928162111_L515\\depth_1641398.png"
+      }
+    ],
+    "native_feature_keep_mask": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_l515_20261007\\l515_sensor_v1\\native_keep_mask.png",
+    "calibration": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_l515_20261007\\l515_sensor_v1\\calibration_frozen.json",
+    "calibration_sha256": "68d6bd2abe9f5ad243cc68d35a69c93a1fd48f5590b20b5a312883661ea60c07",
+    "exclusion_source": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_l515_20261007\\sensor_audit\\gantry_housing_allow_native.png",
+    "exclusion_sha256": "2bdfd2f0531dbe1e59d3542967e5c4cc553bfc84f719ae729a4252f08b4d0a23",
+    "sensor_unit_m": 0.00025,
+    "metric_scale_status": "conditional_encoder_metres_not_independently_traceable",
+    "manual_plant_dimensions_used": false,
+    "application_source_changed": false
+  }
+}

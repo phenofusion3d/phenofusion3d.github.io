@@ -1,0 +1,19 @@
+{
+  "status": "pass_saved_cloud_input_reuse_only",
+  "source": {
+    "id": "prior_109_candidate",
+    "label": "Earlier saved upright candidate",
+    "cloud": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\integration_109_final\\reviewed_result\\plant_upright.ply",
+    "sha256": "e872fb8065c9cff2464a4ec0ac72ab87ab6fee749470391a021bc0da6c8da8a9"
+  },
+  "source_recording": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\20260901122109",
+  "source_points": 1266476,
+  "coordinate_unit": "unknown",
+  "measurement_count": 0,
+  "all_eligible_groups_empty_with_null_errors": true,
+  "source_fingerprints_unchanged": true,
+  "physical_accuracy_validated": false,
+  "segmentation_generalization_validated": false,
+  "reconstruction_rerun": false,
+  "report": "prior_cloud_workspace/result/index.html"
+}

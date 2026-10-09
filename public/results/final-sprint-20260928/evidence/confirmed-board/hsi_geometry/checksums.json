@@ -1,0 +1,12 @@
+{
+  "fit_shared_plane.py": "363abd924d2b382e2eddbf624d1d8979208f6a093b1862c86271c2de1def5991",
+  "grid_spacing.json": "c9a16af7b63b4f382d742ba7657d5aa7d269a9e59d14b0a83a3ccc1bbc69a697",
+  "index.html": "edab1918818e3b605e89d228045fc29113c03d7ed98ca9a41befc775a84d264c",
+  "REPORT.txt": "c7c84f794f47f56c4748f88903587873dec7fe997c839f82a18c5bf2095e38d0",
+  "shared_metric_controls.csv": "cf1a0cb747602724e796e0cb12610fc582ba87e8fa7ce39c7f4f5bd6565179d0",
+  "shared_plane_calibration.json": "dd9295c1b514817d0e10c53aec0ff3474ee52ee9860c0a518408e22ef15a1c5f",
+  "shared_plane_diagnostics.png": "cfdac9cb3a3cb425c59b465ee8dfb89868f58ebf3a7f6059676d664d2231052b",
+  "summary.json": "0b7590084654993b79f574bfd424ce000ffa4bfad13cf3936fd3e960d4e273d7",
+  "validation.json": "dd78a9df068bccb317129fbed4196fe4c6416cac91316d565b86a4dd65d23ddc",
+  "write_report.py": "f0626b493c85c609be25b09e9614e325dc30bf255f15375a67e182afef2f08e4"
+}

@@ -1,0 +1,99 @@
+{
+  "warning": "Measured camera-space DN; any Q/Q0 is provisional reference-relative signal. No calibrated reflectance, physiological interpretation, or 3D fusion.",
+  "summary": "summary.json",
+  "arrays": {
+    "raw_DN": {
+      "shape": [
+        1613,
+        224
+      ],
+      "dtype": "uint16"
+    },
+    "band_quality_flags": {
+      "shape": [
+        1613,
+        224
+      ],
+      "dtype": "uint8"
+    },
+    "scan_line": {
+      "shape": [
+        1613
+      ],
+      "dtype": "int32"
+    },
+    "detector_column": {
+      "shape": [
+        1613
+      ],
+      "dtype": "int32"
+    },
+    "patch_id": {
+      "shape": [
+        1613
+      ],
+      "dtype": "uint16"
+    },
+    "source_band_zero_based": {
+      "shape": [
+        224
+      ],
+      "dtype": "int32"
+    },
+    "wavelength_nm": {
+      "shape": [
+        224
+      ],
+      "dtype": "float64"
+    },
+    "Q_assumed_or_confirmed_dark": {
+      "shape": [
+        1613,
+        224
+      ],
+      "dtype": "float32"
+    },
+    "Q_zero_offset": {
+      "shape": [
+        1613,
+        224
+      ],
+      "dtype": "float32"
+    },
+    "indices_dark": {
+      "shape": [
+        1613,
+        6
+      ],
+      "dtype": "float32"
+    },
+    "index_flags_dark": {
+      "shape": [
+        1613,
+        6
+      ],
+      "dtype": "uint8"
+    },
+    "indices_zero": {
+      "shape": [
+        1613,
+        6
+      ],
+      "dtype": "float32"
+    },
+    "index_flags_zero": {
+      "shape": [
+        1613,
+        6
+      ],
+      "dtype": "uint8"
+    },
+    "index_names": {
+      "shape": [
+        6
+      ],
+      "dtype": "<U16"
+    }
+  },
+  "sha256": "de7bc2286e8c180883770b3972b17af18576b9b66439037154669321260d8624"
+}

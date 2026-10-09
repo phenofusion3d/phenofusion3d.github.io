@@ -1,0 +1,56 @@
+{
+  "warning": "Q=(DN-D)/(W-D) uses an unconfirmed scan-tail offset. Q0=DN/W assumes zero offset. The board reflectance spectrum is unknown. These are reference-relative signals, not calibrated reflectance. R1–R5 are independently reviewed scan regions, not operator-confirmed 3D plant identities. Samples are spatially correlated; distribution ranges are not confidence intervals or biological replicates.",
+  "all_saved_samples_included": true,
+  "all_raw_scene_pixels_included": false,
+  "sampling": "Existing assistant-reviewed patch interiors sampled every second line and column; no new segmentation or sampling.",
+  "region_policy": "R1–R5 independently describe each sensor's scan-order regions. Never assert Rn equals Pn or cross-camera matched pixels.",
+  "statistics": "Unweighted empirical distributions over saved samples; pooled results are influenced by patch size. SD is population descriptive SD. No SEM, p-values or confidence intervals; samples are spatially correlated.",
+  "Q_policy": "Q and Q0 use the same conservative saved band eligibility (bits 1–16 invalidate; bit 32 is advisory only for Q). No fill, clipping-to-range, extrapolation or NaN-to-zero conversion.",
+  "index_policy": "All required bands must have zero quality flags; the original index masks are preserved. Q denominator floor 0.01 is exploratory, not a calibrated noise bound.",
+  "offset_difference_policy": "Differences are paired by identical sensor, source pixel and wavelength/descriptor; changes in validity are reported separately.",
+  "fx17_ratio": {
+    "name": "SR_1300_1450_provisional",
+    "published_reflectance_formula": "R1300/R1450",
+    "diagnostic_formula": "Q1301.56/Q1449.68; separately Q0_1301.56/Q0_1449.68",
+    "requested_nm": [
+      1300,
+      1450
+    ],
+    "actual_nm": [
+      1301.56,
+      1449.68
+    ],
+    "source_band_zero_based": [
+      105,
+      147
+    ],
+    "nearest_band_tolerance_nm": 2,
+    "denominator_floor_Q_units": 0.01,
+    "scope": "One new reference-relative signal descriptor, inspired by a published leaf reflectance ratio. No inference of LWT, EWT, RWC, plant stress, health or inter-species ranking.",
+    "normalization_limit": "Unknown white-board spectral reflectance, lighting geometry, atmospheric/optical path, and unconfirmed tail offset affect this ratio. The literature's reflectance-to-water relationship is not transferred to these Q measurements."
+  },
+  "fx17_excluded_formulas": {
+    "NDVI": "800 and 680 nm absent",
+    "NDRE": "790 and 720 nm absent",
+    "GNDVI": "800 and 550 nm absent",
+    "PRI": "531 and 570 nm absent",
+    "PSRI": "678, 500 and 750 nm absent",
+    "SIPI": "800, 445 and 680 nm absent",
+    "WI_900_970": "900 nm absent; measured range begins at 935.61 nm",
+    "NDWI_860_1240": "860 nm absent",
+    "MSI_1600_820": "820 nm absent"
+  },
+  "primary_source": {
+    "authors": "Seelig et al.",
+    "year": 2008,
+    "title": "Relations of remote sensing leaf water indices to leaf water thickness in cowpea, bean, and sugarbeet plants",
+    "journal": "Remote Sensing of Environment",
+    "volume": 112,
+    "pages": "445–455",
+    "doi": "10.1016/j.rse.2007.05.002",
+    "url": "https://doi.org/10.1016/j.rse.2007.05.002",
+    "publisher_url": "https://www.sciencedirect.com/science/article/pii/S0034425707002015",
+    "checked": "2026-10-07",
+    "support": "Primary study explicitly evaluates reflected R1300/R1450. Accessed indexed publisher abstract and formula description; direct publisher open returned 403. Used only to justify formula selection, not a biological calibration of this dataset."
+  }
+}

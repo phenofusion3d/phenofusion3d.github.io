@@ -1,0 +1,183 @@
+{
+  "schema": "cross_camera.joint_static_rigid_rgb_seed.v1",
+  "status": "provisional_rgb_alignment_seed_requires_sensor_consistency_gate",
+  "coordinate_equation": "p_D405_reference = R @ p_L515_reference + t; camera pose/points are column vectors",
+  "T_D405_reference_from_L515_reference": [
+    [
+      0.9984611372515598,
+      -0.025749951757785328,
+      -0.049115144128808956,
+      0.05919789333484046
+    ],
+    [
+      0.023578351131466575,
+      0.9987403109483413,
+      -0.044292805789784194,
+      -0.028223493752142875
+    ],
+    [
+      0.050193811931783155,
+      0.043066591126788754,
+      0.9978105280926208,
+      -0.041244477369579056
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "T_L515_reference_from_D405_reference": [
+    [
+      0.9984611372515598,
+      0.023578351131466578,
+      0.050193811931783155,
+      -0.05637111491584323
+    ],
+    [
+      -0.025749951757785335,
+      0.9987403109483415,
+      0.043066591126788754,
+      0.03148854286671217
+    ],
+    [
+      -0.04911514412880895,
+      -0.044292805789784194,
+      0.9978105280926208,
+      0.04281158908083352
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "fixed_bundles": true,
+  "fixed_factory_intrinsics": true,
+  "raw_depth_used_for_fitting": false,
+  "similarity_scale_fitted": false,
+  "manual_plant_dimensions_used": false,
+  "training_candidate_observations": 196,
+  "training_used_observations": 73,
+  "training_unique_landmarks": 59,
+  "training_median_px": 1.010194768788386,
+  "training_p90_px": 1.898620281219914,
+  "heldout_candidate_observations": 41,
+  "heldout_unique_landmarks": 24,
+  "heldout_within_2px": 5,
+  "heldout_all_median_px": 4.626792272278135,
+  "heldout_inlier_median_px": 1.0481571842602275,
+  "heldout_inlier_p90_px": 1.378746853001222,
+  "per_frame": [
+    {
+      "frame": 0,
+      "fit_observations": 0,
+      "fit_median_px": null,
+      "heldout_candidates": 8,
+      "heldout_within_2px": 0,
+      "heldout_median_all_px": 4.296714490321098,
+      "heldout_inlier_median_px": null,
+      "leave_frame_out_local_inlier_median_px": 4.409780636687835,
+      "leave_frame_out_local_inlier_p90_px": 5.437034514457275
+    },
+    {
+      "frame": 211121,
+      "fit_observations": 13,
+      "fit_median_px": 0.7047731194142081,
+      "heldout_candidates": 6,
+      "heldout_within_2px": 1,
+      "heldout_median_all_px": 3.446035102862676,
+      "heldout_inlier_median_px": 1.0481571842602275,
+      "leave_frame_out_local_inlier_median_px": 2.7548962623069686,
+      "leave_frame_out_local_inlier_p90_px": 3.4432426911073697
+    },
+    {
+      "frame": 417039,
+      "fit_observations": 41,
+      "fit_median_px": 0.8566738008171059,
+      "heldout_candidates": 4,
+      "heldout_within_2px": 3,
+      "heldout_median_all_px": 1.0703258153240505,
+      "heldout_inlier_median_px": 1.019046745401346,
+      "leave_frame_out_local_inlier_median_px": 2.024597682913531,
+      "leave_frame_out_local_inlier_p90_px": 3.498952295255855
+    },
+    {
+      "frame": 622242,
+      "fit_observations": 19,
+      "fit_median_px": 1.8506302007494957,
+      "heldout_candidates": 4,
+      "heldout_within_2px": 1,
+      "heldout_median_all_px": 2.913285573981155,
+      "heldout_inlier_median_px": 1.5501748315041999,
+      "leave_frame_out_local_inlier_median_px": 2.5265412331671095,
+      "leave_frame_out_local_inlier_p90_px": 3.3782246530969373
+    },
+    {
+      "frame": 828961,
+      "fit_observations": 0,
+      "fit_median_px": null,
+      "heldout_candidates": 6,
+      "heldout_within_2px": 0,
+      "heldout_median_all_px": 4.556673436631161,
+      "heldout_inlier_median_px": null,
+      "leave_frame_out_local_inlier_median_px": 4.679323074545443,
+      "leave_frame_out_local_inlier_p90_px": 5.377392399931549
+    },
+    {
+      "frame": 1034161,
+      "fit_observations": 0,
+      "fit_median_px": null,
+      "heldout_candidates": 7,
+      "heldout_within_2px": 0,
+      "heldout_median_all_px": 7.692834586260235,
+      "heldout_inlier_median_px": null,
+      "leave_frame_out_local_inlier_median_px": 7.692834586260235,
+      "leave_frame_out_local_inlier_p90_px": 8.331190781357495
+    },
+    {
+      "frame": 1243159,
+      "fit_observations": 0,
+      "fit_median_px": null,
+      "heldout_candidates": 6,
+      "heldout_within_2px": 0,
+      "heldout_median_all_px": 9.712622172097017,
+      "heldout_inlier_median_px": null,
+      "leave_frame_out_local_inlier_median_px": 9.493728586461426,
+      "leave_frame_out_local_inlier_p90_px": 10.170439739993475
+    }
+  ],
+  "depth_diagnostic_count": 29,
+  "depth_minus_rgb_z_m_quantiles": [
+    -0.011809232875223508,
+    -0.0023283663046399722,
+    0.006884123470416004,
+    0.020180976547045003,
+    0.22995661283709867
+  ],
+  "depth_diagnostic_status": "Native-pixel samples only; cannot infer bias until raster alignment verified. Patch smoothness does not establish correct physical surface.",
+  "sources_sha256": {
+    "generated\\research_l515_20261007\\cross_camera\\static_correspondences_0.json": "7ac0f5220caad479f463000debb1e839954264badd6b02cf71da4954914f8086",
+    "generated\\research_l515_20261007\\cross_camera\\static_correspondences_1034161.json": "63841829bdf789978fc0e430f98bbdcbfcd1c7743bcb9a7ea0410555f13e5303",
+    "generated\\research_l515_20261007\\cross_camera\\static_correspondences_1243159.json": "e7d6f390e90e2ab2df02b6c27f6d4a2b5f392c6a06bc1e2010c83055a6d56fc3",
+    "generated\\research_l515_20261007\\cross_camera\\static_correspondences_211121.json": "3789a0d4e70e0ccd73b94a719507b9782a50b9cacac9f78c969a6ba7e7f36680",
+    "generated\\research_l515_20261007\\cross_camera\\static_correspondences_417039.json": "0bd860c816631adc0804b083053d0d6c8cf5cbca320ccda0c189eb569e1f4834",
+    "generated\\research_l515_20261007\\cross_camera\\static_correspondences_622242.json": "0de1494827e6967a3d756049120cf890a684ef22fc24d702b1764ae646e7d235",
+    "generated\\research_l515_20261007\\cross_camera\\static_correspondences_828961.json": "0874f2b1c969a29bb794a0e0287543f4b1250d64bd3a06affb0f2f72b9eac998",
+    "generated\\research_l515_20261007\\l515_sensor_v1\\bundle\\poses.json": "0bd38d6fb86dff02768b2f5943a431004fec2a66623e55403d5998d957b85a5f",
+    "generated\\research_l515_20261007\\cross_camera\\static_rgb_alignment.json": "e5a73df7de3e466d49db8fb0191642c40203504a93156e09aba785401a4d6615",
+    "generated\\research_l515_20261007\\cross_camera\\refine_static_rigid_seed.py": "3a9fb243f22788c322b43a242873b12d7ce293fdfb493ee273f212df7a57cba6"
+  },
+  "limitations": [
+    "No metric accuracy claim; both bundles inherit conditional encoder metres.",
+    "Static support lies mostly on narrow rail and slat bands; pose may be weak perpendicular to that band.",
+    "Failed descriptor candidates remain explicit; held-out passing subset must not be reported as all held-out observations.",
+    "No source-image plant correspondences or plant-cloud geometry used to align.",
+    "An image-only seed need not align raw depth surfaces because depth registration, scale and bias can differ.",
+    "All original D405/L515 files unchanged; no clouds merged."
+  ],
+  "accepted_for_fusion": false,
+  "rejection_reason": "Only5of41held-out descriptor candidates within2px; shared rigid RGB model leaves scan-dependent horizontal drift and discards entire views under a2px training gate."
+}

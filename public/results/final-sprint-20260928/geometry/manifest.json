@@ -1,0 +1,1531 @@
+{
+  "schemaVersion": 1,
+  "title": "28 September 2026 - five-plant geometry stages",
+  "status": "board-anchored metric research candidates; not complete 360-degree models or validated physical accuracy",
+  "physicalSquareMetres": 0.025,
+  "markerMetres": 0.018,
+  "dictionary": "DICT_4X4_50",
+  "format": {
+    "magic": "PF3D",
+    "headerBytes": 8,
+    "count": "uint32 little endian at byte 4",
+    "recordBytes": 15,
+    "record": "x,y,z float32 little endian then r,g,b uint8; unpadded"
+  },
+  "models": [
+    {
+      "id": "d405_all",
+      "label": "D405 / all five plants - inspection region",
+      "stage": "d405",
+      "plant": "all",
+      "file": "clouds/d405_all.bin",
+      "pointCount": 1719001,
+      "sourcePointCount": 1719001,
+      "description": "Preserved 64-view D405 RGB stereo geometry expressed at the supplied 25mm board scale. Point identities, RGB and topology unchanged; inherited voxel spacing is 1.028875mm.",
+      "bounds": {
+        "min": [
+          1.0756166220144206e-06,
+          -0.8128109542228653,
+          -0.16117156110875414
+        ],
+        "max": [
+          1.5618933151855277,
+          -0.1954705712460167,
+          0.3359058634790991
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/d405_review_reference.ply",
+      "sourceSha256": "2a2929aba132d1c92ce934de8473082f791fb45f3a69cf0bf009ed52ff3d22c5",
+      "sha256": "7c9804e6f3ada278009d7d1dd22a87e84b7372a8231d46bd9136142c6ea9eece",
+      "bytes": 25785023,
+      "provenance": "provenance/d405_all_source_indices.npz",
+      "provenanceSha256": "ec70a66db97a449055423ea2e6c234a2768cebd826ad284a3620eec7f1c6f178",
+      "selection": "preserved_inspection_region",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 5.9604531088552903e-08,
+      "cameraCounts": {
+        "0": 1719001,
+        "1": 0
+      },
+      "download": "downloads/d405_review_reference.ply.gz",
+      "downloadSha256": "d7d33b9f2dfd84f4c213a4a136a9813489e6005e824718df2be4aaeed3bab42a",
+      "downloadBytes": 20310127,
+      "downloadOriginalSha256": "2a2929aba132d1c92ce934de8473082f791fb45f3a69cf0bf009ed52ff3d22c5",
+      "downloadFormat": "gzip-compressed original binary PLY",
+      "downloadCoordinateFrame": "D405 reference camera; unmodified source, not display Y-up",
+      "downloadScope": "displayed_source_cloud",
+      "downloadLabel": "Original reference-frame PLY (.gz)"
+    },
+    {
+      "id": "d405_P1",
+      "label": "D405 / P1 - spatial crop, includes context",
+      "stage": "d405",
+      "plant": "P1",
+      "file": "clouds/d405_P1.bin",
+      "pointCount": 217216,
+      "sourcePointCount": 1719001,
+      "description": "Preserved 64-view D405 RGB stereo geometry expressed at the supplied 25mm board scale. Point identities, RGB and topology unchanged; inherited voxel spacing is 1.028875mm. New spatial display crop only: may include pot, background and neighbouring foliage; may omit outlying tissue. This is not a biological segmentation.",
+      "bounds": {
+        "min": [
+          0.15427313644130564,
+          -0.8128097757330941,
+          -0.08790407071153676
+        ],
+        "max": [
+          0.39424751830819954,
+          -0.25287973140844106,
+          0.2941212918064256
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/d405_review_reference.ply",
+      "sourceSha256": "2a2929aba132d1c92ce934de8473082f791fb45f3a69cf0bf009ed52ff3d22c5",
+      "sha256": "2a5cb67980825c78f0a98b7c9dc991581ec338d91fc8af67495433c4a4c7e146",
+      "bytes": 3258248,
+      "provenance": "provenance/d405_P1_source_indices.npz",
+      "provenanceSha256": "a97e112814aa1ec977a29e35e627302c1e398dbc6db5d35f29cfc3722b35a8ba",
+      "selection": "spatial_crop_includes_context",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 2.9802174172921525e-08,
+      "cameraCounts": {
+        "0": 217216,
+        "1": 0
+      },
+      "download": "downloads/d405_P1_reference_spatial_crop.ply.gz",
+      "downloadSha256": "9fc2587346f2cfae509c377a88a00d6ee4dc7d7fbc155ef1dacd4f8c240432d3",
+      "downloadBytes": 2539220,
+      "downloadOriginalSha256": "1f688da06e838f62393f7d7bdaf7a2e0c6a9710218b3dfe380baa80bd56503c4",
+      "downloadFormat": "gzip-compressed binary PLY; exact selected source records",
+      "downloadCoordinateFrame": "D405 reference camera; exact source records, not display Y-up",
+      "downloadScope": "displayed_spatial_crop",
+      "downloadLabel": "Selected spatial crop PLY (.gz), includes context",
+      "cropBoundsBoardZUp": {
+        "min": [
+          0.13934831114949453,
+          -0.3008314566282505,
+          -0.8128109868562678
+        ],
+        "max": [
+          0.39506832078964216,
+          0.10029650288715829,
+          -0.10288746669066683
+        ]
+      },
+      "parentSourceDownload": "downloads/d405_review_reference.ply.gz",
+      "parentSourceDownloadSha256": "d7d33b9f2dfd84f4c213a4a136a9813489e6005e824718df2be4aaeed3bab42a"
+    },
+    {
+      "id": "d405_P2",
+      "label": "D405 / P2 - spatial crop, includes context",
+      "stage": "d405",
+      "plant": "P2",
+      "file": "clouds/d405_P2.bin",
+      "pointCount": 466062,
+      "sourcePointCount": 1719001,
+      "description": "Preserved 64-view D405 RGB stereo geometry expressed at the supplied 25mm board scale. Point identities, RGB and topology unchanged; inherited voxel spacing is 1.028875mm. New spatial display crop only: may include pot, background and neighbouring foliage; may omit outlying tissue. This is not a biological segmentation.",
+      "bounds": {
+        "min": [
+          0.4336517965736701,
+          -0.8128025400299633,
+          -0.06793342086347706
+        ],
+        "max": [
+          0.8206302222006199,
+          -0.20207248818089749,
+          0.22521830418813596
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/d405_review_reference.ply",
+      "sourceSha256": "2a2929aba132d1c92ce934de8473082f791fb45f3a69cf0bf009ed52ff3d22c5",
+      "sha256": "28deffe8397e68f44f5a97dfbde911a39338220e2154e33362c57dc23f9339f2",
+      "bytes": 6990938,
+      "provenance": "provenance/d405_P2_source_indices.npz",
+      "provenanceSha256": "f7a723dc8f64127cd97f3de220a15fffc0f9a0fff9dff74c683b239f39345b7f",
+      "selection": "spatial_crop_includes_context",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 2.980228930304918e-08,
+      "cameraCounts": {
+        "0": 466062,
+        "1": 0
+      },
+      "download": "downloads/d405_P2_reference_spatial_crop.ply.gz",
+      "downloadSha256": "ce36de69bf46273dc3d98d33fa849d08c4278e18b92361897e600b0d174b7860",
+      "downloadBytes": 5536364,
+      "downloadOriginalSha256": "74b32f6303c5925c88b6028676ebc72666c346e44870586fa4b1e7bd26a5b61a",
+      "downloadFormat": "gzip-compressed binary PLY; exact selected source records",
+      "downloadCoordinateFrame": "D405 reference camera; exact source records, not display Y-up",
+      "downloadScope": "displayed_spatial_crop",
+      "downloadLabel": "Selected spatial crop PLY (.gz), includes context",
+      "cropBoundsBoardZUp": {
+        "min": [
+          0.40856458652061356,
+          -0.22522872296533816,
+          -0.8128109868562678
+        ],
+        "max": [
+          0.8206302553120159,
+          0.08240185895116242,
+          -0.10288746669066683
+        ]
+      },
+      "parentSourceDownload": "downloads/d405_review_reference.ply.gz",
+      "parentSourceDownloadSha256": "d7d33b9f2dfd84f4c213a4a136a9813489e6005e824718df2be4aaeed3bab42a"
+    },
+    {
+      "id": "d405_P3",
+      "label": "D405 / P3 - spatial crop, includes context",
+      "stage": "d405",
+      "plant": "P3",
+      "file": "clouds/d405_P3.bin",
+      "pointCount": 364106,
+      "sourcePointCount": 1719001,
+      "description": "Preserved 64-view D405 RGB stereo geometry expressed at the supplied 25mm board scale. Point identities, RGB and topology unchanged; inherited voxel spacing is 1.028875mm. New spatial display crop only: may include pot, background and neighbouring foliage; may omit outlying tissue. This is not a biological segmentation.",
+      "bounds": {
+        "min": [
+          0.6654005543739572,
+          -0.8127317725254318,
+          -0.06793342086347706
+        ],
+        "max": [
+          0.9324823418128891,
+          -0.22279180296330436,
+          0.20029616800700686
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/d405_review_reference.ply",
+      "sourceSha256": "2a2929aba132d1c92ce934de8473082f791fb45f3a69cf0bf009ed52ff3d22c5",
+      "sha256": "b26a4268ddcae1c9a0868ff98d3f76401e5d61ba969afbc2df933c1cf730dd64",
+      "bytes": 5461598,
+      "provenance": "provenance/d405_P3_source_indices.npz",
+      "provenanceSha256": "1448e0774cd3200c35dba7a3658a1dfce10588f134178f0e90ee49491678e3f0",
+      "selection": "spatial_crop_includes_context",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 2.9802286749536222e-08,
+      "cameraCounts": {
+        "0": 364106,
+        "1": 0
+      },
+      "download": "downloads/d405_P3_reference_spatial_crop.ply.gz",
+      "downloadSha256": "b955739c27f8826240403b20fd69d27089febeb2278cf11f52b43ba477d2abf4",
+      "downloadBytes": 4272018,
+      "downloadOriginalSha256": "c7ef9af6654b3beb3da9ddedcac4504073ad6d1f64104ab7ea9d8d5fb0cae5f1",
+      "downloadFormat": "gzip-compressed binary PLY; exact selected source records",
+      "downloadCoordinateFrame": "D405 reference camera; exact source records, not display Y-up",
+      "downloadScope": "displayed_spatial_crop",
+      "downloadLabel": "Selected spatial crop PLY (.gz), includes context",
+      "cropBoundsBoardZUp": {
+        "min": [
+          0.6554025785676487,
+          -0.20029951876144905,
+          -0.8128109868562678
+        ],
+        "max": [
+          0.9506334278030579,
+          0.09038961144040203,
+          -0.10288746669066683
+        ]
+      },
+      "parentSourceDownload": "downloads/d405_review_reference.ply.gz",
+      "parentSourceDownloadSha256": "d7d33b9f2dfd84f4c213a4a136a9813489e6005e824718df2be4aaeed3bab42a"
+    },
+    {
+      "id": "d405_P4",
+      "label": "D405 / P4 - spatial crop, includes context",
+      "stage": "d405",
+      "plant": "P4",
+      "file": "clouds/d405_P4.bin",
+      "pointCount": 250582,
+      "sourcePointCount": 1719001,
+      "description": "Preserved 64-view D405 RGB stereo geometry expressed at the supplied 25mm board scale. Point identities, RGB and topology unchanged; inherited voxel spacing is 1.028875mm. New spatial display crop only: may include pot, background and neighbouring foliage; may omit outlying tissue. This is not a biological segmentation.",
+      "bounds": {
+        "min": [
+          0.9621361736873957,
+          -0.8126797649158906,
+          -0.0428191579750527
+        ],
+        "max": [
+          1.1784465949260114,
+          -0.1954705712460167,
+          0.16206333767533518
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/d405_review_reference.ply",
+      "sourceSha256": "2a2929aba132d1c92ce934de8473082f791fb45f3a69cf0bf009ed52ff3d22c5",
+      "sha256": "d4fb1c1fe8ebe2506d6382ad477521f8e7d20d4d319e0bc9ad1241c9d21bd226",
+      "bytes": 3758738,
+      "provenance": "provenance/d405_P4_source_indices.npz",
+      "provenanceSha256": "e1bc5f07070729ea67fe1579d56b830c66b2c92099dfb8d398a0774eb11f7182",
+      "selection": "spatial_crop_includes_context",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 5.9604531088552903e-08,
+      "cameraCounts": {
+        "0": 250582,
+        "1": 0
+      },
+      "download": "downloads/d405_P4_reference_spatial_crop.ply.gz",
+      "downloadSha256": "e370ace813c25820162577331c5d9d2061ee68628208bf2b32fbde451a5e13cf",
+      "downloadBytes": 2999013,
+      "downloadOriginalSha256": "71ee8072336e28070acbc31270f9609a5354a235ea69b9a24108c2cc8440d0a0",
+      "downloadFormat": "gzip-compressed binary PLY; exact selected source records",
+      "downloadCoordinateFrame": "D405 reference camera; exact source records, not display Y-up",
+      "downloadScope": "displayed_spatial_crop",
+      "downloadLabel": "Selected spatial crop PLY (.gz), includes context",
+      "cropBoundsBoardZUp": {
+        "min": [
+          0.9587600375534245,
+          -0.17694280442422988,
+          -0.8128109868562678
+        ],
+        "max": [
+          1.1784471755114945,
+          0.11127196779978976,
+          -0.10288746669066683
+        ]
+      },
+      "parentSourceDownload": "downloads/d405_review_reference.ply.gz",
+      "parentSourceDownloadSha256": "d7d33b9f2dfd84f4c213a4a136a9813489e6005e824718df2be4aaeed3bab42a"
+    },
+    {
+      "id": "d405_P5",
+      "label": "D405 / P5 - spatial crop, includes context",
+      "stage": "d405",
+      "plant": "P5",
+      "file": "clouds/d405_P5.bin",
+      "pointCount": 459798,
+      "sourcePointCount": 1719001,
+      "description": "Preserved 64-view D405 RGB stereo geometry expressed at the supplied 25mm board scale. Point identities, RGB and topology unchanged; inherited voxel spacing is 1.028875mm. New spatial display crop only: may include pot, background and neighbouring foliage; may omit outlying tissue. This is not a biological segmentation.",
+      "bounds": {
+        "min": [
+          1.2102610779822185,
+          -0.8127956684920494,
+          -0.16117156110875414
+        ],
+        "max": [
+          1.5618933151855277,
+          -0.4491411888226767,
+          0.2318753281751943
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/d405_review_reference.ply",
+      "sourceSha256": "2a2929aba132d1c92ce934de8473082f791fb45f3a69cf0bf009ed52ff3d22c5",
+      "sha256": "88475b92a2955d7a16587a19b3b6a0fc9b015e54caae22c81f2772e4f2bd95df",
+      "bytes": 6896978,
+      "provenance": "provenance/d405_P5_source_indices.npz",
+      "provenanceSha256": "b4f8d031ee1210006e7885cf350ba1462928650dba73fe7df53b9e5e417e4a2d",
+      "selection": "spatial_crop_includes_context",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 5.9604482904873635e-08,
+      "cameraCounts": {
+        "0": 459798,
+        "1": 0
+      },
+      "download": "downloads/d405_P5_reference_spatial_crop.ply.gz",
+      "downloadSha256": "fe6ee3a7fbdaa781298db18bb6340e3ef26b7fc663a8b2aabf3fbbf09a86c50c",
+      "downloadBytes": 5444797,
+      "downloadOriginalSha256": "c85eed6e189b717ef969ee37ada449fc0785febb01ffcc7f387f31eb876c221d",
+      "downloadFormat": "gzip-compressed binary PLY; exact selected source records",
+      "downloadCoordinateFrame": "D405 reference camera; exact source records, not display Y-up",
+      "downloadScope": "displayed_spatial_crop",
+      "downloadLabel": "Selected spatial crop PLY (.gz), includes context",
+      "cropBoundsBoardZUp": {
+        "min": [
+          1.1990392367933238,
+          -0.2318933401419778,
+          -0.8128109868562678
+        ],
+        "max": [
+          1.5818933151855277,
+          0.1701553852140595,
+          -0.10288746669066683
+        ]
+      },
+      "parentSourceDownload": "downloads/d405_review_reference.ply.gz",
+      "parentSourceDownloadSha256": "d7d33b9f2dfd84f4c213a4a136a9813489e6005e824718df2be4aaeed3bab42a"
+    },
+    {
+      "id": "l515_all",
+      "label": "L515 aligned / all five plants - inspection region",
+      "stage": "l515",
+      "plant": "all",
+      "file": "clouds/l515_all.bin",
+      "pointCount": 199811,
+      "sourcePointCount": 199811,
+      "description": "New 64-view L515 sensor ICP/TSDF with board-based empirical depth adjustment, rigidly aligned to metric D405; all reviewed L515 points before fusion filtering. Device depth units are not independently confirmed.",
+      "bounds": {
+        "min": [
+          3.3953400083073203e-06,
+          -0.8128103736895977,
+          -0.4115492246327749
+        ],
+        "max": [
+          1.766698331169262,
+          -0.45103607900851506,
+          0.2679821674214206
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/l515_aligned_review_reference.ply",
+      "sourceSha256": "25af387e343f752fdcc824eb905aa664e2f9a92c8d2b405ef3ad26f737eced2b",
+      "sha256": "38cf75841a4faafc0ba1276a57db557154552a0afaa8763b4816b2e64dce2c88",
+      "bytes": 2997173,
+      "provenance": "provenance/l515_all_source_indices.npz",
+      "provenanceSha256": "34692d161fbf5aaa4ef65ff6727c1db3a80dba521efbaf68109dc5c46e57d967",
+      "selection": "preserved_inspection_region",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 5.960371662894204e-08,
+      "cameraCounts": {
+        "0": 0,
+        "1": 199811
+      },
+      "download": "downloads/l515_aligned_review_reference.ply.gz",
+      "downloadSha256": "dd24cd5c8e6478a54a43211cfb959ed5ef1f413db1b6ae2c3b3cc1a9fb00c82c",
+      "downloadBytes": 4867744,
+      "downloadOriginalSha256": "25af387e343f752fdcc824eb905aa664e2f9a92c8d2b405ef3ad26f737eced2b",
+      "downloadFormat": "gzip-compressed original binary PLY",
+      "downloadCoordinateFrame": "D405 reference camera; unmodified source, not display Y-up",
+      "downloadScope": "displayed_source_cloud",
+      "downloadLabel": "Original reference-frame PLY (.gz)"
+    },
+    {
+      "id": "l515_P1",
+      "label": "L515 aligned / P1 - spatial crop, includes context",
+      "stage": "l515",
+      "plant": "P1",
+      "file": "clouds/l515_P1.bin",
+      "pointCount": 15052,
+      "sourcePointCount": 199811,
+      "description": "New 64-view L515 sensor ICP/TSDF with board-based empirical depth adjustment, rigidly aligned to metric D405; all reviewed L515 points before fusion filtering. Device depth units are not independently confirmed. New spatial display crop only: may include pot, background and neighbouring foliage; may omit outlying tissue. This is not a biological segmentation.",
+      "bounds": {
+        "min": [
+          0.2037442362903187,
+          -0.8128073677784016,
+          -0.017134158311267484
+        ],
+        "max": [
+          0.3623299619454129,
+          -0.45216485664369005,
+          0.2266843719358725
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/l515_aligned_review_reference.ply",
+      "sourceSha256": "25af387e343f752fdcc824eb905aa664e2f9a92c8d2b405ef3ad26f737eced2b",
+      "sha256": "7b74061a795486ca766ee674a1e6f90ae50a2b106421a862e8a94c55b3a164db",
+      "bytes": 225788,
+      "provenance": "provenance/l515_P1_source_indices.npz",
+      "provenanceSha256": "e20867ad7556ef8f98d62fb894d84f0ec5f102e3e1407936d0c0f18db453ffa1",
+      "selection": "spatial_crop_includes_context",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 2.980134161667536e-08,
+      "cameraCounts": {
+        "0": 0,
+        "1": 15052
+      },
+      "download": "downloads/l515_P1_reference_spatial_crop.ply.gz",
+      "downloadSha256": "f8410d246c96bdb66ce214e186eda6694e7ae269a4a0d5a342149dbbd918a7fd",
+      "downloadBytes": 369939,
+      "downloadOriginalSha256": "9821b9e33a1f5f20f3a2b1af600dc2749fa9b69eba1eb56f8970cd38870943ac",
+      "downloadFormat": "gzip-compressed binary PLY; exact selected source records",
+      "downloadCoordinateFrame": "D405 reference camera; exact source records, not display Y-up",
+      "downloadScope": "displayed_spatial_crop",
+      "downloadLabel": "Selected spatial crop PLY (.gz), includes context",
+      "cropBoundsBoardZUp": {
+        "min": [
+          0.13934831114949453,
+          -0.3008314566282505,
+          -0.8128109868562678
+        ],
+        "max": [
+          0.39506832078964216,
+          0.10029650288715829,
+          -0.10288746669066683
+        ]
+      },
+      "parentSourceDownload": "downloads/l515_aligned_review_reference.ply.gz",
+      "parentSourceDownloadSha256": "dd24cd5c8e6478a54a43211cfb959ed5ef1f413db1b6ae2c3b3cc1a9fb00c82c"
+    },
+    {
+      "id": "l515_P2",
+      "label": "L515 aligned / P2 - spatial crop, includes context",
+      "stage": "l515",
+      "plant": "P2",
+      "file": "clouds/l515_P2.bin",
+      "pointCount": 49030,
+      "sourcePointCount": 199811,
+      "description": "New 64-view L515 sensor ICP/TSDF with board-based empirical depth adjustment, rigidly aligned to metric D405; all reviewed L515 points before fusion filtering. Device depth units are not independently confirmed. New spatial display crop only: may include pot, background and neighbouring foliage; may omit outlying tissue. This is not a biological segmentation.",
+      "bounds": {
+        "min": [
+          0.44632755107869815,
+          -0.8128022161238412,
+          -0.0633458734125068
+        ],
+        "max": [
+          0.8206251783622481,
+          -0.45103607900851506,
+          0.1778649441822476
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/l515_aligned_review_reference.ply",
+      "sourceSha256": "25af387e343f752fdcc824eb905aa664e2f9a92c8d2b405ef3ad26f737eced2b",
+      "sha256": "56a3ce63ec7e819bcdb72bf21755bffd5d402b6d35e3325bc371a2d8146ed997",
+      "bytes": 735458,
+      "provenance": "provenance/l515_P2_source_indices.npz",
+      "provenanceSha256": "3cf18cd60ab7069af16c5d19857d29a27115e666852899baafc6019c3bf89935",
+      "selection": "spatial_crop_includes_context",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 2.980217161940857e-08,
+      "cameraCounts": {
+        "0": 0,
+        "1": 49030
+      },
+      "download": "downloads/l515_P2_reference_spatial_crop.ply.gz",
+      "downloadSha256": "a781c23d4d32584912e2342672281832df2a15470b93649f2e1a4217a06d5550",
+      "downloadBytes": 1196481,
+      "downloadOriginalSha256": "cf6f778f45315290b1f5564f098d724a7a9debefa627f600faaf2a11e14f54d0",
+      "downloadFormat": "gzip-compressed binary PLY; exact selected source records",
+      "downloadCoordinateFrame": "D405 reference camera; exact source records, not display Y-up",
+      "downloadScope": "displayed_spatial_crop",
+      "downloadLabel": "Selected spatial crop PLY (.gz), includes context",
+      "cropBoundsBoardZUp": {
+        "min": [
+          0.40856458652061356,
+          -0.22522872296533816,
+          -0.8128109868562678
+        ],
+        "max": [
+          0.8206302553120159,
+          0.08240185895116242,
+          -0.10288746669066683
+        ]
+      },
+      "parentSourceDownload": "downloads/l515_aligned_review_reference.ply.gz",
+      "parentSourceDownloadSha256": "dd24cd5c8e6478a54a43211cfb959ed5ef1f413db1b6ae2c3b3cc1a9fb00c82c"
+    },
+    {
+      "id": "l515_P3",
+      "label": "L515 aligned / P3 - spatial crop, includes context",
+      "stage": "l515",
+      "plant": "P3",
+      "file": "clouds/l515_P3.bin",
+      "pointCount": 48270,
+      "sourcePointCount": 199811,
+      "description": "New 64-view L515 sensor ICP/TSDF with board-based empirical depth adjustment, rigidly aligned to metric D405; all reviewed L515 points before fusion filtering. Device depth units are not independently confirmed. New spatial display crop only: may include pot, background and neighbouring foliage; may omit outlying tissue. This is not a biological segmentation.",
+      "bounds": {
+        "min": [
+          0.6804014091121704,
+          -0.8112926692644651,
+          -0.0633458734125068
+        ],
+        "max": [
+          0.9318534287710374,
+          -0.4589357164037133,
+          0.17928541935620879
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/l515_aligned_review_reference.ply",
+      "sourceSha256": "25af387e343f752fdcc824eb905aa664e2f9a92c8d2b405ef3ad26f737eced2b",
+      "sha256": "5af74360d7290c1c11defdc2331da929a41d3d8516623ba607fb4127e84ac1da",
+      "bytes": 724058,
+      "provenance": "provenance/l515_P3_source_indices.npz",
+      "provenanceSha256": "e0cb9cbd35d1da9fef577be2f04c5b6ce2eeb830ae61127c9da529963756e42a",
+      "selection": "spatial_crop_includes_context",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 2.980112845385463e-08,
+      "cameraCounts": {
+        "0": 0,
+        "1": 48270
+      },
+      "download": "downloads/l515_P3_reference_spatial_crop.ply.gz",
+      "downloadSha256": "a248c501b1c32b3436bf9e9c92877889d60159d2372d14d1b22d899d5fdc105d",
+      "downloadBytes": 1175801,
+      "downloadOriginalSha256": "7102794547f115b81bafa8a6bf0e09b61850ed039aa9b816553b781bbfa763d6",
+      "downloadFormat": "gzip-compressed binary PLY; exact selected source records",
+      "downloadCoordinateFrame": "D405 reference camera; exact source records, not display Y-up",
+      "downloadScope": "displayed_spatial_crop",
+      "downloadLabel": "Selected spatial crop PLY (.gz), includes context",
+      "cropBoundsBoardZUp": {
+        "min": [
+          0.6554025785676487,
+          -0.20029951876144905,
+          -0.8128109868562678
+        ],
+        "max": [
+          0.9506334278030579,
+          0.09038961144040203,
+          -0.10288746669066683
+        ]
+      },
+      "parentSourceDownload": "downloads/l515_aligned_review_reference.ply.gz",
+      "parentSourceDownloadSha256": "dd24cd5c8e6478a54a43211cfb959ed5ef1f413db1b6ae2c3b3cc1a9fb00c82c"
+    },
+    {
+      "id": "l515_P4",
+      "label": "L515 aligned / P4 - spatial crop, includes context",
+      "stage": "l515",
+      "plant": "P4",
+      "file": "clouds/l515_P4.bin",
+      "pointCount": 31517,
+      "sourcePointCount": 199811,
+      "description": "New 64-view L515 sensor ICP/TSDF with board-based empirical depth adjustment, rigidly aligned to metric D405; all reviewed L515 points before fusion filtering. Device depth units are not independently confirmed. New spatial display crop only: may include pot, background and neighbouring foliage; may omit outlying tissue. This is not a biological segmentation.",
+      "bounds": {
+        "min": [
+          0.9929438253408264,
+          -0.8127391399177767,
+          -0.03908789713781391
+        ],
+        "max": [
+          1.1784369713947507,
+          -0.4521999759605236,
+          0.1546154316096824
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/l515_aligned_review_reference.ply",
+      "sourceSha256": "25af387e343f752fdcc824eb905aa664e2f9a92c8d2b405ef3ad26f737eced2b",
+      "sha256": "cbbf3d1b9fd32b8b42dd9ad320fd5c9506d5cfa4730d56521118894f3526feba",
+      "bytes": 472763,
+      "provenance": "provenance/l515_P4_source_indices.npz",
+      "provenanceSha256": "54b9e552ed496ed7a80948847c42914484b92cfac05382a5d3973dc388b4791a",
+      "selection": "spatial_crop_includes_context",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 5.960174953578701e-08,
+      "cameraCounts": {
+        "0": 0,
+        "1": 31517
+      },
+      "download": "downloads/l515_P4_reference_spatial_crop.ply.gz",
+      "downloadSha256": "4f3265ab2594e76e8abe3b8e00a6c00e5db10d5eafb2e0bf7d066434c960a7c3",
+      "downloadBytes": 765652,
+      "downloadOriginalSha256": "7bb405b8fceb0e285368518f19cc8cf0dad95105d7d4da88fbfa83a625185c63",
+      "downloadFormat": "gzip-compressed binary PLY; exact selected source records",
+      "downloadCoordinateFrame": "D405 reference camera; exact source records, not display Y-up",
+      "downloadScope": "displayed_spatial_crop",
+      "downloadLabel": "Selected spatial crop PLY (.gz), includes context",
+      "cropBoundsBoardZUp": {
+        "min": [
+          0.9587600375534245,
+          -0.17694280442422988,
+          -0.8128109868562678
+        ],
+        "max": [
+          1.1784471755114945,
+          0.11127196779978976,
+          -0.10288746669066683
+        ]
+      },
+      "parentSourceDownload": "downloads/l515_aligned_review_reference.ply.gz",
+      "parentSourceDownloadSha256": "dd24cd5c8e6478a54a43211cfb959ed5ef1f413db1b6ae2c3b3cc1a9fb00c82c"
+    },
+    {
+      "id": "l515_P5",
+      "label": "L515 aligned / P5 - spatial crop, includes context",
+      "stage": "l515",
+      "plant": "P5",
+      "file": "clouds/l515_P5.bin",
+      "pointCount": 65424,
+      "sourcePointCount": 199811,
+      "description": "New 64-view L515 sensor ICP/TSDF with board-based empirical depth adjustment, rigidly aligned to metric D405; all reviewed L515 points before fusion filtering. Device depth units are not independently confirmed. New spatial display crop only: may include pot, background and neighbouring foliage; may omit outlying tissue. This is not a biological segmentation.",
+      "bounds": {
+        "min": [
+          1.2183827509329828,
+          -0.812715106196252,
+          -0.1541505891015007
+        ],
+        "max": [
+          1.561580112624239,
+          -0.46059596529809105,
+          0.19627098781729965
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/l515_aligned_review_reference.ply",
+      "sourceSha256": "25af387e343f752fdcc824eb905aa664e2f9a92c8d2b405ef3ad26f737eced2b",
+      "sha256": "64061c760b3fb466a940295e8144e4ef0141bead728264a61f621fd1698ad56e",
+      "bytes": 981368,
+      "provenance": "provenance/l515_P5_source_indices.npz",
+      "provenanceSha256": "c182c5dfc77bca972c0319bce34b19bc6cf0b426f5bcede15e5606e13cdb842e",
+      "selection": "spatial_crop_includes_context",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 5.960371662894204e-08,
+      "cameraCounts": {
+        "0": 0,
+        "1": 65424
+      },
+      "download": "downloads/l515_P5_reference_spatial_crop.ply.gz",
+      "downloadSha256": "c1f61b4fcc9d99853090fd3b658599a845354ad27d564c94dc9cffaed85c0d63",
+      "downloadBytes": 1591548,
+      "downloadOriginalSha256": "33426937a63ba16c9aa210c681607fc18386f1d3007ce4966697cc82981afeb2",
+      "downloadFormat": "gzip-compressed binary PLY; exact selected source records",
+      "downloadCoordinateFrame": "D405 reference camera; exact source records, not display Y-up",
+      "downloadScope": "displayed_spatial_crop",
+      "downloadLabel": "Selected spatial crop PLY (.gz), includes context",
+      "cropBoundsBoardZUp": {
+        "min": [
+          1.1990392367933238,
+          -0.2318933401419778,
+          -0.8128109868562678
+        ],
+        "max": [
+          1.5818933151855277,
+          0.1701553852140595,
+          -0.10288746669066683
+        ]
+      },
+      "parentSourceDownload": "downloads/l515_aligned_review_reference.ply.gz",
+      "parentSourceDownloadSha256": "dd24cd5c8e6478a54a43211cfb959ed5ef1f413db1b6ae2c3b3cc1a9fb00c82c"
+    },
+    {
+      "id": "fused_all",
+      "label": "D405 + L515 before cleanup / all five plants - inspection region",
+      "stage": "fused",
+      "plant": "all",
+      "file": "clouds/fused_all.bin",
+      "pointCount": 1740673,
+      "sourcePointCount": 1740673,
+      "description": "Observed-point union: every D405 inspection-region point retained plus 21,672 selected L515 points. No shape completion.",
+      "bounds": {
+        "min": [
+          1.0756166220144206e-06,
+          -0.8128109542228653,
+          -0.4115492246327749
+        ],
+        "max": [
+          1.766698331169262,
+          -0.1954705712460167,
+          0.3359058634790991
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/fused_review_reference.ply",
+      "sourceSha256": "2a310d7eb85db8005437170e7207ec6326e5b2fa397546ccecd1af16c5c8ed72",
+      "sha256": "02df7eb3372281833fbc7e92e45c42b49c40f21026eb38c23abea8d59b912de8",
+      "bytes": 26110103,
+      "provenance": "provenance/fused_all_source_indices.npz",
+      "provenanceSha256": "caf14bc50636edb3ba9c44740f9e1789beff1ad9e6033e61b9a35330bfe4a24d",
+      "selection": "preserved_inspection_region",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 5.9604531088552903e-08,
+      "cameraCounts": {
+        "0": 1719001,
+        "1": 21672
+      },
+      "download": "downloads/fused_review_reference.ply.gz",
+      "downloadSha256": "46685a9ac828f032a389976f712f69853f27941dbca72c7f8b23b1400844d2d3",
+      "downloadBytes": 20844220,
+      "downloadOriginalSha256": "2a310d7eb85db8005437170e7207ec6326e5b2fa397546ccecd1af16c5c8ed72",
+      "downloadFormat": "gzip-compressed original binary PLY",
+      "downloadCoordinateFrame": "D405 reference camera; unmodified source, not display Y-up",
+      "downloadScope": "displayed_source_cloud",
+      "downloadLabel": "Original reference-frame PLY (.gz)"
+    },
+    {
+      "id": "fused_P1",
+      "label": "D405 + L515 before cleanup / P1 - spatial crop, includes context",
+      "stage": "fused",
+      "plant": "P1",
+      "file": "clouds/fused_P1.bin",
+      "pointCount": 218440,
+      "sourcePointCount": 1740673,
+      "description": "Observed-point union: every D405 inspection-region point retained plus 21,672 selected L515 points. No shape completion. New spatial display crop only: may include pot, background and neighbouring foliage; may omit outlying tissue. This is not a biological segmentation.",
+      "bounds": {
+        "min": [
+          0.15427313644130564,
+          -0.8128097757330941,
+          -0.08790407071153676
+        ],
+        "max": [
+          0.39424751830819954,
+          -0.25287973140844106,
+          0.2941212918064256
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/fused_review_reference.ply",
+      "sourceSha256": "2a310d7eb85db8005437170e7207ec6326e5b2fa397546ccecd1af16c5c8ed72",
+      "sha256": "e91c984df8f079551aec248f79e302f426f9efb3ec55970690df86711a607ddf",
+      "bytes": 3276608,
+      "provenance": "provenance/fused_P1_source_indices.npz",
+      "provenanceSha256": "d6f4309cc089431f0f5bc5db955d42c44590d548c368210a5a036fb39361e2d0",
+      "selection": "spatial_crop_includes_context",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 2.9802174172921525e-08,
+      "cameraCounts": {
+        "0": 217216,
+        "1": 1224
+      },
+      "download": "downloads/fused_P1_reference_spatial_crop.ply.gz",
+      "downloadSha256": "4e9ce0cfbf56dc0e8c8bdbe4e09c46420eb19e724ffd3bf6b6ea788cd7663451",
+      "downloadBytes": 2569852,
+      "downloadOriginalSha256": "957d925b7b9f8e7a06a8b1e1b53cca091602cf740e965ca2da1e8fc67abb6b5f",
+      "downloadFormat": "gzip-compressed binary PLY; exact selected source records",
+      "downloadCoordinateFrame": "D405 reference camera; exact source records, not display Y-up",
+      "downloadScope": "displayed_spatial_crop",
+      "downloadLabel": "Selected spatial crop PLY (.gz), includes context",
+      "cropBoundsBoardZUp": {
+        "min": [
+          0.13934831114949453,
+          -0.3008314566282505,
+          -0.8128109868562678
+        ],
+        "max": [
+          0.39506832078964216,
+          0.10029650288715829,
+          -0.10288746669066683
+        ]
+      },
+      "parentSourceDownload": "downloads/fused_review_reference.ply.gz",
+      "parentSourceDownloadSha256": "46685a9ac828f032a389976f712f69853f27941dbca72c7f8b23b1400844d2d3"
+    },
+    {
+      "id": "fused_P2",
+      "label": "D405 + L515 before cleanup / P2 - spatial crop, includes context",
+      "stage": "fused",
+      "plant": "P2",
+      "file": "clouds/fused_P2.bin",
+      "pointCount": 470969,
+      "sourcePointCount": 1740673,
+      "description": "Observed-point union: every D405 inspection-region point retained plus 21,672 selected L515 points. No shape completion. New spatial display crop only: may include pot, background and neighbouring foliage; may omit outlying tissue. This is not a biological segmentation.",
+      "bounds": {
+        "min": [
+          0.4336517965736701,
+          -0.8128025400299633,
+          -0.06793342086347706
+        ],
+        "max": [
+          0.8206302222006199,
+          -0.20207248818089749,
+          0.22521830418813596
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/fused_review_reference.ply",
+      "sourceSha256": "2a310d7eb85db8005437170e7207ec6326e5b2fa397546ccecd1af16c5c8ed72",
+      "sha256": "4b9f0d225fb95e696f204f7dcfb990de8dc4c9333ef0a4500148255363aeecfb",
+      "bytes": 7064543,
+      "provenance": "provenance/fused_P2_source_indices.npz",
+      "provenanceSha256": "7c685362154e65cb1221c81d9c597096e4584371e795c1abae2351f19f345be8",
+      "selection": "spatial_crop_includes_context",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 2.980228930304918e-08,
+      "cameraCounts": {
+        "0": 466062,
+        "1": 4907
+      },
+      "download": "downloads/fused_P2_reference_spatial_crop.ply.gz",
+      "downloadSha256": "7d4264176e3f3e4874456a94e77c47dfab76c69d2a71cd7190993bd4c7c4fced",
+      "downloadBytes": 5657739,
+      "downloadOriginalSha256": "352af354a3ba7ccc3ab0a377cbf8828cc28792ce6e3d11886a0d0dd0668f889c",
+      "downloadFormat": "gzip-compressed binary PLY; exact selected source records",
+      "downloadCoordinateFrame": "D405 reference camera; exact source records, not display Y-up",
+      "downloadScope": "displayed_spatial_crop",
+      "downloadLabel": "Selected spatial crop PLY (.gz), includes context",
+      "cropBoundsBoardZUp": {
+        "min": [
+          0.40856458652061356,
+          -0.22522872296533816,
+          -0.8128109868562678
+        ],
+        "max": [
+          0.8206302553120159,
+          0.08240185895116242,
+          -0.10288746669066683
+        ]
+      },
+      "parentSourceDownload": "downloads/fused_review_reference.ply.gz",
+      "parentSourceDownloadSha256": "46685a9ac828f032a389976f712f69853f27941dbca72c7f8b23b1400844d2d3"
+    },
+    {
+      "id": "fused_P3",
+      "label": "D405 + L515 before cleanup / P3 - spatial crop, includes context",
+      "stage": "fused",
+      "plant": "P3",
+      "file": "clouds/fused_P3.bin",
+      "pointCount": 369375,
+      "sourcePointCount": 1740673,
+      "description": "Observed-point union: every D405 inspection-region point retained plus 21,672 selected L515 points. No shape completion. New spatial display crop only: may include pot, background and neighbouring foliage; may omit outlying tissue. This is not a biological segmentation.",
+      "bounds": {
+        "min": [
+          0.6654005543739572,
+          -0.8127317725254318,
+          -0.06793342086347706
+        ],
+        "max": [
+          0.9324823418128891,
+          -0.22279180296330436,
+          0.20029616800700686
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/fused_review_reference.ply",
+      "sourceSha256": "2a310d7eb85db8005437170e7207ec6326e5b2fa397546ccecd1af16c5c8ed72",
+      "sha256": "86843a73e754cd506033a1bcc80f253871159ee51f6dfdd1d373bf2981191676",
+      "bytes": 5540633,
+      "provenance": "provenance/fused_P3_source_indices.npz",
+      "provenanceSha256": "dd8f52934c9671c882c06a95473a71d6d1c08f6b910328dcba8320e81a2d75e4",
+      "selection": "spatial_crop_includes_context",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 2.9802286749536222e-08,
+      "cameraCounts": {
+        "0": 364106,
+        "1": 5269
+      },
+      "download": "downloads/fused_P3_reference_spatial_crop.ply.gz",
+      "downloadSha256": "a691209cd9f79ed3176017f20ec95601e0e4918767f51fc0fc7840d8f4d0915b",
+      "downloadBytes": 4402425,
+      "downloadOriginalSha256": "5f75091dd194a51585af8df5b3094fe988ebc2c3b7e4772c334159319087743f",
+      "downloadFormat": "gzip-compressed binary PLY; exact selected source records",
+      "downloadCoordinateFrame": "D405 reference camera; exact source records, not display Y-up",
+      "downloadScope": "displayed_spatial_crop",
+      "downloadLabel": "Selected spatial crop PLY (.gz), includes context",
+      "cropBoundsBoardZUp": {
+        "min": [
+          0.6554025785676487,
+          -0.20029951876144905,
+          -0.8128109868562678
+        ],
+        "max": [
+          0.9506334278030579,
+          0.09038961144040203,
+          -0.10288746669066683
+        ]
+      },
+      "parentSourceDownload": "downloads/fused_review_reference.ply.gz",
+      "parentSourceDownloadSha256": "46685a9ac828f032a389976f712f69853f27941dbca72c7f8b23b1400844d2d3"
+    },
+    {
+      "id": "fused_P4",
+      "label": "D405 + L515 before cleanup / P4 - spatial crop, includes context",
+      "stage": "fused",
+      "plant": "P4",
+      "file": "clouds/fused_P4.bin",
+      "pointCount": 253107,
+      "sourcePointCount": 1740673,
+      "description": "Observed-point union: every D405 inspection-region point retained plus 21,672 selected L515 points. No shape completion. New spatial display crop only: may include pot, background and neighbouring foliage; may omit outlying tissue. This is not a biological segmentation.",
+      "bounds": {
+        "min": [
+          0.9621361736873957,
+          -0.8127391399177767,
+          -0.0428191579750527
+        ],
+        "max": [
+          1.1784465949260114,
+          -0.1954705712460167,
+          0.16206333767533518
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/fused_review_reference.ply",
+      "sourceSha256": "2a310d7eb85db8005437170e7207ec6326e5b2fa397546ccecd1af16c5c8ed72",
+      "sha256": "4f4c5d0298a0871c489bf776995b3bb342f3951ed0c8d11ba4af06b59a2fafa7",
+      "bytes": 3796613,
+      "provenance": "provenance/fused_P4_source_indices.npz",
+      "provenanceSha256": "1982b2b9ca34814f64a87af7bf9d92469033016109049f983fe6dd0ab67a6db6",
+      "selection": "spatial_crop_includes_context",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 5.9604531088552903e-08,
+      "cameraCounts": {
+        "0": 250582,
+        "1": 2525
+      },
+      "download": "downloads/fused_P4_reference_spatial_crop.ply.gz",
+      "downloadSha256": "ce7a0c7b81e5785f88f98b25cabf755fd5d3442fe336c95da333b973e5591dc1",
+      "downloadBytes": 3061107,
+      "downloadOriginalSha256": "6f6ae25ac94f29bc43dfa2105b2ebfd2cc76a3ec3d4e81b625c2cd8606d070cc",
+      "downloadFormat": "gzip-compressed binary PLY; exact selected source records",
+      "downloadCoordinateFrame": "D405 reference camera; exact source records, not display Y-up",
+      "downloadScope": "displayed_spatial_crop",
+      "downloadLabel": "Selected spatial crop PLY (.gz), includes context",
+      "cropBoundsBoardZUp": {
+        "min": [
+          0.9587600375534245,
+          -0.17694280442422988,
+          -0.8128109868562678
+        ],
+        "max": [
+          1.1784471755114945,
+          0.11127196779978976,
+          -0.10288746669066683
+        ]
+      },
+      "parentSourceDownload": "downloads/fused_review_reference.ply.gz",
+      "parentSourceDownloadSha256": "46685a9ac828f032a389976f712f69853f27941dbca72c7f8b23b1400844d2d3"
+    },
+    {
+      "id": "fused_P5",
+      "label": "D405 + L515 before cleanup / P5 - spatial crop, includes context",
+      "stage": "fused",
+      "plant": "P5",
+      "file": "clouds/fused_P5.bin",
+      "pointCount": 468555,
+      "sourcePointCount": 1740673,
+      "description": "Observed-point union: every D405 inspection-region point retained plus 21,672 selected L515 points. No shape completion. New spatial display crop only: may include pot, background and neighbouring foliage; may omit outlying tissue. This is not a biological segmentation.",
+      "bounds": {
+        "min": [
+          1.2102610779822185,
+          -0.8127956684920494,
+          -0.16117156110875414
+        ],
+        "max": [
+          1.5618933151855277,
+          -0.4491411888226767,
+          0.2318753281751943
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/fusion_v1/fused_review_reference.ply",
+      "sourceSha256": "2a310d7eb85db8005437170e7207ec6326e5b2fa397546ccecd1af16c5c8ed72",
+      "sha256": "2fccc031e5c4f38bbc7754746a14abf68225021dad4f894871c05b765f75d439",
+      "bytes": 7028333,
+      "provenance": "provenance/fused_P5_source_indices.npz",
+      "provenanceSha256": "d271682c93780bf9efa03a30be2e75c42afd0edd7437d636953be54763cb0511",
+      "selection": "spatial_crop_includes_context",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 5.9604482904873635e-08,
+      "cameraCounts": {
+        "0": 459798,
+        "1": 8757
+      },
+      "download": "downloads/fused_P5_reference_spatial_crop.ply.gz",
+      "downloadSha256": "2d331e352e1224e6f6607b61459499ac1c59ef89ea6e89fdd32c0bfebf261eb9",
+      "downloadBytes": 5660009,
+      "downloadOriginalSha256": "47762d083a3b9db6fcf00d05ed23930b5fbce6d3b7f4a7e0b83259e7f1eeeda1",
+      "downloadFormat": "gzip-compressed binary PLY; exact selected source records",
+      "downloadCoordinateFrame": "D405 reference camera; exact source records, not display Y-up",
+      "downloadScope": "displayed_spatial_crop",
+      "downloadLabel": "Selected spatial crop PLY (.gz), includes context",
+      "cropBoundsBoardZUp": {
+        "min": [
+          1.1990392367933238,
+          -0.2318933401419778,
+          -0.8128109868562678
+        ],
+        "max": [
+          1.5818933151855277,
+          0.1701553852140595,
+          -0.10288746669066683
+        ]
+      },
+      "parentSourceDownload": "downloads/fused_review_reference.ply.gz",
+      "parentSourceDownloadSha256": "46685a9ac828f032a389976f712f69853f27941dbca72c7f8b23b1400844d2d3"
+    },
+    {
+      "id": "cleaned_all",
+      "label": "Cleaned candidate / all five plants - inspection region",
+      "stage": "cleaned",
+      "plant": "all",
+      "file": "clouds/cleaned_all.bin",
+      "pointCount": 430060,
+      "sourcePointCount": 430060,
+      "description": "Exact saved source-reviewed candidate plant subset; uncertain points and scene context remain separately preserved. Approximate source masks and basal exclusions can omit true tissue; not a validated trait mask.",
+      "bounds": {
+        "min": [
+          0.15934831114949452,
+          -0.7344406796465881,
+          -0.15015538521405952
+        ],
+        "max": [
+          1.5618933151855277,
+          -0.1954705712460167,
+          0.2808314566282505
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/cleanup_v1/result/plants_cleaned_reference.ply",
+      "sourceSha256": "3e51929e8d6483ab291a21f30322286d6e98a0523d3acc05792544b9446dde27",
+      "sha256": "d75e5613472b1fd9de9e62e81e01c0be955b27f6e80614c80933e62ca6737aef",
+      "bytes": 6450908,
+      "provenance": "provenance/cleaned_all_source_indices.npz",
+      "provenanceSha256": "5b4c95b4c6c7539e7523d81a76db89c70c2416456b0b5f5529cb7bbba8f67790",
+      "selection": "saved_source_reviewed_candidate_subset",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 5.9604482904873635e-08,
+      "cameraCounts": {
+        "0": 425338,
+        "1": 4722
+      },
+      "download": "downloads/plants_cleaned_reference.ply.gz",
+      "downloadSha256": "ddca6ee93c2ad0250ff83a3437b6ccd28b541277c8d2d4ec50a8f52e68ba09a8",
+      "downloadBytes": 5378952,
+      "downloadOriginalSha256": "3e51929e8d6483ab291a21f30322286d6e98a0523d3acc05792544b9446dde27",
+      "downloadFormat": "gzip-compressed original binary PLY",
+      "downloadCoordinateFrame": "D405 reference camera; unmodified source, not display Y-up",
+      "downloadScope": "displayed_source_cloud",
+      "downloadLabel": "Original reference-frame PLY (.gz)",
+      "cleanupEvidence": {
+        "total": 430060
+      }
+    },
+    {
+      "id": "cleaned_P1",
+      "label": "Cleaned candidate / P1 - source-reviewed candidate",
+      "stage": "cleaned",
+      "plant": "P1",
+      "file": "clouds/cleaned_P1.bin",
+      "pointCount": 21444,
+      "sourcePointCount": 21444,
+      "description": "Exact saved source-reviewed candidate plant subset; uncertain points and scene context remain separately preserved. Approximate source masks and basal exclusions can omit true tissue; not a validated trait mask.",
+      "bounds": {
+        "min": [
+          0.15934831114949452,
+          -0.7344406796465881,
+          -0.06070674837096644
+        ],
+        "max": [
+          0.33501344115552006,
+          -0.25287973140844106,
+          0.2808314566282505
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/cleanup_v1/result/P1_reference.ply",
+      "sourceSha256": "cbac25f8d6a35c04da087d63734c115f86314fe093233431affcd872d455e36c",
+      "sha256": "6e90449d9f43e5b9ce2c154049e14dd5bd9b0aa82f532ed0ecac69957d12c789",
+      "bytes": 321668,
+      "provenance": "provenance/cleaned_P1_source_indices.npz",
+      "provenanceSha256": "88062208604938686578ee0d9bdada0415b5d4e05160cb4e1bc96068b21e4f42",
+      "selection": "saved_source_reviewed_candidate_subset",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 2.980128621654643e-08,
+      "cameraCounts": {
+        "0": 21409,
+        "1": 35
+      },
+      "download": "downloads/P1_reference.ply.gz",
+      "downloadSha256": "da299144b1906711e9b7d21bc67aab7ee530e2ea87a4f7c7f4fc23120bfb6554",
+      "downloadBytes": 264300,
+      "downloadOriginalSha256": "cbac25f8d6a35c04da087d63734c115f86314fe093233431affcd872d455e36c",
+      "downloadFormat": "gzip-compressed original binary PLY",
+      "downloadCoordinateFrame": "D405 reference camera; unmodified source, not display Y-up",
+      "downloadScope": "displayed_source_cloud",
+      "downloadLabel": "Original reference-frame PLY (.gz)",
+      "cleanupEvidence": {
+        "total": 21444,
+        "multi_view_core": 11737,
+        "one_view_near_core_edge": 9707,
+        "d405": 21409,
+        "l515": 35
+      }
+    },
+    {
+      "id": "cleaned_P2",
+      "label": "Cleaned candidate / P2 - source-reviewed candidate",
+      "stage": "cleaned",
+      "plant": "P2",
+      "file": "clouds/cleaned_P2.bin",
+      "pointCount": 72786,
+      "sourcePointCount": 72786,
+      "description": "Exact saved source-reviewed candidate plant subset; uncertain points and scene context remain separately preserved. Approximate source masks and basal exclusions can omit true tissue; not a validated trait mask.",
+      "bounds": {
+        "min": [
+          0.4597235630743289,
+          -0.7153517294525776,
+          0.009590338315150835
+        ],
+        "max": [
+          0.8006302553120159,
+          -0.20207248818089749,
+          0.20522872296533817
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/cleanup_v1/result/P2_reference.ply",
+      "sourceSha256": "87a246c5626c1afe27039f517cb839d8eda60ca30a8f279fc022a88a0710bde9",
+      "sha256": "b8372b4b6f0c7722182bb4c34e6b5136ac34f5154068ff4614a896880c80c8ba",
+      "bytes": 1091798,
+      "provenance": "provenance/cleaned_P2_source_indices.npz",
+      "provenanceSha256": "a9fea099ad5cc6ec9a379001e94cdf36f10475330aa2338cc001a8b380f45535",
+      "selection": "saved_source_reviewed_candidate_subset",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 2.9801972334375648e-08,
+      "cameraCounts": {
+        "0": 72518,
+        "1": 268
+      },
+      "download": "downloads/P2_reference.ply.gz",
+      "downloadSha256": "547a09cadf8773d8cee60a8c29f1cc262b446ec524d97b6ad42e0c3def85459b",
+      "downloadBytes": 900384,
+      "downloadOriginalSha256": "87a246c5626c1afe27039f517cb839d8eda60ca30a8f279fc022a88a0710bde9",
+      "downloadFormat": "gzip-compressed original binary PLY",
+      "downloadCoordinateFrame": "D405 reference camera; unmodified source, not display Y-up",
+      "downloadScope": "displayed_source_cloud",
+      "downloadLabel": "Original reference-frame PLY (.gz)",
+      "cleanupEvidence": {
+        "total": 72786,
+        "multi_view_core": 49181,
+        "one_view_near_core_edge": 23605,
+        "d405": 72518,
+        "l515": 268
+      }
+    },
+    {
+      "id": "cleaned_P3",
+      "label": "Cleaned candidate / P3 - source-reviewed candidate",
+      "stage": "cleaned",
+      "plant": "P3",
+      "file": "clouds/cleaned_P3.bin",
+      "pointCount": 112943,
+      "sourcePointCount": 112943,
+      "description": "Exact saved source-reviewed candidate plant subset; uncertain points and scene context remain separately preserved. Approximate source masks and basal exclusions can omit true tissue; not a validated trait mask.",
+      "bounds": {
+        "min": [
+          0.6754025785676487,
+          -0.727733947489067,
+          -0.06793342086347706
+        ],
+        "max": [
+          0.9306334278030579,
+          -0.22279180296330436,
+          0.18029951876144906
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/cleanup_v1/result/P3_reference.ply",
+      "sourceSha256": "4966d052650bce08e3a6117125cca6df8b8c36faa0af2cd0049d7dcf950874b3",
+      "sha256": "bc7ed0de78c95329915e6a5cf55a1b683d0181fa3ed97c8094401a802bc6142b",
+      "bytes": 1694153,
+      "provenance": "provenance/cleaned_P3_source_indices.npz",
+      "provenanceSha256": "7f11ba9987f1ac8da91eae11002ea0faab39d2c34b8cf15cac7614294819c6f5",
+      "selection": "saved_source_reviewed_candidate_subset",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 2.9802249557064897e-08,
+      "cameraCounts": {
+        "0": 111102,
+        "1": 1841
+      },
+      "download": "downloads/P3_reference.ply.gz",
+      "downloadSha256": "fdde3880f3ddaa5386ffb0066f0473677852ea106630bdee5128ca28486ee6b8",
+      "downloadBytes": 1416474,
+      "downloadOriginalSha256": "4966d052650bce08e3a6117125cca6df8b8c36faa0af2cd0049d7dcf950874b3",
+      "downloadFormat": "gzip-compressed original binary PLY",
+      "downloadCoordinateFrame": "D405 reference camera; unmodified source, not display Y-up",
+      "downloadScope": "displayed_source_cloud",
+      "downloadLabel": "Original reference-frame PLY (.gz)",
+      "cleanupEvidence": {
+        "total": 112943,
+        "multi_view_core": 84440,
+        "one_view_near_core_edge": 28503,
+        "d405": 111102,
+        "l515": 1841
+      }
+    },
+    {
+      "id": "cleaned_P4",
+      "label": "Cleaned candidate / P4 - source-reviewed candidate",
+      "stage": "cleaned",
+      "plant": "P4",
+      "file": "clouds/cleaned_P4.bin",
+      "pointCount": 68239,
+      "sourcePointCount": 68239,
+      "description": "Exact saved source-reviewed candidate plant subset; uncertain points and scene context remain separately preserved. Approximate source masks and basal exclusions can omit true tissue; not a validated trait mask.",
+      "bounds": {
+        "min": [
+          0.9787600375534246,
+          -0.643576398214429,
+          -0.019560188926852372
+        ],
+        "max": [
+          1.1584471755114945,
+          -0.1954705712460167,
+          0.1569428044242299
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/cleanup_v1/result/P4_reference.ply",
+      "sourceSha256": "1e9eb2f55b7fc9f40f08ddc5a636707721d80777efe1c56bb3f524287321c8cb",
+      "sha256": "7afa1cac9f23e6dc50371118eec3dc2fa41c1d142ffc338bf5f9a56ca8a29481",
+      "bytes": 1023593,
+      "provenance": "provenance/cleaned_P4_source_indices.npz",
+      "provenanceSha256": "29b8385f456316083fe9e38ba03ef3266a2caf790abdce74783c21d7dd09dedf",
+      "selection": "saved_source_reviewed_candidate_subset",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 5.96044182898936e-08,
+      "cameraCounts": {
+        "0": 68043,
+        "1": 196
+      },
+      "download": "downloads/P4_reference.ply.gz",
+      "downloadSha256": "c7bb624aaa046688599c3cd59e65c5e2d9129f9f6aadd7989235821128116b5d",
+      "downloadBytes": 844269,
+      "downloadOriginalSha256": "1e9eb2f55b7fc9f40f08ddc5a636707721d80777efe1c56bb3f524287321c8cb",
+      "downloadFormat": "gzip-compressed original binary PLY",
+      "downloadCoordinateFrame": "D405 reference camera; unmodified source, not display Y-up",
+      "downloadScope": "displayed_source_cloud",
+      "downloadLabel": "Original reference-frame PLY (.gz)",
+      "cleanupEvidence": {
+        "total": 68239,
+        "multi_view_core": 40458,
+        "one_view_near_core_edge": 27781,
+        "d405": 68043,
+        "l515": 196
+      }
+    },
+    {
+      "id": "cleaned_P5",
+      "label": "Cleaned candidate / P5 - source-reviewed candidate",
+      "stage": "cleaned",
+      "plant": "P5",
+      "file": "clouds/cleaned_P5.bin",
+      "pointCount": 154648,
+      "sourcePointCount": 154648,
+      "description": "Exact saved source-reviewed candidate plant subset; uncertain points and scene context remain separately preserved. Approximate source masks and basal exclusions can omit true tissue; not a validated trait mask.",
+      "bounds": {
+        "min": [
+          1.2190392367933238,
+          -0.6999206482313113,
+          -0.15015538521405952
+        ],
+        "max": [
+          1.5618933151855277,
+          -0.45003841112598136,
+          0.2118933401419778
+        ]
+      },
+      "sourcePath": "generated/research_confirmed_board_20261007/cleanup_v1/result/P5_reference.ply",
+      "sourceSha256": "ebba027f13ed2d927f3d547e94ad5833925bd73b6e7774a8fa97548ce14a9b9f",
+      "sha256": "e98acc0b28eefc28e4522077ca9f7150af8768725e2c83c9a4b0cf67106f7e60",
+      "bytes": 2319728,
+      "provenance": "provenance/cleaned_P5_source_indices.npz",
+      "provenanceSha256": "9ff0cd8c486f5fe8f55a678336366e6510cef14b4630402d7d907c55bed1e23a",
+      "selection": "saved_source_reviewed_candidate_subset",
+      "sourceIndexMeaning": "source_vertex_index is zero-based in sourcePath; camera_id 0=D405,1=L515; original_point_index indexes the original full camera cloud; fused_point_index when present indexes the preserved fused cloud.",
+      "decimated": false,
+      "coordinates": "common board-derived Y-up display frame; metres anchored to supplied 25mm squares, with empirical L515 correction",
+      "float32MaxCoordinateRounding": 5.9604482904873635e-08,
+      "cameraCounts": {
+        "0": 152266,
+        "1": 2382
+      },
+      "download": "downloads/P5_reference.ply.gz",
+      "downloadSha256": "a3732ead997d8adfb5bc4f09616b03b0463cb003816796319ea826e2027979f1",
+      "downloadBytes": 1941637,
+      "downloadOriginalSha256": "ebba027f13ed2d927f3d547e94ad5833925bd73b6e7774a8fa97548ce14a9b9f",
+      "downloadFormat": "gzip-compressed original binary PLY",
+      "downloadCoordinateFrame": "D405 reference camera; unmodified source, not display Y-up",
+      "downloadScope": "displayed_source_cloud",
+      "downloadLabel": "Original reference-frame PLY (.gz)",
+      "cleanupEvidence": {
+        "total": 154648,
+        "multi_view_core": 120777,
+        "one_view_near_core_edge": 33871,
+        "d405": 152266,
+        "l515": 2382
+      }
+    }
+  ],
+  "coordinateFrame": {
+    "displayUp": "Y",
+    "reference": "first D405 plant camera; no soil/table height zero",
+    "units": "metres anchored to supplied 25mm square pitch; print tolerance and residual camera-model uncertainty remain",
+    "boardZUpFromD405Reference": [
+      [
+        0.9997320091584629,
+        -0.022989551247924105,
+        0.002718528536188047
+      ],
+      [
+        -0.023027275267776585,
+        -0.9996256969203645,
+        0.014771954854300693
+      ],
+      [
+        0.0023779103694299077,
+        -0.014830596410614249,
+        -0.9998871931134934
+      ]
+    ],
+    "displayYUpFromBoardZUp": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    ],
+    "displayYUpFromD405Reference": [
+      [
+        0.9997320091584629,
+        -0.022989551247924105,
+        0.002718528536188047
+      ],
+      [
+        0.0023779103694299077,
+        -0.014830596410614249,
+        -0.9998871931134934
+      ],
+      [
+        0.023027275267776585,
+        0.9996256969203645,
+        -0.014771954854300693
+      ]
+    ],
+    "formula": "column vectors: display = displayYUpFromD405Reference @ reference; no translation or scale",
+    "l515TransformAlreadyApplied": true,
+    "l515ToD405EmpiricalTransform": [
+      [
+        0.9984021746353853,
+        -0.025697509995679938,
+        -0.05032629196906035,
+        0.05939723028067006
+      ],
+      [
+        0.023850439182474974,
+        0.9990319108321752,
+        -0.0369648169184553,
+        -0.031232808108405216
+      ],
+      [
+        0.051227475383198814,
+        0.03570544943049711,
+        0.9980485292042814,
+        -0.04991749489119261
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "orientationEvidence": "generated/research_20260928_processing_20261007/calibration_transfer.json",
+    "orientationEvidenceSha256": "bd325cb89f1285d0aabb87cea82eb27601cc67759cbf50dc47ace8ffb2072a65"
+  },
+  "cropPolicy": {
+    "status": "new display-only spatial boxes, identical for D405, aligned L515 and fused stages",
+    "method": "For each plant, union saved clean-cloud XY bounds expanded 0.02m with soil-seed XY +/-0.09m; retain entire metric inspection-region Z -0.812810987 to -0.102887467m; clip to original inspection bounds.",
+    "purpose": "Allow honest per-plant stage inspection where no saved earlier biological segmentation exists.",
+    "limitations": [
+      "Boxes may overlap; counts across per-plant raw views are not a partition.",
+      "Includes context, neighbouring leaves and possible outliers; can omit outlying or never-recovered tissue.",
+      "The clean candidate extent guides display framing only; no new plant labels are assigned."
+    ],
+    "boundsBoardZUp": {
+      "P1": {
+        "min": [
+          0.13934831114949453,
+          -0.3008314566282505,
+          -0.8128109868562678
+        ],
+        "max": [
+          0.39506832078964216,
+          0.10029650288715829,
+          -0.10288746669066683
+        ]
+      },
+      "P2": {
+        "min": [
+          0.40856458652061356,
+          -0.22522872296533816,
+          -0.8128109868562678
+        ],
+        "max": [
+          0.8206302553120159,
+          0.08240185895116242,
+          -0.10288746669066683
+        ]
+      },
+      "P3": {
+        "min": [
+          0.6554025785676487,
+          -0.20029951876144905,
+          -0.8128109868562678
+        ],
+        "max": [
+          0.9506334278030579,
+          0.09038961144040203,
+          -0.10288746669066683
+        ]
+      },
+      "P4": {
+        "min": [
+          0.9587600375534245,
+          -0.17694280442422988,
+          -0.8128109868562678
+        ],
+        "max": [
+          1.1784471755114945,
+          0.11127196779978976,
+          -0.10288746669066683
+        ]
+      },
+      "P5": {
+        "min": [
+          1.1990392367933238,
+          -0.2318933401419778,
+          -0.8128109868562678
+        ],
+        "max": [
+          1.5818933151855277,
+          0.1701553852140595,
+          -0.10288746669066683
+        ]
+      }
+    }
+  },
+  "originalFullCameraClouds": {
+    "0": {
+      "path": "generated/research_confirmed_board_20261007/d405_metric/full_scene_reference.ply",
+      "sha256": "c44d00f53535928dd806211a609b6fdaa52956683d7f1ad51dc7d0cb82de33d5",
+      "points": 8265080,
+      "includedInWebsite": false,
+      "reason": "Full scene retained locally; website uses established inspection region."
+    },
+    "1": {
+      "path": "generated/research_confirmed_board_20261007/l515_metric_boardgain_v1/result/l515_supported_reference.ply",
+      "sha256": "bc055bdd2520fac10afa93dd647fd18d1782a1b7c17a303ed6271c6b6a9309a8",
+      "points": 1573814,
+      "includedInWebsite": false,
+      "reason": "Full scene retained locally; website uses established inspection region."
+    }
+  },
+  "sourceHashManifest": "provenance/input_hashes.json",
+  "fullResolutionForEverySelection": true,
+  "physicalAccuracyValidated": false,
+  "manualTraitDimensionsUsedToFitGeometry": false,
+  "limits": [
+    "Point counts are not completeness scores. No unseen surfaces or new vertices are invented.",
+    "D405 is RGB stereo reconstruction; L515 uses recorded depth. Their source point spacings differ.",
+    "Camera-to-camera transform is empirical surface alignment, not independently validated physical extrinsics.",
+    "Board pitch is supplied as 25mm; it anchors the recovered RGB geometry scale. Print tolerance is unavailable. L515 device depth units remain unrecorded; the selected gain is empirical.",
+    "Cleanup is reversible source-reviewed candidate selection, not accepted biological ground truth.",
+    "Original downloads retain reference-camera orientation; only PF3D display geometry is rotated Y-up."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "blocked_missing_calibration",
+  "missing": [
+    "shared_frame",
+    "shared_units",
+    "noncoplanar_controls",
+    "held_out_validation",
+    "physical_ray_calibration",
+    "visibility_surface",
+    "scan_transfer_evidence"
+  ],
+  "physical_fusion": null,
+  "achieved_3d_mapping": false,
+  "absolute_metric_scale_separate": true,
+  "explanation": "Planar board agreement cannot determine raised-leaf projection. Shared arbitrary units may support pixel validation, while millimetre traits still require verified physical scale.",
+  "existing_planar_observation_count": 205,
+  "source_observation_sha256": "70331b2a1b7a32cff50de7a69de4bb87b05c4ee6127edf70f87389474fd8dc45",
+  "calibration_pitch_gap": "Physical ChArUco square size and recording translation units unavailable; retained as separate metric-scale gap.",
+  "existing_planar_diagnostic": "101 shared FX10/FX17 pairs; held-out-sheet affine RMS 0.56-0.81 pixels. Plane-only agreement cannot determine height dependence."
+}

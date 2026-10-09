@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "title": "Earlier 1 September cloud \u2014 input reuse check only",
+  "coordinate_unit": "unknown",
+  "scale_status": "Unverified in this handoff; no scale is fitted",
+  "upright_R": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "specimens": [
+    {
+      "id": "prior_109_candidate",
+      "label": "Earlier saved upright candidate",
+      "cloud": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\integration_109_final\\reviewed_result\\plant_upright.ply",
+      "sha256": "e872fb8065c9cff2464a4ec0ac72ab87ab6fee749470391a021bc0da6c8da8a9"
+    }
+  ],
+  "context_clouds": [],
+  "artifacts": [
+    {
+      "title": "Prior reconstruction candidate summary",
+      "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\integration_109_final\\reviewed_result\\summary.json"
+    },
+    {
+      "title": "Prior recording profile",
+      "path": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\integration_109_final\\profile.json"
+    }
+  ],
+  "manual_references": [],
+  "protected_input_roots": [
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\integration_109_final",
+    "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\20260901122109"
+  ],
+  "gaps": [
+    {
+      "id": "input_reuse_only",
+      "title": "This is only a new-manifest input check",
+      "status": "unresolved",
+      "resolution": "Independent reconstruction, mask quality and generalization require separate datasets and review."
+    },
+    {
+      "id": "physical_scale",
+      "title": "Physical scale and trait accuracy are unverified",
+      "status": "unresolved",
+      "resolution": "Recover independent scale evidence and matched organ measurements; no values are inferred here."
+    },
+    {
+      "id": "landmarks",
+      "title": "Anatomical endpoints have not been supplied",
+      "status": "unresolved",
+      "resolution": "No height, leaf-length or leaf-width endpoint claims are made."
+    },
+    {
+      "id": "coverage",
+      "title": "Complete plant coverage and pot exclusion remain unverified",
+      "status": "unresolved",
+      "resolution": "Inspect original recording and retained candidate; prior summary remains a candidate."
+    },
+    {
+      "id": "hsi",
+      "title": "No spectral pairing is supplied",
+      "status": "unresolved",
+      "resolution": "This test makes no 3D fusion or radiometry claim."
+    }
+  ]
+}

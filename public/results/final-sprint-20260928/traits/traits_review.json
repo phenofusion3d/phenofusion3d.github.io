@@ -1,0 +1,2725 @@
+{
+  "status": "confirmed_board_observed_geometry_and_correspondence_not_anatomical_validation",
+  "created_date": "2026-10-08",
+  "manual_traits_used_to_tune_geometry": false,
+  "manual_traits_used_to_choose_scale": false,
+  "point_coordinates_changed": false,
+  "height_count": 0,
+  "validated_manual_dimensions": 0,
+  "measurable_scope": "Observed point counts, axis/robust spans and board-referenced projected occupancy/hull descriptors only.",
+  "gaps": [
+    "Board dimensions supplied by operator: 25 mm square, 18 mm marker, 7 by 10 DICT_4X4_50; independent printed-size uncertainty unavailable.",
+    "D405 metric gauge re-expressed from supplied board pitch; L515 effective depth gain is empirically fitted, not a confirmed native device unit; cross-camera transform is a research estimate.",
+    "No independently supported actual stem-base and very-tip pair.",
+    "Assistant image correspondence is not independent operator ground truth.",
+    "Held-flat ruler endpoint conventions/pose are not frozen in 3D.",
+    "No ruler width section established as global maximum width.",
+    "P4 leaf-versus-pod organ type unresolved."
+  ],
+  "pose_source": "generated/research_confirmed_board_20261007/d405_metric/icp_diagnostics_reexpressed.json",
+  "pose_policy": "Exact accepted final ICP camera-to-reference transforms, never interpolated/pre-ICP bundle poses.",
+  "calibration_source": "generated/research_20260928_improvement_20261007/short_dense_v3/profile.json",
+  "upright_R": [
+    [
+      0.9997320091584629,
+      -0.022989551247924105,
+      0.002718528536188047
+    ],
+    [
+      -0.023027275267776585,
+      -0.9996256969203645,
+      0.014771954854300693
+    ],
+    [
+      0.0023779103694299077,
+      -0.014830596410614249,
+      -0.9998871931134934
+    ]
+  ],
+  "axis_definition": "X follows gantry row; Y perpendicular in display plane; Z fitted-board display normal, not independently verified gravity.",
+  "projection_policy": "Calibrated distorted source RGB; full-cloud 10mm self-occlusion and 12mm stereo foreground occlusion tolerances inherited from cleanup review; tolerances remain physical 10 mm / 12 mm after gauge correction.",
+  "input_point_count": 1740673,
+  "complete_leaf_geometry_claim": false,
+  "mapes_or_accuracy_scores_computed": false,
+  "plants": [
+    {
+      "specimen_id": "P1",
+      "identity_status": "assistant_source_identity_supported",
+      "identity_confidence": "high",
+      "identity_evidence": "Single cereal stem and ear, three green blade nodes and a ring of dry basal blades; first pot beside the board.",
+      "source_frames": [
+        143152,
+        302754,
+        459309
+      ],
+      "point_count": 21444,
+      "multi_view_core_count": 11737,
+      "d405_count": 21409,
+      "l515_count": 35,
+      "unit_status": "Board-referenced metres from supplied 25 mm square / 18 mm marker; D405 metric gauge and empirical L515 board gain; anatomical accuracy unvalidated",
+      "full_axis_spans_m": [
+        0.17566513000602554,
+        0.34153820499921694,
+        0.48156094823814705
+      ],
+      "p01_p99_axis_spans_m": [
+        0.16770287846597595,
+        0.3022656992791131,
+        0.45934755048980763
+      ],
+      "observed_vertical_span_m": 0.48156094823814705,
+      "observed_vertical_span_is_plant_height": false,
+      "xy_convex_hull_area_m2": 0.03682927069775509,
+      "xy_core_hull_area_m2": 0.03618680987156256,
+      "xy_occupied_cell_area_m2_by_grid_m": {
+        "0.001": 0.003788,
+        "0.002": 0.00472,
+        "0.005": 0.0072499999999999995
+      },
+      "height_m": null,
+      "height_status": "excluded_actual_base_and_very_tip_pair_not_supported",
+      "height_reason": "Dry blades overlap narrow stems at the soil junction; the measured stem origin cannot be isolated. Highest retained surface projects to the upper green blade tip. Cereal ear awns extend beyond the dense ear body and are incompletely reconstructed; the very highest biological tip is not certified.",
+      "descriptor_confidence": "provisional segmentation-conditional observed subset",
+      "highest_observed_fused_index": 158294,
+      "highest_observed_camera_id": 0,
+      "highest_observed_original_point_index": 1029314
+    },
+    {
+      "specimen_id": "P2",
+      "identity_status": "assistant_source_identity_supported",
+      "identity_confidence": "high",
+      "identity_evidence": "Bent exposed basal stem, compact puckered blue-green crown, dry curled tips and hanging flowering branch; between cereal and P3.",
+      "source_frames": [
+        249551,
+        459309,
+        670589
+      ],
+      "point_count": 72786,
+      "multi_view_core_count": 49181,
+      "d405_count": 72518,
+      "l515_count": 268,
+      "unit_status": "Board-referenced metres from supplied 25 mm square / 18 mm marker; D405 metric gauge and empirical L515 board gain; anatomical accuracy unvalidated",
+      "full_axis_spans_m": [
+        0.34090669223768705,
+        0.19563838465018735,
+        0.5132792412716801
+      ],
+      "p01_p99_axis_spans_m": [
+        0.16802401305897857,
+        0.17680845536301798,
+        0.47894287740584585
+      ],
+      "observed_vertical_span_m": 0.5132792412716801,
+      "observed_vertical_span_is_plant_height": false,
+      "xy_convex_hull_area_m2": 0.037882214294675344,
+      "xy_core_hull_area_m2": 0.03716841942467456,
+      "xy_occupied_cell_area_m2_by_grid_m": {
+        "0.001": 0.013747,
+        "0.002": 0.014856,
+        "0.005": 0.01725
+      },
+      "height_m": null,
+      "height_status": "excluded_actual_base_and_very_tip_pair_not_supported",
+      "height_reason": "Exposed curved green basal stem is visible against soil, but its precise emergence and measurement zero are unresolved. Highest retained points project to a curled yellowing edge and nearby overlapping tissue. Small terminal buds and curled margins are not a unique certified top endpoint.",
+      "descriptor_confidence": "provisional segmentation-conditional observed subset",
+      "highest_observed_fused_index": 1095027,
+      "highest_observed_camera_id": 0,
+      "highest_observed_original_point_index": 5399766
+    },
+    {
+      "specimen_id": "P3",
+      "identity_status": "assistant_source_identity_supported",
+      "identity_confidence": "high",
+      "identity_evidence": "Six broad lobed leaves around a purple petiole junction and a long arcing flowering stalk; between compact P2 and sparse P4.",
+      "source_frames": [
+        618150,
+        824869,
+        1055904
+      ],
+      "point_count": 112943,
+      "multi_view_core_count": 84440,
+      "d405_count": 111102,
+      "l515_count": 1841,
+      "unit_status": "Board-referenced metres from supplied 25 mm square / 18 mm marker; D405 metric gauge and empirical L515 board gain; anatomical accuracy unvalidated",
+      "full_axis_spans_m": [
+        0.2552308492354092,
+        0.24823293962492612,
+        0.5049421445257626
+      ],
+      "p01_p99_axis_spans_m": [
+        0.23612039544887342,
+        0.22271805903771724,
+        0.43034786047813867
+      ],
+      "observed_vertical_span_m": 0.5049421445257626,
+      "observed_vertical_span_is_plant_height": false,
+      "xy_convex_hull_area_m2": 0.04783000391065279,
+      "xy_core_hull_area_m2": 0.0470794263007603,
+      "xy_occupied_cell_area_m2_by_grid_m": {
+        "0.001": 0.028696000000000003,
+        "0.002": 0.030956,
+        "0.005": 0.035075
+      },
+      "height_m": null,
+      "height_status": "excluded_actual_base_and_very_tip_pair_not_supported",
+      "height_reason": "Purple/green petiole junction is visible, but the soil-level stem origin is beneath overlapping tissue. Branch-junction region only. Highest retained points lie in overlapping distal stalk/leaf tissue near the lower image edge. Long flowering-stem extremities and true terminal point are not fully resolved.",
+      "descriptor_confidence": "provisional segmentation-conditional observed subset",
+      "highest_observed_fused_index": 1349781,
+      "highest_observed_camera_id": 0,
+      "highest_observed_original_point_index": 6341234
+    },
+    {
+      "specimen_id": "P4",
+      "identity_status": "assistant_source_identity_supported",
+      "identity_confidence": "high",
+      "identity_evidence": "Sparse branched flowering plant with yellow flowers and narrow pod-like structures; adjacent to P3 and red-brown P5.",
+      "source_frames": [
+        851470,
+        1003470,
+        1160788
+      ],
+      "point_count": 68239,
+      "multi_view_core_count": 40458,
+      "d405_count": 68043,
+      "l515_count": 196,
+      "unit_status": "Board-referenced metres from supplied 25 mm square / 18 mm marker; D405 metric gauge and empirical L515 board gain; anatomical accuracy unvalidated",
+      "full_axis_spans_m": [
+        0.1796871379580699,
+        0.17650299335108227,
+        0.44810582696841234
+      ],
+      "p01_p99_axis_spans_m": [
+        0.1606389512305081,
+        0.15655684527294328,
+        0.41919675551314894
+      ],
+      "observed_vertical_span_m": 0.44810582696841234,
+      "observed_vertical_span_is_plant_height": false,
+      "xy_convex_hull_area_m2": 0.02355384597859492,
+      "xy_core_hull_area_m2": 0.023327469844616686,
+      "xy_occupied_cell_area_m2_by_grid_m": {
+        "0.001": 0.013097,
+        "0.002": 0.014596,
+        "0.005": 0.017550000000000003
+      },
+      "height_m": null,
+      "height_status": "excluded_actual_base_and_very_tip_pair_not_supported",
+      "height_reason": "Pot-centre origin is obscured by leaves and crossing flowering stems. Region candidate only; no visible stem-base endpoint. Highest retained surface projects to a terminal pale bud/flower cluster, but its exact outermost endpoint and complete depth support remain uncertain.",
+      "descriptor_confidence": "provisional segmentation-conditional observed subset",
+      "highest_observed_fused_index": 1516681,
+      "highest_observed_camera_id": 0,
+      "highest_observed_original_point_index": 6869012
+    },
+    {
+      "specimen_id": "P5",
+      "identity_status": "assistant_source_identity_supported",
+      "identity_confidence": "high",
+      "identity_evidence": "Broad green leaves interspersed with distinctive rust-brown damaged lobed blades, small central leaf and radial petioles; last pot.",
+      "source_frames": [
+        1030829,
+        1445026,
+        1639585
+      ],
+      "point_count": 154648,
+      "multi_view_core_count": 120777,
+      "d405_count": 152266,
+      "l515_count": 2382,
+      "unit_status": "Board-referenced metres from supplied 25 mm square / 18 mm marker; D405 metric gauge and empirical L515 board gain; anatomical accuracy unvalidated",
+      "full_axis_spans_m": [
+        0.34285407839220383,
+        0.3620487253560373,
+        0.24988223710532992
+      ],
+      "p01_p99_axis_spans_m": [
+        0.3106784762513759,
+        0.3336896729143659,
+        0.15583409601824255
+      ],
+      "observed_vertical_span_m": 0.24988223710532992,
+      "observed_vertical_span_is_plant_height": false,
+      "xy_convex_hull_area_m2": 0.08951240926505645,
+      "xy_core_hull_area_m2": 0.08750398146952335,
+      "xy_occupied_cell_area_m2_by_grid_m": {
+        "0.001": 0.046922000000000005,
+        "0.002": 0.050188,
+        "0.005": 0.055549999999999995
+      },
+      "height_m": null,
+      "height_status": "excluded_actual_base_and_very_tip_pair_not_supported",
+      "height_reason": "Radial petiole junction and lower curved stem are visible; actual soil-emergence point is hidden by the stem/leaf cluster. Highest retained points project to the terminal margin of the left-facing lobed green O05 leaf candidate, a plausible top surface. This does not establish all-terminal completeness or the stem origin.",
+      "descriptor_confidence": "provisional segmentation-conditional observed subset",
+      "highest_observed_fused_index": 1566794,
+      "highest_observed_camera_id": 0,
+      "highest_observed_original_point_index": 6955055
+    }
+  ],
+  "endpoint_candidates": [
+    {
+      "specimen_id": "P1",
+      "role": "stem_base_region_candidate",
+      "frame": 459309,
+      "pixel_xy": [
+        476,
+        411
+      ],
+      "selection_radius_px": 8,
+      "confidence": "low_anatomical_endpoint",
+      "anatomical_endpoint_accepted": false,
+      "candidate_count": 638,
+      "indices_npz_key": "P1_base_region_visible_fused_indices",
+      "candidate_upright_z_range_m": [
+        -0.770043217354656,
+        -0.7030861709395617
+      ],
+      "reason": "Dry blades overlap narrow stems at the soil junction; the measured stem origin cannot be isolated.",
+      "selection": "Full-fusion source pixel disk after self/stereo occlusion checks; no cleanup cutoff or manual trait target."
+    },
+    {
+      "specimen_id": "P1",
+      "role": "highest_observed_surface_candidate",
+      "frame": 459309,
+      "fused_point_index": 158294,
+      "reference_xyz_m": [
+        0.2758128703082017,
+        -0.0036010613341733383,
+        0.25361760539249373
+      ],
+      "upright_xyz_m": [
+        0.2765112084666091,
+        0.0009949223759572428,
+        -0.25287973140844106
+      ],
+      "camera_id": 0,
+      "original_point_index": 1029314,
+      "confidence": "medium_surface_low_true_terminal_endpoint",
+      "anatomical_endpoint_accepted": false,
+      "reason": "Highest retained surface projects to the upper green blade tip. Cereal ear awns extend beyond the dense ear body and are incompletely reconstructed; the very highest biological tip is not certified.",
+      "review_projections": [
+        {
+          "frame": 143152,
+          "pixel_xy": [
+            968.7230083582901,
+            358.73497973896576
+          ],
+          "within_image": true,
+          "visible_under_review_checks": true
+        },
+        {
+          "frame": 302754,
+          "pixel_xy": [
+            552.5214348765551,
+            368.4184221549529
+          ],
+          "within_image": true,
+          "visible_under_review_checks": true
+        },
+        {
+          "frame": 459309,
+          "pixel_xy": [
+            147.89201742618286,
+            376.44516713234833
+          ],
+          "within_image": true,
+          "visible_under_review_checks": true
+        }
+      ]
+    },
+    {
+      "specimen_id": "P2",
+      "role": "stem_base_region_candidate",
+      "frame": 459309,
+      "pixel_xy": [
+        695,
+        401
+      ],
+      "selection_radius_px": 7,
+      "confidence": "low_anatomical_endpoint",
+      "anatomical_endpoint_accepted": false,
+      "candidate_count": 706,
+      "indices_npz_key": "P2_base_region_visible_fused_indices",
+      "candidate_upright_z_range_m": [
+        -0.7259774760131339,
+        -0.39875186566206655
+      ],
+      "reason": "Exposed curved green basal stem is visible against soil, but its precise emergence and measurement zero are unresolved.",
+      "selection": "Full-fusion source pixel disk after self/stereo occlusion checks; no cleanup cutoff or manual trait target."
+    },
+    {
+      "specimen_id": "P2",
+      "role": "highest_observed_surface_candidate",
+      "frame": 459309,
+      "fused_point_index": 1095027,
+      "reference_xyz_m": [
+        0.5108362721191607,
+        0.013889808003240023,
+        0.20310412845710146
+      ],
+      "upright_xyz_m": [
+        0.5109321965928219,
+        -0.022647531443891214,
+        -0.20207248818089749
+      ],
+      "camera_id": 0,
+      "original_point_index": 5399766,
+      "confidence": "medium_surface_low_true_terminal_endpoint",
+      "anatomical_endpoint_accepted": false,
+      "reason": "Highest retained points project to a curled yellowing edge and nearby overlapping tissue. Small terminal buds and curled margins are not a unique certified top endpoint.",
+      "review_projections": [
+        {
+          "frame": 249551,
+          "pixel_xy": [
+            1443.7536534548956,
+            420.98532136688607
+          ],
+          "within_image": false,
+          "visible_under_review_checks": false
+        },
+        {
+          "frame": 459309,
+          "pixel_xy": [
+            763.1918030876595,
+            436.0562048291341
+          ],
+          "within_image": true,
+          "visible_under_review_checks": true
+        },
+        {
+          "frame": 670589,
+          "pixel_xy": [
+            81.90324672153201,
+            449.8056771666577
+          ],
+          "within_image": true,
+          "visible_under_review_checks": true
+        }
+      ]
+    },
+    {
+      "specimen_id": "P3",
+      "role": "stem_base_region_candidate",
+      "frame": 824869,
+      "pixel_xy": [
+        616,
+        427
+      ],
+      "selection_radius_px": 12,
+      "confidence": "low_anatomical_endpoint",
+      "anatomical_endpoint_accepted": false,
+      "candidate_count": 1161,
+      "indices_npz_key": "P3_base_region_visible_fused_indices",
+      "candidate_upright_z_range_m": [
+        -0.7546407726996989,
+        -0.5507883812826657
+      ],
+      "reason": "Purple/green petiole junction is visible, but the soil-level stem origin is beneath overlapping tissue. Branch-junction region only.",
+      "selection": "Full-fusion source pixel disk after self/stereo occlusion checks; no cleanup cutoff or manual trait target."
+    },
+    {
+      "specimen_id": "P3",
+      "role": "highest_observed_surface_candidate",
+      "frame": 824869,
+      "fused_point_index": 1349781,
+      "reference_xyz_m": [
+        0.8267007948595079,
+        0.08796878402052014,
+        0.2234782037036378
+      ],
+      "upright_xyz_m": [
+        0.8250644156233212,
+        -0.10367131386503871,
+        -0.22279180296330436
+      ],
+      "camera_id": 0,
+      "original_point_index": 6341234,
+      "confidence": "medium_surface_low_true_terminal_endpoint",
+      "anatomical_endpoint_accepted": false,
+      "reason": "Highest retained points lie in overlapping distal stalk/leaf tissue near the lower image edge. Long flowering-stem extremities and true terminal point are not fully resolved.",
+      "review_projections": [
+        {
+          "frame": 618150,
+          "pixel_xy": [
+            1187.2085873246042,
+            650.5902217805861
+          ],
+          "within_image": true,
+          "visible_under_review_checks": true
+        },
+        {
+          "frame": 824869,
+          "pixel_xy": [
+            576.6614179910114,
+            665.2405947964528
+          ],
+          "within_image": true,
+          "visible_under_review_checks": true
+        },
+        {
+          "frame": 1055904,
+          "pixel_xy": [
+            -109.42820338596255,
+            678.7466546622022
+          ],
+          "within_image": false,
+          "visible_under_review_checks": false
+        }
+      ]
+    },
+    {
+      "specimen_id": "P4",
+      "role": "stem_base_region_candidate",
+      "frame": 1003470,
+      "pixel_xy": [
+        677,
+        409
+      ],
+      "selection_radius_px": 13,
+      "confidence": "low_anatomical_endpoint",
+      "anatomical_endpoint_accepted": false,
+      "candidate_count": 1410,
+      "indices_npz_key": "P4_base_region_visible_fused_indices",
+      "candidate_upright_z_range_m": [
+        -0.5716269775910532,
+        -0.5336428072142951
+      ],
+      "reason": "Pot-centre origin is obscured by leaves and crossing flowering stems. Region candidate only; no visible stem-base endpoint.",
+      "selection": "Full-fusion source pixel disk after self/stereo occlusion checks; no cleanup cutoff or manual trait target."
+    },
+    {
+      "specimen_id": "P4",
+      "role": "highest_observed_surface_candidate",
+      "frame": 1003470,
+      "fused_point_index": 1516681,
+      "reference_xyz_m": [
+        1.0983237069228684,
+        -0.03343842667446672,
+        0.19860060190387333
+      ],
+      "upright_xyz_m": [
+        1.0993380020556325,
+        0.011068227361307597,
+        -0.1954705712460167
+      ],
+      "camera_id": 0,
+      "original_point_index": 6869012,
+      "confidence": "medium_surface_low_true_terminal_endpoint",
+      "anatomical_endpoint_accepted": false,
+      "reason": "Highest retained surface projects to a terminal pale bud/flower cluster, but its exact outermost endpoint and complete depth support remain uncertain.",
+      "review_projections": [
+        {
+          "frame": 851470,
+          "pixel_xy": [
+            1361.403281231489,
+            312.1193465660819
+          ],
+          "within_image": false,
+          "visible_under_review_checks": false
+        },
+        {
+          "frame": 1003470,
+          "pixel_xy": [
+            853.7507523133343,
+            322.2429314518411
+          ],
+          "within_image": true,
+          "visible_under_review_checks": true
+        },
+        {
+          "frame": 1160788,
+          "pixel_xy": [
+            325.3079365294356,
+            334.7337111990951
+          ],
+          "within_image": true,
+          "visible_under_review_checks": true
+        }
+      ]
+    },
+    {
+      "specimen_id": "P5",
+      "role": "stem_base_region_candidate",
+      "frame": 1445026,
+      "pixel_xy": [
+        511,
+        440
+      ],
+      "selection_radius_px": 11,
+      "confidence": "low_anatomical_endpoint",
+      "anatomical_endpoint_accepted": false,
+      "candidate_count": 1725,
+      "indices_npz_key": "P5_base_region_visible_fused_indices",
+      "candidate_upright_z_range_m": [
+        -0.7563465616631827,
+        -0.6698189600216686
+      ],
+      "reason": "Radial petiole junction and lower curved stem are visible; actual soil-emergence point is hidden by the stem/leaf cluster.",
+      "selection": "Full-fusion source pixel disk after self/stereo occlusion checks; no cleanup cutoff or manual trait target."
+    },
+    {
+      "specimen_id": "P5",
+      "role": "highest_observed_surface_candidate",
+      "frame": 1445026,
+      "fused_point_index": 1566794,
+      "reference_xyz_m": [
+        1.2824922722991619,
+        0.021091930671586698,
+        0.4528263388170945
+      ],
+      "upright_xyz_m": [
+        1.2828947034187632,
+        -0.043927208246165556,
+        -0.45003841112598136
+      ],
+      "camera_id": 0,
+      "original_point_index": 6955055,
+      "confidence": "medium_surface_low_true_terminal_endpoint",
+      "anatomical_endpoint_accepted": false,
+      "reason": "Highest retained points project to the terminal margin of the left-facing lobed green O05 leaf candidate, a plausible top surface. This does not establish all-terminal completeness or the stem origin.",
+      "review_projections": [
+        {
+          "frame": 1030829,
+          "pixel_xy": [
+            951.109860845728,
+            423.18227182100856
+          ],
+          "within_image": true,
+          "visible_under_review_checks": true
+        },
+        {
+          "frame": 1445026,
+          "pixel_xy": [
+            343.67121234110164,
+            436.5451812163856
+          ],
+          "within_image": true,
+          "visible_under_review_checks": true
+        },
+        {
+          "frame": 1639585,
+          "pixel_xy": [
+            61.60445967407736,
+            443.1795245584156
+          ],
+          "within_image": true,
+          "visible_under_review_checks": true
+        }
+      ]
+    }
+  ],
+  "organ_correspondences": [
+    {
+      "annotation_id": "P1.O01",
+      "specimen_id": "P1",
+      "source_frame": 459309,
+      "source_polygon_xy": [
+        [
+          453,
+          427
+        ],
+        [
+          500,
+          427
+        ],
+        [
+          510,
+          554
+        ],
+        [
+          482,
+          555
+        ]
+      ],
+      "correspondence_status": "unresolved",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Dry lower blades overlap; the source overview blade attachment cannot be traced uniquely.",
+      "review_pool_point_count": 2335,
+      "indices_npz_key": "P1_O01_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment."
+    },
+    {
+      "annotation_id": "P1.O02",
+      "specimen_id": "P1",
+      "source_frame": 459309,
+      "source_polygon_xy": [
+        [
+          332,
+          413
+        ],
+        [
+          414,
+          376
+        ],
+        [
+          426,
+          386
+        ],
+        [
+          349,
+          423
+        ]
+      ],
+      "correspondence_status": "candidate_medium",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Green blade near the middle stem node is plausible, but attachment and dry terminal part are superposed.",
+      "review_pool_point_count": 815,
+      "indices_npz_key": "P1_O02_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment."
+    },
+    {
+      "annotation_id": "P1.O03",
+      "specimen_id": "P1",
+      "source_frame": 459309,
+      "source_polygon_xy": [
+        [
+          145,
+          376
+        ],
+        [
+          238,
+          398
+        ],
+        [
+          240,
+          405
+        ],
+        [
+          152,
+          384
+        ]
+      ],
+      "correspondence_status": "source_identity_supported_high",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Upper narrow green blade attaches beside the sole cereal ear; relative attachment and pointed form match the overview.",
+      "review_pool_point_count": 693,
+      "indices_npz_key": "P1_O03_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "annotation_id": "P1.O04",
+      "specimen_id": "P1",
+      "source_frame": 459309,
+      "source_polygon_xy": [
+        [
+          151,
+          462
+        ],
+        [
+          178,
+          433
+        ],
+        [
+          229,
+          405
+        ],
+        [
+          236,
+          414
+        ],
+        [
+          200,
+          449
+        ],
+        [
+          161,
+          474
+        ]
+      ],
+      "correspondence_status": "source_identity_supported_high",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "The sole cereal ear is distinctive; ear body and awns remain different endpoint definitions.",
+      "review_pool_point_count": 233,
+      "indices_npz_key": "P1_O04_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "annotation_id": "P2.O01",
+      "specimen_id": "P2",
+      "source_frame": 459309,
+      "source_polygon_xy": [
+        [
+          897,
+          595
+        ],
+        [
+          935,
+          602
+        ],
+        [
+          978,
+          648
+        ],
+        [
+          978,
+          673
+        ],
+        [
+          934,
+          654
+        ],
+        [
+          901,
+          633
+        ]
+      ],
+      "correspondence_status": "candidate_medium",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Puckered blade beside the curled dry margin is plausible after reversing overview orientation; overlapping crown prevents a unique blade-base trace.",
+      "review_pool_point_count": 1186,
+      "indices_npz_key": "P2_O01_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment."
+    },
+    {
+      "annotation_id": "P2.O02",
+      "specimen_id": "P2",
+      "source_frame": 459309,
+      "source_polygon_xy": [
+        [
+          913,
+          515
+        ],
+        [
+          947,
+          518
+        ],
+        [
+          952,
+          554
+        ],
+        [
+          931,
+          582
+        ],
+        [
+          903,
+          566
+        ]
+      ],
+      "correspondence_status": "unresolved",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Several puckered leaves overlap at the node; the smaller source leaf cannot be isolated confidently.",
+      "review_pool_point_count": 370,
+      "indices_npz_key": "P2_O02_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment."
+    },
+    {
+      "annotation_id": "P3.O01",
+      "specimen_id": "P3",
+      "source_frame": 824869,
+      "source_polygon_xy": [
+        [
+          627,
+          466
+        ],
+        [
+          671,
+          454
+        ],
+        [
+          701,
+          467
+        ],
+        [
+          712,
+          491
+        ],
+        [
+          694,
+          502
+        ],
+        [
+          647,
+          483
+        ]
+      ],
+      "correspondence_status": "source_identity_supported_high",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Narrow lateral lobed blade at raw-image right matches overview left-middle leaf after 180-degree orientation reversal.",
+      "review_pool_point_count": 2394,
+      "indices_npz_key": "P3_O01_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "annotation_id": "P3.O02",
+      "specimen_id": "P3",
+      "source_frame": 824869,
+      "source_polygon_xy": [
+        [
+          640,
+          390
+        ],
+        [
+          644,
+          350
+        ],
+        [
+          679,
+          329
+        ],
+        [
+          707,
+          333
+        ],
+        [
+          711,
+          365
+        ],
+        [
+          696,
+          402
+        ],
+        [
+          658,
+          419
+        ]
+      ],
+      "correspondence_status": "source_identity_supported_high",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Deeply lobed leaf above dry brown patch with conspicuous basal hole matches overview lower-left leaf.",
+      "review_pool_point_count": 9041,
+      "indices_npz_key": "P3_O02_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "annotation_id": "P3.O03",
+      "specimen_id": "P3",
+      "source_frame": 824869,
+      "source_polygon_xy": [
+        [
+          576,
+          411
+        ],
+        [
+          569,
+          384
+        ],
+        [
+          572,
+          353
+        ],
+        [
+          589,
+          332
+        ],
+        [
+          611,
+          351
+        ],
+        [
+          627,
+          379
+        ],
+        [
+          612,
+          403
+        ],
+        [
+          593,
+          418
+        ]
+      ],
+      "correspondence_status": "source_identity_supported_high",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Central oval terminal blade with small basal lobes and serrated edge matches overview bottom-centre leaf; neighbouring petiole topology agrees.",
+      "review_pool_point_count": 3801,
+      "indices_npz_key": "P3_O03_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "annotation_id": "P3.O04",
+      "specimen_id": "P3",
+      "source_frame": 824869,
+      "source_polygon_xy": [
+        [
+          499,
+          330
+        ],
+        [
+          532,
+          315
+        ],
+        [
+          552,
+          319
+        ],
+        [
+          548,
+          343
+        ],
+        [
+          544,
+          364
+        ],
+        [
+          522,
+          378
+        ],
+        [
+          500,
+          364
+        ]
+      ],
+      "correspondence_status": "source_identity_supported_high",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Upper-left strongly lobed leaf with exposed petiole matches overview lower-right leaf after orientation reversal.",
+      "review_pool_point_count": 7144,
+      "indices_npz_key": "P3_O04_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "annotation_id": "P3.O05",
+      "specimen_id": "P3",
+      "source_frame": 824869,
+      "source_polygon_xy": [
+        [
+          455,
+          460
+        ],
+        [
+          484,
+          445
+        ],
+        [
+          501,
+          448
+        ],
+        [
+          520,
+          461
+        ],
+        [
+          536,
+          485
+        ],
+        [
+          519,
+          511
+        ],
+        [
+          493,
+          508
+        ],
+        [
+          468,
+          486
+        ]
+      ],
+      "correspondence_status": "source_identity_supported_high",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Lower-left broad lobed leaf matches overview upper-right leaf; outline and attachment side agree.",
+      "review_pool_point_count": 5332,
+      "indices_npz_key": "P3_O05_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "annotation_id": "P3.O06",
+      "specimen_id": "P3",
+      "source_frame": 824869,
+      "source_polygon_xy": [
+        [
+          586,
+          520
+        ],
+        [
+          610,
+          519
+        ],
+        [
+          619,
+          540
+        ],
+        [
+          639,
+          563
+        ],
+        [
+          622,
+          582
+        ],
+        [
+          581,
+          571
+        ]
+      ],
+      "correspondence_status": "candidate_medium",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Lower-centre lobed leaf plausibly matches overview upper-centre leaf, but a crossing flowering stalk obscures its attachment.",
+      "review_pool_point_count": 3201,
+      "indices_npz_key": "P3_O06_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment."
+    },
+    {
+      "annotation_id": "P4.O01",
+      "specimen_id": "P4",
+      "source_frame": 1003470,
+      "source_polygon_xy": [
+        [
+          615,
+          344
+        ],
+        [
+          757,
+          344
+        ],
+        [
+          757,
+          591
+        ],
+        [
+          615,
+          591
+        ]
+      ],
+      "correspondence_status": "unresolved",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Overview arrows and similar pod-like organs are interleaved. Organ type and branch-to-organ correspondence remain unresolved; broad review region only.",
+      "review_pool_point_count": 23256,
+      "indices_npz_key": "P4_O01_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment."
+    },
+    {
+      "annotation_id": "P4.O02",
+      "specimen_id": "P4",
+      "source_frame": 1003470,
+      "source_polygon_xy": [
+        [
+          615,
+          344
+        ],
+        [
+          757,
+          344
+        ],
+        [
+          757,
+          591
+        ],
+        [
+          615,
+          591
+        ]
+      ],
+      "correspondence_status": "unresolved",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Similar narrow pod-like structures cannot be uniquely traced from held photo to branching scene.",
+      "review_pool_point_count": 23256,
+      "indices_npz_key": "P4_O02_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment."
+    },
+    {
+      "annotation_id": "P4.O03",
+      "specimen_id": "P4",
+      "source_frame": 1003470,
+      "source_polygon_xy": [
+        [
+          615,
+          344
+        ],
+        [
+          757,
+          344
+        ],
+        [
+          757,
+          591
+        ],
+        [
+          615,
+          591
+        ]
+      ],
+      "correspondence_status": "unresolved",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Similar narrow pod-like structures cannot be uniquely traced from held photo to branching scene.",
+      "review_pool_point_count": 23256,
+      "indices_npz_key": "P4_O03_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment."
+    },
+    {
+      "annotation_id": "P4.O04",
+      "specimen_id": "P4",
+      "source_frame": 1003470,
+      "source_polygon_xy": [
+        [
+          615,
+          344
+        ],
+        [
+          757,
+          344
+        ],
+        [
+          757,
+          591
+        ],
+        [
+          615,
+          591
+        ]
+      ],
+      "correspondence_status": "unresolved",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Similar narrow pod-like structures cannot be uniquely traced from held photo to branching scene.",
+      "review_pool_point_count": 23256,
+      "indices_npz_key": "P4_O04_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment."
+    },
+    {
+      "annotation_id": "P5.O01",
+      "specimen_id": "P5",
+      "source_frame": 1445026,
+      "source_polygon_xy": [
+        [
+          486,
+          227
+        ],
+        [
+          517,
+          212
+        ],
+        [
+          561,
+          211
+        ],
+        [
+          573,
+          247
+        ],
+        [
+          561,
+          271
+        ],
+        [
+          572,
+          298
+        ],
+        [
+          552,
+          325
+        ],
+        [
+          520,
+          326
+        ],
+        [
+          477,
+          299
+        ],
+        [
+          476,
+          273
+        ]
+      ],
+      "correspondence_status": "source_identity_supported_high",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Green lobed blade with pale/brown damaged upper margin matches overview left-side leaf after rotating row orientation.",
+      "review_pool_point_count": 14706,
+      "indices_npz_key": "P5_O01_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "annotation_id": "P5.O02",
+      "specimen_id": "P5",
+      "source_frame": 1445026,
+      "source_polygon_xy": [
+        [
+          537,
+          377
+        ],
+        [
+          558,
+          379
+        ],
+        [
+          585,
+          397
+        ],
+        [
+          589,
+          414
+        ],
+        [
+          573,
+          431
+        ],
+        [
+          545,
+          432
+        ],
+        [
+          532,
+          413
+        ]
+      ],
+      "correspondence_status": "source_identity_supported_high",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Only small central green blade beside rust-brown leaf and radial fork matches overview small-central arrow.",
+      "review_pool_point_count": 4873,
+      "indices_npz_key": "P5_O02_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "annotation_id": "P5.O03",
+      "specimen_id": "P5",
+      "source_frame": 1445026,
+      "source_polygon_xy": [
+        [
+          600,
+          382
+        ],
+        [
+          629,
+          365
+        ],
+        [
+          660,
+          363
+        ],
+        [
+          679,
+          391
+        ],
+        [
+          695,
+          393
+        ],
+        [
+          709,
+          430
+        ],
+        [
+          692,
+          456
+        ],
+        [
+          661,
+          464
+        ],
+        [
+          655,
+          493
+        ],
+        [
+          627,
+          492
+        ],
+        [
+          611,
+          465
+        ],
+        [
+          604,
+          433
+        ]
+      ],
+      "correspondence_status": "source_identity_supported_high",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Rust-brown deeply lobed blade with rolled pale right edge matches distinctive source top-centre damaged leaf and radial attachment.",
+      "review_pool_point_count": 17407,
+      "indices_npz_key": "P5_O03_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "annotation_id": "P5.O04",
+      "specimen_id": "P5",
+      "source_frame": 1445026,
+      "source_polygon_xy": [
+        [
+          533,
+          464
+        ],
+        [
+          570,
+          471
+        ],
+        [
+          591,
+          497
+        ],
+        [
+          590,
+          535
+        ],
+        [
+          569,
+          565
+        ],
+        [
+          546,
+          582
+        ],
+        [
+          518,
+          571
+        ],
+        [
+          498,
+          548
+        ],
+        [
+          496,
+          515
+        ],
+        [
+          508,
+          484
+        ]
+      ],
+      "correspondence_status": "source_identity_supported_high",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Broad green terminal blade with shallow basal side lobes and reticulate veins matches overview right-side leaf and same petiole.",
+      "review_pool_point_count": 12961,
+      "indices_npz_key": "P5_O04_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "annotation_id": "P5.O05",
+      "specimen_id": "P5",
+      "source_frame": 1445026,
+      "source_polygon_xy": [
+        [
+          350,
+          386
+        ],
+        [
+          382,
+          369
+        ],
+        [
+          404,
+          345
+        ],
+        [
+          429,
+          347
+        ],
+        [
+          440,
+          373
+        ],
+        [
+          473,
+          372
+        ],
+        [
+          491,
+          397
+        ],
+        [
+          470,
+          414
+        ],
+        [
+          455,
+          447
+        ],
+        [
+          433,
+          438
+        ],
+        [
+          414,
+          415
+        ],
+        [
+          376,
+          431
+        ],
+        [
+          343,
+          438
+        ]
+      ],
+      "correspondence_status": "source_identity_supported_high",
+      "matching_scope": "Annotated overview to raw D405 scene; ruler-folder correspondence remains the prior review candidate and is not independently approved.",
+      "evidence": "Left-facing green blade with elongated central lobe and basal side lobes matches overview bottom-left leaf and attachment.",
+      "review_pool_point_count": 6916,
+      "indices_npz_key": "P5_O05_interior_review_fused_indices",
+      "pool_scope": "Visible existing cleaned points in source interior region; not full blade segmentation. P4 broad regions unresolved and nonexclusive.",
+      "physical_reference_match_accepted_for_validation": false,
+      "length_m": null,
+      "width_m": null,
+      "numerical_exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    }
+  ],
+  "manual_dimensions": [
+    {
+      "measurement_id": "P1.H01.height",
+      "annotation_id": "P1.H01",
+      "specimen_id": "P1",
+      "dimension": "height",
+      "source_annotation_cm": 53.5,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "whole_plant",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "specimen_identity_supported_endpoint_pair_unresolved",
+      "exclusion_reason": "Dry blades overlap narrow stems at the soil junction; the measured stem origin cannot be isolated. Highest retained surface projects to the upper green blade tip. Cereal ear awns extend beyond the dense ear body and are incompletely reconstructed; the very highest biological tip is not certified."
+    },
+    {
+      "measurement_id": "P1.O01.length",
+      "annotation_id": "P1.O01",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "source_annotation_cm": 12.5,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (3).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment."
+    },
+    {
+      "measurement_id": "P1.O01.width",
+      "annotation_id": "P1.O01",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "source_annotation_cm": 1,
+      "direct_ruler_reading_cm": 1.1,
+      "approximate_reading_interval_cm": [
+        0.9,
+        1.3
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (4).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P1.O02.length",
+      "annotation_id": "P1.O02",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "source_annotation_cm": 10.9,
+      "direct_ruler_reading_cm": 10.9,
+      "approximate_reading_interval_cm": [
+        10.6,
+        11.2
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "candidate_medium",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment."
+    },
+    {
+      "measurement_id": "P1.O02.width",
+      "annotation_id": "P1.O02",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "source_annotation_cm": 1,
+      "direct_ruler_reading_cm": 1.0,
+      "approximate_reading_interval_cm": [
+        0.8,
+        1.2
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (2).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "candidate_medium",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P1.O03.length",
+      "annotation_id": "P1.O03",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "source_annotation_cm": 7.3,
+      "direct_ruler_reading_cm": 7.3,
+      "approximate_reading_interval_cm": [
+        7.0,
+        7.6
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (5).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "measurement_id": "P1.O03.width",
+      "annotation_id": "P1.O03",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "source_annotation_cm": 9,
+      "direct_ruler_reading_cm": 0.8,
+      "approximate_reading_interval_cm": [
+        0.6,
+        1.0
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (6).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P1.O04.length",
+      "annotation_id": "P1.O04",
+      "specimen_id": "P1",
+      "dimension": "length",
+      "source_annotation_cm": 6.5,
+      "direct_ruler_reading_cm": 6.4,
+      "approximate_reading_interval_cm": [
+        6.1,
+        6.7
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "ear",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (7).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Ear excluded from leaf statistics."
+    },
+    {
+      "measurement_id": "P1.O04.width",
+      "annotation_id": "P1.O04",
+      "specimen_id": "P1",
+      "dimension": "width",
+      "source_annotation_cm": 1.6,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "ear",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-1_measurements.jpeg",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-1/Media (8).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Ear excluded from leaf statistics. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P2.H01.height",
+      "annotation_id": "P2.H01",
+      "specimen_id": "P2",
+      "dimension": "height",
+      "source_annotation_cm": 51.7,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "whole_plant",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-2_measurements_02.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-2/Media (1).jpeg",
+        "manual_validation_5-plants_28-09/plant-2/Media (2).jpeg",
+        "manual_validation_5-plants_28-09/plant-2/Media (3).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "specimen_identity_supported_endpoint_pair_unresolved",
+      "exclusion_reason": "Exposed curved green basal stem is visible against soil, but its precise emergence and measurement zero are unresolved. Highest retained points project to a curled yellowing edge and nearby overlapping tissue. Small terminal buds and curled margins are not a unique certified top endpoint."
+    },
+    {
+      "measurement_id": "P2.O01.length",
+      "annotation_id": "P2.O01",
+      "specimen_id": "P2",
+      "dimension": "length",
+      "source_annotation_cm": 5,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-1/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "candidate_medium",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment."
+    },
+    {
+      "measurement_id": "P2.O01.width",
+      "annotation_id": "P2.O01",
+      "specimen_id": "P2",
+      "dimension": "width",
+      "source_annotation_cm": 2.7,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-1/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "candidate_medium",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P2.O02.length",
+      "annotation_id": "P2.O02",
+      "specimen_id": "P2",
+      "dimension": "length",
+      "source_annotation_cm": 3.9,
+      "direct_ruler_reading_cm": 3.9,
+      "approximate_reading_interval_cm": [
+        3.6,
+        4.2
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-2/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment."
+    },
+    {
+      "measurement_id": "P2.O02.width",
+      "annotation_id": "P2.O02",
+      "specimen_id": "P2",
+      "dimension": "width",
+      "source_annotation_cm": 3.4,
+      "direct_ruler_reading_cm": 3.5,
+      "approximate_reading_interval_cm": [
+        3.2,
+        3.8
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-2_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-2/Leaf-2/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P3.H01.height",
+      "annotation_id": "P3.H01",
+      "specimen_id": "P3",
+      "dimension": "height",
+      "source_annotation_cm": 52.8,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "whole_plant",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_02.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Media (1).jpeg",
+        "manual_validation_5-plants_28-09/plant-3/Media (2).jpeg",
+        "manual_validation_5-plants_28-09/plant-3/Media (3).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "specimen_identity_supported_endpoint_pair_unresolved",
+      "exclusion_reason": "Purple/green petiole junction is visible, but the soil-level stem origin is beneath overlapping tissue. Branch-junction region only. Highest retained points lie in overlapping distal stalk/leaf tissue near the lower image edge. Long flowering-stem extremities and true terminal point are not fully resolved."
+    },
+    {
+      "measurement_id": "P3.O01.length",
+      "annotation_id": "P3.O01",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 7.4,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-5/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "measurement_id": "P3.O01.width",
+      "annotation_id": "P3.O01",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 5.5,
+      "direct_ruler_reading_cm": 5.4,
+      "approximate_reading_interval_cm": [
+        5.1,
+        5.7
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-5/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P3.O02.length",
+      "annotation_id": "P3.O02",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 9.8,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-4/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "measurement_id": "P3.O02.width",
+      "annotation_id": "P3.O02",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 7.6,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-4/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P3.O03.length",
+      "annotation_id": "P3.O03",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 7.5,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-3/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "measurement_id": "P3.O03.width",
+      "annotation_id": "P3.O03",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 5.7,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-3/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P3.O04.length",
+      "annotation_id": "P3.O04",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 11,
+      "direct_ruler_reading_cm": 11.0,
+      "approximate_reading_interval_cm": [
+        10.7,
+        11.3
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-2/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "measurement_id": "P3.O04.width",
+      "annotation_id": "P3.O04",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 8.7,
+      "direct_ruler_reading_cm": 8.7,
+      "approximate_reading_interval_cm": [
+        8.4,
+        9.0
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-2/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P3.O05.length",
+      "annotation_id": "P3.O05",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 9.2,
+      "direct_ruler_reading_cm": 9.2,
+      "approximate_reading_interval_cm": [
+        8.9,
+        9.5
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-1/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "measurement_id": "P3.O05.width",
+      "annotation_id": "P3.O05",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 7.7,
+      "direct_ruler_reading_cm": 7.7,
+      "approximate_reading_interval_cm": [
+        7.4,
+        8.0
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-1/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P3.O06.length",
+      "annotation_id": "P3.O06",
+      "specimen_id": "P3",
+      "dimension": "length",
+      "source_annotation_cm": 7.5,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-6/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "candidate_medium",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment."
+    },
+    {
+      "measurement_id": "P3.O06.width",
+      "annotation_id": "P3.O06",
+      "specimen_id": "P3",
+      "dimension": "width",
+      "source_annotation_cm": 6.3,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-3_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-3/Leaf-6/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "candidate_medium",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P4.H01.height",
+      "annotation_id": "P4.H01",
+      "specimen_id": "P4",
+      "dimension": "height",
+      "source_annotation_cm": 52.3,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "whole_plant",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_02.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Media (1).jpeg",
+        "manual_validation_5-plants_28-09/plant-4/Media (2).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "specimen_identity_supported_endpoint_pair_unresolved",
+      "exclusion_reason": "Pot-centre origin is obscured by leaves and crossing flowering stems. Region candidate only; no visible stem-base endpoint. Highest retained surface projects to a terminal pale bud/flower cluster, but its exact outermost endpoint and complete depth support remain uncertain."
+    },
+    {
+      "measurement_id": "P4.O01.length",
+      "annotation_id": "P4.O01",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "source_annotation_cm": 3,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-1/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved."
+    },
+    {
+      "measurement_id": "P4.O01.width",
+      "annotation_id": "P4.O01",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "source_annotation_cm": 0.2,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-1/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P4.O02.length",
+      "annotation_id": "P4.O02",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "source_annotation_cm": 2.8,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-2/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved."
+    },
+    {
+      "measurement_id": "P4.O02.width",
+      "annotation_id": "P4.O02",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "source_annotation_cm": 0.5,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-2/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P4.O03.length",
+      "annotation_id": "P4.O03",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "source_annotation_cm": 2.9,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-3/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved."
+    },
+    {
+      "measurement_id": "P4.O03.width",
+      "annotation_id": "P4.O03",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "source_annotation_cm": 0.3,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-3/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P4.O04.length",
+      "annotation_id": "P4.O04",
+      "specimen_id": "P4",
+      "dimension": "length",
+      "source_annotation_cm": 2.9,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-4/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved."
+    },
+    {
+      "measurement_id": "P4.O04.width",
+      "annotation_id": "P4.O04",
+      "specimen_id": "P4",
+      "dimension": "width",
+      "source_annotation_cm": 0.4,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "unusable_for_leaf_validation_pending_organ_type",
+      "organ_kind": "uncertain_leaf_or_pod",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-4_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-4/Leaf-4/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "unresolved",
+      "exclusion_reason": "Organ identity unresolved or tentative; no nearest-shape or dimension-based assignment. Leaf-versus-pod identity unresolved. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P5.H01.height",
+      "annotation_id": "P5.H01",
+      "specimen_id": "P5",
+      "dimension": "height",
+      "source_annotation_cm": 31.8,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "whole_plant",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_02.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "specimen_identity_supported_endpoint_pair_unresolved",
+      "exclusion_reason": "Radial petiole junction and lower curved stem are visible; actual soil-emergence point is hidden by the stem/leaf cluster. Highest retained points project to the terminal margin of the left-facing lobed green O05 leaf candidate, a plausible top surface. This does not establish all-terminal completeness or the stem origin."
+    },
+    {
+      "measurement_id": "P5.O01.length",
+      "annotation_id": "P5.O01",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "source_annotation_cm": 12,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-4/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "measurement_id": "P5.O01.width",
+      "annotation_id": "P5.O01",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "source_annotation_cm": 9.9,
+      "direct_ruler_reading_cm": 9.8,
+      "approximate_reading_interval_cm": [
+        9.4,
+        10.2
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-4/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P5.O02.length",
+      "annotation_id": "P5.O02",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "source_annotation_cm": 8,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-3/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "measurement_id": "P5.O02.width",
+      "annotation_id": "P5.O02",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "source_annotation_cm": 4.8,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-3/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P5.O03.length",
+      "annotation_id": "P5.O03",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "source_annotation_cm": 11.9,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-2/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "measurement_id": "P5.O03.width",
+      "annotation_id": "P5.O03",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "source_annotation_cm": 11.7,
+      "direct_ruler_reading_cm": 11.7,
+      "approximate_reading_interval_cm": [
+        11.2,
+        12.2
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-2/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P5.O04.length",
+      "annotation_id": "P5.O04",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "source_annotation_cm": 12.9,
+      "direct_ruler_reading_cm": 12.9,
+      "approximate_reading_interval_cm": [
+        12.6,
+        13.2
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-1/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "measurement_id": "P5.O04.width",
+      "annotation_id": "P5.O04",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "source_annotation_cm": 9,
+      "direct_ruler_reading_cm": 9.0,
+      "approximate_reading_interval_cm": [
+        8.7,
+        9.3
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-1/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width."
+    },
+    {
+      "measurement_id": "P5.O05.length",
+      "annotation_id": "P5.O05",
+      "specimen_id": "P5",
+      "dimension": "length",
+      "source_annotation_cm": 13.2,
+      "direct_ruler_reading_cm": null,
+      "approximate_reading_interval_cm": null,
+      "reference_category": "operator_annotation_only",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-5/Media.jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width."
+    },
+    {
+      "measurement_id": "P5.O05.width",
+      "annotation_id": "P5.O05",
+      "specimen_id": "P5",
+      "dimension": "width",
+      "source_annotation_cm": 7.8,
+      "direct_ruler_reading_cm": 7.6,
+      "approximate_reading_interval_cm": [
+        7.2,
+        8.0
+      ],
+      "reference_category": "photo_supported_approximate",
+      "organ_kind": "leaf",
+      "source_annotation_image": "manual_validation_5-plants_28-09/plant-5_measurements_01.png",
+      "supporting_photos": [
+        "manual_validation_5-plants_28-09/plant-5/leaf-5/Media (1).jpeg"
+      ],
+      "reconstructed_value_cm": null,
+      "eligible_for_accuracy_statistics": false,
+      "units_independently_confirmed": false,
+      "board_dimensions_operator_confirmed": true,
+      "coordinate_unit": "board-referenced metre",
+      "correspondence_status": "source_identity_supported_high",
+      "exclusion_reason": "Image identity supported, but complete homologous blade/ear endpoints and the ruler width cross-section are not frozen in 3D. An interior pool cannot supply full-organ length or width. Photographed section is not demonstrated to be maximum width."
+    }
+  ],
+  "source_sha256": {
+    "generated/research_confirmed_board_20261007/board_confirmation.json": "55abeaa4321131141a2ebfa8998aca8a07e55f273c1ca160a7a84d6bf8256e5f",
+    "generated/research_confirmed_board_20261007/d405_metric_calibration.json": "4875f09593b49966f1f191296de8b055a68b61f8626f6cd1a3eda269b8d0c3cf",
+    "generated/research_confirmed_board_20261007/cross_camera/selection.json": "dcbc466509081f014dfa8b0f51f8fbbd512408677843c44f4bb824f9572b671a",
+    "generated/research_confirmed_board_20261007/fusion_v1/fused_review_reference.ply": "2a310d7eb85db8005437170e7207ec6326e5b2fa397546ccecd1af16c5c8ed72",
+    "generated/research_confirmed_board_20261007/fusion_v1/fused_point_provenance.npz": "2aa1f32f7f21b2cb8a9ba1258f870d2a31ac74454226963d19565834aa6ee0c3",
+    "generated/research_confirmed_board_20261007/cleanup_v1/result/point_classification.npz": "3af085c90913f0e913bb480e79dbfc4862d6aca137cd3d3e6ba037399e9e951d",
+    "generated/research_confirmed_board_20261007/cleanup_v1/result/summary.json": "0f8fe280b3c54b1980c09158f4feba8c38801f45eb4d939a7a242c38f1dade8b",
+    "generated/research_20260928_improvement_20261007/short_dense_v3/profile.json": "101f44a9b1329cae37431151bedeeedbf01c84a1e09bc6e91002ed2834910db9",
+    "generated/research_confirmed_board_20261007/d405_metric/icp_diagnostics_reexpressed.json": "6aec0da7727ed3a3bd386597f51f4f2398db44fba6b94dcd7e53058ce1b6be6c",
+    "generated/research_20260928_readiness_20261007/ruler_photo_review.json": "326acd2d5b0541ef8be18cdeff795c44b10d2ecfb99d483175025ca2740e879b",
+    "generated/research_20260928_readiness_20261007/manual_reference_inventory.json": "18bff51a79ccc9a9403b7575c919f0ce8cd9800b65a9591485be64cf1939d879",
+    "generated/research_20260928_readiness_20261007/ruler_photo_review.md": "030185e6e2c81e52fffe26b045b8eb5b3c953523e60a714194e126f489891abf",
+    "generated/research_20260928_readiness_20261007/manual_reference_notes.md": "5d3be02c8c4c59d3b13c97396bd60c1175be63c0684411f655c436f080f7a968",
+    "generated/research_confirmed_board_20261007/traits_metric/annotations.json": "d33778a0661cf6fe13a8c8b95412ebf6c199fbf936d74bc10fb4a08425cfed77",
+    "generated/research_plant_cleanup_20261007/source_review/p1_p2/P1_P2_multiview_polygon_review.json": "c035d943ab3bef19f93a3ac1fbba27a4d63f68f02ce51a8c1e4f65dd30d985a8",
+    "generated/research_plant_cleanup_20261007/source_review/p3_p4/source_review_p3_p4.json": "c3f8e021fcf3624c6709bcc18dc4716ff9e5ebd8e00aa9304a5f12cd9ef0a260",
+    "generated/research_plant_cleanup_20261007/source_review/p5/P5_source_review.json": "bbc41661c7bee57f1bd4711e670bd301439fb5f5ce4cd06af41486a1abd38961",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-1/Media (1).jpeg": "be68c0892a0b960f32bab7a6e424dda2674ffcb2e017d863ebc7b8f87943f8f1",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-1/Media (2).jpeg": "7b662f116cc69339119b3fd13858d29c907e3b8eb977aabf1b434fe20847c692",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-1/Media (3).jpeg": "48cef63537c9ac02944d47c4e1fa745e5168c1ada7b062c8345f4c63baa3af41",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-1/Media (4).jpeg": "63e993553b534f6d6a2637cc1d611ea62ab3c7157e7ebb79a279c25217d18825",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-1/Media (5).jpeg": "2a5ecda225bfd1c0ceb698dd674fb2e098bbf55af8de1634d6ff032d9d25410a",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-1/Media (6).jpeg": "a39a15534cb12ebd4b8d00a9533eacb4ec9c90234e9d995348dd3028a9fe6649",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-1/Media (7).jpeg": "363a3c6e8ce7438309e5250d6febb6dc2ec6d8d0966c6616d86fb1ba02af8448",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-1/Media (8).jpeg": "fb1dc0c102a9b66a36fe1261173b9d5117238f6f35143badbf0b4f420c45199a",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-1_measurements.jpeg": "93e2b424b2ca6cab312b1be454bf8b9e8f3ae7c101be7437eb8f20ab8698e40e",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-2/Leaf-1/Media (1).jpeg": "97e6e374e4c0c48fd0ede7dcdd1ef030b4297d9850ee014163fa0ae4c1cd3600",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-2/Leaf-1/Media.jpeg": "530f27ed2ad07e47bb9857b0056f972fa83e6f6fdc5dbe896e36ceeb494e6dc1",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-2/Leaf-2/Media (1).jpeg": "c7ca263f76574fd9803e1b9a35ef48a24e4badf0a6cdacc381e45fcf40398e1e",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-2/Leaf-2/Media.jpeg": "783fd9e43503236df278a2c79d37126a7be086f580cab4a21da9b2f191336b06",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-2/Media (1).jpeg": "1ddfc6791fd52142d44e38d41d74c112dddeb3b3d5cfdf3decc2ee94e3974b98",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-2/Media (2).jpeg": "f2e1ef9e842fe1f4a4bf685197b8d3da5ce5eee63b4c9fb7d9e4124a51314dfb",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-2/Media (3).jpeg": "2b0391d54d8a8cbfc27dbeede8600a637a112baf77d6bb2db305395186eca61d",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-2_measurements_01.png": "e73a930058a018500c8a46f1ad860994abd343f9373e27cc0ed9428c28f5313a",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-2_measurements_02.png": "2082372b3e7d25d0fd891db905544a9ee190cfaea31470d6ead17adbe010d313",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3/Leaf-1/Media (1).jpeg": "0c6f9b6f2d78d94326d16a78dcf1bbf7e55a9311a5af100f6bbdb93ba956f1c8",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3/Leaf-1/Media.jpeg": "e6761c2d49941351dfac31ac2e6db46b61f4433a5f9f56d65808b57277e10441",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3/Leaf-2/Media (1).jpeg": "cad4dc33ca2e09f57a723de8a4c8fc415542608cb30295c5520b80fce3560d4f",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3/Leaf-2/Media.jpeg": "bf20e45bd488495db9eab008f56e3a1c96f55b3d37f089517cc941f717aa0107",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3/Leaf-3/Media (1).jpeg": "c850a1ff59277ed2b887fd1e47486eaf004129277459b7aa011ed26c27fc53bd",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3/Leaf-3/Media.jpeg": "07b9050ddf42f54bc1dccc5372d67380ab1aabc98a9375dfd1d9ca9e75fcd970",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3/Leaf-4/Media (1).jpeg": "08b736618578fbcb21d84f04fc4c112a2297c395d80c54650edd21f63b8991f1",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3/Leaf-4/Media.jpeg": "579fb396dcabcdaa057895ba2e482ee24b049b730713acdeebd33a94dcec373d",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3/Leaf-5/Media (1).jpeg": "e6590e321208f5e430a195c64ef889e3f1da66a2bcff5b70128f3c47746dbcd2",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3/Leaf-5/Media.jpeg": "8ee9e238b10179e71369f31510cfe2797a729a0f3edb96ba0528afa18d3626ab",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3/Leaf-6/Media (1).jpeg": "8c66679eac26174936ac99d6ef3225068ebc7741b2de566520d13b49939a8b68",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3/Leaf-6/Media.jpeg": "fe8c7e0eeae5de8632fa11134b261c011a7e4709ffd5c5e4d1cad517948afae6",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3/Media (1).jpeg": "cee3463ad95c6d08b6fad0a9cd560af67d47b51bcf185fc8a0a4d1dbcf350290",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3/Media (2).jpeg": "e765a00568e7f702b15ff431e82674ccefe0deb494df7e48c1c188588fecb053",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3/Media (3).jpeg": "e765a00568e7f702b15ff431e82674ccefe0deb494df7e48c1c188588fecb053",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3_measurements_01.png": "11499eed550af48664b21972a28ee698bca0c6babd43ef5e21aa3f2a9943b8c6",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-3_measurements_02.png": "a90da0c4404b5642f1ff27b213d59d2b9f5f4b077dbb7bb822b09d523ec4a9b6",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-4/Leaf-1/Media (1).jpeg": "b2f11e99f0a1b78734a069ee446c7a246ffdd03fea73bccbe0cd5bc799739370",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-4/Leaf-1/Media.jpeg": "001a4d00387644361a6c59ea74526528bd74d1efedabdc4c50caf393f6bed236",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-4/Leaf-2/Media (1).jpeg": "7e244fea59c786d178297c2a8cf15ee52a7863ba7ae80f28e783a87693c83253",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-4/Leaf-2/Media.jpeg": "250370108e094f476e712e82ad115af8516c1c715e255e68f4aae4c4368e7696",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-4/Leaf-3/Media (1).jpeg": "555a8781b5dc98c10e7b9277f04747e1f5c81bd5e434633e8eb0caf3b7d9044a",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-4/Leaf-3/Media.jpeg": "9e5cfe9be0181faaa9405466f36c4012cc6287ca0e88059267912f8f75f01301",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-4/Leaf-4/Media (1).jpeg": "7d6b6448015cb4dab365519db7e7f567f25da6336023d57a97b597591a5e3207",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-4/Leaf-4/Media.jpeg": "5ff52deb5557894c10ef85e34f4ce0b5c44765797c391f64dbd1537c3a343e9d",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-4/Media (1).jpeg": "782c49272021c50e11c9b4387bec62d8187dc9a3184ed1d4821410a14eacb1ab",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-4/Media (2).jpeg": "79eab25cf57de1938f13a221e9e7d168ab3a0b84fadd12566eb72d731131e52c",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-4_measurements_01.png": "2c8b0968d78690bf5ed916e9eeaf88334b020f8ba8ef7f9736322b64fe1a3292",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-4_measurements_02.png": "f83c4a5a98ca545cc1167e4bb19a178ae847593156af48120f7101408adb763f",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-5/Media (1).jpeg": "e61eecb977dc1a0eb5c2b4f7d6d5ef67eec7e17cdd9060d1ffc16e43af81affc",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-5/leaf-1/Media (1).jpeg": "8a4aac05da4e83d17a7261024bea9a54e0b1911c7351012fa8c435a0e1b8a215",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-5/leaf-1/Media.jpeg": "d51a4e159a635bdeeda6ecccf1570d469e65a3709982be91ae5d9b345dbb72a2",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-5/leaf-2/Media (1).jpeg": "fa4db48926a9cd7e3d9fb30bd2a8e15148c5fa085063362c1ef5158830a7f4bc",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-5/leaf-2/Media.jpeg": "a96c81aa8005809e2a2326f2d99d9347504546292f924b21276312a0495579e8",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-5/leaf-3/Media (1).jpeg": "017554792f733af64c044f35572dd5c087b00ef630f5c11e744bbba50e2402c8",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-5/leaf-3/Media.jpeg": "13b5c8b55fce2e86dbf3c240dee3f140ba7deaac499071c6b6415de757c36eec",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-5/leaf-4/Media (1).jpeg": "ab7251a0647aae99faafde2cbf97a4d0d6ea5eab95d778739b3d789d3adc03cd",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-5/leaf-4/Media.jpeg": "a09d49ff3fa45fcb26f2db0718aa50d616b7b5ed3cc4f6673099f841eeba7fbf",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-5/leaf-5/Media (1).jpeg": "bd6f70e7cbfedbc122a1c5fb58844b3aa5e5a969a5cc4b04b0835959c85a8f7e",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-5/leaf-5/Media.jpeg": "9e4291d7d6e0c44258ff0ab0f972c7d205aaf7ef5fe32353e5c38a1f0f476e57",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-5_measurements_01.png": "7eec6eba0fa90704dfdb08c623b09ba3c1d6ac39af8ea03d05a2151e84571a3b",
+    "data/main/test_plant_10-7/manual_validation_5-plants_28-09/plant-5_measurements_02.png": "52a5bf1c008720ffce5262ec8fac081e6bee218594dd2b9846da46444c6a018f",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_143152.png": "e05f726e79b9c686476201f453998cf13c371269aeaa0435be5d1fe553216c76",
+    "generated/research_20260928_improvement_20261007/short_dense_v3/rgb/depth_143152.npz": "c5c54c91860e9050a6c37cadc97e1a6250bed6fe6d2c8338efa3d71843cca855",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_249551.png": "edb4b734f39ed4e2e9293fdb2e6a4792e9d153649d86aaa152b1d47de1938e84",
+    "generated/research_20260928_improvement_20261007/short_dense_v3/rgb/depth_249551.npz": "8f91a6c2a258d101d96cb3402f94b0f40855c8358294bb1eb1679429e69a4858",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_302754.png": "251a2dc7ffd05a313179228af7be6a8988faca868b203083e2068406fc35c2c9",
+    "generated/research_20260928_improvement_20261007/short_dense_v3/rgb/depth_302754.npz": "f42e4f1ef39c31f981216eab06736d9954259553ed54a585eeee5d9d4983aa51",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_459309.png": "eeb0e54264da53c9d92f1b53b13a3edfb30e9a499e126ed97757792ab25e81b5",
+    "generated/research_20260928_improvement_20261007/short_dense_v3/rgb/depth_459309.npz": "4c36ea35133b892e0de1430d9ddf67697115133e361c0c43d23310ac55dc106e",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_618150.png": "49408f2d7842be0fd4243eeb906ac339b7e1849d54602b74663dd3cf1ca2224b",
+    "generated/research_20260928_improvement_20261007/short_dense_v3/rgb/depth_618150.npz": "5221951dd441cbcb29d1357f00e738e509db539cf766748ab5a4c1625bf04051",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_670589.png": "88e30cd42649b648d7c7108503b4c19544687bc396754539f957dfc6b9a6489e",
+    "generated/research_20260928_improvement_20261007/short_dense_v3/rgb/depth_670589.npz": "660f737f40c794b93920b0e0753bcc4501cca7da7b47e05352249e9643f14e5c",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_824869.png": "0a03b8a36dfbad1ef078e8e7a6d44784ce5fb1774cc757f8ff196b600ca33ba2",
+    "generated/research_20260928_improvement_20261007/short_dense_v3/rgb/depth_824869.npz": "800c54dfeec84f31d449af23f9fcd0530a8e4ed67811b641284e5fae9bc2e920",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_851470.png": "4c226d5b2fcfe382118329648f5999cb56a078279aaaa25c083109d3b1d7c651",
+    "generated/research_20260928_improvement_20261007/short_dense_v3/rgb/depth_851470.npz": "4937ac32baf9aec55b0035c44016b617aadd9132a255cc3db7d5ec081a7db3e2",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_1003470.png": "76da08b943df68c8a1e6a99e0cf5c5cb9b67122670e58218a60052e77c4cfc88",
+    "generated/research_20260928_improvement_20261007/short_dense_v3/rgb/depth_1003470.npz": "3c689effab18ebf68526066cf6a63ebc24b79ad862f0fa49e11b5c7e3df77b0b",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_1030829.png": "457b2da5706924f223e27e33b88f23d1f0aa46baf02163ab5178575262f5bb73",
+    "generated/research_20260928_improvement_20261007/short_dense_v3/rgb/depth_1030829.npz": "49a7659d660c5ec89844be775b9821c645d43b60de0258791f96cc063ee82331",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_1055904.png": "bee3f64163734272e504df97d608f9a2275253ae99eea072b3bd00563fed1494",
+    "generated/research_20260928_improvement_20261007/short_dense_v3/rgb/depth_1055904.npz": "6f390f935b5e9227b07b3d11146fc0b081b654b06d26600d6feb67d93b5c2eff",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_1160788.png": "dac0e6dd6db53316695feeb1d6c19bce41d463ecb3bf8d221721d5d63b89b535",
+    "generated/research_20260928_improvement_20261007/short_dense_v3/rgb/depth_1160788.npz": "437d2b9cbf8dc951e00f319b68f95c5c18199271265f13af7c208720d5952764",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_1445026.png": "5806f79f501b2f7e7576fa19181634fc850e77cba193470643eb36b47c87cb97",
+    "generated/research_20260928_improvement_20261007/short_dense_v3/rgb/depth_1445026.npz": "16aa167fd6d7aadb7df9aa73230320491e8b6f1c5d8d2d74194ba297d45eed8e",
+    "data/main/test_plant_10-7/test_plant_20260928162354/rgb_1639585.png": "651cfe05ad1ecaaf815957d4091bdca7a5eb54349d2ab4f16958593893cb063a",
+    "generated/research_20260928_improvement_20261007/short_dense_v3/rgb/depth_1639585.npz": "e5949931c4de7708d3028c1f7703cfdf40a45eaa72ff1de6637c8f1ecb33b657"
+  },
+  "index_file": "review_point_indices.npz",
+  "provenance_file": "review_point_provenance.npz"
+}

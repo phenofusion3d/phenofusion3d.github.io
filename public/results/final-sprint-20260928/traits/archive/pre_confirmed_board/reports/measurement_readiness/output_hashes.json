@@ -1,0 +1,18 @@
+{
+  "build_handoff.py": "d868343caece0dafcde04527341ac766bf564778bb67e9c527b309305d5508bc",
+  "dimension_readiness.csv": "de348d1897710a6252dcee00ca248906bbac26f4b7a1e846c07b8e9934e61593",
+  "endpoint_sensitivity_separate.csv": "0124dd814d12b9f29d2bac01912f3241230c380036afa1e37608001bddf0fdd2",
+  "index.html": "3c6912f48e757262f7ca1fcbec2e17c02052caa485bc99c9c53a37f25d1b4490",
+  "measurement_actions.csv": "9273d27fad79a5420e99348224a101d9736580f7ec949567252bd4a875b3e7d1",
+  "measurement_handoff.json": "4c0dcb18e6059a6a61cbc3c9995db4d6ca6a40aea399f322695e238831fb4283",
+  "plant_handoff.csv": "d77882e326538b2e836972563a778c4f34f8ea831116ba2c02ad4d7e5ddd9797",
+  "scale_bands.csv": "8dcb5849d9963af80445207c91796feb762de9a296fa9558eb7e6380e8c34819",
+  "scale_scenarios.csv": "efb71f0f54cfa6c93508a5e28fcc399500d75a4f53ea03b91a113b627820e388",
+  "scale_sensitivity.json": "c3ac8630636c3c4ca981a1f81ac28a3a68cd00a2401de873921b74668a5775d9",
+  "verification.json": "05fc822db7caebd54bf7e158c099e88e297e77360148f1ad8e0301b85fc3cf11",
+  "assets/P1_source_review.jpg": "a5edc951407713da3b20584563763bd4248a8b040dee75c06cbd61783aad3186",
+  "assets/P2_source_review.jpg": "2f0017d65a7f5c39ef6ad46b6f0d03e98d2a75068695f6388043e2b0c8956ce8",
+  "assets/P3_source_review.jpg": "3c040b58d10e1c8197df7ba7315a85961c1a1ad9eb1889b6d176f451848a39d8",
+  "assets/P4_source_review.jpg": "591b26f818b91b29d715b44988a4cba911886110da3f82be0f193706f529b78e",
+  "assets/P5_source_review.jpg": "b3877c233383597fd62d849c225dc06be42ae4966a8a12e8162f9b56ef5fe4b5"
+}

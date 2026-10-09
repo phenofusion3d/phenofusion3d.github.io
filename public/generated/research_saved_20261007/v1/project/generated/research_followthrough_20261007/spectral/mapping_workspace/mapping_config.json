@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "dataset": "20260928_run003",
+  "status": "blocked_missing_spatial_calibration",
+  "achieved_3d_mapping": false,
+  "physical_fusion": null,
+  "coordinate_policy": "A consistent shared arbitrary unit can support pixel validation; verified physical scale is separately required for millimetre traits.",
+  "shared_frame": null,
+  "shared_units": null,
+  "physical_square_pitch_m": null,
+  "recording_translation_unit": null,
+  "existing_observations": {
+    "csv": "observed_planar_controls.csv",
+    "count": 205,
+    "source": "generated\\research_20260928_processing_20261007\\spectral_geometry\\raw_calibration_marker_observations.json",
+    "source_sha256": "70331b2a1b7a32cff50de7a69de4bb87b05c4ee6127edf70f87389474fd8dc45",
+    "limitations": "Local sheet grid coordinates are measured correspondence candidates, not a shared noncoplanar XYZ calibration. Repeated marker IDs remain qualified by physical sheet."
+  },
+  "shared_3d_controls": {
+    "csv": "shared_3d_controls_template.csv",
+    "status": "EMPTY_REQUIRED",
+    "height_axis": null,
+    "reference_plane_offset": null,
+    "min_off_plane_distance": null,
+    "validation_policy": "Reserve whole measured elevated target/sections. Do not recycle training controls or choose a model using the final holdout. Confirm identities and capture provenance."
+  },
+  "sensors": {
+    "fx10": {
+      "image_shape": [
+        2127,
+        1024
+      ],
+      "spatial_calibration": null,
+      "world_to_camera_rotation": null,
+      "camera_centre_line0": null,
+      "motion_per_line": null,
+      "focal_length_pixels": null,
+      "principal_column": null,
+      "distortion_and_wavelength_spatial_calibration": null,
+      "plant_scan_start_offset": null,
+      "scan_transfer_evidence": null,
+      "held_out_validation": null,
+      "numeric_acceptance_px": {
+        "rms": null,
+        "p95": null,
+        "maximum": null
+      },
+      "positive_depth_required": true
+    },
+    "fx17": {
+      "image_shape": [
+        2127,
+        640
+      ],
+      "spatial_calibration": null,
+      "world_to_camera_rotation": null,
+      "camera_centre_line0": null,
+      "motion_per_line": null,
+      "focal_length_pixels": null,
+      "principal_column": null,
+      "distortion_and_wavelength_spatial_calibration": null,
+      "plant_scan_start_offset": null,
+      "scan_transfer_evidence": null,
+      "held_out_validation": null,
+      "numeric_acceptance_px": {
+        "rms": null,
+        "p95": null,
+        "maximum": null
+      },
+      "positive_depth_required": true
+    }
+  },
+  "visibility": {
+    "surface_file": null,
+    "surface_coordinate_frame": null,
+    "ray_first_hit_validation": null,
+    "footprint_and_occlusion_policy": null
+  },
+  "spectral_assignment": {
+    "radiometric_status": "RAW_DN_AND_PROVISIONAL_BOARD_RELATIVE_ONLY",
+    "interpolation": false,
+    "reference_extrapolation": false,
+    "cross_camera_spectrum_concatenation": false,
+    "calibrated_reflectance": false,
+    "physiological_claims": false,
+    "raw_cube_paths": {
+      "fx10": "data/main/test_plant_10-7/20260928/003-specim-fx10.bil",
+      "fx17": "data/main/test_plant_10-7/20260928/003-specim-fx17.bil"
+    },
+    "measured_patch_spectra": {
+      "fx10": "../fx10_measured_full_spectra.npz",
+      "fx17": "../fx17_measured_full_spectra.npz"
+    }
+  },
+  "backend_api": "processing.research_workspace.spectral_mapping:fit_pushbroom_controls / project_control_model / project_physical_pushbroom",
+  "backend_limit": "Backend supports offline fit/project only. No surface visibility or final cube-to-3D mapper is claimed.",
+  "required_before_surface_mapping": [
+    "Noncoplanar shared-frame optical/spatial controls, or independently supplied calibrated physical model",
+    "Independent off-plane pixel validation with declared numeric RMS/P95/max limits",
+    "Measured scan-line motion/start transfer to plant run",
+    "Shared surface coordinate frame and first-visible ray intersections",
+    "Spectral clipping/reference coverage masks retained per source band"
+  ]
+}

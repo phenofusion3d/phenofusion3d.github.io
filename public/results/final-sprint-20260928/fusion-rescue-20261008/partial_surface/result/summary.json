@@ -1,0 +1,185 @@
+{
+  "status": "partial_exploratory_dense_surface_not_physically_validated",
+  "title": "Partial spectral surface \u00b7 two upper leaves",
+  "warning": "PARTIAL EXPLORATORY FUSION: measured spectra projected onto parts of two upper leaves of Plant 5. Local image alignment is approximate; point-wise physical correspondence is not validated. This is not complete five-plant fusion. Native FX10 and FX17 measurements remain separate. Outside the measured white-reference columns, normalized values and indices are unavailable; raw DN remains inspectable. The dark reference and panel reflectance are unconfirmed, so valid Q/Q0 values are exploratory signals, not calibrated reflectance.",
+  "coordinate_unit": "m",
+  "sensor_counts": {
+    "fx10": 2338,
+    "fx17": 862
+  },
+  "region_counts": {
+    "fx10": {
+      "upper_green": 1050,
+      "upper_red": 1288
+    },
+    "fx17": {
+      "upper_green": 551,
+      "upper_red": 311
+    }
+  },
+  "context_points": 154648,
+  "unique_geometry_points": 2338,
+  "sensor_products": {
+    "fx10": "assigned_spectra_fx10.npz",
+    "fx17": "assigned_spectra_fx17.npz"
+  },
+  "evidence": [
+    {
+      "id": "projection hypothesis",
+      "packaged_path": "evidence/projection_hypothesis.npz"
+    },
+    {
+      "id": "evidence",
+      "packaged_path": "evidence/evidence.json"
+    },
+    {
+      "id": "frozen candidates",
+      "packaged_path": "evidence/frozen_candidates.json"
+    },
+    {
+      "id": "blind learned evaluation",
+      "packaged_path": "evidence/blind_learned_evaluation.json"
+    },
+    {
+      "id": "blind round2 learned evaluation",
+      "packaged_path": "evidence/blind_round2_learned_evaluation.json"
+    },
+    {
+      "id": "upper green registration",
+      "packaged_path": "evidence/upper_green_registration.json"
+    },
+    {
+      "id": "upper green tracking summary",
+      "packaged_path": "evidence/upper_green_tracking_summary.json"
+    },
+    {
+      "id": "upper green registration",
+      "packaged_path": "evidence/upper_green_registration.png"
+    },
+    {
+      "id": "upper green native tracks",
+      "packaged_path": "evidence/upper_green_native_tracks.npz"
+    },
+    {
+      "id": "upper red registration",
+      "packaged_path": "evidence/upper_red_registration.json"
+    },
+    {
+      "id": "upper red tracking summary",
+      "packaged_path": "evidence/upper_red_tracking_summary.json"
+    },
+    {
+      "id": "upper red registration",
+      "packaged_path": "evidence/upper_red_registration.png"
+    },
+    {
+      "id": "upper red native tracks",
+      "packaged_path": "evidence/upper_red_native_tracks.npz"
+    }
+  ],
+  "physical_registration_validated": false,
+  "accepted_for_measurement": false,
+  "all_five_plants_complete": false,
+  "full_leaf_coverage_claimed": false,
+  "calibrated_reflectance": false,
+  "spectral_interpolation": false,
+  "cross_sensor_spectrum_concatenation": false,
+  "geometry_positions_modified": false,
+  "upright_R": [
+    [
+      0.9997320091584629,
+      -0.022989551247924105,
+      0.002718528536188047
+    ],
+    [
+      -0.023027275267776585,
+      -0.9996256969203645,
+      0.014771954854300693
+    ],
+    [
+      0.0023779103694299077,
+      -0.014830596410614249,
+      -0.9998871931134934
+    ]
+  ],
+  "FX17_intersections_before_duplicate_suppression": 902,
+  "FX17_duplicate_policy": "Smallest overlap-band tracking disagreement; one native pixel and one original vertex per sensor.",
+  "raw_measurements_are_exact": true,
+  "mapping_uncertainty": "Sparse uncertain manual check disagreement does not define per-point error bounds. Residuals mix annotation uncertainty with model error.",
+  "display_region_selection_post_hoc": true,
+  "inputs_sha256": {
+    "generated\\research_fusion_rescue_20261008\\partial_surface\\projection_hypothesis.npz": "22657b114eba8c6afa9831c0b59e61cd6cc16c46a88414385e60bf9aac15d6fc",
+    "generated\\research_fusion_rescue_20261008\\partial_surface\\evidence.json": "2920bb9ad5b1f4b753ca54459c908b7f5e1a7b3fd05af71a44021e55ba8ef077",
+    "generated\\research_confirmed_board_20261007\\cleanup_v1\\result\\P5_reference.ply": "ebba027f13ed2d927f3d547e94ad5833925bd73b6e7774a8fa97548ce14a9b9f",
+    "generated\\research_confirmed_board_20261007\\cleanup_v1\\result\\P5_provenance.npz": "c6730bd9fdfd17634da0ac199c07345208c4a8a3be0329fe5ec2cc87299131d0",
+    "generated\\research_fusion_rescue_20261008\\physical_model\\cross_sensor_upper\\upper_green_native_tracks.npz": "fb72c3e8ebc4afa3f3fb994ba8dcb66b759e04deba69b1a5fbbd3abbf7a941b5",
+    "generated\\research_fusion_rescue_20261008\\physical_model\\cross_sensor_upper\\upper_red_native_tracks.npz": "f7f3dc13f740ca2e024d0e455784a1d5044c394820e8f9575647cd69bb611a21",
+    "generated\\research_fusion_rescue_20261008\\learned_registration\\frozen_candidates.json": "3e923f72a3d9ac53f7b8f297c1a2e1121e701f5398844932cf37a7543e220859",
+    "generated\\research_fusion_rescue_20261008\\control_audit\\blind_learned_evaluation.json": "5446ddc8b8f05324a3ef6ed7f829477b7ee62e9824073d99d9e0651e964082c4",
+    "generated\\research_fusion_rescue_20261008\\control_audit\\blind_round2_learned_evaluation.json": "6b91d1e93d0eda70fc5dac352199583a7a618125018d00c085f93d91072e604a",
+    "generated\\research_fusion_rescue_20261008\\physical_model\\cross_sensor_upper\\upper_green_registration.json": "183e8889ad5c2250f2eb18be4001bee9796628416aab5113af16778585b166ef",
+    "generated\\research_fusion_rescue_20261008\\physical_model\\cross_sensor_upper\\upper_green_tracking_summary.json": "16f06f8df7fa0f91d5c6a4baa4b41a591f9677f7523bf94b408b19ab6c850221",
+    "generated\\research_fusion_rescue_20261008\\physical_model\\cross_sensor_upper\\upper_green_registration.png": "e4cda1d76c1f9b5baa4da0924934e273cf5062a0386890c81797572850e5beee",
+    "generated\\research_fusion_rescue_20261008\\physical_model\\cross_sensor_upper\\upper_red_registration.json": "ffbe8890f0de9e806b1c376adfdfae319653501ed7e2ba8574e2e3186b4d2592",
+    "generated\\research_fusion_rescue_20261008\\physical_model\\cross_sensor_upper\\upper_red_tracking_summary.json": "cd66bc091ab378e9be083828077caebc083292135d9d596bbef432e94d83732c",
+    "generated\\research_fusion_rescue_20261008\\physical_model\\cross_sensor_upper\\upper_red_registration.png": "78e77726d93a186dd13e588869da222e08adb4e371ccba21712abe58e30fbb8e",
+    "generated\\research_spectral_extension_20261007\\full_spectral_review\\sensors\\fx10\\input_config.json": "2d3ecd286764928ce0c230dd5181595d09579923737eb38d59b1824dfe2c7665",
+    "generated\\research_spectral_extension_20261007\\full_spectral_review\\sensors\\fx17\\input_config.json": "8643be0183997c59b6219a61414547893e033e1a37faece5d13bfbcb5e1b024d"
+  },
+  "numeric_validation": {
+    "fx10": {
+      "samples": 2338,
+      "bands": 224,
+      "source_DN_reread_exact": true,
+      "Q_Q0_recomputed_exact": true,
+      "all_band_normalization_valid_samples": 0,
+      "every_invalid_normalized_value_NaN": true
+    },
+    "fx17": {
+      "samples": 862,
+      "bands": 224,
+      "source_DN_reread_exact": true,
+      "Q_Q0_recomputed_exact": true,
+      "all_band_normalization_valid_samples": 0,
+      "every_invalid_normalized_value_NaN": true
+    }
+  },
+  "normalization": {
+    "fx10": {
+      "white_roi": [
+        20,
+        140,
+        180,
+        850
+      ],
+      "dark_roi": [
+        2080,
+        2127,
+        0,
+        1024
+      ],
+      "white_identity": "User-confirmed white board at scan start; spectral reflectance unknown",
+      "settings_assumption": "User confirmed fixed exposure; gain and source export packing not independently established",
+      "dark_status": "assumed_tail",
+      "dark_provenance": "Abrupt final low-signal tail; shutter closure unconfirmed. This is an explicit assumed offset, not certified dark calibration."
+    },
+    "fx17": {
+      "white_roi": [
+        8,
+        45,
+        90,
+        520
+      ],
+      "dark_roi": [
+        2080,
+        2127,
+        0,
+        640
+      ],
+      "white_identity": "User-confirmed white board at scan start; spectral reflectance unknown",
+      "settings_assumption": "User confirmed fixed exposure; gain and source export packing not independently established",
+      "dark_status": "assumed_tail",
+      "dark_provenance": "Abrupt final low-signal tail; shutter closure unconfirmed. This is an explicit assumed offset, not certified dark calibration."
+    }
+  }
+}

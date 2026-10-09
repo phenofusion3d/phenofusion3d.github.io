@@ -1,0 +1,93 @@
+{
+  "points": 1266476,
+  "extent_m": [
+    0.519408062610622,
+    0.42879726490432724,
+    0.3693349559951129
+  ],
+  "frames": [
+    182,
+    223,
+    265,
+    307,
+    348,
+    389,
+    431,
+    473,
+    514,
+    555,
+    598,
+    638,
+    680,
+    722,
+    763,
+    805,
+    846,
+    888,
+    929,
+    971,
+    1013,
+    1054
+  ],
+  "icp_accepted": 22,
+  "median_support_views": 6.0,
+  "minimum_support_views": 3,
+  "volume_points_before_crop": 4884135,
+  "voxel_m": 0.0007917499999999999,
+  "truncation_m": 0.00395875,
+  "depth_source": "RGB multi-baseline stereo, joint bundle-adjusted camera poses, followed by colored ICP and TSDF fusion",
+  "status": "Candidate; visual and physical trait validation required",
+  "automatic_foreground_plane": {
+    "normal": [
+      -2.1231852185173563e-05,
+      -0.00040008027719830536,
+      0.9999999197424869
+    ],
+    "maximum": 0.7829262496462427,
+    "source_frames": [
+      638,
+      598,
+      680,
+      555,
+      722,
+      514,
+      763
+    ],
+    "assumption": "Common overhead support plane from central observed views; review mask before traits"
+  },
+  "upright_transform": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      0.7830360847003218
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "warnings": [
+    "Hidden surfaces cannot be recovered without views that observe them.",
+    "Depth interval includes scene background; review foreground masks before traits.",
+    "Camera -Z defines display up for overhead scans; confirm height axis for other capture orientations.",
+    "Internal residuals do not establish physical trait accuracy."
+  ],
+  "pose_source": "encoder initialization; image-estimated camera x direction",
+  "input_sha256": "b460093e052c97160e8279fe717e264eade15d5a867c1584d37baebc6dcf4d6a",
+  "foreground": "auto"
+}

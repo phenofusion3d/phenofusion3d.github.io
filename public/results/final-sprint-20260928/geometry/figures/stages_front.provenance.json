@@ -1,0 +1,32 @@
+{
+  "source": "manifest.json",
+  "plot": "orthographic X/Y projection; no interpolation",
+  "preview_sampling": [
+    {
+      "stage": "d405",
+      "source_points": 1719001,
+      "plot_stride": 8,
+      "plotted_points": 214876
+    },
+    {
+      "stage": "l515",
+      "source_points": 199811,
+      "plot_stride": 1,
+      "plotted_points": 199811
+    },
+    {
+      "stage": "fused",
+      "source_points": 1740673,
+      "plot_stride": 8,
+      "plotted_points": 217585
+    },
+    {
+      "stage": "cleaned",
+      "source_points": 430060,
+      "plot_stride": 2,
+      "plotted_points": 215030
+    }
+  ],
+  "png_sha256": "b3b033144a04236676194383485574dbdca9aae73e20ee7dc6ee75e0fcdd391d",
+  "limitation": "Static overview uses a documented point stride for file size. Interactive PF3D clouds contain every selected point."
+}

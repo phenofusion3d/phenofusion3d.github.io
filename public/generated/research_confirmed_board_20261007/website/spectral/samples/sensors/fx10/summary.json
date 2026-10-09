@@ -1,0 +1,1014 @@
+{
+  "schema_version": 1,
+  "status": "complete_measured_camera_space_extraction",
+  "warning": "Measured camera-space DN; any Q/Q0 is provisional reference-relative signal. No calibrated reflectance, physiological interpretation, or 3D fusion.",
+  "physical_fusion": null,
+  "calibrated_reflectance": false,
+  "physiological_claims": false,
+  "automatic_segmentation": false,
+  "cross_camera_concatenation": false,
+  "source_header": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\20260928\\003-specim-fx10.hdr",
+  "source_data": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\20260928\\003-specim-fx10.bil",
+  "source_config": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_followthrough_20261007\\spectral\\extraction_config.json",
+  "header_sha256": "6aaf169bc24b22abfd7cf8aed1d22517f5a956a99cb58698ec50d258b2dd048a",
+  "config_sha256": "8d6cfd7bac6c306facaf104b0572f1e938d48d9d0453408e628b94f00aec043f",
+  "source_data_size_bytes": 975765504,
+  "source_data_mtime_ns": 1791339722284996900,
+  "source_data_identity_check": "size, mtime_ns and inode before/after; weaker than full-content hashing",
+  "full_source_data_sha256": null,
+  "raw_source_shape_line_band_column": [
+    2127,
+    224,
+    1024
+  ],
+  "source_dtype": "<u2",
+  "header_offset": 0,
+  "sample_count": 7982,
+  "band_count": 224,
+  "source_sample_sha256_uint16_little_endian_sample_band": "a9eaadd2d60b155bc64583e0bf13a664eb3990421f91ce5e57f534333a4b8d4c",
+  "selection": {
+    "review_status": "assistant_reviewed",
+    "provenance": "Recorded run003 camera imagery reviewed 2026-10-07; candidate tissue interiors only. R1-R5 are scan-order regions, not operator-confirmed specimen or organ labels. Each camera reviewed independently.",
+    "polygons": [
+      {
+        "patch_id": 1,
+        "name": "green_tissue_a",
+        "region_id": "R1",
+        "column_line": [
+          [
+            748,
+            359
+          ],
+          [
+            794,
+            351
+          ],
+          [
+            813,
+            360
+          ],
+          [
+            786,
+            371
+          ],
+          [
+            752,
+            373
+          ]
+        ]
+      },
+      {
+        "patch_id": 2,
+        "name": "green_tissue_b",
+        "region_id": "R1",
+        "column_line": [
+          [
+            680,
+            388
+          ],
+          [
+            714,
+            378
+          ],
+          [
+            740,
+            378
+          ],
+          [
+            711,
+            390
+          ]
+        ]
+      },
+      {
+        "patch_id": 3,
+        "name": "upper_broad_leaf",
+        "region_id": "R2",
+        "column_line": [
+          [
+            399,
+            626
+          ],
+          [
+            441,
+            610
+          ],
+          [
+            480,
+            623
+          ],
+          [
+            513,
+            642
+          ],
+          [
+            472,
+            662
+          ],
+          [
+            412,
+            655
+          ]
+        ]
+      },
+      {
+        "patch_id": 4,
+        "name": "lower_green_leaf",
+        "region_id": "R2",
+        "column_line": [
+          [
+            370,
+            818
+          ],
+          [
+            410,
+            809
+          ],
+          [
+            454,
+            813
+          ],
+          [
+            476,
+            825
+          ],
+          [
+            422,
+            832
+          ],
+          [
+            381,
+            830
+          ]
+        ]
+      },
+      {
+        "patch_id": 5,
+        "name": "upper_left_leaf",
+        "region_id": "R3",
+        "column_line": [
+          [
+            428,
+            945
+          ],
+          [
+            467,
+            934
+          ],
+          [
+            513,
+            944
+          ],
+          [
+            539,
+            959
+          ],
+          [
+            491,
+            968
+          ],
+          [
+            445,
+            965
+          ]
+        ]
+      },
+      {
+        "patch_id": 6,
+        "name": "upper_right_leaf",
+        "region_id": "R3",
+        "column_line": [
+          [
+            731,
+            937
+          ],
+          [
+            770,
+            930
+          ],
+          [
+            802,
+            942
+          ],
+          [
+            817,
+            963
+          ],
+          [
+            786,
+            977
+          ],
+          [
+            748,
+            969
+          ]
+        ]
+      },
+      {
+        "patch_id": 7,
+        "name": "lower_right_leaf",
+        "region_id": "R3",
+        "column_line": [
+          [
+            680,
+            1170
+          ],
+          [
+            724,
+            1153
+          ],
+          [
+            766,
+            1174
+          ],
+          [
+            800,
+            1182
+          ],
+          [
+            755,
+            1192
+          ],
+          [
+            709,
+            1189
+          ]
+        ]
+      },
+      {
+        "patch_id": 8,
+        "name": "upper_green_leaf",
+        "region_id": "R4",
+        "column_line": [
+          [
+            553,
+            1300
+          ],
+          [
+            581,
+            1287
+          ],
+          [
+            620,
+            1295
+          ],
+          [
+            638,
+            1312
+          ],
+          [
+            608,
+            1317
+          ],
+          [
+            574,
+            1308
+          ]
+        ]
+      },
+      {
+        "patch_id": 9,
+        "name": "lower_green_leaf",
+        "region_id": "R4",
+        "column_line": [
+          [
+            526,
+            1443
+          ],
+          [
+            553,
+            1421
+          ],
+          [
+            577,
+            1430
+          ],
+          [
+            575,
+            1451
+          ],
+          [
+            548,
+            1475
+          ]
+        ]
+      },
+      {
+        "patch_id": 10,
+        "name": "lower_left_green_leaf",
+        "region_id": "R5",
+        "column_line": [
+          [
+            337,
+            1830
+          ],
+          [
+            378,
+            1808
+          ],
+          [
+            428,
+            1803
+          ],
+          [
+            484,
+            1827
+          ],
+          [
+            481,
+            1853
+          ],
+          [
+            438,
+            1868
+          ],
+          [
+            371,
+            1864
+          ]
+        ]
+      },
+      {
+        "patch_id": 11,
+        "name": "upper_left_red_leaf",
+        "region_id": "R5",
+        "column_line": [
+          [
+            280,
+            1638
+          ],
+          [
+            314,
+            1640
+          ],
+          [
+            354,
+            1657
+          ],
+          [
+            401,
+            1667
+          ],
+          [
+            431,
+            1675
+          ],
+          [
+            401,
+            1690
+          ],
+          [
+            348,
+            1694
+          ],
+          [
+            302,
+            1676
+          ]
+        ]
+      },
+      {
+        "patch_id": 12,
+        "name": "outer_red_leaf_UNCOVERED",
+        "region_id": "R5",
+        "column_line": [
+          [
+            873,
+            1638
+          ],
+          [
+            901,
+            1617
+          ],
+          [
+            945,
+            1625
+          ],
+          [
+            969,
+            1644
+          ],
+          [
+            948,
+            1658
+          ],
+          [
+            903,
+            1660
+          ]
+        ]
+      }
+    ]
+  },
+  "sampling": {
+    "line_step": 2,
+    "column_step": 2,
+    "origin_line_column": [
+      0,
+      0
+    ]
+  },
+  "patches": [
+    {
+      "patch_id": 1,
+      "name": "green_tissue_a",
+      "region_id": "R1",
+      "column_line": [
+        [
+          748.0,
+          359.0
+        ],
+        [
+          794.0,
+          351.0
+        ],
+        [
+          813.0,
+          360.0
+        ],
+        [
+          786.0,
+          371.0
+        ],
+        [
+          752.0,
+          373.0
+        ]
+      ],
+      "mask_pixels": 967,
+      "sample_pixels": 240,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 148,
+      "samples_without_reference_support": 0,
+      "samples_all_bands_Q_valid": 92
+    },
+    {
+      "patch_id": 2,
+      "name": "green_tissue_b",
+      "region_id": "R1",
+      "column_line": [
+        [
+          680.0,
+          388.0
+        ],
+        [
+          714.0,
+          378.0
+        ],
+        [
+          740.0,
+          378.0
+        ],
+        [
+          711.0,
+          390.0
+        ]
+      ],
+      "mask_pixels": 406,
+      "sample_pixels": 106,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 0,
+      "samples_without_reference_support": 0,
+      "samples_all_bands_Q_valid": 106
+    },
+    {
+      "patch_id": 3,
+      "name": "upper_broad_leaf",
+      "region_id": "R2",
+      "column_line": [
+        [
+          399.0,
+          626.0
+        ],
+        [
+          441.0,
+          610.0
+        ],
+        [
+          480.0,
+          623.0
+        ],
+        [
+          513.0,
+          642.0
+        ],
+        [
+          472.0,
+          662.0
+        ],
+        [
+          412.0,
+          655.0
+        ]
+      ],
+      "mask_pixels": 3819,
+      "sample_pixels": 954,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 64,
+      "samples_without_reference_support": 0,
+      "samples_all_bands_Q_valid": 890
+    },
+    {
+      "patch_id": 4,
+      "name": "lower_green_leaf",
+      "region_id": "R2",
+      "column_line": [
+        [
+          370.0,
+          818.0
+        ],
+        [
+          410.0,
+          809.0
+        ],
+        [
+          454.0,
+          813.0
+        ],
+        [
+          476.0,
+          825.0
+        ],
+        [
+          422.0,
+          832.0
+        ],
+        [
+          381.0,
+          830.0
+        ]
+      ],
+      "mask_pixels": 1740,
+      "sample_pixels": 436,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 312,
+      "samples_without_reference_support": 0,
+      "samples_all_bands_Q_valid": 124
+    },
+    {
+      "patch_id": 5,
+      "name": "upper_left_leaf",
+      "region_id": "R3",
+      "column_line": [
+        [
+          428.0,
+          945.0
+        ],
+        [
+          467.0,
+          934.0
+        ],
+        [
+          513.0,
+          944.0
+        ],
+        [
+          539.0,
+          959.0
+        ],
+        [
+          491.0,
+          968.0
+        ],
+        [
+          445.0,
+          965.0
+        ]
+      ],
+      "mask_pixels": 2484,
+      "sample_pixels": 621,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 32,
+      "samples_without_reference_support": 0,
+      "samples_all_bands_Q_valid": 589
+    },
+    {
+      "patch_id": 6,
+      "name": "upper_right_leaf",
+      "region_id": "R3",
+      "column_line": [
+        [
+          731.0,
+          937.0
+        ],
+        [
+          770.0,
+          930.0
+        ],
+        [
+          802.0,
+          942.0
+        ],
+        [
+          817.0,
+          963.0
+        ],
+        [
+          786.0,
+          977.0
+        ],
+        [
+          748.0,
+          969.0
+        ]
+      ],
+      "mask_pixels": 2699,
+      "sample_pixels": 674,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 0,
+      "samples_without_reference_support": 0,
+      "samples_all_bands_Q_valid": 674
+    },
+    {
+      "patch_id": 7,
+      "name": "lower_right_leaf",
+      "region_id": "R3",
+      "column_line": [
+        [
+          680.0,
+          1170.0
+        ],
+        [
+          724.0,
+          1153.0
+        ],
+        [
+          766.0,
+          1174.0
+        ],
+        [
+          800.0,
+          1182.0
+        ],
+        [
+          755.0,
+          1192.0
+        ],
+        [
+          709.0,
+          1189.0
+        ]
+      ],
+      "mask_pixels": 2489,
+      "sample_pixels": 621,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 0,
+      "samples_without_reference_support": 0,
+      "samples_all_bands_Q_valid": 621
+    },
+    {
+      "patch_id": 8,
+      "name": "upper_green_leaf",
+      "region_id": "R4",
+      "column_line": [
+        [
+          553.0,
+          1300.0
+        ],
+        [
+          581.0,
+          1287.0
+        ],
+        [
+          620.0,
+          1295.0
+        ],
+        [
+          638.0,
+          1312.0
+        ],
+        [
+          608.0,
+          1317.0
+        ],
+        [
+          574.0,
+          1308.0
+        ]
+      ],
+      "mask_pixels": 1502,
+      "sample_pixels": 375,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 4,
+      "samples_without_reference_support": 0,
+      "samples_all_bands_Q_valid": 371
+    },
+    {
+      "patch_id": 9,
+      "name": "lower_green_leaf",
+      "region_id": "R4",
+      "column_line": [
+        [
+          526.0,
+          1443.0
+        ],
+        [
+          553.0,
+          1421.0
+        ],
+        [
+          577.0,
+          1430.0
+        ],
+        [
+          575.0,
+          1451.0
+        ],
+        [
+          548.0,
+          1475.0
+        ]
+      ],
+      "mask_pixels": 1673,
+      "sample_pixels": 417,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 291,
+      "samples_without_reference_support": 0,
+      "samples_all_bands_Q_valid": 126
+    },
+    {
+      "patch_id": 10,
+      "name": "lower_left_green_leaf",
+      "region_id": "R5",
+      "column_line": [
+        [
+          337.0,
+          1830.0
+        ],
+        [
+          378.0,
+          1808.0
+        ],
+        [
+          428.0,
+          1803.0
+        ],
+        [
+          484.0,
+          1827.0
+        ],
+        [
+          481.0,
+          1853.0
+        ],
+        [
+          438.0,
+          1868.0
+        ],
+        [
+          371.0,
+          1864.0
+        ]
+      ],
+      "mask_pixels": 7005,
+      "sample_pixels": 1749,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 458,
+      "samples_without_reference_support": 0,
+      "samples_all_bands_Q_valid": 1291
+    },
+    {
+      "patch_id": 11,
+      "name": "upper_left_red_leaf",
+      "region_id": "R5",
+      "column_line": [
+        [
+          280.0,
+          1638.0
+        ],
+        [
+          314.0,
+          1640.0
+        ],
+        [
+          354.0,
+          1657.0
+        ],
+        [
+          401.0,
+          1667.0
+        ],
+        [
+          431.0,
+          1675.0
+        ],
+        [
+          401.0,
+          1690.0
+        ],
+        [
+          348.0,
+          1694.0
+        ],
+        [
+          302.0,
+          1676.0
+        ]
+      ],
+      "mask_pixels": 4373,
+      "sample_pixels": 1096,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 645,
+      "samples_without_reference_support": 0,
+      "samples_all_bands_Q_valid": 451
+    },
+    {
+      "patch_id": 12,
+      "name": "outer_red_leaf_UNCOVERED",
+      "region_id": "R5",
+      "column_line": [
+        [
+          873.0,
+          1638.0
+        ],
+        [
+          901.0,
+          1617.0
+        ],
+        [
+          945.0,
+          1625.0
+        ],
+        [
+          969.0,
+          1644.0
+        ],
+        [
+          948.0,
+          1658.0
+        ],
+        [
+          903.0,
+          1660.0
+        ]
+      ],
+      "mask_pixels": 2768,
+      "sample_pixels": 693,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 378,
+      "samples_without_reference_support": 693,
+      "samples_all_bands_Q_valid": 0
+    }
+  ],
+  "normalization": {
+    "white_roi": [
+      20,
+      140,
+      180,
+      850
+    ],
+    "dark_roi": [
+      2080,
+      2127,
+      0,
+      1024
+    ],
+    "white_identity": "User-confirmed white board at scan start; spectral reflectance unknown",
+    "settings_assumption": "User confirmed fixed exposure; gain and source export packing not independently established",
+    "dark_status": "assumed_tail",
+    "dark_provenance": "Abrupt final low-signal tail; shutter closure unconfirmed. This is an explicit assumed offset, not certified dark calibration."
+  },
+  "normalization_produced": true,
+  "suspected_clipping_dn": 65520,
+  "clipping_evaluated": true,
+  "band_flags": {
+    "outside_reviewed_reference_support": 1,
+    "sample_suspected_clipping": 2,
+    "reference_suspected_clipping": 4,
+    "weak_white_minus_dark": 8,
+    "raw_zero": 16,
+    "low_signal_above_dark_advisory": 32
+  },
+  "Q_invalid_bit_mask": 31,
+  "low_signal_bit_32_policy": "Advisory for Q; any downstream index must independently exclude required low-signal bands.",
+  "reference_formula": "Q=(DN-D)/(W-D); Q0=DN/W, same conservative support",
+  "reference_support_policy": "Intersection of reviewed white/dark columns; no extrapolation",
+  "reference_contrast_guard": "W-D > max(64 DN,5*sqrt(white_MAD_sigma^2+dark_MAD_sigma^2))",
+  "signal_guard": "DN-D > max(32 DN,3*dark_MAD_sigma)",
+  "guard_limit": "Exploratory guards inherited from reviewed workflow, not calibrated noise confidence bounds.",
+  "array_axes": "Spectral arrays: sample,source_band; index arrays: sample,index_names. Coordinates: zero-based source scan_line and detector_column.",
+  "invalid_floating_values": "NaN, never zero filled",
+  "summary_limit": "Medians omit invalid Q separately per band; valid pixel sets may change with wavelength. Patch samples are spatially correlated and not whole-plant traits.",
+  "products": {
+    "spectra": "measured_spectra.npz",
+    "csv": "patch_spectral_summary.csv",
+    "mask": "reviewed_patch_mask.npz",
+    "reference_profiles": "reference_profiles.npz",
+    "indices_csv": "patch_index_summary.csv"
+  },
+  "software_sha256": "a01459dfab001296d69afa10d8ca44e78ba7ccf4b8754ca970d1e15fb4b77339",
+  "index_specs_applied": {
+    "NDVI_800_680": {
+      "bands": [
+        800,
+        680
+      ],
+      "formula": "(Q800-Q680)/(Q800+Q680)",
+      "operation": "nd",
+      "source_bands_zero_based": [
+        150,
+        106
+      ],
+      "actual_wavelengths_nm": [
+        800.34,
+        680.07
+      ]
+    },
+    "NDRE_790_720": {
+      "bands": [
+        790,
+        720
+      ],
+      "formula": "(Q790-Q720)/(Q790+Q720)",
+      "operation": "nd",
+      "source_bands_zero_based": [
+        146,
+        121
+      ],
+      "actual_wavelengths_nm": [
+        789.33,
+        720.87
+      ]
+    },
+    "GNDVI_800_550": {
+      "bands": [
+        800,
+        550
+      ],
+      "formula": "(Q800-Q550)/(Q800+Q550)",
+      "operation": "nd",
+      "source_bands_zero_based": [
+        150,
+        58
+      ],
+      "actual_wavelengths_nm": [
+        800.34,
+        550.91
+      ]
+    },
+    "PRI_531_570": {
+      "bands": [
+        531,
+        570
+      ],
+      "formula": "(Q531-Q570)/(Q531+Q570)",
+      "operation": "nd",
+      "source_bands_zero_based": [
+        51,
+        65
+      ],
+      "actual_wavelengths_nm": [
+        532.25,
+        569.61
+      ]
+    },
+    "PSRI_678_500_750": {
+      "bands": [
+        678,
+        500,
+        750
+      ],
+      "formula": "(Q678-Q500)/Q750",
+      "operation": "psri",
+      "source_bands_zero_based": [
+        105,
+        39,
+        132
+      ],
+      "actual_wavelengths_nm": [
+        677.36,
+        500.37,
+        750.93
+      ]
+    },
+    "SIPI_800_445_680": {
+      "bands": [
+        800,
+        445,
+        680
+      ],
+      "formula": "(Q800-Q445)/(Q800-Q680)",
+      "operation": "sipi",
+      "source_bands_zero_based": [
+        150,
+        18,
+        106
+      ],
+      "actual_wavelengths_nm": [
+        800.34,
+        444.89,
+        680.07
+      ]
+    }
+  },
+  "indices_unavailable": {},
+  "index_quality_flags": {
+    "invalid_required_band": 1,
+    "low_signal_required_band": 2,
+    "weak_or_wrong_sign_denominator": 4,
+    "reference_scan_line": 8,
+    "nonfinite_index": 16
+  },
+  "index_denominator_floor_Q_units": 0.01,
+  "source_fingerprints_stable_before_after": true
+}

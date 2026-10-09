@@ -1,0 +1,17 @@
+{
+  "source_hashes_unchanged": true,
+  "old_outputs_modified": false,
+  "new_endpoint_clicking": false,
+  "plants": 5,
+  "dimension_dispositions": 47,
+  "observed_chords": 3,
+  "hypothetical_scenario_rows": 21,
+  "hypothetical_band_rows": 9,
+  "scale_arithmetic_reproduced": true,
+  "baseline_exact": true,
+  "scenario_monotonicity": true,
+  "endpoint_sensitivity_kept_separate": true,
+  "combined_uncertainty_computed": false,
+  "physical_validation_scores_computed": false,
+  "standalone_local_links_valid": true
+}

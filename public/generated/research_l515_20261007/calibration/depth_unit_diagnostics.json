@@ -1,0 +1,5517 @@
+{
+  "method": "Board PnP motion fixes conditional pitch using filename gantry metres independently of raw depth; predicted board axial Z divided by exported counts estimates scale. Residual bias/alignment and gantry uncertainty remain confounded.",
+  "observations": [
+    {
+      "frame_id": 0,
+      "sheet": "left_sheet",
+      "depth_sha256": "74c0ea5a1738e20ad192e20bc7435ef15585b20d38f0600b31b309eab9e42f55",
+      "polygon_pixels": 35688,
+      "valid_depth_pixels": 35688,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8923,
+      "raw_depth_counts": {
+        "count": 8923,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3567.0,
+          3635.0,
+          3656.0,
+          3674.0,
+          3718.0
+        ],
+        "rms": 3654.6207806292746
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8923,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8911288280773143,
+          0.8952674920757461,
+          0.9009414783749488,
+          0.9066404851797853,
+          0.9108754285717371
+        ],
+        "rms": 0.9009606608504872
+      },
+      "metres_per_count_ratios": {
+        "count": 8923,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024190079812928925,
+          0.0002454454327288433,
+          0.00024648300381866476,
+          0.00024765740214997064,
+          0.0002511137856899199
+        ],
+        "rms": 0.0002465308623368125
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8923,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -62.54651786825917,
+          -11.720152398734088,
+          -0.08801526948699312,
+          16.440743304746704,
+          74.60556256824546
+        ],
+        "rms": 13.976779962569712
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.2309459577474104,
+      "plane_fit_retained_fraction": 0.928835593410288,
+      "depth_plane_toward_camera_normal": [
+        -0.030394625920806672,
+        -0.03271477455217253,
+        -0.9990024575751226
+      ],
+      "normal_difference_vs_colour_board_deg": 1.6554851390940308
+    },
+    {
+      "frame_id": 44262,
+      "sheet": "left_sheet",
+      "depth_sha256": "2c3aa7bf116b6075acc5ec76f3a1314106bd26634d7664c120b10628834a5b3f",
+      "polygon_pixels": 35788,
+      "valid_depth_pixels": 35788,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8947,
+      "raw_depth_counts": {
+        "count": 8947,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3568.0,
+          3638.0,
+          3661.0,
+          3681.0,
+          3725.0
+        ],
+        "rms": 3660.4448252590923
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8947,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8923392784912324,
+          0.8964019016086028,
+          0.901917390736649,
+          0.907467830666524,
+          0.9115875675269591
+        ],
+        "rms": 0.9019376136543346
+      },
+      "metres_per_count_ratios": {
+        "count": 8947,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024097961484974615,
+          0.0002453122845878132,
+          0.00024634816682778425,
+          0.00024753148845476383,
+          0.0002523626269975568
+        ],
+        "rms": 0.00024640641573095044
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8947,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -76.05857477602991,
+          -11.543447740612704,
+          0.02506174560300245,
+          18.6534451670223,
+          82.5464035207079
+        ],
+        "rms": 14.6332571904132
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.650774949527463,
+      "plane_fit_retained_fraction": 0.9250027942327037,
+      "depth_plane_toward_camera_normal": [
+        -0.033304836963451497,
+        -0.03573261240990827,
+        -0.9988062716288886
+      ],
+      "normal_difference_vs_colour_board_deg": 1.3416593629870361
+    },
+    {
+      "frame_id": 86826,
+      "sheet": "left_sheet",
+      "depth_sha256": "af518a236b057265583b35ce02f26c074c892c147c771ab8570bc0673c10ea1a",
+      "polygon_pixels": 35559,
+      "valid_depth_pixels": 35559,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8890,
+      "raw_depth_counts": {
+        "count": 8890,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3582.0,
+          3647.0,
+          3669.0,
+          3689.0,
+          3728.0
+        ],
+        "rms": 3668.5260213458128
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8890,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8941008181222225,
+          0.8982232905327663,
+          0.9038856601545665,
+          0.9095841440924585,
+          0.9138694334358399
+        ],
+        "rms": 0.9039095966459999
+      },
+      "metres_per_count_ratios": {
+        "count": 8890,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002423793012300493,
+          0.0002454664118971737,
+          0.0002463526410437653,
+          0.0002473363695885497,
+          0.00025058377365406027
+        ],
+        "rms": 0.0002463985137681657
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8890,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -56.35759784594403,
+          -11.217752772026117,
+          0.2669002821855453,
+          13.023569712193542,
+          69.61917925753166
+        ],
+        "rms": 11.62202320983731
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.888643837435286,
+      "plane_fit_retained_fraction": 0.9550056242969629,
+      "depth_plane_toward_camera_normal": [
+        -0.03467655076409483,
+        -0.0387519924258144,
+        -0.9986469946433199
+      ],
+      "normal_difference_vs_colour_board_deg": 1.262771149783862
+    },
+    {
+      "frame_id": 128621,
+      "sheet": "left_sheet",
+      "depth_sha256": "d0287bb52bf8ed9a749e94fc17eaafa0ca8185d6dd828f1ec4fc17978178f064",
+      "polygon_pixels": 35244,
+      "valid_depth_pixels": 35244,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8812,
+      "raw_depth_counts": {
+        "count": 8812,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3594.0,
+          3654.0,
+          3676.0,
+          3694.0,
+          3717.0
+        ],
+        "rms": 3674.548013497066
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8812,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8960054234198213,
+          0.900148301042796,
+          0.9058550233926765,
+          0.9116196745097052,
+          0.9158071348191962
+        ],
+        "rms": 0.9058849775564215
+      },
+      "metres_per_count_ratios": {
+        "count": 8812,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002426818435320044,
+          0.0002454834319215481,
+          0.00024649445003473624,
+          0.0002475093324688404,
+          0.0002516905891840078
+        ],
+        "rms": 0.0002465328938370911
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8812,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -51.70783838261937,
+          -11.100618953768112,
+          0.3487787256497755,
+          13.19817978283344,
+          77.02882104861484
+        ],
+        "rms": 12.617342139719083
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.0215533435867465,
+      "plane_fit_retained_fraction": 0.9416704493871992,
+      "depth_plane_toward_camera_normal": [
+        -0.03864092366434905,
+        -0.032185143417153506,
+        -0.9987346972853117
+      ],
+      "normal_difference_vs_colour_board_deg": 1.4569718880905618
+    },
+    {
+      "frame_id": 170424,
+      "sheet": "left_sheet",
+      "depth_sha256": "a107e7a1c7491f50afa3de7c3bd76616046b3b0bd3c4944c5593548c84b38f31",
+      "polygon_pixels": 34975,
+      "valid_depth_pixels": 34975,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8745,
+      "raw_depth_counts": {
+        "count": 8745,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3627.0,
+          3658.0,
+          3681.0,
+          3698.0,
+          3734.0
+        ],
+        "rms": 3679.3217639002287
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8745,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.898249036340562,
+          0.9020589247651156,
+          0.9072873138472016,
+          0.912575841094966,
+          0.9164389338412807
+        ],
+        "rms": 0.907314106084525
+      },
+      "metres_per_count_ratios": {
+        "count": 8745,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024340460027494413,
+          0.0002457055339446276,
+          0.0002465890528452959,
+          0.000247493419757811,
+          0.00025028177009001675
+        ],
+        "rms": 0.00024660035874900753
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8745,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -50.50756724459372,
+          -10.60637717613409,
+          -0.30152757236449723,
+          13.350893853991904,
+          52.677993134525806
+        ],
+        "rms": 10.5791574399752
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.634888380838998,
+      "plane_fit_retained_fraction": 0.964551172098342,
+      "depth_plane_toward_camera_normal": [
+        -0.03498419765980836,
+        -0.03406846388933127,
+        -0.9988070112300576
+      ],
+      "normal_difference_vs_colour_board_deg": 1.1172429540591426
+    },
+    {
+      "frame_id": 212221,
+      "sheet": "left_sheet",
+      "depth_sha256": "c2bfb5ca8519fc5679bbf96854fcee5ae879ebf6ede6bc467fe230e2477b28e2",
+      "polygon_pixels": 34745,
+      "valid_depth_pixels": 34745,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8686,
+      "raw_depth_counts": {
+        "count": 8686,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3613.0,
+          3671.0,
+          3692.0,
+          3709.0,
+          3731.0
+        ],
+        "rms": 3690.6406014775666
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8686,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9005570889358994,
+          0.9040882282912526,
+          0.9089627108613345,
+          0.9138995802893422,
+          0.9174831537635159
+        ],
+        "rms": 0.9089878176255097
+      },
+      "metres_per_count_ratios": {
+        "count": 8686,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024258890743920794,
+          0.00024545691158819394,
+          0.00024630211500539784,
+          0.00024707731657694647,
+          0.00024948455610659346
+        ],
+        "rms": 0.00024629754332305953
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8686,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -52.45414497668719,
+          -10.284421072375151,
+          -0.10976253606827571,
+          11.907219627203201,
+          54.02746520447176
+        ],
+        "rms": 9.931167970337956
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.326898174318578,
+      "plane_fit_retained_fraction": 0.963619617775731,
+      "depth_plane_toward_camera_normal": [
+        -0.033526357475157,
+        -0.03410295679238784,
+        -0.9988558312852085
+      ],
+      "normal_difference_vs_colour_board_deg": 0.8853861397656609
+    },
+    {
+      "frame_id": 254019,
+      "sheet": "left_sheet",
+      "depth_sha256": "4c9869ef0b97284bf37c2a8572345c4f72feb621dab10fde1089e4e85e459e0a",
+      "polygon_pixels": 34361,
+      "valid_depth_pixels": 34361,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8590,
+      "raw_depth_counts": {
+        "count": 8590,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3644.0,
+          3682.0,
+          3702.0,
+          3719.0,
+          3759.0
+        ],
+        "rms": 3700.807695373723
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8590,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9025613877152152,
+          0.9059013041697495,
+          0.9107215399503443,
+          0.91560979133024,
+          0.9190400925889515
+        ],
+        "rms": 0.9107509594218286
+      },
+      "metres_per_count_ratios": {
+        "count": 8590,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002416868971987794,
+          0.0002452953359528813,
+          0.0002461179218026081,
+          0.00024687333166602406,
+          0.0002489709594662391
+        ],
+        "rms": 0.0002460973453728376
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8590,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -64.22677667697408,
+          -10.079351320006234,
+          0.046791523904049726,
+          11.011422782106616,
+          45.916409654236915
+        ],
+        "rms": 9.732513774533208
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.454961021242193,
+      "plane_fit_retained_fraction": 0.9665890570430733,
+      "depth_plane_toward_camera_normal": [
+        -0.03693283450337493,
+        -0.03317725605875771,
+        -0.9987668573876279
+      ],
+      "normal_difference_vs_colour_board_deg": 0.886797179871736
+    },
+    {
+      "frame_id": 295820,
+      "sheet": "left_sheet",
+      "depth_sha256": "7298bf9f2ed7d70d7f6ec0a503d88bffe1fccdc8079e40b9ba920f8e6e664ea6",
+      "polygon_pixels": 33952,
+      "valid_depth_pixels": 33952,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8488,
+      "raw_depth_counts": {
+        "count": 8488,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3639.0,
+          3686.0,
+          3707.0,
+          3724.3,
+          3755.0
+        ],
+        "rms": 3706.235797527673
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8488,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9049912087748542,
+          0.9080062350767979,
+          0.9125800309123657,
+          0.9172318503358088,
+          0.9202997690242821
+        ],
+        "rms": 0.9126127965202426
+      },
+      "metres_per_count_ratios": {
+        "count": 8488,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024187132538974884,
+          0.0002454314579661895,
+          0.0002462452174294843,
+          0.00024706008202909154,
+          0.00024870928480452865
+        ],
+        "rms": 0.0002462396459046293
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8488,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -59.746916650358656,
+          -9.428564379198704,
+          -0.165804313225824,
+          11.930369141644995,
+          42.243885038799334
+        ],
+        "rms": 9.955719270309025
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.148431265898608,
+      "plane_fit_retained_fraction": 0.9534637134778511,
+      "depth_plane_toward_camera_normal": [
+        -0.03925843237176168,
+        -0.03158099315948576,
+        -0.998729901604419
+      ],
+      "normal_difference_vs_colour_board_deg": 1.0130073205030536
+    },
+    {
+      "frame_id": 337618,
+      "sheet": "left_sheet",
+      "depth_sha256": "f2fa8056b32226afc178a7eeac5ccbb77d42db65bfd65fd43f03493e1bc8a70a",
+      "polygon_pixels": 33949,
+      "valid_depth_pixels": 33949,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8489,
+      "raw_depth_counts": {
+        "count": 8489,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3647.0,
+          3690.0,
+          3710.0,
+          3728.0,
+          3772.0
+        ],
+        "rms": 3709.2861938454566
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8489,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9068026265545102,
+          0.9098346220356291,
+          0.9147629869955048,
+          0.9197914084985042,
+          0.922889437209423
+        ],
+        "rms": 0.9147972283966037
+      },
+      "metres_per_count_ratios": {
+        "count": 8489,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024199779754053481,
+          0.00024571962126865695,
+          0.0002466935361821317,
+          0.00024740877918106685,
+          0.0002492156915343718
+        ],
+        "rms": 0.0002466257848370786
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8489,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -66.03687433830372,
+          -9.32459156025034,
+          0.048507407035678796,
+          10.638209501427298,
+          47.64203581872366
+        ],
+        "rms": 9.457819244958822
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.034938047736132,
+      "plane_fit_retained_fraction": 0.9620685593120509,
+      "depth_plane_toward_camera_normal": [
+        -0.04256209651819111,
+        -0.031451938030042204,
+        -0.9985986398619471
+      ],
+      "normal_difference_vs_colour_board_deg": 1.4284526202984358
+    },
+    {
+      "frame_id": 337618,
+      "sheet": "middle_sheet",
+      "depth_sha256": "f2fa8056b32226afc178a7eeac5ccbb77d42db65bfd65fd43f03493e1bc8a70a",
+      "polygon_pixels": 34868,
+      "valid_depth_pixels": 33825,
+      "valid_depth_fraction": 0.970087185958472,
+      "sampled_valid_points": 8455,
+      "raw_depth_counts": {
+        "count": 8455,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3499.0,
+          3615.0,
+          3642.0,
+          3665.0,
+          3746.0
+        ],
+        "rms": 3640.4471324857086
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8455,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8839222517397795,
+          0.88676592554867,
+          0.8931789731474331,
+          0.8993567933109481,
+          0.9018994433173483
+        ],
+        "rms": 0.8931411021471145
+      },
+      "metres_per_count_ratios": {
+        "count": 8455,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00023917943474586884,
+          0.00024395397888556808,
+          0.0002452887284082572,
+          0.00024675077183743517,
+          0.00025424105649505196
+        ],
+        "rms": 0.0002453488399579802
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8455,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -87.25254964583789,
+          -14.773722049842755,
+          0.2584376467088054,
+          21.199509934389518,
+          136.3547315008681
+        ],
+        "rms": 19.420586600703466
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 8.182473553794932,
+      "plane_fit_retained_fraction": 0.9172087522176227,
+      "depth_plane_toward_camera_normal": [
+        -0.03170979094634663,
+        -0.033627755117371524,
+        -0.9989312605199142
+      ],
+      "normal_difference_vs_colour_board_deg": 1.5589307397146994
+    },
+    {
+      "frame_id": 379422,
+      "sheet": "left_sheet",
+      "depth_sha256": "01f34e88d2aaef5f46be0e5b900cc00adbd0a58b5426629be9fb8b6cc05508ec",
+      "polygon_pixels": 33573,
+      "valid_depth_pixels": 33573,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8393,
+      "raw_depth_counts": {
+        "count": 8393,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3668.0,
+          3693.0,
+          3714.0,
+          3734.0,
+          3768.0
+        ],
+        "rms": 3714.0254415792847
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8393,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9086173905376451,
+          0.9115512873153135,
+          0.916645888182641,
+          0.9218355309714424,
+          0.9248927017400801
+        ],
+        "rms": 0.9166814588702675
+      },
+      "metres_per_count_ratios": {
+        "count": 8393,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024359764594121747,
+          0.00024585575881402774,
+          0.0002468636752685954,
+          0.0002477212808556145,
+          0.0002489928061828087
+        ],
+        "rms": 0.00024681874010219795
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8393,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -41.88053546921427,
+          -10.868670253594711,
+          -0.08240270592603238,
+          12.544162984478705,
+          43.260704793736075
+        ],
+        "rms": 9.6967009098357
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.442995375056967,
+      "plane_fit_retained_fraction": 0.9700941260574288,
+      "depth_plane_toward_camera_normal": [
+        -0.04664210695102101,
+        -0.03448784019475992,
+        -0.9983161336660198
+      ],
+      "normal_difference_vs_colour_board_deg": 1.6034112531323672
+    },
+    {
+      "frame_id": 379422,
+      "sheet": "middle_sheet",
+      "depth_sha256": "01f34e88d2aaef5f46be0e5b900cc00adbd0a58b5426629be9fb8b6cc05508ec",
+      "polygon_pixels": 35021,
+      "valid_depth_pixels": 34998,
+      "valid_depth_fraction": 0.9993432511921418,
+      "sampled_valid_points": 8748,
+      "raw_depth_counts": {
+        "count": 8748,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3558.0,
+          3620.0,
+          3644.5,
+          3667.0,
+          3716.0
+        ],
+        "rms": 3643.4550238714264
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8748,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8861393674555891,
+          0.8885918303674275,
+          0.8946958771720237,
+          0.9007995822902182,
+          0.90331998441845
+        ],
+        "rms": 0.8947080742022292
+      },
+      "metres_per_count_ratios": {
+        "count": 8748,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002398122646670866,
+          0.0002443571317229605,
+          0.00024553345862292017,
+          0.0002468288521648516,
+          0.00025036248258437205
+        ],
+        "rms": 0.0002455721116140304
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8748,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -81.47365263568855,
+          -14.120648095598112,
+          0.044490777192681685,
+          19.839705202175413,
+          73.75221655664096
+        ],
+        "rms": 15.898762183036574
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 7.422173215762247,
+      "plane_fit_retained_fraction": 0.92946959304984,
+      "depth_plane_toward_camera_normal": [
+        -0.02892181515541105,
+        -0.033916049826194124,
+        -0.9990061211886058
+      ],
+      "normal_difference_vs_colour_board_deg": 1.4407550923460237
+    },
+    {
+      "frame_id": 421982,
+      "sheet": "left_sheet",
+      "depth_sha256": "bd264eeaa73358bbedf8150978e83d3665369454bc83f96586c790a8f0b7211c",
+      "polygon_pixels": 33680,
+      "valid_depth_pixels": 33680,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8417,
+      "raw_depth_counts": {
+        "count": 8417,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3639.0,
+          3696.6,
+          3718.0,
+          3738.0,
+          3777.0
+        ],
+        "rms": 3717.2643885197435
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8417,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9098897015838052,
+          0.91326074277297,
+          0.9191157559994441,
+          0.9251427640536842,
+          0.9286360379632556
+        ],
+        "rms": 0.9191785049581804
+      },
+      "metres_per_count_ratios": {
+        "count": 8417,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024326918804600073,
+          0.00024621807072964716,
+          0.0002472587756481525,
+          0.00024833281880278326,
+          0.00025224548046051524
+        ],
+        "rms": 0.0002472749652501727
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8417,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -43.764378848160064,
+          -10.850726503974176,
+          0.1829900895127885,
+          11.463896155808841,
+          78.5311492514235
+        ],
+        "rms": 10.930171575682778
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.480413136673772,
+      "plane_fit_retained_fraction": 0.9578234525365332,
+      "depth_plane_toward_camera_normal": [
+        -0.04427037569932666,
+        -0.03203843829374281,
+        -0.9985057197167869
+      ],
+      "normal_difference_vs_colour_board_deg": 1.9643718298488264
+    },
+    {
+      "frame_id": 421982,
+      "sheet": "middle_sheet",
+      "depth_sha256": "bd264eeaa73358bbedf8150978e83d3665369454bc83f96586c790a8f0b7211c",
+      "polygon_pixels": 35038,
+      "valid_depth_pixels": 35038,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8760,
+      "raw_depth_counts": {
+        "count": 8760,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3558.0,
+          3619.0,
+          3646.0,
+          3669.0,
+          3720.0
+        ],
+        "rms": 3645.0217967447456
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8760,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.888353731519184,
+          0.8907522631432568,
+          0.8965237646350623,
+          0.9022987511563857,
+          0.9046986635032551
+        ],
+        "rms": 0.8965348657380535
+      },
+      "metres_per_count_ratios": {
+        "count": 8760,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024123118673517768,
+          0.00024483066927889627,
+          0.0002458248310833352,
+          0.00024720002319538614,
+          0.00025125455621474653
+        ],
+        "rms": 0.00024596867354922627
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8760,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -70.62875902696229,
+          -12.809495922983146,
+          0.22662071505977543,
+          20.786416166483974,
+          78.84799306602471
+        ],
+        "rms": 16.102256338979828
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 7.148080578628379,
+      "plane_fit_retained_fraction": 0.9121004566210046,
+      "depth_plane_toward_camera_normal": [
+        -0.03612295949389412,
+        -0.03416408918887495,
+        -0.9987632085771367
+      ],
+      "normal_difference_vs_colour_board_deg": 1.0861129348079688
+    },
+    {
+      "frame_id": 463780,
+      "sheet": "left_sheet",
+      "depth_sha256": "1c99830057da7cf999d5ecc620cb78ee113b89443ff0bc1fec1a978c2f2a4e76",
+      "polygon_pixels": 33565,
+      "valid_depth_pixels": 33565,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8392,
+      "raw_depth_counts": {
+        "count": 8392,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3647.0,
+          3702.0,
+          3723.0,
+          3746.0,
+          3781.0
+        ],
+        "rms": 3723.0513947615905
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8392,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9114803044429266,
+          0.914883540905182,
+          0.9211381993025216,
+          0.9275358361329482,
+          0.9310613899388079
+        ],
+        "rms": 0.9211850900398105
+      },
+      "metres_per_count_ratios": {
+        "count": 8392,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024308139527274588,
+          0.00024625704042676995,
+          0.0002473633203536549,
+          0.0002487384499060504,
+          0.00025205136962068626
+        ],
+        "rms": 0.00024743086684671185
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8392,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -53.69476210301566,
+          -11.892621101871413,
+          0.26238804835565976,
+          14.144853725971817,
+          80.74005287846909
+        ],
+        "rms": 12.771285995460179
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.872966518336037,
+      "plane_fit_retained_fraction": 0.934580552907531,
+      "depth_plane_toward_camera_normal": [
+        -0.04639598934489051,
+        -0.033941678004355436,
+        -0.9983463200047155
+      ],
+      "normal_difference_vs_colour_board_deg": 2.1794806837651475
+    },
+    {
+      "frame_id": 463780,
+      "sheet": "middle_sheet",
+      "depth_sha256": "1c99830057da7cf999d5ecc620cb78ee113b89443ff0bc1fec1a978c2f2a4e76",
+      "polygon_pixels": 35168,
+      "valid_depth_pixels": 35168,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8791,
+      "raw_depth_counts": {
+        "count": 8791,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3578.0,
+          3627.0,
+          3651.0,
+          3674.0,
+          3714.0
+        ],
+        "rms": 3650.4173529084587
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8791,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.889500184745487,
+          0.8919065622664019,
+          0.8975883726348491,
+          0.9032926517524593,
+          0.9057277665747577
+        ],
+        "rms": 0.8976022795274049
+      },
+      "metres_per_count_ratios": {
+        "count": 8791,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024139949771769274,
+          0.0002449190098887963,
+          0.0002457754834308329,
+          0.00024697678022298647,
+          0.0002497771771554993
+        ],
+        "rms": 0.0002458956465469832
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8791,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -64.3625238113687,
+          -11.405480050600387,
+          0.2803461780144594,
+          17.160278013303834,
+          61.31277409191227
+        ],
+        "rms": 14.252302057223144
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.54758576468253,
+      "plane_fit_retained_fraction": 0.9237856899101353,
+      "depth_plane_toward_camera_normal": [
+        -0.029743982729371794,
+        -0.04046140781718404,
+        -0.9987382890271337
+      ],
+      "normal_difference_vs_colour_board_deg": 0.8640847683945251
+    },
+    {
+      "frame_id": 504062,
+      "sheet": "left_sheet",
+      "depth_sha256": "375da33b267fb78b1a1c0a2fbbfdd040b5e757ca6e07ea8b2e34b7f523f5de2b",
+      "polygon_pixels": 33564,
+      "valid_depth_pixels": 33562,
+      "valid_depth_fraction": 0.9999404123465618,
+      "sampled_valid_points": 8391,
+      "raw_depth_counts": {
+        "count": 8391,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3627.0,
+          3717.0,
+          3741.0,
+          3762.0,
+          3852.0
+        ],
+        "rms": 3740.060393877488
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8391,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9123048207729879,
+          0.9158520148954279,
+          0.9226222818735008,
+          0.9295763479933552,
+          0.9331274766693208
+        ],
+        "rms": 0.9226818200668249
+      },
+      "metres_per_count_ratios": {
+        "count": 8391,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002384069379844562,
+          0.00024522018374760116,
+          0.0002466461202500217,
+          0.00024821466497072233,
+          0.0002534586305533728
+        ],
+        "rms": 0.0002467088020644182
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8391,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -111.92554981732258,
+          -12.945585333053678,
+          0.08925340703649098,
+          19.651818576577874,
+          115.20694606818996
+        ],
+        "rms": 16.563847547454426
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 7.26185660844405,
+      "plane_fit_retained_fraction": 0.9327851269217018,
+      "depth_plane_toward_camera_normal": [
+        -0.04128555772423569,
+        -0.03148875934924733,
+        -0.9986510705737232
+      ],
+      "normal_difference_vs_colour_board_deg": 2.5531276857895184
+    },
+    {
+      "frame_id": 504062,
+      "sheet": "middle_sheet",
+      "depth_sha256": "375da33b267fb78b1a1c0a2fbbfdd040b5e757ca6e07ea8b2e34b7f523f5de2b",
+      "polygon_pixels": 35112,
+      "valid_depth_pixels": 35112,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8779,
+      "raw_depth_counts": {
+        "count": 8779,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3556.0,
+          3641.0,
+          3666.0,
+          3690.0,
+          3735.0
+        ],
+        "rms": 3665.3762245383305
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8779,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8913449392350475,
+          0.8936994176455487,
+          0.8994701276627719,
+          0.9053121314382172,
+          0.9077482661415004
+        ],
+        "rms": 0.8994986939311262
+      },
+      "metres_per_count_ratios": {
+        "count": 8779,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024139900748681618,
+          0.0002443711008823312,
+          0.0002453448025188631,
+          0.0002464347845803396,
+          0.0002521521830637454
+        ],
+        "rms": 0.00024541018095973043
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8779,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -62.835512423359816,
+          -12.981226021161474,
+          -0.36297757737695946,
+          16.791699826731126,
+          101.3194000287726
+        ],
+        "rms": 14.462171803752357
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 7.031480858249122,
+      "plane_fit_retained_fraction": 0.9487413145005126,
+      "depth_plane_toward_camera_normal": [
+        -0.040274038621394545,
+        -0.03419256025450601,
+        -0.998603460156415
+      ],
+      "normal_difference_vs_colour_board_deg": 1.0495910740704295
+    },
+    {
+      "frame_id": 552704,
+      "sheet": "left_sheet",
+      "depth_sha256": "b9693deb3d2a2119ba3cc926636870ef72c21d316966b8f9b149a359f3ec9acf",
+      "polygon_pixels": 33372,
+      "valid_depth_pixels": 31088,
+      "valid_depth_fraction": 0.9315593911063167,
+      "sampled_valid_points": 7775,
+      "raw_depth_counts": {
+        "count": 7775,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3627.0,
+          3727.0,
+          3752.0,
+          3780.0,
+          3842.0
+        ],
+        "rms": 3752.436913197091
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 7775,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9133839876229692,
+          0.9168172795678996,
+          0.9235227521856725,
+          0.9307007065733981,
+          0.9345714086143233
+        ],
+        "rms": 0.9236534622124205
+      },
+      "metres_per_count_ratios": {
+        "count": 7775,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00023994487976907006,
+          0.0002444188284188223,
+          0.0002461219962792375,
+          0.0002479119229436093,
+          0.0002551738702392964
+        ],
+        "rms": 0.00024615765524026823
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 7775,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -74.64012158068331,
+          -15.688100059942988,
+          0.14158353542880953,
+          18.24949643290529,
+          145.03177532878962
+        ],
+        "rms": 17.178853128000927
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 7.909229425274761,
+      "plane_fit_retained_fraction": 0.9317041800643087,
+      "depth_plane_toward_camera_normal": [
+        -0.07352933862384396,
+        -0.030903212734433194,
+        -0.9968141390471097
+      ],
+      "normal_difference_vs_colour_board_deg": 3.5959966217892427
+    },
+    {
+      "frame_id": 552704,
+      "sheet": "middle_sheet",
+      "depth_sha256": "b9693deb3d2a2119ba3cc926636870ef72c21d316966b8f9b149a359f3ec9acf",
+      "polygon_pixels": 34944,
+      "valid_depth_pixels": 34941,
+      "valid_depth_fraction": 0.9999141483516484,
+      "sampled_valid_points": 8735,
+      "raw_depth_counts": {
+        "count": 8735,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3565.0,
+          3648.0,
+          3673.0,
+          3697.0,
+          3760.0
+        ],
+        "rms": 3672.420036431559
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8735,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8928650203790097,
+          0.8954441449850772,
+          0.9014391327883272,
+          0.9075403360685664,
+          0.9101764225563551
+        ],
+        "rms": 0.9014779629617847
+      },
+      "metres_per_count_ratios": {
+        "count": 8735,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024126864771805993,
+          0.0002445100122054392,
+          0.000245384710931393,
+          0.0002465821872469994,
+          0.00025167651975764897
+        ],
+        "rms": 0.00024547862439576907
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8735,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -66.8622229569638,
+          -13.199407537689495,
+          -0.0855776812446889,
+          16.44680414023434,
+          91.81465187747511
+        ],
+        "rms": 14.665067681798435
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.683034717870785,
+      "plane_fit_retained_fraction": 0.9337149398969662,
+      "depth_plane_toward_camera_normal": [
+        -0.03857731820667379,
+        -0.03796866315113863,
+        -0.9985340110073849
+      ],
+      "normal_difference_vs_colour_board_deg": 1.0308758164739296
+    },
+    {
+      "frame_id": 593739,
+      "sheet": "left_sheet",
+      "depth_sha256": "22a517c49f865a98db33af3a6c6613f4e7a08f3f796b3c7c909deb7795abd1ea",
+      "polygon_pixels": 33406,
+      "valid_depth_pixels": 29707,
+      "valid_depth_fraction": 0.8892713883733461,
+      "sampled_valid_points": 7423,
+      "raw_depth_counts": {
+        "count": 7423,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          2829.0,
+          3729.0,
+          3757.0,
+          3784.0,
+          3828.0
+        ],
+        "rms": 3755.477206835041
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 7423,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9151968477819029,
+          0.9184181072205121,
+          0.9252449428923568,
+          0.9323107377886324,
+          0.9357229327429234
+        ],
+        "rms": 0.9253081094552189
+      },
+      "metres_per_count_ratios": {
+        "count": 7423,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024103112068843437,
+          0.0002448394505993573,
+          0.00024626637014728145,
+          0.0002480165253799527,
+          0.00033016026394056246
+        ],
+        "rms": 0.0002464092080360118
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 7423,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -61.126731211015,
+          -14.79325050278345,
+          -0.09808511360516015,
+          17.190338642281514,
+          934.2560417797513
+        ],
+        "rms": 22.944068478053218
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 7.73391456869904,
+      "plane_fit_retained_fraction": 0.9529839687457902,
+      "depth_plane_toward_camera_normal": [
+        -0.0702503103067004,
+        -0.03522687830196303,
+        -0.9969071977606094
+      ],
+      "normal_difference_vs_colour_board_deg": 3.4393738851857307
+    },
+    {
+      "frame_id": 593739,
+      "sheet": "middle_sheet",
+      "depth_sha256": "22a517c49f865a98db33af3a6c6613f4e7a08f3f796b3c7c909deb7795abd1ea",
+      "polygon_pixels": 34826,
+      "valid_depth_pixels": 34826,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8707,
+      "raw_depth_counts": {
+        "count": 8707,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3594.0,
+          3653.0,
+          3676.0,
+          3698.0,
+          3756.0
+        ],
+        "rms": 3675.9548753574777
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8707,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8951672187288144,
+          0.8977257192482326,
+          0.9039630804763303,
+          0.9103651439481328,
+          0.9129953614173885
+        ],
+        "rms": 0.9040169390371912
+      },
+      "metres_per_count_ratios": {
+        "count": 8707,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024198824893123346,
+          0.00024493649564869284,
+          0.0002459039441715978,
+          0.0002469404347982197,
+          0.00025023309014160993
+        ],
+        "rms": 0.00024592951280968847
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8707,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -67.66803491621374,
+          -11.271350347992305,
+          -0.10152757746577556,
+          15.052980001716312,
+          69.7825520178395
+        ],
+        "rms": 11.683433709950796
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.263886444171878,
+      "plane_fit_retained_fraction": 0.9568163546571724,
+      "depth_plane_toward_camera_normal": [
+        -0.036011987358926516,
+        -0.03529018242939043,
+        -0.998728060980846
+      ],
+      "normal_difference_vs_colour_board_deg": 1.329741367654207
+    },
+    {
+      "frame_id": 635544,
+      "sheet": "left_sheet",
+      "depth_sha256": "84b8e4689cb70cf28ea7893454a4e88d632f3cc5625e4350e23ddb478575281f",
+      "polygon_pixels": 33217,
+      "valid_depth_pixels": 27170,
+      "valid_depth_fraction": 0.8179546617695759,
+      "sampled_valid_points": 6780,
+      "raw_depth_counts": {
+        "count": 6780,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          2101.0,
+          3736.0,
+          3764.0,
+          3793.0,
+          3884.0
+        ],
+        "rms": 3763.6332802023376
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 6780,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9166199548827375,
+          0.9197638294373507,
+          0.9264351730316489,
+          0.9333241308160268,
+          0.9366323673336847
+        ],
+        "rms": 0.9264777889271641
+      },
+      "metres_per_count_ratios": {
+        "count": 6780,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024008067478222735,
+          0.00024458559197322263,
+          0.0002460097710902898,
+          0.00024773787079720647,
+          0.0004445148966889
+        ],
+        "rms": 0.000246234977941982
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 6780,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -94.54911746410434,
+          -16.434006918301133,
+          0.22863565759250593,
+          16.81898769997997,
+          1652.1303328321032
+        ],
+        "rms": 36.154460466978406
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 7.690973843237792,
+      "plane_fit_retained_fraction": 0.9317109144542773,
+      "depth_plane_toward_camera_normal": [
+        -0.06843649551706858,
+        -0.035093057768470715,
+        -0.9970380751896093
+      ],
+      "normal_difference_vs_colour_board_deg": 3.2256099483903498
+    },
+    {
+      "frame_id": 635544,
+      "sheet": "middle_sheet",
+      "depth_sha256": "84b8e4689cb70cf28ea7893454a4e88d632f3cc5625e4350e23ddb478575281f",
+      "polygon_pixels": 34460,
+      "valid_depth_pixels": 34460,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8616,
+      "raw_depth_counts": {
+        "count": 8616,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3617.0,
+          3659.0,
+          3682.0,
+          3703.0,
+          3734.0
+        ],
+        "rms": 3681.3630250102638
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8616,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8973107428714476,
+          0.8997901992085917,
+          0.9057219682326447,
+          0.9118175674690929,
+          0.9144428462312874
+        ],
+        "rms": 0.9057746042236988
+      },
+      "metres_per_count_ratios": {
+        "count": 8616,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024253647357727013,
+          0.0002451782852481205,
+          0.00024602865630020117,
+          0.0002468397511828595,
+          0.00024985304748137383
+        ],
+        "rms": 0.00024604507913052724
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8616,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -49.01508220072973,
+          -10.41085200648007,
+          0.23390821661316696,
+          11.58281201311657,
+          59.28252307118493
+        ],
+        "rms": 10.323523504449183
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.377322830627059,
+      "plane_fit_retained_fraction": 0.9628597957288765,
+      "depth_plane_toward_camera_normal": [
+        -0.0314416855639218,
+        -0.041265539213684546,
+        -0.9986533811499881
+      ],
+      "normal_difference_vs_colour_board_deg": 0.9760602197015318
+    },
+    {
+      "frame_id": 677341,
+      "sheet": "left_sheet",
+      "depth_sha256": "c82067c14563eb703db7365945a88e7a72910e273308d1d7373d20759c3d603b",
+      "polygon_pixels": 32995,
+      "valid_depth_pixels": 18705,
+      "valid_depth_fraction": 0.5669040763752083,
+      "sampled_valid_points": 4667,
+      "raw_depth_counts": {
+        "count": 4667,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3370.0,
+          3745.0,
+          3769.0,
+          3792.0,
+          3860.0
+        ],
+        "rms": 3768.055209738614
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 4667,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.918006446566461,
+          0.920786718397015,
+          0.9268829689089498,
+          0.9339257470013846,
+          0.9365154132669252
+        ],
+        "rms": 0.9271561296655347
+      },
+      "metres_per_count_ratios": {
+        "count": 4667,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002405321066208438,
+          0.0002446473425171813,
+          0.0002459014913223075,
+          0.00024755474255234555,
+          0.0002767692039707412
+        ],
+        "rms": 0.0002460722435585945
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 4667,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -80.53074124673823,
+          -15.937613476438118,
+          0.7648337312849787,
+          15.749763283818687,
+          400.6051152312076
+        ],
+        "rms": 22.059337782394337
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 7.895681392238908,
+      "plane_fit_retained_fraction": 0.9438611527748018,
+      "depth_plane_toward_camera_normal": [
+        -0.052023270097263416,
+        -0.02964967257373821,
+        -0.9982056282573533
+      ],
+      "normal_difference_vs_colour_board_deg": 2.644686626419934
+    },
+    {
+      "frame_id": 677341,
+      "sheet": "middle_sheet",
+      "depth_sha256": "c82067c14563eb703db7365945a88e7a72910e273308d1d7373d20759c3d603b",
+      "polygon_pixels": 34083,
+      "valid_depth_pixels": 34083,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8521,
+      "raw_depth_counts": {
+        "count": 8521,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3600.0,
+          3666.0,
+          3687.0,
+          3707.0,
+          3727.0
+        ],
+        "rms": 3686.3565247930173
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8521,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8994498821945087,
+          0.9020962187303744,
+          0.907660417939808,
+          0.9133797464389033,
+          0.9162009371232742
+        ],
+        "rms": 0.9077107557247514
+      },
+      "metres_per_count_ratios": {
+        "count": 8521,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024328170992776797,
+          0.0002453958361651967,
+          0.00024620845183175505,
+          0.0002470367942147622,
+          0.00025052023440090657
+        ],
+        "rms": 0.0002462374955841618
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8521,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -41.687909255940426,
+          -9.68011590376193,
+          0.025493113912748555,
+          11.427039052478838,
+          73.86897980188928
+        ],
+        "rms": 10.276743481737137
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.129031545882388,
+      "plane_fit_retained_fraction": 0.9631498650393147,
+      "depth_plane_toward_camera_normal": [
+        -0.037521065155686074,
+        -0.0314445046048743,
+        -0.9988009875844822
+      ],
+      "normal_difference_vs_colour_board_deg": 1.374776561342776
+    },
+    {
+      "frame_id": 719141,
+      "sheet": "left_sheet",
+      "depth_sha256": "d8e5335348da07eb75247ac65350d63ad62ba28e695b20374a5728dfbeeafa4d",
+      "polygon_pixels": 32590,
+      "valid_depth_pixels": 11634,
+      "valid_depth_fraction": 0.35698066891684566,
+      "sampled_valid_points": 2902,
+      "raw_depth_counts": {
+        "count": 2902,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          2583.0,
+          3751.0,
+          3774.0,
+          3795.0,
+          3872.0
+        ],
+        "rms": 3771.9852731364285
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 2902,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9183383463168421,
+          0.920924055022014,
+          0.9273338750417353,
+          0.9334758618847254,
+          0.9355510875674454
+        ],
+        "rms": 0.9272338103066738
+      },
+      "metres_per_count_ratios": {
+        "count": 2902,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002411441356820009,
+          0.00024441022404165933,
+          0.0002457159212036888,
+          0.00024709922434568415,
+          0.00035665202224334876
+        ],
+        "rms": 0.0002459031893392586
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 2902,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -86.83996424638144,
+          -17.038906958983958,
+          0.3935013165884697,
+          14.009017612076496,
+          1152.7745384011816
+        ],
+        "rms": 40.61460788461563
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.707235522491654,
+      "plane_fit_retained_fraction": 0.9383184011026878,
+      "depth_plane_toward_camera_normal": [
+        -0.07228066696920206,
+        -0.03301490750016603,
+        -0.99683776065378
+      ],
+      "normal_difference_vs_colour_board_deg": 2.7667744116617685
+    },
+    {
+      "frame_id": 719141,
+      "sheet": "middle_sheet",
+      "depth_sha256": "d8e5335348da07eb75247ac65350d63ad62ba28e695b20374a5728dfbeeafa4d",
+      "polygon_pixels": 33833,
+      "valid_depth_pixels": 33833,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8456,
+      "raw_depth_counts": {
+        "count": 8456,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3616.0,
+          3671.0,
+          3691.0,
+          3710.0,
+          3729.0
+        ],
+        "rms": 3690.7361308977247
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8456,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9014500668356834,
+          0.9042885034702901,
+          0.909514978835678,
+          0.9148933694634334,
+          0.9178090263546635
+        ],
+        "rms": 0.9095627505816513
+      },
+      "metres_per_count_ratios": {
+        "count": 8456,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024337008764916277,
+          0.00024565619808400457,
+          0.00024646376691772365,
+          0.00024714476752429773,
+          0.0002501897650477075
+        ],
+        "rms": 0.0002464464651062515
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8456,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -47.60887294656652,
+          -8.99360555591516,
+          -0.009693631845755224,
+          10.409504350798034,
+          60.88589355645563
+        ],
+        "rms": 9.097001429698835
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.0212327292394505,
+      "plane_fit_retained_fraction": 0.9730368968779565,
+      "depth_plane_toward_camera_normal": [
+        -0.03311295530052448,
+        -0.03386821298847768,
+        -0.9988776082885392
+      ],
+      "normal_difference_vs_colour_board_deg": 1.2388903585067121
+    },
+    {
+      "frame_id": 760938,
+      "sheet": "middle_sheet",
+      "depth_sha256": "7c78df3d4cbc704da97859e206be2508d3cfc0878243f9f74a4de52ed1eb7a0b",
+      "polygon_pixels": 33456,
+      "valid_depth_pixels": 33456,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8367,
+      "raw_depth_counts": {
+        "count": 8367,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3650.0,
+          3679.0,
+          3699.0,
+          3718.0,
+          3733.0
+        ],
+        "rms": 3698.846022194025
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8367,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9036418090790614,
+          0.9067256323190913,
+          0.9120061766153738,
+          0.9174169668580029,
+          0.9205703984468433
+        ],
+        "rms": 0.9120511412214531
+      },
+      "metres_per_count_ratios": {
+        "count": 8367,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024464449532588683,
+          0.0002457816848274103,
+          0.00024660373227816245,
+          0.0002472983717508282,
+          0.00024900644075842186
+        ],
+        "rms": 0.00024657810843234026
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8367,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -27.245754871459674,
+          -8.98221746093852,
+          0.02292763371761808,
+          9.614555432871832,
+          34.44053704353213
+        ],
+        "rms": 7.821021613671744
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 4.7850627849573835,
+      "plane_fit_retained_fraction": 0.979323532926975,
+      "depth_plane_toward_camera_normal": [
+        -0.034822450453294074,
+        -0.03428351940802577,
+        -0.9988053049726097
+      ],
+      "normal_difference_vs_colour_board_deg": 1.39793994882858
+    },
+    {
+      "frame_id": 802739,
+      "sheet": "middle_sheet",
+      "depth_sha256": "a5f8e64fda0ca1acf705a80c78ba89c6235a348fa863d5aee87c7a799438a561",
+      "polygon_pixels": 33254,
+      "valid_depth_pixels": 33254,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8315,
+      "raw_depth_counts": {
+        "count": 8315,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3657.0,
+          3690.0,
+          3710.0,
+          3729.0,
+          3762.0
+        ],
+        "rms": 3710.14032672847
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8315,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9052854924439203,
+          0.9085209859507939,
+          0.914146724801769,
+          0.919898972176324,
+          0.9232654399369927
+        ],
+        "rms": 0.9141921779345831
+      },
+      "metres_per_count_ratios": {
+        "count": 8315,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024289334143852716,
+          0.0002455647946568519,
+          0.00024639121451316514,
+          0.00024727577681777724,
+          0.00024880199479612795
+        ],
+        "rms": 0.0002464045621372249
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8315,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -46.85245259304454,
+          -8.99347988467414,
+          0.020354428489333998,
+          9.363603555548346,
+          43.227482269934534
+        ],
+        "rms": 8.16972018400949
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 4.554053984285304,
+      "plane_fit_retained_fraction": 0.970414912808178,
+      "depth_plane_toward_camera_normal": [
+        -0.04019898623946063,
+        -0.02968967300426098,
+        -0.998750501788219
+      ],
+      "normal_difference_vs_colour_board_deg": 1.9305233605513485
+    },
+    {
+      "frame_id": 802739,
+      "sheet": "right_sheet",
+      "depth_sha256": "a5f8e64fda0ca1acf705a80c78ba89c6235a348fa863d5aee87c7a799438a561",
+      "polygon_pixels": 36033,
+      "valid_depth_pixels": 35788,
+      "valid_depth_fraction": 0.9932006771570505,
+      "sampled_valid_points": 8944,
+      "raw_depth_counts": {
+        "count": 8944,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3428.0,
+          3612.0,
+          3636.0,
+          3654.0,
+          3768.0
+        ],
+        "rms": 3633.394079508587
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8944,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.88119263065515,
+          0.8856345216578465,
+          0.8916291162621438,
+          0.8976760951226284,
+          0.9021669578030139
+        ],
+        "rms": 0.8916559969811262
+      },
+      "metres_per_count_ratios": {
+        "count": 8944,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00023431530145398625,
+          0.0002441685694670027,
+          0.00024524549050365706,
+          0.00024669088692229915,
+          0.00025944526613557475
+        ],
+        "rms": 0.00024541459738590204
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8944,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -156.06951346570608,
+          -11.85777496324662,
+          0.4091408316294416,
+          18.811191679135135,
+          207.3090225268165
+        ],
+        "rms": 18.291808595657987
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.890406292751947,
+      "plane_fit_retained_fraction": 0.9230769230769231,
+      "depth_plane_toward_camera_normal": [
+        -0.03328870852733857,
+        -0.028596222243745084,
+        -0.9990365949042949
+      ],
+      "normal_difference_vs_colour_board_deg": 2.0516388035283524
+    },
+    {
+      "frame_id": 844542,
+      "sheet": "middle_sheet",
+      "depth_sha256": "7f54032c7e783cb9632a4a91961f79116110ce041c29fe7364238935518cb80f",
+      "polygon_pixels": 33149,
+      "valid_depth_pixels": 33149,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8287,
+      "raw_depth_counts": {
+        "count": 8287,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3641.0,
+          3698.0,
+          3722.0,
+          3745.0,
+          3783.0
+        ],
+        "rms": 3721.8066743940226
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8287,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9063999668831307,
+          0.909936334178331,
+          0.916236836828045,
+          0.9226786039913882,
+          0.9263275493861042
+        ],
+        "rms": 0.9162832808128949
+      },
+      "metres_per_count_ratios": {
+        "count": 8287,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024353869854009113,
+          0.00024527479270425556,
+          0.0002461897599848538,
+          0.0002470539797628039,
+          0.0002492816072937285
+        ],
+        "rms": 0.0002461943107332632
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8287,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -35.81726391849358,
+          -10.315680483611136,
+          -0.14870416997628944,
+          10.143922076096043,
+          58.61313929760237
+        ],
+        "rms": 8.781896426284677
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.167576968783705,
+      "plane_fit_retained_fraction": 0.9831060697477978,
+      "depth_plane_toward_camera_normal": [
+        -0.04632161465480523,
+        -0.034512940810628306,
+        -0.9983301883306812
+      ],
+      "normal_difference_vs_colour_board_deg": 2.0414377271066484
+    },
+    {
+      "frame_id": 844542,
+      "sheet": "right_sheet",
+      "depth_sha256": "7f54032c7e783cb9632a4a91961f79116110ce041c29fe7364238935518cb80f",
+      "polygon_pixels": 35729,
+      "valid_depth_pixels": 35729,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8933,
+      "raw_depth_counts": {
+        "count": 8933,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3518.0,
+          3617.0,
+          3641.0,
+          3663.0,
+          3771.0
+        ],
+        "rms": 3639.574727556786
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8933,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8830812291948371,
+          0.8873732826820764,
+          0.8932301685460271,
+          0.8991052369232407,
+          0.9033702520192892
+        ],
+        "rms": 0.8932470801046789
+      },
+      "metres_per_count_ratios": {
+        "count": 8933,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002376919610546945,
+          0.0002440823879798845,
+          0.0002452649239246873,
+          0.0002468013492173644,
+          0.00025401623049568447
+        ],
+        "rms": 0.00024543472888829444
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8933,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -127.41972599201169,
+          -13.813590367116424,
+          -0.16800909480445636,
+          21.09904849613573,
+          122.75347363326007
+        ],
+        "rms": 17.462407457182863
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 8.202384284739388,
+      "plane_fit_retained_fraction": 0.9458188738385761,
+      "depth_plane_toward_camera_normal": [
+        -0.04454866358752258,
+        -0.026691377914409453,
+        -0.9986505829956722
+      ],
+      "normal_difference_vs_colour_board_deg": 1.758680742404059
+    },
+    {
+      "frame_id": 886341,
+      "sheet": "middle_sheet",
+      "depth_sha256": "bdcef1eb4fb4080e8dcc3c0f844afa7b4214e7eba61dfb4401e487b09de2a398",
+      "polygon_pixels": 33086,
+      "valid_depth_pixels": 33086,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8272,
+      "raw_depth_counts": {
+        "count": 8272,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3665.0,
+          3700.0,
+          3723.0,
+          3748.0,
+          3803.0
+        ],
+        "rms": 3723.933282252424
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8272,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9078669456078557,
+          0.9113676475279993,
+          0.9179737494467142,
+          0.924750829622994,
+          0.9283695953103878
+        ],
+        "rms": 0.9180322956856272
+      },
+      "metres_per_count_ratios": {
+        "count": 8272,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024238687866943962,
+          0.0002455804358710824,
+          0.00024652019312215094,
+          0.00024750626689733186,
+          0.0002497984722267984
+        ],
+        "rms": 0.0002465243081500132
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8272,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -56.99944077974075,
+          -11.208423929374494,
+          -0.21198211493553432,
+          11.453869047441081,
+          48.873426252731974
+        ],
+        "rms": 10.32910215267146
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.521483876110135,
+      "plane_fit_retained_fraction": 0.9636121856866537,
+      "depth_plane_toward_camera_normal": [
+        -0.0502268558772969,
+        -0.03497042466329356,
+        -0.998125409128307
+      ],
+      "normal_difference_vs_colour_board_deg": 2.059794153151081
+    },
+    {
+      "frame_id": 886341,
+      "sheet": "right_sheet",
+      "depth_sha256": "bdcef1eb4fb4080e8dcc3c0f844afa7b4214e7eba61dfb4401e487b09de2a398",
+      "polygon_pixels": 35844,
+      "valid_depth_pixels": 35844,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8961,
+      "raw_depth_counts": {
+        "count": 8961,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3548.0,
+          3618.0,
+          3645.0,
+          3664.0,
+          3706.0
+        ],
+        "rms": 3643.220182316994
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8961,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8855139375206307,
+          0.8895814588705999,
+          0.8951322508045306,
+          0.9006945697591954,
+          0.9048095609249878
+        ],
+        "rms": 0.8951439188382327
+      },
+      "metres_per_count_ratios": {
+        "count": 8961,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002412895463321904,
+          0.0002446415233843874,
+          0.00024562496207464587,
+          0.00024684723555574794,
+          0.0002503707851731976
+        ],
+        "rms": 0.0002457069947201031
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8961,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -60.58015600223942,
+          -12.475561620630655,
+          -0.4533191644039434,
+          18.365645198736555,
+          76.41589692944098
+        ],
+        "rms": 14.579391936868918
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 7.089037441365207,
+      "plane_fit_retained_fraction": 0.9376185693560987,
+      "depth_plane_toward_camera_normal": [
+        -0.03434593419920422,
+        -0.03844902747070955,
+        -0.998670130268519
+      ],
+      "normal_difference_vs_colour_board_deg": 1.1880938040285371
+    },
+    {
+      "frame_id": 928142,
+      "sheet": "middle_sheet",
+      "depth_sha256": "4804e755d9092a8e9309c4face779a274d39d1773eec2af8bd57a283f942d742",
+      "polygon_pixels": 32842,
+      "valid_depth_pixels": 32842,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8210,
+      "raw_depth_counts": {
+        "count": 8210,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3647.0,
+          3700.0,
+          3724.0,
+          3750.0,
+          3800.0
+        ],
+        "rms": 3724.6396546189603
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8210,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9091721610199072,
+          0.912784968243019,
+          0.9196767517514104,
+          0.9267142000741078,
+          0.9304553027774725
+        ],
+        "rms": 0.9197304771943179
+      },
+      "metres_per_count_ratios": {
+        "count": 8210,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002428213243679153,
+          0.00024578595477489905,
+          0.000246915317326358,
+          0.000248010275222482,
+          0.0002523345797877822
+        ],
+        "rms": 0.0002469338468906123
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8210,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -58.36070646290595,
+          -11.239252172264212,
+          -0.19366051848010524,
+          14.971384174102191,
+          73.56630623510789
+        ],
+        "rms": 12.283526623564265
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.1977703608459205,
+      "plane_fit_retained_fraction": 0.9540803897685749,
+      "depth_plane_toward_camera_normal": [
+        -0.04725682837536124,
+        -0.03378342378492401,
+        -0.9983113103883325
+      ],
+      "normal_difference_vs_colour_board_deg": 2.220828093073951
+    },
+    {
+      "frame_id": 928142,
+      "sheet": "right_sheet",
+      "depth_sha256": "4804e755d9092a8e9309c4face779a274d39d1773eec2af8bd57a283f942d742",
+      "polygon_pixels": 35955,
+      "valid_depth_pixels": 35955,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8990,
+      "raw_depth_counts": {
+        "count": 8990,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3564.0,
+          3626.0,
+          3647.0,
+          3667.0,
+          3717.0
+        ],
+        "rms": 3646.4462254021682
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8990,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8874954757101052,
+          0.8913408394583907,
+          0.8965073251888687,
+          0.9016847255421566,
+          0.9054955096056242
+        ],
+        "rms": 0.8965202501152061
+      },
+      "metres_per_count_ratios": {
+        "count": 8990,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024216856819664725,
+          0.0002446562749178754,
+          0.0002458329033041759,
+          0.00024708113139791345,
+          0.0002509984844338617
+        ],
+        "rms": 0.0002458671267403399
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8990,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -61.0356519069914,
+          -13.874593616470195,
+          -0.07683104958379716,
+          17.52603458972701,
+          74.30479747159825
+        ],
+        "rms": 14.866699462839104
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 7.113713783245317,
+      "plane_fit_retained_fraction": 0.939043381535039,
+      "depth_plane_toward_camera_normal": [
+        -0.02662187146641816,
+        -0.027566111865250265,
+        -0.999265422916383
+      ],
+      "normal_difference_vs_colour_board_deg": 1.669747379673211
+    },
+    {
+      "frame_id": 969941,
+      "sheet": "middle_sheet",
+      "depth_sha256": "15986820435ef924f9a234d350681c4d5bbfcd7cea6501d33ff35ba46b3a6bb1",
+      "polygon_pixels": 32890,
+      "valid_depth_pixels": 32529,
+      "valid_depth_fraction": 0.989024019458802,
+      "sampled_valid_points": 8130,
+      "raw_depth_counts": {
+        "count": 8130,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3670.0,
+          3706.0,
+          3729.0,
+          3753.0,
+          3828.0
+        ],
+        "rms": 3729.3929518981904
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8130,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.909809632996625,
+          0.9138329623431691,
+          0.9209862081959408,
+          0.9284288276433564,
+          0.9327206505378626
+        ],
+        "rms": 0.9210609480295072
+      },
+      "metres_per_count_ratios": {
+        "count": 8130,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024128571355417011,
+          0.00024580954053246616,
+          0.00024694124742760345,
+          0.0002481340218473208,
+          0.0002525485356952902
+        ],
+        "rms": 0.00024697544974190455
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8130,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -84.05795088602284,
+          -11.895437853872805,
+          -0.17504846707243527,
+          12.861010056474527,
+          67.23735218458172
+        ],
+        "rms": 12.481595843202317
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.2214228551478215,
+      "plane_fit_retained_fraction": 0.9489544895448955,
+      "depth_plane_toward_camera_normal": [
+        -0.04224957105460448,
+        -0.03690587393112896,
+        -0.9984252251496262
+      ],
+      "normal_difference_vs_colour_board_deg": 2.3805863888201744
+    },
+    {
+      "frame_id": 969941,
+      "sheet": "right_sheet",
+      "depth_sha256": "15986820435ef924f9a234d350681c4d5bbfcd7cea6501d33ff35ba46b3a6bb1",
+      "polygon_pixels": 35759,
+      "valid_depth_pixels": 35759,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8939,
+      "raw_depth_counts": {
+        "count": 8939,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3550.0,
+          3630.0,
+          3651.0,
+          3673.0,
+          3732.0
+        ],
+        "rms": 3650.6565916368427
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8939,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8891525305746638,
+          0.8929689454780554,
+          0.8981409913187282,
+          0.9033247293625626,
+          0.9071476086341551
+        ],
+        "rms": 0.8981522689439679
+      },
+      "metres_per_count_ratios": {
+        "count": 8939,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024286699159761823,
+          0.00024502789719655477,
+          0.000245919545926299,
+          0.00024698275191898836,
+          0.0002526918368449958
+        ],
+        "rms": 0.00024603168637685104
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8939,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -52.12109530619486,
+          -12.032654564254555,
+          -0.09182167708756594,
+          16.049632180624922,
+          99.17907111928314
+        ],
+        "rms": 15.071638774221807
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.5138322761326055,
+      "plane_fit_retained_fraction": 0.9392549502181452,
+      "depth_plane_toward_camera_normal": [
+        -0.037249131884056055,
+        -0.03694676760504734,
+        -0.998622770888699
+      ],
+      "normal_difference_vs_colour_board_deg": 0.891158689328104
+    },
+    {
+      "frame_id": 1011740,
+      "sheet": "middle_sheet",
+      "depth_sha256": "db7e5c5f443804b1d530b3d81e06a367796124c2681ca3acf9dd2d252db36e55",
+      "polygon_pixels": 32922,
+      "valid_depth_pixels": 31501,
+      "valid_depth_fraction": 0.9568373731851042,
+      "sampled_valid_points": 7875,
+      "raw_depth_counts": {
+        "count": 7875,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3642.0,
+          3711.0,
+          3736.0,
+          3763.0,
+          3857.0
+        ],
+        "rms": 3736.6955878919853
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 7875,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9108559190236246,
+          0.9150072063392514,
+          0.9219110437540431,
+          0.9295252851459993,
+          0.9340590871348785
+        ],
+        "rms": 0.9221147781314665
+      },
+      "metres_per_count_ratios": {
+        "count": 7875,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024060525505419144,
+          0.0002455241663676991,
+          0.00024670800444625597,
+          0.00024813612792990515,
+          0.00025540887465890806
+        ],
+        "rms": 0.0002467790730396415
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 7875,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -94.63684757170134,
+          -13.413817911322653,
+          0.163382845732313,
+          15.1663673307411,
+          108.9700616346578
+        ],
+        "rms": 15.127621450362717
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.887760878515466,
+      "plane_fit_retained_fraction": 0.9448888888888889,
+      "depth_plane_toward_camera_normal": [
+        -0.0543550757927714,
+        -0.03394807182411967,
+        -0.9979444143613344
+      ],
+      "normal_difference_vs_colour_board_deg": 2.874824885726922
+    },
+    {
+      "frame_id": 1011740,
+      "sheet": "right_sheet",
+      "depth_sha256": "db7e5c5f443804b1d530b3d81e06a367796124c2681ca3acf9dd2d252db36e55",
+      "polygon_pixels": 35643,
+      "valid_depth_pixels": 35643,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8910,
+      "raw_depth_counts": {
+        "count": 8910,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3583.0,
+          3640.0,
+          3658.0,
+          3680.0,
+          3711.0
+        ],
+        "rms": 3659.102775084454
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8910,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8905916621786201,
+          0.8946566060074479,
+          0.9001253752740475,
+          0.9056282048565334,
+          0.9097481106388261
+        ],
+        "rms": 0.9001428647454087
+      },
+      "metres_per_count_ratios": {
+        "count": 8910,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024285339069095714,
+          0.0002450430525307999,
+          0.00024601390393931923,
+          0.0002468813210211532,
+          0.0002496006737969606
+        ],
+        "rms": 0.0002460035058422592
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8910,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -44.699212979236954,
+          -12.2049577638383,
+          0.2718597354832508,
+          12.470137856310442,
+          58.726053469949996
+        ],
+        "rms": 11.218240840970294
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.921928417267131,
+      "plane_fit_retained_fraction": 0.9564534231200897,
+      "depth_plane_toward_camera_normal": [
+        -0.03464758078314618,
+        -0.03658569133008227,
+        -0.9987297093487183
+      ],
+      "normal_difference_vs_colour_board_deg": 1.2325759051766059
+    },
+    {
+      "frame_id": 1053537,
+      "sheet": "middle_sheet",
+      "depth_sha256": "f48d13c141a067d1fbdd99757a97d95d16ad1b9b64eec6ed9ff99cca7bbe7e87",
+      "polygon_pixels": 32922,
+      "valid_depth_pixels": 30115,
+      "valid_depth_fraction": 0.9147378652572747,
+      "sampled_valid_points": 7519,
+      "raw_depth_counts": {
+        "count": 7519,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          2584.0,
+          3720.0,
+          3743.0,
+          3778.0,
+          3875.0
+        ],
+        "rms": 3746.104167083768
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 7519,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9115972006480768,
+          0.9159656897717273,
+          0.9226996086571162,
+          0.9301370821892447,
+          0.9352021994428769
+        ],
+        "rms": 0.9229021975657931
+      },
+      "metres_per_count_ratios": {
+        "count": 7519,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00023961064401457918,
+          0.0002448787038862816,
+          0.0002463665929829961,
+          0.000247712886408777,
+          0.00035952284720825015
+        ],
+        "rms": 0.00024640847822932993
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 7519,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -97.56308278855924,
+          -14.766289624639889,
+          -0.10534455903630935,
+          13.650233039137786,
+          1172.4258859317843
+        ],
+        "rms": 31.6623132572031
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.8804807778852,
+      "plane_fit_retained_fraction": 0.9477324112248969,
+      "depth_plane_toward_camera_normal": [
+        -0.06422428531994608,
+        -0.027764843668711264,
+        -0.9975491740416583
+      ],
+      "normal_difference_vs_colour_board_deg": 3.639794608401694
+    },
+    {
+      "frame_id": 1053537,
+      "sheet": "right_sheet",
+      "depth_sha256": "f48d13c141a067d1fbdd99757a97d95d16ad1b9b64eec6ed9ff99cca7bbe7e87",
+      "polygon_pixels": 35446,
+      "valid_depth_pixels": 35446,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8862,
+      "raw_depth_counts": {
+        "count": 8862,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3598.0,
+          3644.0,
+          3664.0,
+          3685.0,
+          3716.0
+        ],
+        "rms": 3663.614379735304
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8862,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8921718347061055,
+          0.896333738561273,
+          0.9019677121113276,
+          0.9076508013464231,
+          0.9119275599602121
+        ],
+        "rms": 0.9019896771818755
+      },
+      "metres_per_count_ratios": {
+        "count": 8862,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024288192824271018,
+          0.0002451505646998825,
+          0.00024615267750361053,
+          0.0002472354990165496,
+          0.0002501349630591405
+        ],
+        "rms": 0.00024620516791560426
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8862,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -45.89896991877181,
+          -12.792709632017429,
+          0.28718367299331327,
+          14.624547634393588,
+          51.78179790194115
+        ],
+        "rms": 12.279299895597962
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.459394448902671,
+      "plane_fit_retained_fraction": 0.9552019860076733,
+      "depth_plane_toward_camera_normal": [
+        -0.038279063506875044,
+        -0.03397983614842137,
+        -0.9986891828954407
+      ],
+      "normal_difference_vs_colour_board_deg": 1.367909616837051
+    },
+    {
+      "frame_id": 1094581,
+      "sheet": "middle_sheet",
+      "depth_sha256": "1b0e547d5afc25e6cdfd79cf01b92c989eaec5229b7103b0be79dba3c162d7c3",
+      "polygon_pixels": 32678,
+      "valid_depth_pixels": 26972,
+      "valid_depth_fraction": 0.8253871105942836,
+      "sampled_valid_points": 6745,
+      "raw_depth_counts": {
+        "count": 6745,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          2317.0,
+          3733.0,
+          3760.0,
+          3791.0,
+          3869.0
+        ],
+        "rms": 3760.6417675616003
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 6745,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9127054428780992,
+          0.9167309396780148,
+          0.9230703666089137,
+          0.9307453968706124,
+          0.9359821461349191
+        ],
+        "rms": 0.9233969865396886
+      },
+      "metres_per_count_ratios": {
+        "count": 6745,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024051169962025957,
+          0.0002439556235769965,
+          0.0002454772254987466,
+          0.00024704307683212114,
+          0.00040012148843229794
+        ],
+        "rms": 0.00024559407953164756
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 6745,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -77.83304324470558,
+          -17.658460632738898,
+          -0.2125978147338805,
+          16.98985585080405,
+          1432.6479690077592
+        ],
+        "rms": 32.991920374108666
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 8.267991528982064,
+      "plane_fit_retained_fraction": 0.9405485544848036,
+      "depth_plane_toward_camera_normal": [
+        -0.061310285098819244,
+        -0.02737971845082246,
+        -0.9977431533008158
+      ],
+      "normal_difference_vs_colour_board_deg": 3.5283630639595676
+    },
+    {
+      "frame_id": 1094581,
+      "sheet": "right_sheet",
+      "depth_sha256": "1b0e547d5afc25e6cdfd79cf01b92c989eaec5229b7103b0be79dba3c162d7c3",
+      "polygon_pixels": 35332,
+      "valid_depth_pixels": 35332,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8834,
+      "raw_depth_counts": {
+        "count": 8834,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3612.0,
+          3654.0,
+          3677.0,
+          3696.0,
+          3730.0
+        ],
+        "rms": 3676.232215818054
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8834,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8939655307911777,
+          0.8981417577312989,
+          0.9037334476327665,
+          0.909356070600024,
+          0.9136393163812822
+        ],
+        "rms": 0.9037552316245947
+      },
+      "metres_per_count_ratios": {
+        "count": 8834,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024138327144485755,
+          0.00024483753952557507,
+          0.00024578624109144765,
+          0.0002469107081348531,
+          0.0002501696068639046
+        ],
+        "rms": 0.0002458404430037525
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8834,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -56.224034511182545,
+          -12.350534684158117,
+          -0.17414217155731126,
+          14.634619972295647,
+          55.506587681038866
+        ],
+        "rms": 12.211302868499216
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.378053672578837,
+      "plane_fit_retained_fraction": 0.9566447815259226,
+      "depth_plane_toward_camera_normal": [
+        -0.042264719760867715,
+        -0.031210324633293207,
+        -0.9986188507633029
+      ],
+      "normal_difference_vs_colour_board_deg": 1.3611861953834152
+    },
+    {
+      "frame_id": 1136378,
+      "sheet": "middle_sheet",
+      "depth_sha256": "aeecb7e8beab30f7e148b2e92f066cf1a0871f6e74c35022103f209aeded3f3f",
+      "polygon_pixels": 32518,
+      "valid_depth_pixels": 22186,
+      "valid_depth_fraction": 0.6822682821821761,
+      "sampled_valid_points": 5529,
+      "raw_depth_counts": {
+        "count": 5529,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          2968.0,
+          3743.0,
+          3772.0,
+          3800.0,
+          3911.0
+        ],
+        "rms": 3771.3730876883637
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 5529,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9141895650995047,
+          0.9176391515048451,
+          0.9231628814010013,
+          0.9316863738810471,
+          0.9366360828714396
+        ],
+        "rms": 0.9239420976469312
+      },
+      "metres_per_count_ratios": {
+        "count": 5529,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00023732782734561006,
+          0.00024351891273258807,
+          0.0002449654077882577,
+          0.0002463845710323982,
+          0.0003141289033425298
+        ],
+        "rms": 0.00024500583708696275
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 5529,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -104.67274017457828,
+          -14.780076411830295,
+          0.05388148430395745,
+          16.596205351912914,
+          806.7714805207702
+        ],
+        "rms": 21.733582560844436
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 7.406875334414138,
+      "plane_fit_retained_fraction": 0.9215047929101103,
+      "depth_plane_toward_camera_normal": [
+        -0.06704288751095494,
+        -0.026594421035681437,
+        -0.9973956025589696
+      ],
+      "normal_difference_vs_colour_board_deg": 3.525437006948168
+    },
+    {
+      "frame_id": 1136378,
+      "sheet": "right_sheet",
+      "depth_sha256": "aeecb7e8beab30f7e148b2e92f066cf1a0871f6e74c35022103f209aeded3f3f",
+      "polygon_pixels": 35209,
+      "valid_depth_pixels": 35209,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8803,
+      "raw_depth_counts": {
+        "count": 8803,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3600.0,
+          3666.0,
+          3688.0,
+          3708.0,
+          3746.0
+        ],
+        "rms": 3687.2655466663095
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8803,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8960804892554397,
+          0.900073524274839,
+          0.9055112653682074,
+          0.9110101392963522,
+          0.9151060198126312
+        ],
+        "rms": 0.9055413670205905
+      },
+      "metres_per_count_ratios": {
+        "count": 8803,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024127310150274045,
+          0.0002446546049300687,
+          0.0002455647215650369,
+          0.00024653786057940517,
+          0.00025015112217801087
+        ],
+        "rms": 0.0002455887376679809
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8803,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -61.37364750711627,
+          -10.927424034932809,
+          -0.21756253424280025,
+          12.317263302007705,
+          75.1200128282564
+        ],
+        "rms": 11.1170410117033
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.66516567272145,
+      "plane_fit_retained_fraction": 0.9531977734863115,
+      "depth_plane_toward_camera_normal": [
+        -0.04324569905054332,
+        -0.03168996862917983,
+        -0.9985617434099463
+      ],
+      "normal_difference_vs_colour_board_deg": 1.222003211570059
+    },
+    {
+      "frame_id": 1178181,
+      "sheet": "middle_sheet",
+      "depth_sha256": "0f330e35e79b0a35002ec523a5457f84c5712b53b5770cc032105d565635e451",
+      "polygon_pixels": 32389,
+      "valid_depth_pixels": 15436,
+      "valid_depth_fraction": 0.47658155546636205,
+      "sampled_valid_points": 3850,
+      "raw_depth_counts": {
+        "count": 3850,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3570.0,
+          3750.0,
+          3771.0,
+          3795.0,
+          3856.0
+        ],
+        "rms": 3771.09254254196
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 3850,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9155883606020709,
+          0.918562003956879,
+          0.9230414942694132,
+          0.9302128922301158,
+          0.9357256099250195
+        ],
+        "rms": 0.9237944446750106
+      },
+      "metres_per_count_ratios": {
+        "count": 3850,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.000237888417776416,
+          0.000243644111451484,
+          0.00024492625439783463,
+          0.00024618909384123866,
+          0.00026028256998425546
+        ],
+        "rms": 0.0002449777708672859
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 3850,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -96.53550031662103,
+          -15.412061197697952,
+          0.10296573066870318,
+          15.465962088116036,
+          209.12006977991174
+        ],
+        "rms": 18.910681163233637
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 7.8408278047081374,
+      "plane_fit_retained_fraction": 0.9532467532467532,
+      "depth_plane_toward_camera_normal": [
+        -0.05343470251343116,
+        -0.03208401272427924,
+        -0.9980557843601776
+      ],
+      "normal_difference_vs_colour_board_deg": 2.5793640694984017
+    },
+    {
+      "frame_id": 1178181,
+      "sheet": "right_sheet",
+      "depth_sha256": "0f330e35e79b0a35002ec523a5457f84c5712b53b5770cc032105d565635e451",
+      "polygon_pixels": 34795,
+      "valid_depth_pixels": 34795,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8699,
+      "raw_depth_counts": {
+        "count": 8699,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3633.0,
+          3672.0,
+          3691.0,
+          3710.0,
+          3734.0
+        ],
+        "rms": 3691.0593713290727
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8699,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.8983643696033823,
+          0.90202317930868,
+          0.9072303959949782,
+          0.9125172070950199,
+          0.9163373651767788
+        ],
+        "rms": 0.9072657839933352
+      },
+      "metres_per_count_ratios": {
+        "count": 8699,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002424382519400354,
+          0.00024500438472600155,
+          0.0002457814468660132,
+          0.0002466186987475877,
+          0.00024886616110542033
+        ],
+        "rms": 0.00024580250602079616
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8699,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -47.21997035901252,
+          -9.709740989992836,
+          -0.2365849061762928,
+          11.182593918991422,
+          42.09368883599959
+        ],
+        "rms": 9.689798969954353
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.1368908750389535,
+      "plane_fit_retained_fraction": 0.9579261984136107,
+      "depth_plane_toward_camera_normal": [
+        -0.038772845857628246,
+        -0.03347632940133782,
+        -0.9986871390950791
+      ],
+      "normal_difference_vs_colour_board_deg": 1.1058521445255818
+    },
+    {
+      "frame_id": 1219983,
+      "sheet": "middle_sheet",
+      "depth_sha256": "62c0b2f79ca4198b4638732b87b35a80439bd82153c0e23e8e7fe5b09adec62e",
+      "polygon_pixels": 31858,
+      "valid_depth_pixels": 9409,
+      "valid_depth_fraction": 0.2953418293678197,
+      "sampled_valid_points": 2344,
+      "raw_depth_counts": {
+        "count": 2344,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3121.0,
+          3748.0,
+          3771.0,
+          3793.0,
+          3855.0
+        ],
+        "rms": 3768.653049568304
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 2344,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9176820605243257,
+          0.9199634007661759,
+          0.923453414458568,
+          0.928553254057452,
+          0.932755628666047
+        ],
+        "rms": 0.9238613401205964
+      },
+      "metres_per_count_ratios": {
+        "count": 2344,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002406005051329978,
+          0.00024377992583644265,
+          0.0002449431542632403,
+          0.0002463426246985677,
+          0.00029616646124535294
+        ],
+        "rms": 0.0002451722689292878
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 2344,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -67.61520883836862,
+          -16.160838167309556,
+          0.9864580751962313,
+          17.718282068428838,
+          637.3537183655379
+        ],
+        "rms": 27.22500658446282
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 8.86950780575975,
+      "plane_fit_retained_fraction": 0.9697098976109215,
+      "depth_plane_toward_camera_normal": [
+        -0.06447945690368442,
+        -0.037266126832853685,
+        -0.9972229617434023
+      ],
+      "normal_difference_vs_colour_board_deg": 2.266625518820735
+    },
+    {
+      "frame_id": 1219983,
+      "sheet": "right_sheet",
+      "depth_sha256": "62c0b2f79ca4198b4638732b87b35a80439bd82153c0e23e8e7fe5b09adec62e",
+      "polygon_pixels": 34415,
+      "valid_depth_pixels": 34415,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8604,
+      "raw_depth_counts": {
+        "count": 8604,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3633.0,
+          3674.0,
+          3693.0,
+          3709.0,
+          3725.0
+        ],
+        "rms": 3692.253824653958
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8604,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9005229686931002,
+          0.903915627514455,
+          0.9087330734239059,
+          0.9136277397737759,
+          0.9171345953358172
+        ],
+        "rms": 0.9087645408116723
+      },
+      "metres_per_count_ratios": {
+        "count": 8604,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024336052037997102,
+          0.00024537890628015664,
+          0.0002461377998627753,
+          0.0002468615947289796,
+          0.0002483311523674604
+        ],
+        "rms": 0.00024612827778530856
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8604,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -38.50423435705594,
+          -8.60118765823746,
+          -0.046867079973119896,
+          9.944745913455838,
+          38.66323078349728
+        ],
+        "rms": 8.277849150791548
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 4.591316332505137,
+      "plane_fit_retained_fraction": 0.9642026964202697,
+      "depth_plane_toward_camera_normal": [
+        -0.03408674654640906,
+        -0.03225637437801965,
+        -0.9988982030326543
+      ],
+      "normal_difference_vs_colour_board_deg": 0.9732469511713115
+    },
+    {
+      "frame_id": 1263302,
+      "sheet": "right_sheet",
+      "depth_sha256": "34aa198488ebbc559df7feea16d5c4d966f13aaa9e401f71074a5d81a231b40b",
+      "polygon_pixels": 34188,
+      "valid_depth_pixels": 34188,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8549,
+      "raw_depth_counts": {
+        "count": 8549,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3634.0,
+          3680.0,
+          3697.0,
+          3714.0,
+          3735.0
+        ],
+        "rms": 3697.1495748994053
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8549,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9026983028722132,
+          0.905919450822196,
+          0.9106286448364994,
+          0.9154125467874497,
+          0.9187565669430138
+        ],
+        "rms": 0.9106568794409738
+      },
+      "metres_per_count_ratios": {
+        "count": 8549,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024412830565638492,
+          0.0002456057708136887,
+          0.0002463137308763783,
+          0.0002470210610978073,
+          0.0002493085118397464
+        ],
+        "rms": 0.0002463143309681063
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8549,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -26.267481168989185,
+          -8.43714115442225,
+          -0.18864487851659728,
+          10.057813259293303,
+          50.51505372399164
+        ],
+        "rms": 8.199191530448545
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 4.580969142126491,
+      "plane_fit_retained_fraction": 0.9714586501345187,
+      "depth_plane_toward_camera_normal": [
+        -0.03351141121104506,
+        -0.03261025254266958,
+        -0.9989061801529451
+      ],
+      "normal_difference_vs_colour_board_deg": 0.9111717216953628
+    },
+    {
+      "frame_id": 1305095,
+      "sheet": "right_sheet",
+      "depth_sha256": "f35ded9b06c2b0c00f38e885bec7e33bd564e229ebfe082ca95eaffd42dde33b",
+      "polygon_pixels": 34001,
+      "valid_depth_pixels": 34001,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8500,
+      "raw_depth_counts": {
+        "count": 8500,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3646.0,
+          3685.0,
+          3704.0,
+          3719.0,
+          3745.0
+        ],
+        "rms": 3702.911789993192
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8500,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.904682572808492,
+          0.907813393712845,
+          0.9125996629949389,
+          0.9174901337096442,
+          0.9207352938353184
+        ],
+        "rms": 0.9126373625618898
+      },
+      "metres_per_count_ratios": {
+        "count": 8500,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002433501789191141,
+          0.0002456536652200794,
+          0.0002464767313248333,
+          0.00024721898134362746,
+          0.0002493447752301823
+        ],
+        "rms": 0.00024646626627022655
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8500,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -38.0745664773358,
+          -8.653863578341069,
+          0.21382449935894954,
+          9.418996538766617,
+          51.64740156825674
+        ],
+        "rms": 8.490250367121629
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 4.425280373645588,
+      "plane_fit_retained_fraction": 0.9630588235294117,
+      "depth_plane_toward_camera_normal": [
+        -0.0415853176609014,
+        -0.03017028011277878,
+        -0.9986793356993816
+      ],
+      "normal_difference_vs_colour_board_deg": 1.3298389652484763
+    },
+    {
+      "frame_id": 1346902,
+      "sheet": "right_sheet",
+      "depth_sha256": "1a50082529ed0e0677aa0bbd06d7c17466ee1b4c93626b72d6cecf829ac9f845",
+      "polygon_pixels": 33887,
+      "valid_depth_pixels": 33887,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8473,
+      "raw_depth_counts": {
+        "count": 8473,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3650.0,
+          3691.0,
+          3710.0,
+          3728.0,
+          3747.0
+        ],
+        "rms": 3709.4426494266095
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8473,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9060984572097556,
+          0.9094326940666666,
+          0.9146641648040347,
+          0.920021138355216,
+          0.9234800586432158
+        ],
+        "rms": 0.9147121459184905
+      },
+      "metres_per_count_ratios": {
+        "count": 8473,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002432867500318956,
+          0.00024568018366400124,
+          0.00024660932899786444,
+          0.00024743779218412964,
+          0.00024947344990976033
+        ],
+        "rms": 0.0002465914527760733
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8473,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -42.272770658663816,
+          -9.149346833055338,
+          -0.04595968216959356,
+          10.830711606954965,
+          52.5630582009532
+        ],
+        "rms": 8.974974423095334
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 4.7137148395664,
+      "plane_fit_retained_fraction": 0.9695503363625635,
+      "depth_plane_toward_camera_normal": [
+        -0.04242884178569141,
+        -0.033133588847387485,
+        -0.9985499279829813
+      ],
+      "normal_difference_vs_colour_board_deg": 1.4403224567766484
+    },
+    {
+      "frame_id": 1388701,
+      "sheet": "right_sheet",
+      "depth_sha256": "df90f867a54db61af430af21b3e5d785fd428c599123c1195a15e3996b0d6e2b",
+      "polygon_pixels": 33737,
+      "valid_depth_pixels": 33737,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8435,
+      "raw_depth_counts": {
+        "count": 8435,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3655.0,
+          3705.0,
+          3726.0,
+          3745.0,
+          3772.0
+        ],
+        "rms": 3725.0873250347513
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8435,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9073336849169343,
+          0.9108929307106097,
+          0.9165613840974678,
+          0.9223393197894201,
+          0.9259113044103614
+        ],
+        "rms": 0.9165985959356402
+      },
+      "metres_per_count_ratios": {
+        "count": 8435,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024145549891694534,
+          0.00024498145835783223,
+          0.00024608943926190935,
+          0.0002470691502006949,
+          0.00024958801066810444
+        ],
+        "rms": 0.0002460635512422097
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8435,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -59.50522711389994,
+          -10.986744737536299,
+          0.08928229663021359,
+          11.915998254220561,
+          59.02496177121154
+        ],
+        "rms": 10.975294182017455
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 5.721380451235424,
+      "plane_fit_retained_fraction": 0.9574392412566687,
+      "depth_plane_toward_camera_normal": [
+        -0.045192388139061845,
+        -0.03184987104131831,
+        -0.9984704471184611
+      ],
+      "normal_difference_vs_colour_board_deg": 1.7760245991666008
+    },
+    {
+      "frame_id": 1430497,
+      "sheet": "right_sheet",
+      "depth_sha256": "e11bdd39efa6eac49303315e5048004b279031fdba0b6e6f7a96dd13c3584a5b",
+      "polygon_pixels": 33549,
+      "valid_depth_pixels": 33549,
+      "valid_depth_fraction": 1.0,
+      "sampled_valid_points": 8389,
+      "raw_depth_counts": {
+        "count": 8389,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3663.0,
+          3710.0,
+          3733.0,
+          3753.0,
+          3808.0
+        ],
+        "rms": 3731.9151672714975
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8389,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9088501686114084,
+          0.9124439680730865,
+          0.9185000380036674,
+          0.9246817423006514,
+          0.9283808551549009
+        ],
+        "rms": 0.9185486150278478
+      },
+      "metres_per_count_ratios": {
+        "count": 8389,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024244889715081838,
+          0.0002449886683717235,
+          0.0002461241531013376,
+          0.0002472862616798232,
+          0.0002501159881291502
+        ],
+        "rms": 0.0002461364219032767
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8389,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -51.92465807132652,
+          -11.9891451632623,
+          -0.23813079484294875,
+          14.123267133469065,
+          65.97175687955368
+        ],
+        "rms": 12.416182162771532
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.158443307604831,
+      "plane_fit_retained_fraction": 0.9502920491119323,
+      "depth_plane_toward_camera_normal": [
+        -0.04588838774836166,
+        -0.03457330938459113,
+        -0.9983481066982867
+      ],
+      "normal_difference_vs_colour_board_deg": 1.9111630739702277
+    },
+    {
+      "frame_id": 1472299,
+      "sheet": "right_sheet",
+      "depth_sha256": "c7c5806738992d04105bd09dae8810ae6265490af02df477d4e8ffe8428cb9f3",
+      "polygon_pixels": 33549,
+      "valid_depth_pixels": 33548,
+      "valid_depth_fraction": 0.999970192852246,
+      "sampled_valid_points": 8385,
+      "raw_depth_counts": {
+        "count": 8385,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3635.0,
+          3716.0,
+          3739.0,
+          3761.0,
+          3820.0
+        ],
+        "rms": 3739.044026815719
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8385,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.910071048984931,
+          0.9137445302661498,
+          0.9201951047155802,
+          0.9267858349866208,
+          0.9305531235916432
+        ],
+        "rms": 0.9202430863686765
+      },
+      "metres_per_count_ratios": {
+        "count": 8385,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024184894891265146,
+          0.00024471033441288083,
+          0.00024616605512051403,
+          0.0002474883315348446,
+          0.0002516490430612334
+        ],
+        "rms": 0.0002461218279473666
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8385,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -57.443802545720715,
+          -15.008662826934955,
+          0.12187111788018079,
+          15.122152674867584,
+          96.25746190165451
+        ],
+        "rms": 14.027577149942895
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 6.885988667981078,
+      "plane_fit_retained_fraction": 0.940608228980322,
+      "depth_plane_toward_camera_normal": [
+        -0.048162586013351286,
+        -0.031047490283324097,
+        -0.9983568593722454
+      ],
+      "normal_difference_vs_colour_board_deg": 2.43687690114491
+    },
+    {
+      "frame_id": 1514099,
+      "sheet": "right_sheet",
+      "depth_sha256": "1031c44f6554177544973ab31df8bb20b6eb68d6622c62b6f77fc59b4e2272b9",
+      "polygon_pixels": 33546,
+      "valid_depth_pixels": 32132,
+      "valid_depth_fraction": 0.9578489238657366,
+      "sampled_valid_points": 8029,
+      "raw_depth_counts": {
+        "count": 8029,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          3576.0,
+          3718.0,
+          3742.0,
+          3767.0,
+          3861.0
+        ],
+        "rms": 3742.6936102500763
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 8029,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9109718213875388,
+          0.914594415744059,
+          0.9211103594492336,
+          0.9279945773343679,
+          0.9316726780903952
+        ],
+        "rms": 0.921208786747756
+      },
+      "metres_per_count_ratios": {
+        "count": 8029,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002385940163954859,
+          0.00024458712482680004,
+          0.0002461870296496322,
+          0.0002475537834332735,
+          0.0002588644359353431
+        ],
+        "rms": 0.00024614264764920215
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 8029,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -95.54874282858208,
+          -15.399316329422211,
+          0.2781422110103833,
+          17.079229933992682,
+          186.482825269883
+        ],
+        "rms": 16.29375736518332
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 7.262440914422793,
+      "plane_fit_retained_fraction": 0.9323701581766098,
+      "depth_plane_toward_camera_normal": [
+        -0.05732984695037097,
+        -0.03541535631009962,
+        -0.9977269371857591
+      ],
+      "normal_difference_vs_colour_board_deg": 2.648551277896683
+    },
+    {
+      "frame_id": 1555900,
+      "sheet": "right_sheet",
+      "depth_sha256": "395e3d684532e1739ab600f5a143f58892db61a6ad4bc0c706d245bcdde2e991",
+      "polygon_pixels": 33546,
+      "valid_depth_pixels": 31078,
+      "valid_depth_fraction": 0.9264293805520778,
+      "sampled_valid_points": 7774,
+      "raw_depth_counts": {
+        "count": 7774,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          2327.0,
+          3719.0,
+          3745.0,
+          3773.0,
+          3861.0
+        ],
+        "rms": 3745.0248774060256
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 7774,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9121619446979702,
+          0.915527640174003,
+          0.921931394440846,
+          0.9287012344918468,
+          0.9325620605822931
+        ],
+        "rms": 0.9220342124891897
+      },
+      "metres_per_count_ratios": {
+        "count": 7774,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00023859558871419035,
+          0.00024453379164181326,
+          0.0002460932713280202,
+          0.0002477944858709903,
+          0.00039643040627287116
+        ],
+        "rms": 0.00024629511325215163
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 7774,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -115.02451167930641,
+          -15.559989013859731,
+          -0.11604380252600377,
+          17.47138569594734,
+          1407.8669180253198
+        ],
+        "rms": 41.695607727978405
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 8.016274395668407,
+      "plane_fit_retained_fraction": 0.9289940828402367,
+      "depth_plane_toward_camera_normal": [
+        -0.06811475682722846,
+        -0.03136337021539426,
+        -0.9971843956415982
+      ],
+      "normal_difference_vs_colour_board_deg": 3.230161062954287
+    },
+    {
+      "frame_id": 1597697,
+      "sheet": "right_sheet",
+      "depth_sha256": "b7b88b8687b07fc2e2d8a5da5e9ad6d8f6e02949479010d2f494d74cadee0a50",
+      "polygon_pixels": 33468,
+      "valid_depth_pixels": 28919,
+      "valid_depth_fraction": 0.8640791203537708,
+      "sampled_valid_points": 7245,
+      "raw_depth_counts": {
+        "count": 7245,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          2034.0,
+          3727.0,
+          3757.0,
+          3781.0,
+          3862.0
+        ],
+        "rms": 3754.527188306068
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 7245,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9137392458181096,
+          0.916900053503085,
+          0.9232510230766448,
+          0.9300917638640038,
+          0.9335612543221682
+        ],
+        "rms": 0.923388260151039
+      },
+      "metres_per_count_ratios": {
+        "count": 7245,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.000240699867325337,
+          0.0002443416128339319,
+          0.0002458325105028484,
+          0.000247347633999576,
+          0.00045492372688467266
+        ],
+        "rms": 0.00024602487721853844
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 7245,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -85.65210524895657,
+          -14.994531895541584,
+          -0.019928609880887294,
+          15.992136838813325,
+          1707.0484961504822
+        ],
+        "rms": 38.45331738777723
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 7.6153234955776234,
+      "plane_fit_retained_fraction": 0.9370600414078675,
+      "depth_plane_toward_camera_normal": [
+        -0.06444354595889931,
+        -0.03547260972591726,
+        -0.9972906914954515
+      ],
+      "normal_difference_vs_colour_board_deg": 2.9145509553831195
+    },
+    {
+      "frame_id": 1639496,
+      "sheet": "right_sheet",
+      "depth_sha256": "658d78d1e12c85d8fc87a7417284d572616a4a2ddc8ae238d158ca7ce881e4a7",
+      "polygon_pixels": 33247,
+      "valid_depth_pixels": 21147,
+      "valid_depth_fraction": 0.6360573886365687,
+      "sampled_valid_points": 5284,
+      "raw_depth_counts": {
+        "count": 5284,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          2915.0,
+          3739.0,
+          3766.0,
+          3786.0,
+          3866.0
+        ],
+        "rms": 3763.409152772703
+      },
+      "board_predicted_z_m_conditional": {
+        "count": 5284,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.9149366171262501,
+          0.9177923244142121,
+          0.9239184742228153,
+          0.9304201596539199,
+          0.9337918923538719
+        ],
+        "rms": 0.9240350022777648
+      },
+      "metres_per_count_ratios": {
+        "count": 5284,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00023989018580375168,
+          0.00024412554922857133,
+          0.00024550015935101064,
+          0.00024686858037037293,
+          0.00031894605567653686
+        ],
+        "rms": 0.00024555219131852706
+      },
+      "all_valid_plane_residual_raw_counts": {
+        "count": 5284,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          -82.13334458320793,
+          -16.032347953708577,
+          -0.14143542856362235,
+          15.32395253236566,
+          848.2007412348065
+        ],
+        "rms": 23.80630754351909
+      },
+      "all_valid_plane_residual_MAD_raw_counts": 8.100312540437244,
+      "plane_fit_retained_fraction": 0.948334595003785,
+      "depth_plane_toward_camera_normal": [
+        -0.057264389149380576,
+        -0.033251930188976764,
+        -0.9978051407334275
+      ],
+      "normal_difference_vs_colour_board_deg": 2.5448391078811654
+    }
+  ],
+  "frame_medians": {
+    "count": 61,
+    "quantile_probabilities": [
+      0,
+      0.1,
+      0.5,
+      0.9,
+      1
+    ],
+    "quantiles": [
+      0.00024492625439783463,
+      0.0002453448025188631,
+      0.0002461241531013376,
+      0.0002466935361821317,
+      0.0002473633203536549
+    ],
+    "rms": 0.00024608575237075267
+  },
+  "per_sheet": [
+    {
+      "sheet": "left_sheet",
+      "metres_per_count": {
+        "count": 18,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.0002457159212036888,
+          0.0002459772871598951,
+          0.0002463504039357748,
+          0.00024698220538246253,
+          0.0002473633203536549
+        ],
+        "rms": 0.00024643221791093115
+      }
+    },
+    {
+      "sheet": "middle_sheet",
+      "metres_per_count": {
+        "count": 22,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024492625439783463,
+          0.0002449977398502576,
+          0.0002459663002358995,
+          0.00024669757722944663,
+          0.00024694124742760345
+        ],
+        "rms": 0.0002459419284573129
+      }
+    },
+    {
+      "sheet": "right_sheet",
+      "metres_per_count": {
+        "count": 21,
+        "quantile_probabilities": [
+          0,
+          0.1,
+          0.5,
+          0.9,
+          1
+        ],
+        "quantiles": [
+          0.00024524549050365706,
+          0.00024550015935101064,
+          0.00024601390393931923,
+          0.0002463137308763783,
+          0.00024660932899786444
+        ],
+        "rms": 0.0002459391578321554
+      }
+    }
+  ]
+}

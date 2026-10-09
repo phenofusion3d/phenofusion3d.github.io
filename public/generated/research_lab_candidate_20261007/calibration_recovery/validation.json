@@ -1,0 +1,18 @@
+{
+  "status": "PASSED",
+  "source_hashes_rechecked": 41,
+  "local_report_links_checked": 7,
+  "utf8_verified": true,
+  "raw_hsi_cubes_read": false,
+  "source_script_sha256": "18755063bfa1ce591fba9b5441066145bd78fa9925dc025478ce2b44a181ced2",
+  "output_sha256": {
+    "audit_saved_metadata.py": "18755063bfa1ce591fba9b5441066145bd78fa9925dc025478ce2b44a181ced2",
+    "evidence_inventory.csv": "af4c500427256250edeeed1b873d37ad5ad45696953acea34a9d7e433a52ae2d",
+    "evidence_inventory.json": "6befa02d4c4ea506b32bd1a311b0dab38ace3c8b880619205efed0f8e859710c",
+    "index.html": "b3d628e8263de3f7311390e191403ec561475603704f99a543db76e813c36b8e",
+    "lab_records_to_collect.json": "fa9e07d1558da68b120d38b553b78072b22d05832bc1270ea50692d96cc5e9e1",
+    "LAB_RECORDS_TO_COLLECT.md": "ff0ac47916a91d9d4e125cd13aa50dcfd8a4f7923e4652481d2d48917c0e7ebc",
+    "REPORT.md": "c941582b5014f48b74c6ba1e20441ad72e6c6a7f468e770c14faf75a325c18ee",
+    "summary.json": "ff35d2fd0dfcc7970c1d9e1c1543e0deb3b1a35c0d58cadc7526133c8b8e4358"
+  }
+}

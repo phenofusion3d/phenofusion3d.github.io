@@ -1,0 +1,180 @@
+{
+  "models": [
+    {
+      "label": "Cleaned plants \u00b7 candidate",
+      "name": "plants_cleaned",
+      "download": "plants_cleaned_upright.ply",
+      "count": 435917,
+      "display_stride": 1,
+      "display_centre": [
+        0.9,
+        0.0,
+        -0.445
+      ],
+      "display_scale": 1.8,
+      "colour_override": null,
+      "ply_sha256": "a22c8fad0678a50c7f6a6baef3268618684d7ffce7dd01ecec0ed7d21847c4a0",
+      "js_sha256": "e73e34f5366d7047d2b35e2339fea93c966d4ae2d832181866297c8916ebf7d4",
+      "provenance_sha256": "8b03f7af23673c52bdc5b6d39ede71eb6a128e1148eba9db5d6fbc348b0ee787"
+    },
+    {
+      "label": "Before cleanup \u00b7 original fusion",
+      "name": "original_fusion",
+      "download": "original_fusion_upright.ply",
+      "count": 1732490,
+      "display_stride": 1,
+      "display_centre": [
+        0.9,
+        0.0,
+        -0.445
+      ],
+      "display_scale": 1.8,
+      "colour_override": null,
+      "ply_sha256": "fb5cdaddf268de99e6bb0e0cfd9f022e15f468b3a68fbe44406736b3712761dc",
+      "js_sha256": "95191d5ad0493dd0e9bfb3e4fd39509f8f888c2f290a6201385286018c16ed0a",
+      "provenance_sha256": "82ef127f87fccefbbc0bcb2dd3008327276a63a23227e7d7757beaef3190335a"
+    },
+    {
+      "label": "Cleaned + uncertainty \u00b7 orange",
+      "name": "uncertainty_overlay",
+      "download": "uncertainty_overlay_upright.ply",
+      "count": 1039657,
+      "display_stride": 1,
+      "display_centre": [
+        0.9,
+        0.0,
+        -0.445
+      ],
+      "display_scale": 1.8,
+      "colour_override": "uncertainty",
+      "ply_sha256": "dee0d35990edcc7cba6dbdc9d7399bcfa12d8a335fd94884055dfb3646a9a7e8",
+      "js_sha256": "293a3c58399771d52ae5c74ba94f85b071b597d3af2c74566a02daa7dc7d099d",
+      "provenance_sha256": "0cbebf897c37db6dfe286b8e16228c72f949e183b7f00e1d85fb1479af4b55d5"
+    },
+    {
+      "label": "Separated scene context",
+      "name": "scene_context",
+      "download": "scene_context_upright.ply",
+      "count": 692833,
+      "display_stride": 1,
+      "display_centre": [
+        0.9,
+        0.0,
+        -0.445
+      ],
+      "display_scale": 1.8,
+      "colour_override": null,
+      "ply_sha256": "046c8dd2c64b81f0420894035e571ed2be94d7d47955793875579050919219e4",
+      "js_sha256": "739cb373e124d46c99815acc041adf24b3618f930e7f633e7b9130626236bf94",
+      "provenance_sha256": "d65ae0326d19651feb01d1908abf576041214b0e11d3fef8a56e996095879232"
+    },
+    {
+      "label": "Plant 1 \u00b7 candidate",
+      "name": "P1",
+      "download": "P1_upright.ply",
+      "count": 21891,
+      "display_stride": 1,
+      "display_centre": [
+        0.23996544548620705,
+        -0.10763534226280538,
+        -0.4794498740110469
+      ],
+      "display_scale": 0.5140674881412357,
+      "colour_override": null,
+      "ply_sha256": "9bc22dbc0b9ce8bbecf65cf9afac50aef53dcf887b514231d9190475f4925ad8",
+      "js_sha256": "9bc55871c4755b09c94ac720659a9473223c2472f373fb41c6f41fbbb123b9a9",
+      "provenance_sha256": "4dac6cac9d5e761dff160840b8dc2d2afb70b2e45522c2ce9ac20064ee39d93b"
+    },
+    {
+      "label": "Plant 2 \u00b7 candidate",
+      "name": "P2",
+      "download": "P2_upright.ply",
+      "count": 74306,
+      "display_stride": 1,
+      "display_centre": [
+        0.6124914233604483,
+        -0.10431043947961957,
+        -0.4456209576655602
+      ],
+      "display_scale": 0.54828289177784,
+      "colour_override": null,
+      "ply_sha256": "60d3b45e77c85d7cc5836d1bbac0d57a2e8135e0d67f89bee1ea72a2077bccca",
+      "js_sha256": "7d766c105fba28157a08d71f3eccfd949e49c064a005c9a8775993da86fd6b93",
+      "provenance_sha256": "4ce2c7de83dda22be1519f0ff914d7e3fd2c9f99e8fc8676c7e416ff9f86754a"
+    },
+    {
+      "label": "Plant 3 \u00b7 candidate",
+      "name": "P3",
+      "download": "P3_upright.ply",
+      "count": 113901,
+      "display_stride": 1,
+      "display_centre": [
+        0.7804818497472027,
+        -0.054606309938509255,
+        -0.4615581841852726
+      ],
+      "display_scale": 0.5390415392127755,
+      "colour_override": null,
+      "ply_sha256": "e9df48e0b32ee953b4e53fe3c710fa207797157e9e19d9d3307aa4a33e06bae1",
+      "js_sha256": "88ecf865257bc716923936e5fffef6e2c5f79519c4380ffe39544a7953a84957",
+      "provenance_sha256": "4bfc0f9a825ca4d038ff8e4b2d07de65947a90502b75aeb50d45fbeb5ca2c45e"
+    },
+    {
+      "label": "Plant 4 \u00b7 candidate",
+      "name": "P4",
+      "download": "P4_upright.ply",
+      "count": 69634,
+      "display_stride": 1,
+      "display_centre": [
+        1.0386139739889186,
+        -0.0667635329725928,
+        -0.40774984380899226
+      ],
+      "display_scale": 0.4790830462831946,
+      "colour_override": null,
+      "ply_sha256": "164dd96958c85ec365e74349a61e697e2e6560d81ff5008f44d150f5aaa78c44",
+      "js_sha256": "2a05968e41b2c548be373b4c24a8c1a3f2c5d4ad8da6e4ed6455749a1f9dde84",
+      "provenance_sha256": "5cb95ddfdc214f8bce578aa044ddb4ca8cf86ba24fb8951ac04756b0dca79a2f"
+    },
+    {
+      "label": "Plant 5 \u00b7 candidate",
+      "name": "P5",
+      "download": "P5_upright.ply",
+      "count": 156185,
+      "display_stride": 1,
+      "display_centre": [
+        1.3514437868024194,
+        -0.02978324115734715,
+        -0.5593446424172799
+      ],
+      "display_scale": 0.38755960470465795,
+      "colour_override": null,
+      "ply_sha256": "c1e9c6ca252fec8af3469c061ad722fb30455fdaefaff8cc27a607aa3473eff0",
+      "js_sha256": "c4721fdc30a2172ed19a9f304e746908d19bb7a5aef3ea3d3f2914cf59878b27",
+      "provenance_sha256": "c2b21826dc8705e74002c1abfb15cc97094da95b385f335bb3814143fa160a97"
+    }
+  ],
+  "input_sha256": "9caee0edcc1fb5f66a9cdd490a0054e2ab45872302a32a81cd24788dee01ab10",
+  "classification_sha256": "ca2af9922994117cc8068169ac8bdf91b0b84d7792b7f75bb6dc0df628789fcb",
+  "script_sha256": "7d74f2251487ab5d97861725cdfc8a3f4d5f74daaf2c484a237c4300f306d90c",
+  "upright_R": [
+    [
+      0.9997320091584629,
+      -0.022989551247924105,
+      0.002718528536188047
+    ],
+    [
+      -0.023027275267776585,
+      -0.9996256969203645,
+      0.014771954854300693
+    ],
+    [
+      0.0023779103694299077,
+      -0.014830596410614249,
+      -0.9998871931134934
+    ]
+  ],
+  "photos": "Recorded D405, native distorted 1280x720",
+  "full_points_rendered": true,
+  "export_coordinates": "Same shared upright frame; reference-coordinate exact subsets remain in ../result"
+}

@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "status": "complete_measured_camera_space_extraction",
+  "warning": "Measured camera-space DN; any Q/Q0 is provisional reference-relative signal. No calibrated reflectance, physiological interpretation, or 3D fusion.",
+  "physical_fusion": null,
+  "calibrated_reflectance": false,
+  "physiological_claims": false,
+  "automatic_segmentation": false,
+  "cross_camera_concatenation": false,
+  "source_header": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\20260928\\003-specim-fx17.hdr",
+  "source_data": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\data\\main\\test_plant_10-7\\20260928\\003-specim-fx17.bil",
+  "source_config": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_sprint_review_20261008\\fusion_candidates\\candidate_result\\inputs\\fx17_extraction.json",
+  "header_sha256": "762de08de4f6f2892aa0caf4dd69da81a4a283e4a83783a210d75664b3c64d4f",
+  "config_sha256": "d1137277a3515f06b2be56e6b4394eaf2e2cd1f12e132a01f9bb9d52cac90680",
+  "source_data_size_bytes": 609853440,
+  "source_data_mtime_ns": 1791339727075563300,
+  "source_data_identity_check": "size, mtime_ns and inode before/after; weaker than full-content hashing",
+  "full_source_data_sha256": null,
+  "raw_source_shape_line_band_column": [
+    2127,
+    224,
+    640
+  ],
+  "source_dtype": "<u2",
+  "header_offset": 0,
+  "sample_count": 643,
+  "band_count": 224,
+  "source_sample_sha256_uint16_little_endian_sample_band": "1e1bd228fa3f8ec531a01ad9aea1dbfc92e283978530bf7e1d5a8f6299ad57dd",
+  "selection": {
+    "review_status": "assistant_reviewed",
+    "provenance": "REJECTED FOR MEASUREMENT: this local image warp failed its registration check (maximum reviewed-point error about 8.25 RGB pixels). This is a diagnostic overlay of one visible green-leaf patch on Plant 5, provided to inspect the failure, not an accepted spectral fusion result. Colours use measured native spectral pixels; geometry uses unchanged existing source points. Local image registration is provisional; this is not complete five-plant spectral coverage, independently validated physical registration, calibrated reflectance or plant-health diagnosis. Source mapping evidence: C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_sprint_review_20261008\\multiview_probe\\projection_demo\\evidence.json",
+    "label_mask_npy": "C:\\Personal\\My_DEGREE's\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_sprint_review_20261008\\fusion_candidates\\candidate_result\\inputs\\fx17_exact_pixels.npy",
+    "label_names": {
+      "1": "P5 visible green-leaf candidate patch"
+    }
+  },
+  "sampling": {
+    "line_step": 1,
+    "column_step": 1,
+    "origin_line_column": [
+      0,
+      0
+    ]
+  },
+  "patches": [
+    {
+      "patch_id": 1,
+      "name": "P5 visible green-leaf candidate patch",
+      "mask_pixels": 643,
+      "sample_pixels": 643,
+      "sampling_status": "measured",
+      "samples_with_any_suspected_clipping": 12,
+      "samples_without_reference_support": 0,
+      "samples_all_bands_Q_valid": 631
+    }
+  ],
+  "normalization": {
+    "white_roi": [
+      8,
+      45,
+      90,
+      520
+    ],
+    "dark_roi": [
+      2080,
+      2127,
+      0,
+      640
+    ],
+    "white_identity": "User-confirmed white board at scan start; spectral reflectance unknown",
+    "settings_assumption": "User confirmed fixed exposure; gain and source export packing not independently established",
+    "dark_status": "assumed_tail",
+    "dark_provenance": "Abrupt final low-signal tail; shutter closure unconfirmed. This is an explicit assumed offset, not certified dark calibration."
+  },
+  "normalization_produced": true,
+  "suspected_clipping_dn": 65520,
+  "clipping_evaluated": true,
+  "band_flags": {
+    "outside_reviewed_reference_support": 1,
+    "sample_suspected_clipping": 2,
+    "reference_suspected_clipping": 4,
+    "weak_white_minus_dark": 8,
+    "raw_zero": 16,
+    "low_signal_above_dark_advisory": 32
+  },
+  "Q_invalid_bit_mask": 31,
+  "low_signal_bit_32_policy": "Advisory for Q; any downstream index must independently exclude required low-signal bands.",
+  "reference_formula": "Q=(DN-D)/(W-D); Q0=DN/W, same conservative support",
+  "reference_support_policy": "Intersection of reviewed white/dark columns; no extrapolation",
+  "reference_contrast_guard": "W-D > max(64 DN,5*sqrt(white_MAD_sigma^2+dark_MAD_sigma^2))",
+  "signal_guard": "DN-D > max(32 DN,3*dark_MAD_sigma)",
+  "guard_limit": "Exploratory guards inherited from reviewed workflow, not calibrated noise confidence bounds.",
+  "array_axes": "Spectral arrays: sample,source_band; index arrays: sample,index_names. Coordinates: zero-based source scan_line and detector_column.",
+  "invalid_floating_values": "NaN, never zero filled",
+  "summary_limit": "Medians omit invalid Q separately per band; valid pixel sets may change with wavelength. Patch samples are spatially correlated and not whole-plant traits.",
+  "products": {
+    "spectra": "measured_spectra.npz",
+    "csv": "patch_spectral_summary.csv",
+    "mask": "reviewed_patch_mask.npz",
+    "reference_profiles": "reference_profiles.npz"
+  },
+  "software_sha256": "a01459dfab001296d69afa10d8ca44e78ba7ccf4b8754ca970d1e15fb4b77339",
+  "label_mask_sha256": "47d0cf1a9b1443bc0c74740673176b577df03f47fc47d27ea2c9d50e547f8ad7",
+  "index_specs_applied": {},
+  "indices_unavailable": {
+    "NDVI_800_680": "Distinct required wavelengths select the same recorded band; descriptor omitted.",
+    "NDRE_790_720": "Distinct required wavelengths select the same recorded band; descriptor omitted.",
+    "GNDVI_800_550": "Distinct required wavelengths select the same recorded band; descriptor omitted.",
+    "PRI_531_570": "Distinct required wavelengths select the same recorded band; descriptor omitted.",
+    "PSRI_678_500_750": "Distinct required wavelengths select the same recorded band; descriptor omitted.",
+    "SIPI_800_445_680": "Distinct required wavelengths select the same recorded band; descriptor omitted."
+  },
+  "index_quality_flags": {
+    "invalid_required_band": 1,
+    "low_signal_required_band": 2,
+    "weak_or_wrong_sign_denominator": 4,
+    "reference_scan_line": 8,
+    "nonfinite_index": 16
+  },
+  "index_denominator_floor_Q_units": 0.01,
+  "source_fingerprints_stable_before_after": true
+}

@@ -1,0 +1,17 @@
+{
+  "input_sha256": {
+    "generated/research_confirmed_board_20261007/fusion_v1/fused_review_reference.ply": "2a310d7eb85db8005437170e7207ec6326e5b2fa397546ccecd1af16c5c8ed72",
+    "generated/research_confirmed_board_20261007/fusion_v1/fused_point_provenance.npz": "2aa1f32f7f21b2cb8a9ba1258f870d2a31ac74454226963d19565834aa6ee0c3",
+    "generated/research_confirmed_board_20261007/cleanup_v1/result/point_classification.npz": "3af085c90913f0e913bb480e79dbfc4862d6aca137cd3d3e6ba037399e9e951d",
+    "generated/research_confirmed_board_20261007/cleanup_v1/result/summary.json": "0f8fe280b3c54b1980c09158f4feba8c38801f45eb4d939a7a242c38f1dade8b",
+    "generated/research_confirmed_board_20261007/traits_metric/traits_review.json": "6d9b0fc75648338fc4f975b923e633030e9731877b3e75d9cfb7b379d510e3ad",
+    "generated/final_sprint_website_20261007/traits_site/website_tables.json": "cc7e1989651786ce0e8629eb5b40db3be51601ef3d981ab477d308a615980d2b",
+    "generated/research_followthrough_20261007/traits/provisional_chords.json": "3d584e52653cbfdded616c0d3fb8ac6c4d1d5921e5fe2e7ef50517f73ef6e127",
+    "generated/research_followthrough_20261007/traits/chord_endpoint_indices.npz": "094bf9b639bbb2bc32fd42edcde53c162c24188684c212c6525d36fd8fd0d752",
+    "generated/research_d405_l515_fusion_20261007/v1/fused_point_provenance.npz": "36fb7b66dc1730a74294e9e38058ab995f1d9396398c9eac45ae6e7c65bf2b41"
+  },
+  "source_coordinate_policy": "D405 coordinates/pose translations multiplied by board-derived gauge factor; L515 rebuilt with empirically board-fitted depth gain then rigidly aligned; final fusion/cleanup thresholds remain physical.",
+  "source_identity_remap": "D405 camera0 and original full-cloud point index only; no nearest-point matching",
+  "historical_report_rewrites": "Archive report index.html files receive a prominent historical banner and link to current report. Original source folders are untouched.",
+  "manual_photos_byte_identical": true
+}

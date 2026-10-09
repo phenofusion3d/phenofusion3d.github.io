@@ -1,0 +1,146 @@
+{
+  "status": "passed_linux_offline_selection_and_changed_test_repeats",
+  "base_commit": "920a577958a22e10998d24935265c77e2296d867",
+  "patch_uncommitted": true,
+  "patch_sha256": "48f7de6b42d6b53dc8921641cd8bad3683d585334cd503e52e73cb6253041752",
+  "test_lf_sha256": "34788b6168d98a45d307480457efa4958f1636960d565f99ebe218f9b3272e1b",
+  "source": "/tmp/phenofusion3d-validation-u6bcgpn1/source_v2",
+  "python": "/tmp/phenofusion3d-validation-u6bcgpn1/environment/bin/python",
+  "runtime_overlay": {
+    "package": "libusb-1.0-0",
+    "version": "2:1.0.27-1",
+    "architecture": "amd64",
+    "archive_uri": "'http://archive.ubuntu.com/ubuntu/pool/main/libu/libusb-1.0/libusb-1.0-0_1.0.27-1_amd64.deb' libusb-1.0-0_2%3a1.0.27-1_amd64.deb 54008 SHA512:9887228479a9f4b8973a2ab5df211487542bc66e59dd5bc9eb3e9772346bf6b5263f39afa6c8dd00459f8e7be7330a731cea08ef7548fe0e99e571f228456ed7",
+    "archive_sha256": "d59e679a82ee2b724c556397e831e879936adbe8a007705872b65a5e1ec887b5",
+    "metadata_sha256": "d59e679a82ee2b724c556397e831e879936adbe8a007705872b65a5e1ec887b5",
+    "archive_path": "/tmp/phenofusion3d-validation-u6bcgpn1/downloaded_runtime/libusb-1.0-0_2%3a1.0.27-1_amd64.deb",
+    "extracted_to": "/tmp/phenofusion3d-validation-u6bcgpn1/runtime_overlay",
+    "ld_library_path": "/tmp/phenofusion3d-validation-u6bcgpn1/runtime_overlay/usr/lib/x86_64-linux-gnu",
+    "apt_update_run": false,
+    "apt_install_run": false,
+    "system_files_changed": false,
+    "postinstall_scripts_run": false,
+    "sdk_installed": false,
+    "device_access_performed": false
+  },
+  "existing_environment_reused": true,
+  "new_dependencies_installed": false,
+  "system_packages_changed": false,
+  "production_source_changed": false,
+  "hardware_contacted": false,
+  "other_committed_files_unchanged": 207,
+  "protected_file_count": 26,
+  "protected_files_changed": [],
+  "import_probe": {
+    "command": [
+      "/tmp/phenofusion3d-validation-u6bcgpn1/environment/bin/python",
+      "-c",
+      "import json,sys,importlib; names=['numpy','scipy','open3d','cv2','PyQt5','pytest','processing.research_workspace.workflow','processing.research_workspace.spectral_extract']; print(json.dumps({n:{'origin':getattr(importlib.import_module(n),'__file__',None),'version':getattr(importlib.import_module(n),'__version__',None)} for n in names},indent=2))"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 6.049,
+    "log": "import_probe.log"
+  },
+  "module_origins": {
+    "numpy": {
+      "origin": "/tmp/phenofusion3d-validation-u6bcgpn1/environment/lib/python3.12/site-packages/numpy/__init__.py",
+      "version": "2.5.3"
+    },
+    "scipy": {
+      "origin": "/tmp/phenofusion3d-validation-u6bcgpn1/environment/lib/python3.12/site-packages/scipy/__init__.py",
+      "version": "1.18.1"
+    },
+    "open3d": {
+      "origin": "/tmp/phenofusion3d-validation-u6bcgpn1/environment/lib/python3.12/site-packages/open3d/__init__.py",
+      "version": "0.20.0"
+    },
+    "cv2": {
+      "origin": "/tmp/phenofusion3d-validation-u6bcgpn1/environment/lib/python3.12/site-packages/cv2/__init__.py",
+      "version": "5.0.0"
+    },
+    "PyQt5": {
+      "origin": "/tmp/phenofusion3d-validation-u6bcgpn1/environment/lib/python3.12/site-packages/PyQt5/__init__.py",
+      "version": null
+    },
+    "pytest": {
+      "origin": "/tmp/phenofusion3d-validation-u6bcgpn1/environment/lib/python3.12/site-packages/pytest/__init__.py",
+      "version": "9.1.1"
+    },
+    "processing.research_workspace.workflow": {
+      "origin": "/tmp/phenofusion3d-validation-u6bcgpn1/source_v2/processing/research_workspace/workflow.py",
+      "version": null
+    },
+    "processing.research_workspace.spectral_extract": {
+      "origin": "/tmp/phenofusion3d-validation-u6bcgpn1/source_v2/processing/research_workspace/spectral_extract.py",
+      "version": null
+    }
+  },
+  "full_suite": {
+    "command": [
+      "/tmp/phenofusion3d-validation-u6bcgpn1/environment/bin/python",
+      "-m",
+      "pytest",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source_v2/tests/test_analysis_ui.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source_v2/tests/test_analysis_workflow.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source_v2/tests/test_gantry_offline.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source_v2/tests/test_hyperspectral.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source_v2/tests/test_realsense_runtime.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source_v2/tests/test_reference_traits.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source_v2/tests/test_research_spectral_extract.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source_v2/tests/test_research_spectral_mapping.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source_v2/tests/test_research_workspace.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source_v2/tests/test_research_workspace_review.py",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/source_v2/tests/test_ros_runtime.py",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/v2_pytest_temp",
+      "--junitxml",
+      "/mnt/c/Personal/My_DEGREE's/Master_of_Computing_(Advanced)/Australian_National_University/Technical Team Project - COMP8715/PhenoFusion3D/generated/research_lab_candidate_20261007/linux_check_v2/tests.xml"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 30.326,
+    "log": "tests.log"
+  },
+  "test_counts": {
+    "tests": 142,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 1
+  },
+  "skips": [
+    {
+      "test": "test_current_recording_subset_matches_reviewed_saved_spectra",
+      "reason": "Real recording and reviewed generated spectra are optional local parity fixtures, not packaged data."
+    }
+  ],
+  "changed_test_repeat": {
+    "command": [
+      "/tmp/phenofusion3d-validation-u6bcgpn1/environment/bin/python",
+      "-m",
+      "pytest",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/repeat_v2/test_changed_gantry_repeat.py",
+      "-q",
+      "-p",
+      "no:cacheprovider",
+      "--basetemp",
+      "/tmp/phenofusion3d-validation-u6bcgpn1/v2_repeat_temp",
+      "--junitxml",
+      "/mnt/c/Personal/My_DEGREE's/Master_of_Computing_(Advanced)/Australian_National_University/Technical Team Project - COMP8715/PhenoFusion3D/generated/research_lab_candidate_20261007/linux_check_v2/repeat_tests.xml"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.42,
+    "log": "repeat_tests.log"
+  },
+  "repeat_counts": {
+    "tests": 20,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "full_suite_passed": true,
+  "v2_snapshot_files_changed_during_tests": [],
+  "prior_snapshot_files_changed": [],
+  "frozen_utc": "2026-10-07T10:17:55Z"
+}

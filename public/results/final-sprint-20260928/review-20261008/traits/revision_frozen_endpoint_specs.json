@@ -1,0 +1,80 @@
+[
+  {
+    "id": "P5.O02.length_revision",
+    "manual_dimension_id": "P5.O02.length",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        533,
+        404
+      ],
+      [
+        589,
+        413
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Three-view venation review showed the first batch axes were reversed; this is basal lamina to true terminal margin.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P5.O02.width_revision",
+    "manual_dimension_id": "P5.O02.width",
+    "plant": 5,
+    "frame": 1445026,
+    "points": [
+      [
+        545,
+        378
+      ],
+      [
+        549,
+        432
+      ]
+    ],
+    "roles": [
+      "first opposite margin candidate",
+      "second opposite margin candidate"
+    ],
+    "secondary": [
+      1030829,
+      1639585
+    ],
+    "scope": "Three-view venation review showed the first batch axes were reversed; this is the opposing side-margin chord across the midrib.",
+    "organ_kind": "leaf"
+  },
+  {
+    "id": "P3.O01.length_revision",
+    "manual_dimension_id": "P3.O01.length",
+    "plant": 3,
+    "frame": 824869,
+    "points": [
+      [
+        655,
+        477
+      ],
+      [
+        717,
+        499
+      ]
+    ],
+    "roles": [
+      "basal margin candidate",
+      "terminal margin candidate"
+    ],
+    "secondary": [
+      618150,
+      1055904
+    ],
+    "scope": "Original basal click lay on the crossing flowering stalk; new frozen click is at first visible lamina junction on the correct leaf. This may omit hidden basal tissue.",
+    "organ_kind": "leaf"
+  }
+]

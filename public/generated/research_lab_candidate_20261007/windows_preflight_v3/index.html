@@ -1,0 +1,230 @@
+<script src="/research-assets.js"></script><!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lab preflight evidence</title><style>body{font:16px/1.6 system-ui;color:#183440;background:#f1f6f7;max-width:1100px;margin:auto;padding:30px}section{background:white;padding:20px;margin:20px 0;border-radius:8px}aside{background:#fff1d6;padding:20px;border-left:4px solid #c29338}table{border-collapse:collapse;width:100%}td,th{padding:9px;text-align:left;border-bottom:1px solid #ccd9dd}pre{white-space:pre-wrap;overflow-wrap:anywhere}a{color:#076b70}</style>
+<h1>Lab preflight evidence</h1><aside>This read-only check did not start cameras, ROS or gantry motion. Package metadata is not an import test, runtime test or hardware acceptance.</aside>
+<section><h2>Outcome</h2><p>metadata_checks_complete_operator_acceptance_pending</p><p>Not supplied: compare the actual working lab checkout before applying any change.</p><p>Python: 3.12.14</p><p>Interpreter: C:\Users\Adithya Rama\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe</p></section>
+<section><h2>Dependency metadata</h2><p>Missing or different packages are reported, never installed or changed. Optional RealSense/ROS observations do not establish hardware readiness.</p><table><tr><th>Package</th><th>Recorded version</th><th>Observation</th></tr><tr><td>numpy</td><td>1.26.4</td><td>metadata_minimum_met</td></tr><tr><td>open3d</td><td>0.19.0</td><td>metadata_minimum_met</td></tr><tr><td>opencv-python</td><td>4.13.0.92</td><td>metadata_minimum_met</td></tr><tr><td>natsort</td><td>8.4.0</td><td>metadata_minimum_met</td></tr><tr><td>tqdm</td><td>4.67.3</td><td>metadata_minimum_met</td></tr><tr><td>PyQt5</td><td>5.15.11</td><td>metadata_minimum_met</td></tr><tr><td>pyqtgraph</td><td>0.14.0</td><td>metadata_minimum_met</td></tr><tr><td>matplotlib</td><td>3.10.8</td><td>metadata_minimum_met</td></tr><tr><td>scipy</td><td>1.17.1</td><td>metadata_minimum_met</td></tr><tr><td>PyQtWebEngine</td><td>None</td><td>optional_not_installed</td></tr><tr><td>pyrealsense2</td><td>2.57.7.10387</td><td>different_version_do_not_change_automatically</td></tr><tr><td>pytest</td><td>9.0.2</td><td>metadata_present</td></tr><tr><td>spectral</td><td>None</td><td>optional_not_installed</td></tr><tr><td>scikit-image</td><td>0.26.0</td><td>metadata_present</td></tr><tr><td>scikit-learn</td><td>1.8.0</td><td>metadata_present</td></tr><tr><td>pandas</td><td>3.0.1</td><td>metadata_present</td></tr></table></section>
+<section><h2>Source comparison and remaining checks</h2><p>Candidate source is compared with the frozen candidate snapshot identified in its manifest. Protected lab files, when supplied, are compared allowing only CRLF/LF line-ending differences.</p><pre>{
+  &quot;candidate_source_integrity&quot;: {
+    &quot;expected_commit&quot;: &quot;920a577958a22e10998d24935265c77e2296d867 + test-only Qt signal wait patch (uncommitted)&quot;,
+    &quot;expected_files&quot;: 208,
+    &quot;mismatches_or_missing&quot;: [],
+    &quot;all_expected_source_bytes_match&quot;: true
+  },
+  &quot;candidate_protected_comparison&quot;: {
+    &quot;root&quot;: &quot;C:\\Personal\\My_DEGREE&#x27;s\\Master_of_Computing_(Advanced)\\Australian_National_University\\Technical Team Project - COMP8715\\PhenoFusion3D\\generated\\research_lab_candidate_20261007\\lab_test_kit_v2\\source&quot;,
+    &quot;files&quot;: [
+      {
+        &quot;path&quot;: &quot;main.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;9f3b051f5b784732c4124fb84db4aa62b5566677e816cc1cdc7f000d7a382afc&quot;,
+        &quot;lf_sha256&quot;: &quot;0fc696e080b7801ae1997b4d7d78b98d0002cf99ed1a4dde945191d90209fb78&quot;,
+        &quot;bytes&quot;: 970
+      },
+      {
+        &quot;path&quot;: &quot;app/main_window.py&quot;,
+        &quot;status&quot;: &quot;only_CRLF_LF_difference&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;67c43e86ddf11d800a3e0a724e7e115e53d4371671e9d200b120b7167e65f319&quot;,
+        &quot;lf_sha256&quot;: &quot;4cd695beae72dbae1434d20f8e072bf528ec972ae31230876aa8da1b2f6ac5e7&quot;,
+        &quot;bytes&quot;: 14060
+      },
+      {
+        &quot;path&quot;: &quot;app/controller.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;6dc964d58bc9f332d547676953939581bfa470668bbc2c3598f9ae1501eddf1b&quot;,
+        &quot;lf_sha256&quot;: &quot;e719f8e96ea0253ba5a42efd34e7702187653de992459e04352c4d7e9b777ce4&quot;,
+        &quot;bytes&quot;: 16223
+      },
+      {
+        &quot;path&quot;: &quot;app/capture_worker.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;8b9b4dcbc9ce6c3d7a5139f56c3de9a1851c48eb58732624ba307d4558a9da12&quot;,
+        &quot;lf_sha256&quot;: &quot;5d1e175b0bfa70abc64f6090e82e3dfbcc0887f030190679fb4b1411d6597f30&quot;,
+        &quot;bytes&quot;: 1840
+      },
+      {
+        &quot;path&quot;: &quot;app/panels/capture_panel.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;f06408603428d4f73b4d5d9acad378ea1e5226a51e5758f8b19b3f4c51672d41&quot;,
+        &quot;lf_sha256&quot;: &quot;e2e4429b44a79dec86bd554a623c2343319d9f4807a5f6d4dce8c7e756f3554d&quot;,
+        &quot;bytes&quot;: 10852
+      },
+      {
+        &quot;path&quot;: &quot;app/panels/gantry_panel.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;782eb3bc0c9081990f82771ac81304ca36581517474886110eaedad487968145&quot;,
+        &quot;lf_sha256&quot;: &quot;9e731e1f2ef03736d77b7df468ead70d662d7a07586d19a5a0ff450bca7a97d9&quot;,
+        &quot;bytes&quot;: 8341
+      },
+      {
+        &quot;path&quot;: &quot;processing/reconstructor.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;077bf48dfb5745114d327e00541b65d383743f00da85c8b60cef3d3b5ee600d9&quot;,
+        &quot;lf_sha256&quot;: &quot;2fa85e6c060d777f4ef966d1a4fae85799b6b599b2d581c18276ee5f40d7d641&quot;,
+        &quot;bytes&quot;: 26350
+      },
+      {
+        &quot;path&quot;: &quot;processing/icp.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;b44b9c8d559f9abb0f6679b63468b5f84b7248715f5d2eee2c81bfe84103755d&quot;,
+        &quot;lf_sha256&quot;: &quot;1fa402ad48e62a78a77191c1f9357aa8f01e838fd1177d6821c9f98b3301de93&quot;,
+        &quot;bytes&quot;: 3308
+      },
+      {
+        &quot;path&quot;: &quot;setup.sh&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;f5a1a0d31d825dbb91fe71a907d497a76ef9ec87b985249b0ef84f550c1e30b0&quot;,
+        &quot;lf_sha256&quot;: &quot;36dc37da9a28c9d5dfb84cb20f8776344aa02b58624d0fd01f54b6cfcb996e9b&quot;,
+        &quot;bytes&quot;: 11602
+      },
+      {
+        &quot;path&quot;: &quot;requirements.txt&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;b57524e871cf764869874d78d4f7f6fda73961adcf3249ee0cd097679cfbb57f&quot;,
+        &quot;lf_sha256&quot;: &quot;4ef4acef2bb031555c3f530b9b9052ba8ce5530269bf50739db00231772b72df&quot;,
+        &quot;bytes&quot;: 832
+      },
+      {
+        &quot;path&quot;: &quot;capture/__init__.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;9ee0dd1bfae4c8ef77379b3520e656d36ba0710d3a7b4ec64263519dc4ad9a29&quot;,
+        &quot;lf_sha256&quot;: &quot;fabdd09f0a2a80253c8b6c59519a19fdde7b51f63fbee2732922f62e7464a0cb&quot;,
+        &quot;bytes&quot;: 1281
+      },
+      {
+        &quot;path&quot;: &quot;capture/base.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;56a241f59f80ab23c984d725edd7def790e6405eca03a262aaa9c49bb93184a2&quot;,
+        &quot;lf_sha256&quot;: &quot;addec1fb3373bd59e839c9fe49ced289a1f10516a87f5ac4d841fbf8483aeb5d&quot;,
+        &quot;bytes&quot;: 9798
+      },
+      {
+        &quot;path&quot;: &quot;capture/gantry.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;d25c45ff238014a9eead4eecba37ffd651456640ed6b3b96cfe74041c95b5fde&quot;,
+        &quot;lf_sha256&quot;: &quot;ceaa328a254bb227372a43c0fafe49a8c5d1b2beb3e93013c503bef8dce4bc82&quot;,
+        &quot;bytes&quot;: 8977
+      },
+      {
+        &quot;path&quot;: &quot;capture/realsense_capture.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;899891601a569c1d921a5c9aed56e3d0fcaf9ce33e2baef8893390419e14eae2&quot;,
+        &quot;lf_sha256&quot;: &quot;b8395c0c23e2040c9b3647b8e8838895036b21252c20a55cadffb15351b321a2&quot;,
+        &quot;bytes&quot;: 21380
+      },
+      {
+        &quot;path&quot;: &quot;capture/realsense_runtime.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;b6419299ee14e56920e4023c90d18fdb0ff63c7f7b4c99b85dafe3d8fc45f0c4&quot;,
+        &quot;lf_sha256&quot;: &quot;0ebdc04c3e78263eedb04dcac277590034a26b855cd8bb0654772ee89fcce914&quot;,
+        &quot;bytes&quot;: 1961
+      },
+      {
+        &quot;path&quot;: &quot;capture/ros_agent.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;824cdb7ed1f6f70b4d1444edaec3d32693329ae3c03d7d20ffe8bd47ec0bdb8d&quot;,
+        &quot;lf_sha256&quot;: &quot;abfda45d6f8de4e506fdeb70c284007b42bf824184f903531b3ff4643be001c4&quot;,
+        &quot;bytes&quot;: 5454
+      },
+      {
+        &quot;path&quot;: &quot;capture/ros_capture.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;b19b722f22f6ebefe03fd2bc6ce0a540e2eadcfe9c38b00ea3d49614dcbc23ff&quot;,
+        &quot;lf_sha256&quot;: &quot;23d1c7dc35c8e9c3c2f4746130ede18e2135d252ab55ce552747602de8e81a44&quot;,
+        &quot;bytes&quot;: 13196
+      },
+      {
+        &quot;path&quot;: &quot;capture/ros_client.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;ef7ed633ecf59719984e61f6f885a9e5b75820af9e6fa2ed92e9be8a48fdd842&quot;,
+        &quot;lf_sha256&quot;: &quot;57226c44dadc68e8dc73e9d423df9a1d29d2a9347454df0e7f7e25f89f3d15a5&quot;,
+        &quot;bytes&quot;: 9409
+      },
+      {
+        &quot;path&quot;: &quot;capture/ros_runtime.py&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;a22b757fe033b7a40039772bc14e98e79c2d320352320f7767ae0a8dd90da120&quot;,
+        &quot;lf_sha256&quot;: &quot;5b6c2c018603fa9c0dae672e23d8881a7d1cfe999ee5838cfdc069852d09ecd5&quot;,
+        &quot;bytes&quot;: 8156
+      },
+      {
+        &quot;path&quot;: &quot;install/build_appimage.sh&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;6596844b7919aff2e528245b5daab712c33ec4f7074ee2583e217a217a26b668&quot;,
+        &quot;lf_sha256&quot;: &quot;31577ba550553f2a84e52901628d9a5a29c08c5889ff5efd63f120d17cb6d7dd&quot;,
+        &quot;bytes&quot;: 6209
+      },
+      {
+        &quot;path&quot;: &quot;install/install_linux.sh&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;4dc7a44e384799e885420e6743c206be6ed9606743b38bf70ff5201dac1fe603&quot;,
+        &quot;lf_sha256&quot;: &quot;40e8a34fc3c528870938501878a517c5dfa08f85a9e44f57e103e5cc069a60fc&quot;,
+        &quot;bytes&quot;: 237
+      },
+      {
+        &quot;path&quot;: &quot;install/install_windows.ps1&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;4e63a3724cd717c77bab8f551c2df5f215ad3df65899922757304aa53a6e0aaf&quot;,
+        &quot;lf_sha256&quot;: &quot;115dfe408b3398dd8c4a009d4d9ce6f6792bed96b6fcf46e4993a6a79b4c122d&quot;,
+        &quot;bytes&quot;: 2592
+      },
+      {
+        &quot;path&quot;: &quot;install/README.md&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;ffa8f8615903b3b2435d14b0607392985677a9b9ee9db21e1e8af288c49c8510&quot;,
+        &quot;lf_sha256&quot;: &quot;1c4f8c8238a7b6dda5edda2db3fe0b9e1007da60568ae2ebae672e8a92287bda&quot;,
+        &quot;bytes&quot;: 3897
+      },
+      {
+        &quot;path&quot;: &quot;install/appimage/entrypoint.sh&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;bab3e17c4513fc5a5361587e6a0bc3235a9ff0731a1d695629a48cb5baaf5bb0&quot;,
+        &quot;lf_sha256&quot;: &quot;6c697556b3f1cbbd596dee58a0c3ed4a2ab97f86d64e492426cdc426b6f9c005&quot;,
+        &quot;bytes&quot;: 1499
+      },
+      {
+        &quot;path&quot;: &quot;install/appimage/phenofusion3d.desktop&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;d4be5035152c349399d6c70285423aa690561bd96bd1427bc56be3d065f5648c&quot;,
+        &quot;lf_sha256&quot;: &quot;69117af3206b5614a22aeb4ac1bb12df09bb5dda01be6c9d8f50d6b5809f97a0&quot;,
+        &quot;bytes&quot;: 355
+      },
+      {
+        &quot;path&quot;: &quot;install/appimage/requirements.txt&quot;,
+        &quot;status&quot;: &quot;exact_baseline_bytes&quot;,
+        &quot;matches_protected_content&quot;: true,
+        &quot;sha256&quot;: &quot;b8b07df63a0b81b001fb8882de9bfc24f193f479d592da3c00b777eb222e122e&quot;,
+        &quot;lf_sha256&quot;: &quot;7a6d544ecc910fa28d7f293c65de075ccd93b9baca2767a1035af75a9b8393e8&quot;,
+        &quot;bytes&quot;: 556
+      }
+    ],
+    &quot;all_protected_content_matches&quot;: true,
+    &quot;comparison_rule&quot;: &quot;Only CRLF to LF is normalized; no other whitespace or code changes ignored.&quot;
+  },
+  &quot;lab_checkout_comparison&quot;: null
+}</pre></section>
+<p><a href="preflight.json">Complete machine-readable evidence</a></p><p>Keep the original lab environment and checkout unchanged. Follow the included lab acceptance checklist with an operator before calling this candidate accepted. Calibration and physical measurement gaps remain separate.</p></html>

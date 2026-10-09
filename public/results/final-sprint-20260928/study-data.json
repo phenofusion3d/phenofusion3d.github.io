@@ -1,0 +1,9 @@
+{
+  "cleanedPoints": 430060,
+  "d405Points": 1719001,
+  "fusedPoints": 1740673,
+  "addedL515Points": 21672,
+  "selectedL515Label": "board-derived empirical depth correction",
+  "alignmentSummary": "On the same 62 fixed matched-soil observations, the corrected-depth candidate reduced median disagreement from 11.16 mm to 6.29 mm compared with the newly metric native-depth candidate. The selected 90th percentile is 10.33 mm and maximum 26.04 mm; P4 remains less consistent than P2. These checks also informed candidate selection and are not a final untouched accuracy test. The historical 3.41 mm result used the earlier conditional geometry, so this is not a claim that every old residual improved.",
+  "heightMappingSummary": "We tested a bounded height-dependent model after recovering metric board and scan alignment. Fitting two leaf controls and predicting the third gave errors of 10.08, 14.48 and 174.70 pixels for FX10, and 7.24, 12.28 and 123.43 pixels for FX17. The poorly conditioned case is sensitive to millimetre-scale coordinate changes. This diagnostic failed and is not used for dense spectral assignment. The table-plane result remains useful; the six existing source-supported associations remain provisional."
+}

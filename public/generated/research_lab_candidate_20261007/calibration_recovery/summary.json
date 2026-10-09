@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETED_BOUNDED_METADATA_RECOVERY_NO_GAP_CLOSURE",
+  "new_applicable_physical_calibration_found": false,
+  "new_record_recovery_leads_found": true,
+  "physical_fusion": null,
+  "metric_scale_verified": false,
+  "accepted_new_controls": 0,
+  "raw_hsi_cubes_read": false,
+  "devices_opened": false,
+  "software_modified": false,
+  "scope": "Current September28 recording tree, exact related main-repo acquisition/session/profile files, and bounded calibration/config/document/notebook-source metadata in neighbouring 3d_hyperspec_ai. No broad user filesystem search. Prior six-window landmark audit not repeated.",
+  "current_small_metadata_count": 13,
+  "inventory_records": 41
+}
