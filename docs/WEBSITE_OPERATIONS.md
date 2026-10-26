@@ -33,7 +33,7 @@ The local archive removes the large-data dependency on GitHub for the mapped ass
 4. After merge, `.github/workflows/deploy-pages.yml` builds, verifies and uploads `out/`, then deploys using the `github-pages` environment.
 5. Confirm the deployment run and inspect the live homepage, dashboard, spectral values and one large model/download.
 
-The deployment currently uses `pnpm install`; the pull-request check uses `pnpm install --frozen-lockfile`. Preserve the lockfile and review dependency changes deliberately.
+Both deployment and pull-request checks use the frozen pnpm lockfile. Preserve it and review dependency changes deliberately.
 
 Do not switch Pages to build the repository source root as a shortcut. This can publish the README instead of the intended Next.js export. If you lack Pages settings access, have the administrator check the source and the active deployment. Re-run the known workflow or redeploy a known-good export through the authorised publishing process; do not create competing deployment sources without agreement.
 
@@ -65,3 +65,11 @@ An HTTP-only mirror of `out/` is not a complete backup. Preserve `research-asset
 | Deployment has unexpected content | Compare accepted source SHA, workflow run and active Pages artifact |
 
 For recovery, identify the last known-good source and matching data revision, rebuild/check it, then redeploy through the same reviewed workflow. Do not delete historical data commits referenced by a published loader.
+
+## Legacy Pages race recovery (26 October 2026)
+
+The repository was still configured as build_type legacy from main/root. Its automatic pages build and deployment job rendered README.md and could finish after the Next.js export, replacing the live site. Changing that setting requires administrator access; the publishing account has push access only.
+
+The deploy workflow now waits for all active legacy Pages runs on the default branch before publishing out/. On push it also waits until the corresponding legacy run is registered, and refuses to publish a superseded source revision. A completed legacy Pages run triggers the export workflow again, covering later legacy rebuilds. The wait is bounded to ten minutes; failure requires a retry or administrator review. No source or research data is deleted.
+
+An administrator should still change Pages Source to GitHub Actions to remove the redundant legacy publisher and any temporary README window while a rebuild runs. Once changed, the workflow detects build_type workflow and skips the legacy wait. The push and manual triggers continue to work.
