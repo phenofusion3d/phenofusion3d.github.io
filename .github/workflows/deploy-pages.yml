@@ -4,9 +4,15 @@ on:
   push:
     branches: ["master", "main"]
   workflow_dispatch:
+  # Legacy branch publishing can otherwise finish last and replace out/ with README.
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+    branches: ["main", "master"]
 
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 
@@ -35,7 +41,7 @@ jobs:
           cache: "pnpm"
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Build for GitHub Pages
         # phenofusion3d.github.io is a user/org pages site — served at root, no base path needed
@@ -58,6 +64,41 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Wait for legacy Pages publisher and reject stale source
+        id: source
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const branch = context.payload.repository.default_branch;
+            const pages = await github.rest.repos.getPages({ owner, repo });
+            if (pages.data.build_type === 'legacy') {
+              const deadline = Date.now() + 10 * 60 * 1000;
+              let settled = false;
+              while (Date.now() < deadline) {
+                const runs = await github.paginate(github.rest.actions.listWorkflowRunsForRepo, {
+                  owner, repo, event: 'dynamic', branch, per_page: 100,
+                  created: '>' + new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString()
+                });
+                const legacy = runs.filter(run => run.name === 'pages build and deployment');
+                const active = legacy.filter(run => run.status !== 'completed');
+                const expectedSeen = context.eventName !== 'push' || legacy.some(run => run.head_sha === context.sha);
+                if (active.length === 0 && expectedSeen) {
+                  settled = true;
+                  break;
+                }
+                core.info(`Waiting for ${active.length} legacy Pages runs; source run seen: ${expectedSeen}`);
+                await new Promise(resolve => setTimeout(resolve, 10000));
+              }
+              if (!settled) {
+                throw new Error('Legacy Pages has not settled. Retry this workflow; an administrator can set Pages Source to GitHub Actions.');
+              }
+            }
+            const latest = await github.rest.repos.getBranch({ owner, repo, branch });
+            const current = latest.data.commit.sha === context.sha;
+            core.setOutput('publish', current ? 'true' : 'false');
+            if (!current) core.notice('Skipping superseded source; the current default-branch deployment will publish.');
       - name: Deploy to GitHub Pages
         id: deployment
+        if: steps.source.outputs.publish == 'true'
         uses: actions/deploy-pages@v4
